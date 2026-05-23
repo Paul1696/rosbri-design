@@ -1,171 +1,175 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROSBRI DESIGN - Mode & Customisation à Douala</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; }
-        .bg-rosbri { background-color: #00a896; }
-        .text-rosbri { color: #00a896; }
-        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/ChatGPT Image 21 mai 2026, 23_57_40.png'); background-size: cover; background-position: center; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSBRI DESIGN - Mode personnalisée à Douala</title>
+  <meta name="description" content="ROSBRI DESIGN crée des vêtements et accessoires personnalisés à Douala: culture camerounaise, cadeaux famille, t-shirts sur mesure et articles disponibles.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50">
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
+        <img src="images/logo.jpeg" alt="Logo ROSBRI DESIGN">
+        <span>ROSBRI DESIGN</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+        <a class="active" href="index.html">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="#collections">Collections</a>
+        <a href="#propos">À propos</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu">≡</button>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="images/logo.jpeg" alt="Logo ROSBRI" class="h-12 mr-3">
-                <span class="text-xl font-bold text-rosbri hidden md:block">ROSBRI DESIGN</span>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Création locale · Douala</p>
+          <h1>ROSBRI DESIGN</h1>
+          <p>Des t-shirts, casquettes et cadeaux personnalisés qui portent votre identité, vos racines et vos messages avec une finition prête à offrir.</p>
+          <div class="actions">
+            <a class="primary-btn" href="boutique.html">Voir les articles</a>
+            <a class="ghost-btn" href="https://wa.me/237votre-numero">Commander sur WhatsApp</a>
+          </div>
+          <div class="stats" aria-label="Chiffres clés">
+            <div class="stat">
+              <strong data-catalog-count>120</strong>
+              <span>visuels d'articles intégrés</span>
             </div>
-            <div class="hidden md:flex space-x-6 font-medium text-gray-700">
-                <a href="index.html" class="text-rosbri">Accueil</a>
-                <a href="boutique.html" class="hover:text-rosbri transition">Boutique</a>
-                <a href="#propos" class="hover:text-rosbri transition">À Propos</a>
-                <a href="#" class="hover:text-rosbri transition">Contact</a>
+            <div class="stat">
+              <strong>4</strong>
+              <span>univers de création</span>
             </div>
-            <div class="flex items-center space-x-4">
-                <i class="fa-solid fa-cart-shopping text-gray-600 text-xl cursor-pointer"></i>
-                <i class="fa-solid fa-bars text-gray-600 text-xl md:hidden cursor-pointer"></i>
+            <div class="stat">
+              <strong>Douala</strong>
+              <span>production et livraison locale</span>
             </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <!-- Hero Section -->
-    <header class="hero-gradient h-[500px] flex items-center justify-center text-center text-white px-4">
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Collections</p>
+            <h2>Un catalogue pensé pour offrir, porter et personnaliser.</h2>
+          </div>
+          <a class="primary-btn" href="boutique.html">Tout voir</a>
+        </div>
+        <div class="universe-grid">
+          <a class="universe" href="boutique.html">
+            <img src="images/ChatGPT Image 21 mai 2026, 23_34_37.png" alt="T-shirt inspiration culture camerounaise" loading="lazy">
+            <div>
+              <h3>Héritage & Culture</h3>
+              <p>Des visuels inspirés des racines, de Kribi, d'Édéa et de la fierté africaine.</p>
+            </div>
+          </a>
+          <a class="universe" href="boutique.html">
+            <img src="images/ChatGPT Image 21 mai 2026, 23_46_07.png" alt="T-shirt cadeau pour maman" loading="lazy">
+            <div>
+              <h3>Maman & Famille</h3>
+              <p>Des cadeaux tendres, colorés et faciles à commander pour les moments qui comptent.</p>
+            </div>
+          </a>
+          <a class="universe" href="boutique.html">
+            <img src="images/ChatGPT Image 21 mai 2026, 23_54_52.png" alt="T-shirt personnalisé avec prénom" loading="lazy">
+            <div>
+              <h3>Sur mesure</h3>
+              <p>Prénoms, messages, logos et idées spéciales préparés pour votre événement.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Sélection</p>
+            <h2>Articles phares</h2>
+            <p>Un aperçu rapide des styles disponibles. La boutique contient tous les visuels du dossier images.</p>
+          </div>
+        </div>
+        <div class="product-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="propos">
+      <div class="container about">
+        <img src="images/logo 2.jpeg" alt="Identité visuelle ROSBRI DESIGN" loading="lazy">
         <div>
-            <h2 class="text-4xl md:text-6xl font-bold mb-4">Customisation pour les personnes qui veulent plus</h2>
-            <p class="text-xl md:text-2xl mb-8 opacity-90">Découvrez l'élégance de la culture camerounaise revisitée.</p>
-            <a href="boutique.html" class="bg-rosbri text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition shadow-xl">
-                VOIR LA BOUTIQUE
-            </a>
+          <p class="eyebrow">À propos</p>
+          <h2>L'art de l'identité, imprimé avec soin.</h2>
+          <p>ROSBRI DESIGN est une marque basée à Douala qui mélange créativité locale, culture camerounaise et personnalisation. Chaque article est pensé pour être clair, expressif et facile à commander.</p>
+          <p>Vous choisissez un modèle, une couleur ou une idée. ROSBRI prépare le visuel, confirme les détails avec vous, puis lance la production.</p>
+          <div class="benefits">
+            <div class="benefit">
+              <strong>Commande simple</strong>
+              <span>Contact direct par WhatsApp pour valider le modèle.</span>
+            </div>
+            <div class="benefit">
+              <strong>Personnalisation</strong>
+              <span>Ajout de nom, message, thème ou logo selon le besoin.</span>
+            </div>
+            <div class="benefit">
+              <strong>Finition cadeau</strong>
+              <span>Des visuels prêts pour anniversaire, fête des mères ou événement.</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="primary-btn" href="boutique.html">Parcourir la boutique</a>
+            <a class="primary-btn" href="https://wa.me/237votre-numero">Demander un devis</a>
+          </div>
         </div>
-    </header>
-
-    <!-- Collections Categories -->
-    <section class="container mx-auto py-16 px-4">
-        <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Nos Univers</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Cat 1 -->
-            <div class="relative group overflow-hidden rounded-2xl shadow-lg h-80">
-                <img src="images/ChatGPT Image 21 mai 2026, 23_34_37.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                    <h4 class="text-white text-2xl font-bold">Héritage & Culture</h4>
-                </div>
-            </div>
-            <!-- Cat 2 -->
-            <div class="relative group overflow-hidden rounded-2xl shadow-lg h-80">
-                <img src="images/ChatGPT Image 21 mai 2026, 23_46_07.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                    <h4 class="text-white text-2xl font-bold">Maman & Famille</h4>
-                </div>
-            </div>
-            <!-- Cat 3 -->
-            <div class="relative group overflow-hidden rounded-2xl shadow-lg h-80">
-                <img src="images/ChatGPT Image 21 mai 2026, 23_54_52.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                    <h4 class="text-white text-2xl font-bold">Sur-Mesure</h4>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Featured Products -->
-    <section class="bg-white py-16">
-        <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Articles Phares</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Prod 1 -->
-                <div class="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-                    <img src="images/ChatGPT Image 21 mai 2026, 23_34_00.png" class="rounded-lg mb-4">
-                    <h5 class="font-bold text-gray-700">T-shirt Reine d'Afrique</h5>
-                    <p class="text-rosbri font-bold">6 500 FCFA</p>
-                    <a href="maquette_produit.html" class="mt-4 block text-center text-sm font-semibold border border-rosbri text-rosbri py-2 rounded-lg hover:bg-rosbri hover:text-white transition">Voir détails</a>
-                </div>
-                <!-- Prod 2 -->
-                <div class="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-                    <img src="images/ChatGPT Image 21 mai 2026, 23_35_12.png" class="rounded-lg mb-4">
-                    <h5 class="font-bold text-gray-700">Pont des Allemands - Edéa</h5>
-                    <p class="text-rosbri font-bold">6 500 FCFA</p>
-                    <a href="#" class="mt-4 block text-center text-sm font-semibold border border-rosbri text-rosbri py-2 rounded-lg hover:bg-rosbri hover:text-white transition">Voir détails</a>
-                </div>
-                <!-- Prod 3 -->
-                <div class="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-                    <img src="images/ChatGPT Image 22 mai 2026, 00_16_49.png" class="rounded-lg mb-4">
-                    <h5 class="font-bold text-gray-700">Casquette ROSBRI Design</h5>
-                    <p class="text-rosbri font-bold">4 500 FCFA</p>
-                    <a href="#" class="mt-4 block text-center text-sm font-semibold border border-rosbri text-rosbri py-2 rounded-lg hover:bg-rosbri hover:text-white transition">Voir détails</a>
-                </div>
-                <!-- Prod 4 -->
-                <div class="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-                    <img src="images/ChatGPT Image 21 mai 2026, 23_46_07.png" class="rounded-lg mb-4">
-                    <h5 class="font-bold text-gray-700">Merci Maman (Pastel)</h5>
-                    <p class="text-rosbri font-bold">5 000 FCFA</p>
-                    <a href="#" class="mt-4 block text-center text-sm font-semibold border border-rosbri text-rosbri py-2 rounded-lg hover:bg-rosbri hover:text-white transition">Voir détails</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <a class="whatsapp" href="https://wa.me/237votre-numero" aria-label="Contacter ROSBRI DESIGN sur WhatsApp">W</a>
 
-    <!-- About Section -->
-    <section id="propos" class="container mx-auto py-16 px-4 md:flex items-center space-x-12">
-        <div class="md:w-1/2 mb-8 md:mb-0">
-            <img src="images/logo 2.jpeg" class="rounded-3xl shadow-2xl w-full">
-        </div>
-        <div class="md:w-1/2">
-            <h3 class="text-3xl font-bold mb-6 text-gray-800">ROSBRI DESIGN : L'art de l'identité</h3>
-            <p class="text-gray-600 leading-relaxed mb-6 text-lg">
-                Basée à **Douala**, notre marque est née de la volonté d'offrir une mode qui a une âme. Nous mélangeons créativité locale et personnalisation pour que chaque vêtement soit unique.
-            </p>
-            <p class="text-gray-600 leading-relaxed mb-8 text-lg">
-                Que vous soyez fier de vos racines camerounaises ou que vous cherchiez le cadeau parfait, nous sommes là pour donner vie à vos projets.
-            </p>
-            <a href="boutique.html" class="text-rosbri font-bold text-lg flex items-center group">
-                Découvrir toute la collection <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
-            </a>
-        </div>
-    </section>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo.jpeg" alt="Logo ROSBRI DESIGN">
+        <p>"Customisation pour les personnes qui veulent plus"</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#propos">À propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>Douala, Cameroun</p>
+        <p>Commandes et devis personnalisés via WhatsApp.</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/237votre-numero" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 hover:scale-110 transition">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <img src="images/logo.jpeg" class="h-16 mb-6">
-                <p class="text-gray-400 italic">"Customisation pour les personnes qui veulent plus"</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-xl mb-6">Liens Rapides</h4>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li><a href="boutique.html">Boutique</a></li>
-                    <li><a href="#">Conditions de Livraison</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-xl mb-6">Suivez-nous</h4>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-2xl hover:text-rosbri transition"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="text-2xl hover:text-rosbri transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="text-2xl hover:text-rosbri transition"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <p class="mt-6 text-gray-400 text-sm">📍 Douala, Cameroun</p>
-            </div>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-panel">
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-info">
+        <div>
+          <strong id="lightbox-title"></strong>
+          <p id="lightbox-meta"></p>
         </div>
-        <div class="text-center mt-12 pt-8 border-t border-gray-800 text-gray-500 text-xs">
-            &copy; 2026 ROSBRI DESIGN. Tous droits réservés.
-        </div>
-    </footer>
+        <button class="close-btn" type="button" data-close-lightbox aria-label="Fermer">×</button>
+      </div>
+    </div>
+  </div>
 
+  <script src="catalog-data.js"></script>
+  <script src="catalog.js"></script>
 </body>
 </html>
