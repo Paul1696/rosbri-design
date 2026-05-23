@@ -1,4 +1,5 @@
 (function () {
+  const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const catalog = window.ROSBriCatalog || [];
   const categories = ["Tous", "Heritage", "Maman", "Customisation", "Accessoires", "Disponibles"];
   const labels = {
@@ -20,9 +21,15 @@
     return document.getElementById(id);
   }
 
+  function orderUrl(item) {
+    const productUrl = `${SITE_URL}boutique.html#article-${item.id}`;
+    const message = `Bonjour ROSBRI DESIGN, je suis interesse par ${item.title} (${item.price}). Lien: ${productUrl}`;
+    return `https://wa.me/?text=${encodeURIComponent(message)}`;
+  }
+
   function productCard(item, compact) {
     return `
-      <article class="product-card" data-category="${item.category}">
+      <article class="product-card" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${item.title}">
           <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async">
           <span class="tag">${labels[item.category] || item.category}</span>
@@ -32,6 +39,10 @@
           <div class="product-meta">
             <span>${compact ? "Creation ROSBRI" : labels[item.category]}</span>
             <span class="price">${item.price}</span>
+          </div>
+          <div class="product-actions">
+            <button class="secondary-btn" type="button" data-open-product="${item.id}">Apercu</button>
+            <a class="mini-order" href="${orderUrl(item)}">Commander</a>
           </div>
         </div>
       </article>
@@ -102,7 +113,12 @@
     byId("lightbox-image").src = item.image;
     byId("lightbox-image").alt = item.title;
     byId("lightbox-title").textContent = item.title;
-    byId("lightbox-meta").textContent = `${labels[item.category]} · ${item.price}`;
+    byId("lightbox-meta").textContent = `${labels[item.category]} - ${item.price}`;
+    const order = byId("lightbox-order");
+    if (order) {
+      order.href = orderUrl(item);
+      order.textContent = `Commander ${item.title}`;
+    }
     lightbox.classList.add("open");
     document.body.style.overflow = "hidden";
   }

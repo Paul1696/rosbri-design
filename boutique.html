@@ -5,9 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boutique - ROSBRI DESIGN</title>
   <meta name="description" content="Catalogue complet ROSBRI DESIGN: tous les articles, t-shirts, accessoires, cadeaux maman, créations culturelles et personnalisations disponibles à Douala.">
+  <link rel="canonical" href="https://rosbridesign.ateliersdepaul.com/boutique.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Boutique ROSBRI DESIGN">
+  <meta property="og:description" content="Parcourez les 120 visuels ROSBRI DESIGN et commandez votre modèle personnalisé.">
+  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/boutique.html">
+  <meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="notice-band">
+    <div class="container notice-inner">
+      <div><span>Astuce:</span> ouvrez un article pour préparer automatiquement le message WhatsApp.</div>
+      <a href="https://rosbridesign.ateliersdepaul.com/">rosbridesign.ateliersdepaul.com</a>
+    </div>
+  </div>
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
@@ -30,6 +43,24 @@
         <p class="eyebrow">Catalogue complet</p>
         <h1>Toute la boutique</h1>
         <p>Les <span data-catalog-count>120</span> visuels d'articles du dossier images sont intégrés ici. Filtrez par collection, ouvrez un modèle, puis commandez directement sur WhatsApp.</p>
+        <div class="trust-row" aria-label="Aide à la commande">
+          <div class="trust-pill">
+            <strong>Filtrez</strong>
+            <span>Choisissez une collection ou recherchez un mot-clé.</span>
+          </div>
+          <div class="trust-pill">
+            <strong>Prévisualisez</strong>
+            <span>Ouvrez le visuel en grand avant de commander.</span>
+          </div>
+          <div class="trust-pill">
+            <strong>Commandez</strong>
+            <span>WhatsApp reprend le nom et le lien de l'article.</span>
+          </div>
+          <div class="trust-pill">
+            <strong>Personnalisez</strong>
+            <span>Ajoutez nom, couleur, taille ou message spécial.</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -39,7 +70,7 @@
         <div class="filter-list" id="filter-list"></div>
         <label for="catalog-search"><strong>Recherche</strong></label>
         <input class="search" id="catalog-search" type="search" placeholder="Nom, catégorie, prix">
-        <a class="primary-btn" href="https://wa.me/237votre-numero">Commander</a>
+        <a class="primary-btn" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20veux%20passer%20une%20commande.">Commander</a>
       </aside>
 
       <div>
@@ -56,7 +87,7 @@
     </section>
   </main>
 
-  <a class="whatsapp" href="https://wa.me/237votre-numero" aria-label="Contacter ROSBRI DESIGN sur WhatsApp">W</a>
+  <a class="whatsapp" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20viens%20du%20catalogue%20en%20ligne." aria-label="Contacter ROSBRI DESIGN sur WhatsApp">W</a>
 
   <footer class="footer">
     <div class="container footer-grid">
@@ -88,7 +119,10 @@
           <strong id="lightbox-title"></strong>
           <p id="lightbox-meta"></p>
         </div>
-        <button class="close-btn" type="button" data-close-lightbox aria-label="Fermer">×</button>
+        <div class="lightbox-actions">
+          <a class="primary-btn" id="lightbox-order" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN">Commander</a>
+          <button class="close-btn" type="button" data-close-lightbox aria-label="Fermer">×</button>
+        </div>
       </div>
     </div>
   </div>
