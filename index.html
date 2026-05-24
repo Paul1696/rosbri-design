@@ -31,6 +31,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="notice-band">
     <div class="container notice-inner">
       <div><span>Nouveau:</span> le catalogue complet ROSBRI est disponible en ligne.</div>
@@ -49,33 +50,46 @@
         <a href="#collections">Collections</a>
         <a href="#propos">À propos</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu">≡</button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <main>
+  <main id="contenu">
     <section class="hero">
       <div class="container">
-        <div class="hero-content">
-          <p class="eyebrow">Création locale · Douala</p>
-          <h1>ROSBRI DESIGN</h1>
-          <p>Des t-shirts, casquettes et cadeaux personnalisés qui portent votre identité, vos racines et vos messages avec une finition prête à offrir.</p>
-          <div class="actions">
-            <a class="primary-btn" href="boutique.html">Voir les articles</a>
-            <a class="ghost-btn" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20veux%20passer%20une%20commande.">Commander sur WhatsApp</a>
+        <div class="hero-layout">
+          <div class="hero-content" data-reveal>
+            <p class="eyebrow">Création locale · Douala</p>
+            <h1>ROSBRI DESIGN</h1>
+            <p>Des t-shirts, casquettes et cadeaux personnalisés qui portent votre identité, vos racines et vos messages avec une finition prête à offrir.</p>
+            <div class="actions">
+              <a class="primary-btn" href="boutique.html">Voir les articles</a>
+              <a class="ghost-btn" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20veux%20passer%20une%20commande.">Commander sur WhatsApp</a>
+            </div>
+            <div class="stats" aria-label="Chiffres clés">
+              <div class="stat">
+                <strong data-catalog-count>120</strong>
+                <span>visuels d'articles intégrés</span>
+              </div>
+              <div class="stat">
+                <strong>4</strong>
+                <span>univers de création</span>
+              </div>
+              <div class="stat">
+                <strong>Douala</strong>
+                <span>production et livraison locale</span>
+              </div>
+            </div>
           </div>
-          <div class="stats" aria-label="Chiffres clés">
-            <div class="stat">
-              <strong data-catalog-count>120</strong>
-              <span>visuels d'articles intégrés</span>
+          <div class="hero-showcase" aria-label="Aperçu des créations ROSBRI DESIGN" data-reveal>
+            <img class="showcase-main" src="images/ChatGPT Image 21 mai 2026, 23_46_07.png" alt="T-shirt ROSBRI DESIGN cadeau pour maman">
+            <div class="showcase-stack">
+              <img src="images/ChatGPT Image 21 mai 2026, 23_34_37.png" alt="T-shirt ROSBRI DESIGN culture camerounaise">
+              <img src="images/ChatGPT Image 21 mai 2026, 23_54_52.png" alt="T-shirt ROSBRI DESIGN personnalisé avec prénom">
             </div>
-            <div class="stat">
-              <strong>4</strong>
-              <span>univers de création</span>
-            </div>
-            <div class="stat">
-              <strong>Douala</strong>
-              <span>production et livraison locale</span>
+            <div class="showcase-note">
+              <strong>Atelier à Douala</strong>
+              <span>Choisissez un visuel, ajoutez votre touche, commandez sur WhatsApp.</span>
             </div>
           </div>
         </div>
@@ -100,7 +114,7 @@
       </div>
     </section>
 
-    <section class="section" id="collections">
+    <section class="section" id="collections" data-reveal>
       <div class="container">
         <div class="section-head">
           <div>
@@ -135,7 +149,7 @@
       </div>
     </section>
 
-    <section class="section white">
+    <section class="section white" data-reveal>
       <div class="container">
         <div class="section-head">
           <div>
@@ -148,7 +162,7 @@
       </div>
     </section>
 
-    <section class="section" id="propos">
+    <section class="section" id="propos" data-reveal>
       <div class="container about">
         <img src="images/logo 2.jpeg" alt="Identité visuelle ROSBRI DESIGN" loading="lazy">
         <div>
@@ -219,7 +233,8 @@
     </div>
   </div>
 
-  <script src="catalog-data.js"></script>
-  <script src="catalog.js"></script>
+  <script src="catalog-data.js?v=20260524-categories"></script>
+  <script src="catalog.js?v=20260524-categories"></script>
+  <script type="module" src="motion-enhancements.js?v=20260524"></script>
 </body>
 </html>
