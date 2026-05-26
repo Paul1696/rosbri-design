@@ -13,6 +13,20 @@
   <meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/logo.jpeg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Boutique ROSBRI DESIGN",
+      "url": "https://rosbridesign.ateliersdepaul.com/boutique.html",
+      "description": "Catalogue de t-shirts, sacs, accessoires et articles personnalisables ROSBRI DESIGN à Douala.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "ROSBRI DESIGN",
+        "url": "https://rosbridesign.ateliersdepaul.com/"
+      }
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -25,7 +39,7 @@
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
-        <img src="images/logo.jpeg" alt="Logo ROSBRI DESIGN">
+        <img src="images/optimized/logo.jpg" alt="Logo ROSBRI DESIGN">
         <span>ROSBRI DESIGN</span>
       </a>
       <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
@@ -69,6 +83,22 @@
       <aside class="filters">
         <h2>Catégories</h2>
         <div class="filter-list" id="filter-list"></div>
+        <label for="catalog-price"><strong>Budget</strong></label>
+        <select class="select filter-select" id="catalog-price" aria-label="Filtrer par budget">
+          <option value="all">Tous les budgets</option>
+          <option value="low">4 500 - 5 000 FCFA</option>
+          <option value="mid">6 500 FCFA</option>
+          <option value="premium">8 500 FCFA</option>
+          <option value="quote">Sur devis</option>
+        </select>
+        <strong class="filter-title">Besoin rapide</strong>
+        <div class="quick-filters" aria-label="Filtres rapides">
+          <button class="quick-filter active" type="button" data-need="all">Tout</button>
+          <button class="quick-filter" type="button" data-need="gift">Cadeau</button>
+          <button class="quick-filter" type="button" data-need="culture">Culture</button>
+          <button class="quick-filter" type="button" data-need="custom">Sur mesure</button>
+          <button class="quick-filter" type="button" data-need="bags">Sacs</button>
+        </div>
         <label for="catalog-search"><strong>Recherche</strong></label>
         <input class="search" id="catalog-search" type="search" placeholder="Nom, catégorie, prix">
         <a class="primary-btn" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20veux%20passer%20une%20commande.">Commander</a>
@@ -81,11 +111,42 @@
             <option value="default">Tri original</option>
             <option value="name">Nom A-Z</option>
             <option value="category">Catégorie</option>
+            <option value="price">Prix croissant</option>
           </select>
         </div>
         <div class="product-grid shop-grid" id="shop-grid"></div>
         <div class="load-more-wrap">
           <button class="primary-btn load-more-btn" id="catalog-load-more" type="button" hidden>Afficher plus</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="commande" data-reveal>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Commande</p>
+            <h2>Comment commander rapidement</h2>
+            <p>Choisissez un article, ouvrez l’aperçu, puis envoyez le message WhatsApp déjà préparé avec la référence du modèle.</p>
+          </div>
+          <a class="primary-btn" href="https://wa.me/?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20veux%20passer%20une%20commande.">Commander maintenant</a>
+        </div>
+        <div class="steps-grid">
+          <div class="step">
+            <span>1</span>
+            <h3>Sélectionnez</h3>
+            <p>Filtrez par catégorie, budget ou besoin pour trouver le bon visuel.</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <h3>Personnalisez</h3>
+            <p>Ajoutez la taille, la couleur, un prénom, un logo ou un message spécial.</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <h3>Validez</h3>
+            <p>ROSBRI confirme les détails sur WhatsApp avant la production.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -96,7 +157,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <img src="images/logo.jpeg" alt="Logo ROSBRI DESIGN">
+        <img src="images/optimized/logo.jpg" alt="Logo ROSBRI DESIGN">
         <p>"Customisation pour les personnes qui veulent plus"</p>
       </div>
       <div>
@@ -131,8 +192,8 @@
     </div>
   </div>
 
-  <script src="catalog-data.js?v=20260526-perf"></script>
-  <script src="catalog.js?v=20260526-perf"></script>
-  <script type="module" src="motion-enhancements.js?v=20260526-perf"></script>
+  <script src="catalog-data.js?v=20260526-conversion"></script>
+  <script src="catalog.js?v=20260526-conversion"></script>
+  <script type="module" src="motion-enhancements.js?v=20260526-conversion"></script>
 </body>
 </html>

@@ -16,6 +16,8 @@
   const state = {
     category: "Tous",
     query: "",
+    price: "all",
+    need: "all",
     sort: "default",
     visibleLimit: 24
   };
@@ -47,6 +49,29 @@
     return `https://wa.me/?text=${encodeURIComponent(message)}`;
   }
 
+  function optimizedImage(path) {
+    const dot = path.lastIndexOf(".");
+    const base = dot > -1 ? path.slice(0, dot) : path;
+    return base.replace("images/", "images/optimized/") + ".jpg";
+  }
+
+  function priceBand(item) {
+    if (item.price === "Sur devis") return "quote";
+    if (item.price.includes("4 500") || item.price.includes("5 000")) return "low";
+    if (item.price.includes("6 500")) return "mid";
+    return "premium";
+  }
+
+  function needMatch(item, need) {
+    const text = searchIndex.get(item.id) || "";
+    if (need === "all") return true;
+    if (need === "gift") return item.category === "Maman" || text.includes("maman") || text.includes("famille") || text.includes("fête");
+    if (need === "culture") return item.category === "Heritage" || text.includes("kribi") || text.includes("cameroun") || text.includes("tradition");
+    if (need === "custom") return item.category === "Customisation" || text.includes("personnalisation") || text.includes("pack");
+    if (need === "bags") return item.category === "Sacs";
+    return true;
+  }
+
   function productCard(item, compact, eager) {
     const title = displayTitle(item);
     const loading = eager ? "eager" : "lazy";
@@ -54,7 +79,7 @@
     return `
       <article class="product-card" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
-          <img src="${item.image}" alt="${title}" loading="${loading}" decoding="async"${priority}>
+          <img src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
         </button>
         <div class="product-body">
@@ -88,7 +113,8 @@
     let result = catalog.filter((item) => {
       const categoryMatch = state.category === "Tous" || item.category === state.category;
       const queryMatch = !query || (searchIndex.get(item.id) || "").includes(query);
-      return categoryMatch && queryMatch;
+      const priceMatch = state.price === "all" || priceBand(item) === state.price;
+      return categoryMatch && queryMatch && priceMatch && needMatch(item, state.need);
     });
 
     if (state.sort === "name") {
@@ -97,6 +123,11 @@
 
     if (state.sort === "category") {
       result = result.slice().sort((a, b) => a.category.localeCompare(b.category) || a.id - b.id);
+    }
+
+    if (state.sort === "price") {
+      const order = { low: 1, mid: 2, premium: 3, quote: 4 };
+      result = result.slice().sort((a, b) => order[priceBand(a)] - order[priceBand(b)] || a.id - b.id);
     }
 
     return result;
@@ -159,6 +190,12 @@
 
   function resetVisibleLimit() {
     state.visibleLimit = pageSize;
+  }
+
+  function updateActiveNeeds() {
+    document.querySelectorAll("[data-need]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.need === state.need);
+    });
   }
 
   function openProduct(id) {
@@ -243,6 +280,24 @@
       });
     }
 
+    const price = byId("catalog-price");
+    if (price) {
+      price.addEventListener("change", (event) => {
+        state.price = event.target.value;
+        resetVisibleLimit();
+        renderShop();
+      });
+    }
+
+    document.addEventListener("click", (event) => {
+      const needButton = event.target.closest("[data-need]");
+      if (!needButton) return;
+      state.need = needButton.dataset.need;
+      resetVisibleLimit();
+      updateActiveNeeds();
+      renderShop();
+    });
+
     const loadMore = byId("catalog-load-more");
     if (loadMore) {
       loadMore.addEventListener("click", () => {
@@ -264,5 +319,6 @@
     renderFilters();
     renderShop();
     bindEvents();
+    updateActiveNeeds();
   });
 })();
