@@ -24,10 +24,10 @@
   const pageSize = 24;
   const sizeOptions = ["S", "M", "L", "XL", "XXL"];
   const colorVariants = [
-    { id: "rose", label: "Rose", cropX: "0%", cropY: "0%", swatch: "#f7b8c9" },
-    { id: "mauve", label: "Mauve", cropX: "-50%", cropY: "0%", swatch: "#d7b3f4" },
-    { id: "menthe", label: "Vert menthe", cropX: "0%", cropY: "-50%", swatch: "#cfeee4" },
-    { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4" }
+    { id: "rose", label: "Rose", cropX: "0%", cropY: "0%", swatch: "#f7b8c9", tint: "#f4a9bc" },
+    { id: "mauve", label: "Mauve", cropX: "-50%", cropY: "0%", swatch: "#d7b3f4", tint: "#c8a2ea" },
+    { id: "menthe", label: "Vert menthe", cropX: "0%", cropY: "-50%", swatch: "#cfeee4", tint: "#a9dfd1" },
+    { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4", tint: "#ffd777" }
   ];
   const orderState = {
     item: null,
@@ -35,13 +35,80 @@
     color: colorVariants[0].id,
     customText: ""
   };
-  const categoryCounts = catalog.reduce((counts, item) => {
+  const variantGroups = [
+    {
+      id: "maman-coeur-force",
+      title: "T-shirt Maman mon cœur ma force",
+      category: "Maman",
+      price: "6 500 FCFA",
+      image: "images/ChatGPT Image 21 mai 2026, 23_35_03.png",
+      variantIds: [7],
+      colorPreview: true
+    },
+    {
+      id: "maman-merci-tout",
+      title: "T-shirt Merci Maman - Tu es la meilleure",
+      category: "Maman",
+      price: "6 500 FCFA",
+      image: "images/ChatGPT Image 21 mai 2026, 23_35_12.png",
+      variantIds: [8, 9, 10],
+      colorPreview: true
+    },
+    {
+      id: "maman-amour-force",
+      title: "T-shirt Maman amour et force",
+      category: "Maman",
+      price: "6 500 FCFA",
+      image: "images/ChatGPT Image 21 mai 2026, 23_35_35.png",
+      variantIds: [11, 12, 13, 14, 15],
+      colorPreview: true
+    },
+    {
+      id: "maman-tendresse",
+      title: "T-shirt Maman tendresse",
+      category: "Maman",
+      price: "6 500 FCFA",
+      image: "images/ChatGPT Image 21 mai 2026, 23_36_17.png",
+      variantIds: [16, 17, 18, 19],
+      colorPreview: true
+    },
+    {
+      id: "maman-cadeau",
+      title: "T-shirt Maman cadeau",
+      category: "Maman",
+      price: "6 500 FCFA",
+      image: "images/ChatGPT Image 21 mai 2026, 23_38_20.png",
+      variantIds: [20],
+      colorPreview: true
+    },
+    {
+      id: "maman-a-croquer",
+      title: "T-shirt Maman à croquer",
+      category: "Maman",
+      price: "6 500 FCFA",
+      image: "images/ChatGPT Image 21 mai 2026, 23_38_28.png",
+      variantIds: [21, 22, 23],
+      colorPreview: true
+    }
+  ];
+  const groupedVariantIds = new Set(variantGroups.flatMap((group) => group.variantIds));
+  const catalogView = [
+    ...catalog.filter((item) => !groupedVariantIds.has(item.id)),
+    ...variantGroups.map((group) => ({
+      ...group,
+      id: group.id,
+      sourceIds: group.variantIds
+    }))
+  ].sort((a, b) => {
+    return catalogOrderKey(a) - catalogOrderKey(b);
+  });
+  const categoryCounts = catalogView.reduce((counts, item) => {
     counts[item.category] = (counts[item.category] || 0) + 1;
     return counts;
   }, {});
-  const searchIndex = new Map(catalog.map((item) => [
+  const searchIndex = new Map(catalogView.map((item) => [
     item.id,
-    `${displayTitle(item)} ${labels[item.category]} ${item.title} ${item.category} ${item.price}`.toLowerCase()
+    `${displayTitle(item)} ${labels[item.category]} ${item.title} ${item.category} ${item.price} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
   ]));
 
   function byId(id) {
@@ -56,8 +123,16 @@
     return item.title || labels[item.category] || "Article personnalisé";
   }
 
+  function catalogOrderKey(item) {
+    return Array.isArray(item.sourceIds) ? Math.min(...item.sourceIds) : item.id;
+  }
+
+  function isTshirt(item) {
+    return displayTitle(item).toLowerCase().includes("t-shirt");
+  }
+
   function isColorCollage(item) {
-    return item.category === "Maman" || displayTitle(item).toLowerCase().includes("maman");
+    return item.colorPreview === true;
   }
 
   function canCustomize(item) {
@@ -108,12 +183,13 @@
     const loading = eager ? "eager" : "lazy";
     const priority = eager ? " fetchpriority=\"high\"" : "";
     const collage = isColorCollage(item);
+    const tshirt = isTshirt(item);
     return `
       <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
           <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
-          ${collage ? `<span class="variant-note">4 couleurs</span>` : ""}
+          ${tshirt ? `<span class="variant-note">4 couleurs</span>` : ""}
         </button>
         <div class="product-body">
           <h3>${title}</h3>
@@ -143,7 +219,7 @@
 
   function filteredCatalog() {
     const query = state.query.trim().toLowerCase();
-    let result = catalog.filter((item) => {
+    let result = catalogView.filter((item) => {
       const categoryMatch = state.category === "Tous" || item.category === state.category;
       const queryMatch = !query || (searchIndex.get(item.id) || "").includes(query);
       const priceMatch = state.price === "all" || priceBand(item) === state.price;
@@ -155,12 +231,12 @@
     }
 
     if (state.sort === "category") {
-      result = result.slice().sort((a, b) => a.category.localeCompare(b.category) || a.id - b.id);
+      result = result.slice().sort((a, b) => a.category.localeCompare(b.category) || catalogOrderKey(a) - catalogOrderKey(b));
     }
 
     if (state.sort === "price") {
       const order = { low: 1, mid: 2, premium: 3, quote: 4 };
-      result = result.slice().sort((a, b) => order[priceBand(a)] - order[priceBand(b)] || a.id - b.id);
+      result = result.slice().sort((a, b) => order[priceBand(a)] - order[priceBand(b)] || catalogOrderKey(a) - catalogOrderKey(b));
     }
 
     return result;
@@ -171,11 +247,11 @@
     if (!target) return;
 
     const picks = [
-      ...catalog.filter((item) => item.category === "Heritage").slice(0, 3),
-      ...catalog.filter((item) => item.category === "Anime").slice(0, 1),
-      ...catalog.filter((item) => item.category === "Maman").slice(0, 2),
-      ...catalog.filter((item) => item.category === "Customisation").slice(0, 1),
-      ...catalog.filter((item) => item.category === "Sacs").slice(0, 1)
+      ...catalogView.filter((item) => item.category === "Heritage").slice(0, 3),
+      ...catalogView.filter((item) => item.category === "Anime").slice(0, 1),
+      ...catalogView.filter((item) => item.category === "Maman").slice(0, 2),
+      ...catalogView.filter((item) => item.category === "Customisation").slice(0, 1),
+      ...catalogView.filter((item) => item.category === "Sacs").slice(0, 1)
     ];
 
     target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
@@ -216,7 +292,7 @@
     if (!target) return;
 
     target.innerHTML = categories.map((category) => {
-      const count = category === "Tous" ? catalog.length : (categoryCounts[category] || 0);
+      const count = category === "Tous" ? catalogView.length : (categoryCounts[category] || 0);
       return `<button class="filter-btn${category === state.category ? " active" : ""}" type="button" data-category="${category}">${labels[category]} (${count})</button>`;
     }).join("");
   }
@@ -226,7 +302,18 @@
   }
 
   function optionMarkup(item) {
-    const colorPicker = isColorCollage(item)
+    const sizePicker = isTshirt(item)
+      ? `
+        <label class="option-group" for="size-select">
+          <strong>Taille</strong>
+          <select class="select" id="size-select">
+            ${sizeOptions.map((size) => `<option value="${size}"${size === orderState.size ? " selected" : ""}>${size}</option>`).join("")}
+          </select>
+        </label>
+      `
+      : "";
+
+    const colorPicker = isTshirt(item)
       ? `
         <div class="option-group">
           <strong>Couleur</strong>
@@ -252,12 +339,7 @@
 
     return `
       <div class="order-options">
-        <label class="option-group" for="size-select">
-          <strong>Taille</strong>
-          <select class="select" id="size-select">
-            ${sizeOptions.map((size) => `<option value="${size}"${size === orderState.size ? " selected" : ""}>${size}</option>`).join("")}
-          </select>
-        </label>
+        ${sizePicker}
         ${colorPicker}
         ${customField}
       </div>
@@ -271,8 +353,11 @@
 
     const color = selectedColor();
     const collage = isColorCollage(orderState.item);
+    const tintPreview = isTshirt(orderState.item) && !collage;
     image.classList.toggle("variant-crop", collage);
     visual.classList.toggle("has-variants", collage);
+    visual.classList.toggle("shirt-color-preview", tintPreview);
+    visual.style.setProperty("--shirt-color", color.tint || color.swatch);
     image.style.setProperty("--crop-x", color.cropX);
     image.style.setProperty("--crop-y", color.cropY);
   }
@@ -281,9 +366,10 @@
     if (!orderState.item) return;
     const order = byId("lightbox-order");
     const summary = byId("choice-summary");
+    const tshirt = isTshirt(orderState.item);
     const selectedOptions = {
-      size: orderState.size,
-      color: isColorCollage(orderState.item) ? selectedColor().label : "",
+      size: tshirt ? orderState.size : "",
+      color: tshirt ? selectedColor().label : "",
       customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
     };
     if (order) {
@@ -291,10 +377,11 @@
       order.textContent = `Commander ${displayTitle(orderState.item)}`;
     }
     if (summary) {
-      const parts = [`Taille ${selectedOptions.size}`];
+      const parts = [];
+      if (selectedOptions.size) parts.push(`taille ${selectedOptions.size}`);
       if (selectedOptions.color) parts.push(`couleur ${selectedOptions.color}`);
       if (selectedOptions.customText) parts.push("personnalisation ajoutée");
-      summary.textContent = `Votre choix: ${parts.join(" · ")}`;
+      summary.textContent = parts.length ? `Votre choix: ${parts.join(" · ")}` : "Votre choix sera confirmé sur WhatsApp.";
     }
   }
 
@@ -312,7 +399,7 @@
   }
 
   function openProduct(id) {
-    const item = catalog.find((entry) => String(entry.id) === String(id));
+    const item = catalogView.find((entry) => String(entry.id) === String(id));
     const lightbox = byId("lightbox");
     if (!item || !lightbox) return;
 
@@ -347,6 +434,8 @@
     }
     if (visual) {
       visual.classList.remove("has-variants");
+      visual.classList.remove("shirt-color-preview");
+      visual.style.removeProperty("--shirt-color");
     }
     document.dispatchEvent(new CustomEvent("catalog:lightbox-close"));
     document.body.style.overflow = "";
@@ -460,7 +549,7 @@
 
   function updateCounts() {
     document.querySelectorAll("[data-catalog-count]").forEach((node) => {
-      node.textContent = catalog.length;
+      node.textContent = catalogView.length;
     });
   }
 
