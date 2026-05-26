@@ -31,12 +31,36 @@
   ];
   const productColorVariants = {
     1: [
-      { id: "sable", label: "Sable", swatch: "#c4ab81", image: "images/variants/tshirt-reine-africaine-wax-sable.png" },
-      { id: "blanc", label: "Blanc", swatch: "#eeeee5", image: "images/variants/tshirt-reine-africaine-wax-blanc.png" },
-      { id: "noir", label: "Noir", swatch: "#222322", image: "images/variants/tshirt-reine-africaine-wax-noir.png" },
-      { id: "bleu-nuit", label: "Bleu nuit", swatch: "#263452", image: "images/variants/tshirt-reine-africaine-wax-bleu-nuit.png" },
-      { id: "bordeaux", label: "Bordeaux", swatch: "#702737", image: "images/variants/tshirt-reine-africaine-wax-bordeaux.png" },
-      { id: "vert-sauge", label: "Vert sauge", swatch: "#8fa48b", image: "images/variants/tshirt-reine-africaine-wax-vert-sauge.png" }
+      productVariant("tshirt-reine-africaine-wax", "sable", "Sable", "#c4ab81"),
+      productVariant("tshirt-reine-africaine-wax", "blanc", "Blanc", "#eeeee5"),
+      productVariant("tshirt-reine-africaine-wax", "noir", "Noir", "#222322"),
+      productVariant("tshirt-reine-africaine-wax", "bleu-nuit", "Bleu nuit", "#263452"),
+      productVariant("tshirt-reine-africaine-wax", "bordeaux", "Bordeaux", "#702737"),
+      productVariant("tshirt-reine-africaine-wax", "vert-sauge", "Vert sauge", "#8fa48b")
+    ],
+    2: darkProductVariants("tshirt-luffy-feu-foudre"),
+    3: darkProductVariants("tshirt-luffy-impact"),
+    4: [
+      productVariant("tshirt-pont-allemands-edea", "vert-foret", "Vert forêt", "#184931"),
+      productVariant("tshirt-pont-allemands-edea", "noir", "Noir", "#1e1f1f"),
+      productVariant("tshirt-pont-allemands-edea", "bleu-nuit", "Bleu nuit", "#1e2b48"),
+      productVariant("tshirt-pont-allemands-edea", "bordeaux", "Bordeaux", "#672330"),
+      productVariant("tshirt-pont-allemands-edea", "marron", "Marron", "#563a24")
+    ],
+    5: mamanLightVariants("tshirt-merci-maman-01"),
+    6: mamanLightVariants("tshirt-merci-maman-02"),
+    "maman-coeur-force": mamanLightVariants("tshirt-maman-coeur-force"),
+    "maman-merci-tout": [
+      productVariant("tshirt-merci-maman-meilleure", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-merci-maman-meilleure", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-merci-maman-meilleure", "mauve", "Mauve", "#d5b3f4"),
+      productVariant("tshirt-merci-maman-meilleure", "jaune", "Jaune", "#ffe6a4")
+    ],
+    "maman-amour-force": [
+      productVariant("tshirt-maman-amour-force", "blanc", "Blanc", "#eeeee5"),
+      productVariant("tshirt-maman-amour-force", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-maman-amour-force", "mauve", "Mauve", "#d5b3f4"),
+      productVariant("tshirt-maman-amour-force", "menthe", "Vert menthe", "#cfeee4")
     ]
   };
   const orderState = {
@@ -125,6 +149,34 @@
     return document.getElementById(id);
   }
 
+  function productVariant(productSlug, colorSlug, label, swatch) {
+    return {
+      id: colorSlug,
+      label,
+      swatch,
+      image: `images/variants/${productSlug}-${colorSlug}.png`
+    };
+  }
+
+  function darkProductVariants(productSlug) {
+    return [
+      productVariant(productSlug, "noir", "Noir", "#1e1f1f"),
+      productVariant(productSlug, "bleu-nuit", "Bleu nuit", "#1e2b48"),
+      productVariant(productSlug, "bordeaux", "Bordeaux", "#672330"),
+      productVariant(productSlug, "vert-foret", "Vert forêt", "#224432"),
+      productVariant(productSlug, "violet-nuit", "Violet nuit", "#3e2d58")
+    ];
+  }
+
+  function mamanLightVariants(productSlug) {
+    return [
+      productVariant(productSlug, "mauve", "Mauve", "#d5b3f4"),
+      productVariant(productSlug, "rose", "Rose", "#f7b8c9"),
+      productVariant(productSlug, "menthe", "Vert menthe", "#cfeee4"),
+      productVariant(productSlug, "jaune", "Jaune", "#ffe6a4")
+    ];
+  }
+
   function announceRender(target) {
     document.dispatchEvent(new CustomEvent("catalog:render", { detail: { target } }));
   }
@@ -148,12 +200,16 @@
     return item.category === "Maman" && isTshirt(item) ? colorVariants : [];
   }
 
+  function displayImage(item) {
+    return (colorOptionsFor(item)[0] || {}).image || item.image;
+  }
+
   function hasColorChoices(item) {
     return colorOptionsFor(item).length > 0;
   }
 
   function isColorCollage(item) {
-    return item.colorPreview === true;
+    return item.colorPreview === true && !productColorVariants[item.id];
   }
 
   function canCustomize(item) {
@@ -210,7 +266,7 @@
     return `
       <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
-          <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
+          <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(displayImage(item))}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
           ${colorChoices ? `<span class="variant-note">${colorCount} couleurs</span>` : ""}
         </button>
@@ -380,8 +436,8 @@
     image.src = optimizedImage(color.image || orderState.item.image);
     image.classList.toggle("variant-crop", collage);
     visual.classList.toggle("has-variants", collage);
-    image.style.setProperty("--crop-x", color.cropX);
-    image.style.setProperty("--crop-y", color.cropY);
+    image.style.setProperty("--crop-x", color.cropX || "0%");
+    image.style.setProperty("--crop-y", color.cropY || "0%");
   }
 
   function updateOrderLink() {
@@ -431,7 +487,7 @@
     orderState.color = (colorOptionsFor(item)[0] || colorVariants[0]).id;
     orderState.customText = "";
 
-    byId("lightbox-image").src = optimizedImage(item.image);
+    byId("lightbox-image").src = optimizedImage(displayImage(item));
     byId("lightbox-image").alt = displayTitle(item);
     byId("lightbox-title").textContent = displayTitle(item);
     byId("lightbox-meta").textContent = `${labels[item.category]} - ${item.price}`;
