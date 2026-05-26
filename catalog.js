@@ -80,12 +80,6 @@
     return `https://wa.me/?text=${encodeURIComponent(message)}`;
   }
 
-  function orderUrl(item) {
-    const productUrl = `${SITE_URL}boutique.html#article-${item.id}`;
-    const message = `Bonjour ROSBRI DESIGN, je suis intéressé par ${displayTitle(item)} (${item.price}). Lien: ${productUrl}`;
-    return `https://wa.me/?text=${encodeURIComponent(message)}`;
-  }
-
   function optimizedImage(path) {
     const dot = path.lastIndexOf(".");
     const base = dot > -1 ? path.slice(0, dot) : path;
@@ -286,13 +280,22 @@
   function updateOrderLink() {
     if (!orderState.item) return;
     const order = byId("lightbox-order");
-    if (!order) return;
-    order.href = orderUrlWithOptions(orderState.item, {
+    const summary = byId("choice-summary");
+    const selectedOptions = {
       size: orderState.size,
       color: isColorCollage(orderState.item) ? selectedColor().label : "",
       customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
-    });
-    order.textContent = `Commander ${displayTitle(orderState.item)}`;
+    };
+    if (order) {
+      order.href = orderUrlWithOptions(orderState.item, selectedOptions);
+      order.textContent = `Commander ${displayTitle(orderState.item)}`;
+    }
+    if (summary) {
+      const parts = [`Taille ${selectedOptions.size}`];
+      if (selectedOptions.color) parts.push(`couleur ${selectedOptions.color}`);
+      if (selectedOptions.customText) parts.push("personnalisation ajoutée");
+      summary.textContent = `Votre choix: ${parts.join(" · ")}`;
+    }
   }
 
   function renderOrderOptions(item) {
@@ -333,6 +336,18 @@
     const lightbox = byId("lightbox");
     if (!lightbox) return;
     lightbox.classList.remove("open");
+    orderState.item = null;
+    const image = byId("lightbox-image");
+    const visual = byId("lightbox-visual");
+    if (image) {
+      image.removeAttribute("src");
+      image.classList.remove("variant-crop");
+      image.style.removeProperty("--crop-x");
+      image.style.removeProperty("--crop-y");
+    }
+    if (visual) {
+      visual.classList.remove("has-variants");
+    }
     document.dispatchEvent(new CustomEvent("catalog:lightbox-close"));
     document.body.style.overflow = "";
   }
