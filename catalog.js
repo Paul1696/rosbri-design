@@ -29,6 +29,16 @@
     { id: "menthe", label: "Vert menthe", cropX: "0%", cropY: "-50%", swatch: "#cfeee4", tint: "#a9dfd1" },
     { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4", tint: "#ffd777" }
   ];
+  const productColorVariants = {
+    1: [
+      { id: "sable", label: "Sable", swatch: "#c4ab81", image: "images/variants/tshirt-reine-africaine-wax-sable.png" },
+      { id: "blanc", label: "Blanc", swatch: "#eeeee5", image: "images/variants/tshirt-reine-africaine-wax-blanc.png" },
+      { id: "noir", label: "Noir", swatch: "#222322", image: "images/variants/tshirt-reine-africaine-wax-noir.png" },
+      { id: "bleu-nuit", label: "Bleu nuit", swatch: "#263452", image: "images/variants/tshirt-reine-africaine-wax-bleu-nuit.png" },
+      { id: "bordeaux", label: "Bordeaux", swatch: "#702737", image: "images/variants/tshirt-reine-africaine-wax-bordeaux.png" },
+      { id: "vert-sauge", label: "Vert sauge", swatch: "#8fa48b", image: "images/variants/tshirt-reine-africaine-wax-vert-sauge.png" }
+    ]
+  };
   const orderState = {
     item: null,
     size: "M",
@@ -131,8 +141,15 @@
     return displayTitle(item).toLowerCase().includes("t-shirt");
   }
 
+  function colorOptionsFor(item) {
+    if (!item) return [];
+    const productVariants = productColorVariants[item.id];
+    if (productVariants) return productVariants;
+    return item.category === "Maman" && isTshirt(item) ? colorVariants : [];
+  }
+
   function hasColorChoices(item) {
-    return item.category === "Maman" && isTshirt(item);
+    return colorOptionsFor(item).length > 0;
   }
 
   function isColorCollage(item) {
@@ -145,7 +162,8 @@
   }
 
   function selectedColor() {
-    return colorVariants.find((variant) => variant.id === orderState.color) || colorVariants[0];
+    const options = colorOptionsFor(orderState.item);
+    return options.find((variant) => variant.id === orderState.color) || options[0] || colorVariants[0];
   }
 
   function orderUrlWithOptions(item, options = {}) {
@@ -188,12 +206,13 @@
     const priority = eager ? " fetchpriority=\"high\"" : "";
     const collage = isColorCollage(item);
     const colorChoices = hasColorChoices(item);
+    const colorCount = colorOptionsFor(item).length;
     return `
       <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
           <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
-          ${colorChoices ? `<span class="variant-note">4 couleurs</span>` : ""}
+          ${colorChoices ? `<span class="variant-note">${colorCount} couleurs</span>` : ""}
         </button>
         <div class="product-body">
           <h3>${title}</h3>
@@ -317,12 +336,13 @@
       `
       : "";
 
-    const colorPicker = hasColorChoices(item)
+    const colorOptions = colorOptionsFor(item);
+    const colorPicker = colorOptions.length
       ? `
         <div class="option-group">
           <strong>Couleur</strong>
           <div class="swatch-list" role="radiogroup" aria-label="Choisir la couleur">
-            ${colorVariants.map((variant) => `
+            ${colorOptions.map((variant) => `
               <button class="swatch-btn${variant.id === orderState.color ? " active" : ""}" type="button" data-color="${variant.id}" style="--swatch:${variant.swatch}">
                 <span></span>${variant.label}
               </button>
@@ -357,6 +377,7 @@
 
     const color = selectedColor();
     const collage = isColorCollage(orderState.item);
+    image.src = optimizedImage(color.image || orderState.item.image);
     image.classList.toggle("variant-crop", collage);
     visual.classList.toggle("has-variants", collage);
     image.style.setProperty("--crop-x", color.cropX);
@@ -407,7 +428,7 @@
 
     orderState.item = item;
     orderState.size = "M";
-    orderState.color = colorVariants[0].id;
+    orderState.color = (colorOptionsFor(item)[0] || colorVariants[0]).id;
     orderState.customText = "";
 
     byId("lightbox-image").src = optimizedImage(item.image);
