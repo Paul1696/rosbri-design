@@ -22,6 +22,19 @@
     visibleLimit: 24
   };
   const pageSize = 24;
+  const sizeOptions = ["S", "M", "L", "XL", "XXL"];
+  const colorVariants = [
+    { id: "rose", label: "Rose", cropX: "0%", cropY: "0%", swatch: "#f7b8c9" },
+    { id: "mauve", label: "Mauve", cropX: "-50%", cropY: "0%", swatch: "#d7b3f4" },
+    { id: "menthe", label: "Vert menthe", cropX: "0%", cropY: "-50%", swatch: "#cfeee4" },
+    { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4" }
+  ];
+  const orderState = {
+    item: null,
+    size: "M",
+    color: colorVariants[0].id,
+    customText: ""
+  };
   const categoryCounts = catalog.reduce((counts, item) => {
     counts[item.category] = (counts[item.category] || 0) + 1;
     return counts;
@@ -41,6 +54,30 @@
 
   function displayTitle(item) {
     return item.title || labels[item.category] || "Article personnalisé";
+  }
+
+  function isColorCollage(item) {
+    return item.category === "Maman" || displayTitle(item).toLowerCase().includes("maman");
+  }
+
+  function canCustomize(item) {
+    const title = displayTitle(item).toLowerCase();
+    return item.category === "Customisation" || title.includes("personnalis") || title.includes("pack");
+  }
+
+  function selectedColor() {
+    return colorVariants.find((variant) => variant.id === orderState.color) || colorVariants[0];
+  }
+
+  function orderUrlWithOptions(item, options = {}) {
+    const productUrl = `${SITE_URL}boutique.html#article-${item.id}`;
+    const details = [];
+    if (options.size) details.push(`Taille: ${options.size}`);
+    if (options.color) details.push(`Couleur: ${options.color}`);
+    if (options.customText) details.push(`Personnalisation: ${options.customText}`);
+    const detailsText = details.length ? ` ${details.join(" | ")}.` : "";
+    const message = `Bonjour ROSBRI DESIGN, je suis intéressé par ${displayTitle(item)} (${item.price}).${detailsText} Lien: ${productUrl}`;
+    return `https://wa.me/?text=${encodeURIComponent(message)}`;
   }
 
   function orderUrl(item) {
@@ -76,11 +113,13 @@
     const title = displayTitle(item);
     const loading = eager ? "eager" : "lazy";
     const priority = eager ? " fetchpriority=\"high\"" : "";
+    const collage = isColorCollage(item);
     return `
-      <article class="product-card" id="article-${item.id}" data-category="${item.category}">
+      <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
-          <img src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
+          <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
+          ${collage ? `<span class="variant-note">4 couleurs</span>` : ""}
         </button>
         <div class="product-body">
           <h3>${title}</h3>
@@ -90,7 +129,7 @@
           </div>
           <div class="product-actions">
             <button class="secondary-btn" type="button" data-open-product="${item.id}">Aperçu</button>
-            <a class="mini-order" href="${orderUrl(item)}">Commander</a>
+            <button class="mini-order" type="button" data-open-product="${item.id}">Commander</button>
           </div>
         </div>
       </article>
@@ -192,6 +231,77 @@
     state.visibleLimit = pageSize;
   }
 
+  function optionMarkup(item) {
+    const colorPicker = isColorCollage(item)
+      ? `
+        <div class="option-group">
+          <strong>Couleur</strong>
+          <div class="swatch-list" role="radiogroup" aria-label="Choisir la couleur">
+            ${colorVariants.map((variant) => `
+              <button class="swatch-btn${variant.id === orderState.color ? " active" : ""}" type="button" data-color="${variant.id}" style="--swatch:${variant.swatch}">
+                <span></span>${variant.label}
+              </button>
+            `).join("")}
+          </div>
+        </div>
+      `
+      : "";
+
+    const customField = canCustomize(item)
+      ? `
+        <label class="option-group" for="custom-text">
+          <strong>Personnalisation</strong>
+          <textarea id="custom-text" rows="3" placeholder="Nom, phrase, logo, couleur spéciale...">${orderState.customText}</textarea>
+        </label>
+      `
+      : "";
+
+    return `
+      <div class="order-options">
+        <label class="option-group" for="size-select">
+          <strong>Taille</strong>
+          <select class="select" id="size-select">
+            ${sizeOptions.map((size) => `<option value="${size}"${size === orderState.size ? " selected" : ""}>${size}</option>`).join("")}
+          </select>
+        </label>
+        ${colorPicker}
+        ${customField}
+      </div>
+    `;
+  }
+
+  function applyPreviewCrop() {
+    const image = byId("lightbox-image");
+    const visual = byId("lightbox-visual");
+    if (!image || !visual || !orderState.item) return;
+
+    const color = selectedColor();
+    const collage = isColorCollage(orderState.item);
+    image.classList.toggle("variant-crop", collage);
+    visual.classList.toggle("has-variants", collage);
+    image.style.setProperty("--crop-x", color.cropX);
+    image.style.setProperty("--crop-y", color.cropY);
+  }
+
+  function updateOrderLink() {
+    if (!orderState.item) return;
+    const order = byId("lightbox-order");
+    if (!order) return;
+    order.href = orderUrlWithOptions(orderState.item, {
+      size: orderState.size,
+      color: isColorCollage(orderState.item) ? selectedColor().label : "",
+      customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
+    });
+    order.textContent = `Commander ${displayTitle(orderState.item)}`;
+  }
+
+  function renderOrderOptions(item) {
+    const target = byId("lightbox-options");
+    if (!target) return;
+    target.innerHTML = optionMarkup(item);
+    updateOrderLink();
+  }
+
   function updateActiveNeeds() {
     document.querySelectorAll("[data-need]").forEach((button) => {
       button.classList.toggle("active", button.dataset.need === state.need);
@@ -203,15 +313,17 @@
     const lightbox = byId("lightbox");
     if (!item || !lightbox) return;
 
-    byId("lightbox-image").src = item.image;
+    orderState.item = item;
+    orderState.size = "M";
+    orderState.color = colorVariants[0].id;
+    orderState.customText = "";
+
+    byId("lightbox-image").src = optimizedImage(item.image);
     byId("lightbox-image").alt = displayTitle(item);
     byId("lightbox-title").textContent = displayTitle(item);
     byId("lightbox-meta").textContent = `${labels[item.category]} - ${item.price}`;
-    const order = byId("lightbox-order");
-    if (order) {
-      order.href = orderUrl(item);
-      order.textContent = `Commander ${displayTitle(item)}`;
-    }
+    renderOrderOptions(item);
+    applyPreviewCrop();
     lightbox.classList.add("open");
     document.dispatchEvent(new CustomEvent("catalog:lightbox-open", { detail: { item } }));
     document.body.style.overflow = "hidden";
@@ -251,6 +363,16 @@
 
       if (event.target.closest("[data-close-lightbox]")) {
         closeProduct();
+      }
+
+      const colorButton = event.target.closest("[data-color]");
+      if (colorButton) {
+        orderState.color = colorButton.dataset.color;
+        document.querySelectorAll("[data-color]").forEach((button) => {
+          button.classList.toggle("active", button.dataset.color === orderState.color);
+        });
+        applyPreviewCrop();
+        updateOrderLink();
       }
     });
 
@@ -305,6 +427,20 @@
         renderShop();
       });
     }
+
+    document.addEventListener("change", (event) => {
+      if (event.target.id === "size-select") {
+        orderState.size = event.target.value;
+        updateOrderLink();
+      }
+    });
+
+    document.addEventListener("input", (event) => {
+      if (event.target.id === "custom-text") {
+        orderState.customText = event.target.value;
+        updateOrderLink();
+      }
+    });
   }
 
   function updateCounts() {

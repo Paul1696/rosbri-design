@@ -492,8 +492,24 @@ h1 {
   transition: transform 420ms ease;
 }
 
+.product-media .variant-crop,
+.lightbox-visual .variant-crop {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  max-width: none;
+  height: 200%;
+  max-height: none;
+  object-fit: cover;
+  transform: translate(var(--crop-x, 0%), var(--crop-y, 0%));
+}
+
 .product-card:hover .product-media img {
   transform: scale(1.035);
+}
+
+.product-card:hover .product-media .variant-crop {
+  transform: translate(var(--crop-x, 0%), var(--crop-y, 0%)) scale(1.02);
 }
 
 .tag {
@@ -505,6 +521,18 @@ h1 {
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.92);
   color: var(--brand-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.variant-note {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: rgba(23, 33, 31, 0.82);
+  color: var(--white);
   font-size: 0.72rem;
   font-weight: 900;
 }
@@ -766,6 +794,8 @@ h1 {
 .select:focus,
 .filter-btn:focus-visible,
 .quick-filter:focus-visible,
+.swatch-btn:focus-visible,
+.option-group textarea:focus,
 .primary-btn:focus-visible,
 .ghost-btn:focus-visible,
 .secondary-btn:focus-visible,
@@ -816,11 +846,18 @@ h1 {
   background: var(--white);
 }
 
-.lightbox img {
+.lightbox-visual {
+  position: relative;
   width: 100%;
-  max-height: 72vh;
-  object-fit: contain;
+  height: min(72vh, 680px);
+  overflow: hidden;
   background: #f3f5f2;
+}
+
+.lightbox-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .lightbox-info {
@@ -828,6 +865,68 @@ h1 {
   justify-content: space-between;
   gap: 20px;
   padding: 16px;
+}
+
+.order-options {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.option-group {
+  display: grid;
+  gap: 8px;
+}
+
+.option-group strong {
+  font-size: 0.88rem;
+}
+
+.option-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font: inherit;
+  resize: vertical;
+}
+
+.swatch-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.swatch-btn {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fbfa;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.swatch-btn span {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(23, 33, 31, 0.18);
+  border-radius: 50%;
+  background: var(--swatch);
+}
+
+.swatch-btn.active,
+.swatch-btn:hover {
+  border-color: var(--brand);
+  background: #e8faf6;
+  color: var(--brand-dark);
 }
 
 .lightbox-actions {
