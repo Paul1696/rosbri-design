@@ -131,6 +131,10 @@
     return displayTitle(item).toLowerCase().includes("t-shirt");
   }
 
+  function hasColorChoices(item) {
+    return item.category === "Maman" && isTshirt(item);
+  }
+
   function isColorCollage(item) {
     return item.colorPreview === true;
   }
@@ -183,13 +187,13 @@
     const loading = eager ? "eager" : "lazy";
     const priority = eager ? " fetchpriority=\"high\"" : "";
     const collage = isColorCollage(item);
-    const tshirt = isTshirt(item);
+    const colorChoices = hasColorChoices(item);
     return `
       <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
           <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(item.image)}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
-          ${tshirt ? `<span class="variant-note">4 couleurs</span>` : ""}
+          ${colorChoices ? `<span class="variant-note">4 couleurs</span>` : ""}
         </button>
         <div class="product-body">
           <h3>${title}</h3>
@@ -313,7 +317,7 @@
       `
       : "";
 
-    const colorPicker = isTshirt(item)
+    const colorPicker = hasColorChoices(item)
       ? `
         <div class="option-group">
           <strong>Couleur</strong>
@@ -353,11 +357,8 @@
 
     const color = selectedColor();
     const collage = isColorCollage(orderState.item);
-    const tintPreview = isTshirt(orderState.item) && !collage;
     image.classList.toggle("variant-crop", collage);
     visual.classList.toggle("has-variants", collage);
-    visual.classList.toggle("shirt-color-preview", tintPreview);
-    visual.style.setProperty("--shirt-color", color.tint || color.swatch);
     image.style.setProperty("--crop-x", color.cropX);
     image.style.setProperty("--crop-y", color.cropY);
   }
@@ -367,9 +368,10 @@
     const order = byId("lightbox-order");
     const summary = byId("choice-summary");
     const tshirt = isTshirt(orderState.item);
+    const colorChoices = hasColorChoices(orderState.item);
     const selectedOptions = {
       size: tshirt ? orderState.size : "",
-      color: tshirt ? selectedColor().label : "",
+      color: colorChoices ? selectedColor().label : "",
       customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
     };
     if (order) {
@@ -434,8 +436,6 @@
     }
     if (visual) {
       visual.classList.remove("has-variants");
-      visual.classList.remove("shirt-color-preview");
-      visual.style.removeProperty("--shirt-color");
     }
     document.dispatchEvent(new CustomEvent("catalog:lightbox-close"));
     document.body.style.overflow = "";
