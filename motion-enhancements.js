@@ -16,7 +16,15 @@ if (reducedMotion) {
   markReady();
   restoreVisibility();
 } else {
-  import(motionSource)
+  const runWhenIdle = (callback) => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(callback, { timeout: 1800 });
+    } else {
+      window.setTimeout(callback, 400);
+    }
+  };
+
+  const startMotion = () => import(motionSource)
     .then(({ animate, scroll, stagger }) => {
       markReady();
 
@@ -83,4 +91,10 @@ if (reducedMotion) {
       document.documentElement.classList.add("motion-unavailable");
       restoreVisibility();
     });
+
+  if (document.readyState === "complete") {
+    runWhenIdle(startMotion);
+  } else {
+    window.addEventListener("load", () => runWhenIdle(startMotion), { once: true });
+  }
 }

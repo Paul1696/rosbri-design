@@ -34,7 +34,7 @@
         <a href="index.html#collections">Collections</a>
         <a href="index.html#propos">À propos</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -84,6 +84,9 @@
           </select>
         </div>
         <div class="product-grid shop-grid" id="shop-grid"></div>
+        <div class="load-more-wrap">
+          <button class="primary-btn load-more-btn" id="catalog-load-more" type="button" hidden>Afficher plus</button>
+        </div>
       </div>
     </section>
   </main>
@@ -128,8 +131,8 @@
     </div>
   </div>
 
-  <script src="catalog-data.js?v=20260524-categories"></script>
-  <script src="catalog.js?v=20260524-categories"></script>
-  <script type="module" src="motion-enhancements.js?v=20260524"></script>
+  <script src="catalog-data.js?v=20260526-perf"></script>
+  <script src="catalog.js?v=20260526-perf"></script>
+  <script type="module" src="motion-enhancements.js?v=20260526-perf"></script>
 </body>
 </html>

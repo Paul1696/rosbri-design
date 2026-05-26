@@ -1,14 +1,14 @@
 (function () {
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const catalog = window.ROSBriCatalog || [];
-  const categories = ["Tous", "Heritage", "Anime", "Maman", "Customisation", "Accessoires", "Disponibles"];
-  const sequenceById = new Map();
+  const categories = ["Tous", "Heritage", "Anime", "Maman", "Customisation", "Sacs", "Accessoires", "Disponibles"];
   const labels = {
     Tous: "Tous les articles",
     Heritage: "Héritage & Culture",
     Anime: "Anime & Pop Culture",
     Maman: "Maman & Famille",
     Customisation: "Customisation",
+    Sacs: "Sacs à main",
     Accessoires: "Accessoires",
     Disponibles: "Disponibles maintenant"
   };
@@ -16,23 +16,18 @@
   const state = {
     category: "Tous",
     query: "",
-    sort: "default"
+    sort: "default",
+    visibleLimit: 24
   };
-
-  const prefixes = {
-    Heritage: "Héritage",
-    Anime: "Anime",
-    Maman: "Maman",
-    Customisation: "Personnalisation",
-    Accessoires: "Accessoire",
-    Disponibles: "Disponible"
-  };
-
-  catalog.reduce((counts, item) => {
+  const pageSize = 24;
+  const categoryCounts = catalog.reduce((counts, item) => {
     counts[item.category] = (counts[item.category] || 0) + 1;
-    sequenceById.set(item.id, counts[item.category]);
     return counts;
   }, {});
+  const searchIndex = new Map(catalog.map((item) => [
+    item.id,
+    `${displayTitle(item)} ${labels[item.category]} ${item.title} ${item.category} ${item.price}`.toLowerCase()
+  ]));
 
   function byId(id) {
     return document.getElementById(id);
@@ -43,9 +38,7 @@
   }
 
   function displayTitle(item) {
-    const prefix = prefixes[item.category] || "ROSBRI";
-    const sequence = sequenceById.get(item.id) || item.id;
-    return `${prefix} ROSBRI ${String(sequence).padStart(3, "0")}`;
+    return item.title || labels[item.category] || "Article personnalisé";
   }
 
   function orderUrl(item) {
@@ -54,12 +47,14 @@
     return `https://wa.me/?text=${encodeURIComponent(message)}`;
   }
 
-  function productCard(item, compact) {
+  function productCard(item, compact, eager) {
     const title = displayTitle(item);
+    const loading = eager ? "eager" : "lazy";
+    const priority = eager ? " fetchpriority=\"high\"" : "";
     return `
       <article class="product-card" id="article-${item.id}" data-category="${item.category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
-          <img src="${item.image}" alt="${title}" loading="lazy" decoding="async">
+          <img src="${item.image}" alt="${title}" loading="${loading}" decoding="async"${priority}>
           <span class="tag">${labels[item.category] || item.category}</span>
         </button>
         <div class="product-body">
@@ -77,11 +72,22 @@
     `;
   }
 
+  function emptyCard() {
+    return `
+      <article class="product-card product-empty">
+        <div class="product-body">
+          <h3>Aucun article trouvé</h3>
+          <p>Essayez une autre catégorie ou un autre mot-clé.</p>
+        </div>
+      </article>
+    `;
+  }
+
   function filteredCatalog() {
     const query = state.query.trim().toLowerCase();
     let result = catalog.filter((item) => {
       const categoryMatch = state.category === "Tous" || item.category === state.category;
-      const queryMatch = !query || `${displayTitle(item)} ${labels[item.category]} ${item.title} ${item.category} ${item.price}`.toLowerCase().includes(query);
+      const queryMatch = !query || (searchIndex.get(item.id) || "").includes(query);
       return categoryMatch && queryMatch;
     });
 
@@ -105,11 +111,22 @@
       ...catalog.filter((item) => item.category === "Anime").slice(0, 1),
       ...catalog.filter((item) => item.category === "Maman").slice(0, 2),
       ...catalog.filter((item) => item.category === "Customisation").slice(0, 1),
-      ...catalog.filter((item) => item.category === "Accessoires").slice(0, 1)
+      ...catalog.filter((item) => item.category === "Sacs").slice(0, 1)
     ];
 
-    target.innerHTML = picks.map((item) => productCard(item, true)).join("");
+    target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
     announceRender(target);
+  }
+
+  function updateLoadMore(total) {
+    const button = byId("catalog-load-more");
+    if (!button) return;
+
+    const remaining = total - state.visibleLimit;
+    button.hidden = remaining <= 0;
+    button.textContent = remaining > pageSize
+      ? `Afficher ${pageSize} articles de plus`
+      : `Afficher les ${remaining} derniers articles`;
   }
 
   function renderShop() {
@@ -117,12 +134,16 @@
     if (!grid) return;
 
     const result = filteredCatalog();
-    grid.innerHTML = result.map((item) => productCard(item)).join("");
+    const visible = result.slice(0, state.visibleLimit);
+    grid.innerHTML = visible.length
+      ? visible.map((item, index) => productCard(item, false, index < 8)).join("")
+      : emptyCard();
     announceRender(grid);
+    updateLoadMore(result.length);
 
     const count = byId("result-count");
     if (count) {
-      count.textContent = `${result.length} article${result.length > 1 ? "s" : ""} affiché${result.length > 1 ? "s" : ""} sur ${catalog.length}`;
+      count.textContent = `${visible.length} article${visible.length > 1 ? "s" : ""} affiché${visible.length > 1 ? "s" : ""} sur ${result.length}`;
     }
   }
 
@@ -131,9 +152,13 @@
     if (!target) return;
 
     target.innerHTML = categories.map((category) => {
-      const count = category === "Tous" ? catalog.length : catalog.filter((item) => item.category === category).length;
+      const count = category === "Tous" ? catalog.length : (categoryCounts[category] || 0);
       return `<button class="filter-btn${category === state.category ? " active" : ""}" type="button" data-category="${category}">${labels[category]} (${count})</button>`;
     }).join("");
+  }
+
+  function resetVisibleLimit() {
+    state.visibleLimit = pageSize;
   }
 
   function openProduct(id) {
@@ -167,13 +192,17 @@
     const navToggle = byId("nav-toggle");
     const navLinks = byId("nav-links");
     if (navToggle && navLinks) {
-      navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
     }
 
     document.addEventListener("click", (event) => {
       const categoryButton = event.target.closest("[data-category]");
       if (categoryButton && categoryButton.classList.contains("filter-btn")) {
         state.category = categoryButton.dataset.category;
+        resetVisibleLimit();
         renderFilters();
         renderShop();
       }
@@ -194,9 +223,14 @@
 
     const search = byId("catalog-search");
     if (search) {
+      let searchTimer;
       search.addEventListener("input", (event) => {
-        state.query = event.target.value;
-        renderShop();
+        window.clearTimeout(searchTimer);
+        searchTimer = window.setTimeout(() => {
+          state.query = event.target.value;
+          resetVisibleLimit();
+          renderShop();
+        }, 120);
       });
     }
 
@@ -204,6 +238,15 @@
     if (sort) {
       sort.addEventListener("change", (event) => {
         state.sort = event.target.value;
+        resetVisibleLimit();
+        renderShop();
+      });
+    }
+
+    const loadMore = byId("catalog-load-more");
+    if (loadMore) {
+      loadMore.addEventListener("click", () => {
+        state.visibleLimit += pageSize;
         renderShop();
       });
     }

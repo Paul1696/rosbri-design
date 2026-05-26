@@ -460,12 +460,19 @@ h1 {
   background: var(--white);
   box-shadow: 0 6px 20px rgba(23, 33, 31, 0.05);
   transition: transform 180ms ease, box-shadow 180ms ease;
-  will-change: transform;
+  content-visibility: auto;
+  contain-intrinsic-size: 430px;
 }
 
 .product-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow);
+}
+
+@media (hover: hover) {
+  .product-card:hover {
+    will-change: transform;
+  }
 }
 
 .product-media {
@@ -533,6 +540,33 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 8px;
   margin-top: 14px;
+}
+
+.product-empty {
+  grid-column: 1 / -1;
+}
+
+.product-empty .product-body {
+  min-height: 160px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.product-empty p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.load-more-btn {
+  min-width: min(100%, 260px);
 }
 
 .secondary-btn,
