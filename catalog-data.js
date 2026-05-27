@@ -218,7 +218,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 32,
-    "title": "T-shirt Patricks Feu",
+    "title": "T-shirt Nom",
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/ChatGPT Image 21 mai 2026, 23_43_30.png"

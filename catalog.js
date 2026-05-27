@@ -107,7 +107,6 @@
       productVariant("tshirt-world-best-mom", "menthe", "Vert menthe", "#cfeee4"),
       productVariant("tshirt-world-best-mom", "jaune", "Jaune", "#ffe6a4")
     ],
-    34: darkProductVariants("tshirt-patricks-feu-noir"),
     35: [
       productVariant("tshirt-maman-mon-bonheur", "sable", "Sable", "#decfb5"),
       productVariant("tshirt-maman-mon-bonheur", "rose", "Rose", "#f7b8c9"),
@@ -153,7 +152,7 @@
       colorPreview: true
     },
   ];
-  const hiddenProductIds = [16, 17, 18, 19, 20, 21, 22, 23];
+  const hiddenProductIds = [16, 17, 18, 19, 20, 21, 22, 23, 34];
   const groupedVariantIds = new Set([
     ...variantGroups.flatMap((group) => group.variantIds),
     ...hiddenProductIds
