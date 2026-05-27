@@ -24,10 +24,14 @@
   const pageSize = 24;
   const sizeOptions = ["S", "M", "L", "XL", "XXL"];
   const colorVariants = [
+    { id: "blanc", label: "Blanc", swatch: "#eeeee5" },
+    { id: "noir", label: "Noir", swatch: "#1e1f1f" },
+    { id: "sable", label: "Sable", swatch: "#decfb5" },
     { id: "rose", label: "Rose", cropX: "0%", cropY: "0%", swatch: "#f7b8c9", tint: "#f4a9bc" },
     { id: "mauve", label: "Mauve", cropX: "-50%", cropY: "0%", swatch: "#d7b3f4", tint: "#c8a2ea" },
     { id: "menthe", label: "Vert menthe", cropX: "0%", cropY: "-50%", swatch: "#cfeee4", tint: "#a9dfd1" },
-    { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4", tint: "#ffd777" }
+    { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4", tint: "#ffd777" },
+    { id: "bleu-nuit", label: "Bleu nuit", swatch: "#1e2b48" }
   ];
   const productColorVariants = {
     1: [
@@ -241,15 +245,21 @@
     return displayTitle(item).toLowerCase().includes("t-shirt");
   }
 
+  function productVariantsFor(item) {
+    return item ? (productColorVariants[item.id] || []) : [];
+  }
+
   function colorOptionsFor(item) {
-    if (!item) return [];
-    const productVariants = productColorVariants[item.id];
-    if (productVariants) return productVariants;
-    return item.category === "Maman" && isTshirt(item) ? colorVariants : [];
+    if (!item || !isTshirt(item)) return [];
+    const productVariants = productVariantsFor(item);
+    return colorVariants.map((variant) => ({
+      ...variant,
+      image: (productVariants.find((productVariant) => productVariant.id === variant.id) || {}).image
+    }));
   }
 
   function displayImage(item) {
-    return (colorOptionsFor(item)[0] || {}).image || item.image;
+    return (productVariantsFor(item).find((variant) => variant.image) || {}).image || item.image;
   }
 
   function hasColorChoices(item) {
@@ -481,7 +491,7 @@
 
     const color = selectedColor();
     const collage = isColorCollage(orderState.item);
-    image.src = optimizedImage(color.image || orderState.item.image);
+    image.src = optimizedImage(color.image || displayImage(orderState.item));
     image.classList.toggle("variant-crop", collage);
     visual.classList.toggle("has-variants", collage);
     image.style.setProperty("--crop-x", color.cropX || "0%");
