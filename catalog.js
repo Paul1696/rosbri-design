@@ -97,26 +97,8 @@
       variantIds: [11, 12, 13, 14, 15],
       colorPreview: true
     },
-    {
-      id: "maman-cadeau",
-      title: "T-shirt Maman cadeau",
-      category: "Maman",
-      price: "6 500 FCFA",
-      image: "images/ChatGPT Image 21 mai 2026, 23_38_20.png",
-      variantIds: [20],
-      colorPreview: true
-    },
-    {
-      id: "maman-a-croquer",
-      title: "T-shirt Maman à croquer",
-      category: "Maman",
-      price: "6 500 FCFA",
-      image: "images/ChatGPT Image 21 mai 2026, 23_38_28.png",
-      variantIds: [21, 22, 23],
-      colorPreview: true
-    }
   ];
-  const hiddenProductIds = [16, 17, 18, 19];
+  const hiddenProductIds = [16, 17, 18, 19, 20, 21, 22, 23, 25];
   const groupedVariantIds = new Set([
     ...variantGroups.flatMap((group) => group.variantIds),
     ...hiddenProductIds
