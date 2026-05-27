@@ -98,15 +98,6 @@
       colorPreview: true
     },
     {
-      id: "maman-tendresse",
-      title: "T-shirt Maman tendresse",
-      category: "Maman",
-      price: "6 500 FCFA",
-      image: "images/ChatGPT Image 21 mai 2026, 23_36_17.png",
-      variantIds: [16, 17, 18, 19],
-      colorPreview: true
-    },
-    {
       id: "maman-cadeau",
       title: "T-shirt Maman cadeau",
       category: "Maman",
@@ -125,7 +116,11 @@
       colorPreview: true
     }
   ];
-  const groupedVariantIds = new Set(variantGroups.flatMap((group) => group.variantIds));
+  const hiddenProductIds = [16, 17, 18, 19];
+  const groupedVariantIds = new Set([
+    ...variantGroups.flatMap((group) => group.variantIds),
+    ...hiddenProductIds
+  ]);
   const catalogView = [
     ...catalog.filter((item) => !groupedVariantIds.has(item.id)),
     ...variantGroups.map((group) => ({
