@@ -61,7 +61,62 @@
       productVariant("tshirt-maman-amour-force", "rose", "Rose", "#f7b8c9"),
       productVariant("tshirt-maman-amour-force", "mauve", "Mauve", "#d5b3f4"),
       productVariant("tshirt-maman-amour-force", "menthe", "Vert menthe", "#cfeee4")
-    ]
+    ],
+    24: [
+      productVariant("tshirt-merci-maman-20", "blanc", "Blanc", "#eeeee5"),
+      productVariant("tshirt-merci-maman-20", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-merci-maman-20", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-merci-maman-20", "jaune", "Jaune", "#ffe6a4")
+    ],
+    25: [
+      productVariant("tshirt-merci-maman-21", "blanc", "Blanc", "#eeeee5"),
+      productVariant("tshirt-merci-maman-21", "sable", "Sable", "#decfb5"),
+      productVariant("tshirt-merci-maman-21", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-merci-maman-21", "mauve", "Mauve", "#d5b3f4")
+    ],
+    26: foldedMamanVariants("tshirt-merci-maman-22"),
+    27: [
+      productVariant("tshirt-merci-maman-23", "blanc", "Blanc", "#eeeee5"),
+      productVariant("tshirt-merci-maman-23", "sable", "Sable", "#decfb5"),
+      productVariant("tshirt-merci-maman-23", "mauve", "Mauve", "#d5b3f4"),
+      productVariant("tshirt-merci-maman-23", "menthe", "Vert menthe", "#cfeee4")
+    ],
+    28: [
+      productVariant("tshirt-merci-maman-24", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-merci-maman-24", "mauve", "Mauve", "#d5b3f4"),
+      productVariant("tshirt-merci-maman-24", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-merci-maman-24", "sable", "Sable", "#decfb5")
+    ],
+    29: foldedMamanVariants("tshirt-merci-maman-25"),
+    30: [
+      productVariant("tshirt-merci-maman-26", "sable", "Sable", "#decfb5"),
+      productVariant("tshirt-merci-maman-26", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-merci-maman-26", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-merci-maman-26", "mauve", "Mauve", "#d5b3f4")
+    ],
+    31: [
+      productVariant("tshirt-merci-maman-27", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-merci-maman-27", "mauve", "Mauve", "#d5b3f4"),
+      productVariant("tshirt-merci-maman-27", "sable", "Sable", "#decfb5"),
+      productVariant("tshirt-merci-maman-27", "rose", "Rose", "#f7b8c9")
+    ],
+    32: darkProductVariants("tshirt-patricks-feu"),
+    33: [
+      productVariant("tshirt-world-best-mom", "mauve", "Mauve", "#d5b3f4"),
+      productVariant("tshirt-world-best-mom", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-world-best-mom", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-world-best-mom", "jaune", "Jaune", "#ffe6a4")
+    ],
+    34: darkProductVariants("tshirt-patricks-feu-noir"),
+    35: [
+      productVariant("tshirt-maman-mon-bonheur", "sable", "Sable", "#decfb5"),
+      productVariant("tshirt-maman-mon-bonheur", "rose", "Rose", "#f7b8c9"),
+      productVariant("tshirt-maman-mon-bonheur", "menthe", "Vert menthe", "#cfeee4"),
+      productVariant("tshirt-maman-mon-bonheur", "mauve", "Mauve", "#d5b3f4")
+    ],
+    36: heritageThreeVariants("tshirt-palaise-dschang"),
+    37: heritageThreeVariants("tshirt-chutes-lobe"),
+    38: heritageThreeVariants("tshirt-mont-cameroun")
   };
   const orderState = {
     item: null,
@@ -98,7 +153,7 @@
       colorPreview: true
     },
   ];
-  const hiddenProductIds = [16, 17, 18, 19, 20, 21, 22, 23, 25];
+  const hiddenProductIds = [16, 17, 18, 19, 20, 21, 22, 23];
   const groupedVariantIds = new Set([
     ...variantGroups.flatMap((group) => group.variantIds),
     ...hiddenProductIds
@@ -151,6 +206,23 @@
       productVariant(productSlug, "rose", "Rose", "#f7b8c9"),
       productVariant(productSlug, "menthe", "Vert menthe", "#cfeee4"),
       productVariant(productSlug, "jaune", "Jaune", "#ffe6a4")
+    ];
+  }
+
+  function foldedMamanVariants(productSlug) {
+    return [
+      productVariant(productSlug, "blanc", "Blanc", "#eeeee5"),
+      productVariant(productSlug, "sable", "Sable", "#decfb5"),
+      productVariant(productSlug, "menthe", "Vert menthe", "#cfeee4"),
+      productVariant(productSlug, "mauve", "Mauve", "#d5b3f4")
+    ];
+  }
+
+  function heritageThreeVariants(productSlug) {
+    return [
+      productVariant(productSlug, "vert-foret", "Vert forêt", "#184931"),
+      productVariant(productSlug, "bordeaux", "Bordeaux", "#672330"),
+      productVariant(productSlug, "moutarde", "Moutarde", "#c7901f")
     ];
   }
 
