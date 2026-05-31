@@ -2,16 +2,32 @@
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const WHATSAPP_PHONE = "237690087213";
   const catalog = window.ROSBriCatalog || [];
-  const categories = ["Tous", "Tshirts", "Sacs", "Ensembles", "Babouches", "Chapeaux", "Pochettes", "Accessoires"];
+  const categories = [
+    "Tous", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
+    "Bobs", "Pochettes", "Accessoires", "Coussins", "Robes", "Chemises", "Affiches"
+  ];
   const productLabels = {
     Tous: "Tous les articles",
     Tshirts: "T-shirts",
+    Polos: "Polos",
+    Debardeurs: "Débardeurs",
     Sacs: "Sacs",
     Ensembles: "Ensembles",
     Babouches: "Babouches",
+    Sandales: "Sandales",
+    Chaussures: "Chaussures",
     Chapeaux: "Chapeaux",
+    Casquettes: "Casquettes",
+    Bobs: "Bobs",
     Pochettes: "Pochettes",
-    Accessoires: "Accessoires"
+    Trousses: "Trousses",
+    Portefeuilles: "Portefeuilles",
+    Accessoires: "Accessoires",
+    Coussins: "Coussins",
+    Robes: "Robes",
+    Boubous: "Boubous",
+    Chemises: "Chemises",
+    Affiches: "Affiches"
   };
   const subcategoryLabels = {
     Heritage: "Héritage & Culture",
@@ -35,6 +51,7 @@
   };
   const pageSize = 24;
   const sizeOptions = ["S", "M", "L", "XL", "XXL", "XXXL"];
+  const shoeSizeOptions = ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"];
   const colorVariants = [
     { id: "blanc", label: "Blanc", swatch: "#eeeee5" },
     { id: "noir", label: "Noir", swatch: "#1e1f1f" },
@@ -147,6 +164,8 @@
     item: null,
     sizes: ["M"],
     sizeQuantities: { M: 1 },
+    shoeSizes: ["39"],
+    shoeSizeQuantities: { 39: 1 },
     color: colorVariants[0].id,
     quantity: 1,
     customText: ""
@@ -175,7 +194,7 @@
   }, {});
   const searchIndex = new Map(catalogView.map((item) => [
     item.id,
-    `${displayTitle(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
+    `${displayTitle(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
   ]));
 
   function byId(id) {
@@ -255,12 +274,25 @@
     const folder = match ? match[1] : "";
     const map = {
       tshirts: "Tshirts",
+      polos: "Polos",
+      debardeurs: "Debardeurs",
       sacs: "Sacs",
       ensembles: "Ensembles",
       babouches: "Babouches",
+      sandales: "Sandales",
+      chaussures: "Chaussures",
       chapeaux: "Chapeaux",
+      casquettes: "Casquettes",
+      bobs: "Bobs",
       pochettes: "Pochettes",
-      accessoires: "Accessoires"
+      trousses: "Trousses",
+      portefeuilles: "Portefeuilles",
+      accessoires: "Accessoires",
+      coussins: "Coussins",
+      robes: "Robes",
+      boubous: "Boubous",
+      chemises: "Chemises",
+      affiches: "Affiches"
     };
     return map[folder] || item.category || "Autres";
   }
@@ -293,6 +325,14 @@
 
   function isTshirt(item) {
     return displayTitle(item).toLowerCase().includes("t-shirt");
+  }
+
+  function isClothing(item) {
+    return ["Tshirts", "Ensembles", "Robes", "Boubous", "Chemises", "Polos", "Debardeurs"].includes(productCategory(item));
+  }
+
+  function isFootwear(item) {
+    return ["Babouches", "Sandales", "Chaussures"].includes(productCategory(item));
   }
 
   function isVisibleCatalogItem(item) {
@@ -352,6 +392,21 @@
     return selectedSizeQuantities().map((item) => `${item.size} x ${item.quantity}`).join(", ");
   }
 
+  function selectedShoeSizeQuantities() {
+    return orderState.shoeSizes.map((size) => ({
+      size,
+      quantity: Math.max(1, Math.min(99, Number(orderState.shoeSizeQuantities[size]) || 1))
+    }));
+  }
+
+  function totalSelectedShoeSizeQuantity() {
+    return selectedShoeSizeQuantities().reduce((total, item) => total + item.quantity, 0);
+  }
+
+  function shoeSizeQuantitiesText() {
+    return selectedShoeSizeQuantities().map((item) => `${item.size} x ${item.quantity}`).join(", ");
+  }
+
   function cartItems() {
     try {
       return JSON.parse(localStorage.getItem("rosbriCart") || "[]");
@@ -376,6 +431,11 @@
     } else if (options.sizes && options.sizes.length) {
       details.push(`Tailles: ${options.sizes.join(", ")}`);
     }
+    if (options.shoeSizeQuantities && options.shoeSizeQuantities.length) {
+      details.push(`Pointures: ${options.shoeSizeQuantities.map((item) => `${item.size} x ${item.quantity}`).join(", ")}`);
+    } else if (options.shoeSizes && options.shoeSizes.length) {
+      details.push(`Pointures: ${options.shoeSizes.join(", ")}`);
+    }
     if (options.color) details.push(`Couleur: ${options.color}`);
     if (options.quantity) details.push(`Quantite: ${options.quantity}`);
     if (options.customText) details.push(`Personnalisation: ${options.customText}`);
@@ -397,8 +457,11 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
 
   function priceBand(item) {
     if (item.price === "Sur devis") return "quote";
+    if (item.price.includes("3 500")) return "starter";
     if (item.price.includes("4 500") || item.price.includes("5 000")) return "low";
     if (item.price.includes("6 500")) return "mid";
+    if (item.price.includes("8 500") || item.price.includes("10 000")) return "premium";
+    if (item.price.includes("15 000") || item.price.includes("18 000")) return "set";
     return "premium";
   }
 
@@ -571,8 +634,9 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
   }
 
   function optionMarkup(item) {
-    const tshirt = isTshirt(item);
-    const sizePicker = tshirt
+    const clothing = isClothing(item);
+    const footwear = isFootwear(item);
+    const sizePicker = clothing
       ? `
         <div class="option-group">
           <strong>Taille</strong>
@@ -585,10 +649,10 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       `
       : "";
 
-    const sizeQuantityPicker = tshirt
+    const sizeQuantityPicker = clothing
       ? `
         <div class="option-group">
-          <strong>Quantite par taille</strong>
+          <strong>Quantité par taille</strong>
           <div class="size-quantity-list">
             ${selectedSizeQuantities().map((entry) => `
               <div class="size-quantity-row">
@@ -597,6 +661,39 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
                   <button type="button" data-size-quantity="${entry.size}" data-size-quantity-step="-1" aria-label="Retirer un article taille ${entry.size}">-</button>
                   <input type="number" min="1" max="99" value="${entry.quantity}" inputmode="numeric" data-size-quantity-input="${entry.size}" aria-label="Quantite taille ${entry.size}">
                   <button type="button" data-size-quantity="${entry.size}" data-size-quantity-step="1" aria-label="Ajouter un article taille ${entry.size}">+</button>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `
+      : "";
+
+    const shoeSizePicker = footwear
+      ? `
+        <div class="option-group">
+          <strong>Pointure</strong>
+          <div class="size-list" role="group" aria-label="Choisir une ou plusieurs pointures">
+            ${shoeSizeOptions.map((size) => `
+              <button class="size-btn${orderState.shoeSizes.includes(size) ? " active" : ""}" type="button" data-shoe-size="${size}" aria-pressed="${orderState.shoeSizes.includes(size)}">${size}</button>
+            `).join("")}
+          </div>
+        </div>
+      `
+      : "";
+
+    const shoeSizeQuantityPicker = footwear
+      ? `
+        <div class="option-group">
+          <strong>Quantité par pointure</strong>
+          <div class="size-quantity-list">
+            ${selectedShoeSizeQuantities().map((entry) => `
+              <div class="size-quantity-row">
+                <span>${entry.size}</span>
+                <div class="quantity-control compact">
+                  <button type="button" data-shoe-size-quantity="${entry.size}" data-shoe-size-quantity-step="-1" aria-label="Retirer un article pointure ${entry.size}">-</button>
+                  <input type="number" min="1" max="99" value="${entry.quantity}" inputmode="numeric" data-shoe-size-quantity-input="${entry.size}" aria-label="Quantite pointure ${entry.size}">
+                  <button type="button" data-shoe-size-quantity="${entry.size}" data-shoe-size-quantity-step="1" aria-label="Ajouter un article pointure ${entry.size}">+</button>
                 </div>
               </div>
             `).join("")}
@@ -634,10 +731,12 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       <div class="order-options">
         ${sizePicker}
         ${sizeQuantityPicker}
+        ${shoeSizePicker}
+        ${shoeSizeQuantityPicker}
         ${colorPicker}
-        ${tshirt ? "" : `
+        ${clothing || footwear ? "" : `
           <div class="option-group quantity-group">
-            <strong>Quantite</strong>
+            <strong>Quantité</strong>
             <div class="quantity-control">
               <button type="button" data-quantity-step="-1" aria-label="Retirer un article">-</button>
               <input id="quantity-input" type="number" min="1" max="99" value="${orderState.quantity}" inputmode="numeric">
@@ -668,23 +767,28 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (!orderState.item) return;
     const order = byId("lightbox-order");
     const summary = byId("choice-summary");
-    const tshirt = isTshirt(orderState.item);
+    const clothing = isClothing(orderState.item);
+    const footwear = isFootwear(orderState.item);
     const colorChoices = hasColorChoices(orderState.item);
-    const sizeQuantities = tshirt ? selectedSizeQuantities() : [];
+    const sizeQuantities = clothing ? selectedSizeQuantities() : [];
+    const shoeSizeQuantities = footwear ? selectedShoeSizeQuantities() : [];
     const selectedOptions = {
-      sizes: tshirt ? orderState.sizes.slice() : [],
+      sizes: clothing ? orderState.sizes.slice() : [],
       sizeQuantities,
+      shoeSizes: footwear ? orderState.shoeSizes.slice() : [],
+      shoeSizeQuantities,
       color: colorChoices ? selectedColor().label : "",
-      quantity: tshirt ? totalSelectedSizeQuantity() : orderState.quantity,
+      quantity: clothing ? totalSelectedSizeQuantity() : (footwear ? totalSelectedShoeSizeQuantity() : orderState.quantity),
       customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
     };
     if (order) {
       order.href = orderUrlWithOptions(orderState.item, selectedOptions);
-      order.textContent = `Commander ${displayTitle(orderState.item)}`;
+      order.textContent = "Commander";
     }
     if (summary) {
       const parts = [];
       if (selectedOptions.sizeQuantities.length) parts.push(`tailles ${sizeQuantitiesText()}`);
+      if (selectedOptions.shoeSizeQuantities.length) parts.push(`pointures ${shoeSizeQuantitiesText()}`);
       if (selectedOptions.color) parts.push(`couleur ${selectedOptions.color}`);
       parts.push(`${selectedOptions.quantity} article${selectedOptions.quantity > 1 ? "s" : ""}`);
       if (selectedOptions.customText) parts.push("personnalisation ajoutée");
@@ -706,10 +810,12 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       id: item.id,
       title: displayTitle(item),
       price: item.price,
-      sizes: isTshirt(item) ? orderState.sizes.slice() : [],
-      sizeQuantities: isTshirt(item) ? selectedSizeQuantities() : [],
+      sizes: isClothing(item) ? orderState.sizes.slice() : [],
+      sizeQuantities: isClothing(item) ? selectedSizeQuantities() : [],
+      shoeSizes: isFootwear(item) ? orderState.shoeSizes.slice() : [],
+      shoeSizeQuantities: isFootwear(item) ? selectedShoeSizeQuantities() : [],
       color: hasColorChoices(item) ? selectedColor().label : "",
-      quantity: isTshirt(item) ? totalSelectedSizeQuantity() : orderState.quantity,
+      quantity: isClothing(item) ? totalSelectedSizeQuantity() : (isFootwear(item) ? totalSelectedShoeSizeQuantity() : orderState.quantity),
       customText: canCustomize(item) ? orderState.customText.trim() : "",
       url: `${SITE_URL}boutique.html#article-${item.id}`
     };
@@ -724,7 +830,10 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       const sizes = entry.sizeQuantities.length
         ? ` (${entry.sizeQuantities.map((size) => `${size.size} x ${size.quantity}`).join(", ")})`
         : "";
-      summary.textContent = `Ajoute au panier: ${entry.quantity} x ${entry.title}${sizes}. Vous pouvez continuer ou commander directement.`;
+      const shoeSizes = entry.shoeSizeQuantities.length
+        ? ` (${entry.shoeSizeQuantities.map((size) => `${size.size} x ${size.quantity}`).join(", ")})`
+        : "";
+      summary.textContent = `Ajouté au panier: ${entry.quantity} x ${entry.title}${sizes}${shoeSizes}. Vous pouvez continuer ou commander directement.`;
     }
   }
 
@@ -732,6 +841,106 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     document.querySelectorAll("[data-need]").forEach((button) => {
       button.classList.toggle("active", button.dataset.need === state.need);
     });
+  }
+
+  function productUrl(item) {
+    return `${SITE_URL}boutique.html#article-${item.id}`;
+  }
+
+  function defaultReviews(item) {
+    const category = productCategory(item);
+    if (category === "Sacs" || productSubcategory(item) === "Accessoires") {
+      return [
+        { name: "Clarisse", rating: 5, text: "Le rendu est solide, pratique et très élégant." },
+        { name: "Nadine", rating: 5, text: "Les couleurs ressortent bien, parfait pour offrir." }
+      ];
+    }
+    if (isFootwear(item)) {
+      return [
+        { name: "Stéphanie", rating: 5, text: "Confortable au pied et très joli avec une tenue simple." },
+        { name: "Grâce", rating: 4, text: "Belle finition, le détail wax fait la différence." }
+      ];
+    }
+    if (category === "Coussins" || category === "Affiches") {
+      return [
+        { name: "Laure", rating: 5, text: "Les couleurs donnent beaucoup de chaleur à la pièce." },
+        { name: "Estelle", rating: 5, text: "Très décoratif et fidèle au style ROSBRI." }
+      ];
+    }
+    if (["Accessoires", "Pochettes", "Bobs", "Chapeaux"].includes(category)) {
+      return [
+        { name: "Brenda", rating: 5, text: "Petit détail original, très propre et facile à offrir." },
+        { name: "Yasmine", rating: 5, text: "J’aime le rendu, c’est simple et élégant." }
+      ];
+    }
+    return [
+      { name: "Murielle", rating: 5, text: "La coupe est confortable et le motif ressort très bien." },
+      { name: "Ariane", rating: 5, text: "Belle finition, exactement l’esprit ROSBRI que je voulais." }
+    ];
+  }
+
+  function renderReviews(item) {
+    const target = byId("lightbox-reviews");
+    if (!target) return;
+    const reviews = (item.reviews && item.reviews.length ? item.reviews : defaultReviews(item)).slice(0, 3);
+    target.innerHTML = `
+      <strong>Avis clients</strong>
+      <div class="review-list">
+        ${reviews.map((review) => `
+          <figure class="review-item">
+            <div class="stars" aria-label="${review.rating} sur 5">${"★".repeat(review.rating)}${"☆".repeat(Math.max(0, 5 - review.rating))}</div>
+            <blockquote>${review.text}</blockquote>
+            <figcaption>${review.name}</figcaption>
+          </figure>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function shareLinks(item) {
+    const url = productUrl(item);
+    const text = `Découvrez ${displayTitle(item)} chez ROSBRI DESIGN`;
+    return {
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+      whatsapp: `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`,
+      x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+      instagram: "https://www.instagram.com/"
+    };
+  }
+
+  function renderShareButtons(item) {
+    const target = byId("lightbox-share");
+    if (!target) return;
+    const links = shareLinks(item);
+    target.innerHTML = `
+      <strong>Partager</strong>
+      <div class="share-list">
+        <a href="${links.facebook}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="${links.whatsapp}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="${links.x}" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="${links.instagram}" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <button type="button" data-share-native>Plus</button>
+      </div>
+    `;
+  }
+
+  async function shareCurrentItem() {
+    if (!orderState.item) return;
+    const url = productUrl(orderState.item);
+    const title = displayTitle(orderState.item);
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, text: `Découvrez ${title} chez ROSBRI DESIGN`, url });
+        return;
+      } catch (error) {
+        if (error.name === "AbortError") return;
+      }
+    }
+    if (navigator.clipboard) {
+      await navigator.clipboard.writeText(url);
+      const summary = byId("choice-summary");
+      if (summary) summary.textContent = "Lien de l’article copié.";
+    }
   }
 
   function openProduct(id) {
@@ -742,6 +951,8 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     orderState.item = item;
     orderState.sizes = ["M"];
     orderState.sizeQuantities = { M: 1 };
+    orderState.shoeSizes = ["39"];
+    orderState.shoeSizeQuantities = { 39: 1 };
     orderState.color = (colorOptionsFor(item)[0] || colorVariants[0]).id;
     orderState.quantity = 1;
     orderState.customText = "";
@@ -753,6 +964,8 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     const cart = byId("lightbox-cart");
     if (cart) cart.textContent = "Ajouter au panier";
     renderOrderOptions(item);
+    renderReviews(item);
+    renderShareButtons(item);
     applyPreviewCrop();
     lightbox.classList.add("open");
     document.dispatchEvent(new CustomEvent("catalog:lightbox-open", { detail: { item } }));
@@ -851,6 +1064,21 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
         renderOrderOptions(orderState.item);
       }
 
+      const shoeSizeButton = event.target.closest("[data-shoe-size]");
+      if (shoeSizeButton) {
+        const size = shoeSizeButton.dataset.shoeSize;
+        const selected = new Set(orderState.shoeSizes);
+        if (selected.has(size) && selected.size > 1) {
+          selected.delete(size);
+          delete orderState.shoeSizeQuantities[size];
+        } else {
+          selected.add(size);
+          orderState.shoeSizeQuantities[size] = orderState.shoeSizeQuantities[size] || 1;
+        }
+        orderState.shoeSizes = shoeSizeOptions.filter((option) => selected.has(option));
+        renderOrderOptions(orderState.item);
+      }
+
       const sizeQuantityButton = event.target.closest("[data-size-quantity-step]");
       if (sizeQuantityButton) {
         const size = sizeQuantityButton.dataset.sizeQuantity;
@@ -858,6 +1086,17 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
         const current = Math.max(1, Number(orderState.sizeQuantities[size]) || 1);
         const nextQuantity = Math.max(1, Math.min(99, current + Number(sizeQuantityButton.dataset.sizeQuantityStep)));
         orderState.sizeQuantities[size] = nextQuantity;
+        if (input) input.value = String(nextQuantity);
+        updateOrderLink();
+      }
+
+      const shoeSizeQuantityButton = event.target.closest("[data-shoe-size-quantity-step]");
+      if (shoeSizeQuantityButton) {
+        const size = shoeSizeQuantityButton.dataset.shoeSizeQuantity;
+        const input = document.querySelector(`[data-shoe-size-quantity-input="${size}"]`);
+        const current = Math.max(1, Number(orderState.shoeSizeQuantities[size]) || 1);
+        const nextQuantity = Math.max(1, Math.min(99, current + Number(shoeSizeQuantityButton.dataset.shoeSizeQuantityStep)));
+        orderState.shoeSizeQuantities[size] = nextQuantity;
         if (input) input.value = String(nextQuantity);
         updateOrderLink();
       }
@@ -873,6 +1112,10 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
 
       if (event.target.closest("#lightbox-cart")) {
         addCurrentItemToCart();
+      }
+
+      if (event.target.closest("[data-share-native]")) {
+        shareCurrentItem();
       }
     });
 
@@ -942,6 +1185,13 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
         const size = event.target.dataset.sizeQuantityInput;
         orderState.sizeQuantities[size] = Math.max(1, Math.min(99, Number(event.target.value) || 1));
         event.target.value = String(orderState.sizeQuantities[size]);
+        updateOrderLink();
+      }
+
+      if (event.target.matches("[data-shoe-size-quantity-input]")) {
+        const size = event.target.dataset.shoeSizeQuantityInput;
+        orderState.shoeSizeQuantities[size] = Math.max(1, Math.min(99, Number(event.target.value) || 1));
+        event.target.value = String(orderState.shoeSizeQuantities[size]);
         updateOrderLink();
       }
     });
