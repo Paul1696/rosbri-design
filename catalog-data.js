@@ -715,199 +715,199 @@ window.ROSBriCatalog = [
   },
   {
     "id": 103,
-    "title": "Ensemble accessoires ROSBRI wax 01",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-01.png"
+    "title": "Sac ROSBRI wax 111",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-111.png"
   },
   {
     "id": 104,
-    "title": "Ensemble accessoires ROSBRI wax 02",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-02.png"
+    "title": "Sac ROSBRI wax 112",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-112.png"
   },
   {
     "id": 105,
-    "title": "Ensemble accessoires ROSBRI wax 03",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-03.png"
+    "title": "Sac ROSBRI wax 113",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-113.png"
   },
   {
     "id": 106,
-    "title": "Ensemble accessoires ROSBRI wax 04",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-04.png"
+    "title": "Sac ROSBRI wax 114",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-114.png"
   },
   {
     "id": 107,
-    "title": "Ensemble accessoires ROSBRI wax 05",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-05.png"
+    "title": "Sac ROSBRI wax 115",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-115.png"
   },
   {
     "id": 108,
-    "title": "Ensemble accessoires ROSBRI wax 06",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-06.png"
+    "title": "Sac ROSBRI wax 116",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-116.png"
   },
   {
     "id": 109,
-    "title": "Ensemble accessoires ROSBRI wax 07",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-07.png"
+    "title": "Sac ROSBRI wax 117",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-117.png"
   },
   {
     "id": 110,
-    "title": "Ensemble accessoires ROSBRI wax 08",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-08.png"
+    "title": "Sac ROSBRI wax 118",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-118.png"
   },
   {
     "id": 111,
-    "title": "Ensemble vetements ROSBRI wax 01",
+    "title": "Ensemble adulte ROSBRI wax 01",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-01.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png"
   },
   {
     "id": 112,
-    "title": "Ensemble vetements ROSBRI wax 02",
+    "title": "Ensemble adulte ROSBRI wax 02",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-02.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-02.png"
   },
   {
     "id": 113,
-    "title": "Ensemble vetements ROSBRI wax 03",
+    "title": "Ensemble adulte ROSBRI wax 03",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-03.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-03.png"
   },
   {
     "id": 114,
-    "title": "Ensemble vetements ROSBRI wax 04",
+    "title": "Ensemble adulte ROSBRI wax 04",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-04.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-04.png"
   },
   {
     "id": 115,
-    "title": "Ensemble vetements ROSBRI wax 05",
+    "title": "Ensemble adulte ROSBRI wax 05",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-05.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-05.png"
   },
   {
     "id": 116,
-    "title": "Ensemble vetements ROSBRI wax 06",
+    "title": "Ensemble adulte ROSBRI wax 06",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-06.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-06.png"
   },
   {
     "id": 117,
-    "title": "Ensemble vetements ROSBRI wax 07",
+    "title": "Ensemble adulte ROSBRI wax 07",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-07.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-07.png"
   },
   {
     "id": 118,
-    "title": "Ensemble vetements ROSBRI wax 08",
+    "title": "Ensemble adulte ROSBRI wax 08",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-08.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-08.png"
   },
   {
     "id": 119,
-    "title": "Ensemble vetements ROSBRI wax 09",
+    "title": "Ensemble adulte ROSBRI wax 09",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-09.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-09.png"
   },
   {
     "id": 120,
-    "title": "Ensemble vetements ROSBRI wax 10",
+    "title": "Ensemble adulte ROSBRI wax 10",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-10.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-10.png"
   },
   {
     "id": 121,
-    "title": "Ensemble vetements ROSBRI wax 11",
+    "title": "Ensemble adulte ROSBRI wax 11",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-11.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-11.png"
   },
   {
     "id": 122,
-    "title": "Ensemble vetements ROSBRI wax 12",
+    "title": "Ensemble adulte ROSBRI wax 12",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-12.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-12.png"
   },
   {
     "id": 123,
-    "title": "Ensemble vetements ROSBRI wax 13",
+    "title": "Ensemble adulte ROSBRI wax 13",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-13.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-13.png"
   },
   {
     "id": 124,
-    "title": "Ensemble vetements ROSBRI wax 14",
+    "title": "Ensemble adulte ROSBRI wax 14",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-14.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-14.png"
   },
   {
     "id": 125,
-    "title": "Ensemble vetements ROSBRI wax 15",
+    "title": "Ensemble adulte ROSBRI wax 15",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-15.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-15.png"
   },
   {
     "id": 126,
-    "title": "Ensemble vetements ROSBRI wax 16",
+    "title": "Ensemble adulte ROSBRI wax 16",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-16.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-16.png"
   },
   {
     "id": 127,
-    "title": "Ensemble vetements ROSBRI wax 17",
+    "title": "Ensemble adulte ROSBRI wax 17",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-17.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-17.png"
   },
   {
     "id": 128,
-    "title": "Ensemble vetements ROSBRI wax 18",
+    "title": "Ensemble adulte ROSBRI wax 18",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-18.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-18.png"
   },
   {
     "id": 129,
-    "title": "Ensemble vetements ROSBRI wax 19",
+    "title": "Ensemble adulte ROSBRI wax 19",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-19.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-19.png"
   },
   {
     "id": 130,
-    "title": "Ensemble vetements ROSBRI wax 20",
+    "title": "Ensemble adulte ROSBRI wax 20",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-20.png"
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-20.png"
   },
   {
     "id": 131,
@@ -1470,10 +1470,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 168,
-    "title": "Ensemble accessoires ROSBRI wax 09",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-09.png",
+    "title": "Sac ROSBRI wax 119",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-119.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -1527,10 +1527,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 171,
-    "title": "Ensemble accessoires ROSBRI wax 10",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-10.png",
+    "title": "Sac ROSBRI wax 120",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-120.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -1584,10 +1584,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 174,
-    "title": "Ensemble accessoires ROSBRI wax 11",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-11.png",
+    "title": "Sac ROSBRI wax 121",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-121.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -1717,10 +1717,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 181,
-    "title": "Ensemble accessoires ROSBRI wax 12",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-12.png",
+    "title": "Sac ROSBRI wax 122",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-122.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2401,10 +2401,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 217,
-    "title": "Ensemble accessoires ROSBRI wax 13",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-13.png",
+    "title": "Sac ROSBRI wax 123",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-123.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2781,10 +2781,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 237,
-    "title": "Ensemble accessoires ROSBRI wax 14",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-14.png",
+    "title": "Sac ROSBRI wax 124",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-124.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2857,10 +2857,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 241,
-    "title": "Ensemble accessoires ROSBRI wax 15",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-15.png",
+    "title": "Sac ROSBRI wax 125",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-125.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2971,10 +2971,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 247,
-    "title": "Ensemble accessoires ROSBRI wax 16",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-16.png",
+    "title": "Sac ROSBRI wax 126",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-126.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3047,10 +3047,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 251,
-    "title": "Ensemble accessoires ROSBRI wax 17",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-17.png",
+    "title": "Sac ROSBRI wax 127",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-127.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3408,10 +3408,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 270,
-    "title": "Ensemble accessoires ROSBRI wax 18",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-18.png",
+    "title": "Sac ROSBRI wax 128",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-128.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3427,10 +3427,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 271,
-    "title": "Ensemble accessoires ROSBRI wax 19",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-19.png",
+    "title": "Sac ROSBRI wax 129",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-129.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3446,10 +3446,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 272,
-    "title": "Ensemble accessoires ROSBRI wax 20",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-20.png",
+    "title": "Sac ROSBRI wax 130",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-130.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3465,10 +3465,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 273,
-    "title": "Ensemble accessoires ROSBRI wax 21",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-21.png",
+    "title": "Sac ROSBRI wax 131",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-131.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3484,10 +3484,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 274,
-    "title": "Ensemble v?tements ROSBRI wax 21",
+    "title": "Ensemble adulte ROSBRI wax 21",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-21.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-21.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3503,10 +3503,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 275,
-    "title": "Ensemble v?tements ROSBRI wax 22",
+    "title": "Ensemble adulte ROSBRI wax 22",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-22.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-22.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3522,10 +3522,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 276,
-    "title": "Ensemble v?tements ROSBRI wax 23",
+    "title": "Ensemble adulte ROSBRI wax 23",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-23.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-23.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3541,10 +3541,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 277,
-    "title": "Ensemble v?tements ROSBRI wax 24",
+    "title": "Ensemble adulte ROSBRI wax 24",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-24.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-24.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3560,10 +3560,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 278,
-    "title": "Ensemble v?tements ROSBRI wax 25",
+    "title": "Ensemble adulte ROSBRI wax 25",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-25.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-25.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3579,10 +3579,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 279,
-    "title": "Ensemble v?tements ROSBRI wax 26",
+    "title": "Ensemble adulte ROSBRI wax 26",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-26.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-26.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3598,10 +3598,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 280,
-    "title": "Ensemble v?tements ROSBRI wax 27",
+    "title": "Ensemble adulte ROSBRI wax 27",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-27.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-27.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3617,10 +3617,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 281,
-    "title": "Ensemble v?tements ROSBRI wax 28",
+    "title": "Ensemble adulte ROSBRI wax 28",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-28.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-28.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3636,10 +3636,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 282,
-    "title": "Ensemble v?tements ROSBRI wax 29",
+    "title": "Ensemble adulte ROSBRI wax 29",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-29.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-29.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3655,10 +3655,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 283,
-    "title": "Ensemble accessoires ROSBRI wax 22",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-22.png",
+    "title": "Sac ROSBRI wax 132",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-132.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3674,10 +3674,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 284,
-    "title": "Ensemble v?tements ROSBRI wax 30",
+    "title": "Ensemble adulte ROSBRI wax 30",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-30.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-30.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3693,10 +3693,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 285,
-    "title": "Robe ROSBRI wax 01",
+    "title": "Robe adulte ROSBRI wax 01",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-01.png",
+    "image": "images/articles-site/robes/adultes/variants/robe-adultes-rosbri-wax-01.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3731,10 +3731,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 287,
-    "title": "Ensemble v?tements ROSBRI wax 31",
+    "title": "Ensemble adulte ROSBRI wax 31",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-31.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-31.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3750,10 +3750,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 288,
-    "title": "Ensemble v?tements ROSBRI wax 32",
+    "title": "Ensemble adulte ROSBRI wax 32",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-32.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-32.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3769,10 +3769,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 289,
-    "title": "Ensemble accessoires ROSBRI wax 23",
-    "category": "Ensembles",
-    "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/accessoires/variants/ensemble-accessoires-rosbri-wax-23.png",
+    "title": "Sac ROSBRI wax 133",
+    "category": "Sacs",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-133.png",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3788,10 +3788,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 290,
-    "title": "Robe ROSBRI wax 02",
+    "title": "Robe enfant ROSBRI wax 01",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-02.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-01.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3807,10 +3807,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 291,
-    "title": "Ensemble v?tements ROSBRI wax 33",
+    "title": "Ensemble adulte ROSBRI wax 33",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-33.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-33.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3826,10 +3826,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 292,
-    "title": "Robe ROSBRI wax 03",
+    "title": "Robe enfant ROSBRI wax 02",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-03.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-02.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3845,10 +3845,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 293,
-    "title": "Robe ROSBRI wax 04",
+    "title": "Robe enfant ROSBRI wax 03",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-04.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-03.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3864,10 +3864,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 294,
-    "title": "Ensemble v?tements ROSBRI wax 34",
+    "title": "Ensemble enfant ROSBRI wax 01",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-34.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-01.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3883,10 +3883,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 295,
-    "title": "Ensemble v?tements ROSBRI wax 35",
+    "title": "Ensemble enfant ROSBRI wax 02",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-35.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-02.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3902,10 +3902,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 296,
-    "title": "Ensemble v?tements ROSBRI wax 36",
+    "title": "Ensemble enfant ROSBRI wax 03",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-36.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-03.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3921,10 +3921,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 297,
-    "title": "Robe ROSBRI wax 05",
+    "title": "Robe enfant ROSBRI wax 04",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-05.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-04.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3940,10 +3940,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 298,
-    "title": "Ensemble v?tements ROSBRI wax 37",
+    "title": "Ensemble enfant ROSBRI wax 04",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-37.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-04.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3959,10 +3959,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 299,
-    "title": "Ensemble v?tements ROSBRI wax 38",
+    "title": "Ensemble enfant ROSBRI wax 05",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-38.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-05.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3978,10 +3978,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 300,
-    "title": "Robe ROSBRI wax 06",
+    "title": "Robe enfant ROSBRI wax 05",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-06.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-05.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -3997,10 +3997,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 301,
-    "title": "Ensemble v?tements ROSBRI wax 39",
+    "title": "Ensemble enfant ROSBRI wax 06",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-39.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-06.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4016,10 +4016,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 302,
-    "title": "Robe ROSBRI wax 07",
+    "title": "Robe enfant ROSBRI wax 06",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-07.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-06.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4035,10 +4035,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 303,
-    "title": "Robe ROSBRI wax 08",
+    "title": "Robe enfant ROSBRI wax 07",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-08.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-07.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4054,10 +4054,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 304,
-    "title": "Ensemble v?tements ROSBRI wax 40",
+    "title": "Ensemble enfant ROSBRI wax 07",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-40.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-07.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4073,10 +4073,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 305,
-    "title": "Ensemble v?tements ROSBRI wax 41",
+    "title": "Ensemble enfant ROSBRI wax 08",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-41.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-08.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4092,10 +4092,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 306,
-    "title": "Ensemble v?tements ROSBRI wax 42",
+    "title": "Ensemble enfant ROSBRI wax 09",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-42.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-09.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4111,10 +4111,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 307,
-    "title": "Robe ROSBRI wax 09",
+    "title": "Robe enfant ROSBRI wax 08",
     "category": "Robes",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/variants/robe-rosbri-wax-09.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-08.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4130,10 +4130,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 308,
-    "title": "Ensemble v?tements ROSBRI wax 43",
+    "title": "Ensemble enfant ROSBRI wax 10",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-43.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-10.png",
     "reviews": [
       {
         "name": "Murielle",
@@ -4149,10 +4149,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 309,
-    "title": "Ensemble v?tements ROSBRI wax 44",
+    "title": "Ensemble enfant ROSBRI wax 11",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/vetements/variants/ensemble-vetements-rosbri-wax-44.png",
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-11.png",
     "reviews": [
       {
         "name": "Murielle",

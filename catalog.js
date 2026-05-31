@@ -36,6 +36,8 @@
     Customisation: "Customisation",
     Accessoires: "Accessoires",
     Vetements: "Vêtements",
+    Adultes: "Adultes",
+    Enfants: "Enfants",
     Autres: "Autres"
   };
   const labels = { ...productLabels, ...subcategoryLabels };
@@ -51,6 +53,7 @@
   };
   const pageSize = 24;
   const sizeOptions = ["S", "M", "L", "XL", "XXL", "XXXL"];
+  const childSizeOptions = ["1 an", "2 ans", "3 ans", "4 ans", "5 ans", "6 ans", "7 ans", "8 ans", "9 ans"];
   const shoeSizeOptions = ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"];
   const colorVariants = [
     { id: "blanc", label: "Blanc", swatch: "#eeeee5" },
@@ -304,8 +307,13 @@
       return subcategoryLabels[item.category] ? item.category : "Autres";
     }
     if (category === "Ensembles") {
-      if (path.includes("/ensembles/accessoires/")) return "Accessoires";
-      if (path.includes("/ensembles/vetements/")) return "Vetements";
+      if (path.includes("/ensembles/enfants/")) return "Enfants";
+      if (path.includes("/ensembles/adultes/")) return "Adultes";
+      if (path.includes("/ensembles/vetements/")) return "Adultes";
+    }
+    if (category === "Robes") {
+      if (path.includes("/robes/enfants/")) return "Enfants";
+      if (path.includes("/robes/adultes/")) return "Adultes";
     }
     return "Tous";
   }
@@ -329,6 +337,14 @@
 
   function isClothing(item) {
     return ["Tshirts", "Ensembles", "Robes", "Boubous", "Chemises", "Polos", "Debardeurs"].includes(productCategory(item));
+  }
+
+  function isChildClothing(item) {
+    return isClothing(item) && productSubcategory(item) === "Enfants";
+  }
+
+  function sizeOptionsFor(item) {
+    return isChildClothing(item) ? childSizeOptions : sizeOptions;
   }
 
   function isFootwear(item) {
@@ -636,12 +652,13 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
   function optionMarkup(item) {
     const clothing = isClothing(item);
     const footwear = isFootwear(item);
+    const activeSizeOptions = sizeOptionsFor(item);
     const sizePicker = clothing
       ? `
         <div class="option-group">
           <strong>Taille</strong>
           <div class="size-list" role="group" aria-label="Choisir une ou plusieurs tailles">
-            ${sizeOptions.map((size) => `
+            ${activeSizeOptions.map((size) => `
               <button class="size-btn${orderState.sizes.includes(size) ? " active" : ""}" type="button" data-size="${size}" aria-pressed="${orderState.sizes.includes(size)}">${size}</button>
             `).join("")}
           </div>
@@ -949,8 +966,9 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (!item || !lightbox) return;
 
     orderState.item = item;
-    orderState.sizes = ["M"];
-    orderState.sizeQuantities = { M: 1 };
+    const defaultSize = isChildClothing(item) ? "4 ans" : "M";
+    orderState.sizes = [defaultSize];
+    orderState.sizeQuantities = { [defaultSize]: 1 };
     orderState.shoeSizes = ["39"];
     orderState.shoeSizeQuantities = { 39: 1 };
     orderState.color = (colorOptionsFor(item)[0] || colorVariants[0]).id;
@@ -1060,7 +1078,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
           selected.add(size);
           orderState.sizeQuantities[size] = orderState.sizeQuantities[size] || 1;
         }
-        orderState.sizes = sizeOptions.filter((option) => selected.has(option));
+        orderState.sizes = sizeOptionsFor(orderState.item).filter((option) => selected.has(option));
         renderOrderOptions(orderState.item);
       }
 
