@@ -17,7 +17,7 @@ while ((bm = blockRe.exec(catalogJs))) {
   const slug = bm[1];
   const colors = [...bm[2].matchAll(/"([^"]+)"/g)].map((x) => x[1]);
   const folderMatch = catalogData.match(
-    new RegExp(`"image": "images/([^/]+)/variants/${slug}-[^"]+\\.png"`)
+    new RegExp(`"image": "images/(.+?)/variants/${slug}-[^"]+\\.png"`)
   );
   const folder = folderMatch?.[1] || "heritage";
   for (const c of colors) {
@@ -27,6 +27,7 @@ while ((bm = blockRe.exec(catalogJs))) {
 
 const missing = [...keep].filter((p) => !fs.existsSync(path.join(root, p)));
 const extras = [];
+const staged = [];
 
 function walk(dir, rel = "") {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -36,7 +37,12 @@ function walk(dir, rel = "") {
       walk(full, relPath);
       continue;
     }
+    if (!/\.(png|jpe?g|webp|gif|svg)$/i.test(entry.name)) continue;
     const key = `images/${relPath.replace(/\\/g, "/")}`;
+    if (key.includes("/a-publier/")) {
+      staged.push(key);
+      continue;
+    }
     if (!keep.has(key)) extras.push(key);
   }
 }
@@ -46,5 +52,6 @@ walk(path.join(root, "images"));
 console.log("Referenced:", keep.size);
 console.log("Missing:", missing.length);
 console.log("Extra:", extras.length);
+console.log("A publier:", staged.length);
 if (missing.length) console.log(missing.slice(0, 5));
 if (extras.length) console.log(extras.slice(0, 5));

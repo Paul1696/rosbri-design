@@ -2,7 +2,7 @@
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const WHATSAPP_PHONE = "237690087213";
   const catalog = window.ROSBriCatalog || [];
-  const categories = ["Tous", "Heritage", "Anime", "Maman", "Customisation", "Sacs", "Accessoires", "Disponibles"];
+  const categories = ["Tous", "Heritage", "Anime", "Maman", "Customisation", "Sacs", "Ensembles", "Babouches", "Chapeaux", "Pochettes", "Accessoires", "Disponibles"];
   const labels = {
     Tous: "Tous les articles",
     Heritage: "Héritage & Culture",
@@ -10,6 +10,10 @@
     Maman: "Maman & Famille",
     Customisation: "Customisation",
     Sacs: "Sacs à main",
+    Ensembles: "Ensembles",
+    Babouches: "Babouches",
+    Chapeaux: "Chapeaux",
+    Pochettes: "Pochettes",
     Accessoires: "Accessoires",
     Disponibles: "Disponibles maintenant"
   };
@@ -60,7 +64,7 @@
   }
 
   catalog.forEach((item) => {
-    const match = item.image.match(/^images\/([^/]+)\/variants\/(.+)\.png$/i);
+    const match = item.image.match(/^images\/(.+)\/variants\/(.+)\.png$/i);
     if (!match) return;
     slugToCategory[slugFromFileName(`${match[2]}.png`)] = match[1];
   });
