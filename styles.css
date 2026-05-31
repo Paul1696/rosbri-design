@@ -148,7 +148,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--white);
   background:
     linear-gradient(180deg, rgba(8, 16, 14, 0.22), rgba(8, 16, 14, 0.8)),
-    url("images/optimized/ChatGPT Image 21 mai 2026, 23_57_40.jpg") center/cover;
+    url("images/heritage/variants/tshirt-chutes-lobe-kribi-vert-foret.png") center/cover;
 }
 
 .hero-layout {
@@ -851,7 +851,10 @@ h1 {
 .lightbox.open { display: grid; }
 
 .lightbox-panel {
-  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  width: min(1180px, 100%);
+  max-height: min(92vh, 900px);
   overflow: hidden;
   border-radius: 8px;
   background: var(--white);
@@ -860,7 +863,8 @@ h1 {
 .lightbox-visual {
   position: relative;
   width: 100%;
-  height: min(72vh, 680px);
+  min-height: 520px;
+  height: min(92vh, 900px);
   overflow: hidden;
   background: #f3f5f2;
 }
@@ -873,9 +877,25 @@ h1 {
 
 .lightbox-info {
   display: flex;
+  min-width: 0;
+  max-height: min(92vh, 900px);
+  overflow-y: auto;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
-  padding: 16px;
+  gap: 18px;
+  padding: 24px;
+}
+
+.lightbox-info > div:first-child {
+  min-width: 0;
+}
+
+.lightbox-info strong {
+  font-size: 1.06rem;
+}
+
+.lightbox-info p {
+  margin: 4px 0 0;
 }
 
 .order-options {
@@ -919,6 +939,48 @@ h1 {
   gap: 8px;
 }
 
+.size-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
+  gap: 8px;
+}
+
+.size-btn {
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fbfa;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.size-btn.active,
+.size-btn:hover {
+  border-color: var(--brand);
+  background: #e8faf6;
+  color: var(--brand-dark);
+}
+
+.size-quantity-list {
+  display: grid;
+  gap: 8px;
+}
+
+.size-quantity-row {
+  display: grid;
+  grid-template-columns: minmax(48px, 0.35fr) minmax(150px, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.size-quantity-row > span {
+  font-weight: 900;
+  color: var(--brand-dark);
+}
+
 .swatch-btn {
   display: inline-flex;
   min-height: 38px;
@@ -950,10 +1012,56 @@ h1 {
   color: var(--brand-dark);
 }
 
+.quantity-control {
+  display: grid;
+  grid-template-columns: 42px minmax(74px, 1fr) 42px;
+  width: min(220px, 100%);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fbfa;
+}
+
+.quantity-control.compact {
+  width: min(180px, 100%);
+  grid-template-columns: 38px minmax(62px, 1fr) 38px;
+}
+
+.quantity-control button,
+.quantity-control input {
+  min-height: 42px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 900;
+  text-align: center;
+}
+
+.quantity-control button {
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background: #e8faf6;
+  color: var(--brand-dark);
+}
+
+.quantity-control input {
+  border-inline: 1px solid var(--line);
+}
+
 .lightbox-actions {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) 42px;
   align-items: center;
   gap: 10px;
+}
+
+.lightbox-actions .primary-btn,
+.lightbox-actions .secondary-btn {
+  min-height: 44px;
+  padding-inline: 14px;
 }
 
 .close-btn {
@@ -977,17 +1085,21 @@ h1 {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: #20b05c;
+  background: #25d366;
   color: var(--white);
-  font-size: 1.55rem;
-  font-weight: 900;
-  box-shadow: 0 16px 34px rgba(32, 176, 92, 0.32);
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.32);
   transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.whatsapp svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
 
 .whatsapp:hover {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 20px 40px rgba(32, 176, 92, 0.4);
+  box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
 }
 
 .footer {
@@ -1002,12 +1114,11 @@ h1 {
   gap: 28px;
 }
 
-.footer img {
-  width: 64px;
-  height: 64px;
+.footer-brand {
+  display: block;
   margin-bottom: 14px;
-  border-radius: 50%;
-  object-fit: cover;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
 }
 
 .footer p,
@@ -1065,6 +1176,22 @@ h1 {
   .filter-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .lightbox-panel {
+    grid-template-columns: 1fr;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+  }
+
+  .lightbox-visual {
+    min-height: 360px;
+    height: min(54vh, 520px);
+  }
+
+  .lightbox-info {
+    max-height: none;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1092,9 +1219,17 @@ h1 {
   .select { width: 100%; }
   .filter-list { grid-template-columns: 1fr; }
   .lightbox { padding: 12px; }
-  .lightbox-info { flex-direction: column; }
-  .lightbox-actions { align-items: stretch; flex-direction: column; }
+  .lightbox-info { padding: 16px; }
+  .lightbox-visual {
+    min-height: 280px;
+    height: 46vh;
+  }
+  .lightbox-actions {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
   .lightbox-actions .primary-btn,
+  .lightbox-actions .secondary-btn,
   .close-btn { width: 100%; }
 }
 

@@ -1,5 +1,6 @@
 (function () {
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
+  const WHATSAPP_PHONE = "237690087213";
   const catalog = window.ROSBriCatalog || [];
   const categories = ["Tous", "Heritage", "Anime", "Maman", "Customisation", "Sacs", "Accessoires", "Disponibles"];
   const labels = {
@@ -22,7 +23,7 @@
     visibleLimit: 24
   };
   const pageSize = 24;
-  const sizeOptions = ["S", "M", "L", "XL", "XXL"];
+  const sizeOptions = ["S", "M", "L", "XL", "XXL", "XXXL"];
   const colorVariants = [
     { id: "blanc", label: "Blanc", swatch: "#eeeee5" },
     { id: "noir", label: "Noir", swatch: "#1e1f1f" },
@@ -33,137 +34,122 @@
     { id: "jaune", label: "Jaune", cropX: "-50%", cropY: "-50%", swatch: "#ffe6a4", tint: "#ffd777" },
     { id: "bleu-nuit", label: "Bleu nuit", swatch: "#1e2b48" }
   ];
-  const productColorVariants = {
-    1: [
-      productVariant("tshirt-reine-africaine-wax", "sable", "Sable", "#c4ab81"),
-      productVariant("tshirt-reine-africaine-wax", "blanc", "Blanc", "#eeeee5"),
-      productVariant("tshirt-reine-africaine-wax", "noir", "Noir", "#222322"),
-      productVariant("tshirt-reine-africaine-wax", "bleu-nuit", "Bleu nuit", "#263452"),
-      productVariant("tshirt-reine-africaine-wax", "bordeaux", "Bordeaux", "#702737"),
-      productVariant("tshirt-reine-africaine-wax", "vert-sauge", "Vert sauge", "#8fa48b")
-    ],
-    2: darkProductVariants("tshirt-luffy-feu-foudre"),
-    3: darkProductVariants("tshirt-luffy-impact"),
-    4: [
-      productVariant("tshirt-pont-allemands-edea", "vert-foret", "Vert forêt", "#184931"),
-      productVariant("tshirt-pont-allemands-edea", "noir", "Noir", "#1e1f1f"),
-      productVariant("tshirt-pont-allemands-edea", "bleu-nuit", "Bleu nuit", "#1e2b48"),
-      productVariant("tshirt-pont-allemands-edea", "bordeaux", "Bordeaux", "#672330"),
-      productVariant("tshirt-pont-allemands-edea", "marron", "Marron", "#563a24")
-    ],
-    5: mamanLightVariants("tshirt-merci-maman-01"),
-    6: mamanLightVariants("tshirt-merci-maman-02"),
-    "maman-coeur-force": mamanLightVariants("tshirt-maman-coeur-force"),
-    "maman-merci-tout": [
-      productVariant("tshirt-merci-maman-meilleure", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-merci-maman-meilleure", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-merci-maman-meilleure", "mauve", "Mauve", "#d5b3f4"),
-      productVariant("tshirt-merci-maman-meilleure", "jaune", "Jaune", "#ffe6a4")
-    ],
-    "maman-amour-force": [
-      productVariant("tshirt-maman-amour-force", "blanc", "Blanc", "#eeeee5"),
-      productVariant("tshirt-maman-amour-force", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-maman-amour-force", "mauve", "Mauve", "#d5b3f4"),
-      productVariant("tshirt-maman-amour-force", "menthe", "Vert menthe", "#cfeee4")
-    ],
-    24: [
-      productVariant("tshirt-merci-maman-20", "blanc", "Blanc", "#eeeee5"),
-      productVariant("tshirt-merci-maman-20", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-merci-maman-20", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-merci-maman-20", "jaune", "Jaune", "#ffe6a4")
-    ],
-    25: [
-      productVariant("tshirt-merci-maman-21", "blanc", "Blanc", "#eeeee5"),
-      productVariant("tshirt-merci-maman-21", "sable", "Sable", "#decfb5"),
-      productVariant("tshirt-merci-maman-21", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-merci-maman-21", "mauve", "Mauve", "#d5b3f4")
-    ],
-    26: foldedMamanVariants("tshirt-merci-maman-22"),
-    27: [
-      productVariant("tshirt-merci-maman-23", "blanc", "Blanc", "#eeeee5"),
-      productVariant("tshirt-merci-maman-23", "sable", "Sable", "#decfb5"),
-      productVariant("tshirt-merci-maman-23", "mauve", "Mauve", "#d5b3f4"),
-      productVariant("tshirt-merci-maman-23", "menthe", "Vert menthe", "#cfeee4")
-    ],
-    28: [
-      productVariant("tshirt-merci-maman-24", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-merci-maman-24", "mauve", "Mauve", "#d5b3f4"),
-      productVariant("tshirt-merci-maman-24", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-merci-maman-24", "sable", "Sable", "#decfb5")
-    ],
-    29: foldedMamanVariants("tshirt-merci-maman-25"),
-    30: [
-      productVariant("tshirt-merci-maman-26", "sable", "Sable", "#decfb5"),
-      productVariant("tshirt-merci-maman-26", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-merci-maman-26", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-merci-maman-26", "mauve", "Mauve", "#d5b3f4")
-    ],
-    31: [
-      productVariant("tshirt-merci-maman-27", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-merci-maman-27", "mauve", "Mauve", "#d5b3f4"),
-      productVariant("tshirt-merci-maman-27", "sable", "Sable", "#decfb5"),
-      productVariant("tshirt-merci-maman-27", "rose", "Rose", "#f7b8c9")
-    ],
-    32: darkProductVariants("tshirt-patricks-feu"),
-    33: [
-      productVariant("tshirt-world-best-mom", "mauve", "Mauve", "#d5b3f4"),
-      productVariant("tshirt-world-best-mom", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-world-best-mom", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-world-best-mom", "jaune", "Jaune", "#ffe6a4")
-    ],
-    35: [
-      productVariant("tshirt-maman-mon-bonheur", "sable", "Sable", "#decfb5"),
-      productVariant("tshirt-maman-mon-bonheur", "rose", "Rose", "#f7b8c9"),
-      productVariant("tshirt-maman-mon-bonheur", "menthe", "Vert menthe", "#cfeee4"),
-      productVariant("tshirt-maman-mon-bonheur", "mauve", "Mauve", "#d5b3f4")
-    ],
-    36: heritageThreeVariants("tshirt-palaise-dschang"),
-    37: heritageThreeVariants("tshirt-chutes-lobe"),
-    38: heritageThreeVariants("tshirt-mont-cameroun")
+  const categoryFolders = {
+    Heritage: "heritage",
+    Anime: "anime",
+    Maman: "maman",
+    Customisation: "customisation",
+    Sacs: "sacs"
   };
+  const colorSuffixes = [
+    "rouge-corail", "sable-clair", "gris-fonce", "vert-foret", "vert-sauge", "vert-olive",
+    "bleu-canard", "bleu-ciel", "bleu-nuit", "rouge", "blancs", "bordeaux", "menthe",
+    "orange", "mauve", "jaune", "marron", "sable", "blanc", "noir", "rose", "gris", "dore"
+  ];
+  const slugToCategory = {};
+
+  function slugFromFileName(fileName) {
+    const base = fileName.replace(/\.(png|jpg|jpeg)$/i, "");
+    for (let i = 0; i < colorSuffixes.length; i += 1) {
+      const color = colorSuffixes[i];
+      if (base.endsWith(`-${color}`)) {
+        return base.slice(0, -(color.length + 1));
+      }
+    }
+    return base;
+  }
+
+  catalog.forEach((item) => {
+    const match = item.image.match(/^images\/([^/]+)\/variants\/(.+)\.png$/i);
+    if (!match) return;
+    slugToCategory[slugFromFileName(`${match[2]}.png`)] = match[1];
+  });
+
+  const tshirtColors = {
+    blanc: { label: "Blanc", swatch: "#eeeee5" },
+    noir: { label: "Noir", swatch: "#1e1f1f" },
+    sable: { label: "Sable", swatch: "#decfb5" },
+    rose: { label: "Rose", swatch: "#f7b8c9" },
+    mauve: { label: "Mauve", swatch: "#d7b3f4" },
+    menthe: { label: "Vert menthe", swatch: "#cfeee4" },
+    jaune: { label: "Jaune", swatch: "#ffe6a4" },
+    "bleu-nuit": { label: "Bleu nuit", swatch: "#1e2b48" },
+    gris: { label: "Gris", swatch: "#c9c9c7" },
+    orange: { label: "Orange", swatch: "#ef6f16" },
+    bordeaux: { label: "Bordeaux", swatch: "#762033" },
+    "vert-sauge": { label: "Vert sauge", swatch: "#b9ca8b" },
+    "vert-foret": { label: "Vert foret", swatch: "#184931" },
+    "bleu-ciel": { label: "Bleu ciel", swatch: "#9fd2f2" },
+    "vert-olive": { label: "Vert olive", swatch: "#536331" },
+    "gris-fonce": { label: "Gris fonce", swatch: "#4d5354" },
+    marron: { label: "Marron", swatch: "#4a2818" },
+    "rouge-corail": { label: "Rouge corail", swatch: "#f04f43" },
+    "sable-clair": { label: "Sable clair", swatch: "#eee1cd" },
+    "bleu-canard": { label: "Bleu canard", swatch: "#468f96" }
+  };
+  const productColorVariants = {
+    1: fullTshirtVariants("tshirt-reine-africaine-wax", ["orange", "mauve", "jaune", "bordeaux", "vert-sauge", "bleu-ciel", "noir", "sable", "rose", "gris"]),
+    2: fullTshirtVariants("tshirt-luffy-feu-foudre", ["orange", "mauve", "jaune", "bordeaux", "vert-sauge", "bleu-ciel", "noir", "sable", "rose", "gris"]),
+    3: fullTshirtVariants("tshirt-pont-allemands-edea", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    4: fullTshirtVariants("tshirt-merci-maman-meilleure", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    5: fullTshirtVariants("tshirt-maman-merci-pour-tout", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    6: fullTshirtVariants("tshirt-merci-maman-meilleure-studio", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    7: fullTshirtVariants("tshirt-maman-coeur-force", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    8: fullTshirtVariants("tshirt-maman-amour-force", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    9: fullTshirtVariants("tshirt-maman-merci-pour-tout-amour", ["blanc", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    10: fullTshirtVariants("tshirt-maman-mon-bonheur", ["blanc", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    11: fullTshirtVariants("tshirt-maman-mon-bonheur-studio", ["blanc", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    12: fullTshirtVariants("tshirt-maman-a-croquer", ["blanc", "sable", "vert-sauge", "mauve", "rose", "gris", "noir", "bleu-ciel", "bordeaux", "orange"]),
+    13: fullTshirtVariants("tshirt-super-maman", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    14: fullTshirtVariants("tshirt-mom-maman-a-cherir", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    15: fullTshirtVariants("tshirt-mama-coeur-prenoms", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    16: fullTshirtVariants("tshirt-mom-personnalise-prenoms", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    17: fullTshirtVariants("tshirt-world-best-mom", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    18: fullTshirtVariants("tshirt-falaise-dschang", ["blanc", "sable", "vert-sauge", "bleu-ciel", "mauve", "gris", "noir", "bordeaux", "orange", "jaune"]),
+    19: fullTshirtVariants("tshirt-chutes-lobe-kribi", ["vert-foret", "bordeaux", "jaune", "noir", "sable", "blanc", "gris", "bleu-ciel", "vert-sauge", "mauve"]),
+    20: fullTshirtVariants("tshirt-mont-cameroun-buea", ["vert-foret", "bordeaux", "jaune", "sable", "noir", "blanc", "gris-fonce", "vert-olive", "orange", "gris"]),
+    21: fullTshirtVariants("tshirt-cases-mousgoum-maroua", ["vert-foret", "bordeaux", "jaune", "sable", "noir", "bleu-ciel", "vert-sauge", "rose", "mauve", "orange"]),
+    22: fullTshirtVariants("tshirt-rois-bamoun-foumban", ["vert-foret", "bordeaux", "jaune", "sable", "noir", "blanc", "vert-olive", "marron", "gris-fonce", "orange"]),
+    23: fullTshirtVariants("tshirt-nouvelle-liberte-douala", ["gris", "rose", "sable", "noir", "bleu-ciel", "vert-sauge", "bordeaux", "jaune", "mauve", "orange"]),
+    24: fullTshirtVariants("tshirt-monument-reunification-yaounde", ["vert-foret", "bordeaux", "jaune", "noir", "sable", "blanc", "vert-olive", "orange", "gris-fonce", "bleu-nuit"]),
+    25: fullTshirtVariants("tshirt-mayi-09-mai", ["sable", "bleu-ciel", "vert-sauge", "mauve", "jaune", "orange", "bleu-nuit", "gris-fonce", "bordeaux", "rouge-corail"]),
+    26: fullTshirtVariants("tshirt-je-suis-batanga", ["sable", "blanc", "vert-sauge", "mauve", "jaune", "rose", "bleu-ciel", "bordeaux", "noir", "gris"]),
+    27: fullTshirtVariants("tshirt-kribi-cest-ma-ville", ["blanc", "sable", "vert-sauge", "mauve", "rose", "bleu-ciel", "jaune", "gris", "menthe", "sable-clair"]),
+    28: fullTshirtVariants("tshirt-mayi-kribi-batanga", ["blanc", "noir", "sable", "gris", "bleu-ciel", "vert-sauge", "rose", "mauve", "sable-clair", "jaune"]),
+    29: fullTshirtVariants("tshirt-fete-mayi-kribi-batanga", ["blanc", "sable", "vert-sauge", "bleu-ciel", "mauve", "rose", "gris", "bleu-canard", "jaune", "sable-clair"]),
+    30: fullTshirtVariants("tshirt-mayi-2026-batanga", ["vert-sauge", "sable", "blanc", "rose", "bleu-ciel", "mauve", "jaune", "orange", "gris", "bleu-nuit"]),
+    31: fullTshirtVariants("tshirt-for-you-jimmy", ["blanc", "sable", "rose", "vert-sauge", "mauve", "bleu-ciel", "gris", "jaune", "bordeaux", "noir"]),
+    32: fullTshirtVariants("duo-tshirts-big-brother-lil-brother", ["blanc", "sable", "sable-clair", "rose", "vert-sauge", "mauve", "bleu-ciel", "gris", "bordeaux", "noir"]),
+    39: fullTshirtVariants("tshirt-systeme-solaire-pacman", ["blanc","gris","bleu-nuit","bleu-ciel","bordeaux","vert-foret","vert-sauge","sable","noir","orange"]),
+    40: fullTshirtVariants("tshirt-life-is-beautiful-mandala", ["blanc","noir","gris","bleu-nuit","bleu-ciel","bordeaux","vert-foret","vert-sauge","rose","jaune"]),
+    41: fullTshirtVariants("tshirt-des-colores-eclaboussures", ["noir","blanc","gris","bleu-nuit","bleu-ciel","vert-sauge","bordeaux","vert-foret","sable","jaune"]),
+    42: fullTshirtVariants("tshirt-queen-heritage-africain", ["noir","blanc","gris","bleu-nuit","bleu-ciel","vert-sauge","bordeaux","vert-foret","sable","jaune"]),
+    43: fullTshirtVariants("tshirt-black-is-beautiful-heritage", ["noir","blanc","gris","bleu-nuit","bleu-ciel","vert-sauge","bordeaux","vert-foret","sable","jaune"]),
+    44: fullTshirtVariants("tshirt-landry-feg-leopard", ["noir","sable","gris","bleu-nuit","bleu-ciel","vert-sauge","bordeaux","vert-foret","jaune","blanc"]),
+    45: fullTshirtVariants("tshirt-profil-femme-afrique-colore", ["noir","blanc","gris","bleu-nuit","bleu-ciel","vert-sauge","bordeaux","vert-foret","sable","jaune"]),
+    46: fullTshirtVariants("tshirt-heritage-afrique-savane-coucher-soleil", ["blanc","gris","bleu-nuit","bleu-ciel","bordeaux","vert-foret","vert-sauge","sable","orange","noir"]),
+    47: fullTshirtVariants("tshirt-ako-yem-trois-femmes-tropical", ["blanc","sable","noir","bleu-nuit","bleu-ciel","vert-foret","bordeaux","jaune","rose","menthe"]),
+    48: fullTshirtVariants("tshirt-maman-bonne-fete-des-meres-tropical", ["blanc","sable","noir","bleu-nuit","bleu-ciel","vert-foret","bordeaux","jaune","rose","menthe"])
+  };
+  const productVariantSlugs = {};
   const orderState = {
     item: null,
-    size: "M",
+    sizes: ["M"],
+    sizeQuantities: { M: 1 },
     color: colorVariants[0].id,
+    quantity: 1,
     customText: ""
   };
-  const variantGroups = [
-    {
-      id: "maman-coeur-force",
-      title: "T-shirt Maman mon cœur ma force",
-      category: "Maman",
-      price: "6 500 FCFA",
-      image: "images/ChatGPT Image 21 mai 2026, 23_35_03.png",
-      variantIds: [7],
-      colorPreview: true
-    },
-    {
-      id: "maman-merci-tout",
-      title: "T-shirt Merci Maman - Tu es la meilleure",
-      category: "Maman",
-      price: "6 500 FCFA",
-      image: "images/ChatGPT Image 21 mai 2026, 23_35_12.png",
-      variantIds: [8, 9, 10],
-      colorPreview: true
-    },
-    {
-      id: "maman-amour-force",
-      title: "T-shirt Maman amour et force",
-      category: "Maman",
-      price: "6 500 FCFA",
-      image: "images/ChatGPT Image 21 mai 2026, 23_35_35.png",
-      variantIds: [11, 12, 13, 14, 15],
-      colorPreview: true
-    },
-  ];
-  const hiddenProductIds = [16, 17, 18, 19, 20, 21, 22, 23, 34];
+  const variantGroups = [];
+  const hiddenProductIds = [];
   const groupedVariantIds = new Set([
     ...variantGroups.flatMap((group) => group.variantIds),
     ...hiddenProductIds
   ]);
+  const visibleVariantGroups = variantGroups.filter(isVisibleCatalogItem);
   const catalogView = [
-    ...catalog.filter((item) => !groupedVariantIds.has(item.id)),
-    ...variantGroups.map((group) => ({
+    ...catalog.filter((item) => !groupedVariantIds.has(item.id) && isVisibleCatalogItem(item)),
+    ...visibleVariantGroups.map((group) => ({
       ...group,
       id: group.id,
       sourceIds: group.variantIds
@@ -185,12 +171,26 @@
   }
 
   function productVariant(productSlug, colorSlug, label, swatch) {
+    const folder = slugToCategory[productSlug] || categoryFolders.Heritage;
     return {
       id: colorSlug,
       label,
       swatch,
-      image: `images/variants/${productSlug}-${colorSlug}.png`
+      image: `images/${folder}/variants/${productSlug}-${colorSlug}.png`
     };
+  }
+
+  function fullTshirtVariants(productSlug, colorIds) {
+    return colorIds.map((colorId) => {
+      const color = tshirtColors[colorId];
+      return productVariant(productSlug, colorId, color.label, color.swatch);
+    });
+  }
+
+  function universalProductVariants(productSlug) {
+    return colorVariants.map((variant) => (
+      productVariant(productSlug, variant.id, variant.label, variant.swatch)
+    ));
   }
 
   function darkProductVariants(productSlug) {
@@ -245,13 +245,20 @@
     return displayTitle(item).toLowerCase().includes("t-shirt");
   }
 
+  function isVisibleCatalogItem(item) {
+    return Boolean(item);
+  }
+
   function productVariantsFor(item) {
-    return item ? (productColorVariants[item.id] || []) : [];
+    if (!item) return [];
+    const productSlug = productVariantSlugs[item.id];
+    return productSlug ? universalProductVariants(productSlug) : (productColorVariants[item.id] || []);
   }
 
   function colorOptionsFor(item) {
     if (!item || !isTshirt(item)) return [];
     const productVariants = productVariantsFor(item);
+    if (productVariants.length > colorVariants.length) return productVariants;
     return colorVariants.map((variant) => ({
       ...variant,
       image: (productVariants.find((productVariant) => productVariant.id === variant.id) || {}).image
@@ -280,21 +287,62 @@
     return options.find((variant) => variant.id === orderState.color) || options[0] || colorVariants[0];
   }
 
+  function selectedSizeQuantities() {
+    return orderState.sizes.map((size) => ({
+      size,
+      quantity: Math.max(1, Math.min(99, Number(orderState.sizeQuantities[size]) || 1))
+    }));
+  }
+
+  function totalSelectedSizeQuantity() {
+    return selectedSizeQuantities().reduce((total, item) => total + item.quantity, 0);
+  }
+
+  function sizeQuantitiesText() {
+    return selectedSizeQuantities().map((item) => `${item.size} x ${item.quantity}`).join(", ");
+  }
+
+  function cartItems() {
+    try {
+      return JSON.parse(localStorage.getItem("rosbriCart") || "[]");
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function saveCartItems(items) {
+    localStorage.setItem("rosbriCart", JSON.stringify(items));
+  }
+
+  function whatsAppUrl(message) {
+    return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+  }
+
   function orderUrlWithOptions(item, options = {}) {
     const productUrl = `${SITE_URL}boutique.html#article-${item.id}`;
     const details = [];
-    if (options.size) details.push(`Taille: ${options.size}`);
+    if (options.sizeQuantities && options.sizeQuantities.length) {
+      details.push(`Tailles: ${options.sizeQuantities.map((item) => `${item.size} x ${item.quantity}`).join(", ")}`);
+    } else if (options.sizes && options.sizes.length) {
+      details.push(`Tailles: ${options.sizes.join(", ")}`);
+    }
     if (options.color) details.push(`Couleur: ${options.color}`);
+    if (options.quantity) details.push(`Quantite: ${options.quantity}`);
     if (options.customText) details.push(`Personnalisation: ${options.customText}`);
-    const detailsText = details.length ? ` ${details.join(" | ")}.` : "";
-    const message = `Bonjour ROSBRI DESIGN, je suis intéressé par ${displayTitle(item)} (${item.price}).${detailsText} Lien: ${productUrl}`;
-    return `https://wa.me/?text=${encodeURIComponent(message)}`;
+    const detailsBlock = details.length ? `\n\n${details.join("\n")}` : "";
+    const message = `Bonjour ROSBRI DESIGN 👋
+
+Je souhaite commander : ${displayTitle(item)}
+Prix affiché : ${item.price}${detailsBlock}
+
+Lien article : ${productUrl}
+
+Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
+    return whatsAppUrl(message);
   }
 
   function optimizedImage(path) {
-    const dot = path.lastIndexOf(".");
-    const base = dot > -1 ? path.slice(0, dot) : path;
-    return base.replace("images/", "images/optimized/") + ".jpg";
+    return path;
   }
 
   function priceBand(item) {
@@ -439,14 +487,37 @@
   }
 
   function optionMarkup(item) {
-    const sizePicker = isTshirt(item)
+    const tshirt = isTshirt(item);
+    const sizePicker = tshirt
       ? `
-        <label class="option-group" for="size-select">
+        <div class="option-group">
           <strong>Taille</strong>
-          <select class="select" id="size-select">
-            ${sizeOptions.map((size) => `<option value="${size}"${size === orderState.size ? " selected" : ""}>${size}</option>`).join("")}
-          </select>
-        </label>
+          <div class="size-list" role="group" aria-label="Choisir une ou plusieurs tailles">
+            ${sizeOptions.map((size) => `
+              <button class="size-btn${orderState.sizes.includes(size) ? " active" : ""}" type="button" data-size="${size}" aria-pressed="${orderState.sizes.includes(size)}">${size}</button>
+            `).join("")}
+          </div>
+        </div>
+      `
+      : "";
+
+    const sizeQuantityPicker = tshirt
+      ? `
+        <div class="option-group">
+          <strong>Quantite par taille</strong>
+          <div class="size-quantity-list">
+            ${selectedSizeQuantities().map((entry) => `
+              <div class="size-quantity-row">
+                <span>${entry.size}</span>
+                <div class="quantity-control compact">
+                  <button type="button" data-size-quantity="${entry.size}" data-size-quantity-step="-1" aria-label="Retirer un article taille ${entry.size}">-</button>
+                  <input type="number" min="1" max="99" value="${entry.quantity}" inputmode="numeric" data-size-quantity-input="${entry.size}" aria-label="Quantite taille ${entry.size}">
+                  <button type="button" data-size-quantity="${entry.size}" data-size-quantity-step="1" aria-label="Ajouter un article taille ${entry.size}">+</button>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </div>
       `
       : "";
 
@@ -478,7 +549,18 @@
     return `
       <div class="order-options">
         ${sizePicker}
+        ${sizeQuantityPicker}
         ${colorPicker}
+        ${tshirt ? "" : `
+          <div class="option-group quantity-group">
+            <strong>Quantite</strong>
+            <div class="quantity-control">
+              <button type="button" data-quantity-step="-1" aria-label="Retirer un article">-</button>
+              <input id="quantity-input" type="number" min="1" max="99" value="${orderState.quantity}" inputmode="numeric">
+              <button type="button" data-quantity-step="1" aria-label="Ajouter un article">+</button>
+            </div>
+          </div>
+        `}
         ${customField}
       </div>
     `;
@@ -504,9 +586,12 @@
     const summary = byId("choice-summary");
     const tshirt = isTshirt(orderState.item);
     const colorChoices = hasColorChoices(orderState.item);
+    const sizeQuantities = tshirt ? selectedSizeQuantities() : [];
     const selectedOptions = {
-      size: tshirt ? orderState.size : "",
+      sizes: tshirt ? orderState.sizes.slice() : [],
+      sizeQuantities,
       color: colorChoices ? selectedColor().label : "",
+      quantity: tshirt ? totalSelectedSizeQuantity() : orderState.quantity,
       customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
     };
     if (order) {
@@ -515,8 +600,9 @@
     }
     if (summary) {
       const parts = [];
-      if (selectedOptions.size) parts.push(`taille ${selectedOptions.size}`);
+      if (selectedOptions.sizeQuantities.length) parts.push(`tailles ${sizeQuantitiesText()}`);
       if (selectedOptions.color) parts.push(`couleur ${selectedOptions.color}`);
+      parts.push(`${selectedOptions.quantity} article${selectedOptions.quantity > 1 ? "s" : ""}`);
       if (selectedOptions.customText) parts.push("personnalisation ajoutée");
       summary.textContent = parts.length ? `Votre choix: ${parts.join(" · ")}` : "Votre choix sera confirmé sur WhatsApp.";
     }
@@ -527,6 +613,35 @@
     if (!target) return;
     target.innerHTML = optionMarkup(item);
     updateOrderLink();
+  }
+
+  function addCurrentItemToCart() {
+    if (!orderState.item) return;
+    const item = orderState.item;
+    const entry = {
+      id: item.id,
+      title: displayTitle(item),
+      price: item.price,
+      sizes: isTshirt(item) ? orderState.sizes.slice() : [],
+      sizeQuantities: isTshirt(item) ? selectedSizeQuantities() : [],
+      color: hasColorChoices(item) ? selectedColor().label : "",
+      quantity: isTshirt(item) ? totalSelectedSizeQuantity() : orderState.quantity,
+      customText: canCustomize(item) ? orderState.customText.trim() : "",
+      url: `${SITE_URL}boutique.html#article-${item.id}`
+    };
+    const items = cartItems();
+    items.push(entry);
+    saveCartItems(items);
+
+    const cart = byId("lightbox-cart");
+    const summary = byId("choice-summary");
+    if (cart) cart.textContent = `Ajoute au panier (${items.length})`;
+    if (summary) {
+      const sizes = entry.sizeQuantities.length
+        ? ` (${entry.sizeQuantities.map((size) => `${size.size} x ${size.quantity}`).join(", ")})`
+        : "";
+      summary.textContent = `Ajoute au panier: ${entry.quantity} x ${entry.title}${sizes}. Vous pouvez continuer ou commander directement.`;
+    }
   }
 
   function updateActiveNeeds() {
@@ -541,14 +656,18 @@
     if (!item || !lightbox) return;
 
     orderState.item = item;
-    orderState.size = "M";
+    orderState.sizes = ["M"];
+    orderState.sizeQuantities = { M: 1 };
     orderState.color = (colorOptionsFor(item)[0] || colorVariants[0]).id;
+    orderState.quantity = 1;
     orderState.customText = "";
 
     byId("lightbox-image").src = optimizedImage(displayImage(item));
     byId("lightbox-image").alt = displayTitle(item);
     byId("lightbox-title").textContent = displayTitle(item);
     byId("lightbox-meta").textContent = `${labels[item.category]} - ${item.price}`;
+    const cart = byId("lightbox-cart");
+    if (cart) cart.textContent = "Ajouter au panier";
     renderOrderOptions(item);
     applyPreviewCrop();
     lightbox.classList.add("open");
@@ -574,6 +693,16 @@
     }
     document.dispatchEvent(new CustomEvent("catalog:lightbox-close"));
     document.body.style.overflow = "";
+  }
+
+  function openProductFromHash() {
+    const match = window.location.hash.match(/^#article-(.+)$/);
+    if (match) {
+      window.setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "instant" });
+        openProduct(match[1]);
+      }, 80);
+    }
   }
 
   function bindEvents() {
@@ -612,6 +741,45 @@
         });
         applyPreviewCrop();
         updateOrderLink();
+      }
+
+      const sizeButton = event.target.closest("[data-size]");
+      if (sizeButton) {
+        const size = sizeButton.dataset.size;
+        const selected = new Set(orderState.sizes);
+        if (selected.has(size) && selected.size > 1) {
+          selected.delete(size);
+          delete orderState.sizeQuantities[size];
+        } else {
+          selected.add(size);
+          orderState.sizeQuantities[size] = orderState.sizeQuantities[size] || 1;
+        }
+        orderState.sizes = sizeOptions.filter((option) => selected.has(option));
+        renderOrderOptions(orderState.item);
+      }
+
+      const sizeQuantityButton = event.target.closest("[data-size-quantity-step]");
+      if (sizeQuantityButton) {
+        const size = sizeQuantityButton.dataset.sizeQuantity;
+        const input = document.querySelector(`[data-size-quantity-input="${size}"]`);
+        const current = Math.max(1, Number(orderState.sizeQuantities[size]) || 1);
+        const nextQuantity = Math.max(1, Math.min(99, current + Number(sizeQuantityButton.dataset.sizeQuantityStep)));
+        orderState.sizeQuantities[size] = nextQuantity;
+        if (input) input.value = String(nextQuantity);
+        updateOrderLink();
+      }
+
+      const quantityButton = event.target.closest("[data-quantity-step]");
+      if (quantityButton) {
+        const input = byId("quantity-input");
+        const nextQuantity = Math.max(1, Math.min(99, orderState.quantity + Number(quantityButton.dataset.quantityStep)));
+        orderState.quantity = nextQuantity;
+        if (input) input.value = String(nextQuantity);
+        updateOrderLink();
+      }
+
+      if (event.target.closest("#lightbox-cart")) {
+        addCurrentItemToCart();
       }
     });
 
@@ -667,16 +835,20 @@
       });
     }
 
-    document.addEventListener("change", (event) => {
-      if (event.target.id === "size-select") {
-        orderState.size = event.target.value;
-        updateOrderLink();
-      }
-    });
-
     document.addEventListener("input", (event) => {
       if (event.target.id === "custom-text") {
         orderState.customText = event.target.value;
+        updateOrderLink();
+      }
+      if (event.target.id === "quantity-input") {
+        orderState.quantity = Math.max(1, Math.min(99, Number(event.target.value) || 1));
+        event.target.value = String(orderState.quantity);
+        updateOrderLink();
+      }
+      if (event.target.matches("[data-size-quantity-input]")) {
+        const size = event.target.dataset.sizeQuantityInput;
+        orderState.sizeQuantities[size] = Math.max(1, Math.min(99, Number(event.target.value) || 1));
+        event.target.value = String(orderState.sizeQuantities[size]);
         updateOrderLink();
       }
     });
@@ -695,5 +867,6 @@
     renderShop();
     bindEvents();
     updateActiveNeeds();
+    openProductFromHash();
   });
 })();
