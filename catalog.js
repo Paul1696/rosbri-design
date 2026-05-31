@@ -2,24 +2,31 @@
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const WHATSAPP_PHONE = "237690087213";
   const catalog = window.ROSBriCatalog || [];
-  const categories = ["Tous", "Heritage", "Anime", "Maman", "Customisation", "Sacs", "Ensembles", "Babouches", "Chapeaux", "Pochettes", "Accessoires", "Disponibles"];
-  const labels = {
+  const categories = ["Tous", "Tshirts", "Sacs", "Ensembles", "Babouches", "Chapeaux", "Pochettes", "Accessoires"];
+  const productLabels = {
     Tous: "Tous les articles",
-    Heritage: "Héritage & Culture",
-    Anime: "Anime & Pop Culture",
-    Maman: "Maman & Famille",
-    Customisation: "Customisation",
-    Sacs: "Sacs à main",
+    Tshirts: "T-shirts",
+    Sacs: "Sacs",
     Ensembles: "Ensembles",
     Babouches: "Babouches",
     Chapeaux: "Chapeaux",
     Pochettes: "Pochettes",
-    Accessoires: "Accessoires",
-    Disponibles: "Disponibles maintenant"
+    Accessoires: "Accessoires"
   };
+  const subcategoryLabels = {
+    Heritage: "Héritage & Culture",
+    Anime: "Anime & Pop Culture",
+    Maman: "Maman & Famille",
+    Customisation: "Customisation",
+    Accessoires: "Accessoires",
+    Vetements: "Vêtements",
+    Autres: "Autres"
+  };
+  const labels = { ...productLabels, ...subcategoryLabels };
 
   const state = {
     category: "Tous",
+    subcategory: "Tous",
     query: "",
     price: "all",
     need: "all",
@@ -162,12 +169,13 @@
     return catalogOrderKey(a) - catalogOrderKey(b);
   });
   const categoryCounts = catalogView.reduce((counts, item) => {
-    counts[item.category] = (counts[item.category] || 0) + 1;
+    const category = productCategory(item);
+    counts[category] = (counts[category] || 0) + 1;
     return counts;
   }, {});
   const searchIndex = new Map(catalogView.map((item) => [
     item.id,
-    `${displayTitle(item)} ${labels[item.category]} ${item.title} ${item.category} ${item.price} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
+    `${displayTitle(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
   ]));
 
   function byId(id) {
@@ -238,7 +246,45 @@
   }
 
   function displayTitle(item) {
-    return item.title || labels[item.category] || "Article personnalisé";
+    return item.title || subcategoryLabels[item.category] || "Article personnalisé";
+  }
+
+  function productCategory(item) {
+    const path = item.image || "";
+    const match = path.match(/^images\/articles-site\/([^/]+)/i);
+    const folder = match ? match[1] : "";
+    const map = {
+      tshirts: "Tshirts",
+      sacs: "Sacs",
+      ensembles: "Ensembles",
+      babouches: "Babouches",
+      chapeaux: "Chapeaux",
+      pochettes: "Pochettes",
+      accessoires: "Accessoires"
+    };
+    return map[folder] || item.category || "Autres";
+  }
+
+  function productSubcategory(item) {
+    const category = productCategory(item);
+    const path = item.image || "";
+    if (category === "Tshirts") {
+      return subcategoryLabels[item.category] ? item.category : "Autres";
+    }
+    if (category === "Ensembles") {
+      if (path.includes("/ensembles/accessoires/")) return "Accessoires";
+      if (path.includes("/ensembles/vetements/")) return "Vetements";
+    }
+    return "Tous";
+  }
+
+  function productLabel(item) {
+    return productLabels[productCategory(item)] || productCategory(item);
+  }
+
+  function subcategoryLabel(item) {
+    const subcategory = productSubcategory(item);
+    return subcategory === "Tous" ? "" : (subcategoryLabels[subcategory] || subcategory);
   }
 
   function catalogOrderKey(item) {
@@ -362,7 +408,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (need === "gift") return item.category === "Maman" || text.includes("maman") || text.includes("famille") || text.includes("fête");
     if (need === "culture") return item.category === "Heritage" || text.includes("kribi") || text.includes("cameroun") || text.includes("tradition");
     if (need === "custom") return item.category === "Customisation" || text.includes("personnalisation") || text.includes("pack");
-    if (need === "bags") return item.category === "Sacs";
+    if (need === "bags") return productCategory(item) === "Sacs";
     return true;
   }
 
@@ -373,17 +419,20 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     const collage = isColorCollage(item);
     const colorChoices = hasColorChoices(item);
     const colorCount = colorOptionsFor(item).length;
+    const category = productCategory(item);
+    const subcategory = subcategoryLabel(item);
+    const meta = subcategory ? `${productLabels[category]} - ${subcategory}` : productLabels[category];
     return `
-      <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${item.category}">
+      <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
           <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(displayImage(item))}" alt="${title}" loading="${loading}" decoding="async"${priority}>
-          <span class="tag">${labels[item.category] || item.category}</span>
+          <span class="tag">${productLabels[category] || category}</span>
           ${colorChoices ? `<span class="variant-note">${colorCount} couleurs</span>` : ""}
         </button>
         <div class="product-body">
           <h3>${title}</h3>
           <div class="product-meta">
-            <span>${compact ? "Création ROSBRI" : labels[item.category]}</span>
+            <span>${compact ? "Création ROSBRI" : meta}</span>
             <span class="price">${item.price}</span>
           </div>
           <div class="product-actions">
@@ -409,10 +458,11 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
   function filteredCatalog() {
     const query = state.query.trim().toLowerCase();
     let result = catalogView.filter((item) => {
-      const categoryMatch = state.category === "Tous" || item.category === state.category;
+      const categoryMatch = state.category === "Tous" || productCategory(item) === state.category;
+      const subcategoryMatch = state.subcategory === "Tous" || productSubcategory(item) === state.subcategory;
       const queryMatch = !query || (searchIndex.get(item.id) || "").includes(query);
       const priceMatch = state.price === "all" || priceBand(item) === state.price;
-      return categoryMatch && queryMatch && priceMatch && needMatch(item, state.need);
+      return categoryMatch && subcategoryMatch && queryMatch && priceMatch && needMatch(item, state.need);
     });
 
     if (state.sort === "name") {
@@ -420,7 +470,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     }
 
     if (state.sort === "category") {
-      result = result.slice().sort((a, b) => a.category.localeCompare(b.category) || catalogOrderKey(a) - catalogOrderKey(b));
+      result = result.slice().sort((a, b) => productCategory(a).localeCompare(productCategory(b)) || catalogOrderKey(a) - catalogOrderKey(b));
     }
 
     if (state.sort === "price") {
@@ -436,11 +486,10 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (!target) return;
 
     const picks = [
-      ...catalogView.filter((item) => item.category === "Heritage").slice(0, 3),
-      ...catalogView.filter((item) => item.category === "Anime").slice(0, 1),
-      ...catalogView.filter((item) => item.category === "Maman").slice(0, 2),
-      ...catalogView.filter((item) => item.category === "Customisation").slice(0, 1),
-      ...catalogView.filter((item) => item.category === "Sacs").slice(0, 1)
+      ...catalogView.filter((item) => productCategory(item) === "Tshirts").slice(0, 3),
+      ...catalogView.filter((item) => productCategory(item) === "Sacs").slice(0, 2),
+      ...catalogView.filter((item) => productCategory(item) === "Ensembles").slice(0, 2),
+      ...catalogView.filter((item) => productCategory(item) === "Babouches").slice(0, 1)
     ];
 
     target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
@@ -480,10 +529,41 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     const target = byId("filter-list");
     if (!target) return;
 
-    target.innerHTML = categories.map((category) => {
+    const visibleCategories = categories.filter((category) => category === "Tous" || (categoryCounts[category] || 0) > 0);
+    const categoryButtons = visibleCategories.map((category) => {
       const count = category === "Tous" ? catalogView.length : (categoryCounts[category] || 0);
       return `<button class="filter-btn${category === state.category ? " active" : ""}" type="button" data-category="${category}">${labels[category]} (${count})</button>`;
     }).join("");
+
+    const subcategoryEntries = catalogView.reduce((counts, item) => {
+      if (state.category === "Tous" || productCategory(item) !== state.category) return counts;
+      const subcategory = productSubcategory(item);
+      if (subcategory === "Tous") return counts;
+      counts[subcategory] = (counts[subcategory] || 0) + 1;
+      return counts;
+    }, {});
+    const subcategories = Object.keys(subcategoryEntries).sort((a, b) => {
+      return (subcategoryLabels[a] || a).localeCompare(subcategoryLabels[b] || b);
+    });
+    const subcategoryButtons = subcategories.length > 1
+      ? `
+        <div class="filter-group">
+          <strong class="filter-subtitle">Sous-catégories</strong>
+          <button class="filter-btn${state.subcategory === "Tous" ? " active" : ""}" type="button" data-subcategory="Tous">Toutes (${categoryCounts[state.category] || 0})</button>
+          ${subcategories.map((subcategory) => (
+            `<button class="filter-btn${subcategory === state.subcategory ? " active" : ""}" type="button" data-subcategory="${subcategory}">${subcategoryLabels[subcategory] || subcategory} (${subcategoryEntries[subcategory]})</button>`
+          )).join("")}
+        </div>
+      `
+      : "";
+
+    target.innerHTML = `
+      <div class="filter-group">
+        <strong class="filter-subtitle">Types d'articles</strong>
+        ${categoryButtons}
+      </div>
+      ${subcategoryButtons}
+    `;
   }
 
   function resetVisibleLimit() {
@@ -669,7 +749,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     byId("lightbox-image").src = optimizedImage(displayImage(item));
     byId("lightbox-image").alt = displayTitle(item);
     byId("lightbox-title").textContent = displayTitle(item);
-    byId("lightbox-meta").textContent = `${labels[item.category]} - ${item.price}`;
+    byId("lightbox-meta").textContent = `${productLabel(item)}${subcategoryLabel(item) ? ` - ${subcategoryLabel(item)}` : ""} - ${item.price}`;
     const cart = byId("lightbox-cart");
     if (cart) cart.textContent = "Ajouter au panier";
     renderOrderOptions(item);
@@ -723,6 +803,15 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       const categoryButton = event.target.closest("[data-category]");
       if (categoryButton && categoryButton.classList.contains("filter-btn")) {
         state.category = categoryButton.dataset.category;
+        state.subcategory = "Tous";
+        resetVisibleLimit();
+        renderFilters();
+        renderShop();
+      }
+
+      const subcategoryButton = event.target.closest("[data-subcategory]");
+      if (subcategoryButton && subcategoryButton.classList.contains("filter-btn")) {
+        state.subcategory = subcategoryButton.dataset.subcategory;
         resetVisibleLimit();
         renderFilters();
         renderShop();
