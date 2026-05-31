@@ -806,45 +806,45 @@ window.ROSBriCatalog = [
   },
   {
     "id": 116,
-    "title": "Ensemble adulte ROSBRI wax 06",
+    "title": "Ensemble enfant ROSBRI wax 12",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-06.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-12.png"
   },
   {
     "id": 117,
-    "title": "Ensemble adulte ROSBRI wax 07",
+    "title": "Ensemble enfant ROSBRI wax 13",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-07.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-13.png"
   },
   {
     "id": 118,
-    "title": "Ensemble adulte ROSBRI wax 08",
+    "title": "Ensemble enfant ROSBRI wax 14",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-08.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-14.png"
   },
   {
     "id": 119,
-    "title": "Ensemble adulte ROSBRI wax 09",
+    "title": "Ensemble enfant ROSBRI wax 15",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-09.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-15.png"
   },
   {
     "id": 120,
-    "title": "Ensemble adulte ROSBRI wax 10",
+    "title": "Ensemble enfant ROSBRI wax 16",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-10.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-16.png"
   },
   {
     "id": 121,
-    "title": "Ensemble adulte ROSBRI wax 11",
+    "title": "Ensemble enfant ROSBRI wax 17",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-11.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-17.png"
   },
   {
     "id": 122,
@@ -904,10 +904,10 @@ window.ROSBriCatalog = [
   },
   {
     "id": 130,
-    "title": "Ensemble adulte ROSBRI wax 20",
+    "title": "Ensemble enfant ROSBRI wax 18",
     "category": "Ensembles",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-20.png"
+    "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-18.png"
   },
   {
     "id": 131,
