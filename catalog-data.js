@@ -868,30 +868,27 @@ window.ROSBriCatalog = [
   },
   {
     "id": 108,
-    "title": "Pack sac ROSBRI wax 116",
-    "category": "Packs",
+    "title": "Sac cabas bleu marine et beige ROSBRI wax",
+    "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-116.png",
-    "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas beige avec bordures et bandes en wax bleu marine, spacieux et facile à porter au quotidien."
   },
   {
     "id": 109,
-    "title": "Pack sac ROSBRI wax 117",
-    "category": "Packs",
+    "title": "Sac cabas bleu marine personnalisé MR",
+    "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-117.png",
-    "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas bleu marine et beige avec inscription MR, pensé pour porter les essentiels avec une finition wax élégante."
   },
   {
     "id": 110,
-    "title": "Pack sac ROSBRI wax 118",
-    "category": "Packs",
+    "title": "Sac cabas rose clair noeud wax",
+    "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-118.png",
-    "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas rose clair avec anses et noeud en wax jaune, noir et blanc, idéal pour une touche douce et colorée."
   },
   {
     "id": 111,
