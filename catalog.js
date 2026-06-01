@@ -4,7 +4,7 @@
   const catalog = window.ROSBriCatalog || [];
   const categories = [
     "Tous", "Packs", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
-    "Bobs", "Pochettes", "Accessoires", "Coussins", "Robes", "Chemises"
+    "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Accessoires", "Coussins", "Robes", "Chemises"
   ];
   const productLabels = {
     Tous: "Tous les articles",
@@ -21,6 +21,8 @@
     Casquettes: "Casquettes",
     Bobs: "Bobs",
     Pochettes: "Pochettes",
+    GantsCuisine: "Gants de cuisine",
+    Maniques: "Maniques",
     Trousses: "Trousses",
     Portefeuilles: "Portefeuilles",
     Accessoires: "Accessoires",
@@ -291,6 +293,8 @@
       casquettes: "Casquettes",
       bobs: "Bobs",
       pochettes: "Pochettes",
+      "gants-cuisine": "GantsCuisine",
+      maniques: "Maniques",
       trousses: "Trousses",
       portefeuilles: "Portefeuilles",
       accessoires: "Accessoires",
@@ -478,7 +482,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
 
   function priceBand(item) {
     if (item.price === "Sur devis") return "quote";
-    if (item.price.includes("3 500")) return "starter";
+    if (item.price.includes("1 000") || item.price.includes("1 500") || item.price.includes("3 500")) return "starter";
     if (item.price.includes("4 500") || item.price.includes("5 000")) return "low";
     if (item.price.includes("6 500")) return "mid";
     if (item.price.includes("8 500") || item.price.includes("10 000")) return "premium";

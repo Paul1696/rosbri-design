@@ -1210,43 +1210,43 @@ window.ROSBriCatalog = [
   },
   {
     "id": 146,
-    "title": "Babouches ROSBRI wax 06",
-    "category": "Babouches",
-    "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-06.png",
+    "title": "Gants de cuisine ROSBRI wax jaune",
+    "category": "GantsCuisine",
+    "price": "1 500 FCFA",
+    "image": "images/articles-site/gants-cuisine/variants/gants-cuisine-rosbri-wax-01.png",
     "reviews": [
       {
-        "name": "St?phanie",
+        "name": "Stéphanie",
         "rating": 5,
-        "text": "Confortable au pied et tr?s joli avec une tenue simple."
+        "text": "Pratiques en cuisine et très jolis avec les motifs wax."
       },
       {
-        "name": "Gr?ce",
+        "name": "Grâce",
         "rating": 4,
-        "text": "Belle paire, les finitions wax font vraiment la diff?rence."
+        "text": "La paire est légère, bien finie et facile à accrocher."
       }
     ],
-    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
+    "description": "Paire de gants de cuisine matelassés en wax jaune, rouge et noir, pensés pour protéger les mains avec une touche ROSBRI."
   },
   {
     "id": 147,
-    "title": "Pochette ROSBRI wax 02",
-    "category": "Pochettes",
-    "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-02.png",
+    "title": "Manique ROSBRI wax jaune",
+    "category": "Maniques",
+    "price": "1 000 FCFA",
+    "image": "images/articles-site/maniques/variants/manique-rosbri-wax-01.png",
     "reviews": [
       {
         "name": "Brenda",
         "rating": 5,
-        "text": "Petit d?tail original, tr?s propre et facile ? offrir."
+        "text": "Petit accessoire pratique, propre et facile à offrir."
       },
       {
         "name": "Yasmine",
         "rating": 5,
-        "text": "J?aime le rendu, c?est simple et ?l?gant."
+        "text": "J'aime le rendu, c'est simple et élégant pour la cuisine."
       }
     ],
-    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
+    "description": "Manique matelassée ROSBRI en wax jaune, rouge et noir, pratique pour manipuler les plats chauds et décorer la cuisine."
   },
   {
     "id": 148,
