@@ -1094,51 +1094,51 @@ window.ROSBriCatalog = [
   },
   {
     "id": 136,
-    "title": "Chapeau ROSBRI wax 01",
+    "title": "Chapeau paille rouge wax plage",
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-01.png",
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Chapeau de paille à large bord avec ruban et finition wax rouge, parfait pour protéger du soleil avec une touche vive."
   },
   {
     "id": 137,
-    "title": "Chapeau ROSBRI wax 02",
+    "title": "Chapeau paille rose graphique",
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-02.png",
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Chapeau de paille à large bord, habillé d'un ruban wax rose graphique et d'un noeud assorti pour un look doux et affirmé."
   },
   {
     "id": 138,
-    "title": "Chapeau ROSBRI wax 03",
+    "title": "Chapeau paille wax jaune losange",
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-03.png",
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Chapeau de paille naturel avec bordure wax jaune, noir et rouge, relevé par un ruban assorti et un petit noeud décoratif."
   },
   {
     "id": 139,
-    "title": "Chapeau ROSBRI wax 04",
+    "title": "Chapeau paille wax ethnique multicolore",
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-04.png",
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Chapeau de paille naturel avec ruban et bordure wax multicolores, idéal pour compléter une tenue estivale avec caractère."
   },
   {
     "id": 140,
-    "title": "Chapeau ROSBRI wax 05",
+    "title": "Chapeau paille bleu marine noeud wax",
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-05.png",
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Chapeau de paille avec bordure bleu marine, ruban noué et finition wax discrète pour une allure élégante et facile à porter."
   },
   {
     "id": 141,
-    "title": "Chapeau ROSBRI wax 06",
+    "title": "Chapeau paille rose bordure wax",
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-06.png",
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Chapeau de paille rose avec bordure et ruban wax contrastés, pensé pour apporter une note féminine et colorée."
   },
   {
     "id": 142,
@@ -1150,27 +1150,27 @@ window.ROSBriCatalog = [
   },
   {
     "id": 143,
-    "title": "Bob ROSBRI wax 01",
-    "category": "Bobs",
-    "price": "5 000 FCFA",
-    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-01.png",
+    "title": "Babouches feuillage wax automne",
+    "category": "Babouches",
+    "price": "6 500 FCFA",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-feuillage-26.png",
     "reviews": [
       {
         "name": "Brenda",
         "rating": 5,
-        "text": "Petit d?tail original, tr?s propre et facile ? offrir."
+        "text": "La paire est légère et les couleurs ressortent très bien."
       },
       {
         "name": "Yasmine",
         "rating": 5,
-        "text": "J?aime le rendu, c?est simple et ?l?gant."
+        "text": "Confortable pour la maison, avec une vraie touche wax."
       }
     ],
-    "description": "Bob ROSBRI en wax, leger et casual, parfait pour ajouter une touche coloree au quotidien."
+    "description": "Babouches en wax feuillage jaune, vert et orange, légères au pied et faciles à associer à une tenue décontractée."
   },
   {
     "id": 144,
-    "title": "Bob ROSBRI wax 02",
+    "title": "Bob wax multicolore éclat",
     "category": "Bobs",
     "price": "5 000 FCFA",
     "image": "images/articles-site/bobs/variants/bob-rosbri-wax-02.png",
@@ -1178,15 +1178,15 @@ window.ROSBriCatalog = [
       {
         "name": "Brenda",
         "rating": 5,
-        "text": "Petit d?tail original, tr?s propre et facile ? offrir."
+        "text": "Le bob apporte tout de suite de la couleur à la tenue."
       },
       {
         "name": "Yasmine",
         "rating": 5,
-        "text": "J?aime le rendu, c?est simple et ?l?gant."
+        "text": "Belle tenue, léger et agréable pour sortir."
       }
     ],
-    "description": "Bob ROSBRI en wax, leger et casual, parfait pour ajouter une touche coloree au quotidien."
+    "description": "Bob ROSBRI en wax multicolore aux tons bleu, rouge, jaune et vert, idéal pour un style casual lumineux."
   },
   {
     "id": 145,
@@ -1250,23 +1250,23 @@ window.ROSBriCatalog = [
   },
   {
     "id": 148,
-    "title": "Chapeau ROSBRI wax 07",
-    "category": "Chapeaux",
+    "title": "Bob wax feuillage noir et ocre",
+    "category": "Bobs",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-07.png",
+    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-feuillage-04.png",
     "reviews": [
       {
         "name": "Brenda",
         "rating": 5,
-        "text": "Petit d?tail original, tr?s propre et facile ? offrir."
+        "text": "La coupe bob est moderne et le motif se remarque bien."
       },
       {
         "name": "Yasmine",
         "rating": 5,
-        "text": "J?aime le rendu, c?est simple et ?l?gant."
+        "text": "Très beau rendu, facile à porter avec une tenue simple."
       }
     ],
-    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
+    "description": "Bob en wax noir, ocre, jaune et vert, avec motif feuillage. Une pièce forte pour protéger du soleil et compléter une tenue avec style."
   },
   {
     "id": 149,
@@ -3521,7 +3521,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 261,
-    "title": "Bob ROSBRI wax 03",
+    "title": "Bob wax vert tropical Cameroun",
     "category": "Bobs",
     "price": "5 000 FCFA",
     "image": "images/articles-site/bobs/variants/bob-rosbri-wax-03.png",
@@ -3529,15 +3529,15 @@ window.ROSBriCatalog = [
       {
         "name": "Brenda",
         "rating": 5,
-        "text": "Petit d?tail original, tr?s propre et facile ? offrir."
+        "text": "Le vert ressort très bien, parfait pour un look culturel."
       },
       {
         "name": "Yasmine",
         "rating": 5,
-        "text": "J?aime le rendu, c?est simple et ?l?gant."
+        "text": "Bonne finition et coupe agréable à porter."
       }
     ],
-    "description": "Bob ROSBRI en wax, leger et casual, parfait pour ajouter une touche coloree au quotidien."
+    "description": "Bob ROSBRI en wax vert avec motifs tropicaux et accents orange, blanc et rouge, pensé pour un style frais et affirmé."
   },
   {
     "id": 262,
