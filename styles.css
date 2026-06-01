@@ -151,15 +151,108 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero {
+  position: relative;
   min-height: calc(100vh - 118px);
   min-height: calc(100dvh - 118px);
   display: grid;
   align-items: end;
+  overflow: hidden;
   padding: clamp(72px, 10vh, 128px) 0 38px;
   color: var(--white);
+  background: #17211f;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero::before {
   background:
-    linear-gradient(180deg, rgba(8, 16, 14, 0.22), rgba(8, 16, 14, 0.8)),
-    url("images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png") center/cover;
+    radial-gradient(circle at 72% 30%, rgba(255, 255, 255, 0.2), transparent 22%),
+    linear-gradient(90deg, rgba(8, 16, 14, 0.8) 0%, rgba(8, 16, 14, 0.56) 46%, rgba(8, 16, 14, 0.72) 100%);
+}
+
+.hero::after {
+  background: linear-gradient(180deg, rgba(8, 16, 14, 0.08), rgba(8, 16, 14, 0.9));
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #17211f;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: heroSlide 18s infinite;
+}
+
+.hero-slide:nth-child(2) { animation-delay: 6s; }
+.hero-slide:nth-child(3) { animation-delay: 12s; }
+
+.hero-slide img {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.22);
+}
+
+.hero-slide-main {
+  inset: -4%;
+  width: 108%;
+  height: 108%;
+  filter: saturate(0.9) contrast(1.03);
+  transform: scale(1.04);
+  animation: heroImageDrift 18s infinite;
+}
+
+.hero-slide-card {
+  width: min(22vw, 340px);
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 8px;
+  opacity: 0.64;
+}
+
+.hero-slide-card-a {
+  right: clamp(18px, 8vw, 170px);
+  top: clamp(110px, 15vh, 210px);
+  transform: rotate(-3deg);
+}
+
+.hero-slide-card-b {
+  right: clamp(120px, 18vw, 360px);
+  bottom: clamp(58px, 11vh, 150px);
+  width: min(16vw, 240px);
+  transform: rotate(4deg);
+}
+
+@keyframes heroSlide {
+  0% { opacity: 0; }
+  7% { opacity: 1; }
+  31% { opacity: 1; }
+  39% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes heroImageDrift {
+  0% { transform: scale(1.04) translate3d(0, 0, 0); }
+  38% { transform: scale(1.12) translate3d(-1.8%, -1.2%, 0); }
+  100% { transform: scale(1.04) translate3d(0, 0, 0); }
 }
 
 .hero-layout {
@@ -195,8 +288,31 @@ a { color: inherit; text-decoration: none; }
   object-fit: cover;
 }
 
-.showcase-main {
+.showcase-carousel {
+  position: relative;
   aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.showcase-frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.04);
+  animation: showcaseSwap 12s infinite;
+}
+
+.showcase-frame:nth-child(2) { animation-delay: 4s; }
+.showcase-frame:nth-child(3) { animation-delay: 8s; }
+
+@keyframes showcaseSwap {
+  0% { opacity: 0; transform: scale(1.04); }
+  9% { opacity: 1; transform: scale(1); }
+  30% { opacity: 1; transform: scale(1.02); }
+  39% { opacity: 0; transform: scale(1.08); }
+  100% { opacity: 0; transform: scale(1.04); }
 }
 
 .showcase-stack {
@@ -1315,6 +1431,22 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .hero-slide-card {
+    width: min(34vw, 230px);
+  }
+
+  .hero-slide-card-a {
+    right: 18px;
+    top: 92px;
+  }
+
+  .hero-slide-card-b {
+    right: auto;
+    left: 18px;
+    bottom: 36px;
+    width: min(28vw, 180px);
+  }
+
   .hero-showcase {
     width: min(520px, 100%);
   }
@@ -1352,6 +1484,15 @@ h1 {
   .page-title .container,
   .shop-layout { width: calc(100% - 40px); }
   .hero { min-height: auto; padding: 64px 0 32px; }
+  .hero-slide-card {
+    opacity: 0.36;
+  }
+  .hero-slide-card-a {
+    top: 72px;
+  }
+  .hero-slide-card-b {
+    display: none;
+  }
   .actions { display: grid; grid-template-columns: 1fr; }
   .actions .primary-btn,
   .actions .ghost-btn { width: 100%; }
@@ -1387,6 +1528,24 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    opacity: 0;
+  }
+
+  .hero-slide:first-child {
+    opacity: 1;
+  }
+
+  .hero-slide-main,
+  .hero-slide,
+  .showcase-frame {
+    animation: none !important;
+  }
+
+  .showcase-frame:first-child {
+    opacity: 1;
+  }
+
   *,
   *::before,
   *::after {
