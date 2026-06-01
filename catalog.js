@@ -616,8 +616,12 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     const button = byId("catalog-load-more");
     if (!button) return;
 
-    const remaining = total - state.visibleLimit;
+    const remaining = Math.max(0, total - state.visibleLimit);
     button.hidden = remaining <= 0;
+    if (remaining <= 0) {
+      button.textContent = "Afficher plus";
+      return;
+    }
     button.textContent = remaining > pageSize
       ? `Afficher ${pageSize} articles de plus`
       : `Afficher les ${remaining} derniers articles`;
@@ -628,6 +632,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (!grid) return;
 
     const result = filteredCatalog();
+    state.visibleLimit = Math.min(state.visibleLimit, Math.max(pageSize, result.length));
     const visible = result.slice(0, state.visibleLimit);
     grid.innerHTML = visible.length
       ? visible.map((item, index) => productCard(item, false, index < 8)).join("")
