@@ -3,11 +3,12 @@
   const WHATSAPP_PHONE = "237690087213";
   const catalog = window.ROSBriCatalog || [];
   const categories = [
-    "Tous", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
-    "Bobs", "Pochettes", "Accessoires", "Coussins", "Robes", "Chemises", "Affiches"
+    "Tous", "Packs", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
+    "Bobs", "Pochettes", "Accessoires", "Coussins", "Robes", "Chemises"
   ];
   const productLabels = {
     Tous: "Tous les articles",
+    Packs: "Packs",
     Tshirts: "T-shirts",
     Polos: "Polos",
     Debardeurs: "Débardeurs",
@@ -26,8 +27,7 @@
     Coussins: "Coussins",
     Robes: "Robes",
     Boubous: "Boubous",
-    Chemises: "Chemises",
-    Affiches: "Affiches"
+    Chemises: "Chemises"
   };
   const subcategoryLabels = {
     Heritage: "Héritage & Culture",
@@ -294,6 +294,7 @@
   }
 
   function productCategory(item) {
+    if (item.isPack || item.category === "Packs") return "Packs";
     const path = item.image || "";
     const match = path.match(/^images\/articles-site\/([^/]+)/i);
     const folder = match ? match[1] : "";
@@ -316,8 +317,7 @@
       coussins: "Coussins",
       robes: "Robes",
       boubous: "Boubous",
-      chemises: "Chemises",
-      affiches: "Affiches"
+      chemises: "Chemises"
     };
     return map[folder] || item.category || "Autres";
   }
@@ -353,8 +353,7 @@
     const category = productCategory(item);
     const subcategory = subcategoryLabel(item);
     if (item.isPack) {
-      const detail = subcategory || productLabels[category] || category;
-      return `Pack coordonne - ${detail}`;
+      return "Pack coordonne";
     }
     return subcategory ? `${productLabels[category]} - ${subcategory}` : productLabels[category];
   }
@@ -591,10 +590,10 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (!target) return;
 
     const picks = [
+      ...catalogView.filter((item) => productCategory(item) === "Packs").slice(0, 2),
       ...catalogView.filter((item) => productCategory(item) === "Tshirts").slice(0, 3),
       ...catalogView.filter((item) => productCategory(item) === "Sacs").slice(0, 2),
-      ...catalogView.filter((item) => productCategory(item) === "Ensembles").slice(0, 2),
-      ...catalogView.filter((item) => productCategory(item) === "Babouches").slice(0, 1)
+      ...catalogView.filter((item) => productCategory(item) === "Ensembles").slice(0, 1)
     ];
 
     target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
@@ -891,6 +890,12 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
 
   function defaultReviews(item) {
     const category = productCategory(item);
+    if (category === "Packs") {
+      return [
+        { name: "Clarisse", rating: 5, text: "Le pack est bien assorti, pratique et pret a offrir." },
+        { name: "Nadine", rating: 5, text: "J'aime le fait que tout soit coordonne sans chercher." }
+      ];
+    }
     if (category === "Sacs" || productSubcategory(item) === "Accessoires") {
       return [
         { name: "Clarisse", rating: 5, text: "Le rendu est solide, pratique et très élégant." },
@@ -903,7 +908,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
         { name: "Grâce", rating: 4, text: "Belle finition, le détail wax fait la différence." }
       ];
     }
-    if (category === "Coussins" || category === "Affiches") {
+    if (category === "Coussins") {
       return [
         { name: "Laure", rating: 5, text: "Les couleurs donnent beaucoup de chaleur à la pièce." },
         { name: "Estelle", rating: 5, text: "Très décoratif et fidèle au style ROSBRI." }

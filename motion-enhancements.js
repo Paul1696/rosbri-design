@@ -6,7 +6,7 @@ function markReady() {
 }
 
 function restoreVisibility() {
-  document.querySelectorAll("[data-reveal], .product-card, .trust-pill, .universe, .benefit").forEach((element) => {
+  document.querySelectorAll("[data-reveal], .product-card, .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
     element.style.opacity = "";
     element.style.transform = "";
   });
@@ -28,7 +28,7 @@ if (reducedMotion) {
     .then(({ animate, scroll, stagger }) => {
       markReady();
 
-      document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit").forEach((element) => {
+      document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
         element.style.opacity = "0";
         element.style.transform = "translateY(18px)";
       });
@@ -41,7 +41,7 @@ if (reducedMotion) {
         });
       }, { rootMargin: "0px 0px -10% 0px" });
 
-      document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit").forEach((element) => {
+      document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
         revealObserver.observe(element);
       });
 
@@ -76,12 +76,12 @@ if (reducedMotion) {
       });
 
       document.addEventListener("pointerdown", (event) => {
-        const target = event.target.closest(".primary-btn, .ghost-btn, .secondary-btn, .mini-order, .filter-btn");
+        const target = event.target.closest(".primary-btn, .ghost-btn, .secondary-btn, .mini-order, .filter-btn, .brand");
         if (target) animate(target, { scale: 0.97 }, { duration: 0.12 });
       });
 
       document.addEventListener("pointerup", (event) => {
-        const target = event.target.closest(".primary-btn, .ghost-btn, .secondary-btn, .mini-order, .filter-btn");
+        const target = event.target.closest(".primary-btn, .ghost-btn, .secondary-btn, .mini-order, .filter-btn, .brand");
         if (target) animate(target, { scale: 1 }, { duration: 0.16, easing: "ease-out" });
       });
 

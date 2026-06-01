@@ -5,7 +5,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png",
-    "description": "T-shirt ROSBRI au motif Reine africaine wax, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Reine africaine wax, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ window.ROSBriCatalog = [
     "category": "Anime",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-luffy-feu-foudre-orange.png",
-    "description": "T-shirt ROSBRI au motif Luffy Gear 5 - Feu et foudre, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Luffy Gear 5 - Feu et foudre, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-pont-allemands-edea-gris.png",
-    "description": "T-shirt ROSBRI au motif Pont des Allemands - Edea, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Pont des Allemands - Edea, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-gris.png",
-    "description": "T-shirt ROSBRI au motif Merci pour tout Maman - Tu es la meilleure, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Merci pour tout Maman - Tu es la meilleure, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-gris.png",
-    "description": "T-shirt ROSBRI au motif Maman merci pour tout, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman merci pour tout, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-studio-gris.png",
-    "description": "T-shirt ROSBRI au motif Merci pour tout Maman - studio, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Merci pour tout Maman - studio, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-coeur-force-gris.png",
-    "description": "T-shirt ROSBRI au motif Maman mon coeur ma force, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman mon coeur ma force, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-amour-force-gris.png",
-    "description": "T-shirt ROSBRI au motif Maman ton amour est ma force, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman ton amour est ma force, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-amour-blanc.png",
-    "description": "T-shirt ROSBRI au motif Maman merci pour tout, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman merci pour tout, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-mon-bonheur-blanc.png",
-    "description": "T-shirt ROSBRI au motif Maman tu es mon bonheur, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman tu es mon bonheur, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-mon-bonheur-studio-blanc.png",
-    "description": "T-shirt ROSBRI au motif Maman tu es mon bonheur - studio, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman tu es mon bonheur - studio, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-a-croquer-blanc.png",
-    "description": "T-shirt ROSBRI au motif Maman a croquer, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman a croquer, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-super-maman-gris.png",
-    "description": "T-shirt ROSBRI au motif Super Maman, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Super Maman, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mom-maman-a-cherir-gris.png",
-    "description": "T-shirt ROSBRI au motif MOM - Maman a cherir, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel MOM - Maman a cherir, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mama-coeur-prenoms-gris.png",
-    "description": "T-shirt ROSBRI au motif Mama coeur prenoms enfants, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Mama coeur prenoms enfants, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mom-personnalise-prenoms-gris.png",
-    "description": "T-shirt ROSBRI au motif MOM personnalise prenoms, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel MOM personnalise prenoms, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-world-best-mom-gris.png",
-    "description": "T-shirt ROSBRI au motif World's Best Mom, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel World's Best Mom, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-falaise-dschang-blanc.png",
-    "description": "T-shirt ROSBRI au motif Falaise de Dschang, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Falaise de Dschang, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png",
-    "description": "T-shirt ROSBRI au motif Chutes de la Lobe - Kribi, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Chutes de la Lobe - Kribi, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mont-cameroun-buea-vert-foret.png",
-    "description": "T-shirt ROSBRI au motif Mont Cameroun - Buea, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Mont Cameroun - Buea, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 21,
@@ -165,7 +165,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-cases-mousgoum-maroua-vert-foret.png",
-    "description": "T-shirt ROSBRI au motif Cases Mousgoum - Maroua, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Cases Mousgoum - Maroua, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-rois-bamoun-foumban-vert-foret.png",
-    "description": "T-shirt ROSBRI au motif Musee des Rois Bamoun - Foumban, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Musee des Rois Bamoun - Foumban, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-nouvelle-liberte-douala-gris.png",
-    "description": "T-shirt ROSBRI au motif Nouvelle Liberte - Douala, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Nouvelle Liberte - Douala, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-monument-reunification-yaounde-vert-foret.png",
-    "description": "T-shirt ROSBRI au motif Monument de la Reunification - Yaounde, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Monument de la Reunification - Yaounde, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mayi-09-mai-sable.png",
-    "description": "T-shirt ROSBRI au motif Mayi 09 Mai, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Mayi 09 Mai, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 26,
@@ -205,7 +205,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-je-suis-batanga-sable.png",
-    "description": "T-shirt ROSBRI au motif Je suis Batanga, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Je suis Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 27,
@@ -213,7 +213,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-kribi-cest-ma-ville-blanc.png",
-    "description": "T-shirt ROSBRI au motif Kribi c'est ma ville, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Kribi c'est ma ville, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 28,
@@ -221,7 +221,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mayi-kribi-batanga-blanc.png",
-    "description": "T-shirt ROSBRI au motif Mayi Kribi Batanga, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Mayi Kribi Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 29,
@@ -229,7 +229,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-fete-mayi-kribi-batanga-blanc.png",
-    "description": "T-shirt ROSBRI au motif Fete du Mayi Kribi Batanga, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Fete du Mayi Kribi Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 30,
@@ -237,7 +237,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mayi-2026-batanga-vert-sauge.png",
-    "description": "T-shirt ROSBRI au motif Mayi 2026 Batanga, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Mayi 2026 Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 31,
@@ -245,7 +245,7 @@ window.ROSBriCatalog = [
     "category": "Customisation",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.png",
-    "description": "T-shirt ROSBRI au motif For You Jimmy, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel For You Jimmy, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 32,
@@ -253,7 +253,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/duo-tshirts-big-brother-lil-brother-blanc.png",
-    "description": "T-shirt ROSBRI au motif Duo T-shirts Big Brother Lil Brother, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Duo T-shirts Big Brother Lil Brother, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 33,
@@ -261,7 +261,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-cabas-afrique-wax-rouge.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 34,
@@ -269,7 +269,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-cabas-bleu-motifs-blancs.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 35,
@@ -277,7 +277,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-cabas-danseuses-africaines.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 36,
@@ -285,7 +285,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-cabas-mom-coeur-wax.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 37,
@@ -293,7 +293,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 38,
@@ -301,7 +301,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-cabas-jute-wax-dore.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 39,
@@ -309,7 +309,7 @@ window.ROSBriCatalog = [
     "category": "Anime",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-systeme-solaire-pacman-blanc.png",
-    "description": "T-shirt ROSBRI au motif Système solaire Pac-Man, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Système solaire Pac-Man, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 40,
@@ -317,7 +317,7 @@ window.ROSBriCatalog = [
     "category": "Customisation",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-life-is-beautiful-mandala-blanc.png",
-    "description": "T-shirt ROSBRI au motif Life is Beautiful mandala, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Life is Beautiful mandala, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 41,
@@ -325,7 +325,7 @@ window.ROSBriCatalog = [
     "category": "Customisation",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-des-colores-eclaboussures-noir.png",
-    "description": "T-shirt ROSBRI au motif Dés colorés éclaboussures, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Dés colorés éclaboussures, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 42,
@@ -333,7 +333,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-queen-heritage-africain-noir.png",
-    "description": "T-shirt ROSBRI au motif Queen héritage africain, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Queen héritage africain, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 43,
@@ -341,7 +341,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-black-is-beautiful-heritage-noir.png",
-    "description": "T-shirt ROSBRI au motif Black is Beautiful, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Black is Beautiful, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 44,
@@ -349,7 +349,7 @@ window.ROSBriCatalog = [
     "category": "Customisation",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-landry-feg-leopard-noir.png",
-    "description": "T-shirt ROSBRI au motif Landry FEG motif léopard, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Landry FEG motif léopard, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 45,
@@ -357,7 +357,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-profil-femme-afrique-colore-noir.png",
-    "description": "T-shirt ROSBRI au motif Profil femme Afrique coloré, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Profil femme Afrique coloré, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 46,
@@ -365,7 +365,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-heritage-afrique-savane-coucher-soleil-blanc.png",
-    "description": "T-shirt ROSBRI au motif Héritage Afrique savane au coucher du soleil, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Héritage Afrique savane au coucher du soleil, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 47,
@@ -373,7 +373,7 @@ window.ROSBriCatalog = [
     "category": "Heritage",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-ako-yem-trois-femmes-tropical-blanc.png",
-    "description": "T-shirt ROSBRI au motif Ako yem - Trois femmes tropical, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Ako yem - Trois femmes tropical, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 48,
@@ -381,7 +381,7 @@ window.ROSBriCatalog = [
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-bonne-fete-des-meres-tropical-blanc.png",
-    "description": "T-shirt ROSBRI au motif Maman bonne fête des mères tropical, confortable et personnalisable selon la taille choisie."
+    "description": "T-shirt ROSBRI au visuel Maman bonne fête des mères tropical, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
     "id": 49,
@@ -389,7 +389,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-01.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 50,
@@ -397,7 +397,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-02.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 51,
@@ -405,7 +405,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-03.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 52,
@@ -413,7 +413,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-04.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 53,
@@ -421,7 +421,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-05.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 54,
@@ -429,7 +429,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-06.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 55,
@@ -437,7 +437,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-07.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 56,
@@ -445,7 +445,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-08.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 57,
@@ -453,16 +453,16 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-09.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 58,
     "title": "Pack sac ROSBRI wax 10",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-10.png",
     "isPack": true,
-    "description": "Pack sac et pochette assortie, finition wax coordonnee pour sortir avec un ensemble pratique et elegant."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 59,
@@ -470,7 +470,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-11.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 60,
@@ -478,7 +478,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-12.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 61,
@@ -486,7 +486,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-13.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 62,
@@ -494,7 +494,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-14.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 63,
@@ -502,7 +502,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-15.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 64,
@@ -510,7 +510,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-16.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 65,
@@ -518,7 +518,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-17.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 66,
@@ -526,7 +526,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-18.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 67,
@@ -534,7 +534,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-19.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 68,
@@ -542,7 +542,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-20.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 69,
@@ -550,7 +550,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-21.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 70,
@@ -558,7 +558,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-22.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 71,
@@ -566,7 +566,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-23.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 72,
@@ -574,7 +574,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-24.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 73,
@@ -582,7 +582,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-25.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 74,
@@ -590,7 +590,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-26.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 75,
@@ -598,7 +598,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-27.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 76,
@@ -606,16 +606,16 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-28.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 77,
     "title": "Pack sac ROSBRI wax 29",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-29.png",
     "isPack": true,
-    "description": "Pack sac, chapeau et babouches assortis, ideal pour composer une tenue wax complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 78,
@@ -623,7 +623,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-30.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 79,
@@ -631,7 +631,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-31.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 80,
@@ -639,7 +639,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-32.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 81,
@@ -647,7 +647,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-33.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 82,
@@ -655,16 +655,16 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-34.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 83,
     "title": "Pack sac ROSBRI wax 35",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-35.png",
     "isPack": true,
-    "description": "Pack cabas et babouches assorties, avec motifs wax coordonnes pour un look harmonieux."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 84,
@@ -672,16 +672,16 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-36.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 85,
     "title": "Pack sac ROSBRI wax 37",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-37.png",
     "isPack": true,
-    "description": "Pack sac et pochette assortie, pense pour garder les essentiels avec une touche wax coloree."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 86,
@@ -689,7 +689,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-38.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 87,
@@ -697,7 +697,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-39.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 88,
@@ -705,7 +705,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-40.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 89,
@@ -713,7 +713,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-41.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 90,
@@ -721,7 +721,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-42.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 91,
@@ -729,7 +729,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-43.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 92,
@@ -737,7 +737,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-44.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 93,
@@ -745,7 +745,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-45.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 94,
@@ -753,7 +753,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-46.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 95,
@@ -761,7 +761,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-47.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 96,
@@ -769,7 +769,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-48.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 97,
@@ -777,7 +777,7 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-49.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 98,
@@ -785,34 +785,34 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-50.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 99,
     "title": "Pack sac ROSBRI wax 51",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-51.png",
     "isPack": true,
-    "description": "Pack sac et chapeau assortis, coordonne pour les sorties, vacances et cadeaux elegants."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 100,
     "title": "Pack sac ROSBRI wax 52",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-52.png",
     "isPack": true,
-    "description": "Pack sac et babouches assorties, en wax bleu coordonne pour un ensemble pratique et chic."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 101,
     "title": "Pack sac ROSBRI wax 53",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-53.png",
     "isPack": true,
-    "description": "Pack sac et chapeau assortis, avec detail noeud wax pour une silhouette douce et originale."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 102,
@@ -820,79 +820,79 @@ window.ROSBriCatalog = [
     "category": "Sacs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-54.png",
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 103,
     "title": "Pack sac ROSBRI wax 111",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-111.png",
     "isPack": true,
-    "description": "Pack sac, chapeau, babouches et pochette assortis, une composition complete en wax rose."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 104,
     "title": "Pack sac ROSBRI wax 112",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-112.png",
     "isPack": true,
-    "description": "Pack sac, chapeau et babouches assortis, coordonne en wax dore pour un style lumineux."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 105,
     "title": "Pack sac ROSBRI wax 113",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-113.png",
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 106,
     "title": "Pack sac ROSBRI wax 114",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-114.png",
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 107,
     "title": "Pack sac ROSBRI wax 115",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-115.png",
     "isPack": true,
-    "description": "Pack sac et pochette assortie, avec bandes wax coordonnees pour une finition elegante."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 108,
     "title": "Pack sac ROSBRI wax 116",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-116.png",
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 109,
     "title": "Pack sac ROSBRI wax 117",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-117.png",
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 110,
     "title": "Pack sac ROSBRI wax 118",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-118.png",
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 111,
@@ -900,7 +900,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 112,
@@ -908,7 +908,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-02.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 113,
@@ -916,7 +916,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-03.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 114,
@@ -924,16 +924,16 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-04.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 115,
     "title": "Pack adulte ROSBRI wax 05",
-    "category": "Ensembles",
+    "category": "Packs",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-05.png",
     "isPack": true,
-    "description": "Pack adulte coordonne avec plusieurs pieces wax assorties, ideal pour une tenue complete."
+    "description": "Pack adulte coordonne avec pieces wax assorties, ideal pour une silhouette complete sans chercher les associations."
   },
   {
     "id": 116,
@@ -941,7 +941,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-12.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 117,
@@ -949,7 +949,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-13.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 118,
@@ -957,7 +957,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-14.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 119,
@@ -965,7 +965,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-15.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 120,
@@ -973,7 +973,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-16.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 121,
@@ -981,7 +981,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-17.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 122,
@@ -989,7 +989,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-12.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 123,
@@ -997,16 +997,16 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-13.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 124,
     "title": "Pack adulte ROSBRI wax 14",
-    "category": "Ensembles",
+    "category": "Packs",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-14.png",
     "isPack": true,
-    "description": "Pack adulte sac et babouches assortis, compose pour un style wax pratique et elegant."
+    "description": "Pack adulte coordonne avec pieces wax assorties, ideal pour une silhouette complete sans chercher les associations."
   },
   {
     "id": 125,
@@ -1014,7 +1014,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-15.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 126,
@@ -1022,7 +1022,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-16.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 127,
@@ -1030,7 +1030,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-17.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 128,
@@ -1038,7 +1038,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-18.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 129,
@@ -1046,7 +1046,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-19.png",
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 130,
@@ -1054,7 +1054,7 @@ window.ROSBriCatalog = [
     "category": "Ensembles",
     "price": "18 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-18.png",
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 131,
@@ -1062,7 +1062,7 @@ window.ROSBriCatalog = [
     "category": "Babouches",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-01.png",
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 132,
@@ -1070,7 +1070,7 @@ window.ROSBriCatalog = [
     "category": "Babouches",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-02.png",
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 133,
@@ -1078,7 +1078,7 @@ window.ROSBriCatalog = [
     "category": "Babouches",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-03.png",
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 134,
@@ -1086,7 +1086,7 @@ window.ROSBriCatalog = [
     "category": "Babouches",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-04.png",
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 135,
@@ -1094,7 +1094,7 @@ window.ROSBriCatalog = [
     "category": "Babouches",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-05.png",
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 136,
@@ -1102,7 +1102,7 @@ window.ROSBriCatalog = [
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-01.png",
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 137,
@@ -1110,7 +1110,7 @@ window.ROSBriCatalog = [
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-02.png",
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 138,
@@ -1118,7 +1118,7 @@ window.ROSBriCatalog = [
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-03.png",
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 139,
@@ -1126,7 +1126,7 @@ window.ROSBriCatalog = [
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-04.png",
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 140,
@@ -1134,7 +1134,7 @@ window.ROSBriCatalog = [
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-05.png",
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 141,
@@ -1142,7 +1142,7 @@ window.ROSBriCatalog = [
     "category": "Chapeaux",
     "price": "5 000 FCFA",
     "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-06.png",
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 142,
@@ -1150,7 +1150,7 @@ window.ROSBriCatalog = [
     "category": "Pochettes",
     "price": "4 500 FCFA",
     "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-01.png",
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 143,
@@ -1170,7 +1170,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Bob ROSBRI en wax, accessoire casual pour ajouter une touche coloree au quotidien."
+    "description": "Bob ROSBRI en wax, leger et casual, parfait pour ajouter une touche coloree au quotidien."
   },
   {
     "id": 144,
@@ -1190,7 +1190,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Bob ROSBRI en wax, accessoire casual pour ajouter une touche coloree au quotidien."
+    "description": "Bob ROSBRI en wax, leger et casual, parfait pour ajouter une touche coloree au quotidien."
   },
   {
     "id": 145,
@@ -1210,7 +1210,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 146,
@@ -1230,7 +1230,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 147,
@@ -1250,7 +1250,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 148,
@@ -1270,7 +1270,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Chapeau ROSBRI en wax, accessoire leger pour completer une tenue avec caractere."
+    "description": "Chapeau ROSBRI en wax, accessoire fort pour proteger du soleil et completer une tenue avec style."
   },
   {
     "id": 149,
@@ -1290,7 +1290,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 150,
@@ -1310,7 +1310,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 151,
@@ -1330,7 +1330,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 152,
@@ -1350,7 +1350,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 153,
@@ -1370,7 +1370,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 154,
@@ -1390,7 +1390,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 155,
@@ -1410,7 +1410,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 156,
@@ -1430,7 +1430,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 157,
@@ -1450,7 +1450,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 158,
@@ -1470,7 +1470,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 159,
@@ -1490,7 +1490,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 160,
@@ -1510,7 +1510,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 161,
@@ -1530,7 +1530,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 162,
@@ -1550,7 +1550,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 163,
@@ -1570,7 +1570,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 164,
@@ -1590,7 +1590,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 165,
@@ -1610,7 +1610,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 166,
@@ -1630,7 +1630,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Accessoire ROSBRI en wax, petit detail original pour completer ou offrir."
+    "description": "Accessoire ROSBRI en wax, petit detail distinctif pour personnaliser une tenue ou faire un cadeau."
   },
   {
     "id": 167,
@@ -1650,12 +1650,12 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 168,
     "title": "Pack sac ROSBRI wax 119",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-119.png",
     "reviews": [
@@ -1671,7 +1671,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack sac, chapeau et babouches assortis, coordonne en wax jaune pour une sortie complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 169,
@@ -1691,7 +1691,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 170,
@@ -1711,12 +1711,12 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 171,
     "title": "Pack sac ROSBRI wax 120",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-120.png",
     "reviews": [
@@ -1732,7 +1732,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack sac fleuri et sandales assorties, parfait pour une tenue estivale coordonnee."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 172,
@@ -1752,7 +1752,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 173,
@@ -1772,12 +1772,12 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 174,
     "title": "Pack sac ROSBRI wax 121",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-121.png",
     "reviews": [
@@ -1793,7 +1793,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack sac, pochette et sandales assorties, avec wax colore pour un style complet."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 175,
@@ -1813,7 +1813,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 176,
@@ -1833,7 +1833,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 177,
@@ -1853,7 +1853,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 178,
@@ -1873,7 +1873,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 179,
@@ -1893,7 +1893,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 180,
@@ -1913,12 +1913,12 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 181,
     "title": "Pack sac ROSBRI wax 122",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-122.png",
     "reviews": [
@@ -1934,7 +1934,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack sac et babouches assorties, imprime floral vif pour une allure coordonnee."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 182,
@@ -1954,7 +1954,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 183,
@@ -1974,7 +1974,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 184,
@@ -1994,7 +1994,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 185,
@@ -2014,7 +2014,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 186,
@@ -2034,7 +2034,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 187,
@@ -2054,7 +2054,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 188,
@@ -2074,7 +2074,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 189,
@@ -2094,7 +2094,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 190,
@@ -2114,7 +2114,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 191,
@@ -2134,7 +2134,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 192,
@@ -2154,7 +2154,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 193,
@@ -2174,7 +2174,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 194,
@@ -2194,7 +2194,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 195,
@@ -2214,7 +2214,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 196,
@@ -2234,7 +2234,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 197,
@@ -2254,7 +2254,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 198,
@@ -2274,7 +2274,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 199,
@@ -2294,7 +2294,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 200,
@@ -2314,7 +2314,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 201,
@@ -2334,7 +2334,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 202,
@@ -2354,7 +2354,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 203,
@@ -2374,7 +2374,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 204,
@@ -2394,7 +2394,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 205,
@@ -2414,7 +2414,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 206,
@@ -2434,7 +2434,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 207,
@@ -2454,7 +2454,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 208,
@@ -2474,7 +2474,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 209,
@@ -2494,7 +2494,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 210,
@@ -2514,7 +2514,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 211,
@@ -2534,7 +2534,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 212,
@@ -2554,7 +2554,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 213,
@@ -2574,7 +2574,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 214,
@@ -2594,7 +2594,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 215,
@@ -2614,7 +2614,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 216,
@@ -2634,12 +2634,12 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 217,
     "title": "Pack sac ROSBRI wax 123",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-123.png",
     "reviews": [
@@ -2655,7 +2655,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 218,
@@ -2675,7 +2675,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 219,
@@ -2695,7 +2695,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 220,
@@ -2715,7 +2715,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 221,
@@ -2735,7 +2735,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 222,
@@ -2755,7 +2755,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 223,
@@ -2775,7 +2775,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 224,
@@ -2795,7 +2795,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 225,
@@ -2815,7 +2815,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 226,
@@ -2835,7 +2835,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 227,
@@ -2855,7 +2855,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 228,
@@ -2875,12 +2875,12 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 229,
     "title": "Pack babouches ROSBRI wax 16",
-    "category": "Babouches",
+    "category": "Packs",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-16.png",
     "reviews": [
@@ -2896,7 +2896,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack babouches et sac assorti, motifs wax coordonnes pour sortir leger et bien agence."
+    "description": "Pack coordonne babouches et accessoire assorti, pense pour composer une tenue wax pratique, complete et prete a offrir."
   },
   {
     "id": 230,
@@ -2916,7 +2916,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 231,
@@ -2936,7 +2936,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 232,
@@ -2956,7 +2956,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 233,
@@ -2976,7 +2976,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 234,
@@ -2996,7 +2996,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 235,
@@ -3016,7 +3016,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 236,
@@ -3036,12 +3036,12 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 237,
     "title": "Pack sac ROSBRI wax 124",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-124.png",
     "reviews": [
@@ -3057,7 +3057,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 238,
@@ -3077,7 +3077,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 239,
@@ -3097,7 +3097,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 240,
@@ -3117,12 +3117,12 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 241,
     "title": "Pack sac ROSBRI wax 125",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-125.png",
     "reviews": [
@@ -3138,7 +3138,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 242,
@@ -3158,7 +3158,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 243,
@@ -3178,7 +3178,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s d?coratif et bien assorti au style africain moderne."
       }
     ],
-    "description": "Coussin decoratif ROSBRI, motif wax pour apporter chaleur et couleur a la maison."
+    "description": "Coussin decoratif ROSBRI, motif wax chaleureux pour donner du caractere a un salon ou une chambre."
   },
   {
     "id": 244,
@@ -3198,7 +3198,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s d?coratif et bien assorti au style africain moderne."
       }
     ],
-    "description": "Coussin decoratif ROSBRI, motif wax pour apporter chaleur et couleur a la maison."
+    "description": "Coussin decoratif ROSBRI, motif wax chaleureux pour donner du caractere a un salon ou une chambre."
   },
   {
     "id": 245,
@@ -3218,7 +3218,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s d?coratif et bien assorti au style africain moderne."
       }
     ],
-    "description": "Coussin decoratif ROSBRI, motif wax pour apporter chaleur et couleur a la maison."
+    "description": "Coussin decoratif ROSBRI, motif wax chaleureux pour donner du caractere a un salon ou une chambre."
   },
   {
     "id": 246,
@@ -3238,12 +3238,12 @@ window.ROSBriCatalog = [
         "text": "Tr?s d?coratif et bien assorti au style africain moderne."
       }
     ],
-    "description": "Coussin decoratif ROSBRI, motif wax pour apporter chaleur et couleur a la maison."
+    "description": "Coussin decoratif ROSBRI, motif wax chaleureux pour donner du caractere a un salon ou une chambre."
   },
   {
     "id": 247,
     "title": "Pack sac ROSBRI wax 126",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-126.png",
     "reviews": [
@@ -3259,7 +3259,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 248,
@@ -3279,7 +3279,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 249,
@@ -3299,7 +3299,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 250,
@@ -3319,12 +3319,12 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 251,
     "title": "Pack sac ROSBRI wax 127",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-127.png",
     "reviews": [
@@ -3340,12 +3340,12 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 252,
     "title": "Pack babouches ROSBRI wax 21",
-    "category": "Babouches",
+    "category": "Packs",
     "price": "6 500 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-21.png",
     "reviews": [
@@ -3361,7 +3361,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack babouches et sac assorti, finition wax coordonnee pour un ensemble simple et chic."
+    "description": "Pack coordonne babouches et accessoire assorti, pense pour composer une tenue wax pratique, complete et prete a offrir."
   },
   {
     "id": 253,
@@ -3381,7 +3381,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 254,
@@ -3401,7 +3401,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 255,
@@ -3421,7 +3421,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 256,
@@ -3441,7 +3441,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Sandales ROSBRI avec finition wax, pratiques pour une tenue decontractee et coloree."
+    "description": "Sandales ROSBRI avec finition wax, confortables et colorees pour completer une tenue decontractee."
   },
   {
     "id": 257,
@@ -3461,7 +3461,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 258,
@@ -3481,7 +3481,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 259,
@@ -3501,7 +3501,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 260,
@@ -3521,7 +3521,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 261,
@@ -3541,7 +3541,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Bob ROSBRI en wax, accessoire casual pour ajouter une touche coloree au quotidien."
+    "description": "Bob ROSBRI en wax, leger et casual, parfait pour ajouter une touche coloree au quotidien."
   },
   {
     "id": 262,
@@ -3561,7 +3561,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 263,
@@ -3581,7 +3581,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 264,
@@ -3601,7 +3601,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 265,
@@ -3621,7 +3621,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 266,
@@ -3641,7 +3641,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 267,
@@ -3661,7 +3661,7 @@ window.ROSBriCatalog = [
         "text": "Belle paire, les finitions wax font vraiment la diff?rence."
       }
     ],
-    "description": "Babouches ROSBRI avec detail wax, legeres et faciles a associer a une tenue simple."
+    "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
     "id": 268,
@@ -3681,7 +3681,7 @@ window.ROSBriCatalog = [
         "text": "Tr?s belle qualit?, parfait pour une sortie ou un cadeau."
       }
     ],
-    "description": "Sac ROSBRI en wax, pratique au quotidien avec une finition soignee et un motif distinctif."
+    "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
     "id": 269,
@@ -3701,12 +3701,12 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, ideale pour ranger les essentiels avec une touche wax."
+    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
     "id": 270,
     "title": "Pack sac ROSBRI wax 128",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-128.png",
     "reviews": [
@@ -3722,12 +3722,12 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 271,
     "title": "Pack sac ROSBRI wax 129",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-129.png",
     "reviews": [
@@ -3743,12 +3743,12 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 272,
     "title": "Pack sac ROSBRI wax 130",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-130.png",
     "reviews": [
@@ -3764,12 +3764,12 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 273,
     "title": "Pack sac ROSBRI wax 131",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-131.png",
     "reviews": [
@@ -3785,7 +3785,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 274,
@@ -3805,7 +3805,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 275,
@@ -3825,7 +3825,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 276,
@@ -3845,7 +3845,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 277,
@@ -3865,7 +3865,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 278,
@@ -3885,7 +3885,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 279,
@@ -3905,7 +3905,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 280,
@@ -3925,7 +3925,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 281,
@@ -3945,7 +3945,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 282,
@@ -3965,12 +3965,12 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 283,
     "title": "Pack sac ROSBRI wax 132",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-132.png",
     "reviews": [
@@ -3986,7 +3986,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 284,
@@ -4006,7 +4006,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 285,
@@ -4026,7 +4026,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe adulte en wax, coupe elegante pour une tenue feminine et affirmeee."
+    "description": "Robe adulte en wax, feminine et soignee, parfaite pour une sortie, un evenement ou un cadeau."
   },
   {
     "id": 286,
@@ -4046,7 +4046,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Chemise ROSBRI en wax, piece habillee pour un style africain moderne."
+    "description": "Chemise ROSBRI en wax, piece habillee et moderne pour affirmer une elegance africaine au quotidien."
   },
   {
     "id": 287,
@@ -4066,7 +4066,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 288,
@@ -4086,12 +4086,12 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 289,
     "title": "Pack sac ROSBRI wax 133",
-    "category": "Sacs",
+    "category": "Packs",
     "price": "8 500 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-133.png",
     "reviews": [
@@ -4107,7 +4107,7 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack autour du sac ROSBRI avec accessoires wax assortis, pense pour composer une tenue complete."
+    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
   },
   {
     "id": 290,
@@ -4127,7 +4127,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 291,
@@ -4147,7 +4147,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante et facile a porter."
+    "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
     "id": 292,
@@ -4167,7 +4167,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 293,
@@ -4187,7 +4187,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 294,
@@ -4207,7 +4207,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 295,
@@ -4227,7 +4227,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 296,
@@ -4247,7 +4247,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 297,
@@ -4267,7 +4267,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 298,
@@ -4287,7 +4287,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 299,
@@ -4307,7 +4307,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 300,
@@ -4327,7 +4327,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 301,
@@ -4347,7 +4347,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 302,
@@ -4367,7 +4367,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 303,
@@ -4387,7 +4387,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 304,
@@ -4407,7 +4407,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 305,
@@ -4427,7 +4427,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 306,
@@ -4447,7 +4447,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 307,
@@ -4467,7 +4467,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Robe enfant en wax, legere et coloree pour les sorties et celebrations."
+    "description": "Robe enfant en wax, legere et coloree, ideale pour les sorties, fetes et photos de famille."
   },
   {
     "id": 308,
@@ -4487,7 +4487,7 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
     "id": 309,
@@ -4507,26 +4507,6 @@ window.ROSBriCatalog = [
         "text": "Belle finition, exactement l?esprit ROSBRI que je voulais."
       }
     ],
-    "description": "Ensemble enfant haut et bas en wax, pense pour une tenue joyeuse et confortable."
-  },
-  {
-    "id": 310,
-    "title": "Affiche logo ROSBRI",
-    "category": "Affiches",
-    "price": "3 500 FCFA",
-    "image": "images/articles-site/affiches/variants/affiche-rosbri-01.jpg",
-    "reviews": [
-      {
-        "name": "Laure",
-        "rating": 5,
-        "text": "Les couleurs donnent beaucoup de chaleur ? la pi?ce."
-      },
-      {
-        "name": "Estelle",
-        "rating": 5,
-        "text": "Tr?s d?coratif et bien assorti au style africain moderne."
-      }
-    ],
-    "description": "Affiche decorative ROSBRI, visuel fort pour apporter une note culturelle a l interieur."
+    "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   }
 ];

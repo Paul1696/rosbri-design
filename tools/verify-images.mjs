@@ -6,6 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const catalogJs = fs.readFileSync(path.join(root, "catalog.js"), "utf8");
 const catalogData = fs.readFileSync(path.join(root, "catalog-data.js"), "utf8");
 const keep = new Set();
+keep.add("images/brand/rosbri-wax-design-logo.jpg");
 
 for (const m of catalogData.matchAll(/"image": "(images\/[^"]+)"/g)) {
   keep.add(m[1]);
