@@ -1085,16 +1085,6 @@ h1 {
   margin-top: 14px;
 }
 
-.choice-summary {
-  margin: 12px 0 0;
-  padding: 10px 12px;
-  border-radius: 8px;
-  background: #e8faf6;
-  color: var(--brand-dark);
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
 .review-panel,
 .share-panel {
   display: grid;

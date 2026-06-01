@@ -169,8 +169,7 @@
     shoeSizes: ["39"],
     shoeSizeQuantities: { 39: 1 },
     color: colorVariants[0].id,
-    quantity: 1,
-    customText: ""
+    quantity: 1
   };
   const variantGroups = [];
   const hiddenProductIds = [];
@@ -395,11 +394,6 @@
     return item.colorPreview === true && !productColorVariants[item.id];
   }
 
-  function canCustomize(item) {
-    const title = displayTitle(item).toLowerCase();
-    return item.category === "Customisation" || title.includes("personnalis") || title.includes("pack");
-  }
-
   function selectedColor() {
     const options = colorOptionsFor(orderState.item);
     return options.find((variant) => variant.id === orderState.color) || options[0] || colorVariants[0];
@@ -466,7 +460,6 @@
     }
     if (options.color) details.push(`Couleur: ${options.color}`);
     if (options.quantity) details.push(`Quantite: ${options.quantity}`);
-    if (options.customText) details.push(`Personnalisation: ${options.customText}`);
     const detailsBlock = details.length ? `\n\n${details.join("\n")}` : "";
     const message = `Bonjour ROSBRI DESIGN 👋
 
@@ -744,15 +737,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       `
       : "";
 
-    const customField = canCustomize(item)
-      ? `
-        <label class="option-group" for="custom-text">
-          <strong>Personnalisation</strong>
-          <textarea id="custom-text" rows="3" placeholder="Nom, phrase, logo, couleur spéciale...">${orderState.customText}</textarea>
-        </label>
-      `
-      : "";
-
     return `
       <div class="order-options">
         ${sizePicker}
@@ -770,7 +754,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
             </div>
           </div>
         `}
-        ${customField}
       </div>
     `;
   }
@@ -792,7 +775,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
   function updateOrderLink() {
     if (!orderState.item) return;
     const order = byId("lightbox-order");
-    const summary = byId("choice-summary");
     const clothing = isClothing(orderState.item);
     const footwear = isFootwear(orderState.item);
     const colorChoices = hasColorChoices(orderState.item);
@@ -804,21 +786,11 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       shoeSizes: footwear ? orderState.shoeSizes.slice() : [],
       shoeSizeQuantities,
       color: colorChoices ? selectedColor().label : "",
-      quantity: clothing ? totalSelectedSizeQuantity() : (footwear ? totalSelectedShoeSizeQuantity() : orderState.quantity),
-      customText: canCustomize(orderState.item) ? orderState.customText.trim() : ""
+      quantity: clothing ? totalSelectedSizeQuantity() : (footwear ? totalSelectedShoeSizeQuantity() : orderState.quantity)
     };
     if (order) {
       order.href = orderUrlWithOptions(orderState.item, selectedOptions);
       order.textContent = "Commander";
-    }
-    if (summary) {
-      const parts = [];
-      if (selectedOptions.sizeQuantities.length) parts.push(`tailles ${sizeQuantitiesText()}`);
-      if (selectedOptions.shoeSizeQuantities.length) parts.push(`pointures ${shoeSizeQuantitiesText()}`);
-      if (selectedOptions.color) parts.push(`couleur ${selectedOptions.color}`);
-      parts.push(`${selectedOptions.quantity} article${selectedOptions.quantity > 1 ? "s" : ""}`);
-      if (selectedOptions.customText) parts.push("personnalisation ajoutée");
-      summary.textContent = parts.length ? `Votre choix: ${parts.join(" · ")}` : "Votre choix sera confirmé sur WhatsApp.";
     }
   }
 
@@ -842,7 +814,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       shoeSizeQuantities: isFootwear(item) ? selectedShoeSizeQuantities() : [],
       color: hasColorChoices(item) ? selectedColor().label : "",
       quantity: isClothing(item) ? totalSelectedSizeQuantity() : (isFootwear(item) ? totalSelectedShoeSizeQuantity() : orderState.quantity),
-      customText: canCustomize(item) ? orderState.customText.trim() : "",
       url: `${SITE_URL}boutique.html#article-${item.id}`
     };
     const items = cartItems();
@@ -850,17 +821,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     saveCartItems(items);
 
     const cart = byId("lightbox-cart");
-    const summary = byId("choice-summary");
     if (cart) cart.textContent = `Ajoute au panier (${items.length})`;
-    if (summary) {
-      const sizes = entry.sizeQuantities.length
-        ? ` (${entry.sizeQuantities.map((size) => `${size.size} x ${size.quantity}`).join(", ")})`
-        : "";
-      const shoeSizes = entry.shoeSizeQuantities.length
-        ? ` (${entry.shoeSizeQuantities.map((size) => `${size.size} x ${size.quantity}`).join(", ")})`
-        : "";
-      summary.textContent = `Ajouté au panier: ${entry.quantity} x ${entry.title}${sizes}${shoeSizes}. Vous pouvez continuer ou commander directement.`;
-    }
   }
 
   function productUrl(item) {
@@ -964,8 +925,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     }
     if (navigator.clipboard) {
       await navigator.clipboard.writeText(url);
-      const summary = byId("choice-summary");
-      if (summary) summary.textContent = "Lien de l’article copié.";
     }
   }
 
@@ -982,7 +941,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     orderState.shoeSizeQuantities = { 39: 1 };
     orderState.color = (colorOptionsFor(item)[0] || colorVariants[0]).id;
     orderState.quantity = 1;
-    orderState.customText = "";
 
     byId("lightbox-image").src = optimizedImage(displayImage(item));
     byId("lightbox-image").alt = displayTitle(item);
@@ -1192,10 +1150,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     }
 
     document.addEventListener("input", (event) => {
-      if (event.target.id === "custom-text") {
-        orderState.customText = event.target.value;
-        updateOrderLink();
-      }
       if (event.target.id === "quantity-input") {
         orderState.quantity = Math.max(1, Math.min(99, Number(event.target.value) || 1));
         event.target.value = String(orderState.quantity);
