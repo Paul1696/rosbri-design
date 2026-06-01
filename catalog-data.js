@@ -457,12 +457,12 @@ window.ROSBriCatalog = [
   },
   {
     "id": 58,
-    "title": "Pack sac ROSBRI wax 10",
+    "title": "Pack cabas beige motif ethnique + pochette",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "12 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-10.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Grand sac cabas beige en tissu texturé, décoré d'un motif noir, blanc et orange. Le pack comprend aussi une pochette assortie avec bordures wax géométriques."
   },
   {
     "id": 59,
@@ -610,12 +610,12 @@ window.ROSBriCatalog = [
   },
   {
     "id": 77,
-    "title": "Pack sac ROSBRI wax 29",
+    "title": "Pack plage rouge complet : sac, chapeau et sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-29.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Ensemble assorti rouge et beige composé d'un sac, d'un chapeau de paille bordé de wax rouge et d'une paire de sandales plates assorties. Un pack complet pour un look plage coordonné."
   },
   {
     "id": 78,
@@ -659,12 +659,12 @@ window.ROSBriCatalog = [
   },
   {
     "id": 83,
-    "title": "Pack sac ROSBRI wax 35",
+    "title": "Pack cabas bleu marine + sandales wax multicolores",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-35.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Grand sac cabas bleu marine avec détails en wax multicolore. Le pack comprend une paire de sandales assorties aux motifs bleu, jaune, rouge et rose."
   },
   {
     "id": 84,
@@ -676,12 +676,12 @@ window.ROSBriCatalog = [
   },
   {
     "id": 85,
-    "title": "Pack sac ROSBRI wax 37",
+    "title": "Pack cabas coloré + casquette assortie",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "17 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-37.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas en tissu multicolore bleu, jaune, rouge et noir, accompagné d'une casquette assortie avec visière en wax bleu et jaune."
   },
   {
     "id": 86,
@@ -789,30 +789,30 @@ window.ROSBriCatalog = [
   },
   {
     "id": 99,
-    "title": "Pack sac ROSBRI wax 51",
+    "title": "Pack chapeau bleu marine + pochette assortie",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "15 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-51.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Chapeau de paille avec bordure wax bleu marine, accompagné d'une pochette assortie en tissu beige et wax bleu marine."
   },
   {
     "id": 100,
-    "title": "Pack sac ROSBRI wax 52",
+    "title": "Pack cabas bleu marine personnalisé + sandales assorties",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-52.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas bleu marine et beige avec inscription MR, accompagné d'une paire de sandales assorties en wax bleu marine."
   },
   {
     "id": 101,
-    "title": "Pack sac ROSBRI wax 53",
+    "title": "Pack cabas rose + chapeau assorti",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "20 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-53.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas rose clair avec motifs wax jaune, noir et blanc, accompagné d'un chapeau rose assorti bordé du même tissu wax."
   },
   {
     "id": 102,
@@ -824,30 +824,29 @@ window.ROSBriCatalog = [
   },
   {
     "id": 103,
-    "title": "Pack sac ROSBRI wax 111",
+    "title": "Pack cabas rose graphique complet",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-111.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Ensemble complet rose composé d'un sac cabas à motifs graphiques, d'une pochette assortie, d'un chapeau rond et d'une paire de sandales assorties."
   },
   {
     "id": 104,
-    "title": "Pack sac ROSBRI wax 112",
+    "title": "Pack cabas beige motif losange + chapeau assorti",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "20 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-112.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Sac cabas beige avec grand motif losange en wax jaune, noir et rouge. Le pack comprend aussi un chapeau de paille assorti."
   },
   {
     "id": 105,
-    "title": "Pack sac ROSBRI wax 113",
-    "category": "Packs",
-    "price": "8 500 FCFA",
+    "title": "Cabas beige motif losange wax jaune",
+    "category": "Sacs",
+    "price": "15 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-113.png",
-    "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Grand sac cabas beige décoré d'un motif central en wax jaune, noir et rouge, avec anses et bordures assorties."
   },
   {
     "id": 106,

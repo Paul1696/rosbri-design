@@ -482,7 +482,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     if (item.price.includes("4 500") || item.price.includes("5 000")) return "low";
     if (item.price.includes("6 500")) return "mid";
     if (item.price.includes("8 500") || item.price.includes("10 000")) return "premium";
-    if (item.price.includes("15 000") || item.price.includes("18 000")) return "set";
+    if (item.price.includes("12 000") || item.price.includes("15 000") || item.price.includes("17 000") || item.price.includes("18 000") || item.price.includes("20 000") || item.price.includes("25 000") || item.price.includes("30 000")) return "set";
     return "premium";
   }
 
@@ -550,7 +550,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     }
 
     if (state.sort === "price") {
-      const order = { low: 1, mid: 2, premium: 3, quote: 4 };
+      const order = { starter: 0, low: 1, mid: 2, premium: 3, set: 4, quote: 5 };
       result = result.slice().sort((a, b) => order[priceBand(a)] - order[priceBand(b)] || catalogOrderKey(a) - catalogOrderKey(b));
     }
 
