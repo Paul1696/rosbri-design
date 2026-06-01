@@ -797,20 +797,7 @@ h1 {
   margin: 10px 0 18px;
 }
 
-.filter-title {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.quick-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 18px;
-}
-
-.filter-btn,
-.quick-filter {
+.filter-btn {
   min-height: 44px;
   padding: 0 12px;
   border: 1px solid var(--line);
@@ -823,19 +810,10 @@ h1 {
 }
 
 .filter-btn.active,
-.filter-btn:hover,
-.quick-filter.active,
-.quick-filter:hover {
+.filter-btn:hover {
   border-color: var(--brand);
   background: #e8faf6;
   color: var(--brand-dark);
-}
-
-.quick-filter {
-  min-height: 38px;
-  border-radius: 8px;
-  font-size: 0.82rem;
-  text-align: center;
 }
 
 .search {
@@ -856,7 +834,6 @@ h1 {
 .search:focus,
 .select:focus,
 .filter-btn:focus-visible,
-.quick-filter:focus-visible,
 .swatch-btn:focus-visible,
 .option-group textarea:focus,
 .primary-btn:focus-visible,

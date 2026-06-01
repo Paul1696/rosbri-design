@@ -47,7 +47,6 @@
     subcategory: "Tous",
     query: "",
     price: "all",
-    need: "all",
     sort: "default",
     visibleLimit: 24
   };
@@ -515,16 +514,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     return "premium";
   }
 
-  function needMatch(item, need) {
-    const text = searchIndex.get(item.id) || "";
-    if (need === "all") return true;
-    if (need === "gift") return item.category === "Maman" || text.includes("maman") || text.includes("famille") || text.includes("fête");
-    if (need === "culture") return item.category === "Heritage" || text.includes("kribi") || text.includes("cameroun") || text.includes("tradition");
-    if (need === "custom") return item.category === "Customisation" || text.includes("personnalisation") || text.includes("pack");
-    if (need === "bags") return productCategory(item) === "Sacs";
-    return true;
-  }
-
   function productCard(item, compact, eager) {
     const title = displayTitle(item);
     const description = productDescription(item);
@@ -578,7 +567,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       const subcategoryMatch = state.subcategory === "Tous" || productSubcategory(item) === state.subcategory;
       const queryMatch = !query || (searchIndex.get(item.id) || "").includes(query);
       const priceMatch = state.price === "all" || priceBand(item) === state.price;
-      return categoryMatch && subcategoryMatch && queryMatch && priceMatch && needMatch(item, state.need);
+      return categoryMatch && subcategoryMatch && queryMatch && priceMatch;
     });
 
     if (state.sort === "name") {
@@ -894,12 +883,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
         : "";
       summary.textContent = `Ajouté au panier: ${entry.quantity} x ${entry.title}${sizes}${shoeSizes}. Vous pouvez continuer ou commander directement.`;
     }
-  }
-
-  function updateActiveNeeds() {
-    document.querySelectorAll("[data-need]").forEach((button) => {
-      button.classList.toggle("active", button.dataset.need === state.need);
-    });
   }
 
   function productUrl(item) {
@@ -1218,15 +1201,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
       });
     }
 
-    document.addEventListener("click", (event) => {
-      const needButton = event.target.closest("[data-need]");
-      if (!needButton) return;
-      state.need = needButton.dataset.need;
-      resetVisibleLimit();
-      updateActiveNeeds();
-      renderShop();
-    });
-
     const loadMore = byId("catalog-load-more");
     if (loadMore) {
       loadMore.addEventListener("click", () => {
@@ -1273,7 +1247,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     renderFilters();
     renderShop();
     bindEvents();
-    updateActiveNeeds();
     openProductFromHash();
   });
 })();
