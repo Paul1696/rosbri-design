@@ -737,19 +737,6 @@ h1 {
   line-height: 1.45;
 }
 
-.product-stock {
-  display: inline-flex;
-  width: fit-content;
-  margin: 0 0 12px;
-  padding: 5px 8px;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 168, 150, 0.18);
-  background: #e8faf6;
-  color: var(--brand-dark);
-  font-size: 0.78rem;
-  font-weight: 900;
-}
-
 .product-meta {
   display: flex;
   align-items: center;
@@ -1090,16 +1077,6 @@ h1 {
 .lightbox-description {
   color: var(--muted);
   line-height: 1.55;
-}
-
-.lightbox-stock {
-  width: fit-content;
-  padding: 6px 10px;
-  border-radius: 6px;
-  background: #e8faf6;
-  color: var(--brand-dark);
-  font-size: 0.9rem;
-  font-weight: 900;
 }
 
 .order-options {

@@ -196,7 +196,7 @@
   }, {});
   const searchIndex = new Map(catalogView.map((item) => [
     item.id,
-    `${displayTitle(item)} ${productDescription(item)} ${stockText(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
+    `${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
   ]));
 
   function byId(id) {
@@ -272,25 +272,6 @@
 
   function productDescription(item) {
     return item.description || "Creation ROSBRI au motif wax, pensee pour une finition originale et soignee.";
-  }
-
-  function stockRemaining(item) {
-    const explicitStock = Number(item.stockRemaining);
-    if (Number.isFinite(explicitStock)) return Math.max(0, Math.min(99, explicitStock));
-    const id = Number(item.id) || 1;
-    const category = productCategory(item);
-    if (item.isPack) return 2 + (id % 4);
-    if (category === "Tshirts") return 8 + (id % 9);
-    if (category === "Sacs") return 3 + (id % 6);
-    if (category === "Ensembles" || category === "Robes") return 2 + (id % 5);
-    if (isFootwear(item)) return 4 + (id % 7);
-    return 3 + (id % 8);
-  }
-
-  function stockText(item) {
-    const count = stockRemaining(item);
-    const unit = item.isPack ? "pack" : "article";
-    return `${count} ${unit}${count > 1 ? "s" : ""} restant${count > 1 ? "s" : ""}`;
   }
 
   function productCategory(item) {
@@ -486,7 +467,6 @@
     if (options.color) details.push(`Couleur: ${options.color}`);
     if (options.quantity) details.push(`Quantite: ${options.quantity}`);
     if (options.customText) details.push(`Personnalisation: ${options.customText}`);
-    details.push(`Stock affiche: ${stockText(item)}`);
     const detailsBlock = details.length ? `\n\n${details.join("\n")}` : "";
     const message = `Bonjour ROSBRI DESIGN 👋
 
@@ -534,7 +514,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
         <div class="product-body">
           <h3>${title}</h3>
           <p class="product-description">${description}</p>
-          <p class="product-stock">${stockText(item)}</p>
           <div class="product-meta">
             <span>${compact ? "Création ROSBRI" : meta}</span>
             <span class="price">${item.price}</span>
@@ -1011,8 +990,6 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     byId("lightbox-meta").textContent = `${productMetaLabel(item)} - ${item.price}`;
     const description = byId("lightbox-description");
     if (description) description.textContent = productDescription(item);
-    const stock = byId("lightbox-stock");
-    if (stock) stock.textContent = stockText(item);
     const cart = byId("lightbox-cart");
     if (cart) cart.textContent = "Ajouter au panier";
     renderOrderOptions(item);
