@@ -159,7 +159,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--white);
   background:
     linear-gradient(180deg, rgba(8, 16, 14, 0.22), rgba(8, 16, 14, 0.8)),
-    url("images/heritage/variants/tshirt-chutes-lobe-kribi-vert-foret.png") center/cover;
+    url("images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png") center/cover;
 }
 
 .hero-layout {
