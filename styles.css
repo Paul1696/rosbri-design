@@ -548,6 +548,18 @@ h1 {
   font-weight: 900;
 }
 
+.pack-note {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: rgba(0, 128, 112, 0.92);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
 .product-body {
   padding: 14px;
 }
@@ -557,6 +569,14 @@ h1 {
   margin-bottom: 8px;
   font-size: 1rem;
   line-height: 1.25;
+}
+
+.product-description {
+  min-height: 42px;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
 }
 
 .product-meta {
@@ -914,6 +934,11 @@ h1 {
 
 .lightbox-info p {
   margin: 4px 0 0;
+}
+
+.lightbox-description {
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .order-options {

@@ -197,7 +197,7 @@
   }, {});
   const searchIndex = new Map(catalogView.map((item) => [
     item.id,
-    `${displayTitle(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
+    `${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
   ]));
 
   function byId(id) {
@@ -271,6 +271,10 @@
     return item.title || subcategoryLabels[item.category] || "Article personnalisé";
   }
 
+  function productDescription(item) {
+    return item.description || "Creation ROSBRI au motif wax, pensee pour une finition originale et soignee.";
+  }
+
   function productCategory(item) {
     const path = item.image || "";
     const match = path.match(/^images\/articles-site\/([^/]+)/i);
@@ -325,6 +329,16 @@
   function subcategoryLabel(item) {
     const subcategory = productSubcategory(item);
     return subcategory === "Tous" ? "" : (subcategoryLabels[subcategory] || subcategory);
+  }
+
+  function productMetaLabel(item) {
+    const category = productCategory(item);
+    const subcategory = subcategoryLabel(item);
+    if (item.isPack) {
+      const detail = subcategory || productLabels[category] || category;
+      return `Pack coordonne - ${detail}`;
+    }
+    return subcategory ? `${productLabels[category]} - ${subcategory}` : productLabels[category];
   }
 
   function catalogOrderKey(item) {
@@ -493,23 +507,25 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
 
   function productCard(item, compact, eager) {
     const title = displayTitle(item);
+    const description = productDescription(item);
     const loading = eager ? "eager" : "lazy";
     const priority = eager ? " fetchpriority=\"high\"" : "";
     const collage = isColorCollage(item);
     const colorChoices = hasColorChoices(item);
     const colorCount = colorOptionsFor(item).length;
     const category = productCategory(item);
-    const subcategory = subcategoryLabel(item);
-    const meta = subcategory ? `${productLabels[category]} - ${subcategory}` : productLabels[category];
+    const meta = productMetaLabel(item);
     return `
       <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
           <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(displayImage(item))}" alt="${title}" loading="${loading}" decoding="async"${priority}>
-          <span class="tag">${productLabels[category] || category}</span>
+          <span class="tag">${item.isPack ? "Pack" : (productLabels[category] || category)}</span>
+          ${item.isPack ? `<span class="pack-note">Lot assorti</span>` : ""}
           ${colorChoices ? `<span class="variant-note">${colorCount} couleurs</span>` : ""}
         </button>
         <div class="product-body">
           <h3>${title}</h3>
+          <p class="product-description">${description}</p>
           <div class="product-meta">
             <span>${compact ? "Création ROSBRI" : meta}</span>
             <span class="price">${item.price}</span>
@@ -978,7 +994,9 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     byId("lightbox-image").src = optimizedImage(displayImage(item));
     byId("lightbox-image").alt = displayTitle(item);
     byId("lightbox-title").textContent = displayTitle(item);
-    byId("lightbox-meta").textContent = `${productLabel(item)}${subcategoryLabel(item) ? ` - ${subcategoryLabel(item)}` : ""} - ${item.price}`;
+    byId("lightbox-meta").textContent = `${productMetaLabel(item)} - ${item.price}`;
+    const description = byId("lightbox-description");
+    if (description) description.textContent = productDescription(item);
     const cart = byId("lightbox-cart");
     if (cart) cart.textContent = "Ajouter au panier";
     renderOrderOptions(item);
