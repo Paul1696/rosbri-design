@@ -54,6 +54,9 @@
     });
     if (!response.ok) {
       const text = await response.text();
+      if (response.status === 404) {
+        throw new Error("Table products introuvable. Ouvrez Supabase > SQL Editor et lancez tools/supabase-products-schema.sql.");
+      }
       throw new Error(text || `Erreur Supabase ${response.status}`);
     }
     if (response.status === 204) return null;
