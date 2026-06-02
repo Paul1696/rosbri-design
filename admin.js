@@ -2,6 +2,11 @@
   const storageKey = "rosbriCmsSettings";
   const tokenKey = "rosbriCmsToken";
   const staticCatalog = Array.isArray(window.ROSBriCatalog) ? window.ROSBriCatalog : [];
+  const defaultSettings = window.ROSBriCMS && window.ROSBriCMS.enabled ? {
+    supabaseUrl: window.ROSBriCMS.supabaseUrl,
+    anonKey: window.ROSBriCMS.anonKey,
+    productsTable: window.ROSBriCMS.productsTable || "products"
+  } : {};
   let settings = loadSettings();
   let accessToken = sessionStorage.getItem(tokenKey) || "";
   let products = [];
@@ -11,9 +16,12 @@
 
   function loadSettings() {
     try {
-      return JSON.parse(localStorage.getItem(storageKey)) || {};
+      return {
+        ...defaultSettings,
+        ...(JSON.parse(localStorage.getItem(storageKey)) || {})
+      };
     } catch {
-      return {};
+      return { ...defaultSettings };
     }
   }
 
