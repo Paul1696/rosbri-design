@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin catalogue - ROSBRI DESIGN</title>
   <meta name="robots" content="noindex,nofollow">
-  <link rel="stylesheet" href="styles.css?v=20260602-admin">
+  <link rel="stylesheet" href="styles.css?v=20260602-admin-3">
 </head>
 <body class="admin-page">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -30,36 +30,15 @@
         <div>
           <p class="eyebrow">Back-office</p>
           <h1>Gestion du catalogue</h1>
-          <p>Connectez Supabase pour ajouter, modifier, masquer ou supprimer les articles sans toucher au code du site.</p>
+          <p>Connectez-vous avec votre compte admin pour ajouter, modifier, masquer ou supprimer les articles sans toucher au code du site.</p>
         </div>
         <a class="primary-btn" href="boutique.html">Voir la boutique</a>
       </div>
 
       <div class="admin-grid">
-        <form class="admin-panel" id="cms-settings">
-          <h2>Connexion Supabase</h2>
-          <label>
-            URL du projet
-            <input id="cms-url" type="url" placeholder="https://xxxx.supabase.co" autocomplete="off">
-          </label>
-          <label>
-            Clé anon publique
-            <input id="cms-key" type="password" placeholder="eyJ..." autocomplete="off">
-          </label>
-          <label>
-            Table produits
-            <input id="cms-table" type="text" value="products">
-          </label>
-          <div class="admin-actions">
-            <button class="primary-btn" type="submit">Enregistrer</button>
-            <button class="secondary-btn" id="cms-test" type="button">Tester</button>
-          </div>
-          <p class="admin-status" id="cms-status">Configuration locale non chargée.</p>
-        </form>
-
-        <div class="admin-panel">
+        <div class="admin-panel admin-login-card">
           <h2>Session admin</h2>
-          <p>Connectez-vous avec un compte Supabase Auth autorisé pour publier les modifications.</p>
+          <p>Le compte doit être créé dans Supabase Auth. L'URL du projet n'est pas un identifiant de connexion.</p>
           <label>
             Email
             <input id="admin-email" type="email" autocomplete="email">
@@ -75,9 +54,33 @@
           <p class="admin-status" id="auth-status">Non connecté.</p>
         </div>
 
-        <div class="admin-panel">
+        <details class="admin-panel admin-advanced">
+          <summary>Réglages techniques Supabase</summary>
+          <form id="cms-settings">
+            <p>Ces champs sont préremplis par le site. Ne les modifiez que si vous changez de projet Supabase.</p>
+            <label>
+              URL du projet
+              <input id="cms-url" type="url" placeholder="https://xxxx.supabase.co" autocomplete="off">
+            </label>
+            <label>
+              Clé publique du projet
+              <input id="cms-key" type="password" placeholder="sb_publishable_..." autocomplete="off">
+            </label>
+            <label>
+              Table produits
+              <input id="cms-table" type="text" value="products">
+            </label>
+            <div class="admin-actions">
+              <button class="primary-btn" type="submit">Enregistrer</button>
+              <button class="secondary-btn" id="cms-test" type="button">Tester</button>
+            </div>
+          </form>
+          <p class="admin-status" id="cms-status">Configuration Supabase prête.</p>
+        </details>
+
+        <div class="admin-panel" id="publication-panel" hidden>
           <h2>Publication</h2>
-          <p>Le site utilise le catalogue local tant que Supabase n'est pas activé dans `cms-config.js`. Une fois activé, les changements publiés ici deviennent visibles sur la boutique.</p>
+          <p>Les changements publiés ici deviennent visibles sur la boutique quand la table Supabase est créée.</p>
           <div class="admin-actions">
             <button class="secondary-btn" id="import-static" type="button">Importer le catalogue actuel</button>
             <a class="secondary-btn" href="tools/supabase-products-schema.sql">Voir le schéma SQL</a>
@@ -86,7 +89,7 @@
         </div>
       </div>
 
-      <div class="admin-layout">
+      <div class="admin-layout" id="admin-workspace" hidden>
         <form class="admin-panel product-editor" id="product-form">
           <h2 id="editor-title">Nouvel article</h2>
           <input id="product-id" type="hidden">
@@ -157,6 +160,6 @@
 
   <script src="catalog-data.js?v=20260602-admin"></script>
   <script src="cms-config.js?v=20260602-admin"></script>
-  <script src="admin.js?v=20260602-admin-2"></script>
+  <script src="admin.js?v=20260602-admin-3"></script>
 </body>
 </html>

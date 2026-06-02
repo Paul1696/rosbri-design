@@ -7,6 +7,7 @@
     anonKey: window.ROSBriCMS.anonKey,
     productsTable: window.ROSBriCMS.productsTable || "products"
   } : {};
+
   let settings = loadSettings();
   let accessToken = sessionStorage.getItem(tokenKey) || "";
   let products = [];
@@ -30,6 +31,10 @@
     localStorage.setItem(storageKey, JSON.stringify(settings));
   }
 
+  function configured() {
+    return Boolean(settings.supabaseUrl && settings.anonKey && settings.productsTable);
+  }
+
   function endpoint(path) {
     return `${settings.supabaseUrl.replace(/\/$/, "")}/rest/v1/${path}`;
   }
@@ -43,8 +48,24 @@
     };
   }
 
-  function configured() {
-    return Boolean(settings.supabaseUrl && settings.anonKey && settings.productsTable);
+  function escapeHtml(value) {
+    return String(value || "").replace(/[&<>"']/g, (char) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#039;"
+    }[char]));
+  }
+
+  async function errorMessage(response) {
+    const text = await response.text();
+    try {
+      const data = JSON.parse(text);
+      return data.message || data.error_description || data.error || text;
+    } catch {
+      return text || `Erreur ${response.status}`;
+    }
   }
 
   function setStatus(text, tone = "") {
@@ -54,6 +75,25 @@
     node.dataset.tone = tone;
   }
 
+  function setAuthStatus(text, tone = "") {
+    const node = byId("auth-status");
+    if (!node) return;
+    node.textContent = text;
+    node.dataset.tone = tone;
+  }
+
+  function updateAdminView() {
+    const connected = Boolean(accessToken);
+    const workspace = byId("admin-workspace");
+    const publication = byId("publication-panel");
+    const loginButton = byId("admin-login");
+    const logoutButton = byId("admin-logout");
+    if (workspace) workspace.hidden = !connected;
+    if (publication) publication.hidden = !connected;
+    if (loginButton) loginButton.hidden = connected;
+    if (logoutButton) logoutButton.hidden = !connected;
+  }
+
   async function request(path, options = {}) {
     if (!configured()) throw new Error("Configuration Supabase manquante.");
     const response = await fetch(endpoint(path), {
@@ -61,11 +101,10 @@
       headers: headers(options.headers)
     });
     if (!response.ok) {
-      const text = await response.text();
       if (response.status === 404) {
         throw new Error("Table products introuvable. Ouvrez Supabase > SQL Editor et lancez tools/supabase-products-schema.sql.");
       }
-      throw new Error(text || `Erreur Supabase ${response.status}`);
+      throw new Error(await errorMessage(response));
     }
     if (response.status === 204) return null;
     return response.json();
@@ -76,33 +115,41 @@
   }
 
   async function login() {
-    if (!configured()) throw new Error("Enregistrez d'abord la configuration Supabase.");
+    if (!configured()) throw new Error("Configuration Supabase manquante. Ouvrez les réglages techniques.");
     const email = byId("admin-email").value.trim();
     const password = byId("admin-password").value;
+    if (!email || !password) throw new Error("Entrez l'email et le mot de passe du compte Supabase Auth.");
+
     const response = await fetch(`${settings.supabaseUrl.replace(/\/$/, "")}/auth/v1/token?grant_type=password`, {
       method: "POST",
       headers: headers({ Authorization: `Bearer ${settings.anonKey}` }),
       body: JSON.stringify({ email, password })
     });
-    if (!response.ok) throw new Error(await response.text());
+
+    if (!response.ok) throw new Error(await errorMessage(response));
     const data = await response.json();
     accessToken = data.access_token || "";
     sessionStorage.setItem(tokenKey, accessToken);
     setAuthStatus("Connecté à Supabase.", "ok");
-    await loadProducts();
+    setStatus("Session ouverte. Chargement du catalogue...", "ok");
+    updateAdminView();
+
+    try {
+      await loadProducts();
+    } catch (error) {
+      setStatus(`Catalogue indisponible : ${error.message}`, "error");
+    }
   }
 
   function logout() {
     accessToken = "";
+    products = [];
     sessionStorage.removeItem(tokenKey);
+    renderProducts();
+    resetForm();
     setAuthStatus("Non connecté.", "");
-  }
-
-  function setAuthStatus(text, tone = "") {
-    const node = byId("auth-status");
-    if (!node) return;
-    node.textContent = text;
-    node.dataset.tone = tone;
+    setStatus("Connectez-vous avec votre compte Supabase Auth pour gérer le catalogue.");
+    updateAdminView();
   }
 
   function normalizeForDb(item) {
@@ -137,9 +184,10 @@
     if (!configured()) {
       products = staticCatalog.map(normalizeForDb);
       renderProducts();
-      setStatus("Mode aperçu local : configurez Supabase pour enregistrer en ligne.");
+      setStatus("Mode aperçu local : configurez Supabase pour enregistrer en ligne.", "warn");
       return;
     }
+
     const path = accessToken
       ? `${settings.productsTable}?select=*&order=id.asc`
       : `${settings.productsTable}?select=*&visible=eq.true&order=id.asc`;
@@ -168,6 +216,7 @@
   }
 
   function editProduct(item) {
+    if (!item) return;
     byId("editor-title").textContent = `Modifier #${item.id}`;
     byId("product-id").value = item.id;
     byId("product-title").value = item.title || "";
@@ -181,29 +230,33 @@
   }
 
   function resetForm() {
+    const form = byId("product-form");
+    if (!form) return;
     byId("editor-title").textContent = "Nouvel article";
-    byId("product-form").reset();
+    form.reset();
     byId("product-id").value = "";
     byId("product-visible").checked = true;
   }
 
   function renderProducts() {
     const target = byId("admin-products");
+    if (!target) return;
     const needle = query.trim().toLowerCase();
     const visible = products.filter((item) => {
       return !needle || `${item.title} ${item.category} ${item.price} ${item.description}`.toLowerCase().includes(needle);
     });
+
     target.innerHTML = visible.map((item) => `
       <article class="admin-product${item.visible === false ? " muted" : ""}">
-        <img src="${item.image}" alt="">
+        <img src="${escapeHtml(item.image)}" alt="">
         <div>
-          <strong>${item.title}</strong>
-          <span>${item.category} · ${item.price}${item.visible === false ? " · masqué" : ""}</span>
-          <p>${item.description || ""}</p>
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.category)} · ${escapeHtml(item.price)}${item.visible === false ? " · masqué" : ""}</span>
+          <p>${escapeHtml(item.description)}</p>
         </div>
         <div class="admin-row-actions">
-          <button class="secondary-btn" type="button" data-edit="${item.id}">Modifier</button>
-          <button class="secondary-btn danger" type="button" data-delete="${item.id}">Supprimer</button>
+          <button class="secondary-btn" type="button" data-edit="${escapeHtml(item.id)}">Modifier</button>
+          <button class="secondary-btn danger" type="button" data-delete="${escapeHtml(item.id)}">Supprimer</button>
         </div>
       </article>
     `).join("") || `<p class="admin-status">Aucun article trouvé.</p>`;
@@ -212,6 +265,7 @@
   async function saveProduct(event) {
     event.preventDefault();
     const item = formData();
+
     if (!configured()) {
       const existing = products.findIndex((entry) => entry.id === item.id);
       if (existing >= 0) products[existing] = item;
@@ -221,6 +275,7 @@
       resetForm();
       return;
     }
+
     requireAuth();
     await request(settings.productsTable, {
       method: "POST",
@@ -235,12 +290,14 @@
   async function deleteProduct(id) {
     const item = products.find((entry) => String(entry.id) === String(id));
     if (!item || !confirm(`Supprimer "${item.title}" ?`)) return;
+
     if (!configured()) {
       products = products.filter((entry) => String(entry.id) !== String(id));
       renderProducts();
       setStatus("Article supprimé en aperçu local seulement.", "warn");
       return;
     }
+
     requireAuth();
     await request(`${settings.productsTable}?id=eq.${encodeURIComponent(id)}`, { method: "DELETE" });
     await loadProducts();
@@ -276,7 +333,6 @@
         productsTable: byId("cms-table").value.trim() || "products"
       });
       setStatus("Configuration enregistrée dans ce navigateur.", "ok");
-      loadProducts();
     });
 
     byId("cms-test").addEventListener("click", async () => {
@@ -305,6 +361,7 @@
       query = event.target.value;
       renderProducts();
     });
+
     document.addEventListener("click", (event) => {
       const edit = event.target.closest("[data-edit]");
       if (edit) editProduct(products.find((item) => String(item.id) === edit.dataset.edit));
@@ -315,7 +372,12 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     bind();
+    updateAdminView();
     setAuthStatus(accessToken ? "Session admin active." : "Non connecté.", accessToken ? "ok" : "");
-    loadProducts().catch((error) => setStatus(`Chargement impossible : ${error.message}`, "error"));
+    if (accessToken) {
+      loadProducts().catch((error) => setStatus(`Chargement impossible : ${error.message}`, "error"));
+    } else {
+      setStatus("Connectez-vous avec votre compte Supabase Auth pour gérer le catalogue.");
+    }
   });
 })();

@@ -561,6 +561,19 @@ h1 {
   padding: 20px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
+.admin-advanced summary {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.admin-advanced form {
+  margin-top: 16px;
+}
+
 .admin-panel h2 {
   margin-bottom: 14px;
   font-size: 1.25rem;
