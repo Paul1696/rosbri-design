@@ -182,6 +182,23 @@
     };
   }
 
+  function ensureCategoryOption(category) {
+    const value = String(category || "").trim();
+    const select = byId("product-category");
+    if (!value || !select) return;
+    const exists = Array.from(select.options).some((option) => option.value === value);
+    if (!exists) {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = value;
+      select.appendChild(option);
+    }
+  }
+
+  function syncCategoryOptions() {
+    products.forEach((item) => ensureCategoryOption(item.category));
+  }
+
   async function loadProducts() {
     if (!configured()) {
       products = staticCatalog.map(normalizeForDb);
@@ -194,6 +211,7 @@
       ? `${settings.productsTable}?select=*&order=id.asc`
       : `${settings.productsTable}?select=*&visible=eq.true&order=id.asc`;
     products = (await request(path)).map(normalizeFromDb);
+    syncCategoryOptions();
     renderProducts();
     setStatus(`${products.length} articles chargés depuis Supabase.`, "ok");
   }
@@ -204,10 +222,12 @@
 
   function formData() {
     const id = byId("product-id").value || String(nextId());
+    const category = byId("product-category").value.trim();
+    if (!category) throw new Error("Choisissez une catégorie avant d'enregistrer.");
     return {
       id: Number(id),
       title: byId("product-title").value.trim(),
-      category: byId("product-category").value,
+      category,
       price: byId("product-price").value.trim(),
       image: byId("product-image").value.trim(),
       description: byId("product-description").value.trim(),
@@ -222,6 +242,7 @@
     byId("editor-title").textContent = `Modifier #${item.id}`;
     byId("product-id").value = item.id;
     byId("product-title").value = item.title || "";
+    ensureCategoryOption(item.category);
     byId("product-category").value = item.category || "Accessoires";
     byId("product-price").value = item.price || "";
     byId("product-image").value = item.image || "";
@@ -266,6 +287,7 @@
 
   async function saveProduct(event) {
     event.preventDefault();
+    setStatus("Enregistrement en cours...", "ok");
     const item = formData();
 
     if (!configured()) {
