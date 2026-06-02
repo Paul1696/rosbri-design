@@ -107,7 +107,9 @@
       throw new Error(await errorMessage(response));
     }
     if (response.status === 204) return null;
-    return response.json();
+    const text = await response.text();
+    if (!text.trim()) return null;
+    return JSON.parse(text);
   }
 
   function requireAuth() {
