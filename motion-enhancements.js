@@ -44,6 +44,12 @@ if (reducedMotion) {
       document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
         revealObserver.observe(element);
       });
+      window.setTimeout(() => {
+        document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
+          element.style.opacity = "";
+          element.style.transform = "";
+        });
+      }, 900);
 
       const hero = document.querySelector(".hero");
       const heroContent = document.querySelector(".hero-content");
@@ -62,6 +68,12 @@ if (reducedMotion) {
           card.style.transform = "translateY(16px)";
         });
         animate(cards, { opacity: 1, y: 0 }, { delay: stagger(0.035), duration: 0.38, easing: [0.16, 1, 0.3, 1] });
+        window.setTimeout(() => {
+          cards.forEach((card) => {
+            card.style.opacity = "";
+            card.style.transform = "";
+          });
+        }, 900);
       }
 
       document.addEventListener("catalog:render", (event) => {

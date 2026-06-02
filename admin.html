@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin catalogue - ROSBRI DESIGN</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="styles.css?v=20260602-admin">
+</head>
+<body class="admin-page">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
+        <img src="images/brand/rosbri-wax-design-logo.jpg" alt="" width="48" height="48">
+        <span>ROSBRI DESIGN</span>
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="collections.html">Collections</a>
+        <a class="active" href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="admin-shell">
+    <section class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Back-office</p>
+          <h1>Gestion du catalogue</h1>
+          <p>Connectez Supabase pour ajouter, modifier, masquer ou supprimer les articles sans toucher au code du site.</p>
+        </div>
+        <a class="primary-btn" href="boutique.html">Voir la boutique</a>
+      </div>
+
+      <div class="admin-grid">
+        <form class="admin-panel" id="cms-settings">
+          <h2>Connexion Supabase</h2>
+          <label>
+            URL du projet
+            <input id="cms-url" type="url" placeholder="https://xxxx.supabase.co" autocomplete="off">
+          </label>
+          <label>
+            Clé anon publique
+            <input id="cms-key" type="password" placeholder="eyJ..." autocomplete="off">
+          </label>
+          <label>
+            Table produits
+            <input id="cms-table" type="text" value="products">
+          </label>
+          <div class="admin-actions">
+            <button class="primary-btn" type="submit">Enregistrer</button>
+            <button class="secondary-btn" id="cms-test" type="button">Tester</button>
+          </div>
+          <p class="admin-status" id="cms-status">Configuration locale non chargée.</p>
+        </form>
+
+        <div class="admin-panel">
+          <h2>Session admin</h2>
+          <p>Connectez-vous avec un compte Supabase Auth autorisé pour publier les modifications.</p>
+          <label>
+            Email
+            <input id="admin-email" type="email" autocomplete="email">
+          </label>
+          <label>
+            Mot de passe
+            <input id="admin-password" type="password" autocomplete="current-password">
+          </label>
+          <div class="admin-actions">
+            <button class="primary-btn" id="admin-login" type="button">Se connecter</button>
+            <button class="secondary-btn" id="admin-logout" type="button">Se déconnecter</button>
+          </div>
+          <p class="admin-status" id="auth-status">Non connecté.</p>
+        </div>
+
+        <div class="admin-panel">
+          <h2>Publication</h2>
+          <p>Le site utilise le catalogue local tant que Supabase n'est pas activé dans `cms-config.js`. Une fois activé, les changements publiés ici deviennent visibles sur la boutique.</p>
+          <div class="admin-actions">
+            <button class="secondary-btn" id="import-static" type="button">Importer le catalogue actuel</button>
+            <a class="secondary-btn" href="tools/supabase-products-schema.sql">Voir le schéma SQL</a>
+          </div>
+          <p class="admin-status">Avant l'import, créez la table avec le fichier SQL.</p>
+        </div>
+      </div>
+
+      <div class="admin-layout">
+        <form class="admin-panel product-editor" id="product-form">
+          <h2 id="editor-title">Nouvel article</h2>
+          <input id="product-id" type="hidden">
+          <label>
+            Nom
+            <input id="product-title" type="text" required>
+          </label>
+          <div class="admin-two">
+            <label>
+              Catégorie
+              <select id="product-category" required>
+                <option>Packs</option>
+                <option>Tshirts</option>
+                <option>Sacs</option>
+                <option>Ensembles</option>
+                <option>Babouches</option>
+                <option>Sandales</option>
+                <option>Chapeaux</option>
+                <option>Bobs</option>
+                <option>Pochettes</option>
+                <option>GantsCuisine</option>
+                <option>Maniques</option>
+                <option>Accessoires</option>
+                <option>Coussins</option>
+                <option>Robes</option>
+                <option>Chemises</option>
+              </select>
+            </label>
+            <label>
+              Prix
+              <input id="product-price" type="text" placeholder="8 500 FCFA" required>
+            </label>
+          </div>
+          <label>
+            Image
+            <input id="product-image" type="text" placeholder="images/articles-site/sacs/variants/sac-...png" required>
+          </label>
+          <label>
+            Description
+            <textarea id="product-description" rows="5" required></textarea>
+          </label>
+          <div class="admin-two">
+            <label class="checkbox-line">
+              <input id="product-pack" type="checkbox">
+              Pack / lot assorti
+            </label>
+            <label class="checkbox-line">
+              <input id="product-visible" type="checkbox" checked>
+              Visible sur le site
+            </label>
+          </div>
+          <div class="admin-actions">
+            <button class="primary-btn" type="submit">Enregistrer l'article</button>
+            <button class="secondary-btn" id="reset-form" type="button">Nouveau</button>
+          </div>
+        </form>
+
+        <section class="admin-panel">
+          <div class="admin-list-head">
+            <h2>Articles</h2>
+            <input class="search" id="admin-search" type="search" placeholder="Rechercher un article">
+          </div>
+          <div class="admin-products" id="admin-products"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="catalog-data.js?v=20260602-admin"></script>
+  <script src="admin.js?v=20260602-admin"></script>
+</body>
+</html>

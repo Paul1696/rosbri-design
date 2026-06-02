@@ -1,7 +1,7 @@
 (function () {
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const WHATSAPP_PHONE = "237690087213";
-  const catalog = window.ROSBriCatalog || [];
+  let catalog = normalizeCatalog(window.ROSBriCatalog || []);
   const categories = [
     "Tous", "Packs", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
     "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Accessoires", "Coussins", "Robes", "Chemises"
@@ -91,11 +91,32 @@
     return base;
   }
 
-  catalog.forEach((item) => {
+  function normalizeCatalog(items) {
+    return (Array.isArray(items) ? items : [])
+      .filter((item) => item && item.visible !== false)
+      .map((item) => ({
+        ...item,
+        id: Number(item.id),
+        title: item.title || item.name || "Article ROSBRI",
+        category: item.category || "Accessoires",
+        price: item.price || "Sur devis",
+        image: item.image || item.image_url || "",
+        description: item.description || "",
+        isPack: item.isPack ?? item.is_pack ?? false,
+        reviews: Array.isArray(item.reviews) ? item.reviews : []
+      }));
+  }
+
+  function rebuildSlugToCategory() {
+    Object.keys(slugToCategory).forEach((key) => delete slugToCategory[key]);
+    catalog.forEach((item) => {
     const match = item.image.match(/^images\/(.+)\/variants\/(.+)\.png$/i);
     if (!match) return;
     slugToCategory[slugFromFileName(`${match[2]}.png`)] = match[1];
-  });
+    });
+  }
+
+  rebuildSlugToCategory();
 
   const tshirtColors = {
     blanc: { label: "Blanc", swatch: "#eeeee5" },
@@ -179,26 +200,35 @@
     ...variantGroups.flatMap((group) => group.variantIds),
     ...hiddenProductIds
   ]);
-  const visibleVariantGroups = variantGroups.filter(isVisibleCatalogItem);
-  const catalogView = [
-    ...catalog.filter((item) => !groupedVariantIds.has(item.id) && isVisibleCatalogItem(item)),
-    ...visibleVariantGroups.map((group) => ({
-      ...group,
-      id: group.id,
-      sourceIds: group.variantIds
-    }))
-  ].sort((a, b) => {
-    return catalogOrderKey(a) - catalogOrderKey(b);
-  });
-  const categoryCounts = catalogView.reduce((counts, item) => {
-    const category = productCategory(item);
-    counts[category] = (counts[category] || 0) + 1;
-    return counts;
-  }, {});
-  const searchIndex = new Map(catalogView.map((item) => [
-    item.id,
-    `${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
-  ]));
+  let catalogView = [];
+  let categoryCounts = {};
+  let searchIndex = new Map();
+
+  function rebuildCatalogState() {
+    rebuildSlugToCategory();
+    const visibleVariantGroups = variantGroups.filter(isVisibleCatalogItem);
+    catalogView = [
+      ...catalog.filter((item) => !groupedVariantIds.has(item.id) && isVisibleCatalogItem(item)),
+      ...visibleVariantGroups.map((group) => ({
+        ...group,
+        id: group.id,
+        sourceIds: group.variantIds
+      }))
+    ].sort((a, b) => {
+      return catalogOrderKey(a) - catalogOrderKey(b);
+    });
+    categoryCounts = catalogView.reduce((counts, item) => {
+      const category = productCategory(item);
+      counts[category] = (counts[category] || 0) + 1;
+      return counts;
+    }, {});
+    searchIndex = new Map(catalogView.map((item) => [
+      item.id,
+      `${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
+    ]));
+  }
+
+  rebuildCatalogState();
 
   function byId(id) {
     return document.getElementById(id);
@@ -1181,11 +1211,53 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     });
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  function applyInitialFiltersFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("categorie") || params.get("category");
+    const query = params.get("q") || params.get("recherche");
+    if (category && categories.includes(category)) {
+      state.category = category;
+      state.subcategory = "Tous";
+    }
+    if (query) {
+      state.query = query;
+      const search = byId("catalog-search");
+      if (search) search.value = query;
+    }
+  }
+
+  function renderAll() {
     updateCounts();
     renderFeatured();
     renderFilters();
     renderShop();
+    document.dispatchEvent(new CustomEvent("catalog:ready", {
+      detail: {
+        catalog: catalogView,
+        categoryCounts,
+        productLabels,
+        categories
+      }
+    }));
+  }
+
+  window.ROSBriApplyCatalog = (items) => {
+    catalog = normalizeCatalog(items);
+    rebuildCatalogState();
+    resetVisibleLimit();
+    renderAll();
+  };
+
+  window.ROSBriCatalogApi = {
+    get catalog() { return catalogView; },
+    get categoryCounts() { return categoryCounts; },
+    productLabels,
+    categories
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    applyInitialFiltersFromUrl();
+    renderAll();
     bindEvents();
     openProductFromHash();
   });
