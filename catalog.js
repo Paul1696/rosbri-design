@@ -1024,6 +1024,8 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
   }
 
   function bindEvents() {
+    document.addEventListener("catalog:source-change", updateCatalogSourceLabel);
+
     const navToggle = byId("nav-toggle");
     const navLinks = byId("nav-links");
     if (navToggle && navLinks) {
@@ -1211,6 +1213,19 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     });
   }
 
+  function updateCatalogSourceLabel() {
+    const node = byId("catalog-source");
+    if (!node) return;
+    const source = document.documentElement.dataset.catalogSource;
+    const labels = {
+      supabase: "Catalogue en ligne",
+      "supabase-empty": "Supabase vide",
+      "supabase-error": "Supabase indisponible"
+    };
+    node.textContent = labels[source] || "Catalogue local";
+    node.dataset.source = source || "local";
+  }
+
   function applyInitialFiltersFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const category = params.get("categorie") || params.get("category");
@@ -1228,6 +1243,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
 
   function renderAll() {
     updateCounts();
+    updateCatalogSourceLabel();
     renderFeatured();
     renderFilters();
     renderShop();
@@ -1245,6 +1261,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     catalog = normalizeCatalog(items);
     rebuildCatalogState();
     resetVisibleLimit();
+    document.documentElement.dataset.catalogSource = "supabase";
     renderAll();
   };
 

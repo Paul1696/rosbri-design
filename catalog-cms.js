@@ -27,6 +27,11 @@
     return `${config.supabaseUrl.replace(/\/$/, "")}/rest/v1/${path}`;
   }
 
+  function setCatalogSource(source) {
+    document.documentElement.dataset.catalogSource = source;
+    document.dispatchEvent(new CustomEvent("catalog:source-change", { detail: { source } }));
+  }
+
   async function loadRemoteCatalog() {
     if (!configured() || typeof window.ROSBriApplyCatalog !== "function") return;
     try {
@@ -39,10 +44,13 @@
       if (!response.ok) throw new Error(`Supabase ${response.status}`);
       const rows = await response.json();
       if (Array.isArray(rows) && rows.length) {
+        setCatalogSource("supabase");
         window.ROSBriApplyCatalog(rows);
-        document.documentElement.dataset.catalogSource = "supabase";
+      } else {
+        setCatalogSource("supabase-empty");
       }
     } catch (error) {
+      setCatalogSource("supabase-error");
       console.warn("Catalogue Supabase indisponible, catalogue local conservé.", error);
     }
   }

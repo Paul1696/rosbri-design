@@ -12,6 +12,8 @@
   let accessToken = sessionStorage.getItem(tokenKey) || "";
   let products = [];
   let query = "";
+  let categoryFilter = "Tous";
+  let visibilityFilter = "all";
 
   const byId = (id) => document.getElementById(id);
 
@@ -197,11 +199,80 @@
 
   function syncCategoryOptions() {
     products.forEach((item) => ensureCategoryOption(item.category));
+    renderCategoryFilterOptions();
+  }
+
+  function categoriesFromProducts() {
+    return [...new Set(products.map((item) => item.category).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
+  }
+
+  function renderCategoryFilterOptions() {
+    const select = byId("admin-category-filter");
+    if (!select) return;
+    const categories = categoriesFromProducts();
+    const current = categoryFilter;
+    select.innerHTML = [
+      `<option value="Tous">Toutes les catégories</option>`,
+      ...categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)
+    ].join("");
+    select.value = categories.includes(current) ? current : "Tous";
+    categoryFilter = select.value;
+  }
+
+  function renderSummary() {
+    const visibleCount = products.filter((item) => item.visible !== false).length;
+    const hiddenCount = products.length - visibleCount;
+    const values = {
+      "admin-total-count": products.length,
+      "admin-visible-count": visibleCount,
+      "admin-hidden-count": hiddenCount,
+      "admin-category-count": categoriesFromProducts().length
+    };
+    Object.entries(values).forEach(([id, value]) => {
+      const node = byId(id);
+      if (node) node.textContent = value;
+    });
+  }
+
+  function filteredProducts() {
+    const needle = query.trim().toLowerCase();
+    return products.filter((item) => {
+      const matchesQuery = !needle || `${item.title} ${item.category} ${item.price} ${item.description}`.toLowerCase().includes(needle);
+      const matchesCategory = categoryFilter === "Tous" || item.category === categoryFilter;
+      const matchesVisibility = visibilityFilter === "all"
+        || (visibilityFilter === "visible" && item.visible !== false)
+        || (visibilityFilter === "hidden" && item.visible === false);
+      return matchesQuery && matchesCategory && matchesVisibility;
+    });
+  }
+
+  function updateImagePreview() {
+    const target = byId("image-preview");
+    const input = byId("product-image");
+    if (!target || !input) return;
+    const src = input.value.trim();
+    target.dataset.state = src ? "loading" : "empty";
+    target.innerHTML = src
+      ? `<img src="${escapeHtml(src)}" alt=""><span>${escapeHtml(src)}</span><strong>Vérification de l'image...</strong>`
+      : `<span>Aperçu image</span>`;
+    const image = target.querySelector("img");
+    if (!image) return;
+    image.addEventListener("load", () => {
+      target.dataset.state = "ok";
+      const status = target.querySelector("strong");
+      if (status) status.textContent = "Image trouvée";
+    }, { once: true });
+    image.addEventListener("error", () => {
+      target.dataset.state = "error";
+      const status = target.querySelector("strong");
+      if (status) status.textContent = "Image introuvable";
+    }, { once: true });
   }
 
   async function loadProducts() {
     if (!configured()) {
       products = staticCatalog.map(normalizeForDb);
+      syncCategoryOptions();
       renderProducts();
       setStatus("Mode aperçu local : configurez Supabase pour enregistrer en ligne.", "warn");
       return;
@@ -249,6 +320,25 @@
     byId("product-description").value = item.description || "";
     byId("product-pack").checked = Boolean(item.is_pack);
     byId("product-visible").checked = item.visible !== false;
+    updateImagePreview();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function duplicateProduct(item) {
+    if (!item) return;
+    const id = nextId();
+    byId("editor-title").textContent = `Dupliquer #${item.id} vers #${id}`;
+    byId("product-id").value = id;
+    byId("product-title").value = `${item.title || "Article ROSBRI"} - copie`;
+    ensureCategoryOption(item.category);
+    byId("product-category").value = item.category || "Accessoires";
+    byId("product-price").value = item.price || "";
+    byId("product-image").value = item.image || "";
+    byId("product-description").value = item.description || "";
+    byId("product-pack").checked = Boolean(item.is_pack);
+    byId("product-visible").checked = false;
+    updateImagePreview();
+    setStatus("Copie préparée dans le formulaire. Vérifiez le nom, l'image et cochez Visible avant publication.", "warn");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -259,15 +349,19 @@
     form.reset();
     byId("product-id").value = "";
     byId("product-visible").checked = true;
+    updateImagePreview();
   }
 
   function renderProducts() {
     const target = byId("admin-products");
     if (!target) return;
-    const needle = query.trim().toLowerCase();
-    const visible = products.filter((item) => {
-      return !needle || `${item.title} ${item.category} ${item.price} ${item.description}`.toLowerCase().includes(needle);
-    });
+    renderSummary();
+    renderCategoryFilterOptions();
+    const visible = filteredProducts();
+    const resultStatus = byId("admin-result-status");
+    if (resultStatus) {
+      resultStatus.textContent = `${visible.length} article${visible.length > 1 ? "s" : ""} affiché${visible.length > 1 ? "s" : ""} sur ${products.length}.`;
+    }
 
     target.innerHTML = visible.map((item) => `
       <article class="admin-product${item.visible === false ? " muted" : ""}">
@@ -279,6 +373,8 @@
         </div>
         <div class="admin-row-actions">
           <button class="secondary-btn" type="button" data-edit="${escapeHtml(item.id)}">Modifier</button>
+          <button class="secondary-btn" type="button" data-duplicate="${escapeHtml(item.id)}">Dupliquer</button>
+          <button class="secondary-btn" type="button" data-toggle-visible="${escapeHtml(item.id)}">${item.visible === false ? "Afficher" : "Masquer"}</button>
           <button class="secondary-btn danger" type="button" data-delete="${escapeHtml(item.id)}">Supprimer</button>
         </div>
       </article>
@@ -326,6 +422,28 @@
     await request(`${settings.productsTable}?id=eq.${encodeURIComponent(id)}`, { method: "DELETE" });
     await loadProducts();
     setStatus("Article supprimé en ligne.", "ok");
+  }
+
+  async function toggleVisibility(id) {
+    const item = products.find((entry) => String(entry.id) === String(id));
+    if (!item) return;
+    const nextVisible = item.visible === false;
+
+    if (!configured()) {
+      item.visible = nextVisible;
+      renderProducts();
+      setStatus(`Article ${nextVisible ? "réaffiché" : "masqué"} en aperçu local seulement.`, "warn");
+      return;
+    }
+
+    requireAuth();
+    await request(`${settings.productsTable}?id=eq.${encodeURIComponent(id)}`, {
+      method: "PATCH",
+      headers: { Prefer: "return=representation" },
+      body: JSON.stringify({ visible: nextVisible })
+    });
+    await loadProducts();
+    setStatus(`Article ${nextVisible ? "réaffiché" : "masqué"} en ligne.`, "ok");
   }
 
   async function importStaticCatalog() {
@@ -385,10 +503,23 @@
       query = event.target.value;
       renderProducts();
     });
+    byId("admin-category-filter").addEventListener("change", (event) => {
+      categoryFilter = event.target.value;
+      renderProducts();
+    });
+    byId("admin-visibility-filter").addEventListener("change", (event) => {
+      visibilityFilter = event.target.value;
+      renderProducts();
+    });
+    byId("product-image").addEventListener("input", updateImagePreview);
 
     document.addEventListener("click", (event) => {
       const edit = event.target.closest("[data-edit]");
       if (edit) editProduct(products.find((item) => String(item.id) === edit.dataset.edit));
+      const duplicate = event.target.closest("[data-duplicate]");
+      if (duplicate) duplicateProduct(products.find((item) => String(item.id) === duplicate.dataset.duplicate));
+      const toggle = event.target.closest("[data-toggle-visible]");
+      if (toggle) toggleVisibility(toggle.dataset.toggleVisible).catch((error) => setStatus(`Mise à jour impossible : ${error.message}`, "error"));
       const remove = event.target.closest("[data-delete]");
       if (remove) deleteProduct(remove.dataset.delete).catch((error) => setStatus(`Suppression impossible : ${error.message}`, "error"));
     });

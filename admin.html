@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin catalogue - ROSBRI DESIGN</title>
   <meta name="robots" content="noindex,nofollow">
-  <link rel="stylesheet" href="styles.css?v=20260602-admin-3">
+  <link rel="stylesheet" href="styles.css?v=20260602-admin-4">
 </head>
 <body class="admin-page">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -90,6 +90,25 @@
       </div>
 
       <div class="admin-layout" id="admin-workspace" hidden>
+        <section class="admin-panel admin-summary" aria-label="Résumé du catalogue">
+          <div>
+            <span>Total</span>
+            <strong id="admin-total-count">0</strong>
+          </div>
+          <div>
+            <span>Visibles</span>
+            <strong id="admin-visible-count">0</strong>
+          </div>
+          <div>
+            <span>Masqués</span>
+            <strong id="admin-hidden-count">0</strong>
+          </div>
+          <div>
+            <span>Catégories</span>
+            <strong id="admin-category-count">0</strong>
+          </div>
+        </section>
+
         <form class="admin-panel product-editor" id="product-form">
           <h2 id="editor-title">Nouvel article</h2>
           <input id="product-id" type="hidden">
@@ -131,6 +150,9 @@
             Image
             <input id="product-image" type="text" placeholder="images/articles-site/sacs/variants/sac-...png" required>
           </label>
+          <div class="admin-image-preview" id="image-preview" aria-live="polite">
+            <span>Aperçu image</span>
+          </div>
           <label>
             Description
             <textarea id="product-description" rows="5" required></textarea>
@@ -154,8 +176,19 @@
         <section class="admin-panel">
           <div class="admin-list-head">
             <h2>Articles</h2>
-            <input class="search" id="admin-search" type="search" placeholder="Rechercher un article">
+            <div class="admin-list-controls">
+              <select class="select" id="admin-category-filter" aria-label="Filtrer par catégorie">
+                <option value="Tous">Toutes les catégories</option>
+              </select>
+              <select class="select" id="admin-visibility-filter" aria-label="Filtrer par visibilité">
+                <option value="all">Tous les statuts</option>
+                <option value="visible">Visibles seulement</option>
+                <option value="hidden">Masqués seulement</option>
+              </select>
+              <input class="search" id="admin-search" type="search" placeholder="Rechercher un article">
+            </div>
           </div>
+          <p class="admin-status" id="admin-result-status">Aucun article chargé.</p>
           <div class="admin-products" id="admin-products"></div>
         </section>
       </div>
@@ -164,6 +197,6 @@
 
   <script src="catalog-data.js?v=20260602-admin"></script>
   <script src="cms-config.js?v=20260602-admin"></script>
-  <script src="admin.js?v=20260602-admin-3"></script>
+  <script src="admin.js?v=20260602-admin-4"></script>
 </body>
 </html>
