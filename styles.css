@@ -1911,3 +1911,147 @@ h1 {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* ==========================================================================
+   ROSBRI DESIGN - Back-office Admin Panel Enhancements
+   ========================================================================== */
+
+.file-upload-label {
+  display: block;
+  margin-top: -6px;
+  margin-bottom: 12px;
+  color: var(--brand-dark);
+  font-size: 0.84rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.file-upload-label input[type="file"] {
+  display: block;
+  margin-top: 4px;
+  min-height: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.admin-reviews-section {
+  margin: 20px 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.admin-reviews-section h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.admin-reviews-summary {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+}
+
+.admin-editor-reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.admin-review-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fafdfc;
+  font-size: 0.86rem;
+  position: relative;
+}
+
+.admin-review-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-review-meta strong {
+  color: var(--ink);
+}
+
+.admin-review-meta span {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.admin-review-meta em {
+  font-style: normal;
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-left: auto;
+}
+
+.admin-review-item p {
+  margin: 0;
+  color: #35413e;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.admin-review-item .secondary-btn.danger.compact {
+  align-self: flex-start;
+  min-height: 24px;
+  padding: 2px 8px;
+  font-size: 0.72rem;
+  margin-top: 4px;
+}
+
+.admin-add-review-details {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fdfdfd;
+}
+
+.admin-add-review-details summary {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.84rem;
+  color: var(--brand-dark);
+}
+
+.admin-add-review-form {
+  padding: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+}
+
+.admin-add-review-form label {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.admin-add-review-form input,
+.admin-add-review-form textarea {
+  min-height: 34px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+}
+
+.secondary-btn.compact {
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 0.8rem;
+}

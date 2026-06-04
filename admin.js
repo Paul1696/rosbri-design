@@ -14,8 +14,34 @@
   let query = "";
   let categoryFilter = "Tous";
   let visibilityFilter = "all";
+  let activeProductReviews = [];
 
   const byId = (id) => document.getElementById(id);
+
+  function storageEndpoint(path) {
+    return `${settings.supabaseUrl.replace(/\/$/, "")}/storage/v1/${path}`;
+  }
+
+  async function uploadFile(bucket, path, file) {
+    if (!configured()) throw new Error("Configuration Supabase manquante.");
+    requireAuth();
+    const response = await fetch(storageEndpoint(`object/${bucket}/${path}`), {
+      method: "POST",
+      headers: {
+        apikey: settings.anonKey,
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": file.type
+      },
+      body: file
+    });
+    if (!response.ok) {
+      if (response.status === 409) {
+        throw new Error("Un fichier avec ce nom existe déjà dans le stockage. Modifiez le nom du fichier.");
+      }
+      throw new Error(await errorMessage(response));
+    }
+    return `${settings.supabaseUrl.replace(/\/$/, "")}/storage/v1/object/public/${bucket}/${path}`;
+  }
 
   function loadSettings() {
     try {
@@ -304,7 +330,7 @@
       description: byId("product-description").value.trim(),
       is_pack: byId("product-pack").checked,
       visible: byId("product-visible").checked,
-      reviews: []
+      reviews: activeProductReviews
     };
   }
 
@@ -320,6 +346,10 @@
     byId("product-description").value = item.description || "";
     byId("product-pack").checked = Boolean(item.is_pack);
     byId("product-visible").checked = item.visible !== false;
+    
+    activeProductReviews = Array.isArray(item.reviews) ? [...item.reviews] : [];
+    renderEditorReviews();
+    
     updateImagePreview();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -337,6 +367,10 @@
     byId("product-description").value = item.description || "";
     byId("product-pack").checked = Boolean(item.is_pack);
     byId("product-visible").checked = false;
+    
+    activeProductReviews = Array.isArray(item.reviews) ? [...item.reviews] : [];
+    renderEditorReviews();
+    
     updateImagePreview();
     setStatus("Copie préparée dans le formulaire. Vérifiez le nom, l'image et cochez Visible avant publication.", "warn");
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -349,7 +383,113 @@
     form.reset();
     byId("product-id").value = "";
     byId("product-visible").checked = true;
+    
+    activeProductReviews = [];
+    renderEditorReviews();
+    
     updateImagePreview();
+  }
+
+  function renderEditorReviews() {
+    const list = byId("editor-reviews-list");
+    const summary = byId("editor-reviews-summary");
+    if (!list || !summary) return;
+
+    if (!activeProductReviews.length) {
+      summary.textContent = "Aucun avis pour cet article.";
+      list.innerHTML = "";
+      return;
+    }
+
+    summary.textContent = `${activeProductReviews.length} avis client${activeProductReviews.length > 1 ? "s" : ""} enregistré${activeProductReviews.length > 1 ? "s" : ""}.`;
+
+    list.innerHTML = activeProductReviews.map((review, index) => `
+      <div class="admin-review-item">
+        <div class="admin-review-meta">
+          <strong>${escapeHtml(review.name || "Client")}</strong>
+          <span>${"⭐".repeat(review.rating || 5)} (${review.rating || 5}/5)</span>
+          <em>${escapeHtml(review.date || "")}</em>
+        </div>
+        <p>${escapeHtml(review.text || "")}</p>
+        <button class="secondary-btn danger compact" type="button" data-delete-review="${index}">Supprimer</button>
+      </div>
+    `).join("");
+  }
+
+  function addManualReview() {
+    const nameInput = byId("new-review-name");
+    const ratingInput = byId("new-review-rating");
+    const dateInput = byId("new-review-date");
+    const textInput = byId("new-review-text");
+
+    const name = nameInput.value.trim();
+    const rating = Math.max(1, Math.min(5, parseInt(ratingInput.value, 10) || 5));
+    const date = dateInput.value.trim() || new Date().toLocaleDateString("fr-FR", { day: 'numeric', month: 'long', year: 'numeric' });
+    const text = textInput.value.trim();
+
+    if (!name || !text) {
+      alert("Veuillez saisir un nom et un commentaire.");
+      return;
+    }
+
+    activeProductReviews.push({ name, rating, date, text });
+    renderEditorReviews();
+
+    nameInput.value = "";
+    ratingInput.value = "5";
+    dateInput.value = "";
+    textInput.value = "";
+  }
+
+  function formatPriceInput() {
+    const input = byId("product-price");
+    if (!input) return;
+    let value = input.value.trim();
+    if (!value) return;
+
+    if (value.toLowerCase() === "sur devis" || value.toLowerCase() === "devis") {
+      input.value = "Sur devis";
+      return;
+    }
+
+    const numbersOnly = value.replace(/[^0-9]/g, "");
+    if (numbersOnly && /^\d+$/.test(value.replace(/\s+/g, ""))) {
+      const num = parseInt(numbersOnly, 10);
+      const formatted = num.toLocaleString("fr-FR").replace(/\u202f/g, " ") + " FCFA";
+      input.value = formatted;
+    }
+  }
+
+  function downloadFile(content, fileName, contentType) {
+    const a = document.createElement("a");
+    const file = new Blob([content], { type: contentType });
+    a.href = URL.createObjectURL(file);
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  function exportCatalogJson() {
+    const content = JSON.stringify(products, null, 2);
+    downloadFile(content, "products_backup.json", "application/json");
+    setStatus("Catalogue exporté en JSON.", "ok");
+  }
+
+  function exportCatalogJs() {
+    const dbNormalized = products.map(item => ({
+      id: item.id,
+      title: item.title,
+      category: item.category,
+      price: item.price,
+      image: item.image,
+      description: item.description,
+      is_pack: item.is_pack,
+      visible: item.visible,
+      reviews: item.reviews || []
+    }));
+    const content = `window.ROSBriCatalog = ${JSON.stringify(dbNormalized, null, 2)};\n`;
+    downloadFile(content, "catalog-data.js", "application/javascript");
+    setStatus("Fichier catalog-data.js prêt au téléchargement.", "ok");
   }
 
   function renderProducts() {
@@ -499,6 +639,30 @@
     byId("import-static").addEventListener("click", () => {
       importStaticCatalog().catch((error) => setStatus(`Import impossible : ${error.message}`, "error"));
     });
+    byId("export-json").addEventListener("click", exportCatalogJson);
+    byId("export-js").addEventListener("click", exportCatalogJs);
+    
+    byId("product-price").addEventListener("blur", formatPriceInput);
+    byId("add-review-btn").addEventListener("click", addManualReview);
+
+    byId("product-image-file").addEventListener("change", async (event) => {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      try {
+        setStatus("Téléversement de l'image en cours...", "ok");
+        const cleanName = file.name.toLowerCase().replace(/[^a-z0-9.-]/g, "_");
+        const path = `uploads/${Date.now()}_${cleanName}`;
+        const publicUrl = await uploadFile("products", path, file);
+
+        byId("product-image").value = publicUrl;
+        updateImagePreview();
+        setStatus("Image téléversée avec succès sur Supabase Storage !", "ok");
+      } catch (error) {
+        setStatus(`Échec du téléversement : ${error.message}`, "error");
+      }
+    });
+
     byId("admin-search").addEventListener("input", (event) => {
       query = event.target.value;
       renderProducts();
@@ -522,6 +686,12 @@
       if (toggle) toggleVisibility(toggle.dataset.toggleVisible).catch((error) => setStatus(`Mise à jour impossible : ${error.message}`, "error"));
       const remove = event.target.closest("[data-delete]");
       if (remove) deleteProduct(remove.dataset.delete).catch((error) => setStatus(`Suppression impossible : ${error.message}`, "error"));
+      
+      const deleteReviewIdx = event.target.dataset.deleteReview;
+      if (deleteReviewIdx !== undefined) {
+        activeProductReviews.splice(parseInt(deleteReviewIdx, 10), 1);
+        renderEditorReviews();
+      }
     });
   }
 
