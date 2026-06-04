@@ -523,7 +523,7 @@
     }
 
     msg += `🔗 *Lien produit :* ${productUrl}\n\n`;
-    msg += `Merci de me confirmer la disponibilité et le délai de livraison à Douala 🛵.`;
+    msg += `Merci de me confirmer la disponibilité et le délai de livraison 🛵.`;
 
     return whatsAppUrl(msg);
   }
