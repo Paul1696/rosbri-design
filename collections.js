@@ -15,7 +15,28 @@
     Accessoires: "Accessoires",
     Coussins: "Coussins",
     Robes: "Robes",
-    Chemises: "Chemises"
+    Chemises: "Chemises",
+    Boubous: "Boubous",
+    Polos: "Polos",
+    Debardeurs: "Débardeurs",
+    Sweats: "Sweats",
+    Hoodies: "Hoodies",
+    Jupes: "Jupes",
+    Shorts: "Shorts",
+    Pantalons: "Pantalons",
+    Bijoux: "Bijoux",
+    Portefeuilles: "Portefeuilles",
+    Trousses: "Trousses",
+    Chaussures: "Chaussures",
+    Tabliers: "Tabliers",
+    Serviettes: "Serviettes",
+    Mugs: "Mugs",
+    Gourdes: "Gourdes",
+    Affiches: "Affiches",
+    Cartes: "Cartes de vœux",
+    Stickers: "Stickers",
+    Pagnes: "Pagnes",
+    CoquesTelephone: "Coques de téléphone"
   };
   const order = Object.keys(labels);
   const descriptions = {
@@ -33,7 +54,28 @@
     Accessoires: "Petites pièces ROSBRI pour compléter un look ou offrir.",
     Coussins: "Objets déco pour donner du caractère au salon ou à la chambre.",
     Robes: "Robes adulte et enfant avec inspiration wax.",
-    Chemises: "Pièces habillées pour une élégance africaine moderne."
+    Chemises: "Pièces habillées pour une élégance africaine moderne.",
+    Boubous: "Boubous amples et fluides ornés de superbes motifs wax.",
+    Polos: "Polos habillés avec broderie signature inspirée du continent.",
+    Debardeurs: "Débardeurs légers avec graphismes culturels stylisés.",
+    Sweats: "Sweats col rond confortables aux visuels urbains et ethniques.",
+    Hoodies: "Sweats à capuche doublés wax pour un style casual affirmé.",
+    Jupes: "Jupes fluides et structurées aux motifs géométriques vibrants.",
+    Shorts: "Shorts d'été décontractés en coton wax authentique.",
+    Pantalons: "Pantalons coupe moderne avec touches africaines raffinées.",
+    Bijoux: "Boucles d'oreilles et bijoux uniques en bois découpé et wax.",
+    Portefeuilles: "Compagnons zippés associant cuir et empiècements wax.",
+    Trousses: "Trousses de voyage et cosmétiques pratiques et matelassées.",
+    Chaussures: "Tennis et baskets personnalisées avec finitions imprimées.",
+    Tabliers: "Tabliers de cuisine élégants pour cuisiner avec style.",
+    Serviettes: "Serviettes de bain et de plage aux visuels culturels hauts en couleur.",
+    Mugs: "Mugs en céramique décorés de monuments et motifs traditionnels.",
+    Gourdes: "Gourdes isothermes en acier inoxydable au design ROSBRI.",
+    Affiches: "Affiches d'art de qualité galerie pour habiller vos murs.",
+    Cartes: "Cartes de vœux texturées pour toutes vos occasions festives.",
+    Stickers: "Stickers en vinyle résistant pour personnaliser vos objets.",
+    Pagnes: "Coupes de pagnes wax traditionnels de qualité supérieure.",
+    CoquesTelephone: "Coques de protection robustes aux motifs exclusifs."
   };
 
   function productCategory(item) {
@@ -55,7 +97,29 @@
       accessoires: "Accessoires",
       coussins: "Coussins",
       robes: "Robes",
-      chemises: "Chemises"
+      chemises: "Chemises",
+      boubous: "Boubous",
+      polos: "Polos",
+      debardeurs: "Debardeurs",
+      sweats: "Sweats",
+      hoodies: "Hoodies",
+      jupes: "Jupes",
+      shorts: "Shorts",
+      pantalons: "Pantalons",
+      bijoux: "Bijoux",
+      portefeuilles: "Portefeuilles",
+      trousses: "Trousses",
+      chaussures: "Chaussures",
+      tabliers: "Tabliers",
+      serviettes: "Serviettes",
+      mugs: "Mugs",
+      gourdes: "Gourdes",
+      affiches: "Affiches",
+      cartes: "Cartes",
+      stickers: "Stickers",
+      pagnes: "Pagnes",
+      "coques-telephone": "CoquesTelephone",
+      casquettes: "Casquettes"
     };
     return map[folder] || item.category || "Accessoires";
   }

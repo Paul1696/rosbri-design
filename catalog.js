@@ -4,7 +4,10 @@
   let catalog = normalizeCatalog(window.ROSBriCatalog || []);
   const categories = [
     "Tous", "Packs", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
-    "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Accessoires", "Coussins", "Robes", "Chemises"
+    "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Accessoires", "Coussins", "Robes", "Chemises",
+    "Boubous", "Polos", "Debardeurs", "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons", "Bijoux",
+    "Portefeuilles", "Trousses", "Chaussures", "Tabliers", "Serviettes", "Mugs", "Gourdes", "Affiches",
+    "Cartes", "Stickers", "Pagnes", "CoquesTelephone", "Casquettes"
   ];
   const productLabels = {
     Tous: "Tous les articles",
@@ -29,7 +32,22 @@
     Coussins: "Coussins",
     Robes: "Robes",
     Boubous: "Boubous",
-    Chemises: "Chemises"
+    Chemises: "Chemises",
+    Sweats: "Sweats",
+    Hoodies: "Hoodies",
+    Jupes: "Jupes",
+    Shorts: "Shorts",
+    Pantalons: "Pantalons",
+    Bijoux: "Bijoux",
+    Tabliers: "Tabliers",
+    Serviettes: "Serviettes",
+    Mugs: "Mugs",
+    Gourdes: "Gourdes",
+    Affiches: "Affiches",
+    Cartes: "Cartes de vœux",
+    Stickers: "Stickers",
+    Pagnes: "Pagnes",
+    CoquesTelephone: "Coques de téléphone"
   };
   const subcategoryLabels = {
     Heritage: "Héritage & Culture",
@@ -331,7 +349,22 @@
       coussins: "Coussins",
       robes: "Robes",
       boubous: "Boubous",
-      chemises: "Chemises"
+      chemises: "Chemises",
+      sweats: "Sweats",
+      hoodies: "Hoodies",
+      jupes: "Jupes",
+      shorts: "Shorts",
+      pantalons: "Pantalons",
+      bijoux: "Bijoux",
+      tabliers: "Tabliers",
+      serviettes: "Serviettes",
+      mugs: "Mugs",
+      gourdes: "Gourdes",
+      affiches: "Affiches",
+      cartes: "Cartes",
+      stickers: "Stickers",
+      pagnes: "Pagnes",
+      "coques-telephone": "CoquesTelephone"
     };
     return map[folder] || item.category || "Autres";
   }

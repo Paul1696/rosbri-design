@@ -4524,5 +4524,425 @@ window.ROSBriCatalog = [
       }
     ],
     "description": "Completez votre style avec la casquette officielle ROSBRI DESIGN. Un design epure, une broderie de haute qualite et un confort inegale."
+  },
+  {
+    "id": 311,
+    "title": "Boubou Moderne Wax Héritage",
+    "category": "Boubous",
+    "price": "25 000 FCFA",
+    "image": "images/articles-site/boubous/boubou-wax-heritage.png",
+    "reviews": [
+      {
+        "name": "Mariama",
+        "rating": 5,
+        "text": "Le boubou est magnifique ! Le tissu wax est de tres bonne qualite et les couleurs sont superbes."
+      },
+      {
+        "name": "Florence",
+        "rating": 5,
+        "text": "Coupe parfaite, fluide et tres agreable a porter lors des ceremonies."
+      }
+    ],
+    "description": "Boubou ample et elegant avec encolure et manches ornees de motifs wax bleu et orange pour une allure prestigieuse."
+  },
+  {
+    "id": 312,
+    "title": "Polo Brodé ROSBRI Signature",
+    "category": "Polos",
+    "price": "8 500 FCFA",
+    "image": "images/articles-site/polos/polo-brode-signature.png",
+    "reviews": [
+      {
+        "name": "Arthur",
+        "rating": 5,
+        "text": "Tres beau polo. La broderie de l'Afrique en wax est fine et tres reussie."
+      },
+      {
+        "name": "Marc",
+        "rating": 4,
+        "text": "La coupe est nickel, tres bon coton. Je recommande !"
+      }
+    ],
+    "description": "Polo noir de qualite superieure avec une carte d'Afrique discrete brodee en motif wax sur la poitrine."
+  },
+  {
+    "id": 313,
+    "title": "Débardeur Reine Africaine Wax",
+    "category": "Debardeurs",
+    "price": "5 500 FCFA",
+    "image": "images/articles-site/debardeurs/debardeur-reine-africaine.png",
+    "reviews": [
+      {
+        "name": "Chantal",
+        "rating": 5,
+        "text": "Le visuel de la reine africaine avec son gele en wax est sublime."
+      },
+      {
+        "name": "Divine",
+        "rating": 5,
+        "text": "Super leger et agreable a porter. Impeccable pour les jours chauds."
+      }
+    ],
+    "description": "Debardeur blanc decontracte arborant une silhouette de reine africaine coiffee d'un foulard wax colore."
+  },
+  {
+    "id": 314,
+    "title": "Sweat Monument de la Réunification",
+    "category": "Sweats",
+    "price": "12 500 FCFA",
+    "image": "images/articles-site/sweats/sweat-monument-reunification.png",
+    "reviews": [
+      {
+        "name": "Christian",
+        "rating": 5,
+        "text": "Superbe sweat ! Le design du monument est original et tres bien integre avec le wax."
+      },
+      {
+        "name": "Guy",
+        "rating": 5,
+        "text": "Tissu epais, tres chaud et confortable. Impression de grande qualite."
+      }
+    ],
+    "description": "Sweat col rond gris avec impression graphique du Monument de la Reunification de Yaounde orne de textures wax."
+  },
+  {
+    "id": 315,
+    "title": "Hoodie ROSBRI Heritage Cameroun",
+    "category": "Hoodies",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/hoodies/hoodie-rosbri-heritage.png",
+    "reviews": [
+      {
+        "name": "Patrick",
+        "rating": 5,
+        "text": "Le detail du wax Kente a l'interieur de la capuche est magnifique !"
+      },
+      {
+        "name": "Franck",
+        "rating": 5,
+        "text": "Capuche epaisse, coupe moderne, les finitions ROSBRI sont toujours parfaites."
+      }
+    ],
+    "description": "Sweat a capuche noir confortable avec poche kangourou et doublure interieure en wax Kente colore."
+  },
+  {
+    "id": 316,
+    "title": "Jupe Longue Plissée Wax Prestige",
+    "category": "Jupes",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/jupes/jupe-longue-plissee-wax.png",
+    "reviews": [
+      {
+        "name": "Sonia",
+        "rating": 5,
+        "text": "La jupe de mes reves ! Elle tourne super bien et le wax rouge et jaune est eclatant."
+      },
+      {
+        "name": "Melanie",
+        "rating": 5,
+        "text": "Tres elegante, se porte aussi bien en mode decontracte qu'habille."
+      }
+    ],
+    "description": "Jupe longue plissee a taille haute dans un superbe motif de wax floral rouge et jaune pour un style chic."
+  },
+  {
+    "id": 317,
+    "title": "Short Décontracté Wax Sunset",
+    "category": "Shorts",
+    "price": "7 500 FCFA",
+    "image": "images/articles-site/shorts/short-wax-sunset.png",
+    "reviews": [
+      {
+        "name": "David",
+        "rating": 5,
+        "text": "Parfait pour l'ete. Le short est tres confortable et le motif geometric est top."
+      },
+      {
+        "name": "Eric",
+        "rating": 4,
+        "text": "Tres leger et coutures solides. Tres bon produit."
+      }
+    ],
+    "description": "Short leger et confortable en tissu wax aux motifs geometriques tons chauds orange et marron."
+  },
+  {
+    "id": 318,
+    "title": "Pantalon Carotte Wax Élégance",
+    "category": "Pantalons",
+    "price": "14 000 FCFA",
+    "image": "images/articles-site/pantalons/pantalon-carotte-wax.png",
+    "reviews": [
+      {
+        "name": "Nelly",
+        "rating": 5,
+        "text": "La coupe carotte est tres seyante. Les details wax bleu et vert font sensation."
+      },
+      {
+        "name": "Patricia",
+        "rating": 5,
+        "text": "Superbe pantalon, matiere tres agreable. Parfait pour le bureau !"
+      }
+    ],
+    "description": "Pantalon coupe carotte ajuste a taille haute avec motifs wax bleu indigo et vert emeraude."
+  },
+  {
+    "id": 319,
+    "title": "Boucles d'oreilles Afrique Bois & Wax",
+    "category": "Bijoux",
+    "price": "4 500 FCFA",
+    "image": "images/articles-site/bijoux/boucles-oreilles-bois-wax.png",
+    "reviews": [
+      {
+        "name": "Michele",
+        "rating": 5,
+        "text": "Tres legeres a porter et magnifiques finitions. Je ne m'en lasse pas !"
+      },
+      {
+        "name": "Aurelie",
+        "rating": 5,
+        "text": "Une merveille. Le mariage du bois et du wax est une tres bonne idee."
+      }
+    ],
+    "description": "Boucles d'oreilles legeres en bois decoupe en forme de carte d'Afrique avec inserts de tissus wax colores."
+  },
+  {
+    "id": 320,
+    "title": "Compagnon Portefeuille Cuir et Wax",
+    "category": "Portefeuilles",
+    "price": "9 500 FCFA",
+    "image": "images/articles-site/portefeuilles/compagnon-portefeuille-cuir.png",
+    "reviews": [
+      {
+        "name": "Ghislaine",
+        "rating": 5,
+        "text": "Superbe portefeuille, tres logeable et le wax dore est magnifique."
+      },
+      {
+        "name": "Serge",
+        "rating": 5,
+        "text": "Finition cuir tres soignee, la fermeture eclair est solide. Parfait cadeau."
+      }
+    ],
+    "description": "Portefeuille zippe en cuir noir avec panneau avant en tissu wax de haute qualite vert et dore."
+  },
+  {
+    "id": 321,
+    "title": "Trousse de Voyage Wax & Velours",
+    "category": "Trousses",
+    "price": "6 500 FCFA",
+    "image": "images/articles-site/trousses/trousse-voyage-wax.png",
+    "reviews": [
+      {
+        "name": "Jeanne",
+        "rating": 5,
+        "text": "Trousse tres spacieuse, le velours bleu nuit est d'une grande douceur."
+      },
+      {
+        "name": "Colette",
+        "rating": 5,
+        "text": "Le matelassage est tres reussi, parfait pour ranger mon maquillage de voyage."
+      }
+    ],
+    "description": "Trousse cosmetique matelassee associant velours bleu nuit et bordures en tissu wax geometrique."
+  },
+  {
+    "id": 322,
+    "title": "Tennis en Toile Imprimée Wax",
+    "category": "Chaussures",
+    "price": "16 500 FCFA",
+    "image": "images/articles-site/chaussures/tennis-toile-wax.png",
+    "reviews": [
+      {
+        "name": "Yvan",
+        "rating": 5,
+        "text": "Des baskets uniques ! Le motif wax attire tous les regards, tres confortables."
+      },
+      {
+        "name": "Elise",
+        "rating": 5,
+        "text": "Tres jolies tennis, taille parfaitement bien. Le rendu est top."
+      }
+    ],
+    "description": "Baskets basses en toile avec imprime wax geometrique jaune, rouge et noir, ideales pour le quotidien."
+  },
+  {
+    "id": 323,
+    "title": "Tablier de Cuisine Reine du Foyer",
+    "category": "Tabliers",
+    "price": "7 500 FCFA",
+    "image": "images/articles-site/tabliers/tablier-reine-foyer.png",
+    "reviews": [
+      {
+        "name": "Bernadette",
+        "rating": 5,
+        "text": "Superbe tablier, le coton est bien epais et protege parfaitement."
+      },
+      {
+        "name": "Louise",
+        "rating": 5,
+        "text": "Les details wax rouges apportent une touche chaleureuse en cuisine."
+      }
+    ],
+    "description": "Tablier de cuisine en coton robuste orne d'une illustration culinaire et de bordures en wax rouge."
+  },
+  {
+    "id": 324,
+    "title": "Serviette de Bain Chutes de la Lobé",
+    "category": "Serviettes",
+    "price": "12 500 FCFA",
+    "image": "images/articles-site/serviettes/serviette-bain-lobe.png",
+    "reviews": [
+      {
+        "name": "Bertrand",
+        "rating": 5,
+        "text": "Tres grande serviette, le dessin des chutes de Kribi est magnifique."
+      },
+      {
+        "name": "Sylvie",
+        "rating": 5,
+        "text": "Matiere eponge tres absorbante, couleurs fideles et superbes."
+      }
+    ],
+    "description": "Grande serviette de plage absorbante illustrant les chutes de Kribi encadrees par des motifs de wax."
+  },
+  {
+    "id": 325,
+    "title": "Mug en Céramique ROSBRI Heritage",
+    "category": "Mugs",
+    "price": "3 500 FCFA",
+    "image": "images/articles-site/mugs/mug-ceramique-heritage.png",
+    "reviews": [
+      {
+        "name": "Jules",
+        "rating": 5,
+        "text": "Tres beau mug, parfait pour commencer la journee avec une touche culturelle."
+      },
+      {
+        "name": "Odile",
+        "rating": 5,
+        "text": "Les motifs sont tres nets et supportent tres bien le lave-vaisselle."
+      }
+    ],
+    "description": "Mug en ceramique blanche illustrant les monuments du Cameroun enveloppes de motifs de wax vibrants."
+  },
+  {
+    "id": 326,
+    "title": "Gourde Isotherme Mont Cameroun",
+    "category": "Gourdes",
+    "price": "6 500 FCFA",
+    "image": "images/articles-site/gourdes/gourde-isotherme-mont-cam.png",
+    "reviews": [
+      {
+        "name": "Victor",
+        "rating": 5,
+        "text": "Garde leau fraiche toute la journee. Le dessin du Mont Cameroun est superbe."
+      },
+      {
+        "name": "Sandrine",
+        "rating": 5,
+        "text": "Pratique a emporter, bouchon etanche et tres beau design."
+      }
+    ],
+    "description": "Gourde isotherme en acier inoxydable affichant une silhouette moderne du Mont Cameroun et des touches wax."
+  },
+  {
+    "id": 327,
+    "title": "Affiche d'Art Pont des Allemands (Edéa)",
+    "category": "Affiches",
+    "price": "5 000 FCFA",
+    "image": "images/articles-site/affiches/affiche-pont-allemands.png",
+    "reviews": [
+      {
+        "name": "Gilles",
+        "rating": 5,
+        "text": "Superbe qualite d'impression. Encadree dans mon salon, elle fait fureur."
+      },
+      {
+        "name": "Isabelle",
+        "rating": 5,
+        "text": "Un bel hommage a notre patrimoine, style moderne et colore."
+      }
+    ],
+    "description": "Affiche d'art premium (format A3) representant le pont historique d'Edea revisite dans un style graphique moderne."
+  },
+  {
+    "id": 328,
+    "title": "Lot de 5 Cartes de Vœux Culturelles",
+    "category": "Cartes",
+    "price": "4 000 FCFA",
+    "image": "images/articles-site/cartes/cartes-voeux-culturelles.png",
+    "reviews": [
+      {
+        "name": "Marthe",
+        "rating": 5,
+        "text": "Tres jolies cartes texturees, parfaites pour accompagner mes cadeaux."
+      },
+      {
+        "name": "Alice",
+        "rating": 5,
+        "text": "Designs tres fins et originaux. Mes proches ont adore les recevoir."
+      }
+    ],
+    "description": "Assortiment de 5 cartes texturees avec illustrations minimalistes de monuments camerounais et details wax."
+  },
+  {
+    "id": 329,
+    "title": "Pack de 10 Stickers ROSBRI Heritage",
+    "category": "Stickers",
+    "price": "2 500 FCFA",
+    "image": "images/articles-site/stickers/pack-stickers-rosbri.png",
+    "reviews": [
+      {
+        "name": "Rene",
+        "rating": 5,
+        "text": "Autocollants tres resistants, parfaits pour mon ordinateur et ma gourde."
+      },
+      {
+        "name": "Lucas",
+        "rating": 5,
+        "text": "Superbes visuels, collent tres bien et ne se decollent pas au lavage."
+      }
+    ],
+    "description": "Autocollants vinyles durables reprenant les visuels phares de la marque (Reine Africaine, Luffy Wax, Monuments)."
+  },
+  {
+    "id": 330,
+    "title": "Pagne Wax Premium ROSBRI (6 Yards)",
+    "category": "Pagnes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/pagnes/pagne-wax-premium.png",
+    "reviews": [
+      {
+        "name": "Aminata",
+        "rating": 5,
+        "text": "Le tissu est lourd, de tres haute qualite. Parfait pour coudre ma prochaine robe."
+      },
+      {
+        "name": "Fatou",
+        "rating": 5,
+        "text": "Les motifs exclusifs sont d'une clarte exceptionnelle. Vraiment premium."
+      }
+    ],
+    "description": "Pagne wax traditionnel haut de gamme, motifs geometriques exclusifs bleus et dores pour toutes vos creations."
+  },
+  {
+    "id": 331,
+    "title": "Coque de Téléphone Wax & Or",
+    "category": "CoquesTelephone",
+    "price": "5 000 FCFA",
+    "image": "images/articles-site/coques-telephone/coque-telephone-wax-or.png",
+    "reviews": [
+      {
+        "name": "Ines",
+        "rating": 5,
+        "text": "Coque tres solide, protege bien mon telephone. Le motif wax et or est sublime."
+      },
+      {
+        "name": "Thierry",
+        "rating": 4,
+        "text": "Tres bonne prise en main, le rendu visuel est impeccable. Satisfait !"
+      }
+    ],
+    "description": "Coque antichoc elegante arborant des textures wax haute definition et des lignes dorees brillantes."
   }
 ];
