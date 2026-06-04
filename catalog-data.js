@@ -4504,5 +4504,25 @@ window.ROSBriCatalog = [
       }
     ],
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
+  },
+  {
+    "id": 310,
+    "title": "Casquette ROSBRI Signature",
+    "category": "Accessoires",
+    "price": "4 500 FCFA",
+    "image": "images/articles-site/casquettes/casquette-signature.png",
+    "reviews": [
+      {
+        "name": "Yasmine",
+        "rating": 5,
+        "text": "Le detail qui fait la difference ! Broderie tres soignee."
+      },
+      {
+        "name": "Steve",
+        "rating": 5,
+        "text": "Superbe casquette blanche, tres confortable au quotidien."
+      }
+    ],
+    "description": "Completez votre style avec la casquette officielle ROSBRI DESIGN. Un design epure, une broderie de haute qualite et un confort inegale."
   }
 ];
