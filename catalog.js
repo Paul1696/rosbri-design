@@ -923,7 +923,7 @@ Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
     const text = `Découvrez ${displayTitle(item)} chez ROSBRI DESIGN`;
     return {
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
-      whatsapp: `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`,
+      whatsapp: `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`${text} ${url}`)}`,
       x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
       instagram: "https://www.instagram.com/"
     };

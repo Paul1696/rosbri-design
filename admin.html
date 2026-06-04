@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin catalogue - ROSBRI DESIGN</title>
   <meta name="robots" content="noindex,nofollow">
-  <link rel="stylesheet" href="styles.css?v=20260602-admin-4">
+  <link rel="stylesheet" href="styles.css?v=20260603-admin-console">
 </head>
-<body class="admin-page">
+<body class="admin-page admin-console-page">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <header class="topbar">
+  <header class="topbar admin-topbar">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
         <img src="images/brand/rosbri-wax-design-logo.jpg" alt="" width="48" height="48">
@@ -24,21 +24,28 @@
     </div>
   </header>
 
-  <main id="contenu" class="admin-shell">
-    <section class="container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Back-office</p>
-          <h1>Gestion du catalogue</h1>
-          <p>Connectez-vous avec votre compte admin pour ajouter, modifier, masquer ou supprimer les articles sans toucher au code du site.</p>
-        </div>
+  <main id="contenu" class="admin-shell admin-console">
+    <section class="admin-console-header">
+      <div>
+        <p class="eyebrow">Back-office</p>
+        <h1>Administration</h1>
+        <p>Produits, images, publication et commandes WhatsApp au meme endroit.</p>
+      </div>
+      <div class="admin-console-actions">
+        <a class="secondary-btn" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN" target="_blank" rel="noopener noreferrer">WhatsApp +237 690 087 213</a>
         <a class="primary-btn" href="boutique.html">Voir la boutique</a>
       </div>
+    </section>
 
-      <div class="admin-grid">
-        <div class="admin-panel admin-login-card">
-          <h2>Session admin</h2>
-          <p>Le compte doit être créé dans Supabase Auth. L'URL du projet n'est pas un identifiant de connexion.</p>
+    <section class="admin-access-grid" aria-label="Acces administrateur">
+      <article class="admin-panel admin-login-card">
+        <div class="admin-panel-head">
+          <div>
+            <h2>Connexion</h2>
+            <p>Compte Supabase Auth administrateur.</p>
+          </div>
+        </div>
+        <div class="admin-login-fields">
           <label>
             Email
             <input id="admin-email" type="email" autocomplete="email">
@@ -47,70 +54,115 @@
             Mot de passe
             <input id="admin-password" type="password" autocomplete="current-password">
           </label>
-          <div class="admin-actions">
-            <button class="primary-btn" id="admin-login" type="button">Se connecter</button>
-            <button class="secondary-btn" id="admin-logout" type="button">Se déconnecter</button>
-          </div>
-          <p class="admin-status" id="auth-status">Non connecté.</p>
         </div>
+        <div class="admin-actions">
+          <button class="primary-btn" id="admin-login" type="button">Se connecter</button>
+          <button class="secondary-btn" id="admin-logout" type="button">Se deconnecter</button>
+        </div>
+        <p class="admin-status" id="auth-status">Non connecte.</p>
+      </article>
 
-        <details class="admin-panel admin-advanced">
-          <summary>Réglages techniques Supabase</summary>
-          <form id="cms-settings">
-            <p>Ces champs sont préremplis par le site. Ne les modifiez que si vous changez de projet Supabase.</p>
-            <label>
-              URL du projet
-              <input id="cms-url" type="url" placeholder="https://xxxx.supabase.co" autocomplete="off">
-            </label>
-            <label>
-              Clé publique du projet
-              <input id="cms-key" type="password" placeholder="sb_publishable_..." autocomplete="off">
-            </label>
-            <label>
-              Table produits
-              <input id="cms-table" type="text" value="products">
-            </label>
-            <div class="admin-actions">
-              <button class="primary-btn" type="submit">Enregistrer</button>
-              <button class="secondary-btn" id="cms-test" type="button">Tester</button>
-            </div>
-          </form>
-          <p class="admin-status" id="cms-status">Configuration Supabase prête.</p>
-        </details>
-
-        <div class="admin-panel" id="publication-panel" hidden>
-          <h2>Publication</h2>
-          <p>Les changements publiés ici deviennent visibles sur la boutique quand la table Supabase est créée.</p>
+      <details class="admin-panel admin-advanced">
+        <summary>Configuration Supabase</summary>
+        <form id="cms-settings" class="admin-settings-form">
+          <label>
+            URL du projet
+            <input id="cms-url" type="url" placeholder="https://xxxx.supabase.co" autocomplete="off">
+          </label>
+          <label>
+            Cle publique
+            <input id="cms-key" type="password" placeholder="sb_publishable_..." autocomplete="off">
+          </label>
+          <label>
+            Table produits
+            <input id="cms-table" type="text" value="products">
+          </label>
+          <label>
+            Bucket images
+            <input id="cms-bucket" type="text" value="product-images" placeholder="product-images">
+          </label>
           <div class="admin-actions">
-            <button class="secondary-btn" id="import-static" type="button">Importer le catalogue actuel</button>
-            <a class="secondary-btn" href="tools/supabase-products-schema.sql">Voir le schéma SQL</a>
+            <button class="primary-btn" type="submit">Enregistrer</button>
+            <button class="secondary-btn" id="cms-test" type="button">Tester</button>
           </div>
-          <p class="admin-status">Avant l'import, créez la table avec le fichier SQL.</p>
+        </form>
+        <p class="admin-status" id="cms-status">Configuration Supabase prete.</p>
+      </details>
+
+      <article class="admin-panel admin-start-card">
+        <div class="admin-panel-head">
+          <div>
+            <h2>Demarrage</h2>
+            <p>Les actions a verifier avant publication.</p>
+          </div>
+        </div>
+        <div class="admin-checklist">
+          <span>1. Connexion admin</span>
+          <span>2. Table produits</span>
+          <span>3. Bucket images</span>
+        </div>
+        <div class="admin-actions">
+          <a class="secondary-btn" href="tools/supabase-products-schema.sql">Ouvrir le SQL</a>
+          <a class="secondary-btn" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%2C%20je%20teste%20le%20lien%20WhatsApp%20du%20site." target="_blank" rel="noopener noreferrer">Tester WhatsApp</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="admin-workspace admin-console-workspace" id="admin-workspace" hidden>
+      <div class="admin-panel admin-summary" aria-label="Resume du catalogue">
+        <div>
+          <span>Total</span>
+          <strong id="admin-total-count">0</strong>
+        </div>
+        <div>
+          <span>Visibles</span>
+          <strong id="admin-visible-count">0</strong>
+        </div>
+        <div>
+          <span>Masques</span>
+          <strong id="admin-hidden-count">0</strong>
+        </div>
+        <div>
+          <span>Categories</span>
+          <strong id="admin-category-count">0</strong>
         </div>
       </div>
 
-      <div class="admin-layout" id="admin-workspace" hidden>
-        <section class="admin-panel admin-summary" aria-label="Résumé du catalogue">
-          <div>
-            <span>Total</span>
-            <strong id="admin-total-count">0</strong>
+      <nav class="admin-tabs" aria-label="Sections admin">
+        <button class="active" type="button" data-admin-tab="products">Produits</button>
+        <button type="button" data-admin-tab="images">Images</button>
+        <button type="button" data-admin-tab="publish">Publication</button>
+      </nav>
+
+      <section class="admin-tab-panel active" data-admin-panel="products">
+        <div class="admin-products-column admin-panel">
+          <div class="admin-panel-head admin-products-head">
+            <div>
+              <h2>Articles</h2>
+              <p id="admin-result-status">Aucun article charge.</p>
+            </div>
           </div>
-          <div>
-            <span>Visibles</span>
-            <strong id="admin-visible-count">0</strong>
+          <div class="admin-list-controls">
+            <select class="select" id="admin-category-filter" aria-label="Filtrer par categorie">
+              <option value="Tous">Toutes les categories</option>
+            </select>
+            <select class="select" id="admin-visibility-filter" aria-label="Filtrer par visibilite">
+              <option value="all">Tous les statuts</option>
+              <option value="visible">Visibles</option>
+              <option value="hidden">Masques</option>
+            </select>
+            <input class="search" id="admin-search" type="search" placeholder="Rechercher">
           </div>
-          <div>
-            <span>Masqués</span>
-            <strong id="admin-hidden-count">0</strong>
-          </div>
-          <div>
-            <span>Catégories</span>
-            <strong id="admin-category-count">0</strong>
-          </div>
-        </section>
+          <div class="admin-products" id="admin-products"></div>
+        </div>
 
         <form class="admin-panel product-editor" id="product-form">
-          <h2 id="editor-title">Nouvel article</h2>
+          <div class="admin-panel-head">
+            <div>
+              <h2 id="editor-title">Nouvel article</h2>
+              <p>Modifiez sans deplacement automatique.</p>
+            </div>
+          </div>
           <input id="product-id" type="hidden">
           <label>
             Nom
@@ -118,7 +170,7 @@
           </label>
           <div class="admin-two">
             <label>
-              Catégorie
+              Categorie
               <select id="product-category" required>
                 <option>Packs</option>
                 <option>Heritage</option>
@@ -151,7 +203,7 @@
             <input id="product-image" type="text" placeholder="images/articles-site/sacs/variants/sac-...png" required>
           </label>
           <div class="admin-image-preview" id="image-preview" aria-live="polite">
-            <span>Aperçu image</span>
+            <span>Apercu image</span>
           </div>
           <label>
             Description
@@ -168,35 +220,65 @@
             </label>
           </div>
           <div class="admin-actions">
-            <button class="primary-btn" type="submit">Enregistrer l'article</button>
+            <button class="primary-btn" type="submit">Enregistrer</button>
             <button class="secondary-btn" id="reset-form" type="button">Nouveau</button>
           </div>
         </form>
+      </section>
 
-        <section class="admin-panel">
-          <div class="admin-list-head">
-            <h2>Articles</h2>
-            <div class="admin-list-controls">
-              <select class="select" id="admin-category-filter" aria-label="Filtrer par catégorie">
-                <option value="Tous">Toutes les catégories</option>
-              </select>
-              <select class="select" id="admin-visibility-filter" aria-label="Filtrer par visibilité">
-                <option value="all">Tous les statuts</option>
-                <option value="visible">Visibles seulement</option>
-                <option value="hidden">Masqués seulement</option>
-              </select>
-              <input class="search" id="admin-search" type="search" placeholder="Rechercher un article">
+      <section class="admin-tab-panel" data-admin-panel="images">
+        <article class="admin-panel admin-media-manager">
+          <div class="admin-panel-head">
+            <div>
+              <h2>Images</h2>
+              <p>Chargez des fichiers, puis appliquez-les au produit ouvert.</p>
+            </div>
+            <button class="secondary-btn" id="refresh-images" type="button">Actualiser</button>
+          </div>
+          <label class="admin-file-drop admin-media-drop" id="media-drop">
+            <span>Glissez-deposez vos images ici</span>
+            <input id="media-files" type="file" accept="image/png,image/jpeg,image/webp,image/gif" multiple>
+            <small>PNG, JPG, WebP ou GIF. Les fichiers sont ranges par categorie.</small>
+          </label>
+          <div class="admin-actions">
+            <button class="primary-btn" id="upload-media-files" type="button" disabled>Charger les images</button>
+            <label class="admin-inline-file">
+              Import rapide
+              <input id="product-image-file" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+            </label>
+          </div>
+          <div class="admin-import-details" id="image-import-details" aria-live="polite">
+            Selectionnez une image pour preparer son import.
+          </div>
+          <div class="admin-actions">
+            <button class="secondary-btn" id="upload-image" type="button" disabled>Uploader l'image rapide</button>
+            <button class="secondary-btn" id="use-suggested-path" type="button" disabled>Chemin local conseille</button>
+          </div>
+          <p class="admin-status" id="media-status">Aucune image selectionnee.</p>
+          <div class="admin-media-grid" id="media-grid" aria-live="polite"></div>
+        </article>
+      </section>
+
+      <section class="admin-tab-panel" data-admin-panel="publish">
+        <article class="admin-panel admin-publication" id="publication-panel" hidden>
+          <div class="admin-panel-head">
+            <div>
+              <h2>Publication</h2>
+              <p>Importez le catalogue local ou ouvrez le schema SQL Supabase.</p>
             </div>
           </div>
-          <p class="admin-status" id="admin-result-status">Aucun article chargé.</p>
-          <div class="admin-products" id="admin-products"></div>
-        </section>
-      </div>
+          <div class="admin-actions">
+            <button class="primary-btn" id="import-static" type="button">Importer le catalogue actuel</button>
+            <a class="secondary-btn" href="tools/supabase-products-schema.sql">Schema SQL</a>
+          </div>
+          <p class="admin-status">Le schema cree la table produits, le bucket images et les droits d'upload.</p>
+        </article>
+      </section>
     </section>
   </main>
 
   <script src="catalog-data.js?v=20260602-admin"></script>
-  <script src="cms-config.js?v=20260602-admin"></script>
-  <script src="admin.js?v=20260602-admin-4"></script>
+  <script src="cms-config.js?v=20260603-admin-images"></script>
+  <script src="admin.js?v=20260603-admin-console"></script>
 </body>
 </html>

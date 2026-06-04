@@ -5,11 +5,16 @@
   const defaultSettings = window.ROSBriCMS && window.ROSBriCMS.enabled ? {
     supabaseUrl: window.ROSBriCMS.supabaseUrl,
     anonKey: window.ROSBriCMS.anonKey,
-    productsTable: window.ROSBriCMS.productsTable || "products"
+    productsTable: window.ROSBriCMS.productsTable || "products",
+    storageBucket: window.ROSBriCMS.storageBucket || "product-images"
   } : {};
 
   let settings = loadSettings();
   let accessToken = sessionStorage.getItem(tokenKey) || "";
+  let selectedImage = null;
+  let mediaFiles = [];
+  let mediaItems = [];
+  let activeProductId = "";
   let products = [];
   let query = "";
   let categoryFilter = "Tous";
@@ -20,11 +25,12 @@
   function loadSettings() {
     try {
       return {
+        storageBucket: "product-images",
         ...defaultSettings,
         ...(JSON.parse(localStorage.getItem(storageKey)) || {})
       };
     } catch {
-      return { ...defaultSettings };
+      return { storageBucket: "product-images", ...defaultSettings };
     }
   }
 
@@ -37,8 +43,16 @@
     return Boolean(settings.supabaseUrl && settings.anonKey && settings.productsTable);
   }
 
+  function storageConfigured() {
+    return Boolean(configured() && settings.storageBucket);
+  }
+
   function endpoint(path) {
     return `${settings.supabaseUrl.replace(/\/$/, "")}/rest/v1/${path}`;
+  }
+
+  function storageEndpoint(path) {
+    return `${settings.supabaseUrl.replace(/\/$/, "")}/storage/v1/${path}`;
   }
 
   function headers(extra = {}) {
@@ -46,6 +60,14 @@
       apikey: settings.anonKey,
       Authorization: `Bearer ${accessToken || settings.anonKey}`,
       "Content-Type": "application/json",
+      ...extra
+    };
+  }
+
+  function storageHeaders(extra = {}) {
+    return {
+      apikey: settings.anonKey,
+      Authorization: `Bearer ${accessToken || settings.anonKey}`,
       ...extra
     };
   }
@@ -58,6 +80,118 @@
       '"': "&quot;",
       "'": "&#039;"
     }[char]));
+  }
+
+  function slugify(value, fallback = "image") {
+    const slug = String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80);
+    return slug || fallback;
+  }
+
+  function categoryFolder(category) {
+    const folders = {
+      Heritage: "heritage",
+      Anime: "anime",
+      Maman: "maman",
+      Customisation: "customisation",
+      Tshirts: "tshirts",
+      Sacs: "sacs",
+      Ensembles: "ensembles",
+      Babouches: "babouches",
+      Sandales: "sandales",
+      Chapeaux: "chapeaux",
+      Bobs: "bobs",
+      Pochettes: "pochettes",
+      GantsCuisine: "gants-cuisine",
+      Maniques: "maniques",
+      Accessoires: "accessoires",
+      Coussins: "coussins",
+      Robes: "robes",
+      Chemises: "chemises"
+    };
+    return folders[category] || slugify(category || "accessoires", "accessoires");
+  }
+
+  function formatBytes(bytes) {
+    if (!Number.isFinite(bytes) || bytes <= 0) return "0 Ko";
+    const units = ["o", "Ko", "Mo", "Go"];
+    let value = bytes;
+    let unit = 0;
+    while (value >= 1024 && unit < units.length - 1) {
+      value /= 1024;
+      unit++;
+    }
+    return `${value.toFixed(value >= 10 || unit === 0 ? 0 : 1)} ${units[unit]}`;
+  }
+
+  function fileExtension(file) {
+    const fromName = String(file?.name || "").match(/\.([a-z0-9]+)$/i)?.[1];
+    const fromType = String(file?.type || "").split("/")[1];
+    const ext = (fromName || fromType || "png").toLowerCase().replace("jpeg", "jpg");
+    return ["png", "jpg", "webp", "gif"].includes(ext) ? ext : "png";
+  }
+
+  function normalizeImageInput(value) {
+    const raw = String(value || "").trim();
+    if (!raw) return "";
+    if (/^(https?:|data:|blob:)/i.test(raw)) return raw;
+    const clean = raw
+      .replace(/^["']|["']$/g, "")
+      .replace(/\\/g, "/")
+      .replace(/^\.?\//, "")
+      .replace(/^.*?(images\/)/i, "images/")
+      .replace(/\s+/g, "%20");
+    return clean;
+  }
+
+  function selectedImageSlug() {
+    return slugify(byId("product-title")?.value || selectedImage?.file?.name || "article", "article");
+  }
+
+  function suggestedImagePath(file = selectedImage?.file, remote = false) {
+    if (!file) return "";
+    const category = byId("product-category")?.value || "Accessoires";
+    const folder = categoryFolder(category);
+    const ext = fileExtension(file);
+    const base = `${selectedImageSlug()}-${selectedImage?.pathStamp || Date.now().toString(36)}`;
+    return remote
+      ? `${folder}/${base}.${ext}`
+      : `images/articles-site/${folder}/variants/${base}.${ext}`;
+  }
+
+  function publicStorageUrl(path) {
+    const encodedPath = String(path || "")
+      .split("/")
+      .map((part) => encodeURIComponent(part))
+      .join("/");
+    return storageEndpoint(`object/public/${encodeURIComponent(settings.storageBucket)}/${encodedPath}`);
+  }
+
+  function storageObjectPath(file, stamp = Date.now().toString(36)) {
+    const category = byId("product-category")?.value || "Accessoires";
+    const folder = categoryFolder(category);
+    const name = String(file?.name || "").replace(/\.[^.]+$/, "");
+    const title = byId("product-title")?.value || name || "article";
+    return `${folder}/${slugify(title, "article")}-${stamp}.${fileExtension(file)}`;
+  }
+
+  function imageImportStatus(text, tone = "") {
+    const node = byId("image-import-details");
+    if (!node) return;
+    node.textContent = text;
+    node.dataset.tone = tone;
+  }
+
+  function mediaStatus(text, tone = "") {
+    const node = byId("media-status");
+    if (!node) return;
+    node.textContent = text;
+    node.dataset.tone = tone;
   }
 
   async function errorMessage(response) {
@@ -94,6 +228,16 @@
     if (publication) publication.hidden = !connected;
     if (loginButton) loginButton.hidden = connected;
     if (logoutButton) logoutButton.hidden = !connected;
+    document.body.dataset.adminConnected = connected ? "true" : "false";
+  }
+
+  function setAdminTab(tabName) {
+    document.querySelectorAll("[data-admin-tab]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.adminTab === tabName);
+    });
+    document.querySelectorAll("[data-admin-panel]").forEach((panel) => {
+      panel.classList.toggle("active", panel.dataset.adminPanel === tabName);
+    });
   }
 
   async function request(path, options = {}) {
@@ -140,6 +284,7 @@
 
     try {
       await loadProducts();
+      await loadMediaLibrary();
     } catch (error) {
       setStatus(`Catalogue indisponible : ${error.message}`, "error");
     }
@@ -148,8 +293,11 @@
   function logout() {
     accessToken = "";
     products = [];
+    mediaFiles = [];
+    mediaItems = [];
     sessionStorage.removeItem(tokenKey);
     renderProducts();
+    renderMediaLibrary();
     resetForm();
     setAuthStatus("Non connecté.", "");
     setStatus("Connectez-vous avec votre compte Supabase Auth pour gérer le catalogue.");
@@ -250,23 +398,217 @@
     const target = byId("image-preview");
     const input = byId("product-image");
     if (!target || !input) return;
-    const src = input.value.trim();
-    target.dataset.state = src ? "loading" : "empty";
-    target.innerHTML = src
-      ? `<img src="${escapeHtml(src)}" alt=""><span>${escapeHtml(src)}</span><strong>Vérification de l'image...</strong>`
-      : `<span>Aperçu image</span>`;
+    const src = normalizeImageInput(input.value);
+    if (input.value !== src) input.value = src;
+    const previewSrc = selectedImage?.previewUrl || src;
+    const label = selectedImage
+      ? `${selectedImage.file.name} - ${formatBytes(selectedImage.file.size)}`
+      : src;
+    target.dataset.state = previewSrc ? "loading" : "empty";
+    target.innerHTML = previewSrc
+      ? `<img src="${escapeHtml(previewSrc)}" alt=""><span>${escapeHtml(label)}</span><strong>Verification de l'image...</strong>`
+      : `<span>Apercu image</span>`;
     const image = target.querySelector("img");
     if (!image) return;
     image.addEventListener("load", () => {
       target.dataset.state = "ok";
       const status = target.querySelector("strong");
-      if (status) status.textContent = "Image trouvée";
+      const dimensions = image.naturalWidth && image.naturalHeight
+        ? `${image.naturalWidth} x ${image.naturalHeight}px`
+        : "Image trouvee";
+      if (status) status.textContent = selectedImage
+        ? `${dimensions} - prete a importer`
+        : dimensions;
     }, { once: true });
     image.addEventListener("error", () => {
       target.dataset.state = "error";
       const status = target.querySelector("strong");
       if (status) status.textContent = "Image introuvable";
     }, { once: true });
+  }
+
+  function clearSelectedImage(options = {}) {
+    if (selectedImage?.previewUrl) URL.revokeObjectURL(selectedImage.previewUrl);
+    selectedImage = null;
+    const fileInput = byId("product-image-file");
+    if (fileInput) fileInput.value = "";
+    const uploadButton = byId("upload-image");
+    const pathButton = byId("use-suggested-path");
+    if (uploadButton) uploadButton.disabled = true;
+    if (pathButton) pathButton.disabled = true;
+    if (!options.keepStatus) imageImportStatus("Selectionnez un fichier pour preparer son import.");
+  }
+
+  function selectImageFile(file) {
+    if (!file) return;
+    if (!/^image\/(png|jpeg|webp|gif)$/i.test(file.type)) {
+      imageImportStatus("Format non pris en charge. Utilisez PNG, JPG, WebP ou GIF.", "error");
+      return;
+    }
+    if (selectedImage?.previewUrl) URL.revokeObjectURL(selectedImage.previewUrl);
+    selectedImage = {
+      file,
+      previewUrl: URL.createObjectURL(file),
+      pathStamp: Date.now().toString(36)
+    };
+    selectedImage.suggestedPath = suggestedImagePath(file);
+    const uploadButton = byId("upload-image");
+    const pathButton = byId("use-suggested-path");
+    if (uploadButton) uploadButton.disabled = !storageConfigured();
+    if (pathButton) pathButton.disabled = false;
+    imageImportStatus(`${file.name} (${formatBytes(file.size)}) pret. Chemin conseille : ${selectedImage.suggestedPath}`, "ok");
+    updateImagePreview();
+  }
+
+  function useSuggestedPath() {
+    if (!selectedImage) return;
+    selectedImage.suggestedPath = suggestedImagePath(selectedImage.file);
+    byId("product-image").value = selectedImage.suggestedPath;
+    imageImportStatus(`Chemin local applique. Copiez le fichier dans : ${selectedImage.suggestedPath}`, "warn");
+    updateImagePreview();
+  }
+
+  async function uploadSelectedImage() {
+    if (!selectedImage?.file) {
+      imageImportStatus("Selectionnez une image avant l'upload.", "warn");
+      return;
+    }
+    if (!storageConfigured()) {
+      imageImportStatus("Renseignez un bucket images dans les reglages techniques.", "warn");
+      return;
+    }
+    requireAuth();
+    const objectPath = storageObjectPath(selectedImage.file, selectedImage.pathStamp);
+    imageImportStatus("Upload de l'image en cours...", "ok");
+    const url = await uploadFileToStorage(selectedImage.file, objectPath);
+    byId("product-image").value = url;
+    clearSelectedImage({ keepStatus: true });
+    imageImportStatus(`Image chargee dans Supabase : ${objectPath}`, "ok");
+    await loadMediaLibrary().catch(() => {});
+    updateImagePreview();
+  }
+
+  function imageFilesFromList(files) {
+    return Array.from(files || []).filter((file) => /^image\/(png|jpeg|webp|gif)$/i.test(file.type));
+  }
+
+  async function uploadFileToStorage(file, objectPath) {
+    const response = await fetch(storageEndpoint(`object/${encodeURIComponent(settings.storageBucket)}/${objectPath}`), {
+      method: "POST",
+      headers: storageHeaders({
+        "Content-Type": file.type || "application/octet-stream",
+        "Cache-Control": "3600",
+        "x-upsert": "true"
+      }),
+      body: file
+    });
+    if (!response.ok) throw new Error(await errorMessage(response));
+    return publicStorageUrl(objectPath);
+  }
+
+  function selectMediaFiles(files) {
+    mediaFiles = imageFilesFromList(files);
+    const button = byId("upload-media-files");
+    if (button) button.disabled = !mediaFiles.length || !storageConfigured() || !accessToken;
+    if (!mediaFiles.length) {
+      mediaStatus("Aucune image valide selectionnee. Utilisez PNG, JPG, WebP ou GIF.", "warn");
+      return;
+    }
+    const totalSize = mediaFiles.reduce((sum, file) => sum + file.size, 0);
+    mediaStatus(`${mediaFiles.length} image${mediaFiles.length > 1 ? "s" : ""} prete${mediaFiles.length > 1 ? "s" : ""} a charger (${formatBytes(totalSize)}).`, "ok");
+  }
+
+  async function uploadMediaFiles() {
+    if (!mediaFiles.length) {
+      mediaStatus("Selectionnez au moins une image.", "warn");
+      return;
+    }
+    if (!storageConfigured()) {
+      mediaStatus("Renseignez le bucket images dans les reglages techniques.", "warn");
+      return;
+    }
+    requireAuth();
+    const uploaded = [];
+    for (let index = 0; index < mediaFiles.length; index++) {
+      const file = mediaFiles[index];
+      const stamp = `${Date.now().toString(36)}-${index + 1}`;
+      const objectPath = storageObjectPath(file, stamp);
+      mediaStatus(`Chargement ${index + 1}/${mediaFiles.length} : ${file.name}`, "ok");
+      const url = await uploadFileToStorage(file, objectPath);
+      uploaded.push({ name: objectPath, url, size: file.size, updated_at: new Date().toISOString() });
+    }
+    mediaFiles = [];
+    const input = byId("media-files");
+    if (input) input.value = "";
+    const button = byId("upload-media-files");
+    if (button) button.disabled = true;
+    mediaItems = [...uploaded, ...mediaItems.filter((item) => !uploaded.some((entry) => entry.name === item.name))];
+    renderMediaLibrary();
+    mediaStatus(`${uploaded.length} image${uploaded.length > 1 ? "s" : ""} chargee${uploaded.length > 1 ? "s" : ""}. Cliquez sur Utiliser pour l'associer a l'article.`, "ok");
+  }
+
+  function normalizeStorageItem(item, prefix = "") {
+    const rawName = item.name || item.path || "";
+    const name = rawName && prefix && !rawName.includes("/") ? `${prefix}/${rawName}` : rawName;
+    if (!name || !/\.(png|jpe?g|webp|gif)$/i.test(name)) return null;
+    return {
+      name,
+      url: publicStorageUrl(name),
+      size: item.metadata?.size || item.size || 0,
+      updated_at: item.updated_at || item.created_at || ""
+    };
+  }
+
+  async function loadMediaLibrary() {
+    if (!storageConfigured() || !accessToken) {
+      renderMediaLibrary();
+      mediaStatus("Connectez-vous pour charger et voir les images.", "warn");
+      return;
+    }
+    const prefix = categoryFolder(byId("product-category")?.value || "Accessoires");
+    mediaStatus(`Chargement des images ${prefix}...`, "ok");
+    const response = await fetch(storageEndpoint(`object/list/${encodeURIComponent(settings.storageBucket)}`), {
+      method: "POST",
+      headers: storageHeaders({ "Content-Type": "application/json" }),
+      body: JSON.stringify({
+        prefix,
+        limit: 100,
+        offset: 0,
+        sortBy: { column: "updated_at", order: "desc" }
+      })
+    });
+    if (!response.ok) throw new Error(await errorMessage(response));
+    const rows = await response.json();
+    mediaItems = (Array.isArray(rows) ? rows : [])
+      .map((item) => normalizeStorageItem(item, prefix))
+      .filter(Boolean);
+    renderMediaLibrary();
+    mediaStatus(mediaItems.length
+      ? `${mediaItems.length} image${mediaItems.length > 1 ? "s" : ""} disponible${mediaItems.length > 1 ? "s" : ""} dans ${prefix}.`
+      : `Aucune image dans ${prefix}. Chargez vos fichiers ci-dessus.`, mediaItems.length ? "ok" : "warn");
+  }
+
+  function renderMediaLibrary() {
+    const target = byId("media-grid");
+    if (!target) return;
+    target.innerHTML = mediaItems.map((item) => `
+      <article class="admin-media-card">
+        <img src="${escapeHtml(item.url)}" alt="">
+        <div>
+          <strong>${escapeHtml(item.name.split("/").pop())}</strong>
+          <span>${escapeHtml(item.name)}${item.size ? ` - ${escapeHtml(formatBytes(item.size))}` : ""}</span>
+        </div>
+        <button class="secondary-btn" type="button" data-use-media="${escapeHtml(item.url)}">Utiliser</button>
+      </article>
+    `).join("") || `<p class="admin-status">Aucune image chargee pour cette categorie.</p>`;
+  }
+
+  function useMedia(url) {
+    byId("product-image").value = url;
+    clearSelectedImage();
+    mediaStatus("Image appliquee au formulaire produit.", "ok");
+    updateImagePreview();
+    setAdminTab("products");
   }
 
   async function loadProducts() {
@@ -295,12 +637,15 @@
     const id = byId("product-id").value || String(nextId());
     const category = byId("product-category").value.trim();
     if (!category) throw new Error("Choisissez une catégorie avant d'enregistrer.");
+    const image = normalizeImageInput(byId("product-image").value);
+    if (selectedImage && !image) throw new Error("Importez l'image dans Supabase ou appliquez le chemin conseille avant d'enregistrer.");
+    if (/^blob:/i.test(image)) throw new Error("L'apercu local ne peut pas etre publie. Uploadez l'image ou utilisez un chemin du site.");
     return {
       id: Number(id),
       title: byId("product-title").value.trim(),
       category,
       price: byId("product-price").value.trim(),
-      image: byId("product-image").value.trim(),
+      image,
       description: byId("product-description").value.trim(),
       is_pack: byId("product-pack").checked,
       visible: byId("product-visible").checked,
@@ -310,6 +655,8 @@
 
   function editProduct(item) {
     if (!item) return;
+    clearSelectedImage();
+    activeProductId = String(item.id);
     byId("editor-title").textContent = `Modifier #${item.id}`;
     byId("product-id").value = item.id;
     byId("product-title").value = item.title || "";
@@ -321,12 +668,14 @@
     byId("product-pack").checked = Boolean(item.is_pack);
     byId("product-visible").checked = item.visible !== false;
     updateImagePreview();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    markActiveProduct();
   }
 
   function duplicateProduct(item) {
     if (!item) return;
+    clearSelectedImage();
     const id = nextId();
+    activeProductId = String(id);
     byId("editor-title").textContent = `Dupliquer #${item.id} vers #${id}`;
     byId("product-id").value = id;
     byId("product-title").value = `${item.title || "Article ROSBRI"} - copie`;
@@ -339,17 +688,26 @@
     byId("product-visible").checked = false;
     updateImagePreview();
     setStatus("Copie préparée dans le formulaire. Vérifiez le nom, l'image et cochez Visible avant publication.", "warn");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    markActiveProduct();
   }
 
   function resetForm() {
     const form = byId("product-form");
     if (!form) return;
+    clearSelectedImage();
     byId("editor-title").textContent = "Nouvel article";
+    activeProductId = "";
     form.reset();
     byId("product-id").value = "";
     byId("product-visible").checked = true;
     updateImagePreview();
+    markActiveProduct();
+  }
+
+  function markActiveProduct() {
+    document.querySelectorAll(".admin-product").forEach((node) => {
+      node.classList.toggle("active", Boolean(activeProductId) && node.dataset.productId === activeProductId);
+    });
   }
 
   function renderProducts() {
@@ -364,7 +722,7 @@
     }
 
     target.innerHTML = visible.map((item) => `
-      <article class="admin-product${item.visible === false ? " muted" : ""}">
+      <article class="admin-product${item.visible === false ? " muted" : ""}${String(item.id) === activeProductId ? " active" : ""}" data-product-id="${escapeHtml(item.id)}">
         <img src="${escapeHtml(item.image)}" alt="">
         <div>
           <strong>${escapeHtml(item.title)}</strong>
@@ -466,14 +824,20 @@
     byId("cms-url").value = settings.supabaseUrl || "";
     byId("cms-key").value = settings.anonKey || "";
     byId("cms-table").value = settings.productsTable || "products";
+    byId("cms-bucket").value = settings.storageBucket || "product-images";
 
     byId("cms-settings").addEventListener("submit", (event) => {
       event.preventDefault();
       saveSettings({
         supabaseUrl: byId("cms-url").value.trim(),
         anonKey: byId("cms-key").value.trim(),
-        productsTable: byId("cms-table").value.trim() || "products"
+        productsTable: byId("cms-table").value.trim() || "products",
+        storageBucket: byId("cms-bucket").value.trim() || "product-images"
       });
+      const uploadButton = byId("upload-image");
+      if (uploadButton && selectedImage) uploadButton.disabled = !storageConfigured();
+      const mediaButton = byId("upload-media-files");
+      if (mediaButton) mediaButton.disabled = !mediaFiles.length || !storageConfigured() || !accessToken;
       setStatus("Configuration enregistrée dans ce navigateur.", "ok");
     });
 
@@ -496,6 +860,39 @@
     });
 
     byId("reset-form").addEventListener("click", resetForm);
+    document.querySelectorAll("[data-admin-tab]").forEach((button) => {
+      button.addEventListener("click", () => setAdminTab(button.dataset.adminTab));
+    });
+    byId("product-image-file").addEventListener("change", (event) => {
+      selectImageFile(event.target.files && event.target.files[0]);
+      setAdminTab("images");
+    });
+    byId("upload-image").addEventListener("click", () => {
+      uploadSelectedImage().catch((error) => imageImportStatus(`Upload impossible : ${error.message}`, "error"));
+    });
+    byId("use-suggested-path").addEventListener("click", useSuggestedPath);
+    byId("media-files").addEventListener("change", (event) => {
+      selectMediaFiles(event.target.files);
+    });
+    byId("upload-media-files").addEventListener("click", () => {
+      uploadMediaFiles().catch((error) => mediaStatus(`Chargement impossible : ${error.message}`, "error"));
+    });
+    byId("refresh-images").addEventListener("click", () => {
+      loadMediaLibrary().catch((error) => mediaStatus(`Images indisponibles : ${error.message}`, "error"));
+    });
+    const mediaDrop = byId("media-drop");
+    mediaDrop.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      mediaDrop.dataset.drag = "true";
+    });
+    mediaDrop.addEventListener("dragleave", () => {
+      mediaDrop.dataset.drag = "";
+    });
+    mediaDrop.addEventListener("drop", (event) => {
+      event.preventDefault();
+      mediaDrop.dataset.drag = "";
+      selectMediaFiles(event.dataTransfer && event.dataTransfer.files);
+    });
     byId("import-static").addEventListener("click", () => {
       importStaticCatalog().catch((error) => setStatus(`Import impossible : ${error.message}`, "error"));
     });
@@ -512,6 +909,19 @@
       renderProducts();
     });
     byId("product-image").addEventListener("input", updateImagePreview);
+    byId("product-title").addEventListener("input", () => {
+      if (!selectedImage) return;
+      selectedImage.suggestedPath = suggestedImagePath(selectedImage.file);
+      imageImportStatus(`${selectedImage.file.name} (${formatBytes(selectedImage.file.size)}) pret. Chemin conseille : ${selectedImage.suggestedPath}`, "ok");
+    });
+    byId("product-category").addEventListener("change", () => {
+      if (!selectedImage) return;
+      selectedImage.suggestedPath = suggestedImagePath(selectedImage.file);
+      imageImportStatus(`${selectedImage.file.name} (${formatBytes(selectedImage.file.size)}) pret. Chemin conseille : ${selectedImage.suggestedPath}`, "ok");
+    });
+    byId("product-category").addEventListener("change", () => {
+      loadMediaLibrary().catch((error) => mediaStatus(`Images indisponibles : ${error.message}`, "error"));
+    });
 
     document.addEventListener("click", (event) => {
       const edit = event.target.closest("[data-edit]");
@@ -522,6 +932,8 @@
       if (toggle) toggleVisibility(toggle.dataset.toggleVisible).catch((error) => setStatus(`Mise à jour impossible : ${error.message}`, "error"));
       const remove = event.target.closest("[data-delete]");
       if (remove) deleteProduct(remove.dataset.delete).catch((error) => setStatus(`Suppression impossible : ${error.message}`, "error"));
+      const media = event.target.closest("[data-use-media]");
+      if (media) useMedia(media.dataset.useMedia);
     });
   }
 
@@ -530,9 +942,12 @@
     updateAdminView();
     setAuthStatus(accessToken ? "Session admin active." : "Non connecté.", accessToken ? "ok" : "");
     if (accessToken) {
-      loadProducts().catch((error) => setStatus(`Chargement impossible : ${error.message}`, "error"));
+      loadProducts()
+        .then(() => loadMediaLibrary())
+        .catch((error) => setStatus(`Chargement impossible : ${error.message}`, "error"));
     } else {
       setStatus("Connectez-vous avec votre compte Supabase Auth pour gérer le catalogue.");
+      renderMediaLibrary();
     }
   });
 })();
