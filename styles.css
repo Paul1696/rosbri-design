@@ -2633,3 +2633,588 @@ h1 {
   }
 }
 
+/* ==========================================================================
+   ROSBRI DESIGN - 10 Premium Improvements Styling
+   ========================================================================== */
+
+/* 1. Dark Mode Support */
+[data-theme="dark"] {
+  --ink: #fafdfc;
+  --muted: #a3b2af;
+  --line: #2d3b38;
+  --paper: #121a18;
+  --white: #17211f;
+}
+
+[data-theme="dark"] body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+[data-theme="dark"] .topbar,
+[data-theme="dark"] .notice-band,
+[data-theme="dark"] .lightbox-panel,
+[data-theme="dark"] .cart-drawer-panel,
+[data-theme="dark"] .pillar-card,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .admin-product,
+[data-theme="dark"] .admin-card,
+[data-theme="dark"] .review-item,
+[data-theme="dark"] .benefit,
+[data-theme="dark"] .universe,
+[data-theme="dark"] .trust-pill {
+  background: var(--white);
+  border-color: var(--line);
+}
+
+[data-theme="dark"] .faq-item[open] {
+  background: rgba(0, 168, 150, 0.05);
+}
+
+[data-theme="dark"] select,
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+  background: #1c2725;
+  color: #fff;
+  border-color: var(--line);
+}
+
+[data-theme="dark"] .about-hero {
+  background: linear-gradient(135deg, #172623 0%, #121a18 100%);
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--ink);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 150ms, color 150ms;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(0, 168, 150, 0.08);
+  color: var(--brand);
+}
+
+.theme-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* 2. Promo Banner */
+.promo-banner {
+  background: linear-gradient(90deg, var(--brand-dark) 0%, var(--brand) 100%);
+  color: var(--white);
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  z-index: 40;
+  animation: banner-slide-down 300ms ease-out;
+}
+
+.promo-banner a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.promo-banner-close {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: 0;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 4px;
+  transition: opacity 150ms;
+}
+
+.promo-banner-close:hover {
+  opacity: 1;
+}
+
+@keyframes banner-slide-down {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+/* 3. Lightbox Extra Actions & Sizing Guide Modal */
+.lightbox-extra-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.lightbox-link-action {
+  font-size: 0.86rem;
+  color: var(--brand-dark);
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 150ms;
+  text-decoration: underline;
+}
+
+.lightbox-link-action:hover {
+  color: var(--brand);
+}
+
+.size-guide-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 250ms, opacity 250ms;
+}
+
+.size-guide-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.size-guide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 33, 31, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.size-guide-panel {
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  width: min(600px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+  padding: 32px;
+  z-index: 10;
+  border: 1px solid var(--line);
+  animation: modal-zoom-in 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modal-zoom-in {
+  from { transform: scale(0.95) translateY(10px); }
+  to { transform: scale(1) translateY(0); }
+}
+
+.size-guide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.size-guide-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--ink);
+}
+
+.size-guide-close {
+  background: none;
+  border: 0;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  transition: color 150ms;
+}
+
+.size-guide-close:hover {
+  color: var(--ink);
+}
+
+.size-guide-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  gap: 16px;
+  margin-bottom: 18px;
+  overflow-x: auto;
+}
+
+.size-guide-tab {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 8px 4px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 150ms;
+}
+
+.size-guide-tab.active {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+}
+
+.size-guide-content-pane {
+  display: none;
+}
+
+.size-guide-content-pane.active {
+  display: block;
+}
+
+.size-guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-size: 0.88rem;
+}
+
+.size-guide-table th,
+.size-guide-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.size-guide-table th {
+  background: rgba(0, 168, 150, 0.04);
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.size-guide-tips {
+  font-size: 0.86rem;
+  color: var(--muted);
+  line-height: 1.5;
+  background: #fafdfc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+/* 4. Lightbox Variant Thumbnails */
+.lightbox-thumbnails {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.lightbox-thumb {
+  width: 58px;
+  height: 58px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  object-fit: cover;
+  background: #eef4f1;
+  transition: border-color 150ms;
+}
+
+.lightbox-thumb.active {
+  border-color: var(--brand);
+}
+
+/* 5. Review Submit Box (in Lightbox) */
+.review-submit-box {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.review-submit-box summary {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--brand-dark);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.review-submit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  background: #fafdfc;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.review-submit-form input,
+.review-submit-form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.86rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+.review-stars-select {
+  display: flex;
+  gap: 6px;
+}
+
+.star-input {
+  font-size: 1.4rem;
+  color: var(--line);
+  cursor: pointer;
+  transition: color 150ms;
+}
+
+.star-input.active {
+  color: var(--gold);
+}
+
+/* 6. WhatsApp Bulle Chat Widget */
+.whatsapp-chat-widget {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.whatsapp-trigger-btn {
+  width: 58px;
+  height: 58px;
+  border: 0;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.32);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.whatsapp-trigger-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: #20ba5a;
+}
+
+.whatsapp-trigger-btn svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.whatsapp-chat-box {
+  position: absolute;
+  bottom: 74px;
+  right: 0;
+  width: min(350px, 90vw);
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: chat-popup 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.whatsapp-chat-box.active {
+  display: flex;
+}
+
+@keyframes chat-popup {
+  from { opacity: 0; transform: scale(0.9) translateY(15px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.chat-box-header {
+  background: #075e54;
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chat-box-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: cover;
+}
+
+.chat-box-header-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box-header-title strong {
+  font-size: 0.95rem;
+}
+
+.chat-box-header-title span {
+  font-size: 0.74rem;
+  opacity: 0.8;
+}
+
+.chat-box-body {
+  padding: 20px;
+  background: #ece5dd;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.chat-msg-bubble {
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 0 12px 12px 12px;
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.4;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.chat-box-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-action-btn {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: var(--brand-dark);
+  text-align: left;
+  cursor: pointer;
+  transition: background 150ms, border-color 150ms;
+}
+
+.chat-action-btn:hover {
+  background: rgba(0, 168, 150, 0.05);
+  border-color: var(--brand);
+}
+
+/* 7. Social Proof Command Toasts */
+.purchase-toast {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 140;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 340px;
+  animation: toast-slide-in 350ms cubic-bezier(0.16, 1, 0.3, 1), toast-fade-out 350ms ease-in forwards;
+  animation-delay: 0s, 6s;
+}
+
+@keyframes toast-slide-in {
+  from { transform: translateX(-110%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes toast-fade-out {
+  to { opacity: 0; transform: translateY(15px); pointer-events: none; }
+}
+
+.purchase-toast-icon {
+  font-size: 1.4rem;
+}
+
+.purchase-toast-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.purchase-toast-content p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.purchase-toast-content p strong {
+  font-weight: 800;
+}
+
+.purchase-toast-content span {
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+/* 8. Devis Print & Export Styling */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .cart-drawer,
+  .cart-drawer * {
+    visibility: hidden !important;
+  }
+  #print-area, #print-area * {
+    visibility: visible;
+  }
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+.print-devis-layout {
+  display: none;
+  font-family: sans-serif;
+  color: #333;
+}
+
+@media print {
+  .print-devis-layout {
+    display: block;
+  }
+}
+
+
