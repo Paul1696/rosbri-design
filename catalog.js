@@ -481,29 +481,51 @@
 
   function orderUrlWithOptions(item, options = {}) {
     const productUrl = `${SITE_URL}boutique.html#article-${item.id}`;
-    const details = [];
+    let msg = `Bonjour ROSBRI DESIGN 👋\n\n`;
+    msg += `Je souhaite passer une commande pour cet article depuis votre site :\n\n`;
+    msg += `🛍️ *Produit :* ${displayTitle(item)}\n`;
+    msg += `💰 *Prix :* ${item.price}\n\n`;
+
+    let hasOptions = false;
+    let optionsText = `✨ *Détails de la commande :*\n`;
+
+    if (options.color) {
+      optionsText += `- 🎨 Couleur : *${options.color}*\n`;
+      hasOptions = true;
+    }
+
     if (options.sizeQuantities && options.sizeQuantities.length) {
-      details.push(`Tailles: ${options.sizeQuantities.map((item) => `${item.size} x ${item.quantity}`).join(", ")}`);
+      const sizesStr = options.sizeQuantities.map((entry) => `${entry.size} (x${entry.quantity})`).join(", ");
+      optionsText += `- 📏 Taille(s) : *${sizesStr}*\n`;
+      hasOptions = true;
     } else if (options.sizes && options.sizes.length) {
-      details.push(`Tailles: ${options.sizes.join(", ")}`);
+      optionsText += `- 📏 Taille(s) : *${options.sizes.join(", ")}*\n`;
+      hasOptions = true;
     }
+
     if (options.shoeSizeQuantities && options.shoeSizeQuantities.length) {
-      details.push(`Pointures: ${options.shoeSizeQuantities.map((item) => `${item.size} x ${item.quantity}`).join(", ")}`);
+      const shoesStr = options.shoeSizeQuantities.map((entry) => `${entry.size} (x${entry.quantity})`).join(", ");
+      optionsText += `- 👟 Pointure(s) : *${shoesStr}*\n`;
+      hasOptions = true;
     } else if (options.shoeSizes && options.shoeSizes.length) {
-      details.push(`Pointures: ${options.shoeSizes.join(", ")}`);
+      optionsText += `- 👟 Pointure(s) : *${options.shoeSizes.join(", ")}*\n`;
+      hasOptions = true;
     }
-    if (options.color) details.push(`Couleur: ${options.color}`);
-    if (options.quantity) details.push(`Quantite: ${options.quantity}`);
-    const detailsBlock = details.length ? `\n\n${details.join("\n")}` : "";
-    const message = `Bonjour ROSBRI DESIGN 👋
 
-Je souhaite commander : ${displayTitle(item)}
-Prix affiché : ${item.price}${detailsBlock}
+    const showsIndividualQuantities = (options.sizeQuantities && options.sizeQuantities.length) || (options.shoeSizeQuantities && options.shoeSizeQuantities.length);
+    if (options.quantity && !showsIndividualQuantities) {
+      optionsText += `- 🔢 Quantité : *${options.quantity}*\n`;
+      hasOptions = true;
+    }
 
-Lien article : ${productUrl}
+    if (hasOptions) {
+      msg += optionsText + `\n`;
+    }
 
-Merci de me confirmer la disponibilité, les tailles et le délai à Douala.`;
-    return whatsAppUrl(message);
+    msg += `🔗 *Lien produit :* ${productUrl}\n\n`;
+    msg += `Merci de me confirmer la disponibilité et le délai de livraison à Douala 🛵.`;
+
+    return whatsAppUrl(msg);
   }
 
   function optimizedImage(path) {
