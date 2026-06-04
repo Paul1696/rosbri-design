@@ -860,24 +860,65 @@
   function addCurrentItemToCart() {
     if (!orderState.item) return;
     const item = orderState.item;
+    const color = hasColorChoices(item) ? selectedColor().label : "";
+    const sizes = isClothing(item) ? orderState.sizes.slice() : [];
+    const sizeQuantities = isClothing(item) ? selectedSizeQuantities() : [];
+    const shoeSizes = isFootwear(item) ? orderState.shoeSizes.slice() : [];
+    const shoeSizeQuantities = isFootwear(item) ? selectedShoeSizeQuantities() : [];
+    const quantity = isClothing(item) ? totalSelectedSizeQuantity() : (isFootwear(item) ? totalSelectedShoeSizeQuantity() : orderState.quantity);
+    
     const entry = {
       id: item.id,
       title: displayTitle(item),
       price: item.price,
-      sizes: isClothing(item) ? orderState.sizes.slice() : [],
-      sizeQuantities: isClothing(item) ? selectedSizeQuantities() : [],
-      shoeSizes: isFootwear(item) ? orderState.shoeSizes.slice() : [],
-      shoeSizeQuantities: isFootwear(item) ? selectedShoeSizeQuantities() : [],
-      color: hasColorChoices(item) ? selectedColor().label : "",
-      quantity: isClothing(item) ? totalSelectedSizeQuantity() : (isFootwear(item) ? totalSelectedShoeSizeQuantity() : orderState.quantity),
-      url: `${SITE_URL}boutique.html#article-${item.id}`
+      sizes,
+      sizeQuantities,
+      shoeSizes,
+      shoeSizeQuantities,
+      color,
+      quantity,
+      url: `${SITE_URL}boutique.html#article-${item.id}`,
+      image: displayImage(item)
     };
+
     const items = cartItems();
-    items.push(entry);
+    const existingIndex = items.findIndex(i => 
+      i.id === entry.id && 
+      i.color === entry.color && 
+      JSON.stringify(i.sizes) === JSON.stringify(entry.sizes) &&
+      JSON.stringify(i.shoeSizes) === JSON.stringify(entry.shoeSizes)
+    );
+
+    if (existingIndex >= 0) {
+      items[existingIndex].quantity += entry.quantity;
+      if (entry.sizeQuantities && entry.sizeQuantities.length) {
+        entry.sizeQuantities.forEach(sq => {
+          const matched = items[existingIndex].sizeQuantities.find(s => s.size === sq.size);
+          if (matched) matched.quantity += sq.quantity;
+          else items[existingIndex].sizeQuantities.push(sq);
+        });
+      }
+      if (entry.shoeSizeQuantities && entry.shoeSizeQuantities.length) {
+        entry.shoeSizeQuantities.forEach(sq => {
+          const matched = items[existingIndex].shoeSizeQuantities.find(s => s.size === sq.size);
+          if (matched) matched.quantity += sq.quantity;
+          else items[existingIndex].shoeSizeQuantities.push(sq);
+        });
+      }
+    } else {
+      items.push(entry);
+    }
+
     saveCartItems(items);
 
     const cart = byId("lightbox-cart");
-    if (cart) cart.textContent = `Ajoute au panier (${items.length})`;
+    if (cart) {
+      cart.textContent = `Ajouté au panier (${items.length})`;
+    }
+
+    if (typeof window.updateCartUi === "function") {
+      window.updateCartUi();
+    }
   }
 
   function productUrl(item) {
