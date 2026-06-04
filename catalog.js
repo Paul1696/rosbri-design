@@ -1089,14 +1089,7 @@
   function bindEvents() {
     document.addEventListener("catalog:source-change", updateCatalogSourceLabel);
 
-    const navToggle = byId("nav-toggle");
-    const navLinks = byId("nav-links");
-    if (navToggle && navLinks) {
-      navToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("open");
-        navToggle.setAttribute("aria-expanded", String(isOpen));
-      });
-    }
+
 
     document.addEventListener("click", (event) => {
       const categoryButton = event.target.closest("[data-category]");
