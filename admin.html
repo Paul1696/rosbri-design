@@ -219,6 +219,38 @@
               Visible sur le site
             </label>
           </div>
+
+          <div class="admin-reviews-section">
+            <h3>Avis clients</h3>
+            <p class="admin-reviews-summary" id="editor-reviews-summary">Aucun avis pour cet article.</p>
+            <div id="editor-reviews-list" class="admin-editor-reviews-list"></div>
+
+            <details class="admin-add-review-details">
+              <summary>+ Ajouter un avis manuellement</summary>
+              <div class="admin-add-review-form">
+                <label>
+                  Nom du client
+                  <input id="new-review-name" type="text" placeholder="Ex: Paul S.">
+                </label>
+                <div class="admin-two">
+                  <label>
+                    Note (1 à 5 ⭐)
+                    <input id="new-review-rating" type="number" min="1" max="5" value="5">
+                  </label>
+                  <label>
+                    Date
+                    <input id="new-review-date" type="text" placeholder="Ex: 12 mai 2026">
+                  </label>
+                </div>
+                <label>
+                  Commentaire
+                  <textarea id="new-review-text" rows="2" placeholder="Très satisfait de mon achat !"></textarea>
+                </label>
+                <button class="secondary-btn compact" id="add-review-btn" type="button">Ajouter l'avis au produit</button>
+              </div>
+            </details>
+          </div>
+
           <div class="admin-actions">
             <button class="primary-btn" type="submit">Enregistrer</button>
             <button class="secondary-btn" id="reset-form" type="button">Nouveau</button>
@@ -269,6 +301,8 @@
           </div>
           <div class="admin-actions">
             <button class="primary-btn" id="import-static" type="button">Importer le catalogue actuel</button>
+            <button class="secondary-btn" id="export-json" type="button">Exporter en JSON</button>
+            <button class="secondary-btn" id="export-js" type="button">Exporter en JS</button>
             <a class="secondary-btn" href="tools/supabase-products-schema.sql">Schema SQL</a>
           </div>
           <p class="admin-status">Le schema cree la table produits, le bucket images et les droits d'upload.</p>
