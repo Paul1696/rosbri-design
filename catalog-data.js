@@ -457,12 +457,16 @@ window.ROSBriCatalog = [
   },
   {
     "id": 58,
-    "title": "Pack cabas beige motif ethnique + pochette",
+    "title": "Pack cabas beige + pochette assortie",
     "category": "Packs",
-    "price": "12 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-10.png",
     "isPack": true,
-    "description": "Grand sac cabas beige en tissu texturé, décoré d'un motif noir, blanc et orange. Le pack comprend aussi une pochette assortie avec bordures wax géométriques."
+    "description": "Pack cabas beige + pochette assortie. Composition : Sac cabas, Pochette assortie.",
+    "items": [
+      "Sac cabas",
+      "Pochette assortie"
+    ]
   },
   {
     "id": 59,
@@ -610,12 +614,17 @@ window.ROSBriCatalog = [
   },
   {
     "id": 77,
-    "title": "Pack plage rouge complet : sac, chapeau et sandales",
+    "title": "Pack plage rouge : cabas, chapeau et sandales",
     "category": "Packs",
-    "price": "25 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-29.png",
     "isPack": true,
-    "description": "Ensemble assorti rouge et beige composé d'un sac, d'un chapeau de paille bordé de wax rouge et d'une paire de sandales plates assorties. Un pack complet pour un look plage coordonné."
+    "description": "Pack plage rouge : cabas, chapeau et sandales. Composition : Sac cabas, Chapeau, Sandales.",
+    "items": [
+      "Sac cabas",
+      "Chapeau",
+      "Sandales"
+    ]
   },
   {
     "id": 78,
@@ -659,12 +668,16 @@ window.ROSBriCatalog = [
   },
   {
     "id": 83,
-    "title": "Pack cabas bleu marine + sandales wax multicolores",
+    "title": "Pack cabas bleu marine + sandales wax",
     "category": "Packs",
-    "price": "18 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-35.png",
     "isPack": true,
-    "description": "Grand sac cabas bleu marine avec détails en wax multicolore. Le pack comprend une paire de sandales assorties aux motifs bleu, jaune, rouge et rose."
+    "description": "Pack cabas bleu marine + sandales wax. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 84,
@@ -676,12 +689,16 @@ window.ROSBriCatalog = [
   },
   {
     "id": 85,
-    "title": "Pack cabas coloré + casquette assortie",
+    "title": "Pack cabas coloré + pochette assortie",
     "category": "Packs",
-    "price": "17 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-37.png",
     "isPack": true,
-    "description": "Sac cabas en tissu multicolore bleu, jaune, rouge et noir, accompagné d'une casquette assortie avec visière en wax bleu et jaune."
+    "description": "Pack cabas coloré + pochette assortie. Composition : Sac cabas, Pochette assortie.",
+    "items": [
+      "Sac cabas",
+      "Pochette assortie"
+    ]
   },
   {
     "id": 86,
@@ -789,30 +806,42 @@ window.ROSBriCatalog = [
   },
   {
     "id": 99,
-    "title": "Pack chapeau bleu marine + pochette assortie",
+    "title": "Pack cabas bleu marine + chapeau assorti",
     "category": "Packs",
-    "price": "15 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-51.png",
     "isPack": true,
-    "description": "Chapeau de paille avec bordure wax bleu marine, accompagné d'une pochette assortie en tissu beige et wax bleu marine."
+    "description": "Pack cabas bleu marine + chapeau assorti. Composition : Sac cabas, Chapeau assorti.",
+    "items": [
+      "Sac cabas",
+      "Chapeau assorti"
+    ]
   },
   {
     "id": 100,
-    "title": "Pack cabas bleu marine personnalisé + sandales assorties",
+    "title": "Pack cabas bleu marine personnalisé + sandales",
     "category": "Packs",
-    "price": "18 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-52.png",
     "isPack": true,
-    "description": "Sac cabas bleu marine et beige avec inscription MR, accompagné d'une paire de sandales assorties en wax bleu marine."
+    "description": "Pack cabas bleu marine personnalisé + sandales. Composition : Sac cabas personnalisé, Sandales assorties.",
+    "items": [
+      "Sac cabas personnalisé",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 101,
     "title": "Pack cabas rose + chapeau assorti",
     "category": "Packs",
-    "price": "20 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-53.png",
     "isPack": true,
-    "description": "Sac cabas rose clair avec motifs wax jaune, noir et blanc, accompagné d'un chapeau rose assorti bordé du même tissu wax."
+    "description": "Pack cabas rose + chapeau assorti. Composition : Sac cabas, Chapeau assorti.",
+    "items": [
+      "Sac cabas",
+      "Chapeau assorti"
+    ]
   },
   {
     "id": 102,
@@ -824,21 +853,32 @@ window.ROSBriCatalog = [
   },
   {
     "id": 103,
-    "title": "Pack cabas rose graphique complet",
+    "title": "Pack plage rose complet",
     "category": "Packs",
     "price": "30 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-111.png",
     "isPack": true,
-    "description": "Ensemble complet rose composé d'un sac cabas à motifs graphiques, d'une pochette assortie, d'un chapeau rond et d'une paire de sandales assorties."
+    "description": "Pack plage rose complet. Composition : Sac cabas, Chapeau, Sandales, Pochette.",
+    "items": [
+      "Sac cabas",
+      "Chapeau",
+      "Sandales",
+      "Pochette"
+    ]
   },
   {
     "id": 104,
-    "title": "Pack cabas beige motif losange + chapeau assorti",
+    "title": "Pack plage beige losange",
     "category": "Packs",
-    "price": "20 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-112.png",
     "isPack": true,
-    "description": "Sac cabas beige avec grand motif losange en wax jaune, noir et rouge. Le pack comprend aussi un chapeau de paille assorti."
+    "description": "Pack plage beige losange. Composition : Sac cabas, Chapeau, Sandales.",
+    "items": [
+      "Sac cabas",
+      "Chapeau",
+      "Sandales"
+    ]
   },
   {
     "id": 105,
@@ -850,21 +890,25 @@ window.ROSBriCatalog = [
   },
   {
     "id": 106,
-    "title": "Pack sac ROSBRI wax 114",
-    "category": "Packs",
-    "price": "8 500 FCFA",
+    "title": "Sac cabas patchwork géométrique",
+    "category": "Sacs",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-114.png",
-    "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "isPack": false,
+    "description": "Sac cabas wax spacieux avec finitions soignées, proposé seul."
   },
   {
     "id": 107,
-    "title": "Pack sac ROSBRI wax 115",
+    "title": "Pack cabas brun + pochette assortie",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-115.png",
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas brun + pochette assortie. Composition : Sac cabas, Pochette assortie.",
+    "items": [
+      "Sac cabas",
+      "Pochette assortie"
+    ]
   },
   {
     "id": 108,
@@ -924,12 +968,17 @@ window.ROSBriCatalog = [
   },
   {
     "id": 115,
-    "title": "Pack adulte ROSBRI wax 05",
+    "title": "Pack cuisine wax noir et rouge",
     "category": "Packs",
-    "price": "18 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-05.png",
     "isPack": true,
-    "description": "Pack adulte coordonne avec pieces wax assorties, ideal pour une silhouette complete sans chercher les associations."
+    "description": "Pack cuisine wax noir et rouge. Composition : Tablier, Maniques, Accessoires assortis.",
+    "items": [
+      "Tablier",
+      "Maniques",
+      "Accessoires assortis"
+    ]
   },
   {
     "id": 116,
@@ -997,12 +1046,16 @@ window.ROSBriCatalog = [
   },
   {
     "id": 124,
-    "title": "Pack adulte ROSBRI wax 14",
+    "title": "Pack cabas floral + sandales assorties",
     "category": "Packs",
-    "price": "18 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-14.png",
     "isPack": true,
-    "description": "Pack adulte coordonne avec pieces wax assorties, ideal pour une silhouette complete sans chercher les associations."
+    "description": "Pack cabas floral + sandales assorties. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 125,
@@ -1650,9 +1703,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 168,
-    "title": "Pack sac ROSBRI wax 119",
+    "title": "Pack plage beige motif lèvres",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-119.png",
     "reviews": [
       {
@@ -1667,7 +1720,12 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack plage beige motif lèvres. Composition : Sac cabas, Chapeau, Sandales.",
+    "items": [
+      "Sac cabas",
+      "Chapeau",
+      "Sandales"
+    ]
   },
   {
     "id": 169,
@@ -1711,9 +1769,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 171,
-    "title": "Pack sac ROSBRI wax 120",
+    "title": "Pack cabas floral orange + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-120.png",
     "reviews": [
       {
@@ -1728,7 +1786,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas floral orange + sandales. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 172,
@@ -1772,9 +1834,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 174,
-    "title": "Pack sac ROSBRI wax 121",
+    "title": "Pack cabas bleu patchwork + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-121.png",
     "reviews": [
       {
@@ -1789,7 +1851,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas bleu patchwork + sandales. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 175,
@@ -1913,9 +1979,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 181,
-    "title": "Pack sac ROSBRI wax 122",
+    "title": "Pack cabas floral bleu + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-122.png",
     "reviews": [
       {
@@ -1930,7 +1996,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas floral bleu + sandales. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 182,
@@ -2634,9 +2704,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 217,
-    "title": "Pack sac ROSBRI wax 123",
+    "title": "Pack sac à dos orange + pochette",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-123.png",
     "reviews": [
       {
@@ -2651,7 +2721,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack sac à dos orange + pochette. Composition : Sac à dos, Pochette assortie.",
+    "items": [
+      "Sac à dos",
+      "Pochette assortie"
+    ]
   },
   {
     "id": 218,
@@ -2875,9 +2949,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 229,
-    "title": "Pack babouches ROSBRI wax 16",
+    "title": "Pack sac à dos beige + babouches",
     "category": "Packs",
-    "price": "6 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-16.png",
     "reviews": [
       {
@@ -2892,7 +2966,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne babouches et accessoire assorti, pense pour composer une tenue wax pratique, complete et prete a offrir."
+    "description": "Pack sac à dos beige + babouches. Composition : Sac à dos, Babouches assorties.",
+    "items": [
+      "Sac à dos",
+      "Babouches assorties"
+    ]
   },
   {
     "id": 230,
@@ -3036,9 +3114,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 237,
-    "title": "Pack sac ROSBRI wax 124",
+    "title": "Pack banane wax + babouches bleues",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-124.png",
     "reviews": [
       {
@@ -3053,7 +3131,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack banane wax + babouches bleues. Composition : Sac banane, Babouches assorties.",
+    "items": [
+      "Sac banane",
+      "Babouches assorties"
+    ]
   },
   {
     "id": 238,
@@ -3117,9 +3199,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 241,
-    "title": "Pack sac ROSBRI wax 125",
+    "title": "Duo cabas jaune fleuri",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-125.png",
     "reviews": [
       {
@@ -3134,7 +3216,10 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Duo cabas jaune fleuri. Composition : Deux sacs cabas assortis.",
+    "items": [
+      "Deux sacs cabas assortis"
+    ]
   },
   {
     "id": 242,
@@ -3238,9 +3323,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 247,
-    "title": "Pack sac ROSBRI wax 126",
+    "title": "Pack cabas floral bleu + sandales rouges",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-126.png",
     "reviews": [
       {
@@ -3255,7 +3340,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas floral bleu + sandales rouges. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 248,
@@ -3319,9 +3408,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 251,
-    "title": "Pack sac ROSBRI wax 127",
+    "title": "Trio cabas floral multicolore",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-127.png",
     "reviews": [
       {
@@ -3336,13 +3425,17 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Trio cabas floral multicolore. Composition : Deux sacs cabas, Pochette assortie.",
+    "items": [
+      "Deux sacs cabas",
+      "Pochette assortie"
+    ]
   },
   {
     "id": 252,
-    "title": "Pack babouches ROSBRI wax 21",
+    "title": "Pack sac beige + babouches assorties",
     "category": "Packs",
-    "price": "6 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-21.png",
     "reviews": [
       {
@@ -3357,7 +3450,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne babouches et accessoire assorti, pense pour composer une tenue wax pratique, complete et prete a offrir."
+    "description": "Pack sac beige + babouches assorties. Composition : Sac compact, Babouches assorties.",
+    "items": [
+      "Sac compact",
+      "Babouches assorties"
+    ]
   },
   {
     "id": 253,
@@ -3701,9 +3798,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 270,
-    "title": "Pack sac ROSBRI wax 128",
+    "title": "Pack sac noir fleuri + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-128.png",
     "reviews": [
       {
@@ -3718,13 +3815,17 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack sac noir fleuri + sandales. Composition : Sac à main, Sandales assorties.",
+    "items": [
+      "Sac à main",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 271,
-    "title": "Pack sac ROSBRI wax 129",
+    "title": "Pack bandoulière rose + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-129.png",
     "reviews": [
       {
@@ -3739,13 +3840,17 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack bandoulière rose + sandales. Composition : Sac bandoulière, Sandales assorties.",
+    "items": [
+      "Sac bandoulière",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 272,
-    "title": "Pack sac ROSBRI wax 130",
+    "title": "Pack cabas noir fleuri + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-130.png",
     "reviews": [
       {
@@ -3760,13 +3865,17 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas noir fleuri + sandales. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 273,
-    "title": "Pack sac ROSBRI wax 131",
+    "title": "Pack cabas vert multicolore + sandales",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-131.png",
     "reviews": [
       {
@@ -3781,7 +3890,11 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas vert multicolore + sandales. Composition : Sac cabas, Sandales assorties.",
+    "items": [
+      "Sac cabas",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 274,
@@ -3965,9 +4078,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 283,
-    "title": "Pack sac ROSBRI wax 132",
+    "title": "Pack cabas personnalisé RB + accessoires",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-132.png",
     "reviews": [
       {
@@ -3982,7 +4095,12 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Pack cabas personnalisé RB + accessoires. Composition : Sac cabas personnalisé, Pochette, Sandales assorties.",
+    "items": [
+      "Sac cabas personnalisé",
+      "Pochette",
+      "Sandales assorties"
+    ]
   },
   {
     "id": 284,
@@ -4086,9 +4204,9 @@ window.ROSBriCatalog = [
   },
   {
     "id": 289,
-    "title": "Pack sac ROSBRI wax 133",
+    "title": "Duo cabas gris et bleu",
     "category": "Packs",
-    "price": "8 500 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/sacs/variants/sac-rosbri-wax-133.png",
     "reviews": [
       {
@@ -4103,7 +4221,10 @@ window.ROSBriCatalog = [
       }
     ],
     "isPack": true,
-    "description": "Pack coordonne autour du sac ROSBRI avec accessoires assortis, parfait pour un look complet et harmonieux."
+    "description": "Duo cabas gris et bleu. Composition : Deux sacs cabas assortis.",
+    "items": [
+      "Deux sacs cabas assortis"
+    ]
   },
   {
     "id": 290,
@@ -12269,9 +12390,9 @@ window.ROSBriCatalog = [
     "id": 549,
     "title": "Pack Petit Cadeau",
     "category": "PacksCadeaux",
-    "price": "5 000 à 9 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-petit-cadeau.webp",
-    "description": "Un petit cadeau simple, utile et personnalisé.",
+    "description": "Pack Petit Cadeau. Composition : Mug, carte personnalisée. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-petit-cadeau",
@@ -12288,9 +12409,9 @@ window.ROSBriCatalog = [
     "id": 550,
     "title": "Pack Cadeau Plus",
     "category": "PacksCadeaux",
-    "price": "7 500 à 12 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-cadeau-plus.webp",
-    "description": "Pack cadeau complet pour anniversaire, couple ou ami.",
+    "description": "Pack Cadeau Plus. Composition : Mug, porte-clés, carte personnalisée. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-cadeau-plus",
@@ -12308,9 +12429,9 @@ window.ROSBriCatalog = [
     "id": 551,
     "title": "Pack Souvenir",
     "category": "PacksCadeaux",
-    "price": "8 000 à 15 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-souvenir.webp",
-    "description": "Pack souvenir personnalisé pour une personne spéciale.",
+    "description": "Pack Souvenir. Composition : T-shirt, sticker, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-souvenir",
@@ -12328,9 +12449,9 @@ window.ROSBriCatalog = [
     "id": 552,
     "title": "Pack Premium Cadeau",
     "category": "PacksCadeaux",
-    "price": "15 000 à 25 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-premium-cadeau.webp",
-    "description": "Pack cadeau plus complet pour marquer le coup.",
+    "description": "Pack Premium Cadeau. Composition : T-shirt, mug, porte-clés, emballage. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-premium-cadeau",
@@ -12349,9 +12470,9 @@ window.ROSBriCatalog = [
     "id": 553,
     "title": "Pack Surprise Personnalisé",
     "category": "PacksCadeaux",
-    "price": "À partir de 15 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-surprise-personnalise.webp",
-    "description": "Le client choisit son thème, ROSBRI prépare le pack.",
+    "description": "Pack Surprise Personnalisé. Composition : 3 articles personnalisés au choix. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-surprise-personnalise",
@@ -12367,9 +12488,9 @@ window.ROSBriCatalog = [
     "id": 554,
     "title": "Pack Maman Simple",
     "category": "PacksFamille",
-    "price": "7 500 à 12 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-maman-simple.webp",
-    "description": "Cadeau simple pour célébrer maman.",
+    "description": "Pack Maman Simple. Composition : T-shirt maman, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-maman-simple",
@@ -12386,9 +12507,9 @@ window.ROSBriCatalog = [
     "id": 555,
     "title": "Pack Maman Douceur",
     "category": "PacksFamille",
-    "price": "12 000 à 20 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-maman-douceur.webp",
-    "description": "Pack cadeau tendre pour fête des mères ou anniversaire.",
+    "description": "Pack Maman Douceur. Composition : T-shirt, mug, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-maman-douceur",
@@ -12406,9 +12527,9 @@ window.ROSBriCatalog = [
     "id": 556,
     "title": "Pack Maman Maison",
     "category": "PacksFamille",
-    "price": "15 000 à 25 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-maman-maison.webp",
-    "description": "Pack idéal pour une maman qui aime la maison et la cuisine.",
+    "description": "Pack Maman Maison. Composition : Tablier, manique, mug. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-maman-maison",
@@ -12426,9 +12547,9 @@ window.ROSBriCatalog = [
     "id": 557,
     "title": "Pack Maman Cœur",
     "category": "PacksFamille",
-    "price": "15 000 à 25 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-maman-cur.webp",
-    "description": "Pack personnalisé avec les prénoms des enfants.",
+    "description": "Pack Maman Cœur. Composition : T-shirt cœur, mug avec prénoms des enfants. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-maman-cur",
@@ -12445,9 +12566,9 @@ window.ROSBriCatalog = [
     "id": 558,
     "title": "Pack Maman Premium",
     "category": "PacksFamille",
-    "price": "22 000 à 35 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-maman-premium.webp",
-    "description": "Cadeau complet et affectif pour maman.",
+    "description": "Pack Maman Premium. Composition : T-shirt, mug, coussin, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-maman-premium",
@@ -12466,9 +12587,9 @@ window.ROSBriCatalog = [
     "id": 559,
     "title": "Pack Maman Luxe",
     "category": "PacksFamille",
-    "price": "30 000 à 55 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-maman-luxe.webp",
-    "description": "Pack bien-être personnalisé.",
+    "description": "Pack Maman Luxe. Composition : Peignoir, serviette, mug, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-maman-luxe",
@@ -12487,9 +12608,9 @@ window.ROSBriCatalog = [
     "id": 560,
     "title": "Pack Papa Simple",
     "category": "PacksFamille",
-    "price": "7 500 à 12 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-papa-simple.webp",
-    "description": "Cadeau simple et direct pour papa.",
+    "description": "Pack Papa Simple. Composition : T-shirt papa, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-papa-simple",
@@ -12506,9 +12627,9 @@ window.ROSBriCatalog = [
     "id": 561,
     "title": "Pack Papa Bureau",
     "category": "PacksFamille",
-    "price": "9 000 à 15 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-papa-bureau.webp",
-    "description": "Pack utile pour bureau, travail ou étude.",
+    "description": "Pack Papa Bureau. Composition : Mug, carnet, stylo. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-papa-bureau",
@@ -12526,9 +12647,9 @@ window.ROSBriCatalog = [
     "id": 562,
     "title": "Pack Papa Week-end",
     "category": "PacksFamille",
-    "price": "15 000 à 25 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-papa-week-end.webp",
-    "description": "Pack pratique et décontracté.",
+    "description": "Pack Papa Week-end. Composition : Casquette, t-shirt, porte-clés. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-papa-week-end",
@@ -12546,9 +12667,9 @@ window.ROSBriCatalog = [
     "id": 563,
     "title": "Pack Papa Barbecue",
     "category": "PacksFamille",
-    "price": "18 000 à 30 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-papa-barbecue.webp",
-    "description": "Pack parfait pour cuisine, grillades et week-end.",
+    "description": "Pack Papa Barbecue. Composition : Tablier, t-shirt, mug. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-papa-barbecue",
@@ -12566,9 +12687,9 @@ window.ROSBriCatalog = [
     "id": 564,
     "title": "Pack Papa Premium",
     "category": "PacksFamille",
-    "price": "25 000 à 40 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-papa-premium.webp",
-    "description": "Pack plus complet pour un cadeau fort.",
+    "description": "Pack Papa Premium. Composition : Polo, mug, carnet, porte-clés. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-papa-premium",
@@ -12587,9 +12708,9 @@ window.ROSBriCatalog = [
     "id": 565,
     "title": "Pack Couple Simple",
     "category": "PacksFamille",
-    "price": "10 000 à 20 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-couple-simple.webp",
-    "description": "Pack couple avec visuels assortis.",
+    "description": "Pack Couple Simple. Composition : 2 t-shirts assortis. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-couple-simple",
@@ -12605,9 +12726,9 @@ window.ROSBriCatalog = [
     "id": 566,
     "title": "Pack Couple Mug",
     "category": "PacksFamille",
-    "price": "8 000 à 15 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-couple-mug.webp",
-    "description": "Cadeau simple pour couple.",
+    "description": "Pack Couple Mug. Composition : 2 mugs assortis. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-couple-mug",
@@ -12623,9 +12744,9 @@ window.ROSBriCatalog = [
     "id": 567,
     "title": "Pack Couple Mixte",
     "category": "PacksFamille",
-    "price": "18 000 à 30 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-couple-mixte.webp",
-    "description": "Pack complet pour couple, anniversaire ou Saint-Valentin.",
+    "description": "Pack Couple Mixte. Composition : 2 t-shirts, 2 mugs. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-couple-mixte",
@@ -12642,9 +12763,9 @@ window.ROSBriCatalog = [
     "id": 568,
     "title": "Pack Couple Maison",
     "category": "PacksFamille",
-    "price": "15 000 à 28 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-couple-maison.webp",
-    "description": "Pack déco et souvenir pour couple.",
+    "description": "Pack Couple Maison. Composition : 2 mugs, coussin personnalisé. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-couple-maison",
@@ -12661,9 +12782,9 @@ window.ROSBriCatalog = [
     "id": 569,
     "title": "Pack Couple Premium",
     "category": "PacksFamille",
-    "price": "35 000 à 60 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-couple-premium.webp",
-    "description": "Pack couple haut de gamme.",
+    "description": "Pack Couple Premium. Composition : 2 hoodies, 2 mugs. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-couple-premium",
@@ -12680,9 +12801,9 @@ window.ROSBriCatalog = [
     "id": 570,
     "title": "Pack Mariage Civil",
     "category": "PacksFamille",
-    "price": "18 000 à 35 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-mariage-civil.webp",
-    "description": "Pack souvenir pour mariage civil.",
+    "description": "Pack Mariage Civil. Composition : 2 t-shirts, cartes, emballage. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-mariage-civil",
@@ -12700,9 +12821,9 @@ window.ROSBriCatalog = [
     "id": 571,
     "title": "Pack Anniversaire Couple",
     "category": "PacksFamille",
-    "price": "20 000 à 35 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-anniversaire-couple.webp",
-    "description": "Pack personnalisé pour anniversaire de couple.",
+    "description": "Pack Anniversaire Couple. Composition : T-shirt, mug, affiche souvenir. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-anniversaire-couple",
@@ -12720,9 +12841,9 @@ window.ROSBriCatalog = [
     "id": 572,
     "title": "Pack Famille 3",
     "category": "PacksCadeaux",
-    "price": "15 000 à 30 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-famille-3.webp",
-    "description": "Pack pour petite famille.",
+    "description": "Pack Famille 3. Composition : 3 t-shirts personnalisés. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-famille-3",
@@ -12738,9 +12859,9 @@ window.ROSBriCatalog = [
     "id": 573,
     "title": "Pack Famille 4",
     "category": "PacksCadeaux",
-    "price": "20 000 à 40 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-famille-4.webp",
-    "description": "Pack idéal pour parents et enfants.",
+    "description": "Pack Famille 4. Composition : 4 t-shirts personnalisés. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-famille-4",
@@ -12775,9 +12896,9 @@ window.ROSBriCatalog = [
     "id": 575,
     "title": "Pack Photo Famille",
     "category": "PacksCadeaux",
-    "price": "25 000 à 50 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-photo-famille.webp",
-    "description": "Pack souvenir avec textile et décoration.",
+    "description": "Pack Photo Famille. Composition : T-shirts, poster famille. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-photo-famille",
@@ -12794,9 +12915,9 @@ window.ROSBriCatalog = [
     "id": 576,
     "title": "Pack Naissance",
     "category": "PacksCadeaux",
-    "price": "8 000 à 18 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-naissance.webp",
-    "description": "Cadeau personnalisé pour naissance.",
+    "description": "Pack Naissance. Composition : Body, bavoir, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-naissance",
@@ -12814,9 +12935,9 @@ window.ROSBriCatalog = [
     "id": 577,
     "title": "Pack Baptême",
     "category": "PacksCadeaux",
-    "price": "15 000 à 30 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-bapteme.webp",
-    "description": "Pack souvenir pour baptême.",
+    "description": "Pack Baptême. Composition : Body, t-shirt parent, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-bapteme",
@@ -12834,9 +12955,9 @@ window.ROSBriCatalog = [
     "id": 578,
     "title": "Pack Anniversaire Enfant",
     "category": "PacksCadeaux",
-    "price": "8 000 à 18 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-anniversaire-enfant.webp",
-    "description": "Pack anniversaire pour enfant.",
+    "description": "Pack Anniversaire Enfant. Composition : T-shirt, badge, stickers. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-anniversaire-enfant",
@@ -12854,9 +12975,9 @@ window.ROSBriCatalog = [
     "id": 579,
     "title": "Pack Étudiant Simple",
     "category": "PacksCadeaux",
-    "price": "5 000 à 10 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-etudiant-simple.webp",
-    "description": "Pack utile pour école, université ou formation.",
+    "description": "Pack Étudiant Simple. Composition : Carnet, stylo, sticker. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-etudiant-simple",
@@ -12874,9 +12995,9 @@ window.ROSBriCatalog = [
     "id": 580,
     "title": "Pack Campus",
     "category": "PacksCadeaux",
-    "price": "10 000 à 18 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-campus.webp",
-    "description": "Pack jeune et pratique.",
+    "description": "Pack Campus. Composition : T-shirt, carnet, stickers. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-campus",
@@ -12894,9 +13015,9 @@ window.ROSBriCatalog = [
     "id": 581,
     "title": "Pack Laptop",
     "category": "PacksCadeaux",
-    "price": "10 000 à 25 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-laptop.webp",
-    "description": "Pack pour personnaliser son ordinateur.",
+    "description": "Pack Laptop. Composition : Stickers, tapis souris, skin laptop. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-laptop",
@@ -12914,9 +13035,9 @@ window.ROSBriCatalog = [
     "id": 582,
     "title": "Pack Streetwear",
     "category": "PacksCadeaux",
-    "price": "15 000 à 28 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-streetwear.webp",
-    "description": "Pack jeune, urbain et personnalisé.",
+    "description": "Pack Streetwear. Composition : T-shirt oversize, casquette. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-streetwear",
@@ -12973,9 +13094,9 @@ window.ROSBriCatalog = [
     "id": 585,
     "title": "Pack Bureau Basic",
     "category": "PacksEntreprise",
-    "price": "8 500 à 15 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-bureau-basic.webp",
-    "description": "Pack simple pour bureau, client ou collaborateur.",
+    "description": "Pack Bureau Basic. Composition : Mug, carnet, stylo. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-bureau-basic",
@@ -12993,9 +13114,9 @@ window.ROSBriCatalog = [
     "id": 586,
     "title": "Pack Bureau Premium",
     "category": "PacksEntreprise",
-    "price": "18 000 à 30 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-bureau-premium.webp",
-    "description": "Pack bureau plus complet et plus professionnel.",
+    "description": "Pack Bureau Premium. Composition : Tumbler, carnet, stylo, badge. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-bureau-premium",
@@ -13163,9 +13284,9 @@ window.ROSBriCatalog = [
     "id": 594,
     "title": "Pack Wax Simple",
     "category": "WaxLifestyle",
-    "price": "8 000 à 18 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-wax-simple.webp",
-    "description": "Pack wax simple pour cadeau ou usage quotidien.",
+    "description": "Pack Wax Simple. Composition : Tote bag, pochette. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-wax-simple",
@@ -13182,9 +13303,9 @@ window.ROSBriCatalog = [
     "id": 595,
     "title": "Pack Wax Femme",
     "category": "WaxLifestyle",
-    "price": "18 000 à 35 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-wax-femme.webp",
-    "description": "Pack féminin pratique et élégant.",
+    "description": "Pack Wax Femme. Composition : Sac, pochette, trousse. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-wax-femme",
@@ -13202,9 +13323,9 @@ window.ROSBriCatalog = [
     "id": 596,
     "title": "Pack Wax Bureau",
     "category": "WaxLifestyle",
-    "price": "18 000 à 35 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-wax-bureau.webp",
-    "description": "Pack bureau avec touche wax.",
+    "description": "Pack Wax Bureau. Composition : Pochette laptop, carnet, trousse. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-wax-bureau",
@@ -13222,9 +13343,9 @@ window.ROSBriCatalog = [
     "id": 597,
     "title": "Pack Wax Voyage",
     "category": "WaxLifestyle",
-    "price": "18 000 à 35 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-wax-voyage.webp",
-    "description": "Pack pratique pour déplacement et voyage.",
+    "description": "Pack Wax Voyage. Composition : Sac banane, trousse, étui lunettes. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-wax-voyage",
@@ -13242,9 +13363,9 @@ window.ROSBriCatalog = [
     "id": 598,
     "title": "Pack Wax Cuisine",
     "category": "WaxLifestyle",
-    "price": "18 000 à 35 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-wax-cuisine.webp",
-    "description": "Pack cuisine coloré et personnalisé.",
+    "description": "Pack Wax Cuisine. Composition : Tablier, maniques, set de table. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-wax-cuisine",
@@ -13262,9 +13383,9 @@ window.ROSBriCatalog = [
     "id": 599,
     "title": "Pack Wax Maison",
     "category": "WaxLifestyle",
-    "price": "25 000 à 50 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-wax-maison.webp",
-    "description": "Pack décoration maison en wax.",
+    "description": "Pack Wax Maison. Composition : Coussin, chemin de table, sous-verres. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-wax-maison",
@@ -13282,9 +13403,9 @@ window.ROSBriCatalog = [
     "id": 600,
     "title": "Pack Plage",
     "category": "WaxLifestyle",
-    "price": "25 000 à 45 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-plage.webp",
-    "description": "Pack plage complet et assorti.",
+    "description": "Pack Plage. Composition : Sac, chapeau, sandales. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-plage",
@@ -13302,9 +13423,9 @@ window.ROSBriCatalog = [
     "id": 601,
     "title": "Pack Plage Premium",
     "category": "WaxLifestyle",
-    "price": "35 000 à 60 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-plage-premium.webp",
-    "description": "Pack plage plus complet.",
+    "description": "Pack Plage Premium. Composition : Sac, chapeau, sandales, pochette. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-plage-premium",
@@ -13323,9 +13444,9 @@ window.ROSBriCatalog = [
     "id": 602,
     "title": "Pack Anniversaire Basic",
     "category": "PacksEvenement",
-    "price": "8 000 à 15 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-anniversaire-basic.webp",
-    "description": "Pack simple pour anniversaire.",
+    "description": "Pack Anniversaire Basic. Composition : T-shirt, badge, carte. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-anniversaire-basic",
@@ -13405,9 +13526,9 @@ window.ROSBriCatalog = [
     "id": 606,
     "title": "Pack Mariage Couple",
     "category": "PacksEvenement",
-    "price": "25 000 à 45 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-mariage-couple.webp",
-    "description": "Pack souvenir pour les mariés.",
+    "description": "Pack Mariage Couple. Composition : 2 t-shirts, 2 mugs, affiche. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-mariage-couple",
@@ -13487,9 +13608,9 @@ window.ROSBriCatalog = [
     "id": 610,
     "title": "Pack Ville",
     "category": "PatrimoineCameroun",
-    "price": "10 000 à 18 000 FCFA",
+    "price": "10 000 FCFA",
     "image": "images/articles-site/generated-products/pack-ville.webp",
-    "description": "Pack autour d’une ville camerounaise.",
+    "description": "Pack Ville. Composition : T-shirt, sticker, carte ville. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-ville",
@@ -13507,9 +13628,9 @@ window.ROSBriCatalog = [
     "id": 611,
     "title": "Pack Douala",
     "category": "PatrimoineCameroun",
-    "price": "15 000 à 28 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-douala.webp",
-    "description": "Pack inspiré de Douala.",
+    "description": "Pack Douala. Composition : T-shirt, poster Nouvelle Liberté, sticker. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-douala",
@@ -13527,9 +13648,9 @@ window.ROSBriCatalog = [
     "id": 612,
     "title": "Pack Yaoundé",
     "category": "PatrimoineCameroun",
-    "price": "15 000 à 28 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-yaounde.webp",
-    "description": "Pack inspiré de Yaoundé.",
+    "description": "Pack Yaoundé. Composition : T-shirt, poster Réunification, sticker. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-yaounde",
@@ -13547,9 +13668,9 @@ window.ROSBriCatalog = [
     "id": 613,
     "title": "Pack Kribi",
     "category": "PatrimoineCameroun",
-    "price": "15 000 à 30 000 FCFA",
+    "price": "25 000 FCFA",
     "image": "images/articles-site/generated-products/pack-kribi.webp",
-    "description": "Pack inspiré de Kribi.",
+    "description": "Pack Kribi. Composition : T-shirt, tote bag, sticker. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-kribi",
@@ -13567,9 +13688,9 @@ window.ROSBriCatalog = [
     "id": 614,
     "title": "Pack Cameroun",
     "category": "PatrimoineCameroun",
-    "price": "15 000 à 28 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-cameroun.webp",
-    "description": "Pack aux couleurs du Cameroun.",
+    "description": "Pack Cameroun. Composition : T-shirt, casquette, sticker drapeau. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-cameroun",
@@ -13587,9 +13708,9 @@ window.ROSBriCatalog = [
     "id": 615,
     "title": "Pack Patrimoine Complet",
     "category": "PatrimoineCameroun",
-    "price": "25 000 à 45 000 FCFA",
+    "price": "30 000 FCFA",
     "image": "images/articles-site/generated-products/pack-patrimoine-complet.webp",
-    "description": "Pack pour découvrir plusieurs villes et symboles du Cameroun.",
+    "description": "Pack Patrimoine Complet. Composition : 3 t-shirts villes, stickers. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-patrimoine-complet",
@@ -13606,9 +13727,9 @@ window.ROSBriCatalog = [
     "id": 616,
     "title": "Pack Touriste",
     "category": "PatrimoineCameroun",
-    "price": "12 000 à 25 000 FCFA",
+    "price": "18 000 FCFA",
     "image": "images/articles-site/generated-products/pack-touriste.webp",
-    "description": "Pack souvenir pour visiteur, diaspora ou cadeau local.",
+    "description": "Pack Touriste. Composition : Tote bag, mug, carte postale. Personnalisation disponible sur commande.",
     "badge": "Pack",
     "commercialOffer": true,
     "slug": "pack-touriste",
