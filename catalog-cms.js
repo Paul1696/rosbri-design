@@ -44,6 +44,14 @@
       if (!response.ok) throw new Error(`Supabase ${response.status}`);
       const rows = await response.json();
       if (Array.isArray(rows) && rows.length) {
+        const localCatalog = window.ROSBriCatalogApi && window.ROSBriCatalogApi.catalog;
+        const localCount = Array.isArray(localCatalog) ? localCatalog.length : 0;
+        const hasCommercialOffers = rows.some((row) => row && row.commercialOffer);
+        if (localCount && rows.length < localCount && !hasCommercialOffers) {
+          setCatalogSource("supabase-stale");
+          console.warn("Catalogue Supabase plus ancien, catalogue local complet conservé.");
+          return;
+        }
         setCatalogSource("supabase");
         window.ROSBriApplyCatalog(rows);
       } else {

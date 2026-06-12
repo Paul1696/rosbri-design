@@ -33,7 +33,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 5,
-    "title": "T-shirt Maman merci pour tout",
+    "title": "T-shirt Maman merci pour tout - Tu es la meilleure",
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-gris.png",
@@ -65,7 +65,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 9,
-    "title": "T-shirt Maman merci pour tout",
+    "title": "T-shirt Maman ton amour est ma force - Merci pour tout",
     "category": "Maman",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-amour-blanc.png",
@@ -4944,5 +4944,8682 @@ window.ROSBriCatalog = [
       }
     ],
     "description": "Coque antichoc elegante arborant des textures wax haute definition et des lignes dorees brillantes."
+  },
+  {
+    "id": 332,
+    "title": "T-shirt Horizon Palmier",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-horizon-palmier-noire.webp",
+    "description": "T-shirt adulte avec visuel palmier au coucher du soleil, proposé en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-noire.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-blanche.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-beige.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-grise.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-bleu-marine.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-verte.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-bordeaux.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-jaune.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-rose.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-horizon-palmier-marron.webp"
+      }
+    ]
+  },
+  {
+    "id": 333,
+    "title": "T-shirt Manga Éclair",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-manga-eclair-noire.webp",
+    "description": "T-shirt adulte avec visuel personnage manga lumineux, proposé en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-noire.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-blanche.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-beige.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-grise.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-bleu-marine.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-verte.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-bordeaux.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-jaune.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-rose.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-manga-eclair-marron.webp"
+      }
+    ]
+  },
+  {
+    "id": 334,
+    "title": "Mini Aventure",
+    "category": "Enfants",
+    "price": "17 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/mini-aventure.webp",
+    "description": "Ensemble enfant avec t-shirt, short et casquette assortis.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-aventure-10.webp"
+      }
+    ],
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 335,
+    "title": "Junior Racing",
+    "category": "Enfants",
+    "price": "17 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/junior-racing.webp",
+    "description": "Ensemble enfant sport avec t-shirt numéroté, short et casquette.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/junior-racing-10.webp"
+      }
+    ],
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 336,
+    "title": "Skate Junior",
+    "category": "Enfants",
+    "price": "17 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/skate-junior.webp",
+    "description": "Ensemble enfant décontracté avec t-shirt illustré, short et casquette.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/skate-junior-10.webp"
+      }
+    ],
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 337,
+    "title": "Street Junior",
+    "category": "Enfants",
+    "price": "17 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/street-junior.webp",
+    "description": "Ensemble enfant urbain avec t-shirt, short et casquette assortis.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/street-junior-10.webp"
+      }
+    ],
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 338,
+    "title": "Vacances Mini",
+    "category": "Enfants",
+    "price": "17 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/vacances-mini.webp",
+    "description": "Ensemble enfant d'été avec t-shirt, short et casquette assortis.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/vacances-mini-10.webp"
+      }
+    ],
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 339,
+    "title": "T-shirt Rêve Fleuri",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-reve-fleuri.webp",
+    "description": "T-shirt adulte avec visuel floral coloré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-reve-fleuri-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "title": "T-shirt Rebel Pop",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-rebel-pop.webp",
+    "description": "T-shirt adulte avec lettrage Rebel et illustration pop, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-rebel-pop-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "title": "T-shirt Vision Bleue",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-vision-bleue.webp",
+    "description": "T-shirt adulte avec illustration bleue graphique, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-vision-bleue-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "title": "T-shirt Panthère Fine",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-panthere-fine.webp",
+    "description": "T-shirt adulte avec silhouette animale graphique, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-panthere-fine-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "title": "T-shirt Maman Cœurs",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-maman-coeurs.webp",
+    "description": "T-shirt adulte avec mot maman avec petits cœurs, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-coeurs-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "title": "T-shirt Couronne d'Afrique",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-couronne-d-afrique.webp",
+    "description": "T-shirt adulte avec portrait coloré et couronne, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-couronne-d-afrique-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "title": "T-shirt Mama Doré",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-mama-dore.webp",
+    "description": "T-shirt adulte avec mot mama en lettres dorées, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mama-dore-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "title": "T-shirt Mandala Mama",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-mandala-mama.webp",
+    "description": "T-shirt adulte avec motif mandala autour de mama, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-mandala-mama-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "title": "T-shirt Hair Love",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-hair-love.webp",
+    "description": "T-shirt adulte avec message autour des cheveux, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-love-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "title": "T-shirt Hair Énergie",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-hair-energie.webp",
+    "description": "T-shirt adulte avec lettrage hair coloré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-energie-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "title": "T-shirt Hair Coeur",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-hair-coeur.webp",
+    "description": "T-shirt adulte avec message hair avec coeur, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-coeur-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "title": "T-shirt Hair Stylist",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-hair-stylist.webp",
+    "description": "T-shirt adulte avec message hair stylist, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-hair-stylist-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "title": "T-shirt Coach Passion",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-coach-passion.webp",
+    "description": "T-shirt adulte avec message coach décoratif, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coach-passion-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "title": "T-shirt Focus Énergie",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-focus-energie.webp",
+    "description": "T-shirt adulte avec message focus positif, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-focus-energie-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 353,
+    "title": "T-shirt Head Start",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-head-start.webp",
+    "description": "T-shirt adulte avec message head start, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-head-start-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "title": "T-shirt Grâce Douce",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-grace-douce.webp",
+    "description": "T-shirt adulte avec message give grace, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-grace-douce-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "title": "T-shirt Maman Brillante",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-maman-brillante.webp",
+    "description": "T-shirt adulte avec mot maman lumineux, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-maman-brillante-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "title": "T-shirt Good Vibes Maman",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-good-vibes-maman.webp",
+    "description": "T-shirt adulte avec message fleuri et positif, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-good-vibes-maman-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "title": "T-shirt Soleil Royal",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-soleil-royal.webp",
+    "description": "T-shirt adulte avec portrait solaire coloré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-soleil-royal-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "title": "T-shirt Make Today Count",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-make-today-count.webp",
+    "description": "T-shirt adulte avec message motivation, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-make-today-count-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "title": "T-shirt Bloom Spirit",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-bloom-spirit.webp",
+    "description": "T-shirt adulte avec visuel fleuri et message doux, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-bloom-spirit-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "title": "T-shirt Belle Vie",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-belle-vie.webp",
+    "description": "T-shirt adulte avec message life is beautiful, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-belle-vie-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "title": "T-shirt Garde la Foi",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-garde-la-foi.webp",
+    "description": "T-shirt adulte avec message keep faith, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-garde-la-foi-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "title": "T-shirt Feu Intérieur",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-feu-interieur.webp",
+    "description": "T-shirt adulte avec message find your fire, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-feu-interieur-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 363,
+    "title": "T-shirt Intention Douce",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-intention-douce.webp",
+    "description": "T-shirt adulte avec message live with intention, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-intention-douce-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 364,
+    "title": "T-shirt Lumière Douce",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-lumiere-douce.webp",
+    "description": "T-shirt adulte avec message let your light, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lumiere-douce-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 365,
+    "title": "T-shirt Coeur Cactus",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-coeur-cactus.webp",
+    "description": "T-shirt adulte avec motif cactus en coeur, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-coeur-cactus-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "title": "T-shirt Fillette Joyeuse",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-fillette-joyeuse.webp",
+    "description": "T-shirt adulte avec portrait enfant illustré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-fillette-joyeuse-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 367,
+    "title": "T-shirt Lion Fleuri",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-lion-fleuri.webp",
+    "description": "T-shirt adulte avec lion et fleurs, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-fleuri-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 368,
+    "title": "T-shirt Foi Courage",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-foi-courage.webp",
+    "description": "T-shirt adulte avec message faith over fear, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-foi-courage-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 369,
+    "title": "T-shirt Cercle Safari",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-cercle-safari.webp",
+    "description": "T-shirt adulte avec médaillon coloré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-cercle-safari-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 370,
+    "title": "T-shirt Profil Afrique",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-profil-afrique.webp",
+    "description": "T-shirt adulte avec profil africain coloré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-profil-afrique-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 371,
+    "title": "T-shirt Lion Royal",
+    "category": "Customisation",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/tshirts/t-shirt-lion-royal.webp",
+    "description": "T-shirt adulte avec visage de lion coloré, disponible en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/tshirts/variants/t-shirt-lion-royal-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 372,
+    "title": "Casquette Horizon Palmier",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-horizon-palmier.webp",
+    "description": "Casquette à visuel palmier, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-horizon-palmier-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "title": "Casquette Papillon Doré",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-papillon-dore.webp",
+    "description": "Casquette avec papillon décoratif, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-dore-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 374,
+    "title": "Casquette Profil Couleurs",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-profil-couleurs.webp",
+    "description": "Casquette avec profil coloré, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-couleurs-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 375,
+    "title": "Casquette Arcs Colorés",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-arcs-colores.webp",
+    "description": "Casquette avec motif arc-en-ciel, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-arcs-colores-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 376,
+    "title": "Casquette Arbre Lumière",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-arbre-lumiere.webp",
+    "description": "Casquette avec arbre décoratif, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-lumiere-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 377,
+    "title": "Casquette Black Excellence",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-black-excellence.webp",
+    "description": "Casquette avec lettrage Black Excellence, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-black-excellence-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 378,
+    "title": "Casquette Papillon Chic",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-papillon-chic.webp",
+    "description": "Casquette à motif papillon chic, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-papillon-chic-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "title": "Casquette Baobab Doré",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-baobab-dore.webp",
+    "description": "Casquette avec motif arbre doré, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-baobab-dore-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 380,
+    "title": "Casquette Excellence Fleurie",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-excellence-fleurie.webp",
+    "description": "Casquette avec lettrage fleuri, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-excellence-fleurie-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 381,
+    "title": "Casquette Arbre d'Or",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-arbre-d-or.webp",
+    "description": "Casquette à motif arbre doré, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-01.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-02.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-03.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-04.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-05.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-06.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-07.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-08.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-09.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-arbre-d-or-10.webp"
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "title": "Casquette Lion Royal",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-lion-royal-noire.webp",
+    "description": "Casquette avec tête de lion multicolore, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-noire.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-blanche.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-beige.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-grise.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-bleu-marine.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-verte.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-bordeaux.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-jaune.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-rose.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-lion-royal-marron.webp"
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "title": "Casquette Ailes Solaires",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-ailes-solaires-noire.webp",
+    "description": "Casquette avec motif ailé coloré, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-noire.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-blanche.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-beige.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-grise.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-bleu-marine.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-verte.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-bordeaux.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-jaune.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-rose.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-ailes-solaires-marron.webp"
+      }
+    ]
+  },
+  {
+    "id": 384,
+    "title": "Casquette Profil Nomade",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-profil-nomade-noire.webp",
+    "description": "Casquette avec profil coloré, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-noire.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-blanche.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-beige.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-grise.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-bleu-marine.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-verte.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-bordeaux.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-jaune.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-rose.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-profil-nomade-marron.webp"
+      }
+    ]
+  },
+  {
+    "id": 385,
+    "title": "Casquette Africa Dorée",
+    "category": "Accessoires",
+    "price": "7 000 FCFA",
+    "image": "images/articles-site/casquettes/casquette-africa-doree-noire.webp",
+    "description": "Casquette avec carte d'Afrique dorée, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "noir",
+        "label": "Noir",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-noire.webp"
+      },
+      {
+        "id": "blanc",
+        "label": "Blanc",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-blanche.webp"
+      },
+      {
+        "id": "beige",
+        "label": "Beige",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-beige.webp"
+      },
+      {
+        "id": "gris",
+        "label": "Gris",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-grise.webp"
+      },
+      {
+        "id": "bleu-marine",
+        "label": "Bleu marine",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-bleu-marine.webp"
+      },
+      {
+        "id": "vert",
+        "label": "Vert",
+        "swatch": "#224432",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-verte.webp"
+      },
+      {
+        "id": "bordeaux",
+        "label": "Bordeaux",
+        "swatch": "#672330",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-bordeaux.webp"
+      },
+      {
+        "id": "jaune",
+        "label": "Jaune",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-jaune.webp"
+      },
+      {
+        "id": "rose",
+        "label": "Rose",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-rose.webp"
+      },
+      {
+        "id": "marron",
+        "label": "Marron",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/casquettes/variants/casquette-africa-doree-marron.webp"
+      }
+    ]
+  },
+  {
+    "id": 386,
+    "title": "Sac à dos Nomade",
+    "category": "Accessoires",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/sacs/sac-a-dos-nomade-beige-multicolore.webp",
+    "description": "Sac à dos structuré avec rabat uni et panneau imprimé, proposé en plusieurs variantes.",
+    "colorVariants": [
+      {
+        "id": "beige-et-multicolore",
+        "label": "Beige et multicolore",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-beige-multicolore.webp"
+      },
+      {
+        "id": "rouge-et-fleuri",
+        "label": "Rouge et fleuri",
+        "swatch": "#b94135",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-rouge-fleuri.webp"
+      },
+      {
+        "id": "vert-olive-et-noir",
+        "label": "Vert olive et noir",
+        "swatch": "#556b3f",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-vert-olive-noir.webp"
+      },
+      {
+        "id": "moutarde-et-bleu",
+        "label": "Moutarde et bleu",
+        "swatch": "#d09a22",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-moutarde-bleu.webp"
+      },
+      {
+        "id": "bleu-marine-et-orange",
+        "label": "Bleu marine et orange",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-bleu-marine-orange.webp"
+      },
+      {
+        "id": "rose-et-fleuri",
+        "label": "Rose et fleuri",
+        "swatch": "#d98fa0",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-rose-fleuri.webp"
+      },
+      {
+        "id": "marron-et-graphique",
+        "label": "Marron et graphique",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-marron-graphique.webp"
+      },
+      {
+        "id": "bleu-canard",
+        "label": "Bleu canard",
+        "swatch": "#287b80",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-bleu-canard.webp"
+      },
+      {
+        "id": "noir-et-fleuri",
+        "label": "Noir et fleuri",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-noir-fleuri.webp"
+      },
+      {
+        "id": "blanc-et-arche",
+        "label": "Blanc et arche",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-blanc-arche.webp"
+      },
+      {
+        "id": "vert-sauge",
+        "label": "Vert sauge",
+        "swatch": "#9baa83",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-vert-sauge.webp"
+      },
+      {
+        "id": "moutarde-et-noir",
+        "label": "Moutarde et noir",
+        "swatch": "#d09a22",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-moutarde-noir.webp"
+      },
+      {
+        "id": "noir-et-beige",
+        "label": "Noir et beige",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-noir-beige.webp"
+      },
+      {
+        "id": "rose-floral",
+        "label": "Rose floral",
+        "swatch": "#d98fa0",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-rose-floral.webp"
+      },
+      {
+        "id": "marron-mosaique",
+        "label": "Marron mosaïque",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-marron-mosaique.webp"
+      },
+      {
+        "id": "gris-et-orange",
+        "label": "Gris et orange",
+        "swatch": "#8c8c8c",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-gris-orange.webp"
+      },
+      {
+        "id": "vert-pale",
+        "label": "Vert pâle",
+        "swatch": "#b8c2aa",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-vert-pale.webp"
+      },
+      {
+        "id": "beige-et-noir",
+        "label": "Beige et noir",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-beige-noir.webp"
+      },
+      {
+        "id": "bleu-et-orange",
+        "label": "Bleu et orange",
+        "swatch": "#244f86",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-bleu-orange.webp"
+      },
+      {
+        "id": "orange-et-fleuri",
+        "label": "Orange et fleuri",
+        "swatch": "#c86632",
+        "image": "images/articles-site/sacs/variants/sac-a-dos-nomade-orange-fleuri.webp"
+      }
+    ]
+  },
+  {
+    "id": 387,
+    "title": "Short Balade Mosaïque",
+    "category": "Autres",
+    "price": "10 000 FCFA",
+    "image": "images/articles-site/shorts/short-balade-mosaique.webp",
+    "description": "Short adulte à motifs graphiques, proposé en plusieurs modèles.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/shorts/variants/short-balade-mosaique-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 388,
+    "title": "Duo Été Nomade",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/duo-ete-nomade.webp",
+    "description": "Ensemble adulte coordonné avec haut clair et short imprimé.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-ete-nomade-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 389,
+    "title": "Mini Soleil Graphique",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/mini-soleil-graphique.webp",
+    "description": "Ensemble enfant coloré avec haut et bas assortis.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-soleil-graphique-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 390,
+    "title": "Ensemble Urbain Safari",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/ensemble-urbain-safari.webp",
+    "description": "Ensemble adulte à chemise et bas assortis, proposé en plusieurs modèles.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/ensemble-urbain-safari-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 391,
+    "title": "Mini Blanc Nomade",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/mini-blanc-nomade.webp",
+    "description": "Tenue enfant claire avec détails imprimés et bas assorti.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-nomade-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 392,
+    "title": "Mini Blanc Tendre",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/mini-blanc-tendre.webp",
+    "description": "Ensemble enfant blanc avec détails imprimés, proposé en plusieurs modèles.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/mini-blanc-tendre-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 393,
+    "title": "Élégance Nomade",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/elegance-nomade.webp",
+    "description": "Ensemble adulte élégant avec haut long et bas imprimé.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/elegance-nomade-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 394,
+    "title": "Kimono Douce Mosaïque",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/robes/adultes/kimono-douce-mosaique.webp",
+    "description": "Kimono adulte fluide, proposé en plusieurs imprimés.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/robes/adultes/variants/kimono-douce-mosaique-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 395,
+    "title": "Duo Urbain Chic",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/duo-urbain-chic.webp",
+    "description": "Ensemble adulte avec haut clair et bas imprimé.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/duo-urbain-chic-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 396,
+    "title": "Petit Match Coloré",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-match-colore.webp",
+    "description": "Ensemble enfant avec haut clair et bas coloré assorti.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/enfants/variants/petit-match-colore-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 397,
+    "title": "Kimono Safari Chic",
+    "category": "Adultes",
+    "price": "20 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/kimono-safari-chic.webp",
+    "description": "Ensemble adulte avec kimono long et pantalon assorti.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-safari-chic-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 398,
+    "title": "Kimono Royal Coloré",
+    "category": "Adultes",
+    "price": "20 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/kimono-royal-colore.webp",
+    "description": "Ensemble adulte à kimono long, décliné en imprimés vifs.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-royal-colore-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 399,
+    "title": "Kimono Terre Nomade",
+    "category": "Adultes",
+    "price": "20 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/kimono-terre-nomade.webp",
+    "description": "Ensemble adulte coordonné avec kimono et pantalon.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-terre-nomade-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 400,
+    "title": "Kimono Éclat Urbain",
+    "category": "Adultes",
+    "price": "20 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/kimono-eclat-urbain.webp",
+    "description": "Ensemble adulte à kimono imprimé, proposé en plusieurs modèles.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-eclat-urbain-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 401,
+    "title": "Kimono Palette Chic",
+    "category": "Adultes",
+    "price": "20 000 FCFA",
+    "image": "images/articles-site/ensembles/adultes/kimono-palette-chic.webp",
+    "description": "Ensemble adulte coloré avec kimono long et pantalon.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/ensembles/adultes/variants/kimono-palette-chic-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 402,
+    "title": "Robe Kimono Nuit Dorée",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/robes/adultes/robe-kimono-nuit-doree.webp",
+    "description": "Robe kimono adulte à imprimés contrastés, proposée en plusieurs modèles.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-nuit-doree-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 403,
+    "title": "Robe Kimono Rose Doux",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/robes/adultes/robe-kimono-rose-doux.webp",
+    "description": "Robe kimono adulte claire avec finitions imprimées.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-rose-doux-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 404,
+    "title": "Robe Kimono Noir Royal",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/robes/adultes/robe-kimono-noir-royal.webp",
+    "description": "Robe kimono adulte sombre avec détails imprimés colorés.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-noir-royal-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 405,
+    "title": "Robe Kimono Couleurs Vives",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/robes/adultes/robe-kimono-couleurs-vives.webp",
+    "description": "Robe kimono adulte vive, proposée en plusieurs couleurs.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-couleurs-vives-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 406,
+    "title": "Robe Kimono Prestige",
+    "category": "Adultes",
+    "price": "18 000 FCFA",
+    "image": "images/articles-site/robes/adultes/robe-kimono-prestige.webp",
+    "description": "Robe kimono adulte élégante à imprimés contrastés.",
+    "colorVariants": [
+      {
+        "id": "modele-01",
+        "label": "Modèle 1",
+        "swatch": "#1e1f1f",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-01.webp"
+      },
+      {
+        "id": "modele-02",
+        "label": "Modèle 2",
+        "swatch": "#eeeee5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-02.webp"
+      },
+      {
+        "id": "modele-03",
+        "label": "Modèle 3",
+        "swatch": "#decfb5",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-03.webp"
+      },
+      {
+        "id": "modele-04",
+        "label": "Modèle 4",
+        "swatch": "#9ca3af",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-04.webp"
+      },
+      {
+        "id": "modele-05",
+        "label": "Modèle 5",
+        "swatch": "#1e2b48",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-05.webp"
+      },
+      {
+        "id": "modele-06",
+        "label": "Modèle 6",
+        "swatch": "#224432",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-06.webp"
+      },
+      {
+        "id": "modele-07",
+        "label": "Modèle 7",
+        "swatch": "#672330",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-07.webp"
+      },
+      {
+        "id": "modele-08",
+        "label": "Modèle 8",
+        "swatch": "#ffd777",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-08.webp"
+      },
+      {
+        "id": "modele-09",
+        "label": "Modèle 9",
+        "swatch": "#f7b8c9",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-09.webp"
+      },
+      {
+        "id": "modele-10",
+        "label": "Modèle 10",
+        "swatch": "#6f4e37",
+        "image": "images/articles-site/robes/adultes/variants/robe-kimono-prestige-modele-10.webp"
+      }
+    ],
+    "priceToValidate": true
+  },
+  {
+    "id": 407,
+    "title": "Mini Terre Claire",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/mini-terre-claire.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 408,
+    "title": "Petit Noir Élégant",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-noir-elegant.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 409,
+    "title": "Mini Soleil Bleu",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/mini-soleil-bleu.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 410,
+    "title": "Rouge Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/rouge-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 411,
+    "title": "Petit Safari Doré",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-safari-dore.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 412,
+    "title": "Bleu Aventure",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/bleu-aventure.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 413,
+    "title": "Petit Urbain Beige",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-urbain-beige.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 414,
+    "title": "Caramel Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/caramel-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 415,
+    "title": "Bleu Orange Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/bleu-orange-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 416,
+    "title": "Ciel Décontracté",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/ciel-decontracte.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 417,
+    "title": "Noir Chic Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/noir-chic-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 418,
+    "title": "Jaune Malin",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/jaune-malin.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 419,
+    "title": "Rouge Royal Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/rouge-royal-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 420,
+    "title": "Petit Léopard",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-leopard.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 421,
+    "title": "Blanc Prestige",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-prestige.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 422,
+    "title": "Douce Mosaïque",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/douce-mosaique.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 423,
+    "title": "Noir Cool Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/noir-cool-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 424,
+    "title": "Petit Gilet Chic",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-gilet-chic.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 425,
+    "title": "Bleu Nuit Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/bleu-nuit-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 426,
+    "title": "Vert Tendresse",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/vert-tendresse.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 427,
+    "title": "Petit Caramel",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-caramel.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 428,
+    "title": "Jupe Noire Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/jupe-noire-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 429,
+    "title": "Blanc Classique",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-classique.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 430,
+    "title": "Rouge Sport Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/rouge-sport-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 431,
+    "title": "Jaune Rayé",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/jaune-raye.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 432,
+    "title": "Petit Dandy",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/petit-dandy.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 433,
+    "title": "Moutarde Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/moutarde-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 434,
+    "title": "Noir Cérémonie",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/noir-ceremonie.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 435,
+    "title": "Robe Brune Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/robe-brune-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 436,
+    "title": "Blanc Balade",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-balade.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 437,
+    "title": "Rouge Soleil Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/rouge-soleil-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 438,
+    "title": "Jaune Urbain",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/jaune-urbain.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 439,
+    "title": "Blanc Graphique",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-graphique.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 440,
+    "title": "Noir Lunettes Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/noir-lunettes-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 441,
+    "title": "Caramel Doux",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/caramel-doux.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 442,
+    "title": "Orange Joie",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/orange-joie.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 443,
+    "title": "Bleu Royal Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/bleu-royal-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 444,
+    "title": "Blanc Safari",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-safari.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 445,
+    "title": "Marron Balade",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/marron-balade.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 446,
+    "title": "Vert Nomade",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/vert-nomade.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 447,
+    "title": "Noir Éclat Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/noir-eclat-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 448,
+    "title": "Jaune Détente",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/jaune-detente.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 449,
+    "title": "Blanc Nomade Junior",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-nomade-junior.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 450,
+    "title": "Bleu Royal Graphique",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/bleu-royal-graphique.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 451,
+    "title": "Beige Rayé",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/beige-raye.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 452,
+    "title": "Bleu Balade",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/bleu-balade.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 453,
+    "title": "Rouge Détente",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/rouge-detente.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 454,
+    "title": "Blanc Urbain",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/blanc-urbain.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 455,
+    "title": "Noir Doré Mini",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/noir-dore-mini.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 456,
+    "title": "Brun Mosaïque",
+    "category": "Enfants",
+    "price": "15 000 FCFA",
+    "image": "images/articles-site/ensembles/enfants/brun-mosaique.webp",
+    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "audience": "enfant",
+    "priceToValidate": true
+  },
+  {
+    "id": 457,
+    "title": "Mug personnalisé",
+    "category": "TassesGourdes",
+    "price": "4 000 à 7 500 FCFA",
+    "image": "images/articles-site/generated-products/mug-personnalise.webp",
+    "description": "Mug avec prénom, photo, message, logo ou visuel personnalisé.",
+    "badge": "Nouveau",
+    "commercialOffer": true,
+    "slug": "mug-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 458,
+    "title": "Mug magique personnalisé",
+    "category": "TassesGourdes",
+    "price": "7 500 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/mug-magique-personnalise.webp",
+    "description": "Mug thermosensible avec motif qui apparaît avec la chaleur.",
+    "badge": "Premium",
+    "commercialOffer": true,
+    "slug": "mug-magique-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 459,
+    "title": "Tasse émaillée personnalisée",
+    "category": "TassesGourdes",
+    "price": "6 500 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/tasse-emaillee-personnalisee.webp",
+    "description": "Tasse légère au style voyage, idéale pour les cadeaux et souvenirs.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "tasse-emaillee-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 460,
+    "title": "Gourde personnalisée",
+    "category": "TassesGourdes",
+    "price": "6 500 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/gourde-personnalisee.webp",
+    "description": "Gourde avec prénom, logo, citation ou design personnalisé.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "gourde-personnalisee",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 461,
+    "title": "Tumbler isotherme personnalisé",
+    "category": "TassesGourdes",
+    "price": "12 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/tumbler-isotherme-personnalise.webp",
+    "description": "Tumbler premium pour bureau, sport, voiture ou cadeau d’entreprise.",
+    "badge": "Populaire",
+    "commercialOffer": true,
+    "slug": "tumbler-isotherme-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 462,
+    "title": "Verre personnalisé",
+    "category": "TassesGourdes",
+    "price": "3 500 à 8 000 FCFA",
+    "image": "images/articles-site/generated-products/verre-personnalise.webp",
+    "description": "Verre personnalisé pour mariage, anniversaire, couple ou événement.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "verre-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 463,
+    "title": "Sous-verres personnalisés",
+    "category": "TassesGourdes",
+    "price": "2 500 à 8 000 FCFA",
+    "image": "images/articles-site/generated-products/sous-verres-personnalises.webp",
+    "description": "Lot de sous-verres avec motif wax, logo, prénom ou visuel familial.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sous-verres-personnalises",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 464,
+    "title": "Carnet personnalisé",
+    "category": "PapeteriePersonnalisee",
+    "price": "3 500 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/carnet-personnalise.webp",
+    "description": "Carnet avec prénom, logo, citation, visuel wax ou design personnel.",
+    "badge": "Populaire",
+    "commercialOffer": true,
+    "slug": "carnet-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 465,
+    "title": "Agenda personnalisé",
+    "category": "PapeteriePersonnalisee",
+    "price": "6 500 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/agenda-personnalise.webp",
+    "description": "Agenda personnalisé pour étudiant, entrepreneur, association ou entreprise.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "agenda-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 466,
+    "title": "Bloc-notes personnalisé",
+    "category": "PapeteriePersonnalisee",
+    "price": "2 500 à 7 500 FCFA",
+    "image": "images/articles-site/generated-products/bloc-notes-personnalise.webp",
+    "description": "Bloc-notes pratique avec logo, prénom ou message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "bloc-notes-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 467,
+    "title": "Stylo personnalisé",
+    "category": "PapeteriePersonnalisee",
+    "price": "500 à 2 500 FCFA",
+    "image": "images/articles-site/generated-products/stylo-personnalise.webp",
+    "description": "Stylo avec nom, logo ou message court.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "stylo-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 468,
+    "title": "Porte-documents personnalisé",
+    "category": "PapeteriePersonnalisee",
+    "price": "5 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/porte-documents-personnalise.webp",
+    "description": "Porte-documents personnalisé pour bureau, entreprise ou séminaire.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "porte-documents-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 469,
+    "title": "Carte anniversaire personnalisée",
+    "category": "PapeteriePersonnalisee",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/carte-anniversaire-personnalisee.webp",
+    "description": "Carte imprimée avec prénom, photo, âge et message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "carte-anniversaire-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 470,
+    "title": "Carte fête des mères personnalisée",
+    "category": "PapeteriePersonnalisee",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/carte-fete-des-meres-personnalisee.webp",
+    "description": "Carte personnalisée avec message pour maman et prénoms des enfants.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "carte-fete-des-meres-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 471,
+    "title": "Carte couple personnalisée",
+    "category": "PapeteriePersonnalisee",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/carte-couple-personnalisee.webp",
+    "description": "Carte romantique pour couple, mariage, anniversaire ou Saint-Valentin.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "carte-couple-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 472,
+    "title": "Calendrier personnalisé",
+    "category": "PapeteriePersonnalisee",
+    "price": "5 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/calendrier-personnalise.webp",
+    "description": "Calendrier avec photos, dates importantes, logo ou visuels familiaux.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "calendrier-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 473,
+    "title": "Coque téléphone personnalisée",
+    "category": "TelephoneOrdinateur",
+    "price": "3 500 à 8 500 FCFA",
+    "image": "images/articles-site/generated-products/coque-telephone-personnalisee.webp",
+    "description": "Coque avec prénom, photo, motif wax, couple, logo ou design unique.",
+    "badge": "Nouveau",
+    "commercialOffer": true,
+    "slug": "coque-telephone-personnalisee",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 474,
+    "title": "Pop socket personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "2 000 à 4 000 FCFA",
+    "image": "images/articles-site/generated-products/pop-socket-personnalise.webp",
+    "description": "Support téléphone avec prénom, logo ou motif personnalisé.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "pop-socket-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 475,
+    "title": "Stickers vinyle",
+    "category": "TelephoneOrdinateur",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/stickers-vinyle.webp",
+    "description": "Stickers pour téléphone, laptop, gourde, carnet ou emballage.",
+    "badge": "Petit prix",
+    "commercialOffer": true,
+    "slug": "stickers-vinyle",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 476,
+    "title": "Planche de stickers personnalisés",
+    "category": "TelephoneOrdinateur",
+    "price": "2 500 à 6 000 FCFA",
+    "image": "images/articles-site/generated-products/planche-de-stickers-personnalises.webp",
+    "description": "Planche de 6 à 12 stickers personnalisés.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "planche-de-stickers-personnalises",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 477,
+    "title": "Stickers holographiques",
+    "category": "TelephoneOrdinateur",
+    "price": "2 000 à 5 000 FCFA",
+    "image": "images/articles-site/generated-products/stickers-holographiques.webp",
+    "description": "Stickers premium avec effet brillant.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "stickers-holographiques",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 478,
+    "title": "Skin laptop personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "5 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/skin-laptop-personnalise.webp",
+    "description": "Habillage laptop avec motif wax, anime, logo ou visuel culturel.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "skin-laptop-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 479,
+    "title": "Tapis de souris personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "3 500 à 8 500 FCFA",
+    "image": "images/articles-site/generated-products/tapis-de-souris-personnalise.webp",
+    "description": "Tapis de souris avec logo, prénom, citation ou design graphique.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "tapis-de-souris-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 480,
+    "title": "Grand tapis de bureau personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/grand-tapis-de-bureau-personnalise.webp",
+    "description": "Grand tapis pour setup bureau, gaming ou espace de travail.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "grand-tapis-de-bureau-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 481,
+    "title": "Porte-clés acrylique personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/porte-cles-acrylique-personnalise.webp",
+    "description": "Porte-clés avec prénom, photo, logo, personnage ou symbole.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "porte-cles-acrylique-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 482,
+    "title": "Porte-clés cuir ou simili personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "2 000 à 5 000 FCFA",
+    "image": "images/articles-site/generated-products/porte-cles-cuir-ou-simili-personnalise.webp",
+    "description": "Porte-clés sobre avec prénom, initiales ou logo.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "porte-cles-cuir-ou-simili-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 483,
+    "title": "Badge personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "500 à 2 000 FCFA",
+    "image": "images/articles-site/generated-products/badge-personnalise.webp",
+    "description": "Badge pour école, staff, événement, association ou anniversaire.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "badge-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 484,
+    "title": "Magnet frigo personnalisé",
+    "category": "TelephoneOrdinateur",
+    "price": "1 000 à 3 000 FCFA",
+    "image": "images/articles-site/generated-products/magnet-frigo-personnalise.webp",
+    "description": "Magnet souvenir avec photo, ville, logo ou message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "magnet-frigo-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 485,
+    "title": "Hoodie personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "15 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/hoodie-personnalise.webp",
+    "description": "Hoodie personnalisé pour couple, famille, marque, promo ou entreprise.",
+    "badge": "Premium",
+    "commercialOffer": true,
+    "slug": "hoodie-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 486,
+    "title": "Sweat léger personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "12 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/sweat-leger-personnalise.webp",
+    "description": "Sweat confortable avec prénom, logo ou design minimal.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sweat-leger-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 487,
+    "title": "Polo personnalisé",
+    "category": "EntrepriseEvenement",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/polo-personnalise.webp",
+    "description": "Polo pour entreprise, association, école, staff ou événement.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "polo-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 488,
+    "title": "Chemise wax personnalisée",
+    "category": "CadeauxPersonnalises",
+    "price": "12 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/chemise-wax-personnalisee.webp",
+    "description": "Chemise en tissu wax ou avec détails wax, pour homme ou femme.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "chemise-wax-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 489,
+    "title": "Kimono wax",
+    "category": "CadeauxPersonnalises",
+    "price": "12 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/kimono-wax.webp",
+    "description": "Kimono wax pour maison, plage, sortie ou cadeau.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "kimono-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 490,
+    "title": "Peignoir personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "12 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/peignoir-personnalise.webp",
+    "description": "Peignoir personnalisé avec prénom, initiales ou design discret.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "peignoir-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 491,
+    "title": "Débardeur personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "5 000 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/debardeur-personnalise.webp",
+    "description": "Débardeur pour sport, été, plage ou événement.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "debardeur-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 492,
+    "title": "Crop top personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "5 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/crop-top-personnalise.webp",
+    "description": "Crop top personnalisé pour femmes, jeunes, sorties ou événements.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "crop-top-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 493,
+    "title": "Body bébé personnalisé",
+    "category": "BebeEnfant",
+    "price": "4 000 à 9 000 FCFA",
+    "image": "images/articles-site/generated-products/body-bebe-personnalise.webp",
+    "description": "Body bébé avec prénom, date, message ou dessin.",
+    "badge": "Nouveau",
+    "commercialOffer": true,
+    "slug": "body-bebe-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": true,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 494,
+    "title": "Bavoir bébé personnalisé",
+    "category": "BebeEnfant",
+    "price": "2 000 à 5 000 FCFA",
+    "image": "images/articles-site/generated-products/bavoir-bebe-personnalise.webp",
+    "description": "Bavoir avec prénom ou petit message drôle.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "bavoir-bebe-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 495,
+    "title": "Ensemble bébé personnalisé",
+    "category": "BebeEnfant",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/ensemble-bebe-personnalise.webp",
+    "description": "Pack bébé avec body, bonnet et bavoir.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "ensemble-bebe-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 496,
+    "title": "T-shirt oversize personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "7 500 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/t-shirt-oversize-personnalise.webp",
+    "description": "T-shirt oversize streetwear avec design fort.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "t-shirt-oversize-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 497,
+    "title": "T-shirt brodé",
+    "category": "CadeauxPersonnalises",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/t-shirt-brode.webp",
+    "description": "T-shirt avec petit logo, prénom ou motif brodé.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "t-shirt-brode",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 498,
+    "title": "Veste jean customisée",
+    "category": "CadeauxPersonnalises",
+    "price": "15 000 à 40 000 FCFA",
+    "image": "images/articles-site/generated-products/veste-jean-customisee.webp",
+    "description": "Veste jean customisée avec patch, wax ou peinture textile.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "veste-jean-customisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 499,
+    "title": "Casquette brodée",
+    "category": "CadeauxPersonnalises",
+    "price": "5 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/casquette-brodee.webp",
+    "description": "Casquette avec logo, prénom ou message court.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "casquette-brodee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 500,
+    "title": "Bob personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "5 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/bob-personnalise.webp",
+    "description": "Bob personnalisé avec wax, logo ou message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "bob-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 501,
+    "title": "Bonnet personnalisé",
+    "category": "CadeauxPersonnalises",
+    "price": "4 000 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/bonnet-personnalise.webp",
+    "description": "Bonnet avec logo, prénom ou initiales.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "bonnet-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 502,
+    "title": "Tote bag personnalisé",
+    "category": "WaxLifestyle",
+    "price": "4 000 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/tote-bag-personnalise.webp",
+    "description": "Tote bag avec motif wax, prénom, citation ou visuel de marque.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "tote-bag-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 503,
+    "title": "Sac pochon personnalisé",
+    "category": "WaxLifestyle",
+    "price": "2 500 à 7 500 FCFA",
+    "image": "images/articles-site/generated-products/sac-pochon-personnalise.webp",
+    "description": "Sac tissu pour cadeau, cosmétique ou emballage premium.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sac-pochon-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 504,
+    "title": "Trousse wax",
+    "category": "WaxLifestyle",
+    "price": "3 500 à 8 500 FCFA",
+    "image": "images/articles-site/generated-products/trousse-wax.webp",
+    "description": "Trousse wax pour école, maquillage, bureau ou voyage.",
+    "badge": "Populaire",
+    "commercialOffer": true,
+    "slug": "trousse-wax",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 505,
+    "title": "Pochette téléphone wax",
+    "category": "WaxLifestyle",
+    "price": "5 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/pochette-telephone-wax.webp",
+    "description": "Pochette téléphone en wax avec bandoulière.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "pochette-telephone-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 506,
+    "title": "Pochette ordinateur wax",
+    "category": "WaxLifestyle",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/pochette-ordinateur-wax.webp",
+    "description": "Pochette laptop rembourrée avec tissu wax.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "pochette-ordinateur-wax",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 507,
+    "title": "Pochette tablette wax",
+    "category": "WaxLifestyle",
+    "price": "6 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pochette-tablette-wax.webp",
+    "description": "Pochette pour tablette avec motif wax et personnalisation possible.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "pochette-tablette-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 508,
+    "title": "Sac banane wax",
+    "category": "WaxLifestyle",
+    "price": "7 500 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/sac-banane-wax.webp",
+    "description": "Sac banane wax pour sortie, voyage, festival ou usage quotidien.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sac-banane-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 509,
+    "title": "Sac de sport personnalisé",
+    "category": "WaxLifestyle",
+    "price": "12 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/sac-de-sport-personnalise.webp",
+    "description": "Sac de sport avec nom, logo, club ou équipe.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sac-de-sport-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 510,
+    "title": "Sac à dos personnalisé",
+    "category": "WaxLifestyle",
+    "price": "10 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/sac-a-dos-personnalise.webp",
+    "description": "Sac à dos pour enfant, étudiant, école ou club.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sac-a-dos-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 511,
+    "title": "Sac cadeau réutilisable",
+    "category": "WaxLifestyle",
+    "price": "2 500 à 7 500 FCFA",
+    "image": "images/articles-site/generated-products/sac-cadeau-reutilisable.webp",
+    "description": "Sac cadeau en tissu, réutilisable et personnalisable.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sac-cadeau-reutilisable",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 512,
+    "title": "Housse de bouteille wax",
+    "category": "WaxLifestyle",
+    "price": "2 500 à 6 000 FCFA",
+    "image": "images/articles-site/generated-products/housse-de-bouteille-wax.webp",
+    "description": "Housse de bouteille pour cadeau, événement ou décoration de table.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "housse-de-bouteille-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 513,
+    "title": "Étui lunettes wax",
+    "category": "WaxLifestyle",
+    "price": "2 000 à 5 000 FCFA",
+    "image": "images/articles-site/generated-products/etui-lunettes-wax.webp",
+    "description": "Petit étui pratique en wax pour lunettes.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "etui-lunettes-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 514,
+    "title": "Coussin personnalisé",
+    "category": "MaisonCuisine",
+    "price": "6 500 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/coussin-personnalise.webp",
+    "description": "Coussin avec photo, prénom, message, couple ou famille.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "coussin-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 515,
+    "title": "Taie de coussin wax",
+    "category": "MaisonCuisine",
+    "price": "4 000 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/taie-de-coussin-wax.webp",
+    "description": "Taie de coussin en wax pour décoration maison.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "taie-de-coussin-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 516,
+    "title": "Tablier personnalisé",
+    "category": "MaisonCuisine",
+    "price": "5 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/tablier-personnalise.webp",
+    "description": "Tablier pour cuisine, barbecue, restaurant ou cadeau maman.",
+    "badge": "Populaire",
+    "commercialOffer": true,
+    "slug": "tablier-personnalise",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 517,
+    "title": "Manique personnalisée",
+    "category": "MaisonCuisine",
+    "price": "2 500 à 6 000 FCFA",
+    "image": "images/articles-site/generated-products/manique-personnalisee.webp",
+    "description": "Manique de cuisine avec motif wax, prénom ou message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "manique-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 518,
+    "title": "Set de table personnalisé",
+    "category": "MaisonCuisine",
+    "price": "2 500 à 8 000 FCFA",
+    "image": "images/articles-site/generated-products/set-de-table-personnalise.webp",
+    "description": "Set de table pour maison, restaurant ou événement.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "set-de-table-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 519,
+    "title": "Chemin de table wax",
+    "category": "MaisonCuisine",
+    "price": "8 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/chemin-de-table-wax.webp",
+    "description": "Chemin de table décoratif en wax.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "chemin-de-table-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 520,
+    "title": "Nappe personnalisée",
+    "category": "MaisonCuisine",
+    "price": "10 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/nappe-personnalisee.webp",
+    "description": "Nappe pour événement, restaurant, maison ou cérémonie.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "nappe-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 521,
+    "title": "Serviettes de table wax",
+    "category": "MaisonCuisine",
+    "price": "5 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/serviettes-de-table-wax.webp",
+    "description": "Lot de serviettes de table en wax.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "serviettes-de-table-wax",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 522,
+    "title": "Serviette de bain brodée",
+    "category": "MaisonCuisine",
+    "price": "7 500 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/serviette-de-bain-brodee.webp",
+    "description": "Serviette avec prénom, initiales ou logo.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "serviette-de-bain-brodee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 523,
+    "title": "Plaid personnalisé",
+    "category": "MaisonCuisine",
+    "price": "12 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/plaid-personnalise.webp",
+    "description": "Plaid avec photo, prénom, famille ou message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "plaid-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 524,
+    "title": "Horloge murale personnalisée",
+    "category": "MaisonCuisine",
+    "price": "7 500 à 20 000 FCFA",
+    "image": "images/articles-site/generated-products/horloge-murale-personnalisee.webp",
+    "description": "Horloge avec photo, logo, ville ou message.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "horloge-murale-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 525,
+    "title": "Tableau déco personnalisé",
+    "category": "MaisonCuisine",
+    "price": "5 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/tableau-deco-personnalise.webp",
+    "description": "Tableau décoratif avec citation, famille, ville ou visuel culturel.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "tableau-deco-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 526,
+    "title": "Poster mural personnalisé",
+    "category": "MaisonCuisine",
+    "price": "3 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/poster-mural-personnalise.webp",
+    "description": "Poster pour chambre, bureau, boutique ou cadeau.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "poster-mural-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 527,
+    "title": "Toile canvas personnalisée",
+    "category": "MaisonCuisine",
+    "price": "12 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/toile-canvas-personnalisee.webp",
+    "description": "Toile imprimée premium avec photo, portrait ou visuel culturel.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "toile-canvas-personnalisee",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 528,
+    "title": "T-shirt enfant personnalisé",
+    "category": "BebeEnfant",
+    "price": "4 000 à 8 500 FCFA",
+    "image": "images/articles-site/generated-products/t-shirt-enfant-personnalise.webp",
+    "description": "T-shirt enfant avec prénom, âge, dessin ou thème anniversaire.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "t-shirt-enfant-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 529,
+    "title": "Sac goûter personnalisé",
+    "category": "BebeEnfant",
+    "price": "3 500 à 8 000 FCFA",
+    "image": "images/articles-site/generated-products/sac-gouter-personnalise.webp",
+    "description": "Petit sac pour école, goûter ou crèche.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "sac-gouter-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 530,
+    "title": "Tablier enfant personnalisé",
+    "category": "BebeEnfant",
+    "price": "4 000 à 9 000 FCFA",
+    "image": "images/articles-site/generated-products/tablier-enfant-personnalise.webp",
+    "description": "Tablier enfant pour peinture, cuisine, école ou activité créative.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "tablier-enfant-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 531,
+    "title": "Coussin enfant personnalisé",
+    "category": "BebeEnfant",
+    "price": "6 500 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/coussin-enfant-personnalise.webp",
+    "description": "Coussin avec prénom, animal, personnage ou dessin.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "coussin-enfant-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 532,
+    "title": "Plaque prénom chambre enfant",
+    "category": "BebeEnfant",
+    "price": "5 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/plaque-prenom-chambre-enfant.webp",
+    "description": "Décoration murale avec prénom pour chambre enfant.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "plaque-prenom-chambre-enfant",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 533,
+    "title": "T-shirt staff personnalisé",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/t-shirt-staff-personnalise.webp",
+    "description": "T-shirts pour équipe, événement, salon, boutique ou chantier.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "t-shirt-staff-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 534,
+    "title": "Polo corporate personnalisé",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/polo-corporate-personnalise.webp",
+    "description": "Polo avec logo pour entreprise, association ou personnel.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "polo-corporate-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": true,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 535,
+    "title": "Gilet personnalisé",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/gilet-personnalise.webp",
+    "description": "Gilet de chantier, sécurité, événement ou équipe terrain.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "gilet-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 536,
+    "title": "Badge nominatif",
+    "category": "EntrepriseEvenement",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/badge-nominatif.webp",
+    "description": "Badge avec nom, fonction, logo ou événement.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "badge-nominatif",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 537,
+    "title": "Lanyard personnalisé",
+    "category": "EntrepriseEvenement",
+    "price": "1 000 à 4 000 FCFA",
+    "image": "images/articles-site/generated-products/lanyard-personnalise.webp",
+    "description": "Tour de cou personnalisé avec logo ou nom d’événement.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "lanyard-personnalise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 538,
+    "title": "Tote bag événement",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/tote-bag-evenement.webp",
+    "description": "Tote bag pour séminaire, salon, conférence ou campagne.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "tote-bag-evenement",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 539,
+    "title": "Calendrier entreprise",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/calendrier-entreprise.webp",
+    "description": "Calendrier personnalisé avec logo, photos et contacts.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "calendrier-entreprise",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 540,
+    "title": "Plaque logo",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/plaque-logo.webp",
+    "description": "Plaque pour bureau, accueil, comptoir ou boutique.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "plaque-logo",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 541,
+    "title": "Roll-up ou kakémono",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/roll-up-ou-kakemono.webp",
+    "description": "Support de communication pour événement, boutique ou salon.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "roll-up-ou-kakemono",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 542,
+    "title": "Flyer et carte de visite",
+    "category": "EntrepriseEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/flyer-et-carte-de-visite.webp",
+    "description": "Création et impression de supports de communication.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "flyer-et-carte-de-visite",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 543,
+    "title": "Poster Douala - Nouvelle Liberté",
+    "category": "PatrimoineCameroun",
+    "price": "3 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/poster-douala-nouvelle-liberte.webp",
+    "description": "Poster inspiré du monument Nouvelle Liberté à Douala.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "poster-douala-nouvelle-liberte",
+    "type": "produit",
+    "launchFirst": true,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 544,
+    "title": "Poster Yaoundé - Monument de la Réunification",
+    "category": "PatrimoineCameroun",
+    "price": "3 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/poster-yaounde-monument-de-la-reunification.webp",
+    "description": "Poster inspiré du Monument de la Réunification à Yaoundé.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "poster-yaounde-monument-de-la-reunification",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 545,
+    "title": "Poster Kribi - Chutes de la Lobé",
+    "category": "PatrimoineCameroun",
+    "price": "3 000 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/poster-kribi-chutes-de-la-lobe.webp",
+    "description": "Poster inspiré des Chutes de la Lobé à Kribi.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "poster-kribi-chutes-de-la-lobe",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 546,
+    "title": "Mug Patrimoine Cameroun",
+    "category": "PatrimoineCameroun",
+    "price": "4 000 à 7 500 FCFA",
+    "image": "images/articles-site/generated-products/mug-patrimoine-cameroun.webp",
+    "description": "Mug avec ville, monument ou symbole du Cameroun.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "mug-patrimoine-cameroun",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 547,
+    "title": "Stickers Patrimoine Cameroun",
+    "category": "PatrimoineCameroun",
+    "price": "1 000 à 3 500 FCFA",
+    "image": "images/articles-site/generated-products/stickers-patrimoine-cameroun.webp",
+    "description": "Stickers avec villes, monuments, drapeau et symboles camerounais.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "stickers-patrimoine-cameroun",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 548,
+    "title": "Tote bag Patrimoine Cameroun",
+    "category": "PatrimoineCameroun",
+    "price": "4 000 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/tote-bag-patrimoine-cameroun.webp",
+    "description": "Tote bag avec visuel culturel camerounais.",
+    "badge": "Personnalisable",
+    "commercialOffer": true,
+    "slug": "tote-bag-patrimoine-cameroun",
+    "type": "produit",
+    "launchFirst": false,
+    "requiresSize": false,
+    "requiresChildSize": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 549,
+    "title": "Pack Petit Cadeau",
+    "category": "PacksCadeaux",
+    "price": "5 000 à 9 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-petit-cadeau.webp",
+    "description": "Un petit cadeau simple, utile et personnalisé.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-petit-cadeau",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Mug",
+      "carte personnalisée"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 550,
+    "title": "Pack Cadeau Plus",
+    "category": "PacksCadeaux",
+    "price": "7 500 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-cadeau-plus.webp",
+    "description": "Pack cadeau complet pour anniversaire, couple ou ami.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-cadeau-plus",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Mug",
+      "porte-clés",
+      "carte personnalisée"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 551,
+    "title": "Pack Souvenir",
+    "category": "PacksCadeaux",
+    "price": "8 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-souvenir.webp",
+    "description": "Pack souvenir personnalisé pour une personne spéciale.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-souvenir",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "sticker",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 552,
+    "title": "Pack Premium Cadeau",
+    "category": "PacksCadeaux",
+    "price": "15 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-premium-cadeau.webp",
+    "description": "Pack cadeau plus complet pour marquer le coup.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-premium-cadeau",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "mug",
+      "porte-clés",
+      "emballage"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 553,
+    "title": "Pack Surprise Personnalisé",
+    "category": "PacksCadeaux",
+    "price": "À partir de 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-surprise-personnalise.webp",
+    "description": "Le client choisit son thème, ROSBRI prépare le pack.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-surprise-personnalise",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "3 articles personnalisés au choix"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 554,
+    "title": "Pack Maman Simple",
+    "category": "PacksFamille",
+    "price": "7 500 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-maman-simple.webp",
+    "description": "Cadeau simple pour célébrer maman.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-maman-simple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt maman",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 555,
+    "title": "Pack Maman Douceur",
+    "category": "PacksFamille",
+    "price": "12 000 à 20 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-maman-douceur.webp",
+    "description": "Pack cadeau tendre pour fête des mères ou anniversaire.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-maman-douceur",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "mug",
+      "carte"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 556,
+    "title": "Pack Maman Maison",
+    "category": "PacksFamille",
+    "price": "15 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-maman-maison.webp",
+    "description": "Pack idéal pour une maman qui aime la maison et la cuisine.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-maman-maison",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tablier",
+      "manique",
+      "mug"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 557,
+    "title": "Pack Maman Cœur",
+    "category": "PacksFamille",
+    "price": "15 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-maman-cur.webp",
+    "description": "Pack personnalisé avec les prénoms des enfants.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-maman-cur",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt cœur",
+      "mug avec prénoms des enfants"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 558,
+    "title": "Pack Maman Premium",
+    "category": "PacksFamille",
+    "price": "22 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-maman-premium.webp",
+    "description": "Cadeau complet et affectif pour maman.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-maman-premium",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "mug",
+      "coussin",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 559,
+    "title": "Pack Maman Luxe",
+    "category": "PacksFamille",
+    "price": "30 000 à 55 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-maman-luxe.webp",
+    "description": "Pack bien-être personnalisé.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-maman-luxe",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Peignoir",
+      "serviette",
+      "mug",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 560,
+    "title": "Pack Papa Simple",
+    "category": "PacksFamille",
+    "price": "7 500 à 12 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-papa-simple.webp",
+    "description": "Cadeau simple et direct pour papa.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-papa-simple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt papa",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 561,
+    "title": "Pack Papa Bureau",
+    "category": "PacksFamille",
+    "price": "9 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-papa-bureau.webp",
+    "description": "Pack utile pour bureau, travail ou étude.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-papa-bureau",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Mug",
+      "carnet",
+      "stylo"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 562,
+    "title": "Pack Papa Week-end",
+    "category": "PacksFamille",
+    "price": "15 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-papa-week-end.webp",
+    "description": "Pack pratique et décontracté.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-papa-week-end",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Casquette",
+      "t-shirt",
+      "porte-clés"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 563,
+    "title": "Pack Papa Barbecue",
+    "category": "PacksFamille",
+    "price": "18 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-papa-barbecue.webp",
+    "description": "Pack parfait pour cuisine, grillades et week-end.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-papa-barbecue",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tablier",
+      "t-shirt",
+      "mug"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 564,
+    "title": "Pack Papa Premium",
+    "category": "PacksFamille",
+    "price": "25 000 à 40 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-papa-premium.webp",
+    "description": "Pack plus complet pour un cadeau fort.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-papa-premium",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Polo",
+      "mug",
+      "carnet",
+      "porte-clés"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 565,
+    "title": "Pack Couple Simple",
+    "category": "PacksFamille",
+    "price": "10 000 à 20 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-couple-simple.webp",
+    "description": "Pack couple avec visuels assortis.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-couple-simple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 t-shirts assortis"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 566,
+    "title": "Pack Couple Mug",
+    "category": "PacksFamille",
+    "price": "8 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-couple-mug.webp",
+    "description": "Cadeau simple pour couple.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-couple-mug",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 mugs assortis"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 567,
+    "title": "Pack Couple Mixte",
+    "category": "PacksFamille",
+    "price": "18 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-couple-mixte.webp",
+    "description": "Pack complet pour couple, anniversaire ou Saint-Valentin.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-couple-mixte",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 t-shirts",
+      "2 mugs"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 568,
+    "title": "Pack Couple Maison",
+    "category": "PacksFamille",
+    "price": "15 000 à 28 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-couple-maison.webp",
+    "description": "Pack déco et souvenir pour couple.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-couple-maison",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 mugs",
+      "coussin personnalisé"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 569,
+    "title": "Pack Couple Premium",
+    "category": "PacksFamille",
+    "price": "35 000 à 60 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-couple-premium.webp",
+    "description": "Pack couple haut de gamme.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-couple-premium",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 hoodies",
+      "2 mugs"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 570,
+    "title": "Pack Mariage Civil",
+    "category": "PacksFamille",
+    "price": "18 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-mariage-civil.webp",
+    "description": "Pack souvenir pour mariage civil.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-mariage-civil",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 t-shirts",
+      "cartes",
+      "emballage"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 571,
+    "title": "Pack Anniversaire Couple",
+    "category": "PacksFamille",
+    "price": "20 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-anniversaire-couple.webp",
+    "description": "Pack personnalisé pour anniversaire de couple.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-anniversaire-couple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "mug",
+      "affiche souvenir"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 572,
+    "title": "Pack Famille 3",
+    "category": "PacksCadeaux",
+    "price": "15 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-famille-3.webp",
+    "description": "Pack pour petite famille.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-famille-3",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "3 t-shirts personnalisés"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 573,
+    "title": "Pack Famille 4",
+    "category": "PacksCadeaux",
+    "price": "20 000 à 40 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-famille-4.webp",
+    "description": "Pack idéal pour parents et enfants.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-famille-4",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "4 t-shirts personnalisés"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 574,
+    "title": "Pack Famille 5+",
+    "category": "PacksCadeaux",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-famille-5.webp",
+    "description": "Pack famille nombreuse, prix selon quantité.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-famille-5",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts personnalisés famille"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 575,
+    "title": "Pack Photo Famille",
+    "category": "PacksCadeaux",
+    "price": "25 000 à 50 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-photo-famille.webp",
+    "description": "Pack souvenir avec textile et décoration.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-photo-famille",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts",
+      "poster famille"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 576,
+    "title": "Pack Naissance",
+    "category": "PacksCadeaux",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-naissance.webp",
+    "description": "Cadeau personnalisé pour naissance.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-naissance",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Body",
+      "bavoir",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 577,
+    "title": "Pack Baptême",
+    "category": "PacksCadeaux",
+    "price": "15 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-bapteme.webp",
+    "description": "Pack souvenir pour baptême.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-bapteme",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Body",
+      "t-shirt parent",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 578,
+    "title": "Pack Anniversaire Enfant",
+    "category": "PacksCadeaux",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-anniversaire-enfant.webp",
+    "description": "Pack anniversaire pour enfant.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-anniversaire-enfant",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "badge",
+      "stickers"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 579,
+    "title": "Pack Étudiant Simple",
+    "category": "PacksCadeaux",
+    "price": "5 000 à 10 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-etudiant-simple.webp",
+    "description": "Pack utile pour école, université ou formation.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-etudiant-simple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Carnet",
+      "stylo",
+      "sticker"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 580,
+    "title": "Pack Campus",
+    "category": "PacksCadeaux",
+    "price": "10 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-campus.webp",
+    "description": "Pack jeune et pratique.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-campus",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "carnet",
+      "stickers"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 581,
+    "title": "Pack Laptop",
+    "category": "PacksCadeaux",
+    "price": "10 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-laptop.webp",
+    "description": "Pack pour personnaliser son ordinateur.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-laptop",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Stickers",
+      "tapis souris",
+      "skin laptop"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 582,
+    "title": "Pack Streetwear",
+    "category": "PacksCadeaux",
+    "price": "15 000 à 28 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-streetwear.webp",
+    "description": "Pack jeune, urbain et personnalisé.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-streetwear",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt oversize",
+      "casquette"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 583,
+    "title": "Pack Promo École",
+    "category": "PacksCadeaux",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-promo-ecole.webp",
+    "description": "Pack pour élèves, étudiants ou promo sortante.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-promo-ecole",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts de promotion"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 584,
+    "title": "Pack Club",
+    "category": "PacksCadeaux",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-club.webp",
+    "description": "Pack pour club, groupe ou association.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-club",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "badge",
+      "casquette"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 585,
+    "title": "Pack Bureau Basic",
+    "category": "PacksEntreprise",
+    "price": "8 500 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-bureau-basic.webp",
+    "description": "Pack simple pour bureau, client ou collaborateur.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-bureau-basic",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Mug",
+      "carnet",
+      "stylo"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 586,
+    "title": "Pack Bureau Premium",
+    "category": "PacksEntreprise",
+    "price": "18 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-bureau-premium.webp",
+    "description": "Pack bureau plus complet et plus professionnel.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-bureau-premium",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tumbler",
+      "carnet",
+      "stylo",
+      "badge"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 587,
+    "title": "Pack Accueil Entreprise",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-accueil-entreprise.webp",
+    "description": "Pack pour accueillir une équipe, un stagiaire ou un visiteur.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-accueil-entreprise",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Badge",
+      "lanyard",
+      "carnet"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 588,
+    "title": "Pack Staff Événement",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-staff-evenement.webp",
+    "description": "Pack pour staff, salon, événement ou campagne.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-staff-evenement",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "badge",
+      "casquette"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 589,
+    "title": "Pack Séminaire",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-seminaire.webp",
+    "description": "Pack complet pour séminaire, conférence ou formation.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-seminaire",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tote bag",
+      "carnet",
+      "stylo",
+      "badge"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 590,
+    "title": "Pack Client VIP",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-client-vip.webp",
+    "description": "Pack cadeau pour clients et partenaires.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-client-vip",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Mug",
+      "carnet",
+      "calendrier",
+      "carte"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 591,
+    "title": "Pack Uniforme Pro",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-uniforme-pro.webp",
+    "description": "Pack pour entreprise, boutique ou équipe terrain.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-uniforme-pro",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Polo",
+      "casquette",
+      "badge"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 592,
+    "title": "Pack Restaurant",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-restaurant.webp",
+    "description": "Pack pour restaurant, snack, traiteur ou équipe service.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-restaurant",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tablier",
+      "polo",
+      "badge"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 593,
+    "title": "Pack Boutique",
+    "category": "PacksEntreprise",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-boutique.webp",
+    "description": "Pack pour lancer ou habiller une petite boutique.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-boutique",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt staff",
+      "tote bag",
+      "stickers logo"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 594,
+    "title": "Pack Wax Simple",
+    "category": "WaxLifestyle",
+    "price": "8 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-wax-simple.webp",
+    "description": "Pack wax simple pour cadeau ou usage quotidien.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-wax-simple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tote bag",
+      "pochette"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 595,
+    "title": "Pack Wax Femme",
+    "category": "WaxLifestyle",
+    "price": "18 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-wax-femme.webp",
+    "description": "Pack féminin pratique et élégant.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-wax-femme",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Sac",
+      "pochette",
+      "trousse"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 596,
+    "title": "Pack Wax Bureau",
+    "category": "WaxLifestyle",
+    "price": "18 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-wax-bureau.webp",
+    "description": "Pack bureau avec touche wax.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-wax-bureau",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Pochette laptop",
+      "carnet",
+      "trousse"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 597,
+    "title": "Pack Wax Voyage",
+    "category": "WaxLifestyle",
+    "price": "18 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-wax-voyage.webp",
+    "description": "Pack pratique pour déplacement et voyage.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-wax-voyage",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Sac banane",
+      "trousse",
+      "étui lunettes"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 598,
+    "title": "Pack Wax Cuisine",
+    "category": "WaxLifestyle",
+    "price": "18 000 à 35 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-wax-cuisine.webp",
+    "description": "Pack cuisine coloré et personnalisé.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-wax-cuisine",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tablier",
+      "maniques",
+      "set de table"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 599,
+    "title": "Pack Wax Maison",
+    "category": "WaxLifestyle",
+    "price": "25 000 à 50 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-wax-maison.webp",
+    "description": "Pack décoration maison en wax.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-wax-maison",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Coussin",
+      "chemin de table",
+      "sous-verres"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 600,
+    "title": "Pack Plage",
+    "category": "WaxLifestyle",
+    "price": "25 000 à 45 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-plage.webp",
+    "description": "Pack plage complet et assorti.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-plage",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Sac",
+      "chapeau",
+      "sandales"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 601,
+    "title": "Pack Plage Premium",
+    "category": "WaxLifestyle",
+    "price": "35 000 à 60 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-plage-premium.webp",
+    "description": "Pack plage plus complet.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-plage-premium",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Sac",
+      "chapeau",
+      "sandales",
+      "pochette"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 602,
+    "title": "Pack Anniversaire Basic",
+    "category": "PacksEvenement",
+    "price": "8 000 à 15 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-anniversaire-basic.webp",
+    "description": "Pack simple pour anniversaire.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-anniversaire-basic",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "badge",
+      "carte"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 603,
+    "title": "Pack Anniversaire Groupe",
+    "category": "PacksEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-anniversaire-groupe.webp",
+    "description": "Pack pour groupe d’amis, famille ou équipe.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-anniversaire-groupe",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts groupe",
+      "badges"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 604,
+    "title": "Pack EVJF",
+    "category": "PacksEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-evjf.webp",
+    "description": "Pack pour enterrement de vie de jeune fille.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-evjf",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts",
+      "badges",
+      "stickers"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 605,
+    "title": "Pack Mariage Invités",
+    "category": "PacksEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-mariage-invites.webp",
+    "description": "Pack souvenir pour invités de mariage.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-mariage-invites",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Éventails",
+      "cartes",
+      "stickers"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 606,
+    "title": "Pack Mariage Couple",
+    "category": "PacksEvenement",
+    "price": "25 000 à 45 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-mariage-couple.webp",
+    "description": "Pack souvenir pour les mariés.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-mariage-couple",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "2 t-shirts",
+      "2 mugs",
+      "affiche"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 607,
+    "title": "Pack Église",
+    "category": "PacksEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-eglise.webp",
+    "description": "Pack pour programme religieux, chorale ou groupe.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-eglise",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts",
+      "badges",
+      "banderole"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 608,
+    "title": "Pack Chorale",
+    "category": "PacksEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-chorale.webp",
+    "description": "Pack pour chorale, ministère ou association.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-chorale",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Polos ou t-shirts",
+      "badges"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 609,
+    "title": "Pack Réunion Famille",
+    "category": "PacksEvenement",
+    "price": "Sur devis",
+    "image": "images/articles-site/generated-products/pack-reunion-famille.webp",
+    "description": "Pack pour réunion familiale.",
+    "badge": "Sur devis",
+    "commercialOffer": true,
+    "slug": "pack-reunion-famille",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirts",
+      "badges",
+      "bannière"
+    ],
+    "recommendedPack": false,
+    "priceToValidate": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 610,
+    "title": "Pack Ville",
+    "category": "PatrimoineCameroun",
+    "price": "10 000 à 18 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-ville.webp",
+    "description": "Pack autour d’une ville camerounaise.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-ville",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "sticker",
+      "carte ville"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 611,
+    "title": "Pack Douala",
+    "category": "PatrimoineCameroun",
+    "price": "15 000 à 28 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-douala.webp",
+    "description": "Pack inspiré de Douala.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-douala",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "poster Nouvelle Liberté",
+      "sticker"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 612,
+    "title": "Pack Yaoundé",
+    "category": "PatrimoineCameroun",
+    "price": "15 000 à 28 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-yaounde.webp",
+    "description": "Pack inspiré de Yaoundé.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-yaounde",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "poster Réunification",
+      "sticker"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 613,
+    "title": "Pack Kribi",
+    "category": "PatrimoineCameroun",
+    "price": "15 000 à 30 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-kribi.webp",
+    "description": "Pack inspiré de Kribi.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-kribi",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "tote bag",
+      "sticker"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 614,
+    "title": "Pack Cameroun",
+    "category": "PatrimoineCameroun",
+    "price": "15 000 à 28 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-cameroun.webp",
+    "description": "Pack aux couleurs du Cameroun.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-cameroun",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "T-shirt",
+      "casquette",
+      "sticker drapeau"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
+  },
+  {
+    "id": 615,
+    "title": "Pack Patrimoine Complet",
+    "category": "PatrimoineCameroun",
+    "price": "25 000 à 45 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-patrimoine-complet.webp",
+    "description": "Pack pour découvrir plusieurs villes et symboles du Cameroun.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-patrimoine-complet",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "3 t-shirts villes",
+      "stickers"
+    ],
+    "recommendedPack": true,
+    "generatedMockup": true
+  },
+  {
+    "id": 616,
+    "title": "Pack Touriste",
+    "category": "PatrimoineCameroun",
+    "price": "12 000 à 25 000 FCFA",
+    "image": "images/articles-site/generated-products/pack-touriste.webp",
+    "description": "Pack souvenir pour visiteur, diaspora ou cadeau local.",
+    "badge": "Pack",
+    "commercialOffer": true,
+    "slug": "pack-touriste",
+    "type": "pack",
+    "isPack": true,
+    "items": [
+      "Tote bag",
+      "mug",
+      "carte postale"
+    ],
+    "recommendedPack": false,
+    "generatedMockup": true
   }
 ];

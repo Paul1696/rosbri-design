@@ -3,7 +3,11 @@
   const WHATSAPP_PHONE = "237690087213";
   let catalog = normalizeCatalog(window.ROSBriCatalog || []);
   const categories = [
-    "Tous", "Packs", "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
+    "Tous", "Nouveautes", "Populaires", "PetitPrix", "Produits", "Packs", "SurDevis",
+    "Cadeaux", "Famille", "Couple", "Entreprise", "Wax", "Maison", "BebeEnfant", "PatrimoineCameroun",
+    "CadeauxPersonnalises", "TassesGourdes", "TelephoneOrdinateur", "PapeteriePersonnalisee", "MaisonCuisine",
+    "CoupleFamille", "EntrepriseEvenement", "WaxLifestyle", "PacksCadeaux", "PacksEntreprise", "PacksFamille", "PacksEvenement",
+    "Tshirts", "Sacs", "SacsADos", "SacsDeVoyage", "SacsCabas", "Bandoulieres", "Ensembles", "Babouches", "Sandales", "Chapeaux",
     "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Accessoires", "Coussins", "Robes", "Chemises",
     "Boubous", "Polos", "Debardeurs", "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons", "Bijoux",
     "Portefeuilles", "Trousses", "Chaussures", "Tabliers", "Serviettes", "Mugs", "Gourdes", "Affiches",
@@ -11,11 +15,40 @@
   ];
   const productLabels = {
     Tous: "Tous les articles",
+    Nouveautes: "Nouveautés",
+    Populaires: "Populaires",
+    PetitPrix: "Petit prix",
+    Produits: "Produits",
+    SurDevis: "Sur devis",
+    Cadeaux: "Cadeaux",
+    Famille: "Famille",
+    Couple: "Couple",
+    Entreprise: "Entreprise",
+    Wax: "Wax",
+    Maison: "Maison",
+    CadeauxPersonnalises: "Cadeaux personnalisés",
+    TassesGourdes: "Tasses & gourdes",
+    TelephoneOrdinateur: "Téléphone & ordinateur",
+    PapeteriePersonnalisee: "Papeterie personnalisée",
+    MaisonCuisine: "Maison & cuisine",
+    BebeEnfant: "Bébé & enfant",
+    CoupleFamille: "Couple & famille",
+    EntrepriseEvenement: "Entreprise & événement",
+    WaxLifestyle: "Wax lifestyle",
+    PatrimoineCameroun: "Patrimoine Cameroun",
+    PacksCadeaux: "Packs cadeaux",
+    PacksEntreprise: "Packs entreprise",
+    PacksFamille: "Packs famille",
+    PacksEvenement: "Packs événement",
     Packs: "Packs",
     Tshirts: "T-shirts",
     Polos: "Polos",
     Debardeurs: "Débardeurs",
     Sacs: "Sacs",
+    SacsADos: "Sacs à dos",
+    SacsDeVoyage: "Sacs de voyage",
+    SacsCabas: "Sacs cabas",
+    Bandoulieres: "Bandoulières",
     Ensembles: "Ensembles",
     Babouches: "Babouches",
     Sandales: "Sandales",
@@ -235,14 +268,13 @@
     ].sort((a, b) => {
       return catalogOrderKey(a) - catalogOrderKey(b);
     });
-    categoryCounts = catalogView.reduce((counts, item) => {
-      const category = productCategory(item);
-      counts[category] = (counts[category] || 0) + 1;
+    categoryCounts = categories.reduce((counts, category) => {
+      counts[category] = catalogView.filter((item) => categoryMatches(item, category)).length;
       return counts;
     }, {});
     searchIndex = new Map(catalogView.map((item) => [
       item.id,
-      `${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`.toLowerCase()
+      normalizeText(`${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${subcategoryLabel(item)} ${item.title} ${item.category} ${item.price} ${item.badge || ""} ${(item.items || []).join(" ")} tailles pointures avis pack ${(item.reviews || []).map((review) => `${review.name} ${review.text}`).join(" ")} ${(item.sourceIds || []).join(" ")}`)
     ]));
   }
 
@@ -250,6 +282,13 @@
 
   function byId(id) {
     return document.getElementById(id);
+  }
+
+  function normalizeText(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
   }
 
   function productVariant(productSlug, colorSlug, label, swatch) {
@@ -320,10 +359,11 @@
   }
 
   function productDescription(item) {
-    return item.description || "Creation ROSBRI au motif wax, pensee pour une finition originale et soignee.";
+    return item.description || "Creation ROSBRI au motif imprime, pensee pour une finition originale et soignee.";
   }
 
   function productCategory(item) {
+    if (item.commercialOffer && productLabels[item.category]) return item.category;
     if (item.isPack || item.category === "Packs") return "Packs";
     const path = item.image || "";
     const match = path.match(/^images\/articles-site\/([^/]+)/i);
@@ -369,6 +409,45 @@
     return map[folder] || item.category || "Autres";
   }
 
+  function isQuoteItem(item) {
+    return item.price === "Sur devis" || item.badge === "Sur devis";
+  }
+
+  function isNewItem(item) {
+    return item.badge === "Nouveau" || item.launchFirst === true || (item.commercialOffer === true && !item.isPack);
+  }
+
+  function isPopularItem(item) {
+    return item.badge === "Populaire" || item.launchFirst === true || item.recommendedPack === true;
+  }
+
+  function isSmallPriceItem(item) {
+    return item.badge === "Petit prix" || priceBand(item) === "starter" || priceBand(item) === "low";
+  }
+
+  function matchText(item, words) {
+    const text = normalizeText(`${displayTitle(item)} ${productDescription(item)} ${productLabel(item)} ${item.badge || ""} ${(item.items || []).join(" ")}`);
+    return words.some((word) => text.includes(normalizeText(word)));
+  }
+
+  function categoryMatches(item, category) {
+    const productCat = productCategory(item);
+    if (category === "Tous") return true;
+    if (category === "Nouveautes") return isNewItem(item);
+    if (category === "Populaires") return isPopularItem(item);
+    if (category === "PetitPrix") return isSmallPriceItem(item);
+    if (category === "Produits") return !item.isPack;
+    if (category === "Packs") return item.isPack || productCat === "Packs";
+    if (category === "SurDevis") return isQuoteItem(item);
+    if (category === "Cadeaux") return ["CadeauxPersonnalises", "PacksCadeaux"].includes(productCat) || matchText(item, ["cadeau", "maman", "papa", "souvenir"]);
+    if (category === "Famille") return ["CoupleFamille", "PacksFamille"].includes(productCat) || matchText(item, ["famille", "maman", "papa", "naissance", "bapteme"]);
+    if (category === "Couple") return productCat === "CoupleFamille" || matchText(item, ["couple", "mariage", "evjf", "saint-valentin"]);
+    if (category === "Entreprise") return ["EntrepriseEvenement", "PacksEntreprise"].includes(productCat) || matchText(item, ["entreprise", "bureau", "staff", "logo", "seminaire"]);
+    if (category === "Wax") return productCat === "WaxLifestyle" || matchText(item, ["wax"]);
+    if (category === "Maison") return productCat === "MaisonCuisine" || matchText(item, ["maison", "cuisine", "table", "coussin"]);
+    return productCat === category;
+  }
+
   function productSubcategory(item) {
     const category = productCategory(item);
     const path = item.image || "";
@@ -400,7 +479,7 @@
     const category = productCategory(item);
     const subcategory = subcategoryLabel(item);
     if (item.isPack) {
-      return "Pack coordonne";
+      return productLabels[category] || "Pack";
     }
     return subcategory ? `${productLabels[category]} - ${subcategory}` : productLabels[category];
   }
@@ -414,10 +493,12 @@
   }
 
   function isClothing(item) {
+    if (item.requiresSize) return true;
     return ["Tshirts", "Ensembles", "Robes", "Boubous", "Chemises", "Polos", "Debardeurs"].includes(productCategory(item));
   }
 
   function isChildClothing(item) {
+    if (item.requiresChildSize) return true;
     return isClothing(item) && productSubcategory(item) === "Enfants";
   }
 
@@ -435,12 +516,15 @@
 
   function productVariantsFor(item) {
     if (!item) return [];
+    if (Array.isArray(item.colorVariants) && item.colorVariants.length) return item.colorVariants;
     const productSlug = productVariantSlugs[item.id];
     return productSlug ? universalProductVariants(productSlug) : (productColorVariants[item.id] || []);
   }
 
   function colorOptionsFor(item) {
-    if (!item || !isTshirt(item)) return [];
+    if (!item) return [];
+    if (Array.isArray(item.colorVariants) && item.colorVariants.length) return item.colorVariants;
+    if (!isTshirt(item)) return [];
     const productVariants = productVariantsFor(item);
     if (productVariants.length > colorVariants.length) return productVariants;
     return colorVariants.map((variant) => ({
@@ -512,42 +596,57 @@
     return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
   }
 
+  function orderButtonLabel(item) {
+    return isQuoteItem(item) ? "Demander un devis sur WhatsApp" : "Commander sur WhatsApp";
+  }
+
   function orderUrlWithOptions(item, options = {}) {
     const productUrl = `${SITE_URL}boutique.html#article-${item.id}`;
-    let msg = `Bonjour ROSBRI DESIGN 👋\n\n`;
-    msg += `Je souhaite passer une commande pour cet article depuis votre site :\n\n`;
-    msg += `🛍️ *Produit :* ${displayTitle(item)}\n`;
-    msg += `💰 *Prix :* ${item.price}\n\n`;
+    let msg = "";
+    if (isQuoteItem(item)) {
+      msg += `Bonjour ROSBRI DESIGN, je voudrais un devis pour : ${displayTitle(item)}.\n`;
+      msg += `Quantité souhaitée :\n`;
+      msg += `Délai souhaité :\n`;
+      msg += `Détails de personnalisation :\n\n`;
+    } else if (item.isPack) {
+      const content = (item.items || []).length ? item.items.join(" + ") : "Articles assortis";
+      msg += `Bonjour ROSBRI DESIGN, je suis intéressé par le pack : ${displayTitle(item)}.\n`;
+      msg += `Contenu : ${content}.\n`;
+      msg += `Je voudrais avoir plus d’informations et passer commande.\n\n`;
+    } else {
+      msg += `Bonjour ROSBRI DESIGN, je suis intéressé par : ${displayTitle(item)}.\n`;
+      msg += `Je voudrais avoir plus d’informations et passer commande.\n\n`;
+    }
 
     let hasOptions = false;
-    let optionsText = `✨ *Détails de la commande :*\n`;
+    let optionsText = `Détails de la commande :\n`;
 
     if (options.color) {
-      optionsText += `- 🎨 Couleur : *${options.color}*\n`;
+      optionsText += `- Couleur : ${options.color}\n`;
       hasOptions = true;
     }
 
     if (options.sizeQuantities && options.sizeQuantities.length) {
       const sizesStr = options.sizeQuantities.map((entry) => `${entry.size} (x${entry.quantity})`).join(", ");
-      optionsText += `- 📏 Taille(s) : *${sizesStr}*\n`;
+      optionsText += `- Taille(s) : ${sizesStr}\n`;
       hasOptions = true;
     } else if (options.sizes && options.sizes.length) {
-      optionsText += `- 📏 Taille(s) : *${options.sizes.join(", ")}*\n`;
+      optionsText += `- Taille(s) : ${options.sizes.join(", ")}\n`;
       hasOptions = true;
     }
 
     if (options.shoeSizeQuantities && options.shoeSizeQuantities.length) {
       const shoesStr = options.shoeSizeQuantities.map((entry) => `${entry.size} (x${entry.quantity})`).join(", ");
-      optionsText += `- 👟 Pointure(s) : *${shoesStr}*\n`;
+      optionsText += `- Pointure(s) : ${shoesStr}\n`;
       hasOptions = true;
     } else if (options.shoeSizes && options.shoeSizes.length) {
-      optionsText += `- 👟 Pointure(s) : *${options.shoeSizes.join(", ")}*\n`;
+      optionsText += `- Pointure(s) : ${options.shoeSizes.join(", ")}\n`;
       hasOptions = true;
     }
 
     const showsIndividualQuantities = (options.sizeQuantities && options.sizeQuantities.length) || (options.shoeSizeQuantities && options.shoeSizeQuantities.length);
     if (options.quantity && !showsIndividualQuantities) {
-      optionsText += `- 🔢 Quantité : *${options.quantity}*\n`;
+      optionsText += `- Quantité : ${options.quantity}\n`;
       hasOptions = true;
     }
 
@@ -555,14 +654,13 @@
       msg += optionsText + `\n`;
     }
 
-    msg += `🔗 *Lien produit :* ${productUrl}\n\n`;
-    msg += `Merci de me confirmer la disponibilité et le délai de livraison 🛵.`;
+    msg += `Lien produit : ${productUrl}`;
 
     return whatsAppUrl(msg);
   }
 
   function optimizedImage(path) {
-    return path;
+    return path.includes("/placeholders/") ? `${path}?v=20260606-pro` : path;
   }
 
   function priceBand(item) {
@@ -585,11 +683,13 @@
     const colorCount = colorOptionsFor(item).length;
     const category = productCategory(item);
     const meta = productMetaLabel(item);
+    const badge = item.badge || (item.isPack ? "Pack" : (productLabels[category] || category));
+    const cardOrderLabel = isQuoteItem(item) ? "Devis" : "Commander";
     return `
       <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${category}">
         <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
           <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(displayImage(item))}" alt="${title}" loading="${loading}" decoding="async"${priority}>
-          <span class="tag">${item.isPack ? "Pack" : (productLabels[category] || category)}</span>
+          <span class="tag">${badge}</span>
           ${item.isPack ? `<span class="pack-note">Lot assorti</span>` : ""}
           ${colorChoices ? `<span class="variant-note">${colorCount} couleurs</span>` : ""}
         </button>
@@ -602,7 +702,7 @@
           </div>
           <div class="product-actions">
             <button class="secondary-btn" type="button" data-open-product="${item.id}">Aperçu</button>
-            <button class="mini-order" type="button" data-open-product="${item.id}">Commander</button>
+            <button class="mini-order" type="button" data-open-product="${item.id}">${cardOrderLabel}</button>
           </div>
         </div>
       </article>
@@ -621,9 +721,9 @@
   }
 
   function filteredCatalog() {
-    const query = state.query.trim().toLowerCase();
+    const query = normalizeText(state.query.trim());
     let result = catalogView.filter((item) => {
-      const categoryMatch = state.category === "Tous" || productCategory(item) === state.category;
+      const categoryMatch = categoryMatches(item, state.category);
       const subcategoryMatch = state.subcategory === "Tous" || productSubcategory(item) === state.subcategory;
       const queryMatch = !query || (searchIndex.get(item.id) || "").includes(query);
       const priceMatch = state.price === "all" || priceBand(item) === state.price;
@@ -659,6 +759,23 @@
 
     target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
     announceRender(target);
+  }
+
+  function renderCuratedGrid(id, predicate, limit = 8) {
+    const target = byId(id);
+    if (!target) return;
+    const picks = catalogView.filter(predicate).slice(0, limit);
+    target.innerHTML = picks.length
+      ? picks.map((item, index) => productCard(item, true, index < 4)).join("")
+      : emptyCard();
+    announceRender(target);
+  }
+
+  function renderCommercialSections() {
+    renderCuratedGrid("launch-grid", (item) => item.launchFirst === true, 5);
+    renderCuratedGrid("popular-packs-grid", (item) => item.recommendedPack === true, 5);
+    renderCuratedGrid("personalized-products-grid", (item) => item.commercialOffer === true && !item.isPack, 5);
+    renderCuratedGrid("business-events-grid", (item) => ["EntrepriseEvenement", "PacksEntreprise", "PacksEvenement"].includes(productCategory(item)), 5);
   }
 
   function updateLoadMore(total) {
@@ -706,7 +823,7 @@
     }).join("");
 
     const subcategoryEntries = catalogView.reduce((counts, item) => {
-      if (state.category === "Tous" || productCategory(item) !== state.category) return counts;
+      if (state.category === "Tous" || !categoryMatches(item, state.category)) return counts;
       const subcategory = productSubcategory(item);
       if (subcategory === "Tous") return counts;
       counts[subcategory] = (counts[subcategory] || 0) + 1;
@@ -879,7 +996,7 @@
     };
     if (order) {
       order.href = orderUrlWithOptions(orderState.item, selectedOptions);
-      order.textContent = "Commander";
+      order.textContent = orderButtonLabel(orderState.item);
     }
   }
 
@@ -975,7 +1092,7 @@
     if (isFootwear(item)) {
       return [
         { name: "Stéphanie", rating: 5, text: "Confortable au pied et très joli avec une tenue simple." },
-        { name: "Grâce", rating: 4, text: "Belle finition, le détail wax fait la différence." }
+        { name: "Grâce", rating: 4, text: "Belle finition, le detail imprime fait la difference." }
       ];
     }
     if (category === "Coussins") {
@@ -1556,7 +1673,8 @@
     const labels = {
       supabase: "Catalogue en ligne",
       "supabase-empty": "Supabase vide",
-      "supabase-error": "Supabase indisponible"
+      "supabase-error": "Supabase indisponible",
+      "supabase-stale": "Catalogue local complet"
     };
     node.textContent = labels[source] || "Catalogue local";
     node.dataset.source = source || "local";
@@ -1581,6 +1699,7 @@
     updateCounts();
     updateCatalogSourceLabel();
     renderFeatured();
+    renderCommercialSections();
     renderFilters();
     renderShop();
     document.dispatchEvent(new CustomEvent("catalog:ready", {

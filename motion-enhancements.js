@@ -1,15 +1,22 @@
 const motionSource = "https://cdn.jsdelivr.net/npm/motion@12.23.24/+esm";
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const revealSelector = "[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar";
 
 function markReady() {
   document.documentElement.classList.add("motion-ready");
 }
 
 function restoreVisibility() {
-  document.querySelectorAll("[data-reveal], .product-card, .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
+  document.querySelectorAll(`${revealSelector}, .product-card`).forEach((element) => {
     element.style.opacity = "";
     element.style.transform = "";
   });
+}
+
+function revealTargets() {
+  return Array.from(document.querySelectorAll(revealSelector)).filter((element) => (
+    !element.closest(".page-title") && !element.closest(".shop-layout")
+  ));
 }
 
 if (reducedMotion) {
@@ -28,7 +35,7 @@ if (reducedMotion) {
     .then(({ animate, scroll, stagger }) => {
       markReady();
 
-      document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
+      revealTargets().forEach((element) => {
         element.style.opacity = "0";
         element.style.transform = "translateY(18px)";
       });
@@ -41,11 +48,11 @@ if (reducedMotion) {
         });
       }, { rootMargin: "0px 0px -10% 0px" });
 
-      document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
+      revealTargets().forEach((element) => {
         revealObserver.observe(element);
       });
       window.setTimeout(() => {
-        document.querySelectorAll("[data-reveal], .trust-pill, .universe, .benefit, .filters, .shop-toolbar").forEach((element) => {
+        document.querySelectorAll(revealSelector).forEach((element) => {
           element.style.opacity = "";
           element.style.transform = "";
         });
