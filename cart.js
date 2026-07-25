@@ -169,6 +169,27 @@
       `;
     }).join("");
 
+    // --- CROSS-SELLING LOGIC ---
+    // Vérifier si le produit recommandé est déjà dans le panier
+    const recommendedItemTitle = "Bob personnalisé Wax";
+    const hasRecommended = cart.some(item => item.title === recommendedItemTitle);
+
+    if (!hasRecommended) {
+      container.innerHTML += `
+        <div class="cart-cross-sell">
+          <div class="cross-sell-info">
+            <span class="cross-sell-badge">Suggestion</span>
+            <strong>${recommendedItemTitle}</strong>
+            <span class="cross-sell-price">4 500 FCFA</span>
+          </div>
+          <button type="button" class="cross-sell-btn" id="add-cross-sell-btn">
+            + Ajouter
+          </button>
+        </div>
+      `;
+    }
+    // ---------------------------
+
     const totalText = document.getElementById("cart-total-value");
     if (totalText) {
       totalText.textContent = totalVal > 0
@@ -265,6 +286,19 @@
         if (confirm("Vider complètement votre panier ?")) {
           saveCart([]);
         }
+      }
+
+      // Add Cross-Sell Item
+      if (event.target.id === "add-cross-sell-btn") {
+        const cart = getCart();
+        cart.push({
+          title: "Bob personnalisé Wax",
+          price: "4 500 FCFA",
+          quantity: 1,
+          image: "images/articles-site/sacs/variants/sac-rosbri-wax-29.png", // Image placeholder (adjust to bob image path)
+          url: SITE_URL
+        });
+        saveCart(cart);
       }
     });
 
