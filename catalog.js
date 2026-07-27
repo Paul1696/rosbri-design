@@ -3,16 +3,15 @@
   const WHATSAPP_PHONE = "237690087213";
   let catalog = normalizeCatalog(window.ROSBriCatalog || []);
   const categories = [
-    "Tous", "Nouveautes", "Populaires", "PetitPrix", "Produits", "Packs", "SurDevis",
-    "Cadeaux", "Famille", "Couple", "Entreprise", "Wax", "Maison", "BebeEnfant", "PatrimoineCameroun",
-    "CadeauxPersonnalises", "TassesGourdes", "TelephoneOrdinateur", "PapeteriePersonnalisee", "MaisonCuisine",
-    "CoupleFamille", "EntrepriseEvenement", "WaxLifestyle", "PacksCadeaux", "PacksEntreprise", "PacksFamille", "PacksEvenement",
-    "Tshirts", "Sacs", "SacsADos", "SacsDeVoyage", "SacsCabas", "Bandoulieres", "Ensembles", "Babouches", "Sandales", "Chapeaux",
-    "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Accessoires", "Coussins", "Robes", "Chemises",
-    "Boubous", "Polos", "Debardeurs", "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons", "Bijoux",
-    "Portefeuilles", "Trousses", "Chaussures", "Tabliers", "Serviettes", "Mugs", "Gourdes", "Affiches",
-    "Cartes", "Stickers", "Pagnes", "CoquesTelephone", "Casquettes"
-  ];
+      "Tous",
+      "Packs & Idées Cadeaux",
+      "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
+      "Casquettes", "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Trousses",
+      "Portefeuilles", "Accessoires", "Coussins", "Robes", "Boubous", "Chemises",
+      "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons", "Bijoux", "Tabliers",
+      "Serviettes", "Mugs", "Gourdes", "Affiches", "Cartes", "Stickers",
+      "Pagnes", "CoquesTelephone", "Chaussures", "Polos", "Debardeurs"
+    ];
   const productLabels = {
     Tous: "Tous les articles",
     Nouveautes: "Nouveautés",
@@ -34,13 +33,13 @@
     BebeEnfant: "Bébé & enfant",
     CoupleFamille: "Couple & famille",
     EntrepriseEvenement: "Entreprise & événement",
-    WaxLifestyle: "Wax lifestyle",
+    WaxLifestyle: "Wax & lifestyle",
     PatrimoineCameroun: "Patrimoine Cameroun",
     PacksCadeaux: "Packs cadeaux",
     PacksEntreprise: "Packs entreprise",
     PacksFamille: "Packs famille",
     PacksEvenement: "Packs événement",
-    Packs: "Packs",
+    "Packs & Idées Cadeaux": "Packs & Idées Cadeaux",
     Tshirts: "T-shirts",
     Polos: "Polos",
     Debardeurs: "Débardeurs",
@@ -95,15 +94,31 @@
   };
   const labels = { ...productLabels, ...subcategoryLabels };
 
+  
+  const categoryFamilies = {
+    "MODE & TEXTILE": ["Tshirts", "Ensembles", "Casquettes", "Bobs", "Chapeaux", "Robes", "Chemises", "Boubous", "Polos", "Debardeurs", "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons"],
+    "SACS & ACCESSOIRES": ["Sacs", "Pochettes", "Portefeuilles", "Trousses", "Accessoires", "Bijoux"],
+    "CHAUSSURES": ["Babouches", "Sandales", "Chaussures"],
+    "MAISON & CUISINE": ["GantsCuisine", "Maniques", "Coussins", "Tabliers", "Serviettes", "Mugs", "Gourdes"],
+    "CADEAUX": ["Packs & Idées Cadeaux", "Cartes", "Affiches", "Stickers", "CoquesTelephone", "Pagnes"]
+  };
+  
+  function getFamilyForCategory(cat) {
+    for (const [family, cats] of Object.entries(categoryFamilies)) {
+      if (cats.includes(cat)) return family;
+    }
+    return "AUTRES";
+  }
+
   const state = {
     category: "Tous",
     subcategory: "Tous",
     query: "",
     price: "all",
     sort: "default",
-    visibleLimit: 24
+    visibleLimit: 1000
   };
-  const pageSize = 24;
+  const pageSize = 1000;
   const sizeOptions = ["S", "M", "L", "XL", "XXL", "XXXL"];
   const childSizeOptions = ["1 an", "2 ans", "3 ans", "4 ans", "5 ans", "6 ans", "7 ans", "8 ans", "9 ans"];
   const shoeSizeOptions = ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"];
@@ -364,7 +379,7 @@
 
   function productCategory(item) {
     if (item.commercialOffer && productLabels[item.category]) return item.category;
-    if (item.isPack || item.category === "Packs") return "Packs";
+    if (item.isPack || item.category === "Packs & Idées Cadeaux") return "Packs & Idées Cadeaux";
     const path = item.image || "";
     const match = path.match(/^images\/articles-site\/([^/]+)/i);
     const folder = match ? match[1] : "";
@@ -437,7 +452,7 @@
     if (category === "Populaires") return isPopularItem(item);
     if (category === "PetitPrix") return isSmallPriceItem(item);
     if (category === "Produits") return !item.isPack;
-    if (category === "Packs") return item.isPack || productCat === "Packs";
+    if (category === "Packs & Idées Cadeaux") return item.isPack || productCat === "Packs & Idées Cadeaux";
     if (category === "SurDevis") return isQuoteItem(item);
     if (category === "Cadeaux") return ["CadeauxPersonnalises", "PacksCadeaux"].includes(productCat) || matchText(item, ["cadeau", "maman", "papa", "souvenir"]);
     if (category === "Famille") return ["CoupleFamille", "PacksFamille"].includes(productCat) || matchText(item, ["famille", "maman", "papa", "naissance", "bapteme"]);
@@ -675,48 +690,31 @@
 
   function productCard(item, compact, eager) {
     const title = displayTitle(item);
-    const description = productDescription(item);
-    const loading = eager ? "eager" : "lazy";
-    const priority = eager ? " fetchpriority=\"high\"" : "";
-    const collage = isColorCollage(item);
-    const colorChoices = hasColorChoices(item);
-    const colorCount = colorOptionsFor(item).length;
     const category = productCategory(item);
-    const meta = productMetaLabel(item);
     const badge = item.badge || (item.isPack ? "Pack" : (productLabels[category] || category));
-    const cardOrderLabel = isQuoteItem(item) ? "Devis" : "Commander";
+    const loading = eager ? "eager" : "lazy";
+    const priority = eager ? ' fetchpriority="high"' : '';
+    const displayPrice = item.price ? item.price : "Sur Devis";
+    
     return `
-      <article class="product-card${collage ? " has-variants" : ""}" id="article-${item.id}" data-category="${category}">
-        <button class="product-media" type="button" data-open-product="${item.id}" aria-label="Voir ${title}">
-          <img class="${collage ? "variant-crop" : ""}" src="${optimizedImage(displayImage(item))}" alt="${title}" loading="${loading}" decoding="async"${priority}>
-          <span class="tag">${badge}</span>
-          ${item.isPack ? `<span class="pack-note">Lot assorti</span>` : ""}
-          ${colorChoices ? `<span class="variant-note">${colorCount} couleurs</span>` : ""}
-        </button>
-        <div class="product-body">
-          <h3>${title}</h3>
-          <p class="product-description">${description}</p>
-          <div class="product-meta">
-            <span>${compact ? "Création ROSBRI" : meta}</span>
-            <span class="price">${item.price}</span>
-          </div>
-          <div class="product-actions">
-            <button class="secondary-btn" type="button" data-open-product="${item.id}">Aperçu</button>
-            <button class="mini-order" type="button" data-open-product="${item.id}">${cardOrderLabel}</button>
-          </div>
+      <div class="group bg-white/80 backdrop-blur-sm rounded-xl p-4 soft-shadow hover-lift border border-surface-variant/50 cursor-pointer" data-open-product="${item.id}">
+        <div class="aspect-[4/5] rounded-lg overflow-hidden bg-cream mb-4 relative">
+          <img alt="${title}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="${optimizedImage(displayImage(item))}" loading="${loading}" decoding="async"${priority}>
+          <span class="absolute top-3 left-3 bg-champagne text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">${badge}</span>
         </div>
-      </article>
+        <h4 class="font-headline-md text-lg mb-1 group-hover:text-champagne transition-colors line-clamp-2">${title}</h4>
+        <p class="text-on-surface-variant text-sm mb-3 opacity-70">${category}</p>
+        <div class="font-display-accent text-xl text-ink">${displayPrice}</div>
+      </div>
     `;
   }
 
   function emptyCard() {
     return `
-      <article class="product-card product-empty">
-        <div class="product-body">
-          <h3>Aucun article trouvé</h3>
-          <p>Essayez une autre catégorie ou un autre mot-clé.</p>
-        </div>
-      </article>
+      <div class="col-span-full py-12 text-center bg-surface-variant/30 rounded-2xl border border-surface-variant/50">
+        <h3 class="font-display-accent text-2xl text-ink mb-2">Aucun article trouvÃ©</h3>
+        <p class="text-on-surface-variant">Essayez une autre catÃ©gorie ou un autre mot-clÃ©.</p>
+      </div>
     `;
   }
 
@@ -746,20 +744,57 @@
     return result;
   }
 
+  function renderB2B() {
+    const target = byId("b2b-grid");
+    if (!target) return;
+    const picks = catalogView.filter((item) => productCategory(item) === "Entreprise & B2B").slice(0, 4);
+    target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
+    announceRender(target);
+  }
+
   function renderFeatured() {
     const target = byId("featured-grid");
     if (!target) return;
 
-    const picks = [
-      ...catalogView.filter((item) => productCategory(item) === "Packs").slice(0, 2),
-      ...catalogView.filter((item) => productCategory(item) === "Tshirts").slice(0, 3),
-      ...catalogView.filter((item) => productCategory(item) === "Sacs").slice(0, 2),
-      ...catalogView.filter((item) => productCategory(item) === "Ensembles").slice(0, 1)
-    ];
+    // Obtenir toutes les catÃ©gories uniques
+    const allCategories = [...new Set(catalogView.map(item => productCategory(item)))];
+    let picks = [];
+    
+    // MÃ©langer un tableau (Fisher-Yates)
+    const shuffle = (array) => {
+        let currentIndex = array.length, randomIndex;
+        while (currentIndex != 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
+    };
+
+    // Prendre au moins un article de chaque catÃ©gorie
+    let remainingItems = [...catalogView];
+    shuffle(allCategories).forEach(cat => {
+        const catItems = remainingItems.filter(item => productCategory(item) === cat);
+        if (catItems.length > 0 && picks.length < 10) {
+            const picked = catItems[Math.floor(Math.random() * catItems.length)];
+            picks.push(picked);
+            remainingItems = remainingItems.filter(item => item.id !== picked.id);
+        }
+    });
+
+    // ComplÃ©ter jusqu'Ã  10 avec des articles alÃ©atoires du reste du catalogue
+    if (picks.length < 10) {
+        shuffle(remainingItems);
+        picks = picks.concat(remainingItems.slice(0, 10 - picks.length));
+    }
+
+    // MÃ©langer les picks finaux pour ne pas avoir toujours le mÃªme ordre de catÃ©gories
+    shuffle(picks);
 
     target.innerHTML = picks.map((item, index) => productCard(item, true, index < 4)).join("");
     announceRender(target);
   }
+
 
   function renderCuratedGrid(id, predicate, limit = 8) {
     const target = byId(id);
@@ -808,7 +843,7 @@
 
     const count = byId("result-count");
     if (count) {
-      count.textContent = `${visible.length} article${visible.length > 1 ? "s" : ""} affiché${visible.length > 1 ? "s" : ""} sur ${result.length}`;
+      count.textContent = `${visible.length} article${visible.length > 1 ? "s" : ""} affiché${visible.length > 1 ? 's' : ''} sur ${result.length}`;
     }
   }
 
@@ -816,40 +851,101 @@
     const target = byId("filter-list");
     if (!target) return;
 
-    const visibleCategories = categories.filter((category) => category === "Tous" || (categoryCounts[category] || 0) > 0);
-    const categoryButtons = visibleCategories.map((category) => {
-      const count = category === "Tous" ? catalogView.length : (categoryCounts[category] || 0);
-      return `<button class="filter-btn${category === state.category ? " active" : ""}" type="button" data-category="${category}">${labels[category]} (${count})</button>`;
-    }).join("");
-
-    const subcategoryEntries = catalogView.reduce((counts, item) => {
-      if (state.category === "Tous" || !categoryMatches(item, state.category)) return counts;
-      const subcategory = productSubcategory(item);
-      if (subcategory === "Tous") return counts;
-      counts[subcategory] = (counts[subcategory] || 0) + 1;
-      return counts;
-    }, {});
-    const subcategories = Object.keys(subcategoryEntries).sort((a, b) => {
-      return (subcategoryLabels[a] || a).localeCompare(subcategoryLabels[b] || b);
+    const families = {};
+    Object.keys(categoryFamilies).forEach(fam => families[fam] = { categories: [], total: 0 });
+    families["AUTRES"] = { categories: [], total: 0 };
+    
+    const validCategories = categories.filter((category) => category !== "Tous" && (categoryCounts[category] || 0) > 0);
+    validCategories.forEach(cat => {
+        const fam = getFamilyForCategory(cat);
+        const count = categoryCounts[cat] || 0;
+        if (!families[fam]) families[fam] = { categories: [], total: 0 };
+        families[fam].categories.push({ name: cat, count: count });
+        families[fam].total += count;
     });
-    const subcategoryButtons = subcategories.length > 1
-      ? `
-        <div class="filter-group">
-          <strong class="filter-subtitle">Sous-catégories</strong>
-          <button class="filter-btn${state.subcategory === "Tous" ? " active" : ""}" type="button" data-subcategory="Tous">Toutes (${categoryCounts[state.category] || 0})</button>
-          ${subcategories.map((subcategory) => (
-            `<button class="filter-btn${subcategory === state.subcategory ? " active" : ""}" type="button" data-subcategory="${subcategory}">${subcategoryLabels[subcategory] || subcategory} (${subcategoryEntries[subcategory]})</button>`
-          )).join("")}
-        </div>
-      `
-      : "";
+
+    if (state.category !== "Tous" && !state.openFamily) {
+        state.openFamily = getFamilyForCategory(state.category);
+    }
+
+    const tousCount = catalogView.length;
+    const tousActive = state.category === "Tous";
+    const tousBtn = `
+        <button class="filter-btn group flex items-center justify-between w-full p-3.5 mb-6 rounded-xl transition-all duration-300 cursor-pointer ${tousActive ? 'bg-[#775a19] text-white shadow-md shadow-primary/20 scale-[1.02]' : 'bg-surface-variant/30 text-ink hover:bg-surface-variant'}" type="button" data-category="Tous">
+            <span class="font-bold tracking-wide">Tous les articles</span>
+            <span class="text-xs px-2.5 py-1 rounded-full font-bold ${tousActive ? 'bg-white/20 text-white' : 'bg-white text-primary shadow-sm'}">${tousCount}</span>
+        </button>
+    `;
+
+    let familiesHtml = "";
+    Object.keys(families).forEach(famName => {
+        const famData = families[famName];
+        if (famData.categories.length === 0) return;
+        
+        const isOpen = state.openFamily === famName;
+        
+        const majorCats = [];
+        const minorCats = [];
+        famData.categories.forEach(c => {
+            if (c.count <= 3) minorCats.push(c);
+            else majorCats.push(c);
+        });
+        
+        let catsHtml = "";
+        const renderCat = (c) => {
+            const isActive = state.category === c.name;
+            return `
+                <button class="filter-btn group flex items-center justify-between w-full py-2.5 px-4 rounded-lg transition-all duration-300 cursor-pointer text-body-md ${isActive ? 'bg-[#f8f1e3] border-l-4 border-primary text-primary font-bold shadow-sm' : 'text-ink hover:bg-surface-variant/50 hover:pl-5 border-l-4 border-transparent'}" type="button" data-category="${c.name}">
+                    <span>${labels[c.name] || c.name}</span>
+                    <span class="text-xs px-2 py-0.5 rounded-full transition-colors ${isActive ? 'bg-primary text-white' : 'bg-surface-variant text-muted group-hover:bg-white group-hover:text-primary group-hover:shadow-sm'}">${c.count}</span>
+                </button>
+            `;
+        };
+        
+        majorCats.forEach(c => catsHtml += renderCat(c));
+        
+        if (minorCats.length > 0) {
+            const hasActiveMinor = minorCats.some(c => c.name === state.category);
+            catsHtml += `
+                <details class="group/details mt-1" ${hasActiveMinor ? 'open' : ''}>
+                    <summary class="flex items-center gap-2 cursor-pointer text-sm font-medium text-muted hover:text-primary hover:bg-surface-variant/30 px-4 py-2 rounded-lg list-none [&::-webkit-details-marker]:hidden transition-colors">
+                        <span class="material-symbols-outlined text-[18px] group-open/details:rotate-180 transition-transform duration-300">expand_more</span>
+                        Voir ${minorCats.length} autres
+                    </summary>
+                    <div class="pl-2 mt-1 space-y-1 relative before:content-[''] before:absolute before:left-6 before:top-0 before:bottom-2 before:w-px before:bg-line">
+                        ${minorCats.map(c => renderCat(c)).join("")}
+                    </div>
+                </details>
+            `;
+        }
+
+        familiesHtml += `
+            <div class="border-b border-line/50 last:border-0 pb-3 mb-3">
+                <button class="family-toggle flex items-center justify-between w-full py-3 px-2 text-left group rounded-lg hover:bg-surface-variant/20 transition-colors" data-family="${famName}">
+                    <span class="font-bold text-[13px] uppercase tracking-widest transition-colors ${isOpen ? 'text-primary' : 'text-on-surface-variant group-hover:text-primary'}">${famName}</span>
+                    <div class="flex items-center gap-2 transition-colors ${isOpen ? 'text-primary' : 'text-muted group-hover:text-primary'}">
+                        <span class="text-[11px] px-2 py-0.5 rounded-full font-bold ${isOpen ? 'bg-primary/10 text-primary' : 'bg-surface-variant text-muted'}">${famData.total}</span>
+                        <span class="material-symbols-outlined transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}">expand_more</span>
+                    </div>
+                </button>
+                <div class="grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}">
+                    <div class="overflow-hidden">
+                        <div class="space-y-1 pb-2">
+                            ${catsHtml}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
 
     target.innerHTML = `
-      <div class="filter-group">
-        <strong class="filter-subtitle">Types d'articles</strong>
-        ${categoryButtons}
+      <div class="space-y-1">
+        ${tousBtn}
+        <div class="px-1">
+            ${familiesHtml}
+        </div>
       </div>
-      ${subcategoryButtons}
     `;
   }
 
@@ -1077,7 +1173,7 @@
 
   function defaultReviews(item) {
     const category = productCategory(item);
-    if (category === "Packs") {
+    if (category === "Packs & Idées Cadeaux") {
       return [
         { name: "Clarisse", rating: 5, text: "Le pack est bien assorti, pratique et pret a offrir." },
         { name: "Nadine", rating: 5, text: "J'aime le fait que tout soit coordonne sans chercher." }
@@ -1440,7 +1536,7 @@
     }
 
     const cart = byId("lightbox-cart");
-    if (cart) cart.textContent = "Ajouter au panier";
+    if (cart) cart.textContent = "Pré-commander";
     renderOrderOptions(item);
     renderReviews(item);
     renderShareButtons(item);
@@ -1486,117 +1582,187 @@
   function bindEvents() {
     document.addEventListener("catalog:source-change", updateCatalogSourceLabel);
 
-
-
-    document.addEventListener("click", (event) => {
-      const categoryButton = event.target.closest("[data-category]");
-      if (categoryButton && categoryButton.classList.contains("filter-btn")) {
-        state.category = categoryButton.dataset.category;
-        state.subcategory = "Tous";
-        resetVisibleLimit();
-        renderFilters();
-        renderShop();
-      }
-
-      const subcategoryButton = event.target.closest("[data-subcategory]");
-      if (subcategoryButton && subcategoryButton.classList.contains("filter-btn")) {
-        state.subcategory = subcategoryButton.dataset.subcategory;
-        resetVisibleLimit();
-        renderFilters();
-        renderShop();
-      }
-
-      const openButton = event.target.closest("[data-open-product]");
-      if (openButton) {
-        openProduct(openButton.dataset.openProduct);
-      }
-
-      if (event.target.closest("[data-close-lightbox]")) {
-        closeProduct();
-      }
-
-      const colorButton = event.target.closest("[data-color]");
-      if (colorButton) {
-        orderState.color = colorButton.dataset.color;
-        document.querySelectorAll("[data-color]").forEach((button) => {
-          button.classList.toggle("active", button.dataset.color === orderState.color);
-        });
-        applyPreviewCrop();
-        updateOrderLink();
-      }
-
-      const sizeButton = event.target.closest("[data-size]");
-      if (sizeButton) {
-        const size = sizeButton.dataset.size;
-        const selected = new Set(orderState.sizes);
-        if (selected.has(size) && selected.size > 1) {
-          selected.delete(size);
-          delete orderState.sizeQuantities[size];
-        } else {
-          selected.add(size);
-          orderState.sizeQuantities[size] = orderState.sizeQuantities[size] || 1;
-        }
-        orderState.sizes = sizeOptionsFor(orderState.item).filter((option) => selected.has(option));
-        renderOrderOptions(orderState.item);
-      }
-
-      const shoeSizeButton = event.target.closest("[data-shoe-size]");
-      if (shoeSizeButton) {
-        const size = shoeSizeButton.dataset.shoeSize;
-        const selected = new Set(orderState.shoeSizes);
-        if (selected.has(size) && selected.size > 1) {
-          selected.delete(size);
-          delete orderState.shoeSizeQuantities[size];
-        } else {
-          selected.add(size);
-          orderState.shoeSizeQuantities[size] = orderState.shoeSizeQuantities[size] || 1;
-        }
-        orderState.shoeSizes = shoeSizeOptions.filter((option) => selected.has(option));
-        renderOrderOptions(orderState.item);
-      }
-
-      const sizeQuantityButton = event.target.closest("[data-size-quantity-step]");
-      if (sizeQuantityButton) {
-        const size = sizeQuantityButton.dataset.sizeQuantity;
-        const input = document.querySelector(`[data-size-quantity-input="${size}"]`);
-        const current = Math.max(1, Number(orderState.sizeQuantities[size]) || 1);
-        const nextQuantity = Math.max(1, Math.min(99, current + Number(sizeQuantityButton.dataset.sizeQuantityStep)));
-        orderState.sizeQuantities[size] = nextQuantity;
-        if (input) input.value = String(nextQuantity);
-        updateOrderLink();
-      }
-
-      const shoeSizeQuantityButton = event.target.closest("[data-shoe-size-quantity-step]");
-      if (shoeSizeQuantityButton) {
-        const size = shoeSizeQuantityButton.dataset.shoeSizeQuantity;
-        const input = document.querySelector(`[data-shoe-size-quantity-input="${size}"]`);
-        const current = Math.max(1, Number(orderState.shoeSizeQuantities[size]) || 1);
-        const nextQuantity = Math.max(1, Math.min(99, current + Number(shoeSizeQuantityButton.dataset.shoeSizeQuantityStep)));
-        orderState.shoeSizeQuantities[size] = nextQuantity;
-        if (input) input.value = String(nextQuantity);
-        updateOrderLink();
-      }
-
-      const quantityButton = event.target.closest("[data-quantity-step]");
-      if (quantityButton) {
-        const input = byId("quantity-input");
-        const nextQuantity = Math.max(1, Math.min(99, orderState.quantity + Number(quantityButton.dataset.quantityStep)));
-        orderState.quantity = nextQuantity;
-        if (input) input.value = String(nextQuantity);
-        updateOrderLink();
-      }
-
-      if (event.target.closest("#lightbox-cart")) {
-        addCurrentItemToCart();
-      }
-
-      if (event.target.closest("[data-share-native]")) {
-        shareCurrentItem();
-      }
-    });
+    // Mobile Drawer Logic
+    const mobileDrawer = document.getElementById("mobile-filter-drawer");
+    const mobileBackdrop = document.getElementById("mobile-filter-backdrop");
+    
+    function openMobileFilters() {
+        if (!mobileDrawer || !mobileBackdrop) return;
+        mobileBackdrop.classList.remove("hidden");
+        setTimeout(() => mobileBackdrop.classList.replace("opacity-0", "opacity-100"), 10);
+        mobileDrawer.classList.replace("-translate-x-full", "translate-x-0");
+        document.body.style.overflow = "hidden";
+    }
+    
+    function closeMobileFilters() {
+        if (!mobileDrawer || !mobileBackdrop) return;
+        mobileBackdrop.classList.replace("opacity-100", "opacity-0");
+        mobileDrawer.classList.replace("translate-x-0", "-translate-x-full");
+        setTimeout(() => mobileBackdrop.classList.add("hidden"), 300);
+        document.body.style.overflow = "";
+    }
 
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") closeProduct();
+        if (event.key === "Escape") {
+            closeProduct();
+            closeMobileFilters();
+        }
+    });
+
+    document.addEventListener("click", (event) => {
+        // Mobile Drawer Toggles
+        if (event.target.closest("#open-mobile-filters")) openMobileFilters();
+        if (event.target.closest("#close-mobile-filters") || event.target.closest("#mobile-filter-backdrop") || event.target.closest("#apply-mobile-filters")) {
+            closeMobileFilters();
+        }
+        if (event.target.closest("#reset-mobile-filters")) {
+            state.category = "Tous";
+            state.subcategory = "Tous";
+            state.query = "";
+            const searchInput = document.getElementById("catalog-search");
+            if (searchInput) searchInput.value = "";
+            resetVisibleLimit();
+            renderFilters();
+            renderShop();
+            closeMobileFilters();
+            return;
+        }
+
+        // Family Accordion Toggle
+        const familyToggle = event.target.closest(".family-toggle");
+        if (familyToggle) {
+            const famName = familyToggle.dataset.family;
+            state.openFamily = state.openFamily === famName ? null : famName;
+            renderFilters();
+            return;
+        }
+
+        const categoryButton = event.target.closest("[data-category]");
+        if (categoryButton && categoryButton.classList.contains("filter-btn")) {
+          state.category = categoryButton.dataset.category;
+          state.subcategory = "Tous";
+          state.openFamily = getFamilyForCategory(state.category); // Open family of selected category
+          resetVisibleLimit();
+          renderFilters();
+          renderShop();
+        }
+
+        const subcategoryButton = event.target.closest("[data-subcategory]");
+        if (subcategoryButton && subcategoryButton.classList.contains("filter-btn")) {
+          state.subcategory = subcategoryButton.dataset.subcategory;
+          resetVisibleLimit();
+          renderFilters();
+          renderShop();
+        }
+
+        const openButton = event.target.closest("[data-open-product]");
+        if (openButton) {
+          openProduct(openButton.dataset.openProduct);
+        }
+
+        if (event.target.closest("[data-close-lightbox]")) {
+          closeProduct();
+        }
+
+        const colorButton = event.target.closest("[data-color]");
+        if (colorButton) {
+          orderState.color = colorButton.dataset.color;
+          document.querySelectorAll("[data-color]").forEach((button) => {
+             button.classList.remove("active");
+          });
+          colorButton.classList.add("active");
+          applyPreviewCrop();
+          updateOrderLink();
+          // Sync thumbnail active state
+          const visual = byId("lightbox-visual");
+          if (visual) {
+            const thumbs = visual.querySelectorAll(".lightbox-thumb");
+            thumbs.forEach(t => t.classList.remove("active"));
+          }
+        }
+
+        // ── Size selection (clothing) ──────────────────────
+        const sizeBtn = event.target.closest("[data-size]");
+        if (sizeBtn && !sizeBtn.closest("[data-shoe-size]")) {
+          const size = sizeBtn.dataset.size;
+          if (orderState.sizes.includes(size)) {
+            if (orderState.sizes.length > 1) {
+              orderState.sizes = orderState.sizes.filter(s => s !== size);
+              delete orderState.sizeQuantities[size];
+            }
+          } else {
+            orderState.sizes.push(size);
+            orderState.sizeQuantities[size] = 1;
+          }
+          renderOrderOptions(orderState.item);
+        }
+
+        // ── Shoe size selection ────────────────────────────
+        const shoeSizeBtn = event.target.closest("[data-shoe-size]");
+        if (shoeSizeBtn && !shoeSizeBtn.closest("[data-shoe-size-quantity]") && !shoeSizeBtn.closest("[data-shoe-size-quantity-step]")) {
+          const size = shoeSizeBtn.dataset.shoeSize;
+          if (orderState.shoeSizes.includes(size)) {
+            if (orderState.shoeSizes.length > 1) {
+              orderState.shoeSizes = orderState.shoeSizes.filter(s => s !== size);
+              delete orderState.shoeSizeQuantities[size];
+            }
+          } else {
+            orderState.shoeSizes.push(size);
+            orderState.shoeSizeQuantities[size] = 1;
+          }
+          renderOrderOptions(orderState.item);
+        }
+
+        // ── Quantity stepper (non-clothing items) ──────────
+        const qtyStepBtn = event.target.closest("[data-quantity-step]");
+        if (qtyStepBtn) {
+          const step = parseInt(qtyStepBtn.dataset.quantityStep, 10);
+          orderState.quantity = Math.max(1, Math.min(99, orderState.quantity + step));
+          const qtyInput = byId("quantity-input");
+          if (qtyInput) qtyInput.value = orderState.quantity;
+          updateOrderLink();
+        }
+
+        // ── Size quantity stepper ──────────────────────────
+        const sizeQtyBtn = event.target.closest("[data-size-quantity-step]");
+        if (sizeQtyBtn) {
+          const size = sizeQtyBtn.dataset.sizeQuantity;
+          const step = parseInt(sizeQtyBtn.dataset.sizeQuantityStep, 10);
+          const current = Number(orderState.sizeQuantities[size]) || 1;
+          orderState.sizeQuantities[size] = Math.max(1, Math.min(99, current + step));
+          const input = document.querySelector(`[data-size-quantity-input="${size}"]`);
+          if (input) input.value = orderState.sizeQuantities[size];
+          updateOrderLink();
+        }
+
+        // ── Shoe size quantity stepper ─────────────────────
+        const shoeSizeQtyBtn = event.target.closest("[data-shoe-size-quantity-step]");
+        if (shoeSizeQtyBtn) {
+          const size = shoeSizeQtyBtn.dataset.shoeSizeQuantity;
+          const step = parseInt(shoeSizeQtyBtn.dataset.shoeSizeQuantityStep, 10);
+          const current = Number(orderState.shoeSizeQuantities[size]) || 1;
+          orderState.shoeSizeQuantities[size] = Math.max(1, Math.min(99, current + step));
+          const input = document.querySelector(`[data-shoe-size-quantity-input="${size}"]`);
+          if (input) input.value = orderState.shoeSizeQuantities[size];
+          updateOrderLink();
+        }
+
+        // ── Pré-commander → Add to cart ────────────────────
+        if (event.target.closest("#lightbox-cart")) {
+          addCurrentItemToCart();
+          const cart = byId("lightbox-cart");
+          if (cart) {
+            const originalText = cart.textContent;
+            cart.textContent = "✓ Ajouté au panier !";
+            cart.style.background = "#c5a059";
+            cart.style.color = "#fff";
+            setTimeout(() => {
+              cart.textContent = originalText;
+              cart.style.background = "";
+              cart.style.color = "";
+            }, 2000);
+          }
+        }
     });
 
     const search = byId("catalog-search");
@@ -1613,9 +1779,19 @@
     }
 
     const sort = byId("catalog-sort");
+    const sortSelectMobile = byId("catalog-sort-mobile");
     if (sort) {
       sort.addEventListener("change", (event) => {
         state.sort = event.target.value;
+        if (sortSelectMobile) sortSelectMobile.value = state.sort;
+        resetVisibleLimit();
+        renderShop();
+      });
+    }
+    if (sortSelectMobile) {
+      sortSelectMobile.addEventListener("change", (e) => {
+        state.sort = e.target.value;
+        if (sort) sort.value = state.sort;
         resetVisibleLimit();
         renderShop();
       });
@@ -1626,7 +1802,6 @@
       price.addEventListener("change", (event) => {
         state.price = event.target.value;
         resetVisibleLimit();
-        renderShop();
       });
     }
 
@@ -1699,6 +1874,8 @@
     updateCounts();
     updateCatalogSourceLabel();
     renderFeatured();
+    renderB2B();
+    renderB2B();
     renderCommercialSections();
     renderFilters();
     renderShop();
@@ -1732,5 +1909,12 @@
     renderAll();
     bindEvents();
     openProductFromHash();
+    
+    // Refresh featured products every 10 minutes (600000 ms)
+    setInterval(() => {
+      if (document.getElementById("featured-grid")) {
+        renderFeatured();
+      }
+    }, 600000);
   });
 })();

@@ -1,375 +1,576 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROSBRI DESIGN - Mode personnalisée au Cameroun</title>
-  <meta name="description" content="ROSBRI DESIGN crée des vêtements et accessoires personnalisés au Cameroun: culture camerounaise, cadeaux famille, t-shirts sur mesure et articles disponibles.">
-  <link rel="canonical" href="https://rosbridesign.ateliersdepaul.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="ROSBRI DESIGN - Mode personnalisée au Cameroun">
-  <meta property="og:description" content="T-shirts, casquettes, cadeaux et articles personnalisés inspirés de la culture camerounaise.">
-  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/">
-  <meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preload" as="image" href="images/brand/rosbri-wax-design-logo.jpg">
-  <link rel="preload" as="image" href="images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png">
-  <link rel="preload" as="image" href="images/articles-site/sacs/variants/sac-rosbri-wax-29.png">
-  <link rel="stylesheet" href="styles.css?v=20260604">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "ROSBRI DESIGN",
-      "url": "https://rosbridesign.ateliersdepaul.com/",
-      "image": "https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Douala",
-        "addressCountry": "CM"
-      },
-      "priceRange": "4 500 FCFA - 8 500 FCFA",
-      "description": "Mode personnalisée, t-shirts, sacs, casquettes et cadeaux au Cameroun."
-    }
-  </script>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rosbri Wax Design | Mode Afritude Luxe & Cadeaux Sur-Mesure</title>
+<meta name="description" content="Découvrez les créations exclusives Rosbri Wax Design : T-shirts Héritage, vêtements Afritude Luxe, sacs, babouches et cadeaux personnalisés faits main au Cameroun."/>
+<meta property="og:title" content="Rosbri Wax Design | Mode Afritude Luxe & Cadeaux Sur-Mesure"/>
+<meta property="og:description" content="Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage africain."/>
+<meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg"/>
+<meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Rosbri Wax Design | Afritude Luxe"/>
+<meta name="twitter:description" content="Mode Afritude Luxe et cadeaux d'exception façonnés à la main au Cameroun."/>
+<meta name="twitter:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Playfair+Display:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "background": "#faf9fe",
+                "on-secondary-fixed": "#1a1b1e",
+                "on-surface-variant": "#4e4639",
+                "on-secondary-container": "#646468",
+                "error": "#ba1a1a",
+                "primary": "#775a19",
+                "surface-variant": "#e3e2e7",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#e3e2e7",
+                "surface-tint": "#775a19",
+                "tertiary-fixed-dim": "#c9c6c1",
+                "secondary-container": "#e3e2e6",
+                "on-tertiary-fixed": "#1c1c18",
+                "primary-fixed-dim": "#e9c176",
+                "on-secondary": "#ffffff",
+                "on-error-container": "#93000a",
+                "inverse-on-surface": "#f1f0f5",
+                "on-primary": "#ffffff",
+                "secondary": "#5e5e62",
+                "outline": "#7f7667",
+                "on-primary-fixed-variant": "#5d4201",
+                "outline-variant": "#d1c5b4",
+                "on-primary-container": "#4e3700",
+                "surface-container-high": "#e8e7ec",
+                "tertiary-fixed": "#e5e2dc",
+                "tertiary-container": "#a7a5a0",
+                "on-tertiary-fixed-variant": "#474743",
+                "primary-container": "#c5a059",
+                "inverse-primary": "#e9c176",
+                "surface-container-low": "#f4f3f8",
+                "on-tertiary-container": "#3b3b37",
+                "secondary-fixed-dim": "#c7c6ca",
+                "error-container": "#ffdad6",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#faf9fe",
+                "inverse-surface": "#2f3034",
+                "on-error": "#ffffff",
+                "secondary-fixed": "#e3e2e6",
+                "surface-container": "#eeedf2",
+                "on-primary-fixed": "#261900",
+                "on-background": "#1a1c1f",
+                "on-secondary-fixed-variant": "#46474a",
+                "on-surface": "#1a1c1f",
+                "surface": "#faf9fe",
+                "tertiary": "#5f5e5a",
+                "surface-dim": "#dad9de",
+                "primary-fixed": "#ffdea5",
+                "ink": "#1a1c1f",
+                "champagne": "#c5a059",
+                "cream": "#faf9fe",
+                "paper": "#fbf8f2"
+            },
+            "fontFamily": {
+                "body-lg": ["Inter", "sans-serif"],
+                "body-md": ["Inter", "sans-serif"],
+                "label-sm": ["Inter", "sans-serif"],
+                "headline-md": ["Inter", "sans-serif"],
+                "display-accent": ["Playfair Display", "serif"],
+                "headline-lg": ["Inter", "sans-serif"]
+            },
+            "spacing": {
+                "gutter": "24px",
+                "stack-sm": "1rem",
+                "stack-md": "1.5rem",
+                "stack-lg": "2.5rem",
+                "margin-lg": "4rem",
+                "margin-md": "2rem",
+                "xl": "48px",
+                "xxl": "80px"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(26, 28, 31, 0.08);
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        .wax-pattern-bg {
+            background-image: url("images/brand/rosbri-wax-design-logo.jpg");
+            background-size: 150px;
+            background-repeat: repeat;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .geometric-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #c5a059, transparent);
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        /* Shader Background */
+        #background-shader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        /* Afritude Flair Animations */
+        @keyframes floating {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .afritude-watermark {
+            position: absolute;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 0;
+            animation: floating 8s ease-in-out infinite;
+            filter: grayscale(1) brightness(0);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .product-card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .product-card-hover:hover {
+            transform: scale(1.03) translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        section { position: relative; }
+    </style>
 </head>
-<body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <div class="notice-band">
-    <div class="container notice-inner">
-      <div><span>Nouveau:</span> le catalogue complet ROSBRI est disponible en ligne.</div>
-      <a href="boutique.html">Voir les modèles</a>
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white pt-20">
+<canvas height="3693" id="background-shader" width="1280"></canvas>
+<!-- 1. TopNavBar -->
+<header class="fixed top-0 w-full bg-cream/95 backdrop-blur-md z-50 border-b border-surface-variant/50 transition-all duration-300">
+    <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img alt="Logo" class="h-10 w-auto group-hover:scale-105 transition-transform" src="images/brand/rosbri-wax-design-logo.jpg">
+            <span class="font-display-accent text-2xl font-bold tracking-tight text-ink">ROSBRI DESIGN</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="index.html">Accueil</a>
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html">Boutique</a>
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="collections.html">Collections</a>
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html?categorie=Entreprise%20%26%20B2B">B2B</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors">search</span>
+            <div class="relative">
+                <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors" onclick="toggleCart()">shopping_bag</span>
+                <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-champagne text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full" style="display:none;">0</span>
+            </div>
+            <span class="material-symbols-outlined md:hidden cursor-pointer">menu</span>
+        </div>
+    </div>
+</header>
+<main class="pt-20">
+<!-- 2. Hero Section -->
+<section class="relative min-h-[800px] flex items-center px-margin-lg py-stack-lg max-w-[1280px] mx-auto overflow-hidden">
+<div class="absolute inset-0 wax-pattern-bg"></div>
+<img alt="Handbag Watermark" class="afritude-watermark top-20 -right-20 w-96 h-96 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-delay: -2s;"/>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full relative z-10">
+<div class="order-2 md:order-1 animate-fade-in-up">
+<span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-4 block">Élégance Artisanale</span>
+<h1 class="font-display-accent text-5xl md:text-6xl mb-stack-sm leading-tight">
+                        Un Design qui Raconte <br/><span class="text-champagne italic">Votre Héritage</span>
+</h1>
+<p class="font-body-lg text-on-surface-variant mb-stack-lg max-w-md">
+                        Des cadeaux personnalisés premium et des packs d'entreprise imprégnés de la chaleur de l'artisanat wax. Sublimez vos présents avec un luxe africain raffiné.
+                    </p>
+<button class="bg-ink text-on-primary font-label-sm uppercase tracking-widest px-10 py-5 rounded-full hover:bg-champagne transition-all duration-300 shadow-lg">
+                        Découvrir la Collection
+                    </button>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="aspect-square rounded-xl overflow-hidden soft-shadow bg-surface-container border-4 border-white">
+<img alt="A high-end, minimalist luxury gift box featuring champagne gold foil personalized lettering on the lid." class="w-full h-full object-cover" src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png"/>
+</div>
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-champagne/10 rounded-full -z-10 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- 3. Navigation Commerciale -->
+<section class="bg-surface-container-low/50 py-stack-lg px-margin-lg relative overflow-hidden transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<img alt="Motif discret en filigrane pour habiller l'arrière-plan" class="afritude-watermark -left-32 bottom-20 w-80 h-80 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-duration: 12s;"/>
+<div class="max-w-[1280px] mx-auto relative z-10">
+<div class="text-center mb-12">
+<h2 class="font-display-accent text-4xl text-ink mb-4">Que souhaitez-vous créer ?</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Découvrez les univers Rosbri Design et trouvez rapidement les articles adaptés à votre projet.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Carte 1 : Personnalisation -->
+<a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20personnaliser%20un%20article." class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne focus:ring-offset-4 focus:ring-offset-surface-container-low">
+<img src="images/articles-site/navigation/nav-personnalisation.png" alt="Exemple d'article personnalisé de haute qualité avec un prénom élégamment imprimé." class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+<h3 class="font-display-accent text-3xl text-white mb-2">Personnalisez votre article</h3>
+<p class="font-body-sm text-white/90 mb-6">Transformez votre idée en une création unique avec votre prénom, votre photo, votre message ou votre logo.</p>
+<span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white">
+Commencer une personnalisation
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</span>
+</div>
+</a>
+
+<!-- Carte 2 : Cadeaux -->
+<a href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne focus:ring-offset-4 focus:ring-offset-surface-container-low">
+<img src="images/articles-site/navigation/nav-cadeaux.png" alt="Composition de cadeaux artisanaux luxueux prêts à offrir, incluant carnets et bougies." class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+<h3 class="font-display-accent text-3xl text-white mb-2">Cadeaux & moments précieux</h3>
+<p class="font-body-sm text-white/90 mb-6">Trouvez un cadeau original pour un anniversaire, une fête, une cérémonie ou une personne qui compte.</p>
+<span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white">
+Découvrir les idées cadeaux
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</span>
+</div>
+</a>
+
+<!-- Carte 3 : Entreprise -->
+<a href="boutique.html?categorie=Entreprise%20%26%20B2B" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne focus:ring-offset-4 focus:ring-offset-surface-container-low md:col-span-2 lg:col-span-1 md:w-1/2 md:mx-auto lg:w-full lg:mx-0">
+<img src="images/articles-site/navigation/nav-entreprise.png" alt="Objets publicitaires d'entreprise élégants disposés sur une table de réunion." class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+<div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+<h3 class="font-display-accent text-3xl text-white mb-2">Entreprises & événements</h3>
+<p class="font-body-sm text-white/90 mb-6">Des textiles, objets et packs personnalisés pour vos équipes, associations, écoles et événements.</p>
+<span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white">
+Voir les solutions professionnelles
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. Our Philosophy Section -->
+<section class="py-xxl px-margin-lg bg-transparent relative overflow-hidden transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<img alt="Bracelet Watermark" class="afritude-watermark left-1/2 -translate-x-1/2 -top-20 w-[600px] h-[600px] bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-duration: 20s; opacity: 0.04;"/>
+<div class="max-w-[800px] mx-auto text-center py-stack-lg relative z-10">
+<div class="flex justify-center mb-stack-sm">
+<img alt="Logo Motif" class="h-16 w-auto opacity-80" src="images/brand/rosbri-wax-design-logo.jpg"/>
+</div>
+<h2 class="font-display-accent text-4xl mb-stack-md leading-tight text-ink">L'Âme du Cadeau Significatif</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                    Chez Rosbri Wax Design, nous célébrons la rencontre entre le luxe moderne et l'héritage culturel. Chaque création est un hommage au savoir-faire du passé, repensé pour le monde contemporain. Notre identité &quot;Afritude Luxe&quot; marie les matériaux nobles à l'esprit vibrant de la chaleur artisanale.
+                </p>
+<div class="geometric-divider"></div>
+<div class="mt-stack-lg flex flex-wrap justify-center gap-12">
+<div class="text-center">
+<div class="font-display-accent text-3xl text-champagne">100%</div>
+<div class="font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Création Sur-Mesure</div>
+</div>
+<div class="text-center">
+<div class="font-display-accent text-3xl text-champagne">05k+</div>
+<div class="font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Histoires Partagées</div>
+</div>
+<div class="text-center">
+<div class="font-display-accent text-3xl text-champagne">Matériaux</div>
+<div class="font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Nobles</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Product Grid -->
+<section class="pb-xxl px-margin-lg max-w-[1280px] mx-auto relative transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<img alt="T-Shirt Watermark" class="afritude-watermark -right-40 bottom-40 w-96 h-96 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-delay: -5s;"/>
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-4 relative z-10">
+<div>
+<h2 class="font-display-accent text-3xl">Nos Créations Signatures</h2>
+<p class="text-on-surface-variant">Nos articles artisanaux les plus appréciés.</p>
+</div>
+<a class="text-champagne font-label-sm uppercase tracking-widest border-b-2 border-champagne pb-1 hover:text-ink hover:border-ink transition-all" href="#">Explorer la Boutique</a>
+</div>
+<div id="featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter relative z-10">
+  <!-- Rempli par catalog.js -->
+  </div>
+  </section>
+  <!-- 6. Corporate Section -->
+<section class="px-margin-lg mb-xxl max-w-[1280px] mx-auto transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<div class="relative rounded-2xl overflow-hidden bg-ink text-white p-margin-md md:p-margin-lg min-h-[500px] flex items-center">
+<div class="absolute inset-0 opacity-15 mix-blend-overlay">
+<img alt="Abstract paper textures" class="w-full h-full object-cover" src="images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png"/>
+</div>
+<div class="absolute inset-0 wax-pattern-bg !opacity-5"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full">
+<div>
+<span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-4 block">Solutions B2B</span>
+<h2 class="font-display-accent text-4xl mb-stack-sm leading-tight">La Référence des <br/>Cadeaux d'Affaires Premium</h2>
+<p class="font-body-md text-white/70 mb-stack-lg max-w-md">
+                            Exprimez votre reconnaissance à grande échelle avec des commandes sur-mesure et un marquage raffiné. Des nouvelles recrues à vos partenaires d'élite.
+                        </p>
+<button class="bg-champagne text-white font-label-sm uppercase tracking-widest px-10 py-5 rounded-full hover:bg-white hover:text-ink transition-all duration-300">
+                            Demander un Devis Sur-Mesure
+                        </button>
+</div>
+<div class="hidden md:flex justify-end">
+<div class="w-72 h-72 border-2 border-champagne/30 rounded-full flex items-center justify-center p-10 text-center relative overflow-hidden group">
+<div class="absolute inset-0 wax-pattern-bg group-hover:opacity-10 transition-opacity"></div>
+<span class="font-label-sm text-champagne uppercase tracking-widest leading-relaxed">Rejoignez plus de 200 partenaires d'excellence</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 7. Instagram Lookbook & Community (#RosbriStyle) -->
+<section class="px-margin-lg mb-xxl max-w-[1280px] mx-auto">
+  <div class="text-center mb-stack-lg">
+    <span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-2 block">Communauté & Inspiration</span>
+    <h2 class="font-display-accent text-4xl text-ink mb-2">#RosbriStyle sur Instagram</h2>
+    <p class="text-muted font-body-md max-w-lg mx-auto">Découvrez comment notre communauté porte et associe les créations ROSBRI DESIGN au quotidien.</p>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
+      <img src="images/articles-site/tshirts/heritage/variants/tshirt-reine-africaine-wax-orange.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
+        <span>📸 @aisha_k</span>
+      </div>
+    </div>
+    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
+      <img src="images/articles-site/sacs/variants/sac-rosbri-wax-01.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
+        <span>📸 @carine_m</span>
+      </div>
+    </div>
+    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
+      <img src="images/articles-site/tshirts/maman/variants/tshirt-merci-maman-meilleure-gris.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
+        <span>📸 @marc_yaounde</span>
+      </div>
+    </div>
+    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
+      <img src="images/articles-site/babouches/variants/babouches-rosbri-wax-05.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
+        <span>📸 @steve_dla</span>
+      </div>
+    </div>
+    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
+      <img src="images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-02.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
+        <span>📸 @family_goals</span>
+      </div>
+    </div>
+    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
+      <img src="images/articles-site/tshirts/heritage/variants/tshirt-luffy-feu-foudre-jaune.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
+        <span>📸 @otaku_cmr</span>
+      </div>
     </div>
   </div>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
-        <img src="images/brand/rosbri-wax-design-logo.jpg" alt="" width="48" height="48">
-        <span>ROSBRI DESIGN</span>
-      </a>
-      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
-        <a class="active" href="index.html">Accueil</a>
-        <a href="boutique.html">Boutique</a>
-        <a href="collections.html">Collections</a>
-        <a href="a_propos.html">À propos</a>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <div class="text-center mt-6">
+    <a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20soumettre%20une%20photo%20de%20ma%20création" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-champagne hover:text-ink transition-colors">
+      <span>Partagez votre style avec le hashtag #RosbriStyle</span>
+      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+  </div>
+</section>
+</main>
+<!-- 7. Footer -->
 
-  <main id="contenu">
-    <section class="hero">
-      <div class="hero-backdrop" aria-hidden="true">
-        <div class="hero-slide">
-          <img class="hero-slide-main" src="images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png" alt="">
-          <img class="hero-slide-card hero-slide-card-a" src="images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-gris.png" alt="">
-          <img class="hero-slide-card hero-slide-card-b" src="images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png" alt="">
-        </div>
-        <div class="hero-slide">
-          <img class="hero-slide-main" src="images/articles-site/sacs/variants/sac-rosbri-wax-29.png" alt="">
-          <img class="hero-slide-card hero-slide-card-a" src="images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-12.png" alt="">
-          <img class="hero-slide-card hero-slide-card-b" src="images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-01.png" alt="">
-        </div>
-        <div class="hero-slide">
-          <img class="hero-slide-main" src="images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png" alt="">
-          <img class="hero-slide-card hero-slide-card-a" src="images/articles-site/sacs/variants/sac-rosbri-wax-35.png" alt="">
-          <img class="hero-slide-card hero-slide-card-b" src="images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.png" alt="">
-        </div>
-      </div>
-      <div class="container">
-        <div class="hero-layout">
-          <div class="hero-content" data-reveal>
-            <p class="eyebrow">Création locale · Cameroun</p>
-            <h1>ROSBRI DESIGN</h1>
-            <p>Des t-shirts, casquettes et cadeaux personnalisés qui portent votre identité, vos racines et vos messages avec une finition prête à offrir.</p>
-            <div class="actions">
-              <a class="primary-btn" href="boutique.html">Voir les articles</a>
-              <a class="ghost-btn" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20passer%20une%20commande.%20Merci%20de%20m%E2%80%99indiquer%20les%20mod%C3%A8les%20disponibles%2C%20les%20tailles%20et%20les%20d%C3%A9lais%20de%20livraison.">Commander sur WhatsApp</a>
-            </div>
-            <div class="stats" aria-label="Chiffres clés">
-              <div class="stat">
-                <strong data-catalog-count>120</strong>
-                <span>modèles regroupés</span>
-              </div>
-              <div class="stat">
-                <strong>4</strong>
-                <span>univers de création</span>
-              </div>
-              <div class="stat">
-                <strong>Cameroun</strong>
-                <span>Livraison nationale rapide</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero-showcase" aria-label="Aperçu des créations ROSBRI DESIGN" data-reveal>
-            <div class="showcase-carousel">
-              <img class="showcase-frame" src="images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-gris.png" alt="T-shirt ROSBRI DESIGN cadeau pour maman">
-              <img class="showcase-frame" src="images/articles-site/sacs/variants/sac-rosbri-wax-29.png" alt="Pack sac ROSBRI DESIGN assorti">
-              <img class="showcase-frame" src="images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-12.png" alt="Ensemble enfant ROSBRI DESIGN">
-            </div>
-            <div class="showcase-stack">
-              <img src="images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png" alt="T-shirt ROSBRI DESIGN culture camerounaise">
-              <img src="images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.png" alt="T-shirt ROSBRI DESIGN personnalisé avec prénom">
-            </div>
-            <div class="showcase-note">
-              <strong>Atelier au Cameroun</strong>
-              <span>Choisissez un visuel, ajoutez votre touche, commandez sur WhatsApp.</span>
-            </div>
-          </div>
-        </div>
-        <div class="trust-row" aria-label="Avantages ROSBRI DESIGN">
-          <div class="trust-pill">
-            <strong>Catalogue clair</strong>
-            <span>Chaque visuel est classé pour trouver vite le bon modèle.</span>
-          </div>
-          <div class="trust-pill">
-            <strong>Commande guidée</strong>
-            <span>Le message WhatsApp se prépare avec la référence choisie.</span>
-          </div>
-          <div class="trust-pill">
-            <strong>Design local</strong>
-            <span>Créations pensées pour vous, cadeaux et événements.</span>
-          </div>
-          <div class="trust-pill">
-            <strong>Sur mesure</strong>
-            <span>Noms, logos, messages et couleurs selon votre besoin.</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<script>
+    // Background Shader Implementation
+    const canvas = document.getElementById('background-shader');
+    const gl = canvas.getContext('webgl');
 
-    <section class="section" id="collections" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Collections</p>
-            <h2>Un catalogue pensé pour offrir, porter et personnaliser.</h2>
-          </div>
-          <a class="primary-btn" href="boutique.html">Tout voir</a>
-        </div>
-        <div class="universe-grid">
-          <a class="universe" href="boutique.html?categorie=Tshirts&q=H%C3%A9ritage">
-            <img src="images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png" alt="T-shirt inspiration culture camerounaise" loading="lazy">
-            <div>
-              <h3>Héritage & Culture</h3>
-              <p>Des visuels inspirés des racines, de Kribi, d'Édéa et de la fierté africaine.</p>
-            </div>
-          </a>
-          <a class="universe" href="boutique.html?categorie=Tshirts&q=Maman">
-            <img src="images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-gris.png" alt="T-shirt cadeau pour maman" loading="lazy">
-            <div>
-              <h3>Maman & Famille</h3>
-              <p>Des cadeaux tendres, colorés et faciles à commander pour les moments qui comptent.</p>
-            </div>
-          </a>
-          <a class="universe" href="boutique.html?categorie=Tshirts&q=personnalis%C3%A9">
-            <img src="images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.png" alt="T-shirt personnalisé avec prénom" loading="lazy">
-            <div>
-              <h3>Sur mesure</h3>
-              <p>Prénoms, messages, logos et idées spéciales préparés pour votre événement.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+    const vertexShaderSource = `
+        attribute vec2 position;
+        varying vec2 v_texCoord;
+        void main() {
+            v_texCoord = position * 0.5 + 0.5;
+            v_texCoord.y = 1.0 - v_texCoord.y;
+            gl_Position = vec4(position, 0.0, 1.0);
+        }
+    `;
 
-    <section class="section white" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Sélection</p>
-            <h2>Articles phares</h2>
-            <p>Un aperçu rapide des styles disponibles. La boutique contient l’ensemble du catalogue en ligne.</p>
-          </div>
-        </div>
-        <div class="product-grid" id="featured-grid"></div>
-      </div>
-    </section>
+    const fragmentShaderSource = `
+        precision highp float;
+        uniform float u_time;
+        uniform vec2 u_resolution;
+        varying vec2 v_texCoord;
+        void main() {
+            vec2 uv = v_texCoord;
+            float dist = distance(uv, vec2(0.5 + 0.2 * sin(u_time * 0.5), 0.5 + 0.2 * cos(u_time * 0.3)));
+            float glow = smoothstep(0.8, 0.2, dist);
+            vec3 color1 = vec3(0.98, 0.97, 0.95); // Paper
+            vec3 color2 = vec3(0.85, 0.63, 0.35); // Refined Gold
+            vec3 finalColor = mix(color1, color2, glow * 0.05);
+            gl_FragColor = vec4(finalColor, 1.0);
+        }
+    `;
 
-    <section class="section commercial-showcase" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Nouveautés</p>
-            <h2>Les offres à découvrir en premier</h2>
-          </div>
-          <a class="secondary-btn" href="boutique.html?categorie=Nouveautes">Voir les nouveautés</a>
-        </div>
-        <div class="product-grid showcase-grid" id="launch-grid"></div>
-      </div>
-    </section>
+    function createShader(gl, type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        return shader;
+    }
 
-    <section class="section white commercial-showcase" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Packs populaires</p>
-            <h2>Des compositions prêtes à offrir</h2>
-          </div>
-          <a class="secondary-btn" href="boutique.html?categorie=Populaires">Voir les packs</a>
-        </div>
-        <div class="product-grid showcase-grid" id="popular-packs-grid"></div>
-      </div>
-    </section>
+    const program = gl.createProgram();
+    gl.attachShader(program, createShader(gl, gl.VERTEX_SHADER, vertexShaderSource));
+    gl.attachShader(program, createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource));
+    gl.linkProgram(program);
 
-    <section class="section commercial-showcase" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Personnalisation</p>
-            <h2>Créez un article qui vous ressemble</h2>
-          </div>
-          <a class="secondary-btn" href="boutique.html?categorie=CadeauxPersonnalises">Voir les produits</a>
-        </div>
-        <div class="product-grid showcase-grid" id="personalized-products-grid"></div>
-      </div>
-    </section>
+    const positionBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]), gl.STATIC_DRAW);
 
-    <section class="section white commercial-showcase" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Professionnels</p>
-            <h2>Entreprise et événement sur mesure</h2>
-          </div>
-          <a class="secondary-btn" href="boutique.html?categorie=Entreprise">Voir les solutions</a>
-        </div>
-        <div class="product-grid showcase-grid" id="business-events-grid"></div>
-      </div>
-    </section>
+    const positionLocation = gl.getAttribLocation(program, 'position');
+    const timeLocation = gl.getUniformLocation(program, 'u_time');
+    const resolutionLocation = gl.getUniformLocation(program, 'u_resolution');
 
-    <section class="section white" id="social-proof" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Avis Clients</p>
-            <h2>Ils portent Rosbri Design</h2>
-          </div>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"Commande facile sur WhatsApp et livraison rapide à Akwa. Le t-shirt Héritage est magnifique !"</p>
-            <strong>- Yannick M.</strong>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"J'ai commandé des t-shirts personnalisés pour l'anniversaire de ma mère. La qualité du tissu est top."</p>
-            <strong>- Carole N.</strong>
-          </div>
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"Le sac est arrivé en 10 jours comme promis. Le service client est très réactif."</p>
-            <strong>- Stéphane D.</strong>
-          </div>
-        </div>
-      </div>
-    </section>
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        gl.viewport(0, 0, canvas.width, canvas.height);
+    }
+    window.addEventListener('resize', resize);
+    resize();
 
-    <section class="section" id="faq" data-reveal>
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">FAQ</p>
-            <h2>Questions fréquentes</h2>
-          </div>
-        </div>
-        <div class="faq-accordion">
-          <details class="faq-item">
-            <summary>Comment se passe la livraison à Douala ?</summary>
-            <p>La livraison est assurée par nos coursiers moto partenaires. Dès que votre commande est prête, nous vous contactons pour convenir d'un lieu et d'une heure de livraison.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Dois-je payer avant de recevoir ma commande ?</summary>
-            <p>Pour les articles en stock, vous pouvez payer à la livraison. Pour les commandes 100% personnalisées (prénoms, logos spécifiques), nous demandons une avance de 50% par Mobile Money avant de lancer l'impression.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Puis-je personnaliser un article avec mon propre logo ?</summary>
-            <p>Absolument ! Envoyez-nous votre logo ou votre idée sur WhatsApp, notre équipe de design préparera une maquette numérique avant impression.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Comment choisir la bonne taille ?</summary>
-            <p>Nos t-shirts taillent normalement. Si vous avez un doute, indiquez-le nous lors de votre commande sur WhatsApp, nous vous guiderons avec un guide des tailles détaillé.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+    function render(time) {
+        gl.useProgram(program);
+        gl.enableVertexAttribArray(positionLocation);
+        gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
+        gl.uniform1f(timeLocation, time * 0.001);
+        gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+        requestAnimationFrame(render);
+    }
+    requestAnimationFrame(render);
 
-    <section class="section" id="propos" data-reveal>
-      <div class="container about">
-        <img src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png" alt="Sac cabas ROSBRI DESIGN" loading="lazy">
-        <div>
-          <p class="eyebrow">À propos</p>
-          <h2>L'art de l'identité, imprimé avec soin.</h2>
-          <p>ROSBRI DESIGN est une marque de mode camerounaise qui mélange créativité locale, culture camerounaise et personnalisation. Chaque article est pensé pour être clair, expressif et facile à commander.</p>
-          <p>Vous choisissez un modèle, une couleur ou une idée. ROSBRI prépare le visuel, confirme les détails avec vous, puis lance la production.</p>
-          <div class="benefits">
-            <div class="benefit">
-              <strong>Commande simple</strong>
-              <span>Contact direct par WhatsApp pour valider le modèle.</span>
-            </div>
-            <div class="benefit">
-              <strong>Personnalisation</strong>
-              <span>Ajout de nom, message, thème ou logo selon le besoin.</span>
-            </div>
-            <div class="benefit">
-              <strong>Finition cadeau</strong>
-              <span>Des visuels prêts pour anniversaire, fête des mères ou événement.</span>
-            </div>
-          </div>
-          <div class="actions">
-            <a class="primary-btn" href="boutique.html">Parcourir la boutique</a>
-            <a class="primary-btn" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20un%20devis%20pour%20une%20personnalisation%20sur%20mesure%20(nom%2C%20message%20ou%20logo).%0AMerci%20de%20me%20recontacter%20avec%20le%20tarif%20et%20le%20d%C3%A9lai.">Demander un devis</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    // Intersection observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-  <a class="whatsapp" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20viens%20de%20votre%20site%20web%20et%20j%E2%80%99aimerais%20passer%20commande.%0APouvez-vous%20m%E2%80%99aider%20%C3%A0%20choisir%20le%20mod%C3%A8le%2C%20la%20taille%20et%20la%20couleur%20%3F" aria-label="Contacter ROSBRI DESIGN sur WhatsApp" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        if (!section.classList.contains('min-h-[800px]')) { 
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        }
+    });
+</script>
+
+<footer class="bg-ink text-white w-full py-xxl relative overflow-hidden">
+<div class="absolute inset-0 wax-pattern-bg !opacity-[0.02]"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl px-margin-lg max-w-[1280px] mx-auto relative z-10">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center space-x-3 mb-stack-sm">
+<img alt="Logo" class="h-10 w-auto invert brightness-0 grayscale" src="images/brand/rosbri-wax-design-logo.jpg"/>
+<div class="font-display-accent text-xl text-white">Rosbri Wax Design</div>
+</div>
+<p class="font-body-sm text-white/60 mb-stack-md leading-relaxed">Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">public</span>
+<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">mail</span>
+</div>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Explorer</h5>
+<ul class="space-y-3">
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Collections</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Personnalisé</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Entreprise</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Événements</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Assistance</h5>
+<ul class="space-y-3">
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Notre Histoire</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Nous Contacter</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Livraison & Frais</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Durabilité</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Newsletter</h5>
+<p class="font-body-sm text-white/60 mb-stack-sm">Rejoignez-nous pour des inspirations cadeaux et des avant-premières artisanales.</p>
+<div class="flex border-b border-white/20 pb-2 group focus-within:border-champagne transition-colors">
+<input class="bg-transparent border-none focus:ring-0 text-white text-body-sm w-full placeholder:text-white/30" placeholder="Adresse email" type="email"/>
+<button class="text-champagne font-label-sm uppercase tracking-widest hover:text-white transition-colors">S'inscrire</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-lg mt-xl pt-stack-md border-t border-white/10 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-white/40 uppercase tracking-widest text-[10px]">© 2024 Rosbri Wax Design. Créé avec Passion et Héritage.</p>
+<div class="flex gap-4">
+<span class="text-[10px] text-white/40 uppercase tracking-widest">Confidentialité</span>
+<span class="text-[10px] text-white/40 uppercase tracking-widest">Conditions</span>
+</div>
+</div>
+</footer>
+<a class="fixed bottom-6 right-6 z-[90] flex items-center justify-center w-[60px] h-[60px] bg-[#25D366] text-white rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:-translate-y-1 hover:scale-105 transition-all duration-300" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20viens%20de%20votre%20site%20web%20et%20j%E2%80%99aimerais%20passer%20commande." aria-label="Contacter ROSBRI DESIGN sur WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong class="footer-brand">ROSBRI DESIGN</strong>
-        <p>"Customisation pour les personnes qui veulent plus"</p>
-      </div>
-      <div>
-        <h2>Navigation</h2>
-        <ul>
-          <li><a href="boutique.html">Boutique</a></li>
-          <li><a href="collections.html">Collections</a></li>
-          <li><a href="a_propos.html">À propos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <p>Douala, Cameroun</p>
-        <p>Commandes et devis personnalisés via WhatsApp.</p>
-      </div>
-    </div>
-  </footer>
+  
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-panel">
-      <div class="lightbox-visual" id="lightbox-visual">
-        <img id="lightbox-image" src="" alt="">
+  <div class="lightbox fixed inset-0 z-[100] bg-ink/60 backdrop-blur-sm transition-all duration-300" id="lightbox" aria-hidden="true" style="display:none; align-items:center; justify-content:center;">
+    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden w-[95%] max-w-4xl flex flex-col md:flex-row relative transform transition-transform duration-300" id="lightbox-panel">
+      <div class="w-full md:w-1/2 bg-surface-container relative" id="lightbox-visual">
+        <img id="lightbox-image" src="" alt="" class="w-full h-full object-cover aspect-square">
       </div>
-      <div class="lightbox-info">
+      <div class="w-full md:w-1/2 p-8 flex flex-col justify-between max-h-[90vh] overflow-y-auto">
         <div>
-          <strong id="lightbox-title"></strong>
-          <p id="lightbox-meta"></p>
-          <p class="lightbox-description" id="lightbox-description"></p>
-          <div id="lightbox-options"></div>
+          <strong id="lightbox-title" class="block font-headline-lg text-3xl text-ink mb-2"></strong>
+          <p id="lightbox-meta" class="text-champagne font-label-sm uppercase tracking-widest mb-2"></p>
+            <div class="mb-4"><span class="inline-block px-3 py-1 bg-surface-variant/50 text-ink rounded-full text-[10px] font-label-sm uppercase tracking-widest border border-line">⏳ Confection sur commande</span></div>
+          <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed" id="lightbox-description"></p>
+          <div id="lightbox-options" class="space-y-4 mb-6"></div>
         </div>
-        <div class="lightbox-actions">
-          <button class="secondary-btn" id="lightbox-cart" type="button">Ajouter au panier</button>
-          <a class="primary-btn" id="lightbox-order" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20passer%20une%20commande.">Commander</a>
-          <button class="close-btn" type="button" data-close-lightbox aria-label="Fermer">×</button>
+        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-4 border-t border-line">
+          <button class="flex-1 px-6 py-3 rounded-full border border-ink text-ink font-label-sm uppercase tracking-widest hover:bg-ink hover:text-white transition-colors" id="lightbox-cart" type="button">Pré-commander</button>
+          <a class="flex-1 px-6 py-3 rounded-full bg-champagne text-white font-label-sm uppercase tracking-widest hover:bg-[#a38038] transition-colors text-center flex justify-center items-center" id="lightbox-order" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20passer%20une%20commande.">Commander</a>
         </div>
       </div>
+      <button class="absolute top-4 right-4 bg-white/80 backdrop-blur rounded-full w-10 h-10 flex items-center justify-center text-ink hover:bg-error hover:text-white transition-colors z-10 shadow-sm" type="button" data-close-lightbox aria-label="Fermer">✕</button>
     </div>
   </div>
 
@@ -381,31 +582,33 @@
   <script src="cart.js?v=20260612-catalog616"></script>
 
   <!-- Floating Cart Button -->
-  <button class="cart-floating-btn" id="cart-floating-btn" type="button" aria-label="Voir mon panier">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-    <span class="cart-count-badge" id="cart-count-badge" style="display: none;">0</span>
+  <button id="cart-floating-btn" type="button" aria-label="Voir mon panier" class="fixed bottom-[100px] right-6 z-[80] flex items-center justify-center w-[50px] h-[50px] bg-ink text-white rounded-full shadow-[0_10px_30px_rgba(26,28,31,0.3)] hover:-translate-y-1 hover:scale-105 transition-all duration-300" onclick="toggleCart()">
+    <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+    <span id="cart-count-badge-floating" class="absolute -top-1 -right-1 bg-coral text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full" style="display: none;">0</span>
   </button>
 
   <!-- Cart Drawer -->
-  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
-    <div class="cart-drawer-overlay" data-close-cart></div>
-    <div class="cart-drawer-panel">
-      <div class="cart-drawer-header">
-        <h2>Mon Panier</h2>
-        <button class="cart-drawer-close" type="button" data-close-cart aria-label="Fermer le panier">×</button>
+  <div class="cart-drawer fixed inset-0 z-[100] transition-all duration-300" id="cart-drawer" aria-hidden="true" style="display:none;">
+    <div class="absolute inset-0 bg-ink/40 backdrop-blur-sm" data-close-cart></div>
+    <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white shadow-2xl flex flex-col transform transition-transform duration-300 translate-x-0">
+      <div class="px-6 py-4 border-b border-line flex items-center justify-between bg-surface-container-low">
+        <h2 class="font-headline-md text-xl text-ink font-bold">Mon Panier</h2>
+        <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant text-ink transition-colors" type="button" data-close-cart aria-label="Fermer le panier">✕</button>
       </div>
-      <div class="cart-drawer-body" id="cart-drawer-items"></div>
-      <div class="cart-drawer-footer" id="cart-drawer-footer">
-        <div class="cart-total-row">
-          <span>Total :</span>
-          <strong id="cart-total-value">0 FCFA</strong>
+      <div class="flex-1 overflow-y-auto p-6 space-y-6" id="cart-drawer-items"></div>
+      <div class="p-6 bg-surface-container-low border-t border-line" id="cart-drawer-footer">
+        <div class="mb-4 p-4 rounded-xl bg-surface-variant/30 border border-line text-on-surface-variant font-body-sm flex items-start gap-3">\n            <span class="text-xl leading-none">💡</span>\n            <p class="text-[12.5px] leading-relaxed"><strong>Confection sur commande.</strong> Les délais dépendent du nombre d'articles et du travail requis. Envoyez votre sélection sur WhatsApp pour obtenir votre délai estimé et valider la commande.</p>\n          </div>\n          <div class="flex justify-between items-center mb-6">
+          <span class="font-label-sm uppercase tracking-widest text-muted">Total :</span>
+          <strong id="cart-total-value" class="font-display-accent text-2xl text-ink">0 FCFA</strong>
         </div>
-        <div class="cart-drawer-actions">
-          <a class="primary-btn" id="cart-order-btn" href="#">Envoyer la commande sur WhatsApp</a>
-          <button class="secondary-btn" id="cart-clear-btn" type="button">Vider le panier</button>
+        <div class="flex flex-col gap-3">
+          <a class="w-full px-6 py-4 rounded-xl bg-[#25D366] text-white font-label-sm uppercase tracking-widest hover:bg-[#20ba5a] transition-colors text-center flex justify-center items-center shadow-lg gap-2" id="cart-order-btn" href="#">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Envoyer sur WhatsApp
+            </a>
+          <button class="w-full px-6 py-3 rounded-xl border border-line text-muted font-label-sm uppercase tracking-widest hover:bg-error hover:text-white hover:border-error transition-colors" id="cart-clear-btn" type="button">Vider le panier</button>
         </div>
       </div>
     </div>
   </div>
-</body>
-</html>
+</body></html>
