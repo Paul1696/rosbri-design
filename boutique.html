@@ -224,39 +224,13 @@
 </div>
 <span class="font-semibold text-body-sm">Besoin de conseil ?</span>
 </a>
-<!-- Overlay for interactions -->
-<div class="fixed inset-0 bg-ink/40 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4" id="modal-overlay">
-<div class="bg-white rounded-3xl p-8 max-w-lg w-full soft-shadow relative">
-<button class="absolute top-4 right-4 text-muted hover:text-ink" onclick="toggleOverlay()">
-<span class="material-symbols-outlined">close</span>
-</button>
-<div id="modal-content"></div>
-</div>
-</div>
 <script>
-        function toggleOverlay(content) {
-            const overlay = document.getElementById('modal-overlay');
-            const contentDiv = document.getElementById('modal-content');
-            if (overlay.classList.contains('hidden')) {
-                contentDiv.innerHTML = content || '<h2 class="font-headline-md text-headline-md mb-4">Fonctionnalité à venir</h2><p class="text-muted">Cet article sera bientôt disponible en prévisualisation détaillée.</p>';
-                overlay.classList.remove('hidden');
-            } else {
-                overlay.classList.add('hidden');
-            }
-        }
-
-        // Add event listeners to quick preview buttons
-        document.querySelectorAll('button:has(.material-symbols-outlined[innerText="visibility"])').forEach(btn => {
-            btn.onclick = (e) => {
-                e.preventDefault();
-                toggleOverlay();
-            };
-        });
-
         // Search bar interaction
         const searchInput = document.querySelector('input[type="text"]');
-        searchInput.onfocus = () => searchInput.parentElement.classList.add('scale-[1.02]');
-        searchInput.onblur = () => searchInput.parentElement.classList.remove('scale-[1.02]');
+        if (searchInput) {
+            searchInput.onfocus = () => searchInput.parentElement.classList.add('scale-[1.02]');
+            searchInput.onblur = () => searchInput.parentElement.classList.remove('scale-[1.02]');
+        }
     </script>
 
 <footer class="bg-ink text-white w-full py-xxl relative overflow-hidden">
