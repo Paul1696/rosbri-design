@@ -4,8 +4,8 @@
  */
 (function () {
   function initAnnouncementBar() {
-    const bar = document.getElementById("announcement-bar");
-    const closeBtn = document.getElementById("announcement-bar-close");
+    const bar = document.getElementById("rosbri-announcement-bar") || document.getElementById("announcement-bar");
+    const closeBtn = document.getElementById("close-announcement-bar") || document.getElementById("announcement-bar-close");
 
     if (sessionStorage.getItem("rosbri_announcement_closed") === "true") {
       if (bar) bar.style.display = "none";

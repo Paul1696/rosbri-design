@@ -9,7 +9,7 @@
 <div id="rosbri-announcement-bar" class="bg-ink text-white py-2 px-4 text-xs text-center relative z-[60] flex items-center justify-center gap-2 font-bold tracking-wide transition-all duration-300">
   <span>🔥 Offre lancement : -10 % sur votre première commande sur mesure</span>
   <span class="opacity-40">•</span>
-  <a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20profiter%20de%20l%27offre%20de%20lancement%20-10%25" target="_blank" rel="noopener noreferrer" class="text-champagne hover:underline inline-flex items-center gap-1">
+  <a href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20profiter%20de%20l%27offre%20de%20lancement%20-10%25" target="_blank" rel="noopener noreferrer" class="text-champagne hover:underline inline-flex items-center gap-1">
     <span>Commander sur WhatsApp</span>
     <span class="material-symbols-outlined text-sm">arrow_forward</span>
   </a>
@@ -99,7 +99,7 @@
         <span class="material-symbols-outlined text-lg">shopping_bag</span>
         <span>Voir mon Panier</span>
       </button>
-      <a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20👋%20J%27aimerais%20des%20conseils" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl border border-line text-ink font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+      <a href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋%20J%27aimerais%20des%20conseils" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl border border-line text-ink font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
         <span class="material-symbols-outlined text-lg text-[#25D366]">chat</span>
         <span>Conseil sur WhatsApp</span>
       </a>
@@ -115,7 +115,7 @@
       <h2 class="font-headline-md text-xl text-ink font-bold">Mon Panier</h2>
       <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant text-ink transition-colors" type="button" data-close-cart aria-label="Fermer le panier">✕</button>
     </div>
-    <div class="flex-1 overflow-y-auto p-6 space-y-6" id="cart-drawer-items"></div>
+    <div class="flex-1 overflow-y-auto p-6 space-y-6" id="cart-drawer-items" data-cart-items></div>
     <div class="p-6 bg-surface-container-low border-t border-line" id="cart-drawer-footer">
       <div class="mb-4 p-4 rounded-xl bg-surface-variant/30 border border-line text-on-surface-variant font-body-sm flex items-start gap-3">
         <span class="text-xl leading-none">💡</span>
@@ -123,19 +123,19 @@
       </div>
       <div class="mb-4">
         <div class="flex gap-2">
-          <input type="text" id="cart-promo-input" placeholder="Code promo (ex: ROSBRI10)" class="flex-1 px-3 py-2 text-xs border border-line rounded-lg bg-white uppercase font-bold text-ink focus:outline-none focus:border-primary">
-          <button type="button" id="cart-promo-apply-btn" class="px-4 py-2 text-xs font-bold bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">Appliquer</button>
+          <input type="text" id="cart-promo-input" placeholder="Code promo (ex: ROSBRI10)" class="flex-1 px-3 py-2 text-xs border border-line rounded-lg bg-white uppercase font-bold text-ink focus:outline-none focus:border-champagne">
+          <button type="button" id="cart-promo-apply-btn" class="px-4 py-2 text-xs font-bold bg-ink text-white rounded-lg hover:bg-champagne transition-colors">Appliquer</button>
         </div>
         <p id="cart-promo-message" class="text-[11px] mt-1 font-semibold hidden"></p>
       </div>
       <div class="flex justify-between items-center mb-6">
         <span class="font-label-sm uppercase tracking-widest text-muted">Total :</span>
-        <strong id="cart-total-value" class="font-display-accent text-2xl text-ink">0 FCFA</strong>
+        <strong id="cart-total-value" data-cart-total class="font-display-accent text-2xl text-ink">0 FCFA</strong>
       </div>
       <div class="flex flex-col gap-3">
-        <a class="w-full px-6 py-4 rounded-xl bg-[#25D366] text-white font-label-sm uppercase tracking-widest hover:bg-[#20ba5a] transition-colors text-center flex justify-center items-center shadow-lg gap-2 font-bold" id="cart-order-btn" href="#">
+        <a class="w-full px-6 py-4 rounded-xl bg-[#25D366] text-white font-label-sm uppercase tracking-widest hover:bg-[#20ba5a] transition-colors text-center flex justify-center items-center shadow-lg gap-2 font-bold" id="cart-order-btn" href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋" target="_blank" rel="noopener noreferrer">
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <span>Envoyer la commande sur WhatsApp</span>
+          <span>Commander sur WhatsApp</span>
         </a>
         <button class="w-full px-6 py-3 rounded-xl border border-line text-muted font-label-sm uppercase tracking-widest hover:bg-error hover:text-white transition-colors text-xs font-bold" id="cart-clear-btn" type="button">Vider le panier</button>
       </div>
@@ -165,7 +165,7 @@
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-champagne hover:bg-champagne hover:text-white transition-colors" aria-label="Instagram ROSBRI DESIGN">
             <span class="material-symbols-outlined text-sm">photo_camera</span>
           </a>
-          <a href="https://wa.me/237690087213" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors" aria-label="WhatsApp ROSBRI DESIGN">
+          <a href="https://wa.me/237698193880" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors" aria-label="WhatsApp ROSBRI DESIGN">
             <span class="material-symbols-outlined text-sm">chat</span>
           </a>
         </div>
@@ -174,24 +174,24 @@
         <h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne text-xs font-bold mb-4">Explorer</h5>
         <ul class="space-y-2.5 text-xs text-white/70">
           <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
-          <li><a href="boutique.html" class="hover:text-white transition-colors">Boutique & Catalogue</a></li>
-          <li><a href="collections.html" class="hover:text-white transition-colors">Nos Collections</a></li>
-          <li><a href="a_propos.html" class="hover:text-white transition-colors">À Propos de Nous</a></li>
-          <li><a href="boutique.html?categorie=Entreprise" class="hover:text-white transition-colors">Solutions B2B & Entreprises</a></li>
+          <li><a href="boutique.html" class="hover:text-white transition-colors">Boutique</a></li>
+          <li><a href="collections.html" class="hover:text-white transition-colors">Collections</a></li>
+          <li><a href="a_propos.html" class="hover:text-white transition-colors">À Propos</a></li>
+          <li><a href="boutique.html?categorie=Entreprise" class="hover:text-white transition-colors">Entreprises & B2B</a></li>
         </ul>
       </div>
       <div>
         <h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne text-xs font-bold mb-4">Services</h5>
         <ul class="space-y-2.5 text-xs text-white/70">
-          <li><a href="boutique.html?recherche=personnalise" class="hover:text-white transition-colors">Personnalisation Sur-Mesure</a></li>
-          <li><a href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" class="hover:text-white transition-colors">Cadeaux & Occasions Spéciales</a></li>
-          <li><a href="boutique.html?categorie=Entreprise" class="hover:text-white transition-colors">Commandes Entreprises</a></li>
-          <li><a href="a_propos.html#livraison" class="hover:text-white transition-colors">Livraison & Tarifs</a></li>
-          <li><a href="boutique.html" class="hover:text-white transition-colors">Guide des Tailles</a></li>
+          <li><a href="boutique.html?recherche=personnalise" class="hover:text-white transition-colors">Personnalisation</a></li>
+          <li><a href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" class="hover:text-white transition-colors">Cadeaux & occasions</a></li>
+          <li><a href="boutique.html?categorie=Entreprise" class="hover:text-white transition-colors">Commandes entreprises</a></li>
+          <li><a href="a_propos.html#livraison" class="hover:text-white transition-colors">Livraison et retours</a></li>
+          <li><a href="boutique.html" class="hover:text-white transition-colors">Guide des tailles</a></li>
         </ul>
       </div>
       <div>
-        <h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne text-xs font-bold mb-4">Contact & Atelier</h5>
+        <h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne text-xs font-bold mb-4">Contact</h5>
         <ul class="space-y-2.5 text-xs text-white/70 mb-4">
           <li class="flex items-center gap-2">
             <span class="material-symbols-outlined text-champagne text-sm">call</span>
@@ -210,14 +210,14 @@
             <span>Douala, Cameroun</span>
           </li>
         </ul>
-        <a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20👋" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest hover:bg-[#20ba5a] transition-all shadow-md">
+        <a href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest hover:bg-[#20ba5a] transition-all shadow-md">
           <span class="material-symbols-outlined text-sm">chat</span>
           <span>Contact WhatsApp</span>
         </a>
       </div>
     </div>
     <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-white/50">
-      <p>© <span id="footer-year">${new Date().getFullYear()}</span> ROSBRI DESIGN. Tous droits réservés. Créé avec Passion et Héritage.</p>
+      <p>© <span id="footer-year">${new Date().getFullYear()}</span> ROSBRI DESIGN. Tous droits réservés. AFRITUDE LUXE.</p>
       <div class="flex gap-6 uppercase tracking-wider font-bold">
         <a href="a_propos.html" class="hover:text-white transition-colors">Politique de confidentialité</a>
         <a href="a_propos.html" class="hover:text-white transition-colors">Conditions générales</a>
@@ -228,8 +228,15 @@
 </footer>`
   };
 
-  async function loadMount(mountId, componentFile, fallbackHtml) {
-    const mountNode = document.getElementById(mountId);
+  async function loadMount(mountIds, componentFile, fallbackHtml) {
+    let mountNode = null;
+    for (const id of mountIds) {
+      const node = document.getElementById(id);
+      if (node) {
+        mountNode = node;
+        break;
+      }
+    }
     if (!mountNode) return;
 
     let content = fallbackHtml;
@@ -249,11 +256,11 @@
 
   document.addEventListener("DOMContentLoaded", async () => {
     await Promise.all([
-      loadMount("announcement-bar-mount", "components/announcement-bar.html", templates.announcementBar),
-      loadMount("header-mount", "components/header.html", templates.header),
-      loadMount("mobile-menu-mount", "components/mobile-menu.html", templates.mobileMenu),
-      loadMount("cart-drawer-mount", "components/cart-drawer.html", templates.cartDrawer),
-      loadMount("footer-mount", "components/footer.html", templates.footer)
+      loadMount(["site-announcement", "announcement-bar-mount"], "components/announcement-bar.html", templates.announcementBar),
+      loadMount(["site-header", "header-mount"], "components/header.html", templates.header),
+      loadMount(["site-mobile-menu", "mobile-menu-mount"], "components/mobile-menu.html", templates.mobileMenu),
+      loadMount(["site-cart-drawer", "cart-drawer-mount"], "components/cart-drawer.html", templates.cartDrawer),
+      loadMount(["site-footer", "footer-mount"], "components/footer.html", templates.footer)
     ]);
 
     // Update dynamic footer year if present

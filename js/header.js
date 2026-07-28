@@ -5,16 +5,30 @@
 (function () {
   function initHeader() {
     // 1. Highlight Active Nav Link
-    const path = window.location.pathname.split("/").pop() || "index.html";
+    const fullPath = window.location.pathname.split("/").pop() || "index.html";
+    const searchParams = new URLSearchParams(window.location.search);
+    const categoryParam = searchParams.get("categorie") || "";
+
     document.querySelectorAll("[data-nav-link]").forEach((link) => {
       const target = link.dataset.navLink;
-      if (path === target || (path === "" && target === "index.html")) {
+      let isActive = false;
+
+      if (categoryParam.toLowerCase().includes("entreprise") || categoryParam.toLowerCase().includes("b2b")) {
+        if (target === "b2b") isActive = true;
+      } else if (fullPath === "produit.html") {
+        if (target === "boutique.html") isActive = true;
+      } else if (fullPath === target || (fullPath === "" && target === "index.html")) {
+        isActive = true;
+      }
+
+      if (isActive) {
         link.classList.add("text-champagne", "font-extrabold");
         link.setAttribute("aria-current", "page");
-        // Add subtle active indicator dot
-        const dot = document.createElement("span");
-        dot.className = "absolute bottom-0 left-0 right-0 h-0.5 bg-champagne rounded-full";
-        link.appendChild(dot);
+        if (!link.querySelector(".nav-active-dot")) {
+          const dot = document.createElement("span");
+          dot.className = "nav-active-dot absolute bottom-0 left-0 right-0 h-0.5 bg-champagne rounded-full";
+          link.appendChild(dot);
+        }
       }
     });
 
@@ -79,8 +93,7 @@
     });
 
     // 4. Pre-fill Search Input if query exists in URL
-    const params = new URLSearchParams(window.location.search);
-    const query = params.get("recherche") || params.get("q");
+    const query = searchParams.get("recherche") || searchParams.get("q");
     if (query) {
       document.querySelectorAll("#header-search-input, input[name='recherche']").forEach((input) => {
         input.value = query;

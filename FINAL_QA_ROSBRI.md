@@ -1,48 +1,50 @@
-# Grille d'Évaluation Q/A & Contrôle Automatisé - ROSBRI DESIGN
+# Checklist QA Finale & Assurance Qualité - ROSBRI DESIGN
 
-Ce document valide le respect strict des 32 critères d'exigence d'harmonisation technique et visuelle pour **ROSBRI DESIGN**.
-
----
-
-## 📋 Checklist de Contrôle Qualité (32 Critères)
-
-| N° | Critère de Contrôle | Description | Statut |
-| :--- | :--- | :--- | :--- |
-| **1** | **Header Identique** | Présent et unifié sur `index.html`, `boutique.html`, `produit.html`, `collections.html`, `a_propos.html`. | **OK** |
-| **2** | **Barre Promotionnelle Unique** | Une seule barre noire avec offre -10% et lien WhatsApp réel (`sessionStorage` fonctionnel). | **OK** |
-| **3** | **Footer Identique** | Footer complet 4 colonnes présent sur l'ensemble des 5 pages principales. | **OK** |
-| **4** | **Menu Mobile Fonctionnel** | Tiroir latéral réactif avec gestion d'ouverture/fermeture, overlay et touche `Échap`. | **OK** |
-| **5** | **Recherche Fonctionnelle** | Redirection vers `boutique.html?recherche=...` et filtrage instantané sur les 467 créations. | **OK** |
-| **6** | **Panier Commun** | Panier unifié sur la clé `rosbri_cart` avec conservation des articles au fil des pages. | **OK** |
-| **7** | **Compteur Synchronisé** | Badge du nombre d'articles mis à jour en temps réel dans le header et le menu mobile. | **OK** |
-| **8** | **Bouton WhatsApp Unique** | Bouton flottant officiel avec numéro valide (`+237 690 715 403`). | **OK** |
-| **9** | **Produit 100% Cliquable** | L'ensemble de la surface de la carte (image, titre, prix, fond) réagit au clic. | **OK** |
-| **10** | **Navigation par Slug** | Ouverture directe de `produit.html?slug=...` au clic sur un produit de la boutique. | **OK** |
-| **11** | **Images Valides** | Chemins d'accès vérifiés et gestionnaire d'images de remplacement (Fallback local). | **OK** |
-| **12** | **Collections Corrigées** | Liens de catégories pointant vers les filtres réels (`boutique.html?categorie=...`). | **OK** |
-| **13** | **Aucun `href="#"`** | Tous les boutons et liens possèdent une destination ou une action JavaScript réelle. | **OK** |
-| **14** | **WhatsApp Valide** | Tous les liens WhatsApp génèrent un message pré-rempli structuré sans `href="wa.me/#"`. | **OK** |
-| **15** | **Aucun Composant Dupliqué** | Suppression de tous les doublons de headers, footers et tiroirs de panier. | **OK** |
-| **16** | **Aucun Vide Injustifié** | Padding supérieur et marges verticales ajustés sur `collections.html` et `a_propos.html`. | **OK** |
-| **17** | **Responsive 320px - 1920px** | Validé sur 10 largeurs d'écran sans aucun débordement horizontal. | **OK** |
-| **18** | **Aucun Débordement** | Défilement fluide et gestion `overflow-x-hidden` sur le corps de page. | **OK** |
-| **19** | **Aucune Erreur Console** | Console JavaScript 100% propre sans avertissement ni fonction non définie. | **OK** |
-| **20** | **Aucune Erreur 404** | Ressources locales (images, scripts, styles) correctement appelées. | **OK** |
-| **21** | **Support Live Server** | Rendu fluide sous HTTP/HTTPS et compatibilité de secours sous `file://`. | **OK** |
-| **22** | **Conservation du Panier** | Maintien des articles ajoutés lors des transitions entre toutes les pages. | **OK** |
-| **23** | **Design System Centralisé** | Variables CSS définies dans `css/tokens.css` (`--color-ink`, `--color-champagne`, etc.). | **OK** |
-| **24** | **Typographies Unifiées** | Usage exclusif de **Playfair Display** (Titres) et **Inter** (Textes & UI). | **OK** |
-| **25** | **Largeurs Canoniques** | Global Header/Footer (1440px), Éditorial (1280px), Boutique (1720px). | **OK** |
-| **26** | **Nom de Marque Officiel** | Utilisation uniforme du nom `ROSBRI DESIGN` et de la signature `AFRITUDE LUXE`. | **OK** |
-| **27** | **Langue FR** | Attribut `lang="fr"` sur la totalité des fichiers HTML. | **OK** |
-| **28** | **Code Promo Panier** | Validation des codes promo `ROSBRI10`, `BIENVENUE`, `LIVRAISON` avec calcul immédiat. | **OK** |
-| **29** | **Accessibilité ARIA** | Attributs `aria-label`, `aria-expanded`, `aria-hidden` et `aria-current="page"`. | **OK** |
-| **30** | **Navigation Clavier** | Focus visible et fermeture des modales/drawers avec la touche `Échap`. | **OK** |
-| **31** | **Bouton Retour Boutique** | Bouton "← Retour à la boutique" intégré au fil d'Ariane sur `produit.html`. | **OK** |
-| **32** | **État 404 Produit** | Message clair "Produit introuvable" si un slug ou un ID d'article est invalide. | **OK** |
+Ce document constitue le PV d'assurance qualité final suite à la refonte technique et l'harmonisation complète du site **ROSBRI DESIGN (AFRITUDE LUXE)**.
 
 ---
 
-## 🎯 Bilan Global du Contrôle
-- **Total Critères** : 32 / 32
-- **Statut** : **100% VALIDE & CONFORME**
+## 📋 Table de Recette et de Contrôle Automatisé
+
+| N° | Point de Contrôle | Description & Portée | Statut |
+| :--- | :--- | :--- | :---: |
+| **1** | **Header Identique** | Présent et unifié sur `index.html`, `boutique.html`, `produit.html`, `collections.html`, `a_propos.html`. | **CORRIGÉ** |
+| **2** | **Une seule Barre Promo** | Une seule barre noire partagée (`components/announcement-bar.html`), sans doublons ni doubles marges. | **CORRIGÉ** |
+| **3** | **Footer Identique** | Footer 4 colonnes 100% français unifié sur les 5 pages du site. | **CORRIGÉ** |
+| **4** | **Menu Mobile Fonctionnel** | Menu tiroir latéral réactif avec `aria-expanded`, overlay backdrop, fermeture `Échap` et verrouillage du scroll. | **CORRIGÉ** |
+| **5** | **Recherche Fonctionnelle** | Redirection globale depuis n'importe quelle page vers `boutique.html?recherche=...` et filtrage dynamique. | **CORRIGÉ** |
+| **6** | **Panier Commun** | Système de panier centralisé `ROSBriCart` synchronisé via la clé `rosbri_cart` dans `localStorage`. | **CORRIGÉ** |
+| **7** | **Compteur Commun** | Badge du panier (`#cart-count-badge`, `data-cart-count`) mis à jour instantanément sur toutes les pages. | **CORRIGÉ** |
+| **8** | **WhatsApp Unique** | Bouton WhatsApp flottant unique (`+237 698 193 880`) et messages de commande pré-remplis formatés. | **CORRIGÉ** |
+| **9** | **Produit Cliquable** | Toutes les cartes produits de la boutique ouvrent directement la fiche produit. | **CORRIGÉ** |
+| **10** | **Navigation par Slug** | Ouverture directe de `produit.html?slug=...` au clic sur un produit de la boutique. | **CORRIGÉ** |
+| **11** | **Choix Taille & Couleur T-shirt** | Possibilité de choisir la taille (S, M, L, XL, XXL) et la couleur (Blanc, Noir, Sable, Rose, etc.) sur tous les T-shirts et vêtements. | **CORRIGÉ** |
+| **12** | **Images Valides** | Fallback d'image automatique local (`images/brand/rosbri-wax-design-logo.jpg`) en cas d'image introuvable. | **CORRIGÉ** |
+| **13** | **Collections Corrigées** | Images réparées, cartes au ratio 4:5 avec effet hover et liens explicites vers les catégories de la boutique. | **CORRIGÉ** |
+| **14** | **Aucun href="#" Invalide** | Tous les boutons et liens possèdent une destination ou une action JavaScript explicite. | **CORRIGÉ** |
+| **15** | **Aucun Lien WhatsApp Vide** | Tous les liens WhatsApp utilisent le numéro officiel `+237 698 193 880` avec texte pré-rempli. | **CORRIGÉ** |
+| **16** | **Aucun Composant Dupliqué** | Suppression des footers simplified, barres turquoises/blanches isolées et boutons flottants dupliqués. | **CORRIGÉ** |
+| **17** | **Aucun Grand Vide Injustifié** | Padding supérieur réajusté (~64px desktop / 36px mobile) sur `a_propos.html` et `collections.html`. | **CORRIGÉ** |
+| **18** | **Responsive Validé** | Adaptabilité complète testée de 320px à 1920px (grille boutique 5-col à 1-col). | **OK** |
+| **19** | **Aucun Débordement** | Règle `overflow-x: hidden` sur `html, body` empêchant le défilement horizontal parasite. | **OK** |
+| **20** | **Console JS Propre** | Code JavaScript résilient avec gardes d'existence (`if (!elem) return;`). | **OK** |
+| **21** | **Aucune Erreur 404** | Tous les fichiers JS/CSS et images référencés existent sur le serveur local. | **OK** |
+| **22** | **Compatibilité Live Server** | Fonctionnement garanti sous `http://127.0.0.1:5500` avec fallback embarqué si `file://`. | **OK** |
+| **23** | **Persistance du Panier** | Les articles ajoutés au panier sont conservés entre toutes les pages du site. | **OK** |
+
+---
+
+## 🧪 Scénarios de Test Utilisateur Exécutés
+
+1. **Scénario 1 (Sélection T-shirt - Taille & Couleur)** :
+   - Ouverture de `produit.html?slug=tshirt-heritage-cameroun` (ou tout t-shirt).
+   - Sélection d'une couleur (ex: *Noir*, *Blanc*, *Rose*, *Bleu Nuit*).
+   - Sélection d'une taille (ex: *M*, *L*, *XL*, *XXL*).
+   - Clic sur **Pré-commander** ou **Commander sur WhatsApp**.
+   - Constat : La taille et la couleur choisies sont directement incluses dans l'article ajouté au panier et dans le message WhatsApp pré-rempli.
+
+---
+
+## 📌 Points nécessitant une Vérification Manuelle
+
+- **Validation des Réseaux Sociaux** : Remplacer les URLs génériques Facebook (`facebook.com`) et Instagram (`instagram.com`) dans `components/footer.html` par les comptes officiels dès qu'ils seront créés.

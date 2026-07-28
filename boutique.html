@@ -1,407 +1,153 @@
 <!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Boutique Afritude Luxe | ROSBRI DESIGN</title>
+  <meta name="description" content="Explorez le catalogue complet des collections ROSBRI DESIGN : T-shirts Héritage, sacs Wax, ensembles enfants, babouches et coffrets cadeaux personnalisés."/>
+  <meta property="og:title" content="Boutique Afritude Luxe | ROSBRI DESIGN"/>
+  <meta property="og:description" content="Découvrez nos pièces d'exception façonnées à la main. Choisissez votre style, vos tailles et personnalisez votre commande."/>
+  <meta property="og:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
+  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/boutique.html"/>
+  <meta property="og:type" content="website"/>
 
-<html class="light" lang="fr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Boutique Afritude Luxe | Rosbri Wax Design</title>
-<meta name="description" content="Explorez le catalogue complet des collections Rosbri Wax Design : T-shirts Héritage, sacs Wax, ensembles enfants, babouches et coffrets cadeaux personnalisés."/>
-<meta property="og:title" content="Boutique Afritude Luxe | Rosbri Wax Design"/>
-<meta property="og:description" content="128+ pièces d'exception façonnées à la main. Choisissez votre style, vos tailles et personnalisez votre commande."/>
-<meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg"/>
-<meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/boutique.html"/>
-<meta property="og:type" content="website"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "background": "#faf9fe",
-                "on-secondary-fixed": "#1a1b1e",
-                "on-surface-variant": "#4e4639",
-                "on-secondary-container": "#646468",
-                "error": "#ba1a1a",
-                "primary": "#775a19",
-                "surface-variant": "#e3e2e7",
-                "on-tertiary": "#ffffff",
-                "surface-container-highest": "#e3e2e7",
-                "surface-tint": "#775a19",
-                "tertiary-fixed-dim": "#c9c6c1",
-                "secondary-container": "#e3e2e6",
-                "on-tertiary-fixed": "#1c1c18",
-                "primary-fixed-dim": "#e9c176",
-                "on-secondary": "#ffffff",
-                "on-error-container": "#93000a",
-                "inverse-on-surface": "#f1f0f5",
-                "on-primary": "#ffffff",
-                "secondary": "#5e5e62",
-                "outline": "#7f7667",
-                "on-primary-fixed-variant": "#5d4201",
-                "outline-variant": "#d1c5b4",
-                "on-primary-container": "#4e3700",
-                "surface-container-high": "#e8e7ec",
-                "tertiary-fixed": "#e5e2dc",
-                "tertiary-container": "#a7a5a0",
-                "on-tertiary-fixed-variant": "#474743",
-                "primary-container": "#c5a059",
-                "inverse-primary": "#e9c176",
-                "surface-container-low": "#f4f3f8",
-                "on-tertiary-container": "#3b3b37",
-                "secondary-fixed-dim": "#c7c6ca",
-                "error-container": "#ffdad6",
-                "surface-container-lowest": "#ffffff",
-                "surface-bright": "#faf9fe",
-                "inverse-surface": "#2f3034",
-                "on-error": "#ffffff",
-                "secondary-fixed": "#e3e2e6",
-                "surface-container": "#eeedf2",
-                "on-primary-fixed": "#261900",
-                "on-background": "#1a1c1f",
-                "on-secondary-fixed-variant": "#46474a",
-                "on-surface": "#1a1c1f",
-                "surface": "#faf9fe",
-                "tertiary": "#5f5e5a",
-                "surface-dim": "#dad9de",
-                "primary-fixed": "#ffdea5",
-                "ink": "#1a1c1f",
-                "champagne": "#c5a059",
-                "cream": "#faf9fe",
-                "paper": "#fbf8f2"
-            },
-            "fontFamily": {
-                "body-lg": ["Inter", "sans-serif"],
-                "body-md": ["Inter", "sans-serif"],
-                "label-sm": ["Inter", "sans-serif"],
-                "headline-md": ["Inter", "sans-serif"],
-                "display-accent": ["Playfair Display", "serif"],
-                "headline-lg": ["Inter", "sans-serif"]
-            },
-            "spacing": {
-                "gutter": "24px",
-                "stack-sm": "1rem",
-                "stack-md": "1.5rem",
-                "stack-lg": "2.5rem",
-                "margin-lg": "4rem",
-                "margin-md": "2rem",
-                "xl": "48px",
-                "xxl": "80px"
-            }
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Design System Styles -->
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf9fe",
+            "on-surface-variant": "#4e4639",
+            "error": "#ba1a1a",
+            "primary": "#775a19",
+            "surface-variant": "#e3e2e7",
+            "primary-container": "#c5a059",
+            "surface-container-low": "#f4f3f8",
+            "ink": "#1a1c1f",
+            "champagne": "#c5a059",
+            "cream": "#faf9fe",
+            "paper": "#fbf8f2"
           },
-        },
+          fontFamily: {
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "display-accent": ["Playfair Display", "serif"]
+          }
+        }
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .soft-shadow {
-            box-shadow: 0 10px 30px -10px rgba(23, 33, 31, 0.08);
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #e3ebe8;
-            border-radius: 10px;
-        }
-    </style>
+    }
+  </script>
 </head>
-<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white">
 
-<!-- Shared Component Mount Points -->
-<div id="announcement-bar-mount"></div>
-<div id="header-mount"></div>
-<div id="mobile-menu-mount"></div>
-<div id="cart-drawer-mount"></div>
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white boutique-page">
 
-<main>
-<!-- Tailwind JIT Safelist -->
-<div class="hidden text-left w-full p-2 rounded-lg transition-colors cursor-pointer text-body-md bg-gold-soft text-secondary font-semibold text-ink hover:bg-gold-soft hover:text-secondary mt-6 font-label-md text-label-md uppercase tracking-wider text-muted mb-stack-sm space-y-1 bg-gold-soft border-l-4 border-primary text-secondary font-bold group-open:rotate-180 overflow-hidden max-h-0 max-h-[2000px] transition-all duration-300 flex items-center justify-between hover:bg-surface-variant py-2 px-3 text-sm text-xs rounded-full bg-gray-100 text-gray-500 bg-primary text-white mb-2 mt-4 ml-4 pl-4 border-l border-line gap-2
-    bg-[#f8f1e3] border-transparent hover:pl-5 hover:bg-surface-variant/50 bg-[#775a19] shadow-primary/20 scale-[1.02] bg-surface-variant/30 bg-white/20 px-2.5 px-4 pb-3 mb-3 hover:text-primary font-medium text-[13px] text-[11px] grid grid-rows-[1fr] grid-rows-[0fr] opacity-100 opacity-0 group-hover:bg-white group-hover:text-primary group-hover:shadow-sm before:content-[''] before:absolute before:left-6 before:top-0 before:bottom-2 before:w-px before:bg-line bg-primary/10"></div>
-<main class="max-w-[1920px] mx-auto px-margin-lg py-stack-lg flex flex-col md:flex-row gap-gutter">
-<!-- Sidebar Filter (Desktop) & Mobile Drawer -->
-<!-- Mobile Drawer Backdrop -->
-<div id="mobile-filter-backdrop" class="fixed inset-0 bg-black/50 z-40 hidden md:hidden opacity-0 transition-opacity duration-300"></div>
+  <!-- Mount Points -->
+  <div id="site-announcement"></div>
+  <div id="site-header"></div>
 
-<aside id="mobile-filter-drawer" class="fixed inset-y-0 left-0 z-50 w-64 sm:w-80 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-72 md:bg-transparent md:shadow-none md:z-0 flex-shrink-0 flex flex-col md:block h-full md:h-auto overflow-hidden md:overflow-visible">
-<div class="flex-grow md:flex-none overflow-y-auto md:overflow-visible p-4 md:p-0 md:sticky md:top-24 space-y-stack-md flex flex-col md:block">
-    <!-- Mobile Header -->
-    <div class="flex items-center justify-between md:hidden mb-2">
-        <h2 class="font-headline-sm text-ink">Filtres</h2>
-        <button id="close-mobile-filters" class="p-2 -mr-2 text-muted hover:text-ink"><span class="material-symbols-outlined">close</span></button>
-    </div>
-    
-    <!-- Search Component -->
-    <div class="relative flex-shrink-0">
-    <input id="catalog-search" class="w-full bg-white border border-line rounded-xl px-4 py-3 pl-11 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all" placeholder="Rechercher..." type="text"/>
-    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted">search</span>
-    </div>
-    
-    <!-- Dynamic Categories -->
-    <div id="filter-list" class="space-y-2 flex-grow overflow-y-auto md:overflow-visible"></div>
-    
-    <!-- Mobile Bottom Buttons -->
-    <div class="md:hidden pt-4 border-t border-line space-y-3 flex-shrink-0 mt-4">
-        <button id="apply-mobile-filters" class="w-full bg-primary text-white py-3 rounded-lg font-semibold shadow-sm hover:bg-primary/90 transition-colors">Afficher les résultats</button>
-        <button id="reset-mobile-filters" class="w-full bg-surface-variant text-ink py-3 rounded-lg font-semibold hover:bg-line transition-colors">Réinitialiser</button>
-    </div>
-</div>
-</aside>
-<!-- Product Grid Area -->
-<div class="flex-grow">
-<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-gutter gap-4">
-<div>
-<h1 class="font-headline-lg text-headline-lg text-ink">Collections Afritude Luxe</h1>
-<p class="text-muted mt-1">128 pièces d'exception façonnées à la main.</p>
-</div>
+  <main id="main-content" class="max-w-[1720px] mx-auto px-6 py-8 flex flex-col md:flex-row gap-8">
+    <!-- Mobile Filter Backdrop -->
+    <div id="mobile-filter-backdrop" class="fixed inset-0 bg-ink/50 backdrop-blur-sm z-40 hidden md:hidden transition-opacity"></div>
 
-<!-- Desktop Sort -->
-<div class="hidden md:flex items-center gap-2">
-<span class="text-label-md text-muted">Trier par:</span>
-<select id="catalog-sort" class="bg-transparent border-none font-semibold text-ink focus:ring-0 cursor-pointer">
-<option value="default">Plus récents</option>
-<option value="price">Prix croissant</option>
-<option value="name">Alphabétique</option>
-<option value="category">Par catégorie</option>
-</select>
-</div>
-</div>
+    <!-- Sidebar Filter (Desktop) & Mobile Drawer -->
+    <aside id="mobile-filter-drawer" class="fixed inset-y-0 left-0 z-50 w-72 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-72 md:bg-transparent md:shadow-none md:z-0 flex-shrink-0 flex flex-col md:block h-full md:h-auto overflow-hidden md:overflow-visible">
+      <div class="flex-grow md:flex-none overflow-y-auto md:overflow-visible p-6 md:p-0 md:sticky md:top-24 space-y-6 flex flex-col md:block">
+        <!-- Mobile Header -->
+        <div class="flex items-center justify-between md:hidden pb-4 border-b border-line">
+          <h2 class="font-bold text-lg text-ink">Filtres Catalogue</h2>
+          <button id="close-mobile-filters" class="p-2 text-muted hover:text-ink" aria-label="Fermer les filtres"><span class="material-symbols-outlined">close</span></button>
+        </div>
 
-<!-- Mobile Toolbar -->
-<div class="flex items-center justify-between gap-3 mb-6 md:hidden">
-    <button id="open-mobile-filters" class="flex-1 flex items-center justify-center gap-2 bg-white border border-line py-2.5 rounded-lg font-semibold text-ink shadow-sm">
-        <span class="material-symbols-outlined text-lg">tune</span> Filtres
-    </button>
-    <div class="flex-1 bg-white border border-line rounded-lg px-2 flex items-center shadow-sm">
-        <span class="material-symbols-outlined text-muted text-lg ml-2">sort</span>
-        <select id="catalog-sort-mobile" class="w-full bg-transparent border-none font-semibold text-ink py-2.5 focus:ring-0 cursor-pointer text-sm">
+        <!-- Search Component -->
+        <div class="relative flex-shrink-0">
+          <input id="catalog-search" class="w-full bg-white border border-line rounded-xl px-4 py-3 pl-11 focus:outline-none focus:border-champagne text-xs text-ink placeholder:text-muted" placeholder="Rechercher un produit..." type="text"/>
+          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted text-sm">search</span>
+        </div>
+
+        <!-- Dynamic Categories -->
+        <div id="filter-list" class="space-y-2 flex-grow"></div>
+
+        <!-- Mobile Bottom Buttons -->
+        <div class="md:hidden pt-4 border-t border-line space-y-3 flex-shrink-0 mt-4">
+          <button id="apply-mobile-filters" class="w-full bg-ink text-white py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-champagne transition-colors">Afficher les résultats</button>
+          <button id="reset-mobile-filters" class="w-full bg-surface-variant text-ink py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-line transition-colors">Réinitialiser</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid Area -->
+    <div class="flex-grow">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-4">
+        <div>
+          <h1 class="font-display-accent text-3xl md:text-4xl text-ink font-bold">Boutique ROSBRI DESIGN</h1>
+          <p id="catalog-results-count" class="text-xs text-muted mt-1">Chargement du catalogue...</p>
+        </div>
+
+        <!-- Desktop Sort -->
+        <div class="hidden md:flex items-center gap-2">
+          <span class="text-xs text-muted uppercase tracking-wider font-bold">Trier par:</span>
+          <select id="catalog-sort" class="bg-white border border-line rounded-xl px-3 py-2 text-xs font-bold text-ink focus:outline-none focus:border-champagne cursor-pointer">
+            <option value="default">Plus récents</option>
+            <option value="price">Prix croissant</option>
+            <option value="name">Nom (A-Z)</option>
+            <option value="category">Par catégorie</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Mobile Toolbar -->
+      <div class="flex items-center justify-between gap-3 mb-6 md:hidden">
+        <button id="open-mobile-filters" class="flex-1 flex items-center justify-center gap-2 bg-white border border-line py-2.5 rounded-xl font-bold text-xs uppercase text-ink shadow-sm">
+          <span class="material-symbols-outlined text-sm">tune</span> Filtres
+        </button>
+        <div class="flex-1 bg-white border border-line rounded-xl px-2 flex items-center shadow-sm">
+          <span class="material-symbols-outlined text-muted text-sm ml-2">sort</span>
+          <select id="catalog-sort-mobile" class="w-full bg-transparent border-none font-bold text-ink py-2.5 focus:ring-0 cursor-pointer text-xs">
             <option value="default">Récents</option>
             <option value="price">Prix</option>
             <option value="name">A-Z</option>
             <option value="category">Catégories</option>
-        </select>
-    </div>
-</div>
-<!-- Grid -->
-<div id="shop-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
-<!-- Products will be injected dynamically by catalog.js -->
-</div>
-<!-- Pagination -->
-<div class="mt-stack-lg flex justify-center items-center gap-4">
-<button id="catalog-load-more" class="px-8 py-3 rounded-full border border-line text-ink hover:bg-ink hover:text-white transition-all font-label-sm uppercase tracking-widest" style="display: none;">Charger plus d'articles</button>
-</div>
-</div>
-</main>
-<!-- Footer -->
-
-<!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[60] flex items-center gap-3 bg-white text-ink px-6 py-4 rounded-full soft-shadow border border-line hover:scale-105 active:scale-95 transition-all group" href="https://wa.me/#">
-<div class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
-</div>
-<span class="font-semibold text-body-sm">Besoin de conseil ?</span>
-</a>
-<script>
-        // Search bar interaction
-        const searchInput = document.querySelector('input[type="text"]');
-        if (searchInput) {
-            searchInput.onfocus = () => searchInput.parentElement.classList.add('scale-[1.02]');
-            searchInput.onblur = () => searchInput.parentElement.classList.remove('scale-[1.02]');
-        }
-    </script>
-
-<footer class="bg-ink text-white w-full py-xxl relative overflow-hidden">
-<div class="absolute inset-0 wax-pattern-bg !opacity-[0.02]"></div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-xl px-margin-lg max-w-[1920px] mx-auto relative z-10">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center space-x-3 mb-stack-sm">
-<img alt="Logo" class="h-10 w-auto invert brightness-0 grayscale" src="images/brand/rosbri-wax-design-logo.jpg"/>
-<div class="font-display-accent text-xl text-white">Rosbri Wax Design</div>
-</div>
-<p class="font-body-sm text-white/60 mb-stack-md leading-relaxed">Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage.</p>
-<div class="flex space-x-4">
-<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">public</span>
-<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">mail</span>
-</div>
-</div>
-<div class="col-span-1">
-<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Explore</h5>
-<ul class="space-y-3">
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Collections</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Personalized</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Corporate</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Occasions</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Support</h5>
-<ul class="space-y-3">
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Notre Histoire</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Nous Contacter</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Livraison & Frais</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Durabilité</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Newsletter</h5>
-<p class="font-body-sm text-white/60 mb-stack-sm">Rejoignez-nous pour des inspirations cadeaux et des avant-premières artisanales.</p>
-<div class="flex border-b border-white/20 pb-2 group focus-within:border-champagne transition-colors">
-<input class="bg-transparent border-none focus:ring-0 text-white text-body-sm w-full placeholder:text-white/30" placeholder="Adresse email" type="email"/>
-<button class="text-champagne font-label-sm uppercase tracking-widest hover:text-white transition-colors">Join</button>
-</div>
-</div>
-</div>
-<div class="max-w-[1920px] mx-auto px-margin-lg mt-xl pt-stack-md border-t border-white/10 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-label-sm text-white/40 uppercase tracking-widest text-[10px]">© 2024 Rosbri Wax Design. Crafted with Heritage.</p>
-<div class="flex gap-4">
-<span class="text-[10px] text-white/40 uppercase tracking-widest">Privacy</span>
-<span class="text-[10px] text-white/40 uppercase tracking-widest">Terms</span>
-</div>
-</div>
-</footer>
-<div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-panel" id="lightbox-panel">
-      <div class="lightbox-visual" id="lightbox-visual">
-        <img id="lightbox-image" src="" alt="">
-      </div>
-      <div class="lightbox-info" id="lightbox-info">
-        <div class="lightbox-scrollable">
-          <p id="lightbox-meta" class="lightbox-eyebrow"></p>
-          <strong id="lightbox-title" style="display:block; font-size:1.6rem; line-height:1.2; margin-bottom:0.5rem; color:var(--ink);"></strong>
-          <div style="margin-bottom:1rem;">
-            <span style="display:inline-block; padding:3px 12px; background:rgba(119,90,25,0.08); color:#775a19; border-radius:999px; font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; border:1px solid rgba(119,90,25,0.2);">⏳ Confection sur commande</span>
-          </div>
-          <p style="color:var(--muted); line-height:1.6; margin-bottom:1.25rem;" id="lightbox-description"></p>
-          <div id="lightbox-options"></div>
-          <div id="lightbox-reviews" style="margin-top:1.5rem;"></div>
-          <div id="lightbox-share" style="margin-top:1rem;"></div>
-        </div>
-        <div class="lightbox-actions" style="padding:1.25rem 2rem; border-top:1px solid var(--line); display:flex; gap:0.75rem; flex-wrap:wrap;">
-          <button style="flex:1; min-width:120px; padding:0.8rem 1.25rem; border-radius:999px; border:1.5px solid var(--ink); background:transparent; color:var(--ink); font-weight:700; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all 0.2s;" id="lightbox-cart" type="button"
-            onmouseover="this.style.background='var(--ink)';this.style.color='#fff';"
-            onmouseout="this.style.background='transparent';this.style.color='var(--ink)';">Pré-commander</button>
-          <a style="flex:1; min-width:120px; padding:0.8rem 1.25rem; border-radius:999px; background:#c5a059; color:#fff; font-weight:700; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; text-align:center; text-decoration:none; display:flex; align-items:center; justify-content:center; transition:background 0.2s;" id="lightbox-order"
-            href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20passer%20une%20commande."
-            onmouseover="this.style.background='#a38038';" onmouseout="this.style.background='#c5a059';">Commander</a>
+          </select>
         </div>
       </div>
-      <button style="position:absolute; top:14px; right:14px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.88); border:none; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; z-index:20; backdrop-filter:blur(6px); transition:all 0.2s; color:var(--ink);" type="button" data-close-lightbox aria-label="Fermer">✕</button>
-    </div>
-  </div>
-  
-  <div class="size-guide-modal" id="size-guide-modal" hidden>
-    <div class="size-guide-content">
-      <button class="close-btn" id="close-size-guide">×</button>
-      <h3>Guide des tailles</h3>
-      <div class="size-table-container">
-        <table class="size-table">
-          <thead>
-            <tr><th>Taille</th><th>Largeur (cm)</th><th>Hauteur (cm)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>S</td><td>46</td><td>68</td></tr>
-            <tr><td>M</td><td>49</td><td>70</td></tr>
-            <tr><td>L</td><td>52</td><td>72</td></tr>
-            <tr><td>XL</td><td>55</td><td>74</td></tr>
-            <tr><td>XXL</td><td>58</td><td>76</td></tr>
-          </tbody>
-        </table>
+
+      <!-- Grid Responsive (5 cols xl, 4 lg, 3 md, 2 sm, 1 mobile) -->
+      <div id="shop-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <!-- Injected dynamically by catalog.js -->
       </div>
-      <p class="size-note">Posez votre vêtement préféré bien à plat et prenez les mesures pour comparer.</p>
-    </div>
-  </div>
 
-  <script src="catalog-data.js?v=20260727-v7"></script>
-  <script src="cms-config.js?v=20260612-catalog616"></script>
-  <script src="catalog.js?v=20260727-v1"></script>
-  <script src="catalog-cms.js?v=20260612-catalog616"></script>
-  <script type="module" src="motion-enhancements.js?v=20260612-catalog616"></script>
-  <script src="cart.js?v=20260612-catalog616"></script>
-
-  <!-- Floating Cart Button -->
-  <button id="cart-floating-btn" type="button" aria-label="Voir mon panier" class="fixed bottom-[100px] right-6 z-[80] flex items-center justify-center w-[50px] h-[50px] bg-ink text-white rounded-full shadow-[0_10px_30px_rgba(26,28,31,0.3)] hover:-translate-y-1 hover:scale-105 transition-all duration-300" onclick="toggleCart()">
-    <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-    <span id="cart-count-badge-floating" class="absolute -top-1 -right-1 bg-coral text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full" style="display: none;">0</span>
-  </button>
-
-  <!-- Cart Drawer -->
-  <div class="cart-drawer fixed inset-0 z-[100] transition-all duration-300" id="cart-drawer" aria-hidden="true" style="display:none;">
-    <div class="absolute inset-0 bg-ink/40 backdrop-blur-sm" data-close-cart></div>
-    <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white shadow-2xl flex flex-col transform transition-transform duration-300 translate-x-0">
-      <div class="px-6 py-4 border-b border-line flex items-center justify-between bg-surface-container-low">
-        <h2 class="font-headline-md text-xl text-ink font-bold">Mon Panier</h2>
-        <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant text-ink transition-colors" type="button" data-close-cart aria-label="Fermer le panier">✕</button>
-      </div>
-      <div class="flex-1 overflow-y-auto p-6 space-y-6" id="cart-drawer-items"></div>
-      <div class="p-6 bg-surface-container-low border-t border-line" id="cart-drawer-footer">
-        <div class="mb-4 p-4 rounded-xl bg-surface-variant/30 border border-line text-on-surface-variant font-body-sm flex items-start gap-3">
-          <span class="text-xl leading-none">💡</span>
-          <p class="text-[12.5px] leading-relaxed"><strong>Confection sur commande.</strong> Les délais dépendent du nombre d'articles et du travail requis. Envoyez votre sélection sur WhatsApp pour obtenir votre délai estimé et valider la commande.</p>
-        </div>
-        
-        <!-- Code Promo Module -->
-        <div class="mb-4">
-          <div class="flex gap-2">
-            <input type="text" id="cart-promo-input" placeholder="Code promo (ex: ROSBRI10)" class="flex-1 px-3 py-2 text-xs border border-line rounded-lg bg-white uppercase font-bold text-ink focus:outline-none focus:border-primary">
-            <button type="button" id="cart-promo-apply-btn" class="px-4 py-2 text-xs font-bold bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">Appliquer</button>
-          </div>
-          <p id="cart-promo-message" class="text-[11px] mt-1 font-semibold hidden"></p>
-        </div>
-
-        <div class="flex justify-between items-center mb-6">
-          <span class="font-label-sm uppercase tracking-widest text-muted">Total :</span>
-          <strong id="cart-total-value" class="font-display-accent text-2xl text-ink">0 FCFA</strong>
-        </div>
-        <div class="flex flex-col gap-3">
-          <a class="w-full px-6 py-4 rounded-xl bg-[#25D366] text-white font-label-sm uppercase tracking-widest hover:bg-[#20ba5a] transition-colors text-center flex justify-center items-center shadow-lg gap-2" id="cart-order-btn" href="#">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Envoyer sur WhatsApp
-            </a>
-          <button class="w-full px-6 py-3 rounded-xl border border-line text-muted font-label-sm uppercase tracking-widest hover:bg-error hover:text-white hover:border-error transition-colors" id="cart-clear-btn" type="button">Vider le panier</button>
-        </div>
+      <!-- Pagination / Load More -->
+      <div class="mt-12 flex justify-center items-center">
+        <button id="catalog-load-more" class="px-8 py-3 rounded-full border border-line bg-white text-ink hover:bg-ink hover:text-white transition-all font-bold text-xs uppercase tracking-widest shadow-sm" style="display: none;">Charger plus d'articles</button>
       </div>
     </div>
-  </div>
-  <div class="quote-modal" id="quote-modal" aria-hidden="true">
-    <div class="quote-modal-content">
-      <button class="close-btn" type="button" id="close-quote-modal" aria-label="Fermer">×</button>
-      <h3>Demande de devis</h3>
-      <p id="quote-product-name">Nom du produit</p>
-      
-      <div class="quote-form-group">
-        <label for="quote-name">Nom / Entreprise *</label>
-        <input type="text" id="quote-name" placeholder="Votre nom ou société" required>
-      </div>
-      
-      <div class="quote-form-group">
-        <label for="quote-qty">Quantité estimée *</label>
-        <input type="number" id="quote-qty" placeholder="Ex: 50" min="1" required>
-      </div>
-      
-      <div class="quote-form-group">
-        <label for="quote-desc">Détails du besoin *</label>
-        <textarea id="quote-desc" placeholder="Décrivez votre projet (délais, personnalisation...)" required></textarea>
-      </div>
-      
-      <div class="quote-modal-actions">
-        <button class="secondary-btn" type="button" id="cancel-quote-modal">Annuler</button>
-        <button class="primary-btn" type="button" id="submit-quote-modal">Envoyer sur WhatsApp</button>
-      </div>
-  <!-- Shared Footer Mount Point -->
-  <div id="footer-mount"></div>
+  </main>
 
-  <!-- Scripts -->
+  <!-- Mount Points -->
+  <div id="site-footer"></div>
+  <div id="site-mobile-menu"></div>
+  <div id="site-cart-drawer"></div>
+
+  <!-- Shared Scripts -->
   <script src="catalog-data.js"></script>
   <script src="catalog.js"></script>
-  <script src="cart.js"></script>
   <script src="js/components.js"></script>
   <script src="js/header.js"></script>
-</body></html>
+  <script src="js/search.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/announcement-bar.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

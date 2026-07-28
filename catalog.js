@@ -504,17 +504,23 @@
   }
 
   function isTshirt(item) {
-    return displayTitle(item).toLowerCase().includes("t-shirt");
+    if (!item) return false;
+    const cat = (productCategory(item) || "").toLowerCase();
+    const title = (displayTitle(item) || item.title || "").toLowerCase();
+    return title.includes("t-shirt") || title.includes("tshirt") || title.includes("t shirt") || cat.includes("tshirt") || cat.includes("vetement") || cat.includes("vêtements") || isClothing(item);
   }
 
   function isClothing(item) {
     if (item.requiresSize) return true;
-    return ["Tshirts", "Ensembles", "Robes", "Boubous", "Chemises", "Polos", "Debardeurs"].includes(productCategory(item));
+    const cat = productCategory(item);
+    const title = (displayTitle(item) || item.title || "").toLowerCase();
+    if (title.includes("t-shirt") || title.includes("tshirt") || title.includes("ensemble") || title.includes("robe") || title.includes("chemise") || title.includes("kimono")) return true;
+    return ["Tshirts", "Ensembles", "Robes", "Boubous", "Chemises", "Polos", "Debardeurs", "Vêtements"].includes(cat);
   }
 
   function isChildClothing(item) {
     if (item.requiresChildSize) return true;
-    return isClothing(item) && productSubcategory(item) === "Enfants";
+    return isClothing(item) && (productSubcategory(item) === "Enfants" || (displayTitle(item) || "").toLowerCase().includes("enfant") || (displayTitle(item) || "").toLowerCase().includes("bébé"));
   }
 
   function sizeOptionsFor(item) {
@@ -539,7 +545,7 @@
   function colorOptionsFor(item) {
     if (!item) return [];
     if (Array.isArray(item.colorVariants) && item.colorVariants.length) return item.colorVariants;
-    if (!isTshirt(item)) return [];
+    if (!isTshirt(item) && !isClothing(item)) return [];
     const productVariants = productVariantsFor(item);
     if (productVariants.length > colorVariants.length) return productVariants;
     return colorVariants.map((variant) => ({

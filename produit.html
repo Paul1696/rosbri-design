@@ -3,14 +3,22 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Détail Produit | Rosbri Wax Design - Afritude Luxe</title>
-  <meta id="meta-description" name="description" content="Découvrez cette création exclusive Rosbri Wax Design, confectionnée sur-mesure au Cameroun."/>
-  <meta id="og-title" property="og:title" content="Rosbri Wax Design | Création Sur-Mesure"/>
+  <title>Fiche Produit | ROSBRI DESIGN - Afritude Luxe</title>
+  <meta id="meta-description" name="description" content="Découvrez cette création exclusive ROSBRI DESIGN, confectionnée sur-mesure au Cameroun."/>
+  <meta id="og-title" property="og:title" content="ROSBRI DESIGN | Création Sur-Mesure"/>
   <meta id="og-description" property="og:description" content="Design de luxe imprégné d’héritage africain. Découvrez les détails et passez commande."/>
-  <meta id="og-image" property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg"/>
+  <meta id="og-image" property="og:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
+  <meta property="og:type" content="website"/>
+
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link href="styles.css" rel="stylesheet"/>
+
+  <!-- Design System Styles -->
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -37,38 +45,39 @@
     }
   </script>
 </head>
-<!-- Shared Component Mount Points -->
-<div id="announcement-bar-mount"></div>
-<div id="header-mount"></div>
-<div id="mobile-menu-mount"></div>
-<div id="cart-drawer-mount"></div>
 
-<!-- Main Content Container -->
-<main class="flex-1 max-w-[1280px] mx-auto px-6 py-8 w-full">
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white produit-page">
 
-  <!-- Return Button & Breadcrumb -->
-  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-    <a href="boutique.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-line bg-white text-xs font-bold uppercase tracking-widest text-ink hover:bg-ink hover:text-white transition-all shadow-sm w-fit">
-      <span class="material-symbols-outlined text-sm">arrow_back</span>
-      <span>Retour à la boutique</span>
-    </a>
-    <nav class="flex items-center gap-2 text-xs text-muted" aria-label="Fil d'Ariane">
-      <a href="index.html" class="hover:text-ink">Accueil</a>
-      <span>/</span>
-      <a href="boutique.html" class="hover:text-ink">Boutique</a>
-      <span>/</span>
-      <span id="breadcrumb-category" class="hover:text-ink">Catégorie</span>
-      <span>/</span>
-      <span id="breadcrumb-title" class="font-bold text-ink">Article</span>
-    </nav>
-  </div>
+  <!-- Mount Points -->
+  <div id="site-announcement"></div>
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main id="main-content" class="flex-1 max-w-[1280px] mx-auto px-6 py-8 w-full">
+
+    <!-- Return Button & Breadcrumb Grouped -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-line">
+      <a href="boutique.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-line bg-white text-xs font-bold uppercase tracking-widest text-ink hover:bg-ink hover:text-white transition-all shadow-sm w-fit">
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+        <span>Retour à la boutique</span>
+      </a>
+      <nav class="flex items-center gap-2 text-xs text-muted" aria-label="Fil d'Ariane">
+        <a href="index.html" class="hover:text-ink">Accueil</a>
+        <span>/</span>
+        <a href="boutique.html" class="hover:text-ink">Boutique</a>
+        <span>/</span>
+        <span id="breadcrumb-category" class="hover:text-ink">Catégorie</span>
+        <span>/</span>
+        <span id="breadcrumb-title" class="font-bold text-ink truncate max-w-[200px]">Article</span>
+      </nav>
+    </div>
 
     <!-- 404 Error State (Hidden by default) -->
     <div id="product-not-found" class="hidden py-16 text-center bg-white rounded-3xl border border-line shadow-sm max-w-xl mx-auto my-12">
       <div class="text-5xl mb-4">🔍</div>
       <h2 class="font-display-accent text-3xl text-ink mb-2">Produit introuvable</h2>
-      <p class="text-muted text-sm mb-6 max-w-md mx-auto">L'article que vous recherchez n'existe pas ou n'est plus disponible dans notre catalogue.</p>
-      <a href="boutique.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-champagne text-white font-bold text-xs uppercase tracking-widest hover:bg-[#a38038] transition-colors shadow-md">
+      <p class="text-muted text-xs md:text-sm mb-6 max-w-md mx-auto">L'article que vous recherchez n'existe pas ou n'est plus disponible dans notre catalogue.</p>
+      <a href="boutique.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-ink text-white font-bold text-xs uppercase tracking-widest hover:bg-champagne transition-colors shadow-md">
         <span>Explorer la Boutique</span>
         <span class="material-symbols-outlined text-sm">arrow_forward</span>
       </a>
@@ -79,7 +88,7 @@
       
       <!-- Visuals / Gallery Column -->
       <div class="flex flex-col gap-4">
-        <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-sand border border-line shadow-sm">
+        <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-surface-container-low border border-line shadow-sm">
           <img id="detail-main-image" src="" alt="" class="w-full h-full object-cover">
           <span id="detail-badge" class="absolute top-4 left-4 bg-champagne text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-sm"></span>
         </div>
@@ -99,7 +108,7 @@
             <span class="px-3 py-1 bg-surface-variant/50 text-ink rounded-full text-[10px] font-bold uppercase tracking-widest border border-line">⏳ Confection sur commande</span>
           </div>
 
-          <p id="detail-description" class="text-muted text-sm leading-relaxed mb-8 border-b border-line pb-6"></p>
+          <p id="detail-description" class="text-muted text-xs md:text-sm leading-relaxed mb-6 border-b border-line pb-6"></p>
 
           <!-- Interactive Options Form -->
           <div id="detail-options" class="space-y-6 mb-8"></div>
@@ -107,7 +116,7 @@
 
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-line">
-          <button id="detail-add-cart-btn" type="button" class="flex-1 px-8 py-4 rounded-full border-2 border-ink text-ink font-bold text-xs uppercase tracking-widest hover:bg-ink hover:text-white transition-all text-center">
+          <button id="detail-add-cart-btn" type="button" class="flex-1 px-8 py-4 rounded-full border-2 border-ink text-ink font-bold text-xs uppercase tracking-widest hover:bg-ink hover:text-white transition-all text-center shadow-sm">
             Pré-commander
           </button>
           <a id="detail-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 px-8 py-4 rounded-full bg-[#25D366] text-white font-bold text-xs uppercase tracking-widest hover:bg-[#20ba5a] transition-all text-center flex items-center justify-center gap-2 shadow-lg">
@@ -120,7 +129,7 @@
     </div>
 
     <!-- Similar Products Section -->
-    <section id="similar-products-section" class="mt-20 border-t border-line pt-12">
+    <section id="similar-products-section" class="mt-16 border-t border-line pt-12">
       <div class="flex items-center justify-between mb-8">
         <div>
           <span class="text-xs uppercase tracking-widest font-bold text-champagne block mb-1">Pour compléter votre sélection</span>
@@ -133,27 +142,28 @@
 
   </main>
 
-  <!-- Shared Footer Mount Point -->
-  <div id="footer-mount"></div>
+  <!-- Mount Points -->
+  <div id="site-footer"></div>
+  <div id="site-mobile-menu"></div>
+  <div id="site-cart-drawer"></div>
 
-  <!-- Scripts -->
+  <!-- Shared Scripts -->
   <script src="catalog-data.js"></script>
   <script src="catalog.js"></script>
-  <script src="cart.js"></script>
   <script src="js/components.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/announcement-bar.js"></script>
+  <script src="js/common.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
       const slugOrId = params.get("slug") || params.get("id") || params.get("p") || window.location.hash.replace("#product-", "");
       
-      console.log("Fiche Produit chargée");
-      console.log("Slug :", slugOrId);
-      console.log("Destination :", `produit.html?slug=${encodeURIComponent(slugOrId || "")}`);
-
       const item = window.findProductBySlugOrId ? window.findProductBySlugOrId(slugOrId) : null;
-      console.log("Produit trouvé :", item ? item.title : "Aucun (404)");
       
       const notFoundView = document.getElementById("product-not-found");
       const detailView = document.getElementById("product-detail-view");
@@ -163,7 +173,7 @@
         if (notFoundView) notFoundView.classList.remove("hidden");
         if (detailView) detailView.classList.add("hidden");
         if (similarSection) similarSection.classList.add("hidden");
-        document.title = "Produit Introuvable | Rosbri Wax Design";
+        document.title = "Produit Introuvable | ROSBRI DESIGN";
         return;
       }
 
@@ -171,32 +181,32 @@
       const title = window.displayTitle ? window.displayTitle(item) : (item.title || "Article");
       const category = window.productCategory ? window.productCategory(item) : (item.category || "Vêtements");
       const price = item.price || "Sur Devis";
-      const desc = window.productDescription ? window.productDescription(item) : (item.description || "");
-      const mainImg = window.optimizedImage && window.displayImage ? window.optimizedImage(window.displayImage(item)) : (item.image || "");
+      const desc = window.productDescription ? window.productDescription(item) : (item.description || "Création artisanale ROSBRI DESIGN.");
+      const mainImg = window.optimizedImage && window.displayImage ? window.optimizedImage(window.displayImage(item)) : (item.image || "images/brand/rosbri-wax-design-logo.jpg");
 
-      document.title = `${title} | Rosbri Wax Design`;
+      document.title = `${title} | ROSBRI DESIGN`;
       const descMeta = document.getElementById("meta-description");
       if (descMeta) descMeta.content = desc;
       const ogTitle = document.getElementById("og-title");
-      if (ogTitle) ogTitle.content = `${title} | Rosbri Wax Design`;
+      if (ogTitle) ogTitle.content = `${title} | ROSBRI DESIGN`;
       const ogDesc = document.getElementById("og-description");
       if (ogDesc) ogDesc.content = desc;
-      const ogImg = document.getElementById("og-image");
-      if (ogImg) ogImg.content = window.location.origin + "/" + mainImg;
 
       document.getElementById("breadcrumb-category").textContent = category;
       document.getElementById("breadcrumb-title").textContent = title;
 
       // Populate Main Info
-      document.getElementById("detail-main-image").src = mainImg;
-      document.getElementById("detail-main-image").alt = title;
+      const mainImgNode = document.getElementById("detail-main-image");
+      mainImgNode.src = mainImg;
+      mainImgNode.alt = title;
       document.getElementById("detail-badge").textContent = item.badge || (item.isPack ? "Pack" : category);
-      document.getElementById("detail-meta").textContent = `${category} • Rosbri Design`;
+      document.getElementById("detail-meta").textContent = `${category} • ROSBRI DESIGN`;
       document.getElementById("detail-title").textContent = title;
       document.getElementById("detail-price").textContent = price;
       document.getElementById("detail-description").textContent = desc;
 
-      // Render Options Form
+      // Options Rendering & Container check
+      const optionsContainer = document.getElementById("detail-options");
       if (window.renderOrderOptions) {
         window.orderState.item = item;
         const defaultSize = (window.isChildClothing && window.isChildClothing(item)) ? "4 ans" : "M";
@@ -207,19 +217,48 @@
         window.orderState.color = (window.colorOptionsFor && window.colorOptionsFor(item)[0] ? window.colorOptionsFor(item)[0].id : "noir");
         window.orderState.quantity = 1;
 
-        const optionsContainer = document.getElementById("detail-options");
+        const markup = window.optionMarkup ? window.optionMarkup(item) : "";
         if (optionsContainer) {
-          optionsContainer.innerHTML = window.optionMarkup ? window.optionMarkup(item) : "";
+          if (markup.trim()) {
+            optionsContainer.innerHTML = markup;
+            optionsContainer.classList.remove("hidden");
+          } else {
+            optionsContainer.innerHTML = "";
+            optionsContainer.classList.add("hidden");
+          }
         }
         if (window.updateOrderLink) window.updateOrderLink();
+      } else if (optionsContainer) {
+        optionsContainer.classList.add("hidden");
       }
 
-      // Add to Cart Button
+      // Helper to retrieve formatted active color and sizes
+      function getSelectedOptionDetails() {
+        const selectedSizes = (window.orderState && window.orderState.sizes && window.orderState.sizes.length) ? window.orderState.sizes.join(", ") : "M";
+        let colorLabel = "";
+        if (window.selectedColor) {
+          colorLabel = window.selectedColor().label;
+        } else if (window.orderState && window.orderState.color) {
+          colorLabel = window.orderState.color;
+        }
+        return { sizes: selectedSizes, color: colorLabel };
+      }
+
+      // Add to Cart Button Integration
       const addCartBtn = document.getElementById("detail-add-cart-btn");
       if (addCartBtn) {
         addCartBtn.addEventListener("click", () => {
-          if (window.addCurrentItemToCart) {
-            window.addCurrentItemToCart();
+          if (window.ROSBriCart) {
+            const opts = getSelectedOptionDetails();
+            window.ROSBriCart.addToCart({
+              id: item.id || String(item.slug),
+              title: title,
+              price: price,
+              image: mainImg,
+              color: opts.color,
+              size: opts.sizes,
+              quantity: window.orderState ? (window.orderState.quantity || 1) : 1
+            });
             const orig = addCartBtn.textContent;
             addCartBtn.textContent = "✓ Ajouté au panier !";
             addCartBtn.style.background = "#c5a059";
@@ -232,6 +271,28 @@
           }
         });
       }
+
+      // WhatsApp Button Integration
+      function updateWhatsAppUrl() {
+        const whatsappBtn = document.getElementById("detail-whatsapp-btn");
+        if (whatsappBtn) {
+          const itemUrl = window.location.href;
+          const opts = getSelectedOptionDetails();
+          const qty = window.orderState ? (window.orderState.quantity || 1) : 1;
+          let msg = `Bonjour ROSBRI DESIGN 👋\n\nJe souhaite commander :\n🛍️ *${title}*\n- Prix unitaire : *${price}*`;
+          if (opts.color) msg += `\n- Couleur : *${opts.color}*`;
+          if (opts.sizes) msg += `\n- Taille : *${opts.sizes}*`;
+          msg += `\n- Quantité : *${qty}*\n- Lien : ${itemUrl}\n\nMerci de me préciser la disponibilité et le délai de livraison.`;
+          whatsappBtn.href = `https://wa.me/237698193880?text=${encodeURIComponent(msg)}`;
+        }
+      }
+
+      updateWhatsAppUrl();
+      document.addEventListener("click", (e) => {
+        if (e.target.closest("[data-size], [data-color], [data-quantity-step], [data-size-quantity-step]")) {
+          setTimeout(updateWhatsAppUrl, 100);
+        }
+      });
 
       // Similar Products Grid
       const similarGrid = document.getElementById("similar-products-grid");

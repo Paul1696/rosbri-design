@@ -1,579 +1,185 @@
 <!DOCTYPE html>
-<html class="light" lang="fr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ROSBRI DESIGN | Mode Afritude Luxe & Cadeaux Sur-Mesure</title>
-<meta name="description" content="Découvrez les créations exclusives Rosbri Wax Design : T-shirts Héritage, vêtements Afritude Luxe, sacs, babouches et cadeaux personnalisés faits main au Cameroun."/>
-<meta property="og:title" content="Rosbri Wax Design | Mode Afritude Luxe & Cadeaux Sur-Mesure"/>
-<meta property="og:description" content="Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage africain."/>
-<meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg"/>
-<meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/"/>
-<meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Rosbri Wax Design | Afritude Luxe"/>
-<meta name="twitter:description" content="Mode Afritude Luxe et cadeaux d'exception façonnés à la main au Cameroun."/>
-<meta name="twitter:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Playfair+Display:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "background": "#faf9fe",
-                "on-secondary-fixed": "#1a1b1e",
-                "on-surface-variant": "#4e4639",
-                "on-secondary-container": "#646468",
-                "error": "#ba1a1a",
-                "primary": "#775a19",
-                "surface-variant": "#e3e2e7",
-                "on-tertiary": "#ffffff",
-                "surface-container-highest": "#e3e2e7",
-                "surface-tint": "#775a19",
-                "tertiary-fixed-dim": "#c9c6c1",
-                "secondary-container": "#e3e2e6",
-                "on-tertiary-fixed": "#1c1c18",
-                "primary-fixed-dim": "#e9c176",
-                "on-secondary": "#ffffff",
-                "on-error-container": "#93000a",
-                "inverse-on-surface": "#f1f0f5",
-                "on-primary": "#ffffff",
-                "secondary": "#5e5e62",
-                "outline": "#7f7667",
-                "on-primary-fixed-variant": "#5d4201",
-                "outline-variant": "#d1c5b4",
-                "on-primary-container": "#4e3700",
-                "surface-container-high": "#e8e7ec",
-                "tertiary-fixed": "#e5e2dc",
-                "tertiary-container": "#a7a5a0",
-                "on-tertiary-fixed-variant": "#474743",
-                "primary-container": "#c5a059",
-                "inverse-primary": "#e9c176",
-                "surface-container-low": "#f4f3f8",
-                "on-tertiary-container": "#3b3b37",
-                "secondary-fixed-dim": "#c7c6ca",
-                "error-container": "#ffdad6",
-                "surface-container-lowest": "#ffffff",
-                "surface-bright": "#faf9fe",
-                "inverse-surface": "#2f3034",
-                "on-error": "#ffffff",
-                "secondary-fixed": "#e3e2e6",
-                "surface-container": "#eeedf2",
-                "on-primary-fixed": "#261900",
-                "on-background": "#1a1c1f",
-                "on-secondary-fixed-variant": "#46474a",
-                "on-surface": "#1a1c1f",
-                "surface": "#faf9fe",
-                "tertiary": "#5f5e5a",
-                "surface-dim": "#dad9de",
-                "primary-fixed": "#ffdea5",
-                "ink": "#1a1c1f",
-                "champagne": "#c5a059",
-                "cream": "#faf9fe",
-                "paper": "#fbf8f2"
-            },
-            "fontFamily": {
-                "body-lg": ["Inter", "sans-serif"],
-                "body-md": ["Inter", "sans-serif"],
-                "label-sm": ["Inter", "sans-serif"],
-                "headline-md": ["Inter", "sans-serif"],
-                "display-accent": ["Playfair Display", "serif"],
-                "headline-lg": ["Inter", "sans-serif"]
-            },
-            "spacing": {
-                "gutter": "24px",
-                "stack-sm": "1rem",
-                "stack-md": "1.5rem",
-                "stack-lg": "2.5rem",
-                "margin-lg": "4rem",
-                "margin-md": "2rem",
-                "xl": "48px",
-                "xxl": "80px"
-            }
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>ROSBRI DESIGN | Mode Afritude Luxe & Créations Personnalisées</title>
+  <meta name="description" content="Découvrez les créations exclusives ROSBRI DESIGN : T-shirts Héritage, vêtements Afritude Luxe, sacs, babouches et cadeaux personnalisés faits main au Cameroun."/>
+  <meta property="og:title" content="ROSBRI DESIGN | Afritude Luxe"/>
+  <meta property="og:description" content="Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage africain."/>
+  <meta property="og:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
+  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="ROSBRI DESIGN | Afritude Luxe"/>
+  <meta name="twitter:description" content="Mode Afritude Luxe et cadeaux d'exception façonnés à la main au Cameroun."/>
+  <meta name="twitter:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Design System Styles -->
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#faf9fe",
+            "on-surface-variant": "#4e4639",
+            "error": "#ba1a1a",
+            "primary": "#775a19",
+            "surface-variant": "#e3e2e7",
+            "primary-container": "#c5a059",
+            "surface-container-low": "#f4f3f8",
+            "ink": "#1a1c1f",
+            "champagne": "#c5a059",
+            "cream": "#faf9fe",
+            "paper": "#fbf8f2"
           },
-        },
+          fontFamily: {
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "display-accent": ["Playfair Display", "serif"]
+          }
+        }
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .soft-shadow {
-            box-shadow: 0 10px 40px -10px rgba(26, 28, 31, 0.08);
-        }
-        .hover-lift {
-            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .hover-lift:hover {
-            transform: translateY(-8px);
-        }
-        .wax-pattern-bg {
-            background-image: url("images/brand/rosbri-wax-design-logo.jpg");
-            background-size: 150px;
-            background-repeat: repeat;
-            opacity: 0.03;
-            pointer-events: none;
-        }
-        .geometric-divider {
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #c5a059, transparent);
-            width: 100%;
-            margin: 2rem 0;
-        }
-
-        /* Shader Background */
-        #background-shader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            pointer-events: none;
-        }
-
-        /* Afritude Flair Animations */
-        @keyframes floating {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
-        .afritude-watermark {
-            position: absolute;
-            opacity: 0.06;
-            pointer-events: none;
-            z-index: 0;
-            animation: floating 8s ease-in-out infinite;
-            filter: grayscale(1) brightness(0);
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .animate-fade-in-up {
-            animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        }
-
-        .product-card-hover {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .product-card-hover:hover {
-            transform: scale(1.03) translateY(-10px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-        }
-
-        section { position: relative; }
-    </style>
+    }
+  </script>
 </head>
-<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white">
-<canvas height="3693" id="background-shader" width="1280"></canvas>
 
-<!-- Shared Component Mount Points -->
-<div id="announcement-bar-mount"></div>
-<div id="header-mount"></div>
-<div id="mobile-menu-mount"></div>
-<div id="cart-drawer-mount"></div>
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white home-page">
 
-<main>
-<!-- 2. Hero Section -->
-<section class="relative min-h-[800px] flex items-center px-margin-lg py-stack-lg max-w-[1280px] mx-auto overflow-hidden">
-<div class="absolute inset-0 wax-pattern-bg"></div>
-<img alt="Handbag Watermark" class="afritude-watermark top-20 -right-20 w-96 h-96 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-delay: -2s;"/>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full relative z-10">
-<div class="order-2 md:order-1 animate-fade-in-up">
-<span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-4 block">Élégance Artisanale</span>
-<h1 class="font-display-accent text-5xl md:text-6xl mb-stack-sm leading-tight">
-                        Un Design qui Raconte <br/><span class="text-champagne italic">Votre Héritage</span>
-</h1>
-<p class="font-body-lg text-on-surface-variant mb-stack-lg max-w-md">
-                        Des cadeaux personnalisés premium et des packs d'entreprise imprégnés de la chaleur de l'artisanat wax. Sublimez vos présents avec un luxe africain raffiné.
-                    </p>
-<button class="bg-ink text-on-primary font-label-sm uppercase tracking-widest px-10 py-5 rounded-full hover:bg-champagne transition-all duration-300 shadow-lg">
-                        Découvrir la Collection
-                    </button>
-</div>
-<div class="relative order-1 md:order-2">
-<div class="aspect-square rounded-xl overflow-hidden soft-shadow bg-surface-container border-4 border-white">
-<img alt="A high-end, minimalist luxury gift box featuring champagne gold foil personalized lettering on the lid." class="w-full h-full object-cover" src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png"/>
-</div>
-<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-champagne/10 rounded-full -z-10 hidden md:block"></div>
-</div>
-</div>
-</section>
-<!-- 3. Navigation Commerciale -->
-<section class="bg-surface-container-low/50 py-stack-lg px-margin-lg relative overflow-hidden transition-all duration-1000 ease-out opacity-100 translate-y-0">
-<img alt="Motif discret en filigrane pour habiller l'arrière-plan" class="afritude-watermark -left-32 bottom-20 w-80 h-80 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-duration: 12s;"/>
-<div class="max-w-[1280px] mx-auto relative z-10">
-<div class="text-center mb-12">
-<h2 class="font-display-accent text-4xl text-ink mb-4">Que souhaitez-vous créer ?</h2>
-<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Découvrez les univers Rosbri Design et trouvez rapidement les articles adaptés à votre projet.</p>
-</div>
+  <!-- Mount Points -->
+  <div id="site-announcement"></div>
+  <div id="site-header"></div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Carte 1 : Personnalisation -->
-<a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20personnaliser%20un%20article." class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne focus:ring-offset-4 focus:ring-offset-surface-container-low">
-<img src="images/articles-site/navigation/nav-personnalisation.png" alt="Exemple d'article personnalisé de haute qualité avec un prénom élégamment imprimé." class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
-<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
-<div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
-<h3 class="font-display-accent text-3xl text-white mb-2">Personnalisez votre article</h3>
-<p class="font-body-sm text-white/90 mb-6">Transformez votre idée en une création unique avec votre prénom, votre photo, votre message ou votre logo.</p>
-<span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white">
-Commencer une personnalisation
-<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
-</span>
-</div>
-</a>
-
-<!-- Carte 2 : Cadeaux -->
-<a href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne focus:ring-offset-4 focus:ring-offset-surface-container-low">
-<img src="images/articles-site/navigation/nav-cadeaux.png" alt="Composition de cadeaux artisanaux luxueux prêts à offrir, incluant carnets et bougies." class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
-<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
-<div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
-<h3 class="font-display-accent text-3xl text-white mb-2">Cadeaux & moments précieux</h3>
-<p class="font-body-sm text-white/90 mb-6">Trouvez un cadeau original pour un anniversaire, une fête, une cérémonie ou une personne qui compte.</p>
-<span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white">
-Découvrir les idées cadeaux
-<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
-</span>
-</div>
-</a>
-
-<!-- Carte 3 : Entreprise -->
-<a href="boutique.html?categorie=Entreprise%20%26%20B2B" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne focus:ring-offset-4 focus:ring-offset-surface-container-low md:col-span-2 lg:col-span-1 md:w-1/2 md:mx-auto lg:w-full lg:mx-0">
-<img src="images/articles-site/navigation/nav-entreprise.png" alt="Objets publicitaires d'entreprise élégants disposés sur une table de réunion." class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
-<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
-<div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
-<h3 class="font-display-accent text-3xl text-white mb-2">Entreprises & événements</h3>
-<p class="font-body-sm text-white/90 mb-6">Des textiles, objets et packs personnalisés pour vos équipes, associations, écoles et événements.</p>
-<span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white">
-Voir les solutions professionnelles
-<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
-</span>
-</div>
-</a>
-</div>
-</div>
-</section>
-<!-- 4. Our Philosophy Section -->
-<section class="py-xxl px-margin-lg bg-transparent relative overflow-hidden transition-all duration-1000 ease-out opacity-100 translate-y-0">
-<img alt="Bracelet Watermark" class="afritude-watermark left-1/2 -translate-x-1/2 -top-20 w-[600px] h-[600px] bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-duration: 20s; opacity: 0.04;"/>
-<div class="max-w-[800px] mx-auto text-center py-stack-lg relative z-10">
-<div class="flex justify-center mb-stack-sm">
-<img alt="Logo Motif" class="h-16 w-auto opacity-80" src="images/brand/rosbri-wax-design-logo.jpg"/>
-</div>
-<h2 class="font-display-accent text-4xl mb-stack-md leading-tight text-ink">L'Âme du Cadeau Significatif</h2>
-<p class="font-body-lg text-on-surface-variant leading-relaxed">
-                    Chez Rosbri Wax Design, nous célébrons la rencontre entre le luxe moderne et l'héritage culturel. Chaque création est un hommage au savoir-faire du passé, repensé pour le monde contemporain. Notre identité &quot;Afritude Luxe&quot; marie les matériaux nobles à l'esprit vibrant de la chaleur artisanale.
-                </p>
-<div class="geometric-divider"></div>
-<div class="mt-stack-lg flex flex-wrap justify-center gap-12">
-<div class="text-center">
-<div class="font-display-accent text-3xl text-champagne">100%</div>
-<div class="font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Création Sur-Mesure</div>
-</div>
-<div class="text-center">
-<div class="font-display-accent text-3xl text-champagne">05k+</div>
-<div class="font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Histoires Partagées</div>
-</div>
-<div class="text-center">
-<div class="font-display-accent text-3xl text-champagne">Matériaux</div>
-<div class="font-label-sm uppercase tracking-widest text-on-surface-variant mt-2">Nobles</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 5. Product Grid -->
-<section class="pb-xxl px-margin-lg max-w-[1280px] mx-auto relative transition-all duration-1000 ease-out opacity-100 translate-y-0">
-<img alt="T-Shirt Watermark" class="afritude-watermark -right-40 bottom-40 w-96 h-96 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-delay: -5s;"/>
-<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-4 relative z-10">
-<div>
-<h2 class="font-display-accent text-3xl">Nos Créations Signatures</h2>
-<p class="text-on-surface-variant">Nos articles artisanaux les plus appréciés.</p>
-</div>
-<a class="text-champagne font-label-sm uppercase tracking-widest border-b-2 border-champagne pb-1 hover:text-ink hover:border-ink transition-all" href="#">Explorer la Boutique</a>
-</div>
-<div id="featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter relative z-10">
-  <!-- Rempli par catalog.js -->
-  </div>
-  </section>
-  <!-- 6. Corporate Section -->
-<section class="px-margin-lg mb-xxl max-w-[1280px] mx-auto transition-all duration-1000 ease-out opacity-100 translate-y-0">
-<div class="relative rounded-2xl overflow-hidden bg-ink text-white p-margin-md md:p-margin-lg min-h-[500px] flex items-center">
-<div class="absolute inset-0 opacity-15 mix-blend-overlay">
-<img alt="Abstract paper textures" class="w-full h-full object-cover" src="images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png"/>
-</div>
-<div class="absolute inset-0 wax-pattern-bg !opacity-5"></div>
-<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full">
-<div>
-<span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-4 block">Solutions B2B</span>
-<h2 class="font-display-accent text-4xl mb-stack-sm leading-tight">La Référence des <br/>Cadeaux d'Affaires Premium</h2>
-<p class="font-body-md text-white/70 mb-stack-lg max-w-md">
-                            Exprimez votre reconnaissance à grande échelle avec des commandes sur-mesure et un marquage raffiné. Des nouvelles recrues à vos partenaires d'élite.
-                        </p>
-<button class="bg-champagne text-white font-label-sm uppercase tracking-widest px-10 py-5 rounded-full hover:bg-white hover:text-ink transition-all duration-300">
-                            Demander un Devis Sur-Mesure
-                        </button>
-</div>
-<div class="hidden md:flex justify-end">
-<div class="w-72 h-72 border-2 border-champagne/30 rounded-full flex items-center justify-center p-10 text-center relative overflow-hidden group">
-<div class="absolute inset-0 wax-pattern-bg group-hover:opacity-10 transition-opacity"></div>
-<span class="font-label-sm text-champagne uppercase tracking-widest leading-relaxed">Rejoignez plus de 200 partenaires d'excellence</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 7. Instagram Lookbook & Community (#RosbriStyle) -->
-<section class="px-margin-lg mb-xxl max-w-[1280px] mx-auto">
-  <div class="text-center mb-stack-lg">
-    <span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-2 block">Communauté & Inspiration</span>
-    <h2 class="font-display-accent text-4xl text-ink mb-2">#RosbriStyle sur Instagram</h2>
-    <p class="text-muted font-body-md max-w-lg mx-auto">Découvrez comment notre communauté porte et associe les créations ROSBRI DESIGN au quotidien.</p>
-  </div>
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
-      <img src="images/articles-site/tshirts/heritage/variants/tshirt-reine-africaine-wax-orange.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
-        <span>📸 @aisha_k</span>
-      </div>
-    </div>
-    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
-      <img src="images/articles-site/sacs/variants/sac-rosbri-wax-01.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
-        <span>📸 @carine_m</span>
-      </div>
-    </div>
-    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
-      <img src="images/articles-site/tshirts/maman/variants/tshirt-merci-maman-meilleure-gris.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
-        <span>📸 @marc_yaounde</span>
-      </div>
-    </div>
-    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
-      <img src="images/articles-site/babouches/variants/babouches-rosbri-wax-05.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
-        <span>📸 @steve_dla</span>
-      </div>
-    </div>
-    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
-      <img src="images/articles-site/ensembles/enfants/variants/ensemble-enfants-rosbri-wax-02.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
-        <span>📸 @family_goals</span>
-      </div>
-    </div>
-    <div class="group relative aspect-square rounded-xl overflow-hidden soft-shadow bg-cream cursor-pointer">
-      <img src="images/articles-site/tshirts/heritage/variants/tshirt-luffy-feu-foudre-jaune.png" alt="Style Client ROSBRI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-      <div class="absolute inset-0 bg-ink/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-bold gap-1">
-        <span>📸 @otaku_cmr</span>
-      </div>
-    </div>
-  </div>
-  <div class="text-center mt-6">
-    <a href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20soumettre%20une%20photo%20de%20ma%20création" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-champagne hover:text-ink transition-colors">
-      <span>Partagez votre style avec le hashtag #RosbriStyle</span>
-      <span class="material-symbols-outlined text-sm">arrow_forward</span>
-    </a>
-  </div>
-</section>
-</main>
-<!-- 7. Footer -->
-
-<script>
-    // Background Shader Implementation
-    const canvas = document.getElementById('background-shader');
-    const gl = canvas.getContext('webgl');
-
-    const vertexShaderSource = `
-        attribute vec2 position;
-        varying vec2 v_texCoord;
-        void main() {
-            v_texCoord = position * 0.5 + 0.5;
-            v_texCoord.y = 1.0 - v_texCoord.y;
-            gl_Position = vec4(position, 0.0, 1.0);
-        }
-    `;
-
-    const fragmentShaderSource = `
-        precision highp float;
-        uniform float u_time;
-        uniform vec2 u_resolution;
-        varying vec2 v_texCoord;
-        void main() {
-            vec2 uv = v_texCoord;
-            float dist = distance(uv, vec2(0.5 + 0.2 * sin(u_time * 0.5), 0.5 + 0.2 * cos(u_time * 0.3)));
-            float glow = smoothstep(0.8, 0.2, dist);
-            vec3 color1 = vec3(0.98, 0.97, 0.95); // Paper
-            vec3 color2 = vec3(0.85, 0.63, 0.35); // Refined Gold
-            vec3 finalColor = mix(color1, color2, glow * 0.05);
-            gl_FragColor = vec4(finalColor, 1.0);
-        }
-    `;
-
-    function createShader(gl, type, source) {
-        const shader = gl.createShader(type);
-        gl.shaderSource(shader, source);
-        gl.compileShader(shader);
-        return shader;
-    }
-
-    const program = gl.createProgram();
-    gl.attachShader(program, createShader(gl, gl.VERTEX_SHADER, vertexShaderSource));
-    gl.attachShader(program, createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource));
-    gl.linkProgram(program);
-
-    const positionBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]), gl.STATIC_DRAW);
-
-    const positionLocation = gl.getAttribLocation(program, 'position');
-    const timeLocation = gl.getUniformLocation(program, 'u_time');
-    const resolutionLocation = gl.getUniformLocation(program, 'u_resolution');
-
-    function resize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        gl.viewport(0, 0, canvas.width, canvas.height);
-    }
-    window.addEventListener('resize', resize);
-    resize();
-
-    function render(time) {
-        gl.useProgram(program);
-        gl.enableVertexAttribArray(positionLocation);
-        gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
-        gl.uniform1f(timeLocation, time * 0.001);
-        gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
-        gl.drawArrays(gl.TRIANGLES, 0, 6);
-        requestAnimationFrame(render);
-    }
-    requestAnimationFrame(render);
-
-    // Intersection observer for scroll animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('opacity-100', 'translate-y-0');
-                entry.target.classList.remove('opacity-0', 'translate-y-8');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('section').forEach(section => {
-        if (!section.classList.contains('min-h-[800px]')) { 
-            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-8');
-            observer.observe(section);
-        }
-    });
-</script>
-
-<footer class="bg-ink text-white w-full py-xxl relative overflow-hidden">
-<div class="absolute inset-0 wax-pattern-bg !opacity-[0.02]"></div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-xl px-margin-lg max-w-[1280px] mx-auto relative z-10">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center space-x-3 mb-stack-sm">
-<img alt="Logo" class="h-10 w-auto invert brightness-0 grayscale" src="images/brand/rosbri-wax-design-logo.jpg"/>
-<div class="font-display-accent text-xl text-white">Rosbri Wax Design</div>
-</div>
-<p class="font-body-sm text-white/60 mb-stack-md leading-relaxed">Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage.</p>
-<div class="flex space-x-4">
-<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">public</span>
-<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">mail</span>
-</div>
-</div>
-<div class="col-span-1">
-<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Explorer</h5>
-<ul class="space-y-3">
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Collections</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Personnalisé</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Entreprise</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Événements</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Assistance</h5>
-<ul class="space-y-3">
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Notre Histoire</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Nous Contacter</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Livraison & Frais</a></li>
-<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Durabilité</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Newsletter</h5>
-<p class="font-body-sm text-white/60 mb-stack-sm">Rejoignez-nous pour des inspirations cadeaux et des avant-premières artisanales.</p>
-<div class="flex border-b border-white/20 pb-2 group focus-within:border-champagne transition-colors">
-<input class="bg-transparent border-none focus:ring-0 text-white text-body-sm w-full placeholder:text-white/30" placeholder="Adresse email" type="email"/>
-<button class="text-champagne font-label-sm uppercase tracking-widest hover:text-white transition-colors">S'inscrire</button>
-</div>
-</div>
-</div>
-<div class="max-w-[1280px] mx-auto px-margin-lg mt-xl pt-stack-md border-t border-white/10 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-label-sm text-white/40 uppercase tracking-widest text-[10px]">© 2024 Rosbri Wax Design. Créé avec Passion et Héritage.</p>
-<div class="flex gap-4">
-<span class="text-[10px] text-white/40 uppercase tracking-widest">Confidentialité</span>
-<span class="text-[10px] text-white/40 uppercase tracking-widest">Conditions</span>
-</div>
-</div>
-</footer>
-<a class="fixed bottom-6 right-6 z-[90] flex items-center justify-center w-[60px] h-[60px] bg-[#25D366] text-white rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:-translate-y-1 hover:scale-105 transition-all duration-300" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20viens%20de%20votre%20site%20web%20et%20j%E2%80%99aimerais%20passer%20commande." aria-label="Contacter ROSBRI DESIGN sur WhatsApp" target="_blank" rel="noopener noreferrer">
-    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  
-
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-panel" id="lightbox-panel">
-      <div class="lightbox-visual" id="lightbox-visual">
-        <img id="lightbox-image" src="" alt="">
-      </div>
-      <div class="lightbox-info" id="lightbox-info">
-        <div class="lightbox-scrollable">
-          <p id="lightbox-meta" class="lightbox-eyebrow"></p>
-          <strong id="lightbox-title" style="display:block; font-size:1.6rem; line-height:1.2; margin-bottom:0.5rem; color:var(--ink);"></strong>
-          <div style="margin-bottom:1rem;">
-            <span style="display:inline-block; padding:3px 12px; background:rgba(119,90,25,0.08); color:#775a19; border-radius:999px; font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; border:1px solid rgba(119,90,25,0.2);">⏳ Confection sur commande</span>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="relative min-h-[700px] flex items-center px-margin-lg py-stack-lg max-w-[1280px] mx-auto overflow-hidden">
+      <div class="absolute inset-0 wax-pattern-bg"></div>
+      <img alt="ROSBRI DESIGN Watermark" class="afritude-watermark top-20 -right-20 w-96 h-96 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-delay: -2s;"/>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full relative z-10">
+        <div class="order-2 md:order-1 animate-fade-in-up">
+          <span class="text-champagne font-label-sm uppercase tracking-[0.3em] mb-4 block font-bold">Élégance Artisanale</span>
+          <h1 class="font-display-accent text-4xl md:text-6xl mb-stack-sm leading-tight text-ink">
+            Un Design qui Raconte <br/><span class="text-champagne italic">Votre Héritage</span>
+          </h1>
+          <p class="font-body-lg text-on-surface-variant mb-stack-lg max-w-md">
+            Des cadeaux personnalisés premium et des créations d'entreprise imprégnés de la chaleur de l'artisanat wax. Sublimez vos présents avec un luxe africain raffiné.
+          </p>
+          <a href="collections.html" class="inline-block bg-ink text-white font-label-sm uppercase tracking-widest px-10 py-5 rounded-full hover:bg-champagne transition-all duration-300 shadow-lg text-center font-bold">
+            Découvrir la Collection
+          </a>
+        </div>
+        <div class="relative order-1 md:order-2">
+          <div class="aspect-square rounded-xl overflow-hidden soft-shadow bg-surface-container border-4 border-white">
+            <img alt="Création ROSBRI DESIGN" class="w-full h-full object-cover" src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png"/>
           </div>
-          <p style="color:var(--muted); line-height:1.6; margin-bottom:1.25rem;" id="lightbox-description"></p>
-          <div id="lightbox-options"></div>
-          <div id="lightbox-reviews" style="margin-top:1.5rem;"></div>
-          <div id="lightbox-share" style="margin-top:1rem;"></div>
-        </div>
-        <div class="lightbox-actions" style="padding:1.25rem 2rem; border-top:1px solid var(--line); display:flex; gap:0.75rem; flex-wrap:wrap;">
-          <button style="flex:1; min-width:120px; padding:0.8rem 1.25rem; border-radius:999px; border:1.5px solid var(--ink); background:transparent; color:var(--ink); font-weight:700; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all 0.2s;" id="lightbox-cart" type="button"
-            onmouseover="this.style.background='var(--ink)';this.style.color='#fff';"
-            onmouseout="this.style.background='transparent';this.style.color='var(--ink)';">Pré-commander</button>
-          <a style="flex:1; min-width:120px; padding:0.8rem 1.25rem; border-radius:999px; background:#c5a059; color:#fff; font-weight:700; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; text-align:center; text-decoration:none; display:flex; align-items:center; justify-content:center; transition:background 0.2s;" id="lightbox-order"
-            href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20passer%20une%20commande."
-            onmouseover="this.style.background='#a38038';" onmouseout="this.style.background='#c5a059';">Commander</a>
+          <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-champagne/10 rounded-full -z-10 hidden md:block"></div>
         </div>
       </div>
-      <button style="position:absolute; top:14px; right:14px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.88); border:none; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; z-index:20; backdrop-filter:blur(6px); transition:all 0.2s; color:var(--ink);" type="button" data-close-lightbox aria-label="Fermer">✕</button>
-    </div>
-  </div>
+    </section>
 
-  <script src="catalog-data.js?v=20260612-pack-prices"></script>
-  <script src="cms-config.js?v=20260612-catalog616"></script>
-  <!-- Shared Footer Mount Point -->
-  <div id="footer-mount"></div>
+    <!-- Navigation Commerciale -->
+    <section class="bg-surface-container-low/50 py-stack-lg px-margin-lg relative overflow-hidden transition-all duration-1000 ease-out">
+      <img alt="Motif discret ROSBRI DESIGN" class="afritude-watermark -left-32 bottom-20 w-80 h-80 bg-transparent" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-duration: 12s;"/>
+      <div class="max-w-[1280px] mx-auto relative z-10">
+        <div class="text-center mb-12">
+          <h2 class="font-display-accent text-3xl md:text-4xl text-ink mb-4">Que souhaitez-vous créer ?</h2>
+          <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Découvrez les univers ROSBRI DESIGN et trouvez rapidement les articles adaptés à votre projet.</p>
+        </div>
 
-  <!-- Scripts -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <!-- Carte 1 : Personnalisation -->
+          <a href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20personnaliser%20un%20article." target="_blank" rel="noopener noreferrer" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne">
+            <img src="images/articles-site/navigation/nav-personnalisation.png" alt="Personnalisation" class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+              <h3 class="font-display-accent text-2xl md:text-3xl text-white mb-2">Personnalisez votre article</h3>
+              <p class="font-body-sm text-white/90 mb-6">Transformez votre idée en une création unique avec votre prénom, votre photo, votre message ou votre logo.</p>
+              <span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white font-bold">
+                Commencer une personnalisation
+                <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Carte 2 : Cadeaux -->
+          <a href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne">
+            <img src="images/articles-site/navigation/nav-cadeaux.png" alt="Idées Cadeaux" class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+              <h3 class="font-display-accent text-2xl md:text-3xl text-white mb-2">Cadeaux & moments précieux</h3>
+              <p class="font-body-sm text-white/90 mb-6">Trouvez un cadeau original pour un anniversaire, une fête, une cérémonie ou une personne qui compte.</p>
+              <span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white font-bold">
+                Découvrir les idées cadeaux
+                <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Carte 3 : Entreprise -->
+          <a href="boutique.html?categorie=Entreprise" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne md:col-span-2 lg:col-span-1 md:w-1/2 md:mx-auto lg:w-full lg:mx-0">
+            <img src="images/articles-site/navigation/nav-entreprise.png" alt="Entreprises & B2B" class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+              <h3 class="font-display-accent text-2xl md:text-3xl text-white mb-2">Commandes Entreprises & B2B</h3>
+              <p class="font-body-sm text-white/90 mb-6">Découvrez nos coffrets de fin d'année, cadeaux clients, goodies personnalisés et tenues professionnelles.</p>
+              <span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white font-bold">
+                Explorer les solutions B2B
+                <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notre Savoir-Faire -->
+    <section class="py-16 px-6 max-w-[1280px] mx-auto text-center">
+      <h2 class="font-display-accent text-3xl md:text-4xl text-ink mb-4">Artisanat & Afritude Luxe</h2>
+      <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Chaque création ROSBRI DESIGN est conçue avec passion et minutie pour allier tradition africaine et modernité contemporaine.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div class="p-6 bg-white rounded-2xl border border-line soft-shadow">
+          <span class="material-symbols-outlined text-3xl text-champagne mb-3">palette</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Motifs Exclusifs Wax</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Assortiments de tissus wax sélectionnés pour leur authenticité et éclat culturel.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-line soft-shadow">
+          <span class="material-symbols-outlined text-3xl text-champagne mb-3">auto_awesome</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Personnalisation Fine</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Marquage haute précision sur vêtements, mugs, gourdes et accessoires.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-line soft-shadow">
+          <span class="material-symbols-outlined text-3xl text-champagne mb-3">local_shipping</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Confection & Livraison</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Confection sur mesure rapide et expedition directe à Douala et dans toute la région.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mount Points -->
+  <div id="site-footer"></div>
+  <div id="site-mobile-menu"></div>
+  <div id="site-cart-drawer"></div>
+
+  <!-- Shared Scripts -->
   <script src="catalog-data.js"></script>
   <script src="catalog.js"></script>
-  <script src="cart.js"></script>
   <script src="js/components.js"></script>
   <script src="js/header.js"></script>
-</body></html>
+  <script src="js/search.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/announcement-bar.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
