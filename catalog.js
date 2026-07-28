@@ -734,7 +734,7 @@
     const slug = getProductSlug(item);
     
     return `
-      <a href="produit.html?slug=${slug}" data-open-product="${item.id}" data-product-slug="${slug}" class="product-card-link group block bg-white/80 backdrop-blur-sm rounded-xl p-4 soft-shadow hover-lift border border-surface-variant/50 cursor-pointer transition-all duration-300 hover:border-champagne/60 focus:outline-none focus:ring-2 focus:ring-champagne no-underline text-ink" aria-label="${escapeHtml(title)} - ${escapeHtml(displayPrice)}">
+      <a href="produit.html?slug=${encodeURIComponent(slug)}" data-slug="${slug}" data-open-product="${item.id}" data-product-slug="${slug}" class="product-card product-card-link group block bg-white/80 backdrop-blur-sm rounded-xl p-4 soft-shadow hover-lift border border-surface-variant/50 cursor-pointer transition-all duration-300 hover:border-champagne/60 focus:outline-none focus:ring-2 focus:ring-champagne no-underline text-ink" aria-label="${escapeHtml(title)} - ${escapeHtml(displayPrice)}">
         <div class="aspect-[4/5] rounded-lg overflow-hidden bg-cream mb-4 relative pointer-events-none">
           <img alt="${escapeHtml(title)}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none" src="${optimizedImage(displayImage(item))}" loading="${loading}" decoding="async"${priority}>
           <span class="absolute top-3 left-3 bg-champagne text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-sm pointer-events-none">${badge}</span>
@@ -1693,23 +1693,13 @@
           renderShop();
         }
 
-        const openButton = event.target.closest("[data-open-product]");
+        const openButton = event.target.closest(".product-card, [data-open-product]");
         if (openButton) {
-          if (event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1) {
-            return;
-          }
-          event.preventDefault();
-          const productId = openButton.dataset.openProduct;
-          const slug = openButton.dataset.productSlug || productId;
-          openProduct(productId);
-
-          if (window.history && window.history.pushState) {
-            const isProductPage = window.location.pathname.includes("produit.html");
-            const baseUrl = isProductPage ? "produit.html" : window.location.pathname;
-            const params = new URLSearchParams(window.location.search);
-            params.set("slug", slug);
-            window.history.pushState({ productId }, "", `${baseUrl}?${params.toString()}`);
-          }
+          const slug = openButton.dataset.slug || openButton.dataset.productSlug || openButton.dataset.openProduct;
+          console.log("Carte cliquée");
+          console.log("Slug :", slug);
+          console.log("Destination :", `produit.html?slug=${encodeURIComponent(slug)}`);
+          // Autoriser la navigation web native vers produit.html?slug=... sans preventDefault
         }
 
         if (event.target.closest("[data-close-lightbox]")) {

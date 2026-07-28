@@ -204,7 +204,12 @@
       const params = new URLSearchParams(window.location.search);
       const slugOrId = params.get("slug") || params.get("id") || params.get("p") || window.location.hash.replace("#product-", "");
       
+      console.log("Fiche Produit chargée");
+      console.log("Slug :", slugOrId);
+      console.log("Destination :", `produit.html?slug=${encodeURIComponent(slugOrId || "")}`);
+
       const item = window.findProductBySlugOrId ? window.findProductBySlugOrId(slugOrId) : null;
+      console.log("Produit trouvé :", item ? item.title : "Aucun (404)");
       
       const notFoundView = document.getElementById("product-not-found");
       const detailView = document.getElementById("product-detail-view");
