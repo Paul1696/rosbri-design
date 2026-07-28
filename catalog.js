@@ -688,6 +688,42 @@
     return "premium";
   }
 
+  function escapeHtml(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function getProductSlug(item) {
+    if (!item) return "";
+    if (item.slug) return item.slug;
+    const title = displayTitle(item);
+    const clean = title.toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+    return `${clean}-${item.id}`;
+  }
+
+  function findProductBySlugOrId(identifier) {
+    if (!identifier) return null;
+    const target = String(identifier).toLowerCase().trim();
+    let match = catalogView.find((item) => String(item.id) === target);
+    if (match) return match;
+    match = catalogView.find((item) => getProductSlug(item).toLowerCase() === target);
+    if (match) return match;
+    const idMatch = target.match(/-(\d+)$/);
+    if (idMatch) {
+      match = catalogView.find((item) => String(item.id) === idMatch[1]);
+      if (match) return match;
+    }
+    return null;
+  }
+
   function productCard(item, compact, eager) {
     const title = displayTitle(item);
     const category = productCategory(item);
@@ -695,17 +731,18 @@
     const loading = eager ? "eager" : "lazy";
     const priority = eager ? ' fetchpriority="high"' : '';
     const displayPrice = item.price ? item.price : "Sur Devis";
+    const slug = getProductSlug(item);
     
     return `
-      <div class="group bg-white/80 backdrop-blur-sm rounded-xl p-4 soft-shadow hover-lift border border-surface-variant/50 cursor-pointer" data-open-product="${item.id}">
-        <div class="aspect-[4/5] rounded-lg overflow-hidden bg-cream mb-4 relative">
-          <img alt="${title}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="${optimizedImage(displayImage(item))}" loading="${loading}" decoding="async"${priority}>
-          <span class="absolute top-3 left-3 bg-champagne text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">${badge}</span>
+      <a href="produit.html?slug=${slug}" data-open-product="${item.id}" data-product-slug="${slug}" class="product-card-link group block bg-white/80 backdrop-blur-sm rounded-xl p-4 soft-shadow hover-lift border border-surface-variant/50 cursor-pointer transition-all duration-300 hover:border-champagne/60 focus:outline-none focus:ring-2 focus:ring-champagne no-underline text-ink" aria-label="${escapeHtml(title)} - ${escapeHtml(displayPrice)}">
+        <div class="aspect-[4/5] rounded-lg overflow-hidden bg-cream mb-4 relative pointer-events-none">
+          <img alt="${escapeHtml(title)}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none" src="${optimizedImage(displayImage(item))}" loading="${loading}" decoding="async"${priority}>
+          <span class="absolute top-3 left-3 bg-champagne text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-sm pointer-events-none">${badge}</span>
         </div>
-        <h4 class="font-headline-md text-lg mb-1 group-hover:text-champagne transition-colors line-clamp-2">${title}</h4>
-        <p class="text-on-surface-variant text-sm mb-3 opacity-70">${category}</p>
-        <div class="font-display-accent text-xl text-ink">${displayPrice}</div>
-      </div>
+        <h4 class="font-headline-md text-lg mb-1 group-hover:text-champagne transition-colors line-clamp-2 text-ink font-bold pointer-events-none">${escapeHtml(title)}</h4>
+        <p class="text-on-surface-variant text-sm mb-3 opacity-70 pointer-events-none">${escapeHtml(category)}</p>
+        <div class="font-display-accent text-xl text-ink font-bold pointer-events-none">${escapeHtml(displayPrice)}</div>
+      </a>
     `;
   }
 
@@ -1658,7 +1695,21 @@
 
         const openButton = event.target.closest("[data-open-product]");
         if (openButton) {
-          openProduct(openButton.dataset.openProduct);
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1) {
+            return;
+          }
+          event.preventDefault();
+          const productId = openButton.dataset.openProduct;
+          const slug = openButton.dataset.productSlug || productId;
+          openProduct(productId);
+
+          if (window.history && window.history.pushState) {
+            const isProductPage = window.location.pathname.includes("produit.html");
+            const baseUrl = isProductPage ? "produit.html" : window.location.pathname;
+            const params = new URLSearchParams(window.location.search);
+            params.set("slug", slug);
+            window.history.pushState({ productId }, "", `${baseUrl}?${params.toString()}`);
+          }
         }
 
         if (event.target.closest("[data-close-lightbox]")) {
@@ -1898,12 +1949,47 @@
     renderAll();
   };
 
+  window.getProductSlug = getProductSlug;
+  window.findProductBySlugOrId = findProductBySlugOrId;
+  window.displayTitle = displayTitle;
+  window.productCategory = productCategory;
+  window.productDescription = productDescription;
+  window.optimizedImage = optimizedImage;
+  window.displayImage = displayImage;
+  window.categoryMatches = categoryMatches;
+  window.colorOptionsFor = colorOptionsFor;
+  window.optionMarkup = optionMarkup;
+  window.isChildClothing = isChildClothing;
+  window.orderState = orderState;
+  window.updateOrderLink = updateOrderLink;
+  window.addCurrentItemToCart = addCurrentItemToCart;
+  window.productCard = productCard;
+  window.openProduct = openProduct;
+  window.closeProduct = closeProduct;
+  window.catalogView = catalogView;
+
   window.ROSBriCatalogApi = {
     get catalog() { return catalogView; },
     get categoryCounts() { return categoryCounts; },
     productLabels,
-    categories
+    categories,
+    getProductSlug,
+    findProductBySlugOrId
   };
+
+  if (typeof window.addEventListener === "function") {
+    window.addEventListener("popstate", () => {
+      const lightbox = byId("lightbox");
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("slug") || params.get("id");
+      if (slug) {
+        const item = findProductBySlugOrId(slug);
+        if (item) openProduct(item.id);
+      } else if (lightbox && lightbox.classList.contains("open")) {
+        closeProduct();
+      }
+    });
+  }
 
   document.addEventListener("DOMContentLoaded", () => {
     applyInitialFiltersFromUrl();
