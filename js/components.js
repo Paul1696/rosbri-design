@@ -159,9 +159,11 @@
           Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage culturel et d’artisanat d'exception.
         </p>
         <div class="flex items-center gap-3 pt-2">
+          <!-- TODO: remplacer par les URL officielles ROSBRI DESIGN -->
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-champagne hover:bg-champagne hover:text-white transition-colors" aria-label="Facebook ROSBRI DESIGN">
             <span class="material-symbols-outlined text-sm">public</span>
           </a>
+          <!-- TODO: remplacer par les URL officielles ROSBRI DESIGN -->
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-champagne hover:bg-champagne hover:text-white transition-colors" aria-label="Instagram ROSBRI DESIGN">
             <span class="material-symbols-outlined text-sm">photo_camera</span>
           </a>
@@ -221,7 +223,7 @@
       <div class="flex gap-6 uppercase tracking-wider font-bold">
         <a href="a_propos.html" class="hover:text-white transition-colors">Politique de confidentialité</a>
         <a href="a_propos.html" class="hover:text-white transition-colors">Conditions générales</a>
-        <a href="a_propos.html" class="hover:text-white transition-colors">Livraison et retours</a>
+        <a href="a_propos.html#livraison" class="hover:text-white transition-colors">Livraison et retours</a>
       </div>
     </div>
   </div>
@@ -246,15 +248,21 @@
         const resp = await fetch(componentFile);
         if (resp.ok) {
           content = await resp.text();
+        } else {
+          console.info(`[Components] Chargement HTTP de ${componentFile} indisponible (${resp.status}), utilisation du composant embarqué.`);
         }
       } catch (e) {
-        // Fallback to inline template
+        console.info(`[Components] Chargement local de ${componentFile}, utilisation du composant embarqué.`);
       }
     }
     mountNode.innerHTML = content;
   }
 
+  let loaded = false;
   document.addEventListener("DOMContentLoaded", async () => {
+    if (loaded) return;
+    loaded = true;
+
     await Promise.all([
       loadMount(["site-announcement", "announcement-bar-mount"], "components/announcement-bar.html", templates.announcementBar),
       loadMount(["site-header", "header-mount"], "components/header.html", templates.header),
@@ -267,6 +275,8 @@
     const yearNode = document.getElementById("footer-year");
     if (yearNode) yearNode.textContent = String(new Date().getFullYear());
 
+    console.log("ROSBRI DESIGN - Composants chargés avec succès.");
+    document.dispatchEvent(new CustomEvent("rosbri:components-loaded"));
     document.dispatchEvent(new CustomEvent("components:loaded"));
   });
 })();

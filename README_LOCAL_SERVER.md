@@ -1,71 +1,56 @@
-# Guide de Lancement sous Serveur Local - ROSBRI DESIGN
+# Guide de Lancement et Serveur Local - ROSBRI DESIGN
 
-Ce guide explique comment lancer et tester le site **ROSBRI DESIGN** dans un environnement web local professionnel pour éviter les blocages de sécurité liés au protocole direct `file://`.
-
----
-
-## Pourquoi utiliser un serveur local ?
-
-Le site utilise des requêtes d'injection de composants et des modules JavaScript. Si vous double-cliquez directement sur un fichier `.html` depuis votre navigateur, le protocole `file://` s'affiche et les navigateurs bloquent certaines fonctionnalités (`CORS`, `fetch`).
+Ce guide explique comment lancer le site **ROSBRI DESIGN** en environnement de développement local de manière optimale.
 
 ---
 
-## 🚀 Méthode 1 : Avec l'extension Live Server dans VS Code (Recommandé)
+## ⚡ Pourquoi utiliser un serveur HTTP local plutôt que `file://` ?
 
-1. **Ouvrir VS Code** :
-   - Lancez VS Code et choisissez **File > Open Folder...**.
-   - Sélectionnez le dossier racine du projet `ROSBRI DESIGN`.
+Lors de l'ouverture directe d'un fichier `.html` en double-cliquant dessus (`file://`), les navigateurs web appliquent des restrictions de sécurité strictes (politique CORS). Cela peut bloquer le chargement dynamique des composants HTML partagés (`components/header.html`, `components/footer.html`, etc.) via `fetch()`.
 
-2. **Installer l'extension Live Server** :
-   - Ouvrez l'onglet Extensions (`Ctrl + Shift + X`).
-   - Recherchez **Live Server** (par Ritwick Dey).
-   - Cliquez sur **Install**.
-
-3. **Lancer le site** :
-   - Faites un clic droit sur le fichier [`index.html`](file:///e:/APPS/ROSBRI%20DESIGN/index.html).
-   - Sélectionnez **Open with Live Server** (ou raccourci `Alt + L, Alt + O`).
-
-4. **URL Obtenue** :
-   Le navigateur s'ouvre automatiquement sur :
-   ```
-   http://127.0.0.1:5500/index.html
-   ```
+*Note : Un mécanisme de secours (fallback) est intégré dans `js/components.js` pour permettre un affichage fluide même sous `file://`, mais l'utilisation d'un serveur HTTP local reste la méthode recommandée.*
 
 ---
 
-## 🐍 Méthode 2 : Avec Python (Terminal / Invite de commande)
+## 🚀 Méthodes de Lancement Recommandées
 
-Si vous avez Python installé sur votre ordinateur :
+### Option 1 : VS Code Live Server (Recommandé)
 
-1. Ouvrez l'invite de commande (CMD ou Terminal) dans le dossier du projet.
-2. Saisissez la commande suivante :
-   ```bash
-   python -m http.server 8080
-   ```
-3. Ouvrez votre navigateur et accédez à :
-   ```
-   http://127.0.0.1:8080/index.html
-   ```
+1. Ouvrez le dossier `ROSBRI DESIGN` dans **Visual Studio Code**.
+2. Installez l'extension **Live Server** (par Ritwick Dey).
+3. Faires un clic droit sur `index.html` puis sélectionnez **"Open with Live Server"**.
+4. Le site s'ouvrira automatiquement sur `http://127.0.0.1:5500/index.html`.
 
 ---
 
-## 📦 Méthode 3 : Avec Node.js (`npx serve`)
+### Option 2 : Python (Sans installation supplémentaire)
+
+Si vous disposez de Python installé sur votre machine :
+
+```bash
+# Ouvrir le terminal dans le dossier du projet
+python -m http.server 5500
+```
+
+Accédez ensuite à : `http://localhost:5500/index.html` dans votre navigateur.
+
+---
+
+### Option 3 : Node.js `npx serve`
 
 Si vous utilisez Node.js :
 
-1. Ouvrez votre terminal dans le dossier du projet.
-2. Lancez :
-   ```bash
-   npx serve -p 8080
-   ```
-3. Accédez à :
-   ```
-   http://localhost:8080/index.html
-   ```
+```bash
+npx serve . -p 5500
+```
+
+Accédez ensuite à : `http://localhost:5500/index.html`.
 
 ---
 
-## ✅ Points de Contrôle sous Serveur Local
-- Le header, la barre d'annonce, le menu mobile, le panier et le footer se chargent instantanément.
-- La recherche redirige vers `boutique.html?recherche=...` sans erreur.
-- La fiche produit s'ouvre sur `produit.html?slug=...` au clic sur n'importe quel article.
+## 🔍 Vérification & Console de Développement
+
+1. Ouvrez la console du navigateur (`F12` ou `Ctrl + Maj + I` -> onglet **Console**).
+2. Vérifiez le message de confirmation :
+   `ROSBRI DESIGN - Composants chargés avec succès.`
+3. Le script de diagnostic automatisé `js/qa-check.js` analysera automatiquement la structure DOM et affichera tout avertissement éventuel.

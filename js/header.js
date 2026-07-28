@@ -17,7 +17,7 @@
         if (target === "b2b") isActive = true;
       } else if (fullPath === "produit.html") {
         if (target === "boutique.html") isActive = true;
-      } else if (fullPath === target || (fullPath === "" && target === "index.html")) {
+      } else if (fullPath === target || (fullPath === "" && target === "index.html") || (fullPath === "/" && target === "index.html")) {
         isActive = true;
       }
 
@@ -33,8 +33,8 @@
     });
 
     // 2. Announcement Bar Session Storage Check
-    const bar = document.getElementById("rosbri-announcement-bar");
-    const closeBarBtn = document.getElementById("close-announcement-bar");
+    const bar = document.getElementById("rosbri-announcement-bar") || document.getElementById("announcement-bar");
+    const closeBarBtn = document.getElementById("close-announcement-bar") || document.getElementById("announcement-bar-close");
     if (bar) {
       if (sessionStorage.getItem("rosbri_announcement_closed") === "true") {
         bar.style.display = "none";
@@ -47,26 +47,30 @@
     }
 
     // 3. Mobile Menu Toggle Logic
-    const drawer = document.getElementById("mobile-menu-drawer");
+    const drawer = document.getElementById("mobile-menu-drawer") || document.getElementById("mobile-menu");
     const panel = document.getElementById("mobile-menu-panel");
 
     function openMobileMenu() {
-      if (!drawer || !panel) return;
+      if (!drawer) return;
       drawer.style.display = "block";
       document.body.style.overflow = "hidden";
       setTimeout(() => {
         drawer.classList.remove("pointer-events-none", "opacity-0");
         drawer.classList.add("opacity-100");
-        panel.classList.remove("translate-x-full");
-        panel.classList.add("translate-x-0");
+        if (panel) {
+          panel.classList.remove("translate-x-full");
+          panel.classList.add("translate-x-0");
+        }
         drawer.setAttribute("aria-hidden", "false");
       }, 10);
     }
 
     function closeMobileMenu() {
-      if (!drawer || !panel) return;
-      panel.classList.remove("translate-x-0");
-      panel.classList.add("translate-x-full");
+      if (!drawer) return;
+      if (panel) {
+        panel.classList.remove("translate-x-0");
+        panel.classList.add("translate-x-full");
+      }
       drawer.classList.remove("opacity-100");
       drawer.classList.add("opacity-0");
       drawer.setAttribute("aria-hidden", "true");
@@ -101,11 +105,7 @@
     }
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    initHeader();
-  });
-
-  document.addEventListener("components:loaded", () => {
-    initHeader();
-  });
+  document.addEventListener("DOMContentLoaded", initHeader);
+  document.addEventListener("components:loaded", initHeader);
+  document.addEventListener("rosbri:components-loaded", initHeader);
 })();

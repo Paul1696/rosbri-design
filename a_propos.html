@@ -3,14 +3,16 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Notre Histoire & Savoir-Faire | ROSBRI DESIGN</title>
-  <meta name="description" content="Découvrez l'histoire de ROSBRI DESIGN, marque d'Afritude Luxe au Cameroun spécialisée dans les vêtements Wax et les créations sur-mesure."/>
-  <meta property="og:title" content="Notre Histoire & Savoir-Faire | ROSBRI DESIGN"/>
-  <meta property="og:description" content="Une mode personnalisée qui porte vos racines et votre identité avec élégance et passion."/>
+  <title>À Propos | ROSBRI DESIGN - Afritude Luxe</title>
+  <meta name="description" content="Découvrez l'histoire de ROSBRI DESIGN, marque de luxe africaine fondée au Cameroun alliant mode Afritude, artisanat d'art et personnalisation."/>
+  <meta property="og:title" content="À Propos | ROSBRI DESIGN"/>
+  <meta property="og:description" content="Artisanat de luxe, fierté culturelle et pièces sur mesure confectionnées à Douala, Cameroun."/>
   <meta property="og:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
   <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/a_propos.html"/>
   <meta property="og:type" content="website"/>
 
+  <!-- Shared Tailwind Config & CDN -->
+  <script src="js/tailwind-config.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
@@ -19,122 +21,120 @@
   <link rel="stylesheet" href="css/components.css"/>
   <link rel="stylesheet" href="css/responsive.css"/>
   <link rel="stylesheet" href="styles.css"/>
-
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "background": "#faf9fe",
-            "on-surface-variant": "#4e4639",
-            "error": "#ba1a1a",
-            "primary": "#775a19",
-            "surface-variant": "#e3e2e7",
-            "primary-container": "#c5a059",
-            "surface-container-low": "#f4f3f8",
-            "ink": "#1a1c1f",
-            "champagne": "#c5a059",
-            "cream": "#faf9fe",
-            "paper": "#fbf8f2"
-          },
-          fontFamily: {
-            "body-lg": ["Inter", "sans-serif"],
-            "body-md": ["Inter", "sans-serif"],
-            "label-sm": ["Inter", "sans-serif"],
-            "display-accent": ["Playfair Display", "serif"]
-          }
-        }
-      }
-    }
-  </script>
 </head>
 
-<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white a-propos-page">
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white about-page">
 
   <!-- Mount Points -->
   <div id="site-announcement"></div>
   <div id="site-header"></div>
 
-  <main id="main-content" class="flex-grow">
-    <!-- Hero Section avec hauteur contrôlée -->
-    <section class="bg-surface-container-low py-10 md:py-16 text-center border-b border-surface-variant/50">
-      <div class="max-w-4xl mx-auto px-6">
-        <span class="font-label-sm uppercase tracking-widest text-champagne mb-3 block font-bold">Notre Histoire & Savoir-Faire</span>
-        <h1 class="font-display-accent text-3xl md:text-5xl text-ink font-bold mb-4">ROSBRI DESIGN</h1>
-        <p class="font-body-md text-base md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
-          Bienvenue dans l'univers de la création sans limites. Une mode personnalisée qui porte vos messages, vos racines et votre identité avec l'élégance AFRITUDE LUXE.
+  <main id="main-content" class="py-10 px-6 max-w-[1280px] mx-auto space-y-16">
+    <!-- Hero / Story Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-px bg-champagne"></div>
+          <span class="text-xs font-bold text-champagne tracking-[0.25em] uppercase">Notre Histoire</span>
+        </div>
+        <h1 class="font-display-accent text-3xl md:text-5xl text-ink font-bold mb-6 leading-tight">
+          L'Élégance Africaine <br/><span class="text-champagne italic">Réinventée avec Passion</span>
+        </h1>
+        <p class="font-body-lg text-muted leading-relaxed mb-4">
+          Fondée à Douala au Cameroun, <strong>ROSBRI DESIGN</strong> est née d'une ambition claire : sublimer l'artisanat africain et l'élever au rang de marque de luxe contemporaine sous la signature <strong>AFRITUDE LUXE</strong>.
         </p>
+        <p class="font-body-md text-muted leading-relaxed mb-6">
+          Des vêtements sur-mesure aux accessoires de maroquinerie, en passant par les coffrets cadeaux d'entreprise et les objets du quotidien, chaque pièce intègre une touche d'authenticité wax et un savoir-faire artisanal rigoureux.
+        </p>
+        <a href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋%20J%27aimerais%20en%20savoir%20plus%20sur%20votre%20atelier" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-ink text-white font-bold text-xs uppercase tracking-widest hover:bg-champagne transition-all shadow-md">
+          <span class="material-symbols-outlined text-sm text-[#25D366]">chat</span>
+          <span>Discuter avec notre Atelier</span>
+        </a>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden soft-shadow border-4 border-white bg-surface-container-low">
+          <img src="images/brand/rosbri-wax-design-logo.jpg" alt="Atelier ROSBRI DESIGN" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl border border-line shadow-xl max-w-xs hidden sm:block">
+          <p class="font-display-accent text-2xl font-bold text-champagne mb-1">100% Fait Main</p>
+          <p class="text-xs text-muted leading-relaxed">Confectionné sur-mesure au Cameroun avec des matériaux de premier choix.</p>
+        </div>
       </div>
     </section>
 
-    <!-- About Grid -->
-    <section class="max-w-[1280px] mx-auto px-6 py-12 md:py-16 flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2">
-        <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl relative group border border-line">
-          <img src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png" alt="Sac cabas ROSBRI DESIGN en Wax" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-        </div>
+    <!-- Valeurs & Engagements -->
+    <section class="bg-white rounded-3xl p-8 md:p-12 border border-line soft-shadow">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="font-display-accent text-3xl text-ink font-bold mb-3">Nos Piliers de Création</h2>
+        <p class="text-xs text-muted">L'excellence au service de vos émotions et de votre identité.</p>
       </div>
-      <div class="w-full md:w-1/2 space-y-6">
-        <h2 class="font-display-accent text-3xl md:text-4xl text-ink font-bold">Créer une mode qui a une âme.</h2>
-        <div class="space-y-4 font-body-md text-on-surface-variant text-base leading-relaxed">
-          <p><strong class="text-ink">ROSBRI DESIGN</strong> est née au cœur du Cameroun d'une ambition simple : proposer des pièces uniques qui racontent votre propre histoire. Dans un monde dominé par la mode de masse, nous sommes convaincus que chacun mérite de se démarquer.</p>
-          <h3 class="font-display-accent text-xl text-ink pt-4 border-t border-line font-bold">Personnalisation & Exclusivité</h3>
-          <p>Que ce soit à travers nos collections célébrant notre héritage culturel ou via nos services de personnalisation sur mesure, nous mettons toute notre créativité au service de votre identité.</p>
-          <p>En choisissant ROSBRI DESIGN, vous soutenez un projet artisanal local tourné vers l'excellence. Nous marions nos propres designs artisanaux avec une sélection minutieuse de tendances mode pour vous proposer des articles de qualité d'exception.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-surface-container-low/50 border border-line/50">
+          <span class="material-symbols-outlined text-4xl text-champagne mb-4">auto_awesome</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Exclusivité & Sur-Mesure</h3>
+          <p class="text-xs text-muted leading-relaxed">Chaque vêtement ou objet peut être personnalisé avec un prénom, une phrase ou un logo pour devenir une pièce unique.</p>
         </div>
-        <a class="inline-block px-8 py-4 rounded-full bg-ink text-white font-label-sm uppercase tracking-widest hover:bg-champagne transition-all shadow-md font-bold text-xs" href="boutique.html">Découvrir la boutique</a>
+        <div class="p-6 rounded-2xl bg-surface-container-low/50 border border-line/50">
+          <span class="material-symbols-outlined text-4xl text-champagne mb-4">diamond</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Qualité Premium</h3>
+          <p class="text-xs text-muted leading-relaxed">Sélection rigoureuse des cotons, pagnes wax originaux et finitions soignées garantissant durabilité et confort.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-surface-container-low/50 border border-line/50">
+          <span class="material-symbols-outlined text-4xl text-champagne mb-4">volunteer_activism</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Impact Local</h3>
+          <p class="text-xs text-muted leading-relaxed">Soutien continu aux artisans et couturiers locaux de Douala pour préserver et promouvoir les savoir-faire régionaux.</p>
+        </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="livraison" class="bg-surface-container-low py-12 md:py-16 border-t border-line">
-      <div class="max-w-3xl mx-auto px-6">
-        <div class="text-center mb-10">
-          <h2 class="font-display-accent text-3xl text-ink font-bold mb-3">Questions Fréquentes (FAQ)</h2>
-          <p class="font-body-md text-muted text-xs md:text-sm">Des réponses claires pour vous guider dans vos achats, livraisons et personnalisations.</p>
+    <!-- FAQ & Ancres Livraison -->
+    <section id="livraison" class="scroll-mt-24 space-y-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="font-display-accent text-3xl text-ink font-bold mb-3">Foire Aux Questions & Livraison</h2>
+        <p class="text-xs text-muted">Toutes les informations sur la confection, les retours et les expéditions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-line shadow-sm space-y-3">
+          <h4 class="font-bold text-sm text-ink flex items-center gap-2">
+            <span class="material-symbols-outlined text-champagne text-base">local_shipping</span>
+            <span>Quels sont les délais de livraison ?</span>
+          </h4>
+          <p class="text-xs text-muted leading-relaxed">
+            Pour la ville de Douala, la livraison s'effectue sous 24h à 48h après confection via nos coursiers express. Pour les autres villes du Cameroun et l'international, nous vous communiquons le délai exact lors de la validation sur WhatsApp.
+          </p>
         </div>
-        <div class="space-y-4">
-          <!-- FAQ 1 -->
-          <details class="group bg-white rounded-xl shadow-sm border border-line overflow-hidden cursor-pointer">
-            <summary class="font-bold text-sm text-ink p-5 flex justify-between items-center outline-none">
-              Comment passer commande sur le site ?
-              <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
-            </summary>
-            <div class="px-5 pb-5 text-xs text-on-surface-variant space-y-2 border-t border-line pt-4 leading-relaxed">
-              <p>Le processus est très simple et direct :</p>
 
-                1. Parcourez la <strong>Boutique</strong> ou les <strong>Collections</strong>.<br>
-                2. Ajoutez les articles de votre choix au panier.<br>
-                3. Ouvrez votre panier depuis le header.<br>
-                4. Cliquez sur <strong>"Commander sur WhatsApp"</strong>.
+        <div class="bg-white p-6 rounded-2xl border border-line shadow-sm space-y-3">
+          <h4 class="font-bold text-sm text-ink flex items-center gap-2">
+            <span class="material-symbols-outlined text-champagne text-base">cut</span>
+            <span>Comment se passe la confection sur-mesure ?</span>
+          </h4>
+          <p class="text-xs text-muted leading-relaxed">
+            Lorsque vous sélectionnez une taille et une couleur sur le site, votre commande est directement transmise à notre atelier. Vous pouvez nous fournir vos mensurations exactes sur WhatsApp après la prise de commande.
+          </p>
+        </div>
 
-              <p>Un message récapitulatif est généré automatiquement pour débuter l'échange en direct sur WhatsApp (+237 698 193 880).</p>
-            </div>
-          </details>
+        <div class="bg-white p-6 rounded-2xl border border-line shadow-sm space-y-3">
+          <h4 class="font-bold text-sm text-ink flex items-center gap-2">
+            <span class="material-symbols-outlined text-champagne text-base">payments</span>
+            <span>Quels sont les moyens de paiement acceptés ?</span>
+          </h4>
+          <p class="text-xs text-muted leading-relaxed">
+            Nous acceptons Orange Money, Mobile Money, les virements bancaires ainsi que le paiement à la livraison pour les clients résidant à Douala.
+          </p>
+        </div>
 
-          <!-- FAQ 2 -->
-          <details class="group bg-white rounded-xl shadow-sm border border-line overflow-hidden cursor-pointer">
-            <summary class="font-bold text-sm text-ink p-5 flex justify-between items-center outline-none">
-              Quels sont les délais de confection et de livraison ?
-              <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
-            </summary>
-            <div class="px-5 pb-5 text-xs text-on-surface-variant space-y-2 border-t border-line pt-4 leading-relaxed">
-              <p>Pour les articles en stock, l'expédition s'effectue sous <strong>24h à 48h</strong>.</p>
-              <p>Pour les créations personnalisées et commandes sur mesure, le délai habituel de confection est de <strong>3 à 5 jours ouvrés</strong>.</p>
-            </div>
-          </details>
-
-          <!-- FAQ 3 -->
-          <details class="group bg-white rounded-xl shadow-sm border border-line overflow-hidden cursor-pointer">
-            <summary class="font-bold text-sm text-ink p-5 flex justify-between items-center outline-none">
-              Quelles sont les options de livraison au Cameroun ?
-              <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
-            </summary>
-            <div class="px-5 pb-5 text-xs text-on-surface-variant space-y-2 border-t border-line pt-4 leading-relaxed">
-              <p>Nous livrons à Douala, Yaoundé, Bafoussam, Kribi, Garoua, Bamenda et dans toutes les régions du Cameroun via nos coursier express et partenaires de transport fiables.</p>
-            </div>
-          </details>
+        <div class="bg-white p-6 rounded-2xl border border-line shadow-sm space-y-3">
+          <h4 class="font-bold text-sm text-ink flex items-center gap-2">
+            <span class="material-symbols-outlined text-champagne text-base">swap_horiz</span>
+            <span>Quelle est la politique de retour ?</span>
+          </h4>
+          <p class="text-xs text-muted leading-relaxed">
+            Chaque pièce étant confectionnée avec soin, nous acceptons l'échange ou la retouche en atelier en cas de souci de taille dans un délai de 7 jours après réception de votre commande.
+          </p>
         </div>
       </div>
     </section>
@@ -145,15 +145,16 @@
   <div id="site-mobile-menu"></div>
   <div id="site-cart-drawer"></div>
 
-  <!-- Shared Scripts -->
-  <script src="catalog-data.js"></script>
-  <script src="catalog.js"></script>
-  <script src="js/components.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/mobile-menu.js"></script>
-  <script src="js/announcement-bar.js"></script>
-  <script src="js/common.js"></script>
+  <!-- Shared Scripts in Canonical Order -->
+  <script src="catalog-data.js" defer></script>
+  <script src="catalog.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/mobile-menu.js" defer></script>
+  <script src="js/announcement-bar.js" defer></script>
+  <script src="js/qa-check.js" defer></script>
 </body>
 </html>

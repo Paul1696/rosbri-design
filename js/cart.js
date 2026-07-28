@@ -1,9 +1,10 @@
 /**
  * ROSBRI DESIGN - Unified Cart Engine
- * Manages cart state in localStorage under 'rosbri_cart', drawer UI, count badges, and WhatsApp checkout generation.
+ * Manages cart state in localStorage under 'rosbri_cart', drawer UI, promo code ROSBRI10, count badges, and WhatsApp checkout generation.
  */
 (function () {
   const STORAGE_KEY = "rosbri_cart";
+  const PROMO_KEY = "rosbri_promo";
   const WHATSAPP_PHONE = "237698193880";
 
   function getCart() {
@@ -23,6 +24,22 @@
     updateCartUi();
   }
 
+  function getAppliedPromo() {
+    try {
+      return JSON.parse(sessionStorage.getItem(PROMO_KEY) || "null");
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function setAppliedPromo(promo) {
+    try {
+      if (promo) sessionStorage.setItem(PROMO_KEY, JSON.stringify(promo));
+      else sessionStorage.removeItem(PROMO_KEY);
+    } catch (e) {}
+    updateCartUi();
+  }
+
   function parsePrice(priceStr) {
     if (!priceStr || String(priceStr).toLowerCase().includes("devis")) return 0;
     const num = parseInt(String(priceStr).replace(/[^0-9]/g, ""), 10);
@@ -30,7 +47,8 @@
   }
 
   function formatPrice(val) {
-    return val.toLocaleString("fr-FR").replace(/\u202f/g, " ") + " FCFA";
+    const safeVal = Math.max(0, Math.round(val));
+    return safeVal.toLocaleString("fr-FR").replace(/\u202f/g, " ") + " FCFA";
   }
 
   function escapeHtml(value) {
@@ -41,17 +59,25 @@
     return cart.reduce((sum, item) => sum + (parseInt(item.quantity, 10) || 1), 0);
   }
 
-  function calculateCartTotal(cart) {
+  function calculateCartSubtotal(cart) {
     return cart.reduce((sum, item) => {
       const p = parsePrice(item.price);
       return sum + p * (parseInt(item.quantity, 10) || 1);
     }, 0);
   }
 
+  function calculateCartFinalTotal(cart) {
+    const subtotal = calculateCartSubtotal(cart);
+    const promo = getAppliedPromo();
+    if (!promo || !subtotal) return subtotal;
+    const discount = Math.round((subtotal * promo.percent) / 100);
+    return Math.max(0, subtotal - discount);
+  }
+
   function generateWhatsAppMessage(cart) {
     if (!cart.length) return "Bonjour ROSBRI DESIGN 👋 J'aimerais en savoir plus sur vos créations.";
     let msg = "Bonjour ROSBRI DESIGN 👋\n\nJe souhaite passer commande :\n\n🛒 *Mon Panier :*\n";
-    let totalVal = 0;
+    let subtotalVal = 0;
     cart.forEach((item, i) => {
       msg += `${i + 1}. 🛍️ *${item.title}*\n`;
       msg += `   - Prix unitaire : *${item.price}*\n`;
@@ -66,10 +92,20 @@
       msg += `   - Quantité : *${item.quantity}*\n\n`;
 
       const unitP = parsePrice(item.price);
-      totalVal += unitP * (parseInt(item.quantity, 10) || 1);
+      subtotalVal += unitP * (parseInt(item.quantity, 10) || 1);
     });
 
-    msg += `💳 *TOTAL ESTIMÉ : ${formatPrice(totalVal)}*\n\n`;
+    const promo = getAppliedPromo();
+    if (promo && subtotalVal > 0) {
+      const discount = Math.round((subtotalVal * promo.percent) / 100);
+      const finalVal = Math.max(0, subtotalVal - discount);
+      msg += `💵 Sous-total : ${formatPrice(subtotalVal)}\n`;
+      msg += `🔥 Code Promo (*${promo.code}*) : -${promo.percent}% (-${formatPrice(discount)})\n`;
+      msg += `💳 *TOTAL FINAL ESTIMÉ : ${formatPrice(finalVal)}*\n\n`;
+    } else {
+      msg += `💳 *TOTAL ESTIMÉ : ${formatPrice(subtotalVal)}*\n\n`;
+    }
+
     msg += "Merci de me confirmer la disponibilité et les modalités de confection et livraison !";
     return msg;
   }
@@ -77,7 +113,9 @@
   function updateCartUi() {
     const cart = getCart();
     const totalCount = getItemTotalCount(cart);
-    const totalAmount = calculateCartTotal(cart);
+    const subtotalAmount = calculateCartSubtotal(cart);
+    const promo = getAppliedPromo();
+    const finalAmount = calculateCartFinalTotal(cart);
 
     // 1. Update count badges
     document.querySelectorAll(".cart-count-badge, #cart-count-badge, [data-cart-count]").forEach((badge) => {
@@ -92,10 +130,25 @@
 
     // 2. Update totals
     document.querySelectorAll("#cart-total-value, [data-cart-total]").forEach((node) => {
-      node.textContent = formatPrice(totalAmount);
+      node.textContent = formatPrice(finalAmount);
     });
 
-    // 3. Render Items in Drawer
+    // 3. Update Promo UI Elements if present
+    const promoMsgNode = document.getElementById("cart-promo-message");
+    const promoInput = document.getElementById("cart-promo-input");
+    if (promoMsgNode) {
+      if (promo && subtotalAmount > 0) {
+        const discount = Math.round((subtotalAmount * promo.percent) / 100);
+        promoMsgNode.textContent = `✓ Code ${promo.code} appliqué (-${promo.percent}% = -${formatPrice(discount)})`;
+        promoMsgNode.className = "text-[11px] mt-1 font-semibold text-success block";
+        if (promoInput) promoInput.value = promo.code;
+      } else if (!promo) {
+        promoMsgNode.textContent = "";
+        promoMsgNode.className = "text-[11px] mt-1 font-semibold hidden";
+      }
+    }
+
+    // 4. Render Items in Drawer
     const drawerContainers = document.querySelectorAll("#cart-drawer-items, [data-cart-items]");
     drawerContainers.forEach((container) => {
       if (!cart.length) {
@@ -141,7 +194,7 @@
       }).join("");
     });
 
-    // 4. Update WhatsApp checkout button
+    // 5. Update WhatsApp checkout button
     const whatsappMsg = generateWhatsAppMessage(cart);
     const encodedMsg = encodeURIComponent(whatsappMsg);
     const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodedMsg}`;
@@ -151,6 +204,31 @@
       btn.target = "_blank";
       btn.rel = "noopener noreferrer";
     });
+  }
+
+  function applyPromoCode(inputCode) {
+    const code = String(inputCode || "").trim().toUpperCase();
+    const msgNode = document.getElementById("cart-promo-message");
+    if (!code) {
+      setAppliedPromo(null);
+      if (msgNode) {
+        msgNode.textContent = "Veuillez saisir un code promo.";
+        msgNode.className = "text-[11px] mt-1 font-semibold text-error block";
+      }
+      return;
+    }
+
+    if (code === "ROSBRI10") {
+      setAppliedPromo({ code: "ROSBRI10", percent: 10 });
+    } else if (code === "BIENVENUE") {
+      setAppliedPromo({ code: "BIENVENUE", percent: 15 });
+    } else {
+      setAppliedPromo(null);
+      if (msgNode) {
+        msgNode.textContent = "Code promo non valide ou expiré.";
+        msgNode.className = "text-[11px] mt-1 font-semibold text-error block";
+      }
+    }
   }
 
   function openCartDrawer() {
@@ -208,7 +286,12 @@
       closeCartDrawer();
     }
     if (event.target.closest("#cart-clear-btn")) {
+      setAppliedPromo(null);
       saveCart([]);
+    }
+    if (event.target.closest("#cart-promo-apply-btn")) {
+      const input = document.getElementById("cart-promo-input");
+      if (input) applyPromoCode(input.value);
     }
 
     const actionBtn = event.target.closest("[data-cart-action]");
@@ -234,6 +317,10 @@
   });
 
   document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && event.target && event.target.id === "cart-promo-input") {
+      event.preventDefault();
+      applyPromoCode(event.target.value);
+    }
     if (event.key === "Escape") {
       closeCartDrawer();
     }
@@ -246,14 +333,11 @@
     addToCart,
     openCartDrawer,
     closeCartDrawer,
-    updateCartUi
+    updateCartUi,
+    applyPromoCode
   };
 
-  document.addEventListener("DOMContentLoaded", () => {
-    updateCartUi();
-  });
-
-  document.addEventListener("components:loaded", () => {
-    updateCartUi();
-  });
+  document.addEventListener("DOMContentLoaded", updateCartUi);
+  document.addEventListener("components:loaded", updateCartUi);
+  document.addEventListener("rosbri:components-loaded", updateCartUi);
 })();

@@ -11,6 +11,8 @@
   <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/collections.html"/>
   <meta property="og:type" content="website"/>
 
+  <!-- Shared Tailwind Config & CDN -->
+  <script src="js/tailwind-config.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
@@ -19,35 +21,6 @@
   <link rel="stylesheet" href="css/components.css"/>
   <link rel="stylesheet" href="css/responsive.css"/>
   <link rel="stylesheet" href="styles.css"/>
-
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "background": "#faf9fe",
-            "on-surface-variant": "#4e4639",
-            "error": "#ba1a1a",
-            "primary": "#775a19",
-            "surface-variant": "#e3e2e7",
-            "primary-container": "#c5a059",
-            "surface-container-low": "#f4f3f8",
-            "ink": "#1a1c1f",
-            "champagne": "#c5a059",
-            "cream": "#faf9fe",
-            "paper": "#fbf8f2"
-          },
-          fontFamily: {
-            "body-lg": ["Inter", "sans-serif"],
-            "body-md": ["Inter", "sans-serif"],
-            "label-sm": ["Inter", "sans-serif"],
-            "display-accent": ["Playfair Display", "serif"]
-          }
-        }
-      }
-    }
-  </script>
 </head>
 
 <body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white collections-page">
@@ -76,7 +49,7 @@
       <!-- Category 1: Mode & Prêt-à-porter -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mode & Prêt-à-porter ROSBRI DESIGN" src="images/articles-site/navigation/nav-personnalisation.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mode & Prêt-à-porter ROSBRI DESIGN" src="images/articles-site/navigation/nav-personnalisation.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -94,7 +67,7 @@
       <!-- Category 2: Sacs & Maroquinerie -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Accessoires & Maroquinerie" src="images/articles-site/sacs/variants/sac-rosbri-wax-01.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Accessoires & Maroquinerie" src="images/articles-site/sacs/variants/sac-rosbri-wax-01.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -112,7 +85,7 @@
       <!-- Category 3: Maison & Déco -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Maison & Déco" src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Maison & Déco" src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -130,7 +103,7 @@
       <!-- Category 4: Mugs & Gourdes -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mugs & Gourdes" src="images/articles-site/navigation/nav-cadeaux.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mugs & Gourdes" src="images/articles-site/navigation/nav-cadeaux.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -148,7 +121,7 @@
       <!-- Category 5: Enfants & Bébés -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Enfants & Bébés" src="images/articles-site/bijoux/boucles-oreilles-bois-wax.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Enfants & Bébés" src="images/articles-site/bijoux/boucles-oreilles-bois-wax.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -166,7 +139,7 @@
       <!-- Category 6: Packs & Idées Cadeaux -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Packs & Idées Cadeaux" src="images/articles-site/navigation/nav-cadeaux.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Packs & Idées Cadeaux" src="images/articles-site/navigation/nav-cadeaux.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -184,7 +157,7 @@
       <!-- Category 7: Entreprises & B2B -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Entreprises & B2B" src="images/articles-site/navigation/nav-entreprise.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Entreprises & B2B" src="images/articles-site/navigation/nav-entreprise.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -202,7 +175,7 @@
       <!-- Category 8: Éditions Spéciales -->
       <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
         <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Éditions Spéciales" src="images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png"/>
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Éditions Spéciales" src="images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
         </div>
         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -225,15 +198,16 @@
   <div id="site-mobile-menu"></div>
   <div id="site-cart-drawer"></div>
 
-  <!-- Shared Scripts -->
-  <script src="catalog-data.js"></script>
-  <script src="catalog.js"></script>
-  <script src="js/components.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/mobile-menu.js"></script>
-  <script src="js/announcement-bar.js"></script>
-  <script src="js/common.js"></script>
+  <!-- Shared Scripts in Canonical Order -->
+  <script src="catalog-data.js" defer></script>
+  <script src="catalog.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/mobile-menu.js" defer></script>
+  <script src="js/announcement-bar.js" defer></script>
+  <script src="js/qa-check.js" defer></script>
 </body>
 </html>

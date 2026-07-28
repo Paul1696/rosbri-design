@@ -19,29 +19,38 @@ Ce document constitue le PV d'assurance qualité final suite à la refonte techn
 | **9** | **Produit Cliquable** | Toutes les cartes produits de la boutique ouvrent directement la fiche produit. | **CORRIGÉ** |
 | **10** | **Navigation par Slug** | Ouverture directe de `produit.html?slug=...` au clic sur un produit de la boutique. | **CORRIGÉ** |
 | **11** | **Choix Taille & Couleur T-shirt** | Possibilité de choisir la taille (S, M, L, XL, XXL) et la couleur (Blanc, Noir, Sable, Rose, etc.) sur tous les T-shirts et vêtements. | **CORRIGÉ** |
-| **12** | **Images Valides** | Fallback d'image automatique local (`images/brand/rosbri-wax-design-logo.jpg`) en cas d'image introuvable. | **CORRIGÉ** |
-| **13** | **Collections Corrigées** | Images réparées, cartes au ratio 4:5 avec effet hover et liens explicites vers les catégories de la boutique. | **CORRIGÉ** |
-| **14** | **Aucun href="#" Invalide** | Tous les boutons et liens possèdent une destination ou une action JavaScript explicite. | **CORRIGÉ** |
-| **15** | **Aucun Lien WhatsApp Vide** | Tous les liens WhatsApp utilisent le numéro officiel `+237 698 193 880` avec texte pré-rempli. | **CORRIGÉ** |
-| **16** | **Aucun Composant Dupliqué** | Suppression des footers simplified, barres turquoises/blanches isolées et boutons flottants dupliqués. | **CORRIGÉ** |
-| **17** | **Aucun Grand Vide Injustifié** | Padding supérieur réajusté (~64px desktop / 36px mobile) sur `a_propos.html` et `collections.html`. | **CORRIGÉ** |
-| **18** | **Responsive Validé** | Adaptabilité complète testée de 320px à 1920px (grille boutique 5-col à 1-col). | **OK** |
-| **19** | **Aucun Débordement** | Règle `overflow-x: hidden` sur `html, body` empêchant le défilement horizontal parasite. | **OK** |
-| **20** | **Console JS Propre** | Code JavaScript résilient avec gardes d'existence (`if (!elem) return;`). | **OK** |
-| **21** | **Aucune Erreur 404** | Tous les fichiers JS/CSS et images référencés existent sur le serveur local. | **OK** |
-| **22** | **Compatibilité Live Server** | Fonctionnement garanti sous `http://127.0.0.1:5500` avec fallback embarqué si `file://`. | **OK** |
-| **23** | **Persistance du Panier** | Les articles ajoutés au panier sont conservés entre toutes les pages du site. | **OK** |
+| **12** | **Code Promo ROSBRI10** | Application d'une réduction de 10%, affichage du sous-total, de la remise et du total final. | **CORRIGÉ** |
+| **13** | **Images Valides** | Fallback d'image automatique local (`images/brand/rosbri-wax-design-logo.jpg`) en cas d'image introuvable. | **CORRIGÉ** |
+| **14** | **Collections Corrigées** | Images réparées, cartes au ratio 4:5 avec effet hover et liens explicites vers les catégories de la boutique. | **CORRIGÉ** |
+| **15** | **Aucun href="#" Invalide** | Tous les boutons et liens possèdent une destination ou une action JavaScript explicite. | **CORRIGÉ** |
+| **16** | **Aucun Lien WhatsApp Vide** | Tous les liens WhatsApp utilisent le numéro officiel `+237 698 193 880` avec texte pré-rempli. | **CORRIGÉ** |
+| **17** | **Aucun Composant Dupliqué** | Suppression des footers simplified, barres turquoises/blanches isolées et boutons flottants dupliqués. | **CORRIGÉ** |
+| **18** | **Aucun Grand Vide Injustifié** | Padding supérieur réajusté (~64px desktop / 36px mobile) sur `a_propos.html` et `collections.html`. | **CORRIGÉ** |
+| **19** | **Responsive Validé** | Adaptabilité complète testée de 320px à 1920px (grille boutique 5-col à 1-col). | **OK** |
+| **20** | **Aucun Débordement** | Règle `overflow-x: hidden` sur `html, body` empêchant le défilement horizontal parasite. | **OK** |
+| **21** | **Console JS Propre** | Code JavaScript résilient avec gardes d'existence (`if (!elem) return;`). | **OK** |
+| **22** | **Aucune Erreur 404** | Tous les fichiers JS/CSS et images référencés existent sur le serveur local. | **OK** |
+| **23** | **Compatibilité Live Server** | Fonctionnement garanti sous `http://127.0.0.1:5500` avec fallback embarqué si `file://`. | **OK** |
+| **24** | **Persistance du Panier** | Les articles ajoutés au panier sont conservés entre toutes les pages du site. | **OK** |
 
 ---
 
 ## 🧪 Scénarios de Test Utilisateur Exécutés
 
-1. **Scénario 1 (Sélection T-shirt - Taille & Couleur)** :
-   - Ouverture de `produit.html?slug=tshirt-heritage-cameroun` (ou tout t-shirt).
-   - Sélection d'une couleur (ex: *Noir*, *Blanc*, *Rose*, *Bleu Nuit*).
-   - Sélection d'une taille (ex: *M*, *L*, *XL*, *XXL*).
+1. **Scénario 1 (Navigation & Header Unifié)** :
+   - Parcours `index.html` -> `boutique.html` -> `collections.html` -> `a_propos.html` -> `produit.html`.
+   - Constat : Le composant header reste strictement identique, l'état actif indique la bonne page avec l'indicateur champagne.
+
+2. **Scénario 2 (Sélection T-shirt - Taille & Couleur)** :
+   - Ouverture de `produit.html?slug=tshirt-heritage-cameroun`.
+   - Sélection de la couleur *Noir* et de la taille *XL*.
    - Clic sur **Pré-commander** ou **Commander sur WhatsApp**.
    - Constat : La taille et la couleur choisies sont directement incluses dans l'article ajouté au panier et dans le message WhatsApp pré-rempli.
+
+3. **Scénario 3 (Code Promo ROSBRI10)** :
+   - Ajout d'un produit à 15 000 FCFA dans le panier.
+   - Saisie du code promo `ROSBRI10` et clic sur **Appliquer**.
+   - Constat : La réduction de 1 500 FCFA (10%) s'affiche, le total passe à 13 500 FCFA et la remise est mentionnée dans le message WhatsApp.
 
 ---
 
