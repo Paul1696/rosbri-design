@@ -1,241 +1,416 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos & FAQ - ROSBRI DESIGN</title>
-  <meta name="description" content="Découvrez ROSBRI DESIGN, marque de mode camerounaise personnalisée: notre histoire, nos piliers de création et toutes les réponses à vos questions.">
-  <link rel="canonical" href="https://rosbridesign.ateliersdepaul.com/a_propos.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="À propos & FAQ - ROSBRI DESIGN">
-  <meta property="og:description" content="Notre histoire, nos engagements qualité et notre FAQ interactive pour commander en toute simplicité.">
-  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/a_propos.html">
-  <meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/brand/rosbri-wax-design-logo.jpg">
-  <link rel="stylesheet" href="styles.css?v=20260604">
-</head>
-<body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notre Histoire & Savoir-Faire | Rosbri Wax Design</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Playfair+Display:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "background": "#faf9fe",
+                "on-secondary-fixed": "#1a1b1e",
+                "on-surface-variant": "#4e4639",
+                "on-secondary-container": "#646468",
+                "error": "#ba1a1a",
+                "primary": "#775a19",
+                "surface-variant": "#e3e2e7",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#e3e2e7",
+                "surface-tint": "#775a19",
+                "tertiary-fixed-dim": "#c9c6c1",
+                "secondary-container": "#e3e2e6",
+                "on-tertiary-fixed": "#1c1c18",
+                "primary-fixed-dim": "#e9c176",
+                "on-secondary": "#ffffff",
+                "on-error-container": "#93000a",
+                "inverse-on-surface": "#f1f0f5",
+                "on-primary": "#ffffff",
+                "secondary": "#5e5e62",
+                "outline": "#7f7667",
+                "on-primary-fixed-variant": "#5d4201",
+                "outline-variant": "#d1c5b4",
+                "on-primary-container": "#4e3700",
+                "surface-container-high": "#e8e7ec",
+                "tertiary-fixed": "#e5e2dc",
+                "tertiary-container": "#a7a5a0",
+                "on-tertiary-fixed-variant": "#474743",
+                "primary-container": "#c5a059",
+                "inverse-primary": "#e9c176",
+                "surface-container-low": "#f4f3f8",
+                "on-tertiary-container": "#3b3b37",
+                "secondary-fixed-dim": "#c7c6ca",
+                "error-container": "#ffdad6",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#faf9fe",
+                "inverse-surface": "#2f3034",
+                "on-error": "#ffffff",
+                "secondary-fixed": "#e3e2e6",
+                "surface-container": "#eeedf2",
+                "on-primary-fixed": "#261900",
+                "on-background": "#1a1c1f",
+                "on-secondary-fixed-variant": "#46474a",
+                "on-surface": "#1a1c1f",
+                "surface": "#faf9fe",
+                "tertiary": "#5f5e5a",
+                "surface-dim": "#dad9de",
+                "primary-fixed": "#ffdea5",
+                "ink": "#1a1c1f",
+                "champagne": "#c5a059",
+                "cream": "#faf9fe",
+                "paper": "#fbf8f2"
+            },
+            "fontFamily": {
+                "body-lg": ["Inter", "sans-serif"],
+                "body-md": ["Inter", "sans-serif"],
+                "label-sm": ["Inter", "sans-serif"],
+                "headline-md": ["Inter", "sans-serif"],
+                "display-accent": ["Playfair Display", "serif"],
+                "headline-lg": ["Inter", "sans-serif"]
+            },
+            "spacing": {
+                "gutter": "24px",
+                "stack-sm": "1rem",
+                "stack-md": "1.5rem",
+                "stack-lg": "2.5rem",
+                "margin-lg": "4rem",
+                "margin-md": "2rem",
+                "xl": "48px",
+                "xxl": "80px"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(26, 28, 31, 0.08);
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        .wax-pattern-bg {
+            background-image: url("images/brand/rosbri-wax-design-logo.jpg");
+            background-size: 150px;
+            background-repeat: repeat;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        .geometric-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #c5a059, transparent);
+            width: 100%;
+            margin: 2rem 0;
+        }
 
-  <div class="notice-band">
-    <div class="container notice-inner">
-      <div><span>Notice :</span> Livraison rapide disponible dans tout le Cameroun (Douala, Yaoundé, etc.).</div>
-      <a href="boutique.html">Voir la boutique</a>
+        /* Shader Background */
+        #background-shader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        /* Afritude Flair Animations */
+        @keyframes floating {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .afritude-watermark {
+            position: absolute;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 0;
+            animation: floating 8s ease-in-out infinite;
+            filter: grayscale(1) brightness(0);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .product-card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .product-card-hover:hover {
+            transform: scale(1.03) translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        section { position: relative; }
+    </style>
+</head>
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white pt-20">
+<canvas height="3693" id="background-shader" width="1280"></canvas>
+<!-- 1. TopNavBar -->
+<header class="fixed top-0 w-full bg-cream/95 backdrop-blur-md z-50 border-b border-surface-variant/50 transition-all duration-300">
+    <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img alt="Logo" class="h-10 w-auto group-hover:scale-105 transition-transform" src="images/brand/rosbri-wax-design-logo.jpg">
+            <span class="font-display-accent text-2xl font-bold tracking-tight text-ink">ROSBRI DESIGN</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="index.html">Accueil</a>
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html">Boutique</a>
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="collections.html">Collections</a>
+            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html?categorie=Entreprise%20%26%20B2B">B2B</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors">search</span>
+            <div class="relative">
+                <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors" onclick="toggleCart()">shopping_bag</span>
+                <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-champagne text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full" style="display:none;">0</span>
+            </div>
+            <span class="material-symbols-outlined md:hidden cursor-pointer">menu</span>
+        </div>
+    </div>
+</header>
+
+<main id="contenu" class="flex-grow pt-24 pb-xxl">
+  <!-- Hero Section -->
+  <section class="bg-surface-container-low py-20 text-center border-b border-surface-variant/50">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="font-label-sm uppercase tracking-widest text-champagne mb-4">Notre Histoire</p>
+      <h1 class="font-display-accent text-5xl md:text-6xl text-ink mb-6">ROSBRI DESIGN</h1>
+      <p class="font-body-md text-xl text-on-surface-variant leading-relaxed">
+        Bienvenue dans l'univers de la création sans limites. Une mode personnalisée qui porte vos messages, vos racines et votre identité.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Grid -->
+  <section class="max-w-[1280px] mx-auto px-6 py-20 flex flex-col md:flex-row gap-16 items-center">
+    <div class="w-full md:w-1/2">
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative group">
+        <img src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png" alt="Sac cabas ROSBRI DESIGN en Wax" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors"></div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 space-y-8">
+      <h2 class="font-display-accent text-4xl text-ink">Créer une mode qui a une âme.</h2>
+      <div class="space-y-6 font-body-md text-on-surface-variant text-lg leading-relaxed">
+        <p><strong class="text-ink">ROSBRI DESIGN</strong> est née au cœur du Cameroun d'une ambition simple : proposer des pièces uniques qui racontent votre propre histoire. Dans un monde dominé par la mode de masse, nous sommes convaincus que chacun mérite de se démarquer.</p>
+        <h3 class="font-headline-md text-2xl text-ink pt-4 border-t border-line">Personnalisation pour les personnes qui veulent plus</h3>
+        <p>Que ce soit à travers nos collections célébrant notre héritage culturel (telles que nos créations hommages aux paysages camerounais) ou via nos services de personnalisation sur mesure, nous mettons toute notre créativité au service de votre identité.</p>
+        <p>En choisissant ROSBRI DESIGN, vous soutenez un projet local tourné vers l'innovation. Nous marions nos propres designs artisanaux avec une sélection minutieuse de tendances mode pour vous proposer des articles de qualité, avec une finition toujours prête à offrir.</p>
+      </div>
+      <a class="inline-block px-8 py-4 rounded-full bg-champagne text-white font-label-sm uppercase tracking-widest hover:bg-ink transition-colors shadow-lg" href="boutique.html">Découvrir la boutique</a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-surface-container-low py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="font-display-accent text-4xl text-ink mb-4">Questions Fréquentes (FAQ)</h2>
+        <p class="font-body-md text-on-surface-variant">Des réponses claires pour vous guider dans vos achats et personnalisations.</p>
+      </div>
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group bg-white rounded-xl shadow-sm border border-transparent hover:border-surface-variant overflow-hidden cursor-pointer">
+          <summary class="font-headline-md text-lg text-ink p-6 flex justify-between items-center outline-none">
+            Comment passer commande sur votre site ?
+            <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md space-y-2 border-t border-line pt-4">
+            <p>Le processus est très simple et fluide :</p>
+            <p>1. Parcourez la <strong>Boutique</strong> ou les <strong>Collections</strong>.<br>
+            2. Ajoutez les articles de votre choix au panier (en sélectionnant la taille et la couleur si applicable).<br>
+            3. Ouvrez votre panier en bas à droite de votre écran.<br>
+            4. Cliquez sur <strong>"Envoyer sur WhatsApp"</strong>.</p>
+            <p>Cela générera automatiquement un récapitulatif détaillé de vos articles sous forme de message WhatsApp. Vous n'avez plus qu'à envoyer le message pour lancer la discussion en direct avec notre équipe.</p>
+          </div>
+        </details>
+        <!-- FAQ 2 -->
+        <details class="group bg-white rounded-xl shadow-sm border border-transparent hover:border-surface-variant overflow-hidden cursor-pointer">
+          <summary class="font-headline-md text-lg text-ink p-6 flex justify-between items-center outline-none">
+            Quels sont les délais de fabrication et de livraison ?
+            <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md space-y-2 border-t border-line pt-4">
+            <p>Pour les articles disponibles immédiatement en stock (comme certains t-shirts et accessoires), l'expédition est très rapide, généralement sous <strong>24h à 48h</strong>.</p>
+            <p>Pour les créations personnalisées sur mesure ou les articles nécessitant un travail d'impression spécifique, le délai habituel de fabrication est de <strong>3 à 5 jours ouvrés</strong> avant l'envoi.</p>
+          </div>
+        </details>
+        <!-- FAQ 3 -->
+        <details class="group bg-white rounded-xl shadow-sm border border-transparent hover:border-surface-variant overflow-hidden cursor-pointer">
+          <summary class="font-headline-md text-lg text-ink p-6 flex justify-between items-center outline-none">
+            Livrez-vous en dehors de la ville de Douala ?
+            <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md space-y-2 border-t border-line pt-4">
+            <p><strong>Oui, absolument !</strong> Nous livrons partout au Cameroun.</p>
+            <p>Que vous soyez à Yaoundé, Bafoussam, Garoua, Bamenda, Kribi, Limbé ou dans une autre commune, nous expédions vos articles via des agences de transport fiables ou des coursiers express.</p>
+            <p>Les frais de livraison dépendent de votre ville et du mode d'expédition choisi ; ils sont calculés et validés avec vous lors de notre échange sur WhatsApp.</p>
+          </div>
+        </details>
+        <!-- FAQ 4 -->
+        <details class="group bg-white rounded-xl shadow-sm border border-transparent hover:border-surface-variant overflow-hidden cursor-pointer">
+          <summary class="font-headline-md text-lg text-ink p-6 flex justify-between items-center outline-none">
+            Comment se passe la personnalisation d'un modèle (prénom, logo) ?
+            <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md space-y-2 border-t border-line pt-4">
+            <p>Toute la magie de ROSBRI repose sur le sur-mesure. Une fois que vous nous contactez sur WhatsApp avec vos articles choisis :</p>
+            <p>1. Vous nous décrivez les ajouts souhaités (un prénom, une date, un texte particulier, ou le logo de votre entreprise).<br>
+            2. Nous réalisons une maquette numérique visuelle de votre produit.<br>
+            3. Vous examinez le design et nous demandez des modifications si nécessaire.<br>
+            4. Une fois que vous donnez votre feu vert ("bon à tirer"), nous lançons l'impression de votre vêtement ou accessoire.</p>
+          </div>
+        </details>
+        <!-- FAQ 5 -->
+        <details class="group bg-white rounded-xl shadow-sm border border-transparent hover:border-surface-variant overflow-hidden cursor-pointer">
+          <summary class="font-headline-md text-lg text-ink p-6 flex justify-between items-center outline-none">
+            Quels sont les modes de paiement acceptés ?
+            <span class="material-symbols-outlined text-champagne transform group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <div class="px-6 pb-6 text-on-surface-variant font-body-md space-y-2 border-t border-line pt-4">
+            <p>Nous acceptons les règlements via :</p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li><strong>Mobile Money :</strong> Orange Money ou MTN Mobile Money (très recommandé pour accélérer le traitement et obligatoire pour les envois hors de Douala).</li>
+              <li><strong>Espèces à la livraison :</strong> Disponible uniquement pour les livraisons en main propre dans la ville de Douala.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-ink text-white w-full py-xxl relative overflow-hidden">
+<div class="absolute inset-0 wax-pattern-bg !opacity-[0.02]"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl px-margin-lg max-w-[1280px] mx-auto relative z-10">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center space-x-3 mb-stack-sm">
+<img alt="Logo" class="h-10 w-auto invert brightness-0 grayscale" src="images/brand/rosbri-wax-design-logo.jpg"/>
+<div class="font-display-accent text-xl text-white">Rosbri Wax Design</div>
+</div>
+<p class="font-body-sm text-white/60 mb-stack-md leading-relaxed">Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">public</span>
+<span class="material-symbols-outlined text-champagne cursor-pointer hover:text-white transition-colors">mail</span>
+</div>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Explore</h5>
+<ul class="space-y-3">
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Collections</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Personalized</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Corporate</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Occasions</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Support</h5>
+<ul class="space-y-3">
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Notre Histoire</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Nous Contacter</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Livraison & Frais</a></li>
+<li class=""><a class="font-body-sm text-white/70 hover:text-champagne transition-colors" href="index.html">Durabilité</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-sm uppercase tracking-[0.2em] text-champagne mb-stack-sm">Newsletter</h5>
+<p class="font-body-sm text-white/60 mb-stack-sm">Rejoignez-nous pour des inspirations cadeaux et des avant-premières artisanales.</p>
+<div class="flex border-b border-white/20 pb-2 group focus-within:border-champagne transition-colors">
+<input class="bg-transparent border-none focus:ring-0 text-white text-body-sm w-full placeholder:text-white/30" placeholder="Adresse email" type="email"/>
+<button class="text-champagne font-label-sm uppercase tracking-widest hover:text-white transition-colors">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-lg mt-xl pt-stack-md border-t border-white/10 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-white/40 uppercase tracking-widest text-[10px]">© 2024 Rosbri Wax Design. Crafted with Heritage.</p>
+<div class="flex gap-4">
+<span class="text-[10px] text-white/40 uppercase tracking-widest">Privacy</span>
+<span class="text-[10px] text-white/40 uppercase tracking-widest">Terms</span>
+</div>
+</div>
+</footer>
+<a class="fixed bottom-6 right-6 z-[90] flex items-center justify-center w-[60px] h-[60px] bg-[#25D366] text-white rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:-translate-y-1 hover:scale-105 transition-all duration-300" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20viens%20de%20votre%20site%20web%20et%20j%E2%80%99aimerais%20passer%20commande." aria-label="Contacter ROSBRI DESIGN sur WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  
+
+  <div class="lightbox fixed inset-0 z-[100] bg-ink/60 backdrop-blur-sm transition-all duration-300" id="lightbox" aria-hidden="true" style="display:none; align-items:center; justify-content:center;">
+    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden w-[95%] max-w-4xl flex flex-col md:flex-row relative transform transition-transform duration-300" id="lightbox-panel">
+      <div class="w-full md:w-1/2 bg-surface-container relative" id="lightbox-visual">
+        <img id="lightbox-image" src="" alt="" class="w-full h-full object-cover aspect-square">
+      </div>
+      <div class="w-full md:w-1/2 p-8 flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div>
+          <strong id="lightbox-title" class="block font-headline-lg text-3xl text-ink mb-2"></strong>
+          <p id="lightbox-meta" class="text-champagne font-label-sm uppercase tracking-widest mb-2"></p>
+            <div class="mb-4"><span class="inline-block px-3 py-1 bg-surface-variant/50 text-ink rounded-full text-[10px] font-label-sm uppercase tracking-widest border border-line">⏳ Confection sur commande</span></div>
+          <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed" id="lightbox-description"></p>
+          <div id="lightbox-options" class="space-y-4 mb-6"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-4 border-t border-line">
+          <button class="flex-1 px-6 py-3 rounded-full border border-ink text-ink font-label-sm uppercase tracking-widest hover:bg-ink hover:text-white transition-colors" id="lightbox-cart" type="button">Pré-commander</button>
+          <a class="flex-1 px-6 py-3 rounded-full bg-champagne text-white font-label-sm uppercase tracking-widest hover:bg-[#a38038] transition-colors text-center flex justify-center items-center" id="lightbox-order" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20passer%20une%20commande.">Commander</a>
+        </div>
+      </div>
+      <button class="absolute top-4 right-4 bg-white/80 backdrop-blur rounded-full w-10 h-10 flex items-center justify-center text-ink hover:bg-error hover:text-white transition-colors z-10 shadow-sm" type="button" data-close-lightbox aria-label="Fermer">✕</button>
     </div>
   </div>
 
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Accueil ROSBRI DESIGN">
-        <img src="images/brand/rosbri-wax-design-logo.jpg" alt="" width="48" height="48">
-        <span>ROSBRI DESIGN</span>
-      </a>
-      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="boutique.html">Boutique</a>
-        <a href="collections.html">Collections</a>
-        <a class="active" href="a_propos.html">À propos</a>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="contenu">
-    <!-- Hero Section -->
-    <section class="about-hero">
-      <div class="container" data-reveal>
-        <p class="eyebrow">Notre Histoire</p>
-        <h1>ROSBRI DESIGN</h1>
-        <p class="lead">Bienvenue dans l'univers de la création sans limites. Une mode personnalisée qui porte vos messages, vos racines et votre identité.</p>
-      </div>
-    </section>
-
-    <!-- Main About Content -->
-    <section class="container about-grid">
-      <div class="about-visual" data-reveal>
-        <img src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png" alt="Sac cabas ROSBRI DESIGN en Wax" loading="lazy">
-      </div>
-      <div class="about-content" data-reveal>
-        <h2>Créer une mode qui a une âme.</h2>
-        <p><strong>ROSBRI DESIGN</strong> est née au cœur du Cameroun d'une ambition simple : proposer des pièces uniques qui racontent votre propre histoire. Dans un monde dominé par la mode de masse, nous sommes convaincus que chacun mérite de se démarquer.</p>
-
-        <h3>Personnalisation pour les personnes qui veulent plus</h3>
-        <p>Que ce soit à travers nos collections célébrant notre héritage culturel (telles que nos créations hommages aux paysages camerounais) ou via nos services de personnalisation sur mesure, nous mettons toute notre créativité au service de votre identité.</p>
-
-        <p>En choisissant ROSBRI DESIGN, vous soutenez un projet local tourné vers l'innovation. Nous marions nos propres designs artisanaux avec une sélection minutieuse de tendances mode pour vous proposer des articles de qualité, avec une finition toujours prête à offrir.</p>
-
-        <div class="actions" style="margin-top: 24px;">
-          <a class="primary-btn" href="boutique.html">Découvrir la boutique</a>
-          <a class="ghost-btn" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20souhaite%20un%20devis%20pour%20une%20personnalisation%20sur%20mesure.%20Merci%20de%20me%20recontacter.">Créer mon modèle sur mesure</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Three Pillars Section -->
-    <section class="about-pillars">
-      <div class="container">
-        <div class="pillars-title" data-reveal>
-          <h2>Nos Piliers de Création</h2>
-          <p>Ce qui nous définit et guide chacun de nos modèles au quotidien.</p>
-        </div>
-        <div class="pillars-grid">
-          <!-- Pillar 1 -->
-          <div class="pillar-card" data-reveal>
-            <div class="icon-wrapper">🌍</div>
-            <h3>Héritage &amp; Culture</h3>
-            <p>Nos designs s'inspirent profondément des racines et de la richesse culturelle africaine, mariées avec des coupes urbaines et modernes.</p>
-          </div>
-          <!-- Pillar 2 -->
-          <div class="pillar-card" data-reveal>
-            <div class="icon-wrapper">✨</div>
-            <h3>Qualité Premium</h3>
-            <p>Nous sélectionnons rigoureusement nos matières (coton premium doux, tissus wax vibrants) afin d'assurer confort, longévité et élégance.</p>
-          </div>
-          <!-- Pillar 3 -->
-          <div class="pillar-card" data-reveal>
-            <div class="icon-wrapper">🛵</div>
-            <h3>Proximité &amp; Service</h3>
-            <p>Pas d'intermédiaires froids : nous discutons en direct sur WhatsApp pour personnaliser vos articles et livrons rapidement partout dans le pays.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <div class="container">
-        <div class="faq-title" data-reveal>
-          <h2>Questions Fréquentes (FAQ)</h2>
-          <p>Des réponses claires pour vous guider dans vos achats et personnalisations.</p>
-        </div>
-
-        <div class="faq-accordion" data-reveal>
-          <!-- FAQ 1 -->
-          <details class="faq-item">
-            <summary>Comment passer commande sur votre site ?</summary>
-            <div class="faq-item-content">
-              <p>Le processus est très simple et fluide :</p>
-              <p>1. Parcourez la <strong>Boutique</strong> ou les <strong>Collections</strong>.<br>
-              2. Ajoutez les articles de votre choix au panier (en sélectionnant la taille et la couleur si applicable).<br>
-              3. Ouvrez votre panier en bas à droite de votre écran.<br>
-              4. Cliquez sur <strong>"Envoyer la commande sur WhatsApp"</strong>.</p>
-              <p>Cela générera automatiquement un récapitulatif détaillé de vos articles sous forme de message WhatsApp. Vous n'avez plus qu'à envoyer le message pour lancer la discussion en direct avec notre équipe.</p>
-            </div>
-          </details>
-
-          <!-- FAQ 2 -->
-          <details class="faq-item">
-            <summary>Quels sont les délais de fabrication et de livraison ?</summary>
-            <div class="faq-item-content">
-              <p>Pour les articles disponibles immédiatement en stock (comme certains t-shirts et accessoires), l'expédition est très rapide, généralement sous <strong>24h à 48h</strong>.</p>
-              <p>Pour les créations personnalisées sur mesure ou les articles nécessitant un travail d'impression spécifique, le délai habituel de fabrication est de <strong>3 à 5 jours ouvrés</strong> avant l'envoi.</p>
-            </div>
-          </details>
-
-          <!-- FAQ 3 -->
-          <details class="faq-item">
-            <summary>Livrez-vous en dehors de la ville de Douala ?</summary>
-            <div class="faq-item-content">
-              <p><strong>Oui, absolument !</strong> Nous livrons partout au Cameroun.</p>
-              <p>Que vous soyez à Yaoundé, Bafoussam, Garoua, Bamenda, Kribi, Limbé ou dans une autre commune, nous expédions vos articles via des agences de transport fiables ou des coursiers express.</p>
-              <p>Les frais de livraison dépendent de votre ville et du mode d'expédition choisi ; ils sont calculés et validés avec vous lors de notre échange sur WhatsApp.</p>
-            </div>
-          </details>
-
-          <!-- FAQ 4 -->
-          <details class="faq-item">
-            <summary>Comment se passe la personnalisation d'un modèle (prénom, logo) ?</summary>
-            <div class="faq-item-content">
-              <p>Toute la magie de ROSBRI repose sur le sur-mesure. Une fois que vous nous contactez sur WhatsApp avec vos articles choisis :</p>
-              <p>1. Vous nous décrivez les ajouts souhaités (un prénom, une date, un texte particulier, ou le logo de votre entreprise).<br>
-              2. Nous réalisons une maquette numérique visuelle de votre produit.<br>
-              3. Vous examinez le design et nous demandez des modifications si nécessaire.<br>
-              4. Une fois que vous donnez votre feu vert ("bon à tirer"), nous lançons l'impression de votre vêtement ou accessoire.</p>
-            </div>
-          </details>
-
-          <!-- FAQ 5 -->
-          <details class="faq-item">
-            <summary>Quels sont les modes de paiement acceptés ?</summary>
-            <div class="faq-item-content">
-              <p>Nous acceptons les règlements via :</p>
-              <ul>
-                <li><strong>Mobile Money :</strong> Orange Money ou MTN Mobile Money (très recommandé pour accélérer le traitement et obligatoire pour les envois hors de Douala).</li>
-                <li><strong>Espèces à la livraison :</strong> Disponible uniquement pour les livraisons en main propre dans la ville de Douala.</li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- FAQ 6 -->
-          <details class="faq-item">
-            <summary>Proposez-vous des tarifs pour les grandes commandes ou événements ?</summary>
-            <div class="faq-item-content">
-              <p>Oui ! Nous réalisons régulièrement des séries de T-shirts, polos ou sacs personnalisés pour des événements familiaux (dots, mariages, anniversaires), associatifs ou professionnels.</p>
-              <p>Nous proposons des tarifs dégressifs avantageux selon le volume de commande. N'hésitez pas à cliquer sur le bouton <strong>"Demander un devis"</strong> pour en discuter en direct.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <a class="whatsapp" href="https://wa.me/237690087213?text=Bonjour%20ROSBRI%20DESIGN%20%F0%9F%91%8B%0A%0AJe%20viens%20de%20votre%20page%20FAQ%20et%20j%E2%80%99aimerais%20en%20savoir%20plus." aria-label="Contacter ROSBRI DESIGN sur WhatsApp" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong class="footer-brand">ROSBRI DESIGN</strong>
-        <p>"Customisation pour les personnes qui veulent plus"</p>
-      </div>
-      <div>
-        <h2>Navigation</h2>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="boutique.html">Boutique</a></li>
-          <li><a href="collections.html">Collections</a></li>
-          <li><a href="a_propos.html">À propos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <p>Cameroun</p>
-        <p>Commandes et devis personnalisés via WhatsApp.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script type="module" src="motion-enhancements.js?v=20260604"></script>
-  <script src="cart.js?v=20260604"></script>
+  <script src="catalog-data.js?v=20260612-pack-prices"></script>
+  <script src="cms-config.js?v=20260612-catalog616"></script>
+  <script src="catalog.js?v=20260612-catalog616"></script>
+  <script src="catalog-cms.js?v=20260612-catalog616"></script>
+  <script type="module" src="motion-enhancements.js?v=20260612-catalog616"></script>
+  <script src="cart.js?v=20260612-catalog616"></script>
 
   <!-- Floating Cart Button -->
-  <button class="cart-floating-btn" id="cart-floating-btn" type="button" aria-label="Voir mon panier">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-    <span class="cart-count-badge" id="cart-count-badge" style="display: none;">0</span>
+  <button id="cart-floating-btn" type="button" aria-label="Voir mon panier" class="fixed bottom-[100px] right-6 z-[80] flex items-center justify-center w-[50px] h-[50px] bg-ink text-white rounded-full shadow-[0_10px_30px_rgba(26,28,31,0.3)] hover:-translate-y-1 hover:scale-105 transition-all duration-300" onclick="toggleCart()">
+    <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+    <span id="cart-count-badge-floating" class="absolute -top-1 -right-1 bg-coral text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full" style="display: none;">0</span>
   </button>
 
   <!-- Cart Drawer -->
-  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
-    <div class="cart-drawer-overlay" data-close-cart></div>
-    <div class="cart-drawer-panel">
-      <div class="cart-drawer-header">
-        <h2>Mon Panier</h2>
-        <button class="cart-drawer-close" type="button" data-close-cart aria-label="Fermer le panier">×</button>
+  <div class="cart-drawer fixed inset-0 z-[100] transition-all duration-300" id="cart-drawer" aria-hidden="true" style="display:none;">
+    <div class="absolute inset-0 bg-ink/40 backdrop-blur-sm" data-close-cart></div>
+    <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white shadow-2xl flex flex-col transform transition-transform duration-300 translate-x-0">
+      <div class="px-6 py-4 border-b border-line flex items-center justify-between bg-surface-container-low">
+        <h2 class="font-headline-md text-xl text-ink font-bold">Mon Panier</h2>
+        <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant text-ink transition-colors" type="button" data-close-cart aria-label="Fermer le panier">✕</button>
       </div>
-      <div class="cart-drawer-body" id="cart-drawer-items"></div>
-      <div class="cart-drawer-footer" id="cart-drawer-footer">
-        <div class="cart-total-row">
-          <span>Total :</span>
-          <strong id="cart-total-value">0 FCFA</strong>
+      <div class="flex-1 overflow-y-auto p-6 space-y-6" id="cart-drawer-items"></div>
+      <div class="p-6 bg-surface-container-low border-t border-line" id="cart-drawer-footer">
+        <div class="mb-4 p-4 rounded-xl bg-surface-variant/30 border border-line text-on-surface-variant font-body-sm flex items-start gap-3">\n            <span class="text-xl leading-none">💡</span>\n            <p class="text-[12.5px] leading-relaxed"><strong>Confection sur commande.</strong> Les délais dépendent du nombre d'articles et du travail requis. Envoyez votre sélection sur WhatsApp pour obtenir votre délai estimé et valider la commande.</p>\n          </div>\n          <div class="flex justify-between items-center mb-6">
+          <span class="font-label-sm uppercase tracking-widest text-muted">Total :</span>
+          <strong id="cart-total-value" class="font-display-accent text-2xl text-ink">0 FCFA</strong>
         </div>
-        <div class="cart-drawer-actions">
-          <a class="primary-btn" id="cart-order-btn" href="#">Envoyer la commande sur WhatsApp</a>
-          <button class="secondary-btn" id="cart-clear-btn" type="button">Vider le panier</button>
+        <div class="flex flex-col gap-3">
+          <a class="w-full px-6 py-4 rounded-xl bg-[#25D366] text-white font-label-sm uppercase tracking-widest hover:bg-[#20ba5a] transition-colors text-center flex justify-center items-center shadow-lg gap-2" id="cart-order-btn" href="#">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Envoyer sur WhatsApp
+            </a>
+          <button class="w-full px-6 py-3 rounded-xl border border-line text-muted font-label-sm uppercase tracking-widest hover:bg-error hover:text-white hover:border-error transition-colors" id="cart-clear-btn" type="button">Vider le panier</button>
         </div>
       </div>
     </div>
   </div>
-</body>
-</html>
+</body></html>
