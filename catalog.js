@@ -1541,7 +1541,7 @@
     renderReviews(item);
     renderShareButtons(item);
     renderLightboxThumbnails(item);
-    applyPreviewCrop();
+    lightbox.style.display = "";
     lightbox.classList.add("open");
     document.dispatchEvent(new CustomEvent("catalog:lightbox-open", { detail: { item } }));
     document.body.style.overflow = "hidden";
@@ -1550,6 +1550,7 @@
   function closeProduct() {
     const lightbox = byId("lightbox");
     if (!lightbox) return;
+    lightbox.style.display = "";
     lightbox.classList.remove("open");
     orderState.item = null;
     const image = byId("lightbox-image");
