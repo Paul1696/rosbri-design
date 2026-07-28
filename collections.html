@@ -112,31 +112,15 @@
         }
     </style>
 </head>
-<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white pt-20">
-<!-- Top Navigation -->
-<header class="fixed top-0 w-full bg-cream/95 backdrop-blur-md z-50 border-b border-surface-variant/50 transition-all duration-300">
-    <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
-        <a class="flex items-center gap-3 group" href="index.html">
-            <img alt="Logo" class="h-10 w-auto group-hover:scale-105 transition-transform" src="images/brand/rosbri-wax-design-logo.jpg">
-            <span class="font-display-accent text-2xl font-bold tracking-tight text-ink">ROSBRI DESIGN</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8">
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="index.html">Accueil</a>
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html">Boutique</a>
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="collections.html">Collections</a>
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html?categorie=Entreprise%20%26%20B2B">B2B</a>
-        </nav>
-        <div class="flex items-center gap-4">
-            <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors">search</span>
-            <div class="relative">
-                <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors" onclick="toggleCart()">shopping_bag</span>
-                <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-champagne text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full" style="display:none;">0</span>
-            </div>
-            <span class="material-symbols-outlined md:hidden cursor-pointer">menu</span>
-        </div>
-    </div>
-</header>
-<main class="pt-24 pb-xxl px-margin-lg max-w-[1280px] mx-auto relative overflow-hidden">
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white">
+
+<!-- Shared Component Mount Points -->
+<div id="announcement-bar-mount"></div>
+<div id="header-mount"></div>
+<div id="mobile-menu-mount"></div>
+<div id="cart-drawer-mount"></div>
+
+<main class="py-12 px-margin-lg max-w-[1280px] mx-auto relative overflow-hidden">
 <!-- Floating Watermarks -->
 <img alt="" class="absolute top-40 -left-20 w-64 opacity-5 pointer-events-none rotate-12" src="images/brand/rosbri-wax-design-logo.jpg"/>
 <img alt="" class="absolute top-[800px] -right-20 w-80 opacity-5 pointer-events-none -rotate-12" src="images/brand/rosbri-wax-design-logo.jpg"/>
@@ -351,6 +335,13 @@
         <button class="secondary-btn" type="button" id="cancel-quote-modal">Annuler</button>
         <button class="primary-btn" type="button" id="submit-quote-modal">Envoyer sur WhatsApp</button>
       </div>
-    </div>
-  </div>
+  <!-- Shared Footer Mount Point -->
+  <div id="footer-mount"></div>
+
+  <!-- Scripts -->
+  <script src="catalog-data.js"></script>
+  <script src="catalog.js"></script>
+  <script src="cart.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/header.js"></script>
 </body></html>

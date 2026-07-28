@@ -1,0 +1,98 @@
+/**
+ * ROSBRI DESIGN - Header & Navigation Interaction Engine
+ * Manages active page links, mobile menu drawer, announcement bar sessionStorage, and search redirects.
+ */
+(function () {
+  function initHeader() {
+    // 1. Highlight Active Nav Link
+    const path = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("[data-nav-link]").forEach((link) => {
+      const target = link.dataset.navLink;
+      if (path === target || (path === "" && target === "index.html")) {
+        link.classList.add("text-champagne", "font-extrabold");
+        link.setAttribute("aria-current", "page");
+        // Add subtle active indicator dot
+        const dot = document.createElement("span");
+        dot.className = "absolute bottom-0 left-0 right-0 h-0.5 bg-champagne rounded-full";
+        link.appendChild(dot);
+      }
+    });
+
+    // 2. Announcement Bar Session Storage Check
+    const bar = document.getElementById("rosbri-announcement-bar");
+    const closeBarBtn = document.getElementById("close-announcement-bar");
+    if (bar) {
+      if (sessionStorage.getItem("rosbri_announcement_closed") === "true") {
+        bar.style.display = "none";
+      } else if (closeBarBtn) {
+        closeBarBtn.addEventListener("click", () => {
+          bar.style.display = "none";
+          sessionStorage.setItem("rosbri_announcement_closed", "true");
+        });
+      }
+    }
+
+    // 3. Mobile Menu Toggle Logic
+    const drawer = document.getElementById("mobile-menu-drawer");
+    const panel = document.getElementById("mobile-menu-panel");
+
+    function openMobileMenu() {
+      if (!drawer || !panel) return;
+      drawer.style.display = "block";
+      document.body.style.overflow = "hidden";
+      setTimeout(() => {
+        drawer.classList.remove("pointer-events-none", "opacity-0");
+        drawer.classList.add("opacity-100");
+        panel.classList.remove("translate-x-full");
+        panel.classList.add("translate-x-0");
+        drawer.setAttribute("aria-hidden", "false");
+      }, 10);
+    }
+
+    function closeMobileMenu() {
+      if (!drawer || !panel) return;
+      panel.classList.remove("translate-x-0");
+      panel.classList.add("translate-x-full");
+      drawer.classList.remove("opacity-100");
+      drawer.classList.add("opacity-0");
+      drawer.setAttribute("aria-hidden", "true");
+      setTimeout(() => {
+        drawer.style.display = "none";
+        drawer.classList.add("pointer-events-none");
+        document.body.style.overflow = "";
+      }, 300);
+    }
+
+    document.addEventListener("click", (event) => {
+      if (event.target.closest("[data-toggle-mobile-menu]")) {
+        openMobileMenu();
+      }
+      if (event.target.closest("[data-close-mobile-menu]")) {
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && drawer && drawer.style.display !== "none") {
+        closeMobileMenu();
+      }
+    });
+
+    // 4. Pre-fill Search Input if query exists in URL
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("recherche") || params.get("q");
+    if (query) {
+      document.querySelectorAll("#header-search-input, input[name='recherche']").forEach((input) => {
+        input.value = query;
+      });
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initHeader();
+  });
+
+  document.addEventListener("components:loaded", () => {
+    initHeader();
+  });
+})();

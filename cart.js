@@ -209,12 +209,12 @@
   ────────────────────────────────────────────────────── */
   function bind() {
     // Floating + header cart button
-    ["cart-floating-btn", "header-cart-btn"].forEach(id => {
-      const btn = document.getElementById(id);
-      if (btn) btn.addEventListener("click", () => toggleCart(true));
-    });
-
     document.addEventListener("click", (event) => {
+      // Open cart drawer via data-open-cart or legacy IDs
+      if (event.target.closest("[data-open-cart], #cart-floating-btn, #header-cart-btn")) {
+        toggleCart(true);
+      }
+
       // Close cart drawer
       if (event.target.closest("[data-close-cart]")) toggleCart(false);
 

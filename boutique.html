@@ -114,30 +114,15 @@
         }
     </style>
 </head>
-<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white pt-20">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full bg-cream/95 backdrop-blur-md z-50 border-b border-surface-variant/50 transition-all duration-300">
-    <div class="max-w-[1920px] mx-auto px-6 h-20 flex items-center justify-between">
-        <a class="flex items-center gap-3 group" href="index.html">
-            <img alt="Logo" class="h-10 w-auto group-hover:scale-105 transition-transform" src="images/brand/rosbri-wax-design-logo.jpg">
-            <span class="font-display-accent text-2xl font-bold tracking-tight text-ink">ROSBRI DESIGN</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8">
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="index.html">Accueil</a>
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html">Boutique</a>
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="collections.html">Collections</a>
-            <a class="font-label-sm uppercase tracking-widest text-ink hover:text-champagne transition-colors" href="boutique.html?categorie=Entreprise%20%26%20B2B">B2B</a>
-        </nav>
-        <div class="flex items-center gap-4">
-            <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors">search</span>
-            <div class="relative">
-                <span class="material-symbols-outlined cursor-pointer hover:text-champagne transition-colors" onclick="toggleCart()">shopping_bag</span>
-                <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-champagne text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full" style="display:none;">0</span>
-            </div>
-            <span class="material-symbols-outlined md:hidden cursor-pointer">menu</span>
-        </div>
-    </div>
-</header>
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white">
+
+<!-- Shared Component Mount Points -->
+<div id="announcement-bar-mount"></div>
+<div id="header-mount"></div>
+<div id="mobile-menu-mount"></div>
+<div id="cart-drawer-mount"></div>
+
+<main>
 <!-- Tailwind JIT Safelist -->
 <div class="hidden text-left w-full p-2 rounded-lg transition-colors cursor-pointer text-body-md bg-gold-soft text-secondary font-semibold text-ink hover:bg-gold-soft hover:text-secondary mt-6 font-label-md text-label-md uppercase tracking-wider text-muted mb-stack-sm space-y-1 bg-gold-soft border-l-4 border-primary text-secondary font-bold group-open:rotate-180 overflow-hidden max-h-0 max-h-[2000px] transition-all duration-300 flex items-center justify-between hover:bg-surface-variant py-2 px-3 text-sm text-xs rounded-full bg-gray-100 text-gray-500 bg-primary text-white mb-2 mt-4 ml-4 pl-4 border-l border-line gap-2
     bg-[#f8f1e3] border-transparent hover:pl-5 hover:bg-surface-variant/50 bg-[#775a19] shadow-primary/20 scale-[1.02] bg-surface-variant/30 bg-white/20 px-2.5 px-4 pb-3 mb-3 hover:text-primary font-medium text-[13px] text-[11px] grid grid-rows-[1fr] grid-rows-[0fr] opacity-100 opacity-0 group-hover:bg-white group-hover:text-primary group-hover:shadow-sm before:content-[''] before:absolute before:left-6 before:top-0 before:bottom-2 before:w-px before:bg-line bg-primary/10"></div>
@@ -410,6 +395,13 @@
         <button class="secondary-btn" type="button" id="cancel-quote-modal">Annuler</button>
         <button class="primary-btn" type="button" id="submit-quote-modal">Envoyer sur WhatsApp</button>
       </div>
-    </div>
-  </div>
+  <!-- Shared Footer Mount Point -->
+  <div id="footer-mount"></div>
+
+  <!-- Scripts -->
+  <script src="catalog-data.js"></script>
+  <script src="catalog.js"></script>
+  <script src="cart.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/header.js"></script>
 </body></html>

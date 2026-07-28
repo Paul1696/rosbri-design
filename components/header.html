@@ -1,0 +1,43 @@
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-line transition-all duration-300">
+  <div class="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3 group flex-shrink-0" aria-label="ROSBRI DESIGN - Accueil">
+      <img src="images/brand/rosbri-wax-design-logo.jpg" alt="ROSBRI DESIGN" class="h-10 w-auto rounded-lg shadow-sm group-hover:scale-105 transition-transform duration-300">
+      <div class="flex flex-col">
+        <span class="font-display-accent text-xl font-bold text-ink leading-tight tracking-tight">ROSBRI DESIGN</span>
+        <span class="text-[9px] uppercase tracking-[0.2em] font-bold text-champagne">Afritude Luxe</span>
+      </div>
+    </a>
+
+    <!-- Navigation Desktop -->
+    <nav class="hidden lg:flex items-center gap-8 font-label-sm uppercase tracking-widest text-xs font-bold text-ink/80" aria-label="Navigation principale">
+      <a href="index.html" data-nav-link="index.html" class="hover:text-champagne transition-colors py-1 relative">Accueil</a>
+      <a href="boutique.html" data-nav-link="boutique.html" class="hover:text-champagne transition-colors py-1 relative">Boutique</a>
+      <a href="collections.html" data-nav-link="collections.html" class="hover:text-champagne transition-colors py-1 relative">Collections</a>
+      <a href="a_propos.html" data-nav-link="a_propos.html" class="hover:text-champagne transition-colors py-1 relative">À Propos</a>
+      <a href="boutique.html?categorie=Entreprise" data-nav-link="b2b" class="hover:text-champagne transition-colors py-1 relative text-champagne">B2B</a>
+    </nav>
+
+    <!-- Header Actions (Recherche, Panier, Mobile Menu) -->
+    <div class="flex items-center gap-4">
+      <!-- Search Form Desktop -->
+      <form id="header-search-form" action="boutique.html" method="GET" class="hidden sm:flex items-center relative w-48 md:w-64">
+        <input type="text" name="recherche" id="header-search-input" placeholder="Rechercher un produit..." class="w-full pl-9 pr-4 py-2 text-xs rounded-full border border-line bg-surface-container-low text-ink placeholder:text-muted focus:outline-none focus:border-champagne focus:bg-white transition-all">
+        <button type="submit" aria-label="Lancer la recherche" class="absolute left-3 text-muted hover:text-ink flex items-center justify-center">
+          <span class="material-symbols-outlined text-sm">search</span>
+        </button>
+      </form>
+
+      <!-- Cart Button -->
+      <button data-open-cart class="relative p-2.5 text-ink hover:text-champagne transition-colors flex items-center justify-center rounded-full hover:bg-surface-container-low" type="button" aria-label="Voir mon panier">
+        <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+        <span id="cart-count-badge" class="cart-count-badge absolute -top-1 -right-1 bg-champagne text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full font-bold shadow-sm" style="display:none;">0</span>
+      </button>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button data-toggle-mobile-menu class="lg:hidden p-2.5 text-ink hover:text-champagne transition-colors flex items-center justify-center rounded-full hover:bg-surface-container-low" type="button" aria-label="Ouvrir le menu mobile">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
