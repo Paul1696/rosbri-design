@@ -1,42 +1,20 @@
 (function () {
   let catalog = Array.isArray(window.ROSBriCatalog) ? window.ROSBriCatalog : [];
   const labels = {
-    Packs: "Packs",
-    Tshirts: "T-shirts",
-    Sacs: "Sacs",
-    Ensembles: "Ensembles",
-    Babouches: "Babouches",
-    Sandales: "Sandales",
-    Chapeaux: "Chapeaux",
-    Bobs: "Bobs",
-    Pochettes: "Pochettes",
-    GantsCuisine: "Gants de cuisine",
-    Maniques: "Maniques",
-    Accessoires: "Accessoires",
-    Coussins: "Coussins",
-    Robes: "Robes",
-    Chemises: "Chemises",
-    Boubous: "Boubous",
-    Polos: "Polos",
-    Debardeurs: "Débardeurs",
-    Sweats: "Sweats",
-    Hoodies: "Hoodies",
-    Jupes: "Jupes",
-    Shorts: "Shorts",
-    Pantalons: "Pantalons",
-    Bijoux: "Bijoux",
-    Portefeuilles: "Portefeuilles",
-    Trousses: "Trousses",
-    Chaussures: "Chaussures",
-    Tabliers: "Tabliers",
-    Serviettes: "Serviettes",
-    Mugs: "Mugs",
-    Gourdes: "Gourdes",
-    Affiches: "Affiches",
-    Cartes: "Cartes de vœux",
-    Stickers: "Stickers",
-    Pagnes: "Pagnes",
-    CoquesTelephone: "Coques de téléphone"
+    "Tous": "Tous les produits",
+    "Nouveautes": "Nouveautés",
+    "Populaires": "Les plus vendus",
+    "PetitPrix": "Moins de 10 000 FCFA",
+    "Produits": "Catalogue régulier",
+    "SurDevis": "Sur devis",
+    "Vêtements": "Vêtements",
+    "Accessoires": "Accessoires",
+    "Maison & Déco": "Maison & Déco",
+    "Mugs & Gourdes": "Mugs & Gourdes",
+    "Enfants & Bébés": "Enfants & Bébés",
+    "Packs & Idées Cadeaux": "Packs & Cadeaux",
+    "Entreprise & B2B": "B2B & Pros",
+    "Collections Spéciales": "Collections Spéciales"
   };
   const order = Object.keys(labels);
   const descriptions = {
@@ -79,7 +57,7 @@
   };
 
   function productCategory(item) {
-    if (item.isPack || item.is_pack || item.category === "Packs") return "Packs";
+    if (item.isPack || item.is_pack || item.category === "Packs & Idées Cadeaux") return "Packs & Idées Cadeaux";
     const path = item.image || "";
     const match = path.match(/^images\/articles-site\/([^/]+)/i);
     const folder = match ? match[1] : "";
@@ -140,15 +118,18 @@
         const items = grouped[category];
         const images = items.slice(0, 4).map((item) => `<img src="${item.image}" alt="">`).join("");
         return `
-          <article class="collection-card">
-            <div class="collection-mosaic">${images}</div>
-            <div class="collection-card-body">
-              <span>${items.length} article${items.length > 1 ? "s" : ""}</span>
-              <h2>${labels[category] || category}</h2>
-              <p>${descriptions[category] || "Articles ROSBRI classés pour une commande rapide."}</p>
-              <a class="primary-btn" href="boutique.html?categorie=${encodeURIComponent(category)}">Voir la collection</a>
-            </div>
-          </article>
+<div class="group card-hover-effect flex flex-col bg-white overflow-hidden relative border border-transparent hover:border-gold-soft/20 rounded-2xl soft-shadow transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] relative overflow-hidden bg-surface-container">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700" src="${items[0].image}" loading="lazy" alt="">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<span class="absolute top-4 right-4 bg-white/90 backdrop-blur text-ink text-xs font-bold px-3 py-1 rounded-full">${items.length} articles</span>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-xl text-ink mb-2">${labels[category] || category}</h3>
+<p class="font-body-md text-sm text-on-surface-variant line-clamp-2">${descriptions[category] || "Articles ROSBRI."}</p>
+</div>
+<a aria-label="Explore ${category}" class="absolute inset-0 z-10" href="boutique.html?categorie=${encodeURIComponent(category)}"></a>
+</div>
         `;
       });
     target.innerHTML = cards.join("") || "<p>Aucune collection disponible.</p>";

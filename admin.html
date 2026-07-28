@@ -314,5 +314,32 @@
   <script src="catalog-data.js?v=20260602-admin"></script>
   <script src="cms-config.js?v=20260603-admin-images"></script>
   <script src="admin.js?v=20260603-admin-console"></script>
+  <div class="quote-modal" id="quote-modal" aria-hidden="true">
+    <div class="quote-modal-content">
+      <button class="close-btn" type="button" id="close-quote-modal" aria-label="Fermer">×</button>
+      <h3>Demande de devis</h3>
+      <p id="quote-product-name">Nom du produit</p>
+      
+      <div class="quote-form-group">
+        <label for="quote-name">Nom / Entreprise *</label>
+        <input type="text" id="quote-name" placeholder="Votre nom ou société" required>
+      </div>
+      
+      <div class="quote-form-group">
+        <label for="quote-qty">Quantité estimée *</label>
+        <input type="number" id="quote-qty" placeholder="Ex: 50" min="1" required>
+      </div>
+      
+      <div class="quote-form-group">
+        <label for="quote-desc">Détails du besoin *</label>
+        <textarea id="quote-desc" placeholder="Décrivez votre projet (délais, personnalisation...)" required></textarea>
+      </div>
+      
+      <div class="quote-modal-actions">
+        <button class="secondary-btn" type="button" id="cancel-quote-modal">Annuler</button>
+        <button class="primary-btn" type="button" id="submit-quote-modal">Envoyer sur WhatsApp</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
