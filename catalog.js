@@ -1119,7 +1119,7 @@
 
   function updateOrderLink() {
     if (!orderState.item) return;
-    const order = byId("lightbox-order");
+    const order = byId("lightbox-order") || byId("detail-whatsapp-btn");
     const clothing = isClothing(orderState.item);
     const footwear = isFootwear(orderState.item);
     const colorChoices = hasColorChoices(orderState.item);
@@ -1135,14 +1135,18 @@
     };
     if (order) {
       order.href = orderUrlWithOptions(orderState.item, selectedOptions);
-      order.textContent = orderButtonLabel(orderState.item);
+      if (order.id === "lightbox-order") {
+        order.textContent = orderButtonLabel(orderState.item);
+      }
     }
   }
 
   function renderOrderOptions(item) {
-    const target = byId("lightbox-options");
-    if (!target) return;
-    target.innerHTML = optionMarkup(item);
+    if (!item) return;
+    const target = byId("lightbox-options") || byId("detail-options");
+    if (target) {
+      target.innerHTML = optionMarkup(item);
+    }
     updateOrderLink();
   }
 
@@ -1954,7 +1958,9 @@
   window.displayImage = displayImage;
   window.categoryMatches = categoryMatches;
   window.colorOptionsFor = colorOptionsFor;
+  window.selectedColor = selectedColor;
   window.optionMarkup = optionMarkup;
+  window.renderOrderOptions = renderOrderOptions;
   window.isChildClothing = isChildClothing;
   window.orderState = orderState;
   window.updateOrderLink = updateOrderLink;
