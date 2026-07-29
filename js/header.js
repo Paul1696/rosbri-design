@@ -22,13 +22,8 @@
       }
 
       if (isActive) {
-        link.classList.add("text-champagne", "font-extrabold");
+        link.classList.add("active");
         link.setAttribute("aria-current", "page");
-        if (!link.querySelector(".nav-active-dot")) {
-          const dot = document.createElement("span");
-          dot.className = "nav-active-dot absolute bottom-0 left-0 right-0 h-0.5 bg-champagne rounded-full";
-          link.appendChild(dot);
-        }
       }
     });
 
