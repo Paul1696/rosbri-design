@@ -1,6 +1,6 @@
 (function () {
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
-  const WHATSAPP_PHONE = "237690087213";
+  const WHATSAPP_PHONE = "237698193880";
   let catalog = normalizeCatalog(window.ROSBriCatalog || []);
   const categories = [
       "Tous",
@@ -1315,7 +1315,7 @@
         const textVal = target.querySelector("#user-review-text").value;
 
         const message = `Bonjour ROSBRI DESIGN 🌸\n\nJe souhaite soumettre un avis pour votre produit *${item.title}* :\n\n⭐ Note : *${currentRating}/5*\n✍️ Avis : "${textVal}"\n👤 Signé : *${nameVal}*\n\nMerci de le publier sur le site !`;
-        const waLink = `https://wa.me/237690087213?text=${encodeURIComponent(message)}`;
+        const waLink = `https://wa.me/237698193880?text=${encodeURIComponent(message)}`;
         window.open(waLink, "_blank");
 
         form.reset();
