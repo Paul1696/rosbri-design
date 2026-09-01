@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>ROSBRI DESIGN | Mode Afritude Luxe & Créations Personnalisées</title>
+  <meta name="description" content="Découvrez les créations exclusives ROSBRI DESIGN : T-shirts Héritage, vêtements Afritude Luxe, sacs, babouches et cadeaux personnalisés faits main au Cameroun."/>
+  <meta property="og:title" content="ROSBRI DESIGN | Afritude Luxe"/>
+  <meta property="og:description" content="Élever le standard des connexions significatives grâce à un design de luxe imprégné d’héritage africain."/>
+  <meta property="og:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
+  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="ROSBRI DESIGN | Afritude Luxe"/>
+  <meta name="twitter:description" content="Mode Afritude Luxe et cadeaux d'exception façonnés à la main au Cameroun."/>
+  <meta name="twitter:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/brand/rosbri-wax-design-logo.jpg"/>
+  <link rel="apple-touch-icon" href="images/brand/rosbri-wax-design-logo.jpg"/>
+
+  <!-- Shared Tailwind Config & CDN -->
+  <script src="js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Design System Styles -->
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white home-page">
+
+  <!-- Mount Points -->
+  <div id="site-announcement"></div>
+  <div id="site-header"></div>
+
+  <main id="main-content">
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO LAYERS — Architecture en couches indépendantes
+         Chaque élément est une couche absolute distincte.
+         Pas de grille rigide. Pas d'image de fond rectangulaire.
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="hero-layers" id="hero" aria-label="Accueil Rosbri Wax Design">
+
+      <!-- COUCHE 1 : Fond beige décoratif avec ombres végétales -->
+      <div class="hero-layers__bg" aria-hidden="true">
+        <!-- Motif losange fin africain -->
+        <div class="hero-layers__bg-pattern"></div>
+        <!-- Ombre végétale douce (pseudo-palmier) -->
+        <div class="hero-layers__bg-shadow"></div>
+      </div>
+
+      <!-- COUCHE 2 : Textile beige froissé au sol (texture) -->
+      <div class="hero-layers__linen" aria-hidden="true"></div>
+
+      <!-- COUCHE 3 : Vase et branches séchées (arrière-plan droit) -->
+      <img
+        class="hero-layers__botanical"
+        src="images/hero/hero-botanical.png"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        draggable="false"
+      />
+
+      <!-- COUCHE 4 : Props — boîte, bougie, rouleau de tissu -->
+      <img
+        class="hero-layers__props"
+        src="images/hero/hero-props.png"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        draggable="false"
+      />
+
+      <!-- COUCHE 5 : SAC PRINCIPAL — déborde vers la gauche -->
+      <img
+        class="hero-layers__bag"
+        src="images/hero/hero-bag.png"
+        alt="Grand sac tote Rosbri Wax Design en toile beige naturelle avec bandes wax noires et dorées"
+        loading="eager"
+        draggable="false"
+      />
+
+      <!-- COUCHE 6 : TEXTE HTML — superposé à gauche, z-index élevé -->
+      <div class="hero-layers__text">
+
+        <div class="hero-layers__eyebrow" aria-label="Élégance Artisanale">
+          <span class="hero-layers__eyebrow-line" aria-hidden="true"></span>
+          <span>Élégance Artisanale</span>
+        </div>
+
+        <h1 class="hero-layers__title">
+          Un design<br>qui raconte
+          <em class="hero-layers__title-em">votre héritage</em>
+        </h1>
+
+        <p class="hero-layers__desc">
+          Des cadeaux personnalisés et des créations d'entreprise conçus avec soin, entre élégance contemporaine et héritage textile africain.
+        </p>
+
+        <div class="hero-layers__cta">
+          <a href="collections.html" class="hero-layers__btn-primary" id="hero-cta-decouvrir">
+            Découvrir nos créations
+            <span class="hero-layers__btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a
+            href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20créer%20un%20cadeau%20sur%20mesure."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hero-layers__btn-secondary"
+            id="hero-cta-cadeau"
+          >
+            Créer un cadeau sur mesure
+          </a>
+        </div>
+
+        <div class="hero-layers__trust" role="list">
+          <div class="hero-layers__trust-item" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Personnalisation sur mesure</span>
+          </div>
+          <span class="hero-layers__trust-sep" aria-hidden="true">·</span>
+          <div class="hero-layers__trust-item" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>Finitions soignées</span>
+          </div>
+          <span class="hero-layers__trust-sep" aria-hidden="true">·</span>
+          <div class="hero-layers__trust-item" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Livraison au Cameroun</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Navigation Commerciale -->
+    <section class="bg-surface-container-low/50 next-section px-6 lg:px-12 relative overflow-hidden transition-all duration-1000 ease-out">
+      <img alt="Motif discret ROSBRI DESIGN" class="afritude-watermark absolute -left-32 bottom-20 w-80 h-80 opacity-[0.03] pointer-events-none mix-blend-multiply" src="images/brand/rosbri-wax-design-logo.jpg" style="animation-duration: 12s;"/>
+      <div class="w-full max-w-[1800px] mx-auto relative z-10">
+        <div class="text-center mb-12">
+          <h2 class="font-display-accent text-3xl md:text-4xl text-ink mb-4">Que souhaitez-vous créer ?</h2>
+          <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Découvrez les univers ROSBRI DESIGN et trouvez rapidement les articles adaptés à votre projet.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Carte 1 : Personnalisation -->
+          <a href="https://wa.me/237698193880?text=Bonjour%20ROSBRI%20DESIGN%20👋%20Je%20souhaite%20personnaliser%20un%20article." target="_blank" rel="noopener noreferrer" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne">
+            <img src="images/articles-site/navigation/nav-personnalisation.png" alt="Personnalisation ROSBRI DESIGN" class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+              <h3 class="font-display-accent text-2xl md:text-3xl text-white mb-2">Personnalisez votre article</h3>
+              <p class="font-body-sm text-white/90 mb-6">Transformez votre idée en une création unique avec votre prénom, votre photo, votre message ou votre logo.</p>
+              <span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white font-bold">
+                Commencer une personnalisation
+                <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Carte 2 : Cadeaux -->
+          <a href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne">
+            <img src="images/articles-site/navigation/nav-cadeaux.png" alt="Idées Cadeaux ROSBRI DESIGN" class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+              <h3 class="font-display-accent text-2xl md:text-3xl text-white mb-2">Cadeaux & moments précieux</h3>
+              <p class="font-body-sm text-white/90 mb-6">Trouvez un cadeau original pour un anniversaire, une fête, une cérémonie ou une personne qui compte.</p>
+              <span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white font-bold">
+                Découvrir les idées cadeaux
+                <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Carte 3 : Entreprise -->
+          <a href="boutique.html?categorie=Entreprise" class="group relative block aspect-[4/5] rounded-2xl overflow-hidden soft-shadow transition-all duration-200 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-champagne md:col-span-2 lg:col-span-1 md:w-1/2 md:mx-auto lg:w-full lg:mx-0">
+            <img src="images/articles-site/navigation/nav-entreprise.png" alt="Entreprises & B2B ROSBRI DESIGN" class="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/40 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
+              <h3 class="font-display-accent text-2xl md:text-3xl text-white mb-2">Commandes Entreprises & B2B</h3>
+              <p class="font-body-sm text-white/90 mb-6">Découvrez nos coffrets de fin d'année, cadeaux clients, goodies personnalisés et tenues professionnelles.</p>
+              <span class="inline-flex items-center gap-2 text-champagne font-label-sm uppercase tracking-widest transition-colors duration-200 group-hover:text-white font-bold">
+                Explorer les solutions B2B
+                <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notre Savoir-Faire -->
+    <section class="py-16 px-6 lg:px-12 w-full max-w-[1800px] mx-auto text-center">
+      <h2 class="font-display-accent text-3xl md:text-4xl text-ink mb-4">Artisanat & Afritude Luxe</h2>
+      <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Chaque création ROSBRI DESIGN est conçue avec passion et minutie pour allier tradition africaine et modernité contemporaine.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div class="p-6 bg-white rounded-2xl border border-line soft-shadow">
+          <span class="material-symbols-outlined text-3xl text-champagne mb-3">palette</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Motifs Exclusifs Wax</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Assortiments de tissus wax sélectionnés pour leur authenticité et éclat culturel.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-line soft-shadow">
+          <span class="material-symbols-outlined text-3xl text-champagne mb-3">auto_awesome</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Personnalisation Fine</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Marquage haute précision sur vêtements, mugs, gourdes et accessoires.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-line soft-shadow">
+          <span class="material-symbols-outlined text-3xl text-champagne mb-3">local_shipping</span>
+          <h3 class="font-bold text-lg text-ink mb-2">Confection & Livraison</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Confection sur mesure rapide et expédition directe à Douala et dans toute la région.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mount Points -->
+  <div id="site-footer"></div>
+  <div id="site-mobile-menu"></div>
+  <div id="site-cart-drawer"></div>
+
+  <!-- Shared Scripts in Canonical Order -->
+  <script src="catalog-data.js" defer></script>
+  <script src="catalog.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/mobile-menu.js" defer></script>
+  <script src="js/announcement-bar.js" defer></script>
+  <script src="js/qa-check.js" defer></script>
+</body>
+</html>

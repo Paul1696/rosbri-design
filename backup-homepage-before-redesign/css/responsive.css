@@ -1,0 +1,33 @@
+/**
+ * ROSBRI DESIGN - Responsive Layout Styles
+ * Ensures clean, pixel-perfect layouts from 320px up to 1920px without horizontal overflow.
+ */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  .hero-heading {
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+  }
+  .container-responsive {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-heading {
+    font-size: 3rem !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-heading {
+    font-size: 3.75rem !important;
+  }
+}

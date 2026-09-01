@@ -13,6 +13,9 @@
       const target = link.dataset.navLink;
       let isActive = false;
 
+      link.classList.remove("active");
+      link.removeAttribute("aria-current");
+
       if (categoryParam.toLowerCase().includes("entreprise") || categoryParam.toLowerCase().includes("b2b")) {
         if (target === "b2b") isActive = true;
       } else if (fullPath === "produit.html") {

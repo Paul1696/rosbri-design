@@ -1,5 +1,12 @@
 {
-  "dependencies": {
-    "jsdom": "^29.1.1"
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.cjs -i css/tailwind-input.css -o css/tailwind.generated.min.css --minify",
+    "build": "npm run build:css && npm run build:seo",
+    "serve": "python -m http.server 4173 --bind 127.0.0.1",
+    "build:seo": "node scripts/generate-product-pages.js",
+    "test": "node scripts/verify-site.js"
   }
 }

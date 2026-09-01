@@ -3,9 +3,23 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Boutique Afritude Luxe | ROSBRI DESIGN</title>
+  <title>Boutique | ROSBRI DESIGN</title>
+
+  <meta name="description" content="Explorez le catalogue ROSBRI DESIGN : vêtements, accessoires, créations pour enfants, cadeaux personnalisés et décoration."/>
+  <link rel="canonical" href="https://rosbridesign.ateliersdepaul.com/boutique.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta property="og:site_name" content="ROSBRI DESIGN"/>
+  <meta property="og:title" content="Boutique | ROSBRI DESIGN"/>
+  <meta property="og:description" content="Explorez le catalogue ROSBRI DESIGN : vêtements, accessoires, créations pour enfants, cadeaux personnalisés et décoration."/>
+  <meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/hero/hero-background-v2.webp"/>
+  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/boutique.html"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Boutique | ROSBRI DESIGN"/>
+  <meta name="twitter:description" content="Explorez le catalogue ROSBRI DESIGN : vêtements, accessoires, créations pour enfants, cadeaux personnalisés et décoration."/>
+  <meta name="twitter:image" content="https://rosbridesign.ateliersdepaul.com/images/hero/hero-background-v2.webp"/>
   <meta name="description" content="Explorez le catalogue complet des collections ROSBRI DESIGN : T-shirts Héritage, sacs Wax, ensembles enfants, babouches et coffrets cadeaux personnalisés."/>
-  <meta property="og:title" content="Boutique Afritude Luxe | ROSBRI DESIGN"/>
+  <meta property="og:title" content="Boutique | ROSBRI WAX DESIGN"/>
   <meta property="og:description" content="Découvrez nos pièces d'exception façonnées à la main. Choisissez votre style, vos tailles et personnalisez votre commande."/>
   <meta property="og:image" content="images/brand/rosbri-wax-design-logo.jpg"/>
   <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/boutique.html"/>
@@ -16,99 +30,69 @@
   <link rel="apple-touch-icon" href="images/brand/rosbri-wax-design-logo.jpg"/>
 
   <!-- Shared Tailwind Config & CDN -->
-  <script src="js/tailwind-config.js"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+
+
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
+  <link rel="stylesheet" href="css/tailwind.generated.min.css?v=20260808a"/>
   <!-- Design System Styles -->
   <link rel="stylesheet" href="css/tokens.css"/>
-  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components.css?v=20260831-footer-shared-v2"/>
   <link rel="stylesheet" href="css/responsive.css"/>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="css/pages.css?v=20260807a"/>
+  <link rel="stylesheet" href="css/cart.css?v=20260808a"/>
+  <link rel="stylesheet" href="css/layout.css?v=20260831-grid6"/>
+  <link rel="stylesheet" href="css/boutique-catalog.css?v=20260831-grid6-v2"/>
 </head>
 
 <body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white boutique-page">
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
   <!-- Mount Points -->
   <div id="site-announcement"></div>
   <div id="site-header"></div>
 
-  <main id="main-content" class="max-w-[1720px] mx-auto px-6 py-8 flex flex-col md:flex-row gap-8">
-    <!-- Mobile Filter Backdrop -->
-    <div id="mobile-filter-backdrop" class="fixed inset-0 bg-ink/50 backdrop-blur-sm z-40 hidden md:hidden transition-opacity"></div>
-
-    <!-- Sidebar Filter (Desktop) & Mobile Drawer -->
-    <aside id="mobile-filter-drawer" class="fixed inset-y-0 left-0 z-50 w-72 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-72 md:bg-transparent md:shadow-none md:z-0 flex-shrink-0 flex flex-col md:block h-full md:h-auto overflow-hidden md:overflow-visible">
-      <div class="flex-grow md:flex-none overflow-y-auto md:overflow-visible p-6 md:p-0 md:sticky md:top-24 space-y-6 flex flex-col md:block">
-        <!-- Mobile Header -->
-        <div class="flex items-center justify-between md:hidden pb-4 border-b border-line">
-          <h2 class="font-bold text-lg text-ink">Filtres Catalogue</h2>
-          <button id="close-mobile-filters" class="p-2 text-muted hover:text-ink" aria-label="Fermer les filtres"><span class="material-symbols-outlined">close</span></button>
-        </div>
-
-        <!-- Search Component -->
-        <div class="relative flex-shrink-0">
-          <input id="catalog-search" class="w-full bg-white border border-line rounded-xl px-4 py-3 pl-11 focus:outline-none focus:border-champagne text-xs text-ink placeholder:text-muted" placeholder="Rechercher un produit..." type="text"/>
-          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted text-sm">search</span>
-        </div>
-
-        <!-- Dynamic Categories -->
-        <div id="filter-list" class="space-y-2 flex-grow"></div>
-
-        <!-- Mobile Bottom Buttons -->
-        <div class="md:hidden pt-4 border-t border-line space-y-3 flex-shrink-0 mt-4">
-          <button id="apply-mobile-filters" class="w-full bg-ink text-white py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-champagne transition-colors">Afficher les résultats</button>
-          <button id="reset-mobile-filters" class="w-full bg-surface-variant text-ink py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-line transition-colors">Réinitialiser</button>
-        </div>
-      </div>
-    </aside>
-
-    <!-- Product Grid Area -->
-    <div class="flex-grow">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-4">
-        <div>
-          <h1 class="font-display-accent text-3xl md:text-4xl text-ink font-bold">Boutique ROSBRI DESIGN</h1>
-          <p id="result-count" class="text-xs text-muted mt-1">Chargement du catalogue...</p>
-        </div>
-
-        <!-- Desktop Sort -->
-        <div class="hidden md:flex items-center gap-2">
-          <span class="text-xs text-muted uppercase tracking-wider font-bold">Trier par:</span>
-          <select id="catalog-sort" class="bg-white border border-line rounded-xl px-3 py-2 text-xs font-bold text-ink focus:outline-none focus:border-champagne cursor-pointer">
-            <option value="default">Plus récents</option>
-            <option value="price">Prix croissant</option>
-            <option value="name">Nom (A-Z)</option>
-            <option value="category">Par catégorie</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Mobile Toolbar -->
-      <div class="flex items-center justify-between gap-3 mb-6 md:hidden">
-        <button id="open-mobile-filters" class="flex-1 flex items-center justify-center gap-2 bg-white border border-line py-2.5 rounded-xl font-bold text-xs uppercase text-ink shadow-sm">
-          <span class="material-symbols-outlined text-sm">tune</span> Filtres
-        </button>
-        <div class="flex-1 bg-white border border-line rounded-xl px-2 flex items-center shadow-sm">
-          <span class="material-symbols-outlined text-muted text-sm ml-2">sort</span>
-          <select id="catalog-sort-mobile" class="w-full bg-transparent border-none font-bold text-ink py-2.5 focus:ring-0 cursor-pointer text-xs">
-            <option value="default">Récents</option>
-            <option value="price">Prix</option>
-            <option value="name">A-Z</option>
-            <option value="category">Catégories</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Grid Responsive (5 cols xl, 4 lg, 3 md, 2 sm, 1 mobile) -->
-      <div id="shop-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-        <!-- Injected dynamically by catalog.js -->
-      </div>
-
-      <!-- Pagination / Load More -->
-      <div class="mt-12 flex justify-center items-center">
-        <button id="catalog-load-more" class="px-8 py-3 rounded-full border border-line bg-white text-ink hover:bg-ink hover:text-white transition-all font-bold text-xs uppercase tracking-widest shadow-sm" style="display: none;">Charger plus d'articles</button>
-      </div>
+  <section class="page-intro site-container">
+    <div class="inner-page-heading">
+      <div class="inner-page-heading__eyebrow">Créations disponibles et sur commande</div>
+      <h1>La boutique Rosbri</h1>
+      <p>Explorez nos vêtements, accessoires, créations pour enfants, idées cadeaux et pièces pour la maison. Chaque modèle peut être adapté selon vos envies.</p>
+      <p id="result-count" class="text-xs text-muted mt-3" aria-live="polite" aria-atomic="true">Chargement du catalogue...</p>
     </div>
+  </section>
+  <main id="main-content" class="boutique-catalog-shell">
+    <section class="boutique-catalog-tools" aria-label="Recherche et catégories">
+      <div class="boutique-catalog-search">
+        <label class="sr-only" for="catalog-search">Rechercher dans la boutique</label>
+        <svg class="catalog-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg>
+        <input id="catalog-search" placeholder="Rechercher un produit..." type="search" autocomplete="off"/>
+      </div>
+      <div id="filter-list" class="boutique-category-filters" aria-label="Catégories de produits"></div>
+    </section>
+
+    <div id="active-filters" class="active-filters" aria-live="polite" hidden></div>
+
+    <section aria-label="Produits de la boutique">
+      <div id="shop-grid" aria-busy="true">
+        <div class="catalog-skeleton" aria-hidden="true"><span></span><i></i><i></i><i></i></div>
+        <div class="catalog-skeleton" aria-hidden="true"><span></span><i></i><i></i><i></i></div>
+        <div class="catalog-skeleton" aria-hidden="true"><span></span><i></i><i></i><i></i></div>
+        <div class="catalog-skeleton" aria-hidden="true"><span></span><i></i><i></i><i></i></div>
+      </div>
+
+      <aside class="boutique-custom-banner" aria-label="Création sur mesure">
+        <div><span>CRÉATION SUR MESURE</span><h2>Une idée. Un tissu. Une pièce unique.</h2><p>Vous avez un modèle en tête ? Décrivez-nous votre projet et notre atelier vous accompagne dans sa réalisation.</p></div>
+        <a href="index.html#custom-gift-modal" class="button-gold">CRÉER MA PIÈCE SUR MESURE <span aria-hidden="true">→</span></a>
+      </aside>
+
+      <div class="boutique-load-more">
+        <button id="catalog-load-more" type="button" hidden>Charger plus d'articles</button>
+      </div>
+    </section>
   </main>
 
   <!-- Mount Points -->
@@ -117,13 +101,14 @@
   <div id="site-cart-drawer"></div>
 
   <!-- Shared Scripts in Canonical Order -->
-  <script src="catalog-data.js" defer></script>
-  <script src="catalog.js" defer></script>
-  <script src="js/components.js" defer></script>
+<script src="catalog-data.js?v=20260807c" defer></script>
+  <script src="js/taxonomy.js?v=20260831-categories"></script>
+  <script src="catalog.js?v=20260831-pagination" defer></script>
+  <script src="js/components.js?v=20260828-footer-aligned" defer></script>
   <script src="js/common.js" defer></script>
-  <script src="js/header.js" defer></script>
+  <script src="js/header.js?v=20260808a" defer></script>
   <script src="js/search.js" defer></script>
-  <script src="js/cart.js" defer></script>
+  <script src="js/cart.js?v=20260808a" defer></script>
   <script src="js/mobile-menu.js" defer></script>
   <script src="js/announcement-bar.js" defer></script>
   <script src="js/qa-check.js" defer></script>

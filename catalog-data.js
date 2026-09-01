@@ -236,7 +236,7 @@ window.ROSBriCatalog = [
   {
     "id": 1,
     "title": "T-shirt Reine africaine wax",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png",
     "description": "T-shirt ROSBRI au visuel Reine africaine wax, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -244,7 +244,7 @@ window.ROSBriCatalog = [
   {
     "id": 2,
     "title": "T-shirt Luffy Gear 5 - Feu et foudre",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-luffy-feu-foudre-orange.png",
     "description": "T-shirt ROSBRI au visuel Luffy Gear 5 - Feu et foudre, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -252,7 +252,7 @@ window.ROSBriCatalog = [
   {
     "id": 3,
     "title": "T-shirt Pont des Allemands - Edea",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-pont-allemands-edea-gris.png",
     "description": "T-shirt ROSBRI au visuel Pont des Allemands - Edea, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -372,7 +372,7 @@ window.ROSBriCatalog = [
   {
     "id": 18,
     "title": "T-shirt Falaise de Dschang",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-falaise-dschang-blanc.png",
     "description": "T-shirt ROSBRI au visuel Falaise de Dschang, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -380,7 +380,7 @@ window.ROSBriCatalog = [
   {
     "id": 19,
     "title": "T-shirt Chutes de la Lobe - Kribi",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png",
     "description": "T-shirt ROSBRI au visuel Chutes de la Lobe - Kribi, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -388,7 +388,7 @@ window.ROSBriCatalog = [
   {
     "id": 20,
     "title": "T-shirt Mont Cameroun - Buea",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mont-cameroun-buea-vert-foret.png",
     "description": "T-shirt ROSBRI au visuel Mont Cameroun - Buea, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -396,7 +396,7 @@ window.ROSBriCatalog = [
   {
     "id": 21,
     "title": "T-shirt Cases Mousgoum - Maroua",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-cases-mousgoum-maroua-vert-foret.png",
     "description": "T-shirt ROSBRI au visuel Cases Mousgoum - Maroua, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -404,7 +404,7 @@ window.ROSBriCatalog = [
   {
     "id": 22,
     "title": "T-shirt Musee des Rois Bamoun - Foumban",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-rois-bamoun-foumban-vert-foret.png",
     "description": "T-shirt ROSBRI au visuel Musee des Rois Bamoun - Foumban, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -412,7 +412,7 @@ window.ROSBriCatalog = [
   {
     "id": 23,
     "title": "T-shirt Nouvelle Liberte - Douala",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-nouvelle-liberte-douala-gris.png",
     "description": "T-shirt ROSBRI au visuel Nouvelle Liberte - Douala, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -420,7 +420,7 @@ window.ROSBriCatalog = [
   {
     "id": 24,
     "title": "T-shirt Monument de la Reunification - Yaounde",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-monument-reunification-yaounde-vert-foret.png",
     "description": "T-shirt ROSBRI au visuel Monument de la Reunification - Yaounde, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -428,7 +428,7 @@ window.ROSBriCatalog = [
   {
     "id": 25,
     "title": "T-shirt Mayi 09 Mai",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mayi-09-mai-sable.png",
     "description": "T-shirt ROSBRI au visuel Mayi 09 Mai, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -436,7 +436,7 @@ window.ROSBriCatalog = [
   {
     "id": 26,
     "title": "T-shirt Je suis Batanga",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-je-suis-batanga-sable.png",
     "description": "T-shirt ROSBRI au visuel Je suis Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -444,7 +444,7 @@ window.ROSBriCatalog = [
   {
     "id": 27,
     "title": "T-shirt Kribi c'est ma ville",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-kribi-cest-ma-ville-blanc.png",
     "description": "T-shirt ROSBRI au visuel Kribi c'est ma ville, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -452,7 +452,7 @@ window.ROSBriCatalog = [
   {
     "id": 28,
     "title": "T-shirt Mayi Kribi Batanga",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mayi-kribi-batanga-blanc.png",
     "description": "T-shirt ROSBRI au visuel Mayi Kribi Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -460,7 +460,7 @@ window.ROSBriCatalog = [
   {
     "id": 29,
     "title": "T-shirt Fete du Mayi Kribi Batanga",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-fete-mayi-kribi-batanga-blanc.png",
     "description": "T-shirt ROSBRI au visuel Fete du Mayi Kribi Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -468,7 +468,7 @@ window.ROSBriCatalog = [
   {
     "id": 30,
     "title": "T-shirt Mayi 2026 Batanga",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-mayi-2026-batanga-vert-sauge.png",
     "description": "T-shirt ROSBRI au visuel Mayi 2026 Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -476,7 +476,7 @@ window.ROSBriCatalog = [
   {
     "id": 31,
     "title": "T-shirt For You Jimmy",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.png",
     "description": "T-shirt ROSBRI au visuel For You Jimmy, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -540,7 +540,7 @@ window.ROSBriCatalog = [
   {
     "id": 39,
     "title": "T-shirt Système solaire Pac-Man",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-systeme-solaire-pacman-blanc.png",
     "description": "T-shirt ROSBRI au visuel Système solaire Pac-Man, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -548,7 +548,7 @@ window.ROSBriCatalog = [
   {
     "id": 40,
     "title": "T-shirt Life is Beautiful mandala",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-life-is-beautiful-mandala-blanc.png",
     "description": "T-shirt ROSBRI au visuel Life is Beautiful mandala, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -556,7 +556,7 @@ window.ROSBriCatalog = [
   {
     "id": 41,
     "title": "T-shirt Dés colorés éclaboussures",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-des-colores-eclaboussures-noir.png",
     "description": "T-shirt ROSBRI au visuel Dés colorés éclaboussures, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -564,7 +564,7 @@ window.ROSBriCatalog = [
   {
     "id": 42,
     "title": "T-shirt Queen héritage africain",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-queen-heritage-africain-noir.png",
     "description": "T-shirt ROSBRI au visuel Queen héritage africain, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -572,7 +572,7 @@ window.ROSBriCatalog = [
   {
     "id": 43,
     "title": "T-shirt Black is Beautiful",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-black-is-beautiful-heritage-noir.png",
     "description": "T-shirt ROSBRI au visuel Black is Beautiful, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -580,7 +580,7 @@ window.ROSBriCatalog = [
   {
     "id": 44,
     "title": "T-shirt Landry FEG motif léopard",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-landry-feg-leopard-noir.png",
     "description": "T-shirt ROSBRI au visuel Landry FEG motif léopard, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -588,7 +588,7 @@ window.ROSBriCatalog = [
   {
     "id": 45,
     "title": "T-shirt Profil femme Afrique coloré",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-profil-femme-afrique-colore-noir.png",
     "description": "T-shirt ROSBRI au visuel Profil femme Afrique coloré, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -596,7 +596,7 @@ window.ROSBriCatalog = [
   {
     "id": 46,
     "title": "T-shirt Héritage Afrique savane au coucher du soleil",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-heritage-afrique-savane-coucher-soleil-blanc.png",
     "description": "T-shirt ROSBRI au visuel Héritage Afrique savane au coucher du soleil, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -604,7 +604,7 @@ window.ROSBriCatalog = [
   {
     "id": 47,
     "title": "T-shirt Ako yem - Trois femmes tropical",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "6 500 FCFA",
     "image": "images/articles-site/tshirts/variants/tshirt-ako-yem-trois-femmes-tropical-blanc.png",
     "description": "T-shirt ROSBRI au visuel Ako yem - Trois femmes tropical, doux et facile a porter, avec choix de taille pour une commande precise."
@@ -1983,7 +1983,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 170,
-    "title": "Pochette ROSBRI wax 03",
+    "title": "Sac cabas ROSBRI wax 03",
     "category": "Accessoires",
     "price": "4 500 FCFA",
     "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-03.png",
@@ -1999,7 +1999,7 @@ window.ROSBriCatalog = [
         "text": "J?aime le rendu, c?est simple et ?l?gant."
       }
     ],
-    "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
+    "description": "Sac cabas ROSBRI en wax, spacieux et pratique, avec deux anses pour accompagner le quotidien."
   },
   {
     "id": 171,
@@ -5022,7 +5022,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 318,
-    "title": "Pantalon Carotte Wax Élégance",
+    "title": "Pantalon Carotte Wax �0légance",
     "category": "Vêtements",
     "price": "14 000 FCFA",
     "image": "images/articles-site/pantalons/pantalon-carotte-wax.png",
@@ -5163,7 +5163,7 @@ window.ROSBriCatalog = [
   {
     "id": 325,
     "title": "Mug en Céramique ROSBRI Heritage",
-    "category": "Mugs & Gourdes",
+    "category": "Packs & Idées Cadeaux",
     "price": "3 500 FCFA",
     "image": "images/articles-site/mugs/mug-ceramique-heritage.png",
     "reviews": [
@@ -5183,7 +5183,7 @@ window.ROSBriCatalog = [
   {
     "id": 326,
     "title": "Gourde Isotherme Mont Cameroun",
-    "category": "Mugs & Gourdes",
+    "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
     "image": "images/articles-site/gourdes/gourde-isotherme-mont-cam.png",
     "reviews": [
@@ -5222,8 +5222,8 @@ window.ROSBriCatalog = [
   },
   {
     "id": 328,
-    "title": "Lot de 5 Cartes de Vœux Culturelles",
-    "category": "Cartes",
+    "title": "Lot de 5 Cartes de V�ux Culturelles",
+    "category": "Packs & Idées Cadeaux",
     "price": "4 000 FCFA",
     "image": "images/articles-site/cartes/lot-5-cartes-culturelles-placeholder.png",
     "reviews": [
@@ -5263,7 +5263,7 @@ window.ROSBriCatalog = [
   {
     "id": 330,
     "title": "Pagne Wax Premium ROSBRI (6 Yards)",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "18 000 FCFA",
     "image": "images/articles-site/pagnes/pagne-wax-premium.png",
     "reviews": [
@@ -5303,7 +5303,7 @@ window.ROSBriCatalog = [
   {
     "id": 332,
     "title": "T-shirt Horizon Palmier",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-horizon-palmier-noire.webp",
     "description": "T-shirt adulte avec visuel palmier au coucher du soleil, proposé en plusieurs couleurs.",
@@ -5372,8 +5372,8 @@ window.ROSBriCatalog = [
   },
   {
     "id": 333,
-    "title": "T-shirt Manga Éclair",
-    "category": "Collections Spéciales",
+    "title": "T-shirt Manga �0clair",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-manga-eclair-noire.webp",
     "description": "T-shirt adulte avec visuel personnage manga lumineux, proposé en plusieurs couleurs.",
@@ -5803,7 +5803,7 @@ window.ROSBriCatalog = [
   {
     "id": 339,
     "title": "T-shirt Rêve Fleuri",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-reve-fleuri.webp",
     "description": "T-shirt adulte avec visuel floral coloré, disponible en plusieurs couleurs.",
@@ -5873,7 +5873,7 @@ window.ROSBriCatalog = [
   {
     "id": 340,
     "title": "T-shirt Rebel Pop",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-rebel-pop.webp",
     "description": "T-shirt adulte avec lettrage Rebel et illustration pop, disponible en plusieurs couleurs.",
@@ -5943,7 +5943,7 @@ window.ROSBriCatalog = [
   {
     "id": 341,
     "title": "T-shirt Vision Bleue",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-vision-bleue.webp",
     "description": "T-shirt adulte avec illustration bleue graphique, disponible en plusieurs couleurs.",
@@ -6013,7 +6013,7 @@ window.ROSBriCatalog = [
   {
     "id": 342,
     "title": "T-shirt Panthère Fine",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-panthere-fine.webp",
     "description": "T-shirt adulte avec silhouette animale graphique, disponible en plusieurs couleurs.",
@@ -6082,11 +6082,11 @@ window.ROSBriCatalog = [
   },
   {
     "id": 343,
-    "title": "T-shirt Maman Cœurs",
-    "category": "Collections Spéciales",
+    "title": "T-shirt Maman C�urs",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-maman-coeurs.webp",
-    "description": "T-shirt adulte avec mot maman avec petits cœurs, disponible en plusieurs couleurs.",
+    "description": "T-shirt adulte avec mot maman avec petits c�urs, disponible en plusieurs couleurs.",
     "colorVariants": [
       {
         "id": "noir",
@@ -6153,7 +6153,7 @@ window.ROSBriCatalog = [
   {
     "id": 344,
     "title": "T-shirt Couronne d'Afrique",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-couronne-d-afrique.webp",
     "description": "T-shirt adulte avec portrait coloré et couronne, disponible en plusieurs couleurs.",
@@ -6223,7 +6223,7 @@ window.ROSBriCatalog = [
   {
     "id": 345,
     "title": "T-shirt Mama Doré",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-mama-dore.webp",
     "description": "T-shirt adulte avec mot mama en lettres dorées, disponible en plusieurs couleurs.",
@@ -6293,7 +6293,7 @@ window.ROSBriCatalog = [
   {
     "id": 346,
     "title": "T-shirt Mandala Mama",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-mandala-mama.webp",
     "description": "T-shirt adulte avec motif mandala autour de mama, disponible en plusieurs couleurs.",
@@ -6363,7 +6363,7 @@ window.ROSBriCatalog = [
   {
     "id": 347,
     "title": "T-shirt Hair Love",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-hair-love.webp",
     "description": "T-shirt adulte avec message autour des cheveux, disponible en plusieurs couleurs.",
@@ -6432,8 +6432,8 @@ window.ROSBriCatalog = [
   },
   {
     "id": 348,
-    "title": "T-shirt Hair Énergie",
-    "category": "Collections Spéciales",
+    "title": "T-shirt Hair �0nergie",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-hair-energie.webp",
     "description": "T-shirt adulte avec lettrage hair coloré, disponible en plusieurs couleurs.",
@@ -6503,7 +6503,7 @@ window.ROSBriCatalog = [
   {
     "id": 349,
     "title": "T-shirt Hair Coeur",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-hair-coeur.webp",
     "description": "T-shirt adulte avec message hair avec coeur, disponible en plusieurs couleurs.",
@@ -6573,7 +6573,7 @@ window.ROSBriCatalog = [
   {
     "id": 350,
     "title": "T-shirt Hair Stylist",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-hair-stylist.webp",
     "description": "T-shirt adulte avec message hair stylist, disponible en plusieurs couleurs.",
@@ -6643,7 +6643,7 @@ window.ROSBriCatalog = [
   {
     "id": 351,
     "title": "T-shirt Coach Passion",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-coach-passion.webp",
     "description": "T-shirt adulte avec message coach décoratif, disponible en plusieurs couleurs.",
@@ -6712,8 +6712,8 @@ window.ROSBriCatalog = [
   },
   {
     "id": 352,
-    "title": "T-shirt Focus Énergie",
-    "category": "Collections Spéciales",
+    "title": "T-shirt Focus �0nergie",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-focus-energie.webp",
     "description": "T-shirt adulte avec message focus positif, disponible en plusieurs couleurs.",
@@ -6783,7 +6783,7 @@ window.ROSBriCatalog = [
   {
     "id": 353,
     "title": "T-shirt Head Start",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-head-start.webp",
     "description": "T-shirt adulte avec message head start, disponible en plusieurs couleurs.",
@@ -6853,7 +6853,7 @@ window.ROSBriCatalog = [
   {
     "id": 354,
     "title": "T-shirt Grâce Douce",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-grace-douce.webp",
     "description": "T-shirt adulte avec message give grace, disponible en plusieurs couleurs.",
@@ -6923,7 +6923,7 @@ window.ROSBriCatalog = [
   {
     "id": 355,
     "title": "T-shirt Maman Brillante",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-maman-brillante.webp",
     "description": "T-shirt adulte avec mot maman lumineux, disponible en plusieurs couleurs.",
@@ -6993,7 +6993,7 @@ window.ROSBriCatalog = [
   {
     "id": 356,
     "title": "T-shirt Good Vibes Maman",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-good-vibes-maman.webp",
     "description": "T-shirt adulte avec message fleuri et positif, disponible en plusieurs couleurs.",
@@ -7063,7 +7063,7 @@ window.ROSBriCatalog = [
   {
     "id": 357,
     "title": "T-shirt Soleil Royal",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-soleil-royal.webp",
     "description": "T-shirt adulte avec portrait solaire coloré, disponible en plusieurs couleurs.",
@@ -7133,7 +7133,7 @@ window.ROSBriCatalog = [
   {
     "id": 358,
     "title": "T-shirt Make Today Count",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-make-today-count.webp",
     "description": "T-shirt adulte avec message motivation, disponible en plusieurs couleurs.",
@@ -7203,7 +7203,7 @@ window.ROSBriCatalog = [
   {
     "id": 359,
     "title": "T-shirt Bloom Spirit",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-bloom-spirit.webp",
     "description": "T-shirt adulte avec visuel fleuri et message doux, disponible en plusieurs couleurs.",
@@ -7273,7 +7273,7 @@ window.ROSBriCatalog = [
   {
     "id": 360,
     "title": "T-shirt Belle Vie",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-belle-vie.webp",
     "description": "T-shirt adulte avec message life is beautiful, disponible en plusieurs couleurs.",
@@ -7343,7 +7343,7 @@ window.ROSBriCatalog = [
   {
     "id": 361,
     "title": "T-shirt Garde la Foi",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-garde-la-foi.webp",
     "description": "T-shirt adulte avec message keep faith, disponible en plusieurs couleurs.",
@@ -7413,7 +7413,7 @@ window.ROSBriCatalog = [
   {
     "id": 362,
     "title": "T-shirt Feu Intérieur",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-feu-interieur.webp",
     "description": "T-shirt adulte avec message find your fire, disponible en plusieurs couleurs.",
@@ -7483,7 +7483,7 @@ window.ROSBriCatalog = [
   {
     "id": 363,
     "title": "T-shirt Intention Douce",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-intention-douce.webp",
     "description": "T-shirt adulte avec message live with intention, disponible en plusieurs couleurs.",
@@ -7553,7 +7553,7 @@ window.ROSBriCatalog = [
   {
     "id": 364,
     "title": "T-shirt Lumière Douce",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-lumiere-douce.webp",
     "description": "T-shirt adulte avec message let your light, disponible en plusieurs couleurs.",
@@ -7623,7 +7623,7 @@ window.ROSBriCatalog = [
   {
     "id": 365,
     "title": "T-shirt Coeur Cactus",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-coeur-cactus.webp",
     "description": "T-shirt adulte avec motif cactus en coeur, disponible en plusieurs couleurs.",
@@ -7693,7 +7693,7 @@ window.ROSBriCatalog = [
   {
     "id": 366,
     "title": "T-shirt Fillette Joyeuse",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-fillette-joyeuse.webp",
     "description": "T-shirt adulte avec portrait enfant illustré, disponible en plusieurs couleurs.",
@@ -7763,7 +7763,7 @@ window.ROSBriCatalog = [
   {
     "id": 367,
     "title": "T-shirt Lion Fleuri",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-lion-fleuri.webp",
     "description": "T-shirt adulte avec lion et fleurs, disponible en plusieurs couleurs.",
@@ -7833,7 +7833,7 @@ window.ROSBriCatalog = [
   {
     "id": 368,
     "title": "T-shirt Foi Courage",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-foi-courage.webp",
     "description": "T-shirt adulte avec message faith over fear, disponible en plusieurs couleurs.",
@@ -7903,7 +7903,7 @@ window.ROSBriCatalog = [
   {
     "id": 369,
     "title": "T-shirt Cercle Safari",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-cercle-safari.webp",
     "description": "T-shirt adulte avec médaillon coloré, disponible en plusieurs couleurs.",
@@ -7973,7 +7973,7 @@ window.ROSBriCatalog = [
   {
     "id": 370,
     "title": "T-shirt Profil Afrique",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-profil-afrique.webp",
     "description": "T-shirt adulte avec profil africain coloré, disponible en plusieurs couleurs.",
@@ -8043,7 +8043,7 @@ window.ROSBriCatalog = [
   {
     "id": 371,
     "title": "T-shirt Lion Royal",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/tshirts/t-shirt-lion-royal.webp",
     "description": "T-shirt adulte avec visage de lion coloré, disponible en plusieurs couleurs.",
@@ -9223,7 +9223,7 @@ window.ROSBriCatalog = [
   {
     "id": 387,
     "title": "Short Balade Mosaïque",
-    "category": "Collections Spéciales",
+    "category": "Vêtements",
     "price": "10 000 FCFA",
     "image": "images/articles-site/shorts/short-balade-mosaique.webp",
     "description": "Short adulte à motifs graphiques, proposé en plusieurs modèles.",
@@ -9587,7 +9587,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 408,
-    "title": "Petit Noir Élégant",
+    "title": "Petit Noir �0légant",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-012.png",
@@ -9727,11 +9727,11 @@ window.ROSBriCatalog = [
   },
   {
     "id": 422,
-    "title": "Douce Mosaïque",
+    "title": "Ensemble enfant Dinosaures",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-026.png",
-    "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
+    "description": "Ensemble enfant composé d’un t-shirt et d’un short blancs à motifs dinosaures multicolores, proposé sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
   },
@@ -9977,7 +9977,7 @@ window.ROSBriCatalog = [
   },
   {
     "id": 447,
-    "title": "Noir Éclat Mini",
+    "title": "Noir �0clat Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
     "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-051.png",

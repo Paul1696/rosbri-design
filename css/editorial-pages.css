@@ -1,0 +1,59 @@
+/* Socle éditorial partagé par les pages secondaires. */
+body.collections-page #main-content,
+body.about-page #main-content,
+body.product-detail-page #main-content {
+  width: min(calc(100% - 72px), 1440px) !important;
+  max-width: 1440px !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+}
+
+body.collections-page .page-intro,
+body.about-page #main-content > section:first-child,
+body.product-detail-page #product-detail-view {
+  margin-top: 0;
+}
+
+body.collections-page .page-intro h1,
+body.about-page h1,
+body.product-detail-page #detail-title {
+  color: #2b160e;
+  font-family: var(--font-heading, "Playfair Display", Georgia, serif);
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+body.collections-page .collection-universe,
+body.about-page .about-editorial-card,
+body.about-page #livraison > div > div,
+body.product-detail-page .product-card {
+  border-color: rgba(180,123,32,.2);
+  box-shadow: 0 10px 28px rgba(61,43,20,.055);
+}
+
+body.collections-page .collection-universe__media,
+body.about-page .aspect-\[4\/5\] {
+  overflow: hidden;
+}
+
+body.collections-page .collection-universe__media img,
+body.about-page .aspect-\[4\/5\] img,
+body.product-detail-page .product-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  body.collections-page #main-content,
+  body.about-page #main-content,
+  body.product-detail-page #main-content {
+    width: calc(100% - 36px) !important;
+  }
+
+  body.collections-page .collection-universe__content,
+  body.about-page .about-editorial-card {
+    padding: 22px;
+  }
+}

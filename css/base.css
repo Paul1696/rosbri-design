@@ -1,0 +1,222 @@
+/* ==========================================================================
+   ROSBRI WAX DESIGN V2 - BASE STYLES & RESET
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main#main-content {
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(54px, 5vw, 82px);
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: clamp(38px, 3vw, 54px);
+  line-height: 1.05;
+}
+
+h3 {
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+h4 { font-size: 17px; line-height: 1.3; }
+
+p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.eyebrow,
+.section-eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img, svg, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* --- Global Section & Container Grid --- */
+.site-container,
+.container {
+  width: min(1640px, calc(100% - 96px));
+  margin-inline: auto;
+}
+
+@media (max-width: 1024px) {
+  .site-container,
+  .container {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 640px) {
+  .site-container,
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+
+.section,
+.section-padding {
+  padding-block: clamp(72px, 7vw, 108px);
+}
+
+.section-header {
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.section-header .eyebrow,
+.section-header .section-eyebrow {
+  margin-bottom: 14px;
+}
+
+.section-header .section-title {
+  font-size: clamp(38px, 3vw, 54px);
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.section-header .section-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 65ch;
+  color: var(--color-text-muted);
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--color-black);
+}
+
+.card-description,
+.card-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.container-narrow {
+  max-width: 720px;
+}
+
+/* --- Accessibilité & Masquage --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 20000;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #11110f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}

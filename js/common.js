@@ -4,7 +4,7 @@
  */
 (function () {
   const FALLBACK_IMAGE = "images/brand/rosbri-wax-design-logo.jpg";
-  const WHATSAPP_PHONE = "237698193880";
+const WHATSAPP_PHONE = "237690087213";
 
   // Global Image Error Handler
   document.addEventListener("error", (event) => {
@@ -19,6 +19,9 @@
 
   // Floating WhatsApp Button Injector & Floating Cart Cleanup
   function initFloatingButtons() {
+    document.querySelectorAll('a[href*="237698193880"], a[href*="+237698193880"]').forEach((link) => {
+      link.href = link.href.replaceAll("237698193880", WHATSAPP_PHONE).replaceAll("+237698193880", "+237690087213");
+    });
     // 1. Remove duplicate floating cart buttons if present
     document.querySelectorAll(".cart-floating-btn, #cart-floating-btn, [data-floating-cart]").forEach((btn) => {
       btn.remove();

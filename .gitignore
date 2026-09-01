@@ -1,4 +1,14 @@
 node_modules/
+dist/
+build/
+*.log
+.env*
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
 stitch_temp/
 *.py
 temp*.js

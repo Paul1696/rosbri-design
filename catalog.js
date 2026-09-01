@@ -2,17 +2,15 @@
   const SITE_URL = "https://rosbridesign.ateliersdepaul.com/";
   const WHATSAPP_PHONE = "237698193880";
   let catalog = normalizeCatalog(window.ROSBriCatalog || []);
-  const categories = [
-      "Tous",
-      "Packs & Idées Cadeaux",
-      "Tshirts", "Sacs", "Ensembles", "Babouches", "Sandales", "Chapeaux",
-      "Casquettes", "Bobs", "Pochettes", "GantsCuisine", "Maniques", "Trousses",
-      "Portefeuilles", "Accessoires", "Coussins", "Robes", "Boubous", "Chemises",
-      "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons", "Bijoux", "Tabliers",
-      "Serviettes", "Mugs", "Gourdes", "Affiches", "Cartes", "Stickers",
-      "Pagnes", "CoquesTelephone", "Chaussures", "Polos", "Debardeurs"
-    ];
+  const categories = ["Tous", "vetements", "accessoires", "enfants", "cadeaux", "maison", "entreprise"];
+
   const productLabels = {
+    vetements: "Vêtements",
+    accessoires: "Accessoires",
+    enfants: "Enfants & Bébés",
+    cadeaux: "Packs & Idées Cadeaux",
+    maison: "Maison & Déco",
+    entreprise: "Entreprises & Événements",
     Tous: "Tous les articles",
     Nouveautes: "Nouveautés",
     Populaires: "Populaires",
@@ -96,11 +94,8 @@
 
   
   const categoryFamilies = {
-    "MODE & TEXTILE": ["Tshirts", "Ensembles", "Casquettes", "Bobs", "Chapeaux", "Robes", "Chemises", "Boubous", "Polos", "Debardeurs", "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons"],
-    "SACS & ACCESSOIRES": ["Sacs", "Pochettes", "Portefeuilles", "Trousses", "Accessoires", "Bijoux"],
-    "CHAUSSURES": ["Babouches", "Sandales", "Chaussures"],
-    "MAISON & CUISINE": ["GantsCuisine", "Maniques", "Coussins", "Tabliers", "Serviettes", "Mugs", "Gourdes"],
-    "CADEAUX": ["Packs & Idées Cadeaux", "Cartes", "Affiches", "Stickers", "CoquesTelephone", "Pagnes"]
+    "COLLECTIONS": ["vetements", "accessoires", "enfants", "cadeaux", "maison"],
+    "PROFESSIONNELS": ["entreprise"]
   };
   
   function getFamilyForCategory(cat) {
@@ -115,10 +110,9 @@
     subcategory: "Tous",
     query: "",
     price: "all",
-    sort: "default",
-    visibleLimit: 1000
+    visibleLimit: 24
   };
-  const pageSize = 1000;
+  const pageSize = 24;
   const sizeOptions = ["S", "M", "L", "XL", "XXL", "XXXL"];
   const childSizeOptions = ["1 an", "2 ans", "3 ans", "4 ans", "5 ans", "6 ans", "7 ans", "8 ans", "9 ans"];
   const shoeSizeOptions = ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45"];
@@ -424,6 +418,17 @@
     return map[folder] || item.category || "Autres";
   }
 
+  function productPrimaryCategoryId(item) {
+    const taxonomy = window.ROSBriTaxonomy;
+    return taxonomy ? taxonomy.idForItem(item, productCategory(item)) : null;
+  }
+
+  function productPrimaryCategoryLabel(item) {
+    const taxonomy = window.ROSBriTaxonomy;
+    const id = productPrimaryCategoryId(item);
+    return taxonomy && id ? taxonomy.label(id) : productLabel(item);
+  }
+
   function isQuoteItem(item) {
     return item.price === "Sur devis" || item.badge === "Sur devis";
   }
@@ -448,6 +453,9 @@
   function categoryMatches(item, category) {
     const productCat = productCategory(item);
     if (category === "Tous") return true;
+    const taxonomy = window.ROSBriTaxonomy;
+    const canonicalCategory = taxonomy ? taxonomy.resolve(category) : null;
+    if (canonicalCategory) return productPrimaryCategoryId(item) === canonicalCategory;
     if (category === "Nouveautes") return isNewItem(item);
     if (category === "Populaires") return isPopularItem(item);
     if (category === "PetitPrix") return isSmallPriceItem(item);
@@ -739,16 +747,30 @@
     const displayPrice = item.price ? item.price : "Sur Devis";
     const slug = getProductSlug(item);
     
+    const image = optimizedImage(displayImage(item));
+    const badgeTone = /signature|idee cadeau/i.test(normalizeText(badge)) ? "catalog-product-badge--gold" : "catalog-product-badge--black";
+
     return `
-      <a href="produit.html?slug=${encodeURIComponent(slug)}" data-slug="${slug}" data-open-product="${item.id}" data-product-slug="${slug}" class="product-card product-card-link group block bg-white/80 backdrop-blur-sm rounded-xl p-4 soft-shadow hover-lift border border-surface-variant/50 cursor-pointer transition-all duration-300 hover:border-champagne/60 focus:outline-none focus:ring-2 focus:ring-champagne no-underline text-ink" aria-label="${escapeHtml(title)} - ${escapeHtml(displayPrice)}">
-        <div class="aspect-[4/5] rounded-lg overflow-hidden bg-cream mb-4 relative pointer-events-none">
-          <img alt="${escapeHtml(title)}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none" src="${optimizedImage(displayImage(item))}" loading="${loading}" decoding="async"${priority}>
-          <span class="absolute top-3 left-3 bg-champagne text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-sm pointer-events-none">${badge}</span>
+      <article class="product-card catalog-product-card group">
+        <a href="produit.html?slug=${encodeURIComponent(slug)}" data-slug="${escapeHtml(slug)}" data-open-product="${item.id}" data-product-slug="${escapeHtml(slug)}" class="product-card-link catalog-product-link" aria-label="${escapeHtml(title)} - ${escapeHtml(displayPrice)}">
+          <div class="catalog-product-media">
+            <img alt="${escapeHtml(title)}" src="${escapeHtml(image)}" loading="${loading}" decoding="async"${priority}>
+            <span class="catalog-product-badge ${badgeTone}">${escapeHtml(badge)}</span>
+          </div>
+          <div class="catalog-product-copy">
+            <p class="catalog-product-category">${escapeHtml(productLabels[category] || category)}</p>
+            <h3 class="catalog-product-title">${escapeHtml(title)}</h3>
+          <p class="catalog-product-price">${escapeHtml(displayPrice)}</p>
+          <p class="catalog-product-status">Disponible</p>
+          </div>
+        </a>
+        <div class="catalog-product-action">
+          <button class="btn-add-cart catalog-add-button" type="button" data-id="${escapeHtml(item.id)}" data-title="${escapeHtml(title)}" data-price="${escapeHtml(displayPrice)}" data-image="${escapeHtml(image)}">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H7M9.5 20a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Zm8 0a.8.8 0 1 1-1.6 0 .8.8 0 0 1 1.6 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Ajouter au panier</span>
+          </button>
         </div>
-        <h4 class="font-headline-md text-lg mb-1 group-hover:text-champagne transition-colors line-clamp-2 text-ink font-bold pointer-events-none">${escapeHtml(title)}</h4>
-        <p class="text-on-surface-variant text-sm mb-3 opacity-70 pointer-events-none">${escapeHtml(category)}</p>
-        <div class="font-display-accent text-xl text-ink font-bold pointer-events-none">${escapeHtml(displayPrice)}</div>
-      </a>
+      </article>
     `;
   }
 
@@ -770,19 +792,6 @@
       const priceMatch = state.price === "all" || priceBand(item) === state.price;
       return categoryMatch && subcategoryMatch && queryMatch && priceMatch;
     });
-
-    if (state.sort === "name") {
-      result = result.slice().sort((a, b) => displayTitle(a).localeCompare(displayTitle(b)));
-    }
-
-    if (state.sort === "category") {
-      result = result.slice().sort((a, b) => productCategory(a).localeCompare(productCategory(b)) || catalogOrderKey(a) - catalogOrderKey(b));
-    }
-
-    if (state.sort === "price") {
-      const order = { starter: 0, low: 1, mid: 2, premium: 3, set: 4, quote: 5 };
-      result = result.slice().sort((a, b) => order[priceBand(a)] - order[priceBand(b)] || catalogOrderKey(a) - catalogOrderKey(b));
-    }
 
     return result;
   }
@@ -881,8 +890,10 @@
     grid.innerHTML = visible.length
       ? visible.map((item, index) => productCard(item, false, index < 8)).join("")
       : emptyCard();
+    grid.setAttribute("aria-busy", "false");
     announceRender(grid);
     updateLoadMore(result.length);
+    renderActiveFilters();
 
     const count = byId("result-count");
     if (count) {
@@ -890,108 +901,53 @@
     }
   }
 
+  function renderActiveFilters() {
+    const target = byId("active-filters");
+    if (!target) return;
+    target.replaceChildren();
+    const entries = [];
+    if (state.category !== "Tous") entries.push(productLabels[state.category] || state.category);
+    if (state.query) entries.push('Recherche : “' + state.query + '”');
+    if (!entries.length) {
+      target.hidden = true;
+      return;
+    }
+    target.hidden = false;
+    const label = document.createElement("span");
+    label.className = "active-filters-label";
+    label.textContent = "Filtres actifs";
+    target.append(label);
+    entries.forEach((entry) => {
+      const chip = document.createElement("span");
+      chip.className = "active-filter-chip";
+      chip.textContent = entry;
+      target.append(chip);
+    });
+  }
+
   function renderFilters() {
     const target = byId("filter-list");
     if (!target) return;
+    target.replaceChildren();
 
-    const families = {};
-    Object.keys(categoryFamilies).forEach(fam => families[fam] = { categories: [], total: 0 });
-    families["AUTRES"] = { categories: [], total: 0 };
-    
-    const validCategories = categories.filter((category) => category !== "Tous" && (categoryCounts[category] || 0) > 0);
-    validCategories.forEach(cat => {
-        const fam = getFamilyForCategory(cat);
-        const count = categoryCounts[cat] || 0;
-        if (!families[fam]) families[fam] = { categories: [], total: 0 };
-        families[fam].categories.push({ name: cat, count: count });
-        families[fam].total += count;
+    const shopCategories = ["Tous", "vetements", "accessoires", "enfants", "cadeaux", "maison"];
+    shopCategories.forEach((category) => {
+      const isAll = category === "Tous";
+      const count = isAll ? catalogView.length : (categoryCounts[category] || 0);
+      if (!isAll && count === 0) return;
+
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "filter-btn catalog-filter-button";
+      button.dataset.category = category;
+      button.setAttribute("aria-pressed", String(state.category === category));
+
+      button.textContent = isAll ? "Toutes les pièces" : (productLabels[category] || category);
+      target.append(button);
     });
 
-    if (state.category !== "Tous" && !state.openFamily) {
-        state.openFamily = getFamilyForCategory(state.category);
-    }
-
-    const tousCount = catalogView.length;
-    const tousActive = state.category === "Tous";
-    const tousBtn = `
-        <button class="filter-btn group flex items-center justify-between w-full p-3.5 mb-6 rounded-xl transition-all duration-300 cursor-pointer ${tousActive ? 'bg-[#775a19] text-white shadow-md shadow-primary/20 scale-[1.02]' : 'bg-surface-variant/30 text-ink hover:bg-surface-variant'}" type="button" data-category="Tous">
-            <span class="font-bold tracking-wide">Tous les articles</span>
-            <span class="text-xs px-2.5 py-1 rounded-full font-bold ${tousActive ? 'bg-white/20 text-white' : 'bg-white text-primary shadow-sm'}">${tousCount}</span>
-        </button>
-    `;
-
-    let familiesHtml = "";
-    Object.keys(families).forEach(famName => {
-        const famData = families[famName];
-        if (famData.categories.length === 0) return;
-        
-        const isOpen = state.openFamily === famName;
-        
-        const majorCats = [];
-        const minorCats = [];
-        famData.categories.forEach(c => {
-            if (c.count <= 3) minorCats.push(c);
-            else majorCats.push(c);
-        });
-        
-        let catsHtml = "";
-        const renderCat = (c) => {
-            const isActive = state.category === c.name;
-            return `
-                <button class="filter-btn group flex items-center justify-between w-full py-2.5 px-4 rounded-lg transition-all duration-300 cursor-pointer text-body-md ${isActive ? 'bg-[#f8f1e3] border-l-4 border-primary text-primary font-bold shadow-sm' : 'text-ink hover:bg-surface-variant/50 hover:pl-5 border-l-4 border-transparent'}" type="button" data-category="${c.name}">
-                    <span>${labels[c.name] || c.name}</span>
-                    <span class="text-xs px-2 py-0.5 rounded-full transition-colors ${isActive ? 'bg-primary text-white' : 'bg-surface-variant text-muted group-hover:bg-white group-hover:text-primary group-hover:shadow-sm'}">${c.count}</span>
-                </button>
-            `;
-        };
-        
-        majorCats.forEach(c => catsHtml += renderCat(c));
-        
-        if (minorCats.length > 0) {
-            const hasActiveMinor = minorCats.some(c => c.name === state.category);
-            catsHtml += `
-                <details class="group/details mt-1" ${hasActiveMinor ? 'open' : ''}>
-                    <summary class="flex items-center gap-2 cursor-pointer text-sm font-medium text-muted hover:text-primary hover:bg-surface-variant/30 px-4 py-2 rounded-lg list-none [&::-webkit-details-marker]:hidden transition-colors">
-                        <span class="material-symbols-outlined text-[18px] group-open/details:rotate-180 transition-transform duration-300">expand_more</span>
-                        Voir ${minorCats.length} autres
-                    </summary>
-                    <div class="pl-2 mt-1 space-y-1 relative before:content-[''] before:absolute before:left-6 before:top-0 before:bottom-2 before:w-px before:bg-line">
-                        ${minorCats.map(c => renderCat(c)).join("")}
-                    </div>
-                </details>
-            `;
-        }
-
-        familiesHtml += `
-            <div class="border-b border-line/50 last:border-0 pb-3 mb-3">
-                <button class="family-toggle flex items-center justify-between w-full py-3 px-2 text-left group rounded-lg hover:bg-surface-variant/20 transition-colors" data-family="${famName}">
-                    <span class="font-bold text-[13px] uppercase tracking-widest transition-colors ${isOpen ? 'text-primary' : 'text-on-surface-variant group-hover:text-primary'}">${famName}</span>
-                    <div class="flex items-center gap-2 transition-colors ${isOpen ? 'text-primary' : 'text-muted group-hover:text-primary'}">
-                        <span class="text-[11px] px-2 py-0.5 rounded-full font-bold ${isOpen ? 'bg-primary/10 text-primary' : 'bg-surface-variant text-muted'}">${famData.total}</span>
-                        <span class="material-symbols-outlined transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}">expand_more</span>
-                    </div>
-                </button>
-                <div class="grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}">
-                    <div class="overflow-hidden">
-                        <div class="space-y-1 pb-2">
-                            ${catsHtml}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-
-    target.innerHTML = `
-      <div class="space-y-1">
-        ${tousBtn}
-        <div class="px-1">
-            ${familiesHtml}
-        </div>
-      </div>
-    `;
+    renderActiveFilters();
   }
-
   function resetVisibleLimit() {
     state.visibleLimit = pageSize;
   }
@@ -1633,9 +1589,13 @@
     // Mobile Drawer Logic
     const mobileDrawer = document.getElementById("mobile-filter-drawer");
     const mobileBackdrop = document.getElementById("mobile-filter-backdrop");
+    let lastFilterTrigger = null;
     
     function openMobileFilters() {
         if (!mobileDrawer || !mobileBackdrop) return;
+        lastFilterTrigger = document.activeElement;
+        const openButton = document.getElementById("open-mobile-filters");
+        if (openButton) openButton.setAttribute("aria-expanded", "true");
         mobileBackdrop.classList.remove("hidden");
         setTimeout(() => mobileBackdrop.classList.replace("opacity-0", "opacity-100"), 10);
         mobileDrawer.classList.replace("-translate-x-full", "translate-x-0");
@@ -1648,6 +1608,9 @@
         mobileDrawer.classList.replace("translate-x-0", "-translate-x-full");
         setTimeout(() => mobileBackdrop.classList.add("hidden"), 300);
         document.body.style.overflow = "";
+        const openButton = document.getElementById("open-mobile-filters");
+        if (openButton) openButton.setAttribute("aria-expanded", "false");
+        if (lastFilterTrigger && typeof lastFilterTrigger.focus === "function") lastFilterTrigger.focus();
     }
 
     document.addEventListener("keydown", (event) => {
@@ -1663,6 +1626,18 @@
         if (event.target.closest("#close-mobile-filters") || event.target.closest("#mobile-filter-backdrop") || event.target.closest("#apply-mobile-filters")) {
             closeMobileFilters();
         }
+        if (event.target.closest("#reset-catalog-filters")) {
+            state.category = "Tous";
+            state.subcategory = "Tous";
+            state.query = "";
+            const searchInput = document.getElementById("catalog-search");
+            if (searchInput) searchInput.value = "";
+            resetVisibleLimit();
+            renderFilters();
+            renderShop();
+            syncShopUrl();
+            return;
+        }
         if (event.target.closest("#reset-mobile-filters")) {
             state.category = "Tous";
             state.subcategory = "Tous";
@@ -1673,6 +1648,7 @@
             renderFilters();
             renderShop();
             closeMobileFilters();
+            syncShopUrl();
             return;
         }
 
@@ -1693,6 +1669,7 @@
           resetVisibleLimit();
           renderFilters();
           renderShop();
+          syncShopUrl();
         }
 
         const subcategoryButton = event.target.closest("[data-subcategory]");
@@ -1826,26 +1803,8 @@
           state.query = event.target.value;
           resetVisibleLimit();
           renderShop();
+          syncShopUrl();
         }, 120);
-      });
-    }
-
-    const sort = byId("catalog-sort");
-    const sortSelectMobile = byId("catalog-sort-mobile");
-    if (sort) {
-      sort.addEventListener("change", (event) => {
-        state.sort = event.target.value;
-        if (sortSelectMobile) sortSelectMobile.value = state.sort;
-        resetVisibleLimit();
-        renderShop();
-      });
-    }
-    if (sortSelectMobile) {
-      sortSelectMobile.addEventListener("change", (e) => {
-        state.sort = e.target.value;
-        if (sort) sort.value = state.sort;
-        resetVisibleLimit();
-        renderShop();
       });
     }
 
@@ -1911,8 +1870,10 @@
     const params = new URLSearchParams(window.location.search);
     const category = params.get("categorie") || params.get("category");
     const query = params.get("q") || params.get("recherche");
-    if (category && categories.includes(category)) {
-      state.category = category;
+    const taxonomy = window.ROSBriTaxonomy;
+    const canonicalCategory = taxonomy ? taxonomy.resolve(category) : null;
+    if (canonicalCategory && categories.includes(canonicalCategory)) {
+      state.category = canonicalCategory;
       state.subcategory = "Tous";
     }
     if (query) {
@@ -1920,6 +1881,18 @@
       const search = byId("catalog-search");
       if (search) search.value = query;
     }
+  }
+
+  function syncShopUrl() {
+    if (!document.getElementById("shop-grid")) return;
+    const params = new URLSearchParams(window.location.search);
+    if (state.category && state.category !== "Tous") params.set("categorie", state.category);
+    else params.delete("categorie");
+    if (state.query) params.set("recherche", state.query);
+    else { params.delete("recherche"); params.delete("q"); }
+    params.delete("tri");
+    const next = window.location.pathname + (params.toString() ? "?" + params.toString() : "");
+    window.history.replaceState({}, "", next);
   }
 
   function renderAll() {
@@ -1953,6 +1926,8 @@
   window.findProductBySlugOrId = findProductBySlugOrId;
   window.displayTitle = displayTitle;
   window.productCategory = productCategory;
+  window.productPrimaryCategoryId = productPrimaryCategoryId;
+  window.productPrimaryCategoryLabel = productPrimaryCategoryLabel;
   window.productDescription = productDescription;
   window.optimizedImage = optimizedImage;
   window.displayImage = displayImage;

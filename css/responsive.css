@@ -1,33 +1,247 @@
-/**
- * ROSBRI DESIGN - Responsive Layout Styles
- * Ensures clean, pixel-perfect layouts from 320px up to 1920px without horizontal overflow.
- */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
+/* ==========================================================================
+   ROSBRI WAX DESIGN V2 - RESPONSIVE STYLES
+   Adaptations pour 1920, 1440, 1024, 768 et 390 px
+   ========================================================================== */
 
-@media (max-width: 640px) {
-  .hero-heading {
-    font-size: 2.25rem !important;
-    line-height: 1.2 !important;
-  }
-  .container-responsive {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+/* --------------------------------------------------------------------------
+   1. Grand Écran / Desktop Large (1440px - 1920px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .site-container,
+  .container {
+    width: min(1640px, calc(100% - 120px));
   }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-  .hero-heading {
-    font-size: 3rem !important;
+/* --------------------------------------------------------------------------
+   2. Écrans Intermédiaires & Tablettes (768px à 1023px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-nav {
+    gap: var(--space-md);
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .hero,
+  .home-hero {
+    min-height: clamp(660px, 80vh, 850px);
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero__content,
+  .home-hero__container {
+    width: min(480px, 44%);
+  }
+
+  .hero__products {
+    right: 1%;
+    bottom: 0;
+    width: min(56%, 850px);
+    object-position: right bottom;
+  }
+
+  .commitments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .commitment-card:nth-child(5) {
+    grid-column: span 2;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .customization-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.35fr 1fr;
+    gap: 36px 54px;
+  }
+
+  .footer-brand-block {
+    max-width: 460px;
   }
 }
 
-@media (min-width: 1025px) {
-  .hero-heading {
-    font-size: 3.75rem !important;
+/* --------------------------------------------------------------------------
+   3. Mobiles & Smartphones (< 768px - y compris 390px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --header-height: var(--header-height-mobile, 76px);
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  #header-search-form {
+    display: none !important;
+  }
+
+  .header-container {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .header-logo-image {
+    width: auto;
+    max-width: min(190px, 100%);
+  }
+
+  .header-actions {
+    gap: 4px;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-announcement-bar {
+    font-size: 0.75rem;
+  }
+
+  .announcement-socials {
+    display: none;
+  }
+
+  .announcement-container {
+    justify-content: center;
+  }
+
+  /* Layout Hero mobile vertical */
+  .hero,
+  .home-hero {
+    min-height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: calc(var(--header-height, 70px) + 1.25rem);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
+  }
+
+  .hero__content,
+  .home-hero__container {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__products {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: 0;
+    width: 96%;
+    max-width: 540px;
+    margin-top: 1.5rem;
+    display: block;
+  }
+
+  .home-hero__eyebrow {
+    justify-content: center;
+  }
+
+  .home-hero__description {
+    font-size: 0.925rem;
+    text-align: center;
+    max-width: 360px;
+  }
+
+  .home-hero__actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 0.85rem;
+  }
+
+  .home-hero__commitments {
+    justify-content: center;
+  }
+
+  .commitments-section {
+    padding: 54px 18px;
+  }
+
+  .commitments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .customization-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .b2b-card {
+    padding: 32px 20px;
+  }
+
+  .b2b-card__actions {
+    flex-direction: column;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-footer {
+    padding: 40px 0 82px;
+  }
+
+  .footer-bottom {
+    padding-right: 0;
+  }
+
+  .footer-brand-block {
+    max-width: none;
+  }
+
+  .footer-logo {
+    width: min(230px, 76vw);
+  }
+
+  .footer-legal-links {
+    justify-content: center;
   }
 }

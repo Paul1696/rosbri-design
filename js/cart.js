@@ -5,7 +5,8 @@
 (function () {
   const STORAGE_KEY = "rosbri_cart";
   const PROMO_KEY = "rosbri_promo";
-  const WHATSAPP_PHONE = "237698193880";
+  const WHATSAPP_PHONE = "237690087213";
+  let lastCartTrigger = null;
 
   function getCart() {
     try {
@@ -133,18 +134,20 @@
       node.textContent = formatPrice(finalAmount);
     });
 
-    // 3. Update Promo UI Elements if present
+    // 3. Update Promo UI Elements
     const promoMsgNode = document.getElementById("cart-promo-message");
     const promoInput = document.getElementById("cart-promo-input");
     if (promoMsgNode) {
       if (promo && subtotalAmount > 0) {
         const discount = Math.round((subtotalAmount * promo.percent) / 100);
         promoMsgNode.textContent = `✓ Code ${promo.code} appliqué (-${promo.percent}% = -${formatPrice(discount)})`;
-        promoMsgNode.className = "text-[11px] mt-1 font-semibold text-success block";
+        promoMsgNode.className = "cart-promo-message is-success";
+        promoMsgNode.hidden = false;
         if (promoInput) promoInput.value = promo.code;
       } else if (!promo) {
         promoMsgNode.textContent = "";
-        promoMsgNode.className = "text-[11px] mt-1 font-semibold hidden";
+        promoMsgNode.className = "cart-promo-message";
+        promoMsgNode.hidden = true;
       }
     }
 
@@ -153,10 +156,10 @@
     drawerContainers.forEach((container) => {
       if (!cart.length) {
         container.innerHTML = `
-          <div class="py-12 text-center text-muted flex flex-col items-center justify-center">
-            <span class="material-symbols-outlined text-5xl mb-3 opacity-40">shopping_bag</span>
-            <p class="text-sm font-semibold mb-4">Votre panier est actuellement vide.</p>
-            <a href="boutique.html" class="px-6 py-2.5 rounded-full bg-ink text-white text-xs uppercase tracking-widest font-bold hover:bg-champagne transition-colors">Découvrir la boutique</a>
+          <div class="cart-empty-state">
+            <span class="cart-empty-icon">shopping_bag</span>
+            <p class="cart-empty-text">Votre panier est actuellement vide.</p>
+            <a href="boutique.html" class="cart-empty-link">Découvrir la boutique</a>
           </div>`;
         return;
       }
@@ -168,25 +171,22 @@
         if (item.sizes && item.sizes.length) options.push(`Tailles: ${item.sizes.join(", ")}`);
         if (item.customization) options.push(`Spec: ${item.customization}`);
 
-        const img = item.image || "images/brand/rosbri-wax-design-logo.jpg";
-        const unitP = parsePrice(item.price);
-        const subtotal = unitP * (parseInt(item.quantity, 10) || 1);
-
+        const img = item.image || "images/brand/rosbri-logo-horizontal.png";
         return `
-          <div class="flex gap-4 py-4 border-b border-line items-center">
-            <img src="${escapeHtml(img)}" alt="${escapeHtml(item.title)}" class="w-16 h-20 object-cover rounded-lg border border-line bg-surface-container-low flex-shrink-0">
-            <div class="flex-1 min-w-0">
-              <h4 class="font-bold text-xs text-ink truncate">${escapeHtml(item.title)}</h4>
-              ${options.length ? `<p class="text-[11px] text-muted truncate mt-0.5">${escapeHtml(options.join(" · "))}</p>` : ""}
-              <p class="text-xs font-bold text-champagne mt-1">${escapeHtml(item.price)}</p>
-              <div class="flex items-center justify-between mt-2">
-                <div class="flex items-center border border-line rounded-lg overflow-hidden bg-white">
-                  <button type="button" data-cart-action="dec" data-cart-index="${index}" class="w-7 h-7 flex items-center justify-center text-ink hover:bg-surface-container-low font-bold text-sm" aria-label="Diminuer la quantité">-</button>
-                  <span class="w-8 text-center text-xs font-bold text-ink">${item.quantity}</span>
-                  <button type="button" data-cart-action="inc" data-cart-index="${index}" class="w-7 h-7 flex items-center justify-center text-ink hover:bg-surface-container-low font-bold text-sm" aria-label="Augmenter la quantité">+</button>
+          <div class="cart-item">
+            <img src="${escapeHtml(img)}" alt="${escapeHtml(item.title)}" class="cart-item-image">
+            <div class="cart-item-details">
+              <h4 class="cart-item-title">${escapeHtml(item.title)}</h4>
+              ${options.length ? `<p class="cart-item-meta">${escapeHtml(options.join(" · "))}</p>` : ""}
+              <p class="cart-item-price">${escapeHtml(item.price)}</p>
+              <div class="cart-item-actions">
+                <div class="cart-item-quantity-control">
+                  <button type="button" data-cart-action="dec" data-cart-index="${index}" class="cart-quantity-button" aria-label="Diminuer la quantité">-</button>
+                  <span class="cart-quantity-value">${item.quantity}</span>
+                  <button type="button" data-cart-action="inc" data-cart-index="${index}" class="cart-quantity-button" aria-label="Augmenter la quantité">+</button>
                 </div>
-                <button type="button" data-cart-action="remove" data-cart-index="${index}" class="text-muted hover:text-error text-xs font-semibold p-1" aria-label="Supprimer cet article">
-                  <span class="material-symbols-outlined text-sm">delete</span>
+                <button type="button" data-cart-action="remove" data-cart-index="${index}" class="cart-item-remove" aria-label="Supprimer cet article">
+                  <span class="cart-remove-icon">delete</span>
                 </button>
               </div>
             </div>
@@ -213,7 +213,8 @@
       setAppliedPromo(null);
       if (msgNode) {
         msgNode.textContent = "Veuillez saisir un code promo.";
-        msgNode.className = "text-[11px] mt-1 font-semibold text-error block";
+        msgNode.className = "cart-promo-message is-error";
+        msgNode.hidden = false;
       }
       return;
     }
@@ -226,7 +227,8 @@
       setAppliedPromo(null);
       if (msgNode) {
         msgNode.textContent = "Code promo non valide ou expiré.";
-        msgNode.className = "text-[11px] mt-1 font-semibold text-error block";
+        msgNode.className = "cart-promo-message is-error";
+        msgNode.hidden = false;
       }
     }
   }
@@ -234,6 +236,7 @@
   function openCartDrawer() {
     const drawer = document.getElementById("cart-drawer") || document.querySelector(".cart-drawer");
     if (!drawer) return;
+    lastCartTrigger = document.activeElement;
     drawer.style.display = "block";
     drawer.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -264,7 +267,7 @@
         id: productItem.id || String(Date.now()),
         title: productItem.title || "Produit ROSBRI DESIGN",
         price: productItem.price || "Sur devis",
-        image: productItem.image || "images/brand/rosbri-wax-design-logo.jpg",
+        image: productItem.image || "images/brand/rosbri-logo-horizontal.png",
         color: productItem.color || "",
         size: productItem.size || "",
         sizes: productItem.sizes || [],
@@ -294,6 +297,18 @@
       if (input) applyPromoCode(input.value);
     }
 
+    const addBtn = event.target.closest(".btn-add-cart, [data-add-cart]");
+    if (addBtn) {
+      event.preventDefault();
+      const id = addBtn.getAttribute("data-id");
+      const title = addBtn.getAttribute("data-title");
+      const price = addBtn.getAttribute("data-price");
+      const image = addBtn.getAttribute("data-image");
+      if (id && title) {
+        addToCart({ id, title, price, image, quantity: 1 });
+      }
+    }
+
     const actionBtn = event.target.closest("[data-cart-action]");
     if (actionBtn) {
       const action = actionBtn.dataset.cartAction;
@@ -317,13 +332,27 @@
   });
 
   document.addEventListener("keydown", (event) => {
+    const drawer = document.getElementById("cart-drawer");
+    const isOpen = drawer && drawer.getAttribute("aria-hidden") === "false";
+    if (event.key === "Tab" && isOpen) {
+      const focusables = Array.from(drawer.querySelectorAll('button:not([disabled]), a[href], input:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+      if (focusables.length) {
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
     if (event.key === "Enter" && event.target && event.target.id === "cart-promo-input") {
       event.preventDefault();
       applyPromoCode(event.target.value);
     }
-    if (event.key === "Escape") {
-      closeCartDrawer();
-    }
+    if (event.key === "Escape") closeCartDrawer();
   });
 
   // Export API globally

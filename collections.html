@@ -4,6 +4,20 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Collections | ROSBRI DESIGN</title>
+
+  <meta name="description" content="Découvrez les univers ROSBRI DESIGN : vêtements, accessoires, enfants, cadeaux, maison et créations pour entreprises et événements."/>
+  <link rel="canonical" href="https://rosbridesign.ateliersdepaul.com/collections.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta property="og:site_name" content="ROSBRI DESIGN"/>
+  <meta property="og:title" content="Collections | ROSBRI DESIGN"/>
+  <meta property="og:description" content="Découvrez les univers ROSBRI DESIGN : vêtements, accessoires, enfants, cadeaux, maison et créations pour entreprises et événements."/>
+  <meta property="og:image" content="https://rosbridesign.ateliersdepaul.com/images/articles-site/coffrets-attentions-rosbri.webp"/>
+  <meta property="og:url" content="https://rosbridesign.ateliersdepaul.com/collections.html"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Collections | ROSBRI DESIGN"/>
+  <meta name="twitter:description" content="Découvrez les univers ROSBRI DESIGN : vêtements, accessoires, enfants, cadeaux, maison et créations pour entreprises et événements."/>
+  <meta name="twitter:image" content="https://rosbridesign.ateliersdepaul.com/images/articles-site/coffrets-attentions-rosbri.webp"/>
   <meta name="description" content="Explorez les collections uniques de ROSBRI DESIGN : Mode Wax, Maroquinerie, Mugs & Gourdes, Coffrets Cadeaux et Solutions B2B."/>
   <meta property="og:title" content="Collections | ROSBRI DESIGN"/>
   <meta property="og:description" content="Découvrez les univers créatifs ROSBRI DESIGN imprégnés d'artisanat africain et d'élégance contemporaine."/>
@@ -16,26 +30,35 @@
   <link rel="apple-touch-icon" href="images/brand/rosbri-wax-design-logo.jpg"/>
 
   <!-- Shared Tailwind Config & CDN -->
-  <script src="js/tailwind-config.js"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+
+
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
+  <link rel="stylesheet" href="css/tailwind.generated.min.css?v=20260808a"/>
   <!-- Design System Styles -->
   <link rel="stylesheet" href="css/tokens.css"/>
-  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/components.css?v=20260831-footer-shared-v2"/>
   <link rel="stylesheet" href="css/responsive.css"/>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="css/pages.css?v=20260807a"/>
+  <link rel="stylesheet" href="css/cart.css?v=20260808a"/>
+  <link rel="stylesheet" href="css/layout.css?v=20260808a"/>
+  <link rel="stylesheet" href="css/editorial-pages.css?v=20260831a"/>
 </head>
 
 <body class="bg-cream text-ink font-body-md antialiased overflow-x-hidden selection:bg-champagne selection:text-white collections-page">
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
   <!-- Mount Points -->
   <div id="site-announcement"></div>
   <div id="site-header"></div>
 
-  <main id="main-content" class="py-10 px-6 max-w-[1280px] mx-auto relative">
+  <main id="main-content" class="page-shell py-10 px-6 max-w-[1280px] mx-auto relative">
     <!-- Hero / Header Section -->
-    <section class="text-center max-w-3xl mx-auto mb-12">
+    <section class="page-intro page-intro--collections">
       <div class="flex justify-center items-center gap-3 mb-4">
         <div class="w-10 h-px bg-champagne"></div>
         <span class="text-xs font-bold text-champagne tracking-[0.25em] uppercase">Héritage & Modernité</span>
@@ -43,158 +66,101 @@
       </div>
       <h1 class="font-display-accent text-3xl md:text-5xl text-ink font-bold mb-4">Nos Univers Créatifs</h1>
       <p class="font-body-lg text-muted leading-relaxed">
-        Chaque pièce de nos collections raconte une histoire séculaire, murmurée par les artisans et réinventée pour le monde contemporain. Une invitation au voyage à travers des textiles vibrants et un design d’exception.
+        Découvrez les vêtements, accessoires, créations pour enfants, idées cadeaux et objets pour la maison imaginés par ROSBRI DESIGN. La plupart de nos modèles peuvent être adaptés ou personnalisés selon votre projet.
       </p>
     </section>
 
     <!-- Collections Grid -->
-    <div id="collection-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-      
-      <!-- Category 1: Mode & Prêt-à-porter -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mode & Prêt-à-porter ROSBRI DESIGN" src="images/articles-site/navigation/nav-personnalisation.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+    <div id="collection-grid" class="mb-16">
+      <article class="collection-universe group overflow-hidden flex flex-col relative">
+        <div class="collection-universe__media relative overflow-hidden bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Vêtements ROSBRI DESIGN en wax" src="images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-33.png" loading="eager"/>
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="collection-universe__content flex-1 flex flex-col justify-between">
           <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Mode & Prêt-à-porter</h3>
-            <p class="text-xs text-muted">Créations exclusives pour elle et lui.</p>
+            <span class="text-[10px] font-bold text-champagne tracking-[0.2em] uppercase">Silhouettes & caractère</span>
+            <h2 class="collection-universe__title text-ink mt-2 mb-2">Vêtements</h2>
+            <p class="text-sm text-muted leading-relaxed">Kimonos, ensembles et pièces expressives conçus pour accompagner chaque personnalité.</p>
           </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <span class="mt-5 text-xs font-bold text-champagne inline-flex items-center gap-2">Découvrir la collection <span aria-hidden="true">→</span></span>
         </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Tshirts" aria-label="Voir la collection Mode & Prêt-à-porter"></a>
-      </div>
+        <a class="absolute inset-0 z-10" href="boutique.html?categorie=vetements" aria-label="Voir les vêtements"></a>
+      </article>
 
-      <!-- Category 2: Sacs & Maroquinerie -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Accessoires & Maroquinerie" src="images/articles-site/sacs/variants/sac-rosbri-wax-01.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+      <article class="collection-universe group overflow-hidden flex flex-col relative">
+        <div class="collection-universe__media relative overflow-hidden bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sac et accessoires ROSBRI DESIGN" src="images/articles-site/sacs/variants/sac-cabas-jute-wax-dore.png" loading="eager"/>
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="collection-universe__content flex-1 flex flex-col justify-between">
           <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Sacs & Accessoires</h3>
-            <p class="text-xs text-muted">Maroquinerie Wax & Bijoux d'art.</p>
+            <span class="text-[10px] font-bold text-champagne tracking-[0.2em] uppercase">Détails qui signent le style</span>
+            <h2 class="collection-universe__title text-ink mt-2 mb-2">Accessoires</h2>
+            <p class="text-sm text-muted leading-relaxed">Sacs, pochettes, bijoux et accessoires textiles où l’utilité rencontre l’élégance.</p>
           </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <span class="mt-5 text-xs font-bold text-champagne inline-flex items-center gap-2">Découvrir la collection <span aria-hidden="true">→</span></span>
         </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Sacs" aria-label="Voir la collection Sacs & Accessoires"></a>
-      </div>
+        <a class="absolute inset-0 z-10" href="boutique.html?categorie=accessoires" aria-label="Voir les accessoires"></a>
+      </article>
 
-      <!-- Category 3: Maison & Déco -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Maison & Déco" src="images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+      <article class="collection-universe group overflow-hidden flex flex-col relative">
+        <div class="collection-universe__media relative overflow-hidden bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ensemble enfant ROSBRI DESIGN" src="images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-019.png" loading="lazy"/>
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="collection-universe__content flex-1 flex flex-col justify-between">
           <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Maison & Art de Vivre</h3>
-            <p class="text-xs text-muted">Coussins, linge et éléments décoratifs.</p>
+            <span class="text-[10px] font-bold text-champagne tracking-[0.2em] uppercase">Confort & fantaisie</span>
+            <h2 class="collection-universe__title text-ink mt-2 mb-2">Enfants & Bébés</h2>
+            <p class="text-sm text-muted leading-relaxed">Des tenues joyeuses et confortables pensées pour les aventures des plus petits.</p>
           </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <span class="mt-5 text-xs font-bold text-champagne inline-flex items-center gap-2">Découvrir la collection <span aria-hidden="true">→</span></span>
         </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Maison" aria-label="Voir la collection Maison & Art de Vivre"></a>
-      </div>
+        <a class="absolute inset-0 z-10" href="boutique.html?categorie=enfants" aria-label="Voir les créations pour enfants et bébés"></a>
+      </article>
 
-      <!-- Category 4: Mugs & Gourdes -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Mugs & Gourdes" src="images/articles-site/navigation/nav-cadeaux.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+      <article class="collection-universe group overflow-hidden flex flex-col relative">
+        <div class="collection-universe__media relative overflow-hidden bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Idée cadeau personnalisée ROSBRI DESIGN" src="images/articles-site/coffrets-attentions-rosbri.webp" loading="lazy"/>
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="collection-universe__content flex-1 flex flex-col justify-between">
           <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Mugs & Gourdes</h3>
-            <p class="text-xs text-muted">Objets du quotidien personnalisés.</p>
+            <span class="text-[10px] font-bold text-champagne tracking-[0.2em] uppercase">Pour célébrer autrement</span>
+            <h2 class="collection-universe__title text-ink mt-2 mb-2">Packs & Idées Cadeaux</h2>
+            <p class="text-sm text-muted leading-relaxed">Des attentions personnalisées et des coffrets composés pour marquer chaque occasion.</p>
           </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <span class="mt-5 text-xs font-bold text-champagne inline-flex items-center gap-2">Découvrir la collection <span aria-hidden="true">→</span></span>
         </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Mugs" aria-label="Voir la collection Mugs & Gourdes"></a>
-      </div>
+        <a class="absolute inset-0 z-10" href="boutique.html?categorie=cadeaux" aria-label="Voir les packs et idées cadeaux"></a>
+      </article>
 
-      <!-- Category 5: Enfants & Bébés -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Enfants & Bébés" src="images/articles-site/bijoux/boucles-oreilles-bois-wax.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+      <article class="collection-universe group overflow-hidden flex flex-col relative">
+        <div class="collection-universe__media relative overflow-hidden bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Coussins en wax ROSBRI DESIGN" src="images/articles-site/coussins/variants/coussin-rosbri-wax-01.png" loading="lazy"/>
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="collection-universe__content flex-1 flex flex-col justify-between">
           <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Enfants & Bébés</h3>
-            <p class="text-xs text-muted">Douceur et tradition pour les petits.</p>
+            <span class="text-[10px] font-bold text-champagne tracking-[0.2em] uppercase">La maison avec caractère</span>
+            <h2 class="collection-universe__title text-ink mt-2 mb-2">Maison & Déco</h2>
+            <p class="text-sm text-muted leading-relaxed">Coussins, linge et objets décoratifs pour inviter la couleur et l’artisanat chez soi.</p>
           </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <span class="mt-5 text-xs font-bold text-champagne inline-flex items-center gap-2">Découvrir la collection <span aria-hidden="true">→</span></span>
         </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Ensembles" aria-label="Voir la collection Enfants & Bébés"></a>
-      </div>
+        <a class="absolute inset-0 z-10" href="boutique.html?categorie=maison" aria-label="Voir les créations maison et décoration"></a>
+      </article>
 
-      <!-- Category 6: Packs & Idées Cadeaux -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Packs & Idées Cadeaux" src="images/articles-site/navigation/nav-cadeaux.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+      <article class="collection-universe group overflow-hidden flex flex-col relative">
+        <div class="collection-universe__media relative overflow-hidden bg-surface-container-low">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Créations personnalisées pour entreprises et événements ROSBRI DESIGN" src="images/articles-site/navigation/nav-entreprise.png" loading="lazy"/>
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="collection-universe__content flex-1 flex flex-col justify-between">
           <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Packs & Idées Cadeaux</h3>
-            <p class="text-xs text-muted">Coffrets sur-mesure prêts à offrir.</p>
+            <span class="text-[10px] font-bold text-champagne tracking-[0.2em] uppercase">Vos projets professionnels</span>
+            <h2 class="collection-universe__title text-ink mt-2 mb-2">Entreprises & Événements</h2>
+            <p class="text-sm text-muted leading-relaxed">Cadeaux d’entreprise, accessoires personnalisés, coffrets et créations en série pour valoriser votre marque et accompagner vos événements.</p>
           </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
+          <span class="mt-5 text-xs font-bold text-champagne inline-flex items-center gap-2">Présenter votre projet <span aria-hidden="true">→</span></span>
         </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Packs%20%26%20Id%C3%A9es%20Cadeaux" aria-label="Voir les Packs & Idées Cadeaux"></a>
-      </div>
-
-      <!-- Category 7: Entreprises & B2B -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Entreprises & B2B" src="images/articles-site/navigation/nav-entreprise.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Entreprises & B2B</h3>
-            <p class="text-xs text-muted">Goodies corporate & tenues professionnelles.</p>
-          </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
-        </div>
-        <a class="absolute inset-0 z-10" href="boutique.html?categorie=Entreprise" aria-label="Voir les solutions Entreprises & B2B"></a>
-      </div>
-
-      <!-- Category 8: Éditions Spéciales -->
-      <div class="group bg-white rounded-2xl border border-line shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col relative">
-        <div class="aspect-[4/5] relative overflow-hidden bg-surface-container-low">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Éditions Spéciales" src="images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png" loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="font-display-accent text-xl text-ink font-bold mb-1">Éditions Spéciales</h3>
-            <p class="text-xs text-muted">Pièces rares & séries limitées.</p>
-          </div>
-          <span class="mt-4 text-xs font-bold text-champagne group-hover:underline inline-flex items-center gap-1">
-            Explorer <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </span>
-        </div>
-        <a class="absolute inset-0 z-10" href="boutique.html" aria-label="Voir toutes les collections"></a>
-      </div>
-
-    </div>
+        <a class="absolute inset-0 z-10" href="boutique.html?categorie=entreprise" aria-label="Voir les créations pour entreprises et événements"></a>
+      </article></div>
   </main>
 
   <!-- Mount Points -->
@@ -203,13 +169,14 @@
   <div id="site-cart-drawer"></div>
 
   <!-- Shared Scripts in Canonical Order -->
-  <script src="catalog-data.js" defer></script>
-  <script src="catalog.js" defer></script>
-  <script src="js/components.js" defer></script>
+<script src="catalog-data.js?v=20260807c" defer></script>
+  <script src="js/taxonomy.js?v=20260831-categories"></script>
+  <script src="catalog.js?v=20260808a" defer></script>
+  <script src="js/components.js?v=20260828-footer-aligned" defer></script>
   <script src="js/common.js" defer></script>
-  <script src="js/header.js" defer></script>
+  <script src="js/header.js?v=20260808a" defer></script>
   <script src="js/search.js" defer></script>
-  <script src="js/cart.js" defer></script>
+  <script src="js/cart.js?v=20260808a" defer></script>
   <script src="js/mobile-menu.js" defer></script>
   <script src="js/announcement-bar.js" defer></script>
   <script src="js/qa-check.js" defer></script>
