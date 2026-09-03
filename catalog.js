@@ -3,6 +3,14 @@
   const WHATSAPP_PHONE = "237698193880";
   let catalog = normalizeCatalog(window.ROSBriCatalog || []);
   const categories = ["Tous", "vetements", "accessoires", "enfants", "cadeaux", "maison", "entreprise"];
+  const granularCategories = [
+    "Tshirts", "Ensembles", "Robes", "Boubous", "Chemises", "Polos", "Debardeurs",
+    "Sweats", "Hoodies", "Jupes", "Shorts", "Pantalons", "Sacs", "Pochettes",
+    "Portefeuilles", "Trousses", "Babouches", "Sandales", "Chaussures", "Chapeaux",
+    "Casquettes", "Bobs", "Bijoux", "Coussins", "Tabliers", "Serviettes", "Mugs",
+    "Gourdes", "GantsCuisine", "Maniques", "Affiches", "Cartes", "Stickers", "Pagnes",
+    "CoquesTelephone"
+  ];
 
   const productLabels = {
     vetements: "Vêtements",
@@ -37,6 +45,41 @@
     PacksEntreprise: "Packs entreprise",
     PacksFamille: "Packs famille",
     PacksEvenement: "Packs événement",
+    Tshirts: "T-shirts",
+    Ensembles: "Ensembles",
+    Robes: "Robes",
+    Boubous: "Boubous",
+    Chemises: "Chemises",
+    Polos: "Polos",
+    Debardeurs: "Débardeurs",
+    Sweats: "Sweats",
+    Hoodies: "Hoodies",
+    Jupes: "Jupes",
+    Shorts: "Shorts",
+    Pantalons: "Pantalons",
+    Sacs: "Sacs",
+    Pochettes: "Pochettes",
+    Portefeuilles: "Portefeuilles",
+    Trousses: "Trousses",
+    Babouches: "Babouches",
+    Sandales: "Sandales",
+    Chaussures: "Chaussures",
+    Chapeaux: "Chapeaux",
+    Casquettes: "Casquettes",
+    Bobs: "Bobs",
+    Bijoux: "Bijoux",
+    Coussins: "Coussins",
+    Tabliers: "Tabliers",
+    Serviettes: "Serviettes",
+    Mugs: "Mugs",
+    Gourdes: "Gourdes",
+    GantsCuisine: "Gants de cuisine",
+    Maniques: "Maniques",
+    Affiches: "Affiches",
+    Cartes: "Cartes",
+    Stickers: "Stickers",
+    Pagnes: "Pagnes",
+    CoquesTelephone: "Coques téléphone",
     "Packs & Idées Cadeaux": "Packs & Idées Cadeaux",
     Tshirts: "T-shirts",
     Polos: "Polos",
@@ -453,6 +496,7 @@
   function categoryMatches(item, category) {
     const productCat = productCategory(item);
     if (category === "Tous") return true;
+    if (granularCategories.includes(category)) return productCat === category;
     const taxonomy = window.ROSBriTaxonomy;
     const canonicalCategory = taxonomy ? taxonomy.resolve(category) : null;
     if (canonicalCategory) return productPrimaryCategoryId(item) === canonicalCategory;
@@ -932,7 +976,8 @@
     if (!target) return;
     target.replaceChildren();
 
-    const shopCategories = ["Tous", "vetements", "accessoires", "enfants", "cadeaux", "maison"];
+    const presentGranular = granularCategories.filter((category) => catalogView.some((item) => productCategory(item) === category));
+    const shopCategories = ["Tous", "vetements", "accessoires", "enfants", "cadeaux", "maison", ...presentGranular];
     shopCategories.forEach((category) => {
       const isAll = category === "Tous";
       const count = isAll ? catalogView.length : (categoryCounts[category] || 0);
