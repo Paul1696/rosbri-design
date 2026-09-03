@@ -4,7 +4,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 26",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-33.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-33.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -13,7 +13,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 25",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-32.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-32.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -22,7 +22,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 24",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-31.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-31.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -31,7 +31,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 23",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-30.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-30.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -40,7 +40,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 22",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-29.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-29.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -49,7 +49,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 21",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-28.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-28.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -58,7 +58,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 20",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-27.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-27.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -67,7 +67,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 19",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-26.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-26.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -76,7 +76,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 18",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-25.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-25.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -85,7 +85,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 17",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-24.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-24.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -94,7 +94,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 16",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-23.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-23.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -103,7 +103,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 15",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-22.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-22.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -112,7 +112,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 14",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-21.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-21.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -121,7 +121,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 13",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-19.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-19.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -130,7 +130,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 12",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-18.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-18.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -139,7 +139,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 11",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-17.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-17.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -148,7 +148,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 10",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-16.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-16.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -157,7 +157,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 09",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-15.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-15.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -166,7 +166,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 08",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-14.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-14.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -175,7 +175,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 07",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-13.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-13.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -184,7 +184,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 06",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-12.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-12.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -193,7 +193,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 05",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-05.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-05.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -202,7 +202,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 04",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-04.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-04.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -211,7 +211,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 03",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-03.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-03.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -220,7 +220,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 02",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-02.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-02.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -229,7 +229,7 @@ window.ROSBriCatalog = [
     "title": "Kimono adulte ROSBRI wax 01",
     "category": "Vêtements",
     "price": "20 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-01.png",
+    "image": "images/articles-site/ensembles/adultes/ensemble-adultes-rosbri-wax-01.webp",
     "description": "Magnifique Kimono pour un style unique et élégant.",
     "colorVariants": []
   },
@@ -238,7 +238,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Reine africaine wax",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-reine-africaine-wax-orange.webp",
     "description": "T-shirt ROSBRI au visuel Reine africaine wax, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -246,7 +246,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Luffy Gear 5 - Feu et foudre",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-luffy-feu-foudre-orange.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-luffy-feu-foudre-orange.webp",
     "description": "T-shirt ROSBRI au visuel Luffy Gear 5 - Feu et foudre, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -254,7 +254,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Pont des Allemands - Edea",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-pont-allemands-edea-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-pont-allemands-edea-gris.webp",
     "description": "T-shirt ROSBRI au visuel Pont des Allemands - Edea, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -262,7 +262,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Merci pour tout Maman - Tu es la meilleure",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-gris.webp",
     "description": "T-shirt ROSBRI au visuel Merci pour tout Maman - Tu es la meilleure, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -270,7 +270,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman merci pour tout - Tu es la meilleure",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-gris.webp",
     "description": "T-shirt ROSBRI au visuel Maman merci pour tout, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -278,7 +278,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Merci pour tout Maman - studio",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-studio-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-merci-maman-meilleure-studio-gris.webp",
     "description": "T-shirt ROSBRI au visuel Merci pour tout Maman - studio, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -286,7 +286,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman mon coeur ma force",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-coeur-force-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-coeur-force-gris.webp",
     "description": "T-shirt ROSBRI au visuel Maman mon coeur ma force, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -294,7 +294,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman ton amour est ma force",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-amour-force-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-amour-force-gris.webp",
     "description": "T-shirt ROSBRI au visuel Maman ton amour est ma force, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -302,7 +302,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman ton amour est ma force - Merci pour tout",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-amour-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-merci-pour-tout-amour-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Maman merci pour tout, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -310,7 +310,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman tu es mon bonheur",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-mon-bonheur-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-mon-bonheur-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Maman tu es mon bonheur, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -318,7 +318,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman tu es mon bonheur - studio",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-mon-bonheur-studio-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-mon-bonheur-studio-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Maman tu es mon bonheur - studio, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -326,7 +326,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman a croquer",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-a-croquer-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-a-croquer-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Maman a croquer, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -334,7 +334,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Super Maman",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-super-maman-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-super-maman-gris.webp",
     "description": "T-shirt ROSBRI au visuel Super Maman, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -342,7 +342,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt MOM - Maman a cherir",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mom-maman-a-cherir-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mom-maman-a-cherir-gris.webp",
     "description": "T-shirt ROSBRI au visuel MOM - Maman a cherir, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -350,7 +350,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Mama coeur prenoms enfants",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mama-coeur-prenoms-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mama-coeur-prenoms-gris.webp",
     "description": "T-shirt ROSBRI au visuel Mama coeur prenoms enfants, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -358,7 +358,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt MOM personnalise prenoms",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mom-personnalise-prenoms-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mom-personnalise-prenoms-gris.webp",
     "description": "T-shirt ROSBRI au visuel MOM personnalise prenoms, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -366,7 +366,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt World's Best Mom",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-world-best-mom-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-world-best-mom-gris.webp",
     "description": "T-shirt ROSBRI au visuel World's Best Mom, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -374,7 +374,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Falaise de Dschang",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-falaise-dschang-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-falaise-dschang-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Falaise de Dschang, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -382,7 +382,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Chutes de la Lobe - Kribi",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-chutes-lobe-kribi-vert-foret.webp",
     "description": "T-shirt ROSBRI au visuel Chutes de la Lobe - Kribi, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -390,7 +390,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Mont Cameroun - Buea",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mont-cameroun-buea-vert-foret.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mont-cameroun-buea-vert-foret.webp",
     "description": "T-shirt ROSBRI au visuel Mont Cameroun - Buea, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -398,7 +398,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Cases Mousgoum - Maroua",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-cases-mousgoum-maroua-vert-foret.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-cases-mousgoum-maroua-vert-foret.webp",
     "description": "T-shirt ROSBRI au visuel Cases Mousgoum - Maroua, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -406,7 +406,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Musee des Rois Bamoun - Foumban",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-rois-bamoun-foumban-vert-foret.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-rois-bamoun-foumban-vert-foret.webp",
     "description": "T-shirt ROSBRI au visuel Musee des Rois Bamoun - Foumban, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -414,7 +414,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Nouvelle Liberte - Douala",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-nouvelle-liberte-douala-gris.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-nouvelle-liberte-douala-gris.webp",
     "description": "T-shirt ROSBRI au visuel Nouvelle Liberte - Douala, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -422,7 +422,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Monument de la Reunification - Yaounde",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-monument-reunification-yaounde-vert-foret.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-monument-reunification-yaounde-vert-foret.webp",
     "description": "T-shirt ROSBRI au visuel Monument de la Reunification - Yaounde, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -430,7 +430,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Mayi 09 Mai",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mayi-09-mai-sable.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mayi-09-mai-sable.webp",
     "description": "T-shirt ROSBRI au visuel Mayi 09 Mai, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -438,7 +438,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Je suis Batanga",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-je-suis-batanga-sable.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-je-suis-batanga-sable.webp",
     "description": "T-shirt ROSBRI au visuel Je suis Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -446,7 +446,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Kribi c'est ma ville",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-kribi-cest-ma-ville-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-kribi-cest-ma-ville-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Kribi c'est ma ville, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -454,7 +454,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Mayi Kribi Batanga",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mayi-kribi-batanga-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mayi-kribi-batanga-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Mayi Kribi Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -462,7 +462,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Fete du Mayi Kribi Batanga",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-fete-mayi-kribi-batanga-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-fete-mayi-kribi-batanga-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Fete du Mayi Kribi Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -470,7 +470,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Mayi 2026 Batanga",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-mayi-2026-batanga-vert-sauge.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-mayi-2026-batanga-vert-sauge.webp",
     "description": "T-shirt ROSBRI au visuel Mayi 2026 Batanga, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -478,7 +478,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt For You Jimmy",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-for-you-jimmy-blanc.webp",
     "description": "T-shirt ROSBRI au visuel For You Jimmy, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -486,7 +486,7 @@ window.ROSBriCatalog = [
     "title": "Duo T-shirts Big Brother Lil Brother",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/duo-tshirts-big-brother-lil-brother-blanc.png",
+    "image": "images/articles-site/tshirts/variants/duo-tshirts-big-brother-lil-brother-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Duo T-shirts Big Brother Lil Brother, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -494,7 +494,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas Afrique wax rouge",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-cabas-afrique-wax-rouge.png",
+    "image": "images/articles-site/sacs/variants/sac-cabas-afrique-wax-rouge.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -502,7 +502,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas bleu motifs blancs",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-cabas-bleu-motifs-blancs.png",
+    "image": "images/articles-site/sacs/variants/sac-cabas-bleu-motifs-blancs.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -510,7 +510,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas danseuses africaines",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-cabas-danseuses-africaines.png",
+    "image": "images/articles-site/sacs/variants/sac-cabas-danseuses-africaines.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -518,7 +518,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas MOM coeur wax",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-cabas-mom-coeur-wax.png",
+    "image": "images/articles-site/sacs/variants/sac-cabas-mom-coeur-wax.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -526,7 +526,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas reine africaine wax",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.png",
+    "image": "images/articles-site/sacs/variants/sac-cabas-reine-africaine-wax.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -534,7 +534,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas jute wax dore",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-cabas-jute-wax-dore.png",
+    "image": "images/articles-site/sacs/variants/sac-cabas-jute-wax-dore.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -542,7 +542,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Système solaire Pac-Man",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-systeme-solaire-pacman-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-systeme-solaire-pacman-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Système solaire Pac-Man, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -550,7 +550,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Life is Beautiful mandala",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-life-is-beautiful-mandala-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-life-is-beautiful-mandala-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Life is Beautiful mandala, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -558,7 +558,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Dés colorés éclaboussures",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-des-colores-eclaboussures-noir.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-des-colores-eclaboussures-noir.webp",
     "description": "T-shirt ROSBRI au visuel Dés colorés éclaboussures, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -566,7 +566,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Queen héritage africain",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-queen-heritage-africain-noir.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-queen-heritage-africain-noir.webp",
     "description": "T-shirt ROSBRI au visuel Queen héritage africain, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -574,7 +574,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Black is Beautiful",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-black-is-beautiful-heritage-noir.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-black-is-beautiful-heritage-noir.webp",
     "description": "T-shirt ROSBRI au visuel Black is Beautiful, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -582,7 +582,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Landry FEG motif léopard",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-landry-feg-leopard-noir.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-landry-feg-leopard-noir.webp",
     "description": "T-shirt ROSBRI au visuel Landry FEG motif léopard, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -590,7 +590,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Profil femme Afrique coloré",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-profil-femme-afrique-colore-noir.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-profil-femme-afrique-colore-noir.webp",
     "description": "T-shirt ROSBRI au visuel Profil femme Afrique coloré, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -598,7 +598,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Héritage Afrique savane au coucher du soleil",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-heritage-afrique-savane-coucher-soleil-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-heritage-afrique-savane-coucher-soleil-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Héritage Afrique savane au coucher du soleil, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -606,7 +606,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Ako yem - Trois femmes tropical",
     "category": "Vêtements",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-ako-yem-trois-femmes-tropical-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-ako-yem-trois-femmes-tropical-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Ako yem - Trois femmes tropical, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -614,7 +614,7 @@ window.ROSBriCatalog = [
     "title": "T-shirt Maman bonne fête des mères tropical",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/tshirts/variants/tshirt-maman-bonne-fete-des-meres-tropical-blanc.png",
+    "image": "images/articles-site/tshirts/variants/tshirt-maman-bonne-fete-des-meres-tropical-blanc.webp",
     "description": "T-shirt ROSBRI au visuel Maman bonne fête des mères tropical, doux et facile a porter, avec choix de taille pour une commande precise."
   },
   {
@@ -622,7 +622,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 01",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-01.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-01.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -630,7 +630,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 02",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-02.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-02.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -638,7 +638,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 03",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-03.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-03.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -646,7 +646,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 04",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-04.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-04.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -654,7 +654,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 05",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-05.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-05.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -662,7 +662,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 06",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-06.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-06.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -670,7 +670,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 07",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-07.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-07.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -678,7 +678,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 08",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-08.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-08.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -686,7 +686,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 09",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-09.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-09.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -694,7 +694,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas beige + pochette assortie",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-10.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-10.webp",
     "isPack": true,
     "description": "Pack cabas beige + pochette assortie. Composition : Sac cabas, Pochette assortie.",
     "items": [
@@ -707,7 +707,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 11",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-11.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-11.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -715,7 +715,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 12",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-12.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-12.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -723,7 +723,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 13",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-13.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-13.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -731,7 +731,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 14",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-14.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-14.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -739,7 +739,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 15",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-15.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-15.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -747,7 +747,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 16",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-16.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-16.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -755,7 +755,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 17",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-17.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-17.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -763,7 +763,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 18",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-18.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-18.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -771,7 +771,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 19",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-19.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-19.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -779,7 +779,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 20",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-20.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-20.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -787,7 +787,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 21",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-21.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-21.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -795,7 +795,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 22",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-22.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-22.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -803,7 +803,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 23",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-23.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-23.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -811,7 +811,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 24",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-24.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-24.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -819,7 +819,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 25",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-25.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-25.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -827,7 +827,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 26",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-26.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-26.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -835,7 +835,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 27",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-27.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-27.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -843,7 +843,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 28",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-28.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-28.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -851,7 +851,7 @@ window.ROSBriCatalog = [
     "title": "Pack plage rouge : cabas, chapeau et sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "30 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-29.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-29.webp",
     "isPack": true,
     "description": "Pack plage rouge : cabas, chapeau et sandales. Composition : Sac cabas, Chapeau, Sandales.",
     "items": [
@@ -865,7 +865,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 30",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-30.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-30.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -873,7 +873,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 31",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-31.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-31.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -881,7 +881,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 32",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-32.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-32.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -889,7 +889,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 33",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-33.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-33.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -897,7 +897,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 34",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-34.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-34.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -905,7 +905,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas bleu marine + sandales wax",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-35.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-35.webp",
     "isPack": true,
     "description": "Pack cabas bleu marine + sandales wax. Composition : Sac cabas, Sandales assorties.",
     "items": [
@@ -918,7 +918,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 36",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-36.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-36.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -926,7 +926,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas coloré + pochette assortie",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-37.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-37.webp",
     "isPack": true,
     "description": "Pack cabas coloré + pochette assortie. Composition : Sac cabas, Pochette assortie.",
     "items": [
@@ -939,7 +939,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 38",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-38.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-38.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -947,7 +947,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 39",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-39.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-39.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -955,7 +955,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 40",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-40.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-40.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -963,7 +963,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 41",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-41.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-41.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -971,7 +971,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 42",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-42.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-42.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -979,7 +979,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 43",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-43.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-43.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -987,7 +987,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 44",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-44.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-44.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -995,7 +995,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 45",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-45.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-45.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1003,7 +1003,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 46",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-46.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-46.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1011,7 +1011,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 47",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-47.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-47.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1019,7 +1019,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 48",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-48.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-48.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1027,7 +1027,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 49",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-49.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-49.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1035,7 +1035,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 50",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-50.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-50.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1043,7 +1043,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas bleu marine + chapeau assorti",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-51.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-51.webp",
     "isPack": true,
     "description": "Pack cabas bleu marine + chapeau assorti. Composition : Sac cabas, Chapeau assorti.",
     "items": [
@@ -1056,7 +1056,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas bleu marine personnalisé + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-52.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-52.webp",
     "isPack": true,
     "description": "Pack cabas bleu marine personnalisé + sandales. Composition : Sac cabas personnalisé, Sandales assorties.",
     "items": [
@@ -1069,7 +1069,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas rose + chapeau assorti",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-53.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-53.webp",
     "isPack": true,
     "description": "Pack cabas rose + chapeau assorti. Composition : Sac cabas, Chapeau assorti.",
     "items": [
@@ -1082,7 +1082,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 54",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-54.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-54.webp",
     "description": "Sac ROSBRI en wax, spacieux et soigne dans les finitions, pour porter les essentiels avec une touche africaine elegante."
   },
   {
@@ -1090,7 +1090,7 @@ window.ROSBriCatalog = [
     "title": "Pack plage rose complet",
     "category": "Packs & Idées Cadeaux",
     "price": "30 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-111.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-111.webp",
     "isPack": true,
     "description": "Pack plage rose complet. Composition : Sac cabas, Chapeau, Sandales, Pochette.",
     "items": [
@@ -1105,7 +1105,7 @@ window.ROSBriCatalog = [
     "title": "Pack plage beige losange",
     "category": "Packs & Idées Cadeaux",
     "price": "30 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-112.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-112.webp",
     "isPack": true,
     "description": "Pack plage beige losange. Composition : Sac cabas, Chapeau, Sandales.",
     "items": [
@@ -1119,7 +1119,7 @@ window.ROSBriCatalog = [
     "title": "Cabas beige motif losange wax jaune",
     "category": "Accessoires",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-113.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-113.webp",
     "description": "Grand sac cabas beige décoré d'un motif central en wax jaune, noir et rouge, avec anses et bordures assorties."
   },
   {
@@ -1127,7 +1127,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas patchwork géométrique",
     "category": "Accessoires",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-114.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-114.webp",
     "isPack": false,
     "description": "Sac cabas wax spacieux avec finitions soignées, proposé seul."
   },
@@ -1136,7 +1136,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas brun + pochette assortie",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-115.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-115.webp",
     "isPack": true,
     "description": "Pack cabas brun + pochette assortie. Composition : Sac cabas, Pochette assortie.",
     "items": [
@@ -1149,7 +1149,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas bleu marine et beige ROSBRI wax",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-116.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-116.webp",
     "description": "Sac cabas beige avec bordures et bandes en wax bleu marine, spacieux et facile à porter au quotidien."
   },
   {
@@ -1157,7 +1157,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas bleu marine personnalisé MR",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-117.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-117.webp",
     "description": "Sac cabas bleu marine et beige avec inscription MR, pensé pour porter les essentiels avec une finition wax élégante."
   },
   {
@@ -1165,7 +1165,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas rose clair noeud wax",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-118.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-118.webp",
     "description": "Sac cabas rose clair avec anses et noeud en wax jaune, noir et blanc, idéal pour une touche douce et colorée."
   },
   {
@@ -1173,7 +1173,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 01",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-01.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1181,7 +1181,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 02",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-02.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-02.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1189,7 +1189,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 03",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-03.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-03.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1197,7 +1197,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 04",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-04.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-04.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1205,7 +1205,7 @@ window.ROSBriCatalog = [
     "title": "Pack cuisine wax noir et rouge",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-05.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-05.webp",
     "isPack": true,
     "description": "Pack cuisine wax noir et rouge. Composition : Tablier, Maniques, Accessoires assortis.",
     "items": [
@@ -1219,7 +1219,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 12",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-001.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-001.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1227,7 +1227,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 13",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-002.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-002.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1235,7 +1235,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 14",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-003.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-003.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1243,7 +1243,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 15",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-004.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-004.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1251,7 +1251,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 16",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-005.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-005.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1259,7 +1259,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 17",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-006.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-006.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1267,7 +1267,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 12",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-12.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-12.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1275,7 +1275,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 13",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-13.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-13.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1283,7 +1283,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas floral + sandales assorties",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-14.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-14.webp",
     "isPack": true,
     "description": "Pack cabas floral + sandales assorties. Composition : Sac cabas, Sandales assorties.",
     "items": [
@@ -1296,7 +1296,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 15",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-15.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-15.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1304,7 +1304,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 16",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-16.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-16.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1312,7 +1312,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 17",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-17.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-17.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1320,7 +1320,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 18",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-18.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-18.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1328,7 +1328,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 19",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-19.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-19.webp",
     "description": "Ensemble adulte haut et bas en wax, coordonne pour une tenue elegante, moderne et prete a sortir."
   },
   {
@@ -1336,7 +1336,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 18",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-007.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-007.webp",
     "description": "Ensemble enfant haut et bas en wax, confortable, colore et pense pour bouger facilement."
   },
   {
@@ -1344,7 +1344,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 01",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-01.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-01.webp",
     "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
@@ -1352,7 +1352,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 02",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-02.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-02.webp",
     "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
@@ -1360,7 +1360,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 03",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-03.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-03.webp",
     "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
@@ -1368,7 +1368,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 04",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-04.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-04.webp",
     "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
@@ -1376,7 +1376,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 05",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-05.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-05.webp",
     "description": "Babouches ROSBRI avec details wax, legeres au pied et faciles a assortir aux tenues du quotidien."
   },
   {
@@ -1384,7 +1384,7 @@ window.ROSBriCatalog = [
     "title": "Chapeau paille rouge wax plage",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-01.png",
+    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-01.webp",
     "description": "Chapeau de paille à large bord avec ruban et finition wax rouge, parfait pour protéger du soleil avec une touche vive."
   },
   {
@@ -1392,7 +1392,7 @@ window.ROSBriCatalog = [
     "title": "Chapeau paille rose graphique",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-02.png",
+    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-02.webp",
     "description": "Chapeau de paille à large bord, habillé d'un ruban wax rose graphique et d'un noeud assorti pour un look doux et affirmé."
   },
   {
@@ -1400,7 +1400,7 @@ window.ROSBriCatalog = [
     "title": "Chapeau paille wax jaune losange",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-03.png",
+    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-03.webp",
     "description": "Chapeau de paille naturel avec bordure wax jaune, noir et rouge, relevé par un ruban assorti et un petit noeud décoratif."
   },
   {
@@ -1408,7 +1408,7 @@ window.ROSBriCatalog = [
     "title": "Chapeau paille wax ethnique multicolore",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-04.png",
+    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-04.webp",
     "description": "Chapeau de paille naturel avec ruban et bordure wax multicolores, idéal pour compléter une tenue estivale avec caractère."
   },
   {
@@ -1416,7 +1416,7 @@ window.ROSBriCatalog = [
     "title": "Chapeau paille bleu marine noeud wax",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-05.png",
+    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-05.webp",
     "description": "Chapeau de paille avec bordure bleu marine, ruban noué et finition wax discrète pour une allure élégante et facile à porter."
   },
   {
@@ -1424,7 +1424,7 @@ window.ROSBriCatalog = [
     "title": "Chapeau paille rose bordure wax",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-06.png",
+    "image": "images/articles-site/chapeaux/variants/chapeau-rosbri-wax-06.webp",
     "description": "Chapeau de paille rose avec bordure et ruban wax contrastés, pensé pour apporter une note féminine et colorée."
   },
   {
@@ -1432,7 +1432,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 01",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-01.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-01.webp",
     "description": "Pochette ROSBRI compacte, pratique pour les essentiels et facile a glisser dans un sac ou a offrir."
   },
   {
@@ -1440,7 +1440,7 @@ window.ROSBriCatalog = [
     "title": "Babouches feuillage wax automne",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-feuillage-26.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-feuillage-26.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1460,7 +1460,7 @@ window.ROSBriCatalog = [
     "title": "Bob wax multicolore éclat",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-02.png",
+    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-02.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1480,7 +1480,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 55",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-55.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-55.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -1500,7 +1500,7 @@ window.ROSBriCatalog = [
     "title": "Gants de cuisine ROSBRI wax jaune",
     "category": "Maison & Déco",
     "price": "1 500 FCFA",
-    "image": "images/articles-site/gants-cuisine/variants/gants-cuisine-rosbri-wax-01.png",
+    "image": "images/articles-site/gants-cuisine/variants/gants-cuisine-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Stéphanie",
@@ -1520,7 +1520,7 @@ window.ROSBriCatalog = [
     "title": "Manique ROSBRI wax jaune",
     "category": "Maison & Déco",
     "price": "1 000 FCFA",
-    "image": "images/articles-site/maniques/variants/manique-rosbri-wax-01.png",
+    "image": "images/articles-site/maniques/variants/manique-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1540,7 +1540,7 @@ window.ROSBriCatalog = [
     "title": "Bob wax feuillage noir et ocre",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-feuillage-04.png",
+    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-feuillage-04.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1560,7 +1560,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 07",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-07.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-07.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -1580,7 +1580,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 01",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-01.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1600,7 +1600,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 02",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-02.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-02.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1620,7 +1620,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 03",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-03.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-03.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1640,7 +1640,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 04",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-04.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-04.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1660,7 +1660,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 05",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-05.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-05.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1680,7 +1680,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 06",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-06.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-06.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1700,7 +1700,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 07",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-07.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-07.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1720,7 +1720,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 08",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-08.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-08.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1740,7 +1740,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 09",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-09.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-09.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1760,7 +1760,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 10",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-10.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-10.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1780,7 +1780,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 11",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-11.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-11.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1800,7 +1800,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 12",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-12.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-12.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1820,7 +1820,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 13",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-13.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-13.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1840,7 +1840,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 14",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-14.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-14.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1860,7 +1860,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 15",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-15.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-15.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1880,7 +1880,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 16",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-16.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-16.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1900,7 +1900,7 @@ window.ROSBriCatalog = [
     "title": "Accessoire ROSBRI wax 17",
     "category": "Accessoires",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-17.png",
+    "image": "images/articles-site/accessoires/variants/accessoire-rosbri-wax-17.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -1920,7 +1920,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 08",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-08.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-08.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -1940,7 +1940,7 @@ window.ROSBriCatalog = [
     "title": "Pack plage beige motif lèvres",
     "category": "Packs & Idées Cadeaux",
     "price": "30 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-119.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-119.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -1966,7 +1966,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 56",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-56.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-56.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -1986,7 +1986,7 @@ window.ROSBriCatalog = [
     "title": "Sac cabas ROSBRI wax 03",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-03.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-03.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -2006,7 +2006,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas floral orange + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-120.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-120.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2031,7 +2031,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 57",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-57.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-57.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2051,7 +2051,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 01",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-01.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2071,7 +2071,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas bleu patchwork + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-121.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-121.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2096,7 +2096,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 58",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-58.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-58.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2116,7 +2116,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 02",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-02.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-02.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2136,7 +2136,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 09",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-09.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-09.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2156,7 +2156,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 59",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-59.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-59.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2176,7 +2176,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 10",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-10.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-10.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2196,7 +2196,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 11",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-11.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-11.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2216,7 +2216,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas floral bleu + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-122.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-122.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2241,7 +2241,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 12",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-12.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-12.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2261,7 +2261,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 13",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-13.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-13.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2281,7 +2281,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 60",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-60.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-60.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2301,7 +2301,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 04",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-04.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-04.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -2321,7 +2321,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 61",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-61.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-61.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2341,7 +2341,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 62",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-62.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-62.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2361,7 +2361,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 14",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-14.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-14.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2381,7 +2381,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 63",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-63.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-63.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2401,7 +2401,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 15",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-15.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-15.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -2421,7 +2421,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 64",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-64.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-64.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2441,7 +2441,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 65",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-65.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-65.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2461,7 +2461,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 66",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-66.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-66.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2481,7 +2481,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 67",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-67.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-67.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2501,7 +2501,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 68",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-68.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-68.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2521,7 +2521,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 69",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-69.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-69.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2541,7 +2541,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 70",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-70.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-70.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2561,7 +2561,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 71",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-71.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-71.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2581,7 +2581,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 72",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-72.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-72.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2601,7 +2601,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 73",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-73.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-73.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2621,7 +2621,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 74",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-74.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-74.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2641,7 +2641,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 75",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-75.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-75.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2661,7 +2661,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 76",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-76.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-76.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2681,7 +2681,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 77",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-77.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-77.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2701,7 +2701,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 78",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-78.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-78.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2721,7 +2721,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 79",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-79.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-79.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2741,7 +2741,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 80",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-80.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-80.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2761,7 +2761,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 81",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-81.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-81.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2781,7 +2781,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 82",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-82.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-82.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2801,7 +2801,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 83",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-83.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-83.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2821,7 +2821,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 84",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-84.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-84.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2841,7 +2841,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 85",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-85.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-85.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2861,7 +2861,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 86",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-86.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-86.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2881,7 +2881,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 87",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-87.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-87.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2901,7 +2901,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 88",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-88.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-88.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2921,7 +2921,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 89",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-89.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-89.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2941,7 +2941,7 @@ window.ROSBriCatalog = [
     "title": "Pack sac à dos orange + pochette",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-123.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-123.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2966,7 +2966,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 90",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-90.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-90.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -2986,7 +2986,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 91",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-91.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-91.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3006,7 +3006,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 92",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-92.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-92.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3026,7 +3026,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 93",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-93.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-93.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3046,7 +3046,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 94",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-94.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-94.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3066,7 +3066,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 95",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-95.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-95.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3086,7 +3086,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 96",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-96.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-96.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3106,7 +3106,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 97",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-97.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-97.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3126,7 +3126,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 98",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-98.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-98.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3146,7 +3146,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 99",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-99.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-99.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3166,7 +3166,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 100",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-100.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-100.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3186,7 +3186,7 @@ window.ROSBriCatalog = [
     "title": "Pack sac à dos beige + babouches",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-16.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-16.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3211,7 +3211,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 03",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-03.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-03.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3231,7 +3231,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 04",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-04.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-04.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3251,7 +3251,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 05",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-05.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-05.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3271,7 +3271,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 17",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-17.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-17.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3291,7 +3291,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 18",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-18.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-18.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3311,7 +3311,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 05",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-05.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-05.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3331,7 +3331,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 19",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-19.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-19.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3351,7 +3351,7 @@ window.ROSBriCatalog = [
     "title": "Pack banane wax + babouches bleues",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-124.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-124.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3376,7 +3376,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 06",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-06.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-06.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3396,7 +3396,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 101",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-101.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-101.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3416,7 +3416,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 102",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-102.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-102.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3436,7 +3436,7 @@ window.ROSBriCatalog = [
     "title": "Duo cabas jaune fleuri",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-125.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-125.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3460,7 +3460,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 20",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-20.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-20.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3480,7 +3480,7 @@ window.ROSBriCatalog = [
     "title": "Coussin ROSBRI wax 01",
     "category": "Maison & Déco",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-01.png",
+    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Laure",
@@ -3500,7 +3500,7 @@ window.ROSBriCatalog = [
     "title": "Coussin ROSBRI wax 02",
     "category": "Maison & Déco",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-02.png",
+    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-02.webp",
     "reviews": [
       {
         "name": "Laure",
@@ -3520,7 +3520,7 @@ window.ROSBriCatalog = [
     "title": "Coussin ROSBRI wax 03",
     "category": "Maison & Déco",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-03.png",
+    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-03.webp",
     "reviews": [
       {
         "name": "Laure",
@@ -3540,7 +3540,7 @@ window.ROSBriCatalog = [
     "title": "Coussin ROSBRI wax 04",
     "category": "Maison & Déco",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-04.png",
+    "image": "images/articles-site/coussins/variants/coussin-rosbri-wax-04.webp",
     "reviews": [
       {
         "name": "Laure",
@@ -3560,7 +3560,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas floral bleu + sandales rouges",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-126.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-126.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3585,7 +3585,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 103",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-103.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-103.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3605,7 +3605,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 06",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-06.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-06.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3625,7 +3625,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 07",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-07.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-07.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3645,7 +3645,7 @@ window.ROSBriCatalog = [
     "title": "Trio cabas floral multicolore",
     "category": "Packs & Idées Cadeaux",
     "price": "30 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-127.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-127.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3670,7 +3670,7 @@ window.ROSBriCatalog = [
     "title": "Pack sac beige + babouches assorties",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-21.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-21.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3695,7 +3695,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 08",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-08.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-08.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3715,7 +3715,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 104",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-104.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-104.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3735,7 +3735,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 105",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-105.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-105.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3755,7 +3755,7 @@ window.ROSBriCatalog = [
     "title": "Sandales ROSBRI wax 07",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-07.png",
+    "image": "images/articles-site/sandales/variants/sandales-rosbri-wax-07.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3775,7 +3775,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 09",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-09.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-09.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3795,7 +3795,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 22",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-22.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-22.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3815,7 +3815,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 106",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-106.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-106.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3835,7 +3835,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 23",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-23.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-23.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3855,7 +3855,7 @@ window.ROSBriCatalog = [
     "title": "Bob wax vert tropical Cameroun",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-03.png",
+    "image": "images/articles-site/bobs/variants/bob-rosbri-wax-03.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3875,7 +3875,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 107",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-107.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-107.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3895,7 +3895,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 24",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-24.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-24.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3915,7 +3915,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 108",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-108.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-108.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3935,7 +3935,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 10",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-10.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-10.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -3955,7 +3955,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 109",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-109.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-109.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -3975,7 +3975,7 @@ window.ROSBriCatalog = [
     "title": "Babouches ROSBRI wax 25",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-25.png",
+    "image": "images/articles-site/babouches/variants/babouches-rosbri-wax-25.webp",
     "reviews": [
       {
         "name": "St?phanie",
@@ -3995,7 +3995,7 @@ window.ROSBriCatalog = [
     "title": "Sac ROSBRI wax 110",
     "category": "Accessoires",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-110.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-110.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4015,7 +4015,7 @@ window.ROSBriCatalog = [
     "title": "Pochette ROSBRI wax 11",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-11.png",
+    "image": "images/articles-site/pochettes/variants/pochette-rosbri-wax-11.webp",
     "reviews": [
       {
         "name": "Brenda",
@@ -4035,7 +4035,7 @@ window.ROSBriCatalog = [
     "title": "Pack sac noir fleuri + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-128.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-128.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4060,7 +4060,7 @@ window.ROSBriCatalog = [
     "title": "Pack bandoulière rose + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-129.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-129.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4085,7 +4085,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas noir fleuri + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-130.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-130.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4110,7 +4110,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas vert multicolore + sandales",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-131.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-131.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4135,7 +4135,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 21",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-21.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-21.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4155,7 +4155,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 22",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-22.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-22.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4175,7 +4175,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 23",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-23.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-23.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4195,7 +4195,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 24",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-24.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-24.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4215,7 +4215,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 25",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-25.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-25.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4235,7 +4235,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 26",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-26.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-26.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4255,7 +4255,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 27",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-27.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-27.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4275,7 +4275,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 28",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-28.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-28.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4295,7 +4295,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 29",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-29.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-29.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4315,7 +4315,7 @@ window.ROSBriCatalog = [
     "title": "Pack cabas personnalisé RB + accessoires",
     "category": "Packs & Idées Cadeaux",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-132.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-132.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4341,7 +4341,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 30",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-30.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-30.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4361,7 +4361,7 @@ window.ROSBriCatalog = [
     "title": "Robe adulte ROSBRI wax 01",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/adultes/variants/robe-adultes-rosbri-wax-01.png",
+    "image": "images/articles-site/robes/adultes/variants/robe-adultes-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4381,7 +4381,7 @@ window.ROSBriCatalog = [
     "title": "Chemise ROSBRI wax 01",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/chemises/variants/chemise-rosbri-wax-01.png",
+    "image": "images/articles-site/chemises/variants/chemise-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4401,7 +4401,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 31",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-31.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-31.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4421,7 +4421,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 32",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-32.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-32.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4441,7 +4441,7 @@ window.ROSBriCatalog = [
     "title": "Duo cabas gris et bleu",
     "category": "Packs & Idées Cadeaux",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-133.png",
+    "image": "images/articles-site/sacs/variants/sac-rosbri-wax-133.webp",
     "reviews": [
       {
         "name": "Clarisse",
@@ -4465,7 +4465,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 01",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-01.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-01.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4485,7 +4485,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble adulte ROSBRI wax 33",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-33.png",
+    "image": "images/articles-site/ensembles/adultes/variants/ensemble-adultes-rosbri-wax-33.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4505,7 +4505,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 02",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-02.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-02.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4525,7 +4525,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 03",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-03.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-03.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4545,7 +4545,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 01",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-008.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-008.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4565,7 +4565,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 02",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-009.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-009.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4585,7 +4585,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 03",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-010.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-010.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4605,7 +4605,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 04",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-04.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-04.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4625,7 +4625,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 04",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-011.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-011.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4645,7 +4645,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 05",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-012.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-012.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4665,7 +4665,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 05",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-05.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-05.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4685,7 +4685,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 06",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-013.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-013.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4705,7 +4705,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 06",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-06.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-06.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4725,7 +4725,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 07",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-07.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-07.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4745,7 +4745,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 07",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-014.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-014.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4765,7 +4765,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 08",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-015.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-015.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4785,7 +4785,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 09",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-016.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-016.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4805,7 +4805,7 @@ window.ROSBriCatalog = [
     "title": "Robe enfant ROSBRI wax 08",
     "category": "Vêtements",
     "price": "10 000 FCFA",
-    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-08.png",
+    "image": "images/articles-site/robes/enfants/variants/robe-enfants-rosbri-wax-08.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4825,7 +4825,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 10",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-017.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-017.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4845,7 +4845,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant ROSBRI wax 11",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-018.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-018.webp",
     "reviews": [
       {
         "name": "Murielle",
@@ -4865,7 +4865,7 @@ window.ROSBriCatalog = [
     "title": "Casquette ROSBRI Signature",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/casquettes/casquette-signature.png",
+    "image": "images/articles-site/casquettes/casquette-signature.webp",
     "reviews": [
       {
         "name": "Yasmine",
@@ -4885,7 +4885,7 @@ window.ROSBriCatalog = [
     "title": "Boubou Moderne Wax Héritage",
     "category": "Vêtements",
     "price": "25 000 FCFA",
-    "image": "images/articles-site/boubous/boubou-wax-heritage.png",
+    "image": "images/articles-site/boubous/boubou-wax-heritage.webp",
     "reviews": [
       {
         "name": "Mariama",
@@ -4905,7 +4905,7 @@ window.ROSBriCatalog = [
     "title": "Polo Brodé ROSBRI Signature",
     "category": "Vêtements",
     "price": "8 500 FCFA",
-    "image": "images/articles-site/polos/polo-brode-signature.png",
+    "image": "images/articles-site/polos/polo-brode-signature.webp",
     "reviews": [
       {
         "name": "Arthur",
@@ -4925,7 +4925,7 @@ window.ROSBriCatalog = [
     "title": "Débardeur Reine Africaine Wax",
     "category": "Vêtements",
     "price": "5 500 FCFA",
-    "image": "images/articles-site/debardeurs/debardeur-reine-africaine.png",
+    "image": "images/articles-site/debardeurs/debardeur-reine-africaine.webp",
     "reviews": [
       {
         "name": "Chantal",
@@ -4945,7 +4945,7 @@ window.ROSBriCatalog = [
     "title": "Sweat Monument de la Réunification",
     "category": "Vêtements",
     "price": "12 500 FCFA",
-    "image": "images/articles-site/sweats/sweat-monument-reunification.png",
+    "image": "images/articles-site/sweats/sweat-monument-reunification.webp",
     "reviews": [
       {
         "name": "Christian",
@@ -4965,7 +4965,7 @@ window.ROSBriCatalog = [
     "title": "Hoodie ROSBRI Heritage Cameroun",
     "category": "Vêtements",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/hoodies/hoodie-rosbri-heritage.png",
+    "image": "images/articles-site/hoodies/hoodie-rosbri-heritage.webp",
     "reviews": [
       {
         "name": "Patrick",
@@ -4985,7 +4985,7 @@ window.ROSBriCatalog = [
     "title": "Jupe Longue Plissée Wax Prestige",
     "category": "Vêtements",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/jupes/jupe-longue-plissee-wax.png",
+    "image": "images/articles-site/jupes/jupe-longue-plissee-wax.webp",
     "reviews": [
       {
         "name": "Sonia",
@@ -5005,7 +5005,7 @@ window.ROSBriCatalog = [
     "title": "Short Décontracté Wax Sunset",
     "category": "Vêtements",
     "price": "7 500 FCFA",
-    "image": "images/articles-site/shorts/short-wax-sunset.png",
+    "image": "images/articles-site/shorts/short-wax-sunset.webp",
     "reviews": [
       {
         "name": "David",
@@ -5025,7 +5025,7 @@ window.ROSBriCatalog = [
     "title": "Pantalon Carotte Wax �0légance",
     "category": "Vêtements",
     "price": "14 000 FCFA",
-    "image": "images/articles-site/pantalons/pantalon-carotte-wax.png",
+    "image": "images/articles-site/pantalons/pantalon-carotte-wax.webp",
     "reviews": [
       {
         "name": "Nelly",
@@ -5045,7 +5045,7 @@ window.ROSBriCatalog = [
     "title": "Boucles d'oreilles Afrique Bois & Wax",
     "category": "Accessoires",
     "price": "4 500 FCFA",
-    "image": "images/articles-site/bijoux/boucles-oreilles-bois-wax.png",
+    "image": "images/articles-site/bijoux/boucles-oreilles-bois-wax.webp",
     "reviews": [
       {
         "name": "Michele",
@@ -5065,7 +5065,7 @@ window.ROSBriCatalog = [
     "title": "Compagnon Portefeuille Cuir et Wax",
     "category": "Accessoires",
     "price": "9 500 FCFA",
-    "image": "images/articles-site/portefeuilles/compagnon-portefeuille-cuir.png",
+    "image": "images/articles-site/portefeuilles/compagnon-portefeuille-cuir.webp",
     "reviews": [
       {
         "name": "Ghislaine",
@@ -5085,7 +5085,7 @@ window.ROSBriCatalog = [
     "title": "Trousse de Voyage Wax & Velours",
     "category": "Accessoires",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/trousses/trousse-voyage-wax.png",
+    "image": "images/articles-site/trousses/trousse-voyage-wax.webp",
     "reviews": [
       {
         "name": "Jeanne",
@@ -5105,7 +5105,7 @@ window.ROSBriCatalog = [
     "title": "Tennis en Toile Imprimée Wax",
     "category": "Accessoires",
     "price": "16 500 FCFA",
-    "image": "images/articles-site/chaussures/tennis-toile-wax.png",
+    "image": "images/articles-site/chaussures/tennis-toile-wax.webp",
     "reviews": [
       {
         "name": "Yvan",
@@ -5125,7 +5125,7 @@ window.ROSBriCatalog = [
     "title": "Tablier de Cuisine Reine du Foyer",
     "category": "Maison & Déco",
     "price": "7 500 FCFA",
-    "image": "images/articles-site/tabliers/tablier-reine-foyer.png",
+    "image": "images/articles-site/tabliers/tablier-reine-foyer.webp",
     "reviews": [
       {
         "name": "Bernadette",
@@ -5145,7 +5145,7 @@ window.ROSBriCatalog = [
     "title": "Serviette de Bain Chutes de la Lobé",
     "category": "Maison & Déco",
     "price": "12 500 FCFA",
-    "image": "images/articles-site/serviettes/serviette-bain-lobe.png",
+    "image": "images/articles-site/serviettes/serviette-bain-lobe.webp",
     "reviews": [
       {
         "name": "Bertrand",
@@ -5165,7 +5165,7 @@ window.ROSBriCatalog = [
     "title": "Mug en Céramique ROSBRI Heritage",
     "category": "Packs & Idées Cadeaux",
     "price": "3 500 FCFA",
-    "image": "images/articles-site/mugs/mug-ceramique-heritage.png",
+    "image": "images/articles-site/mugs/mug-ceramique-heritage.webp",
     "reviews": [
       {
         "name": "Jules",
@@ -5185,7 +5185,7 @@ window.ROSBriCatalog = [
     "title": "Gourde Isotherme Mont Cameroun",
     "category": "Packs & Idées Cadeaux",
     "price": "6 500 FCFA",
-    "image": "images/articles-site/gourdes/gourde-isotherme-mont-cam.png",
+    "image": "images/articles-site/gourdes/gourde-isotherme-mont-cam.webp",
     "reviews": [
       {
         "name": "Victor",
@@ -5205,7 +5205,7 @@ window.ROSBriCatalog = [
     "title": "Affiche d'Art Pont des Allemands (Edéa)",
     "category": "Maison & Déco",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/affiches/affiche-pont-allemands.png",
+    "image": "images/articles-site/affiches/affiche-pont-allemands.webp",
     "reviews": [
       {
         "name": "Gilles",
@@ -5225,7 +5225,7 @@ window.ROSBriCatalog = [
     "title": "Lot de 5 Cartes de V�ux Culturelles",
     "category": "Packs & Idées Cadeaux",
     "price": "4 000 FCFA",
-    "image": "images/articles-site/cartes/lot-5-cartes-culturelles-placeholder.png",
+    "image": "images/articles-site/cartes/lot-5-cartes-culturelles-placeholder.webp",
     "reviews": [
       {
         "name": "Marthe",
@@ -5245,7 +5245,7 @@ window.ROSBriCatalog = [
     "title": "Pack de 10 Stickers ROSBRI Heritage",
     "category": "Maison & Déco",
     "price": "2 500 FCFA",
-    "image": "images/articles-site/stickers/pack-stickers-rosbri.png",
+    "image": "images/articles-site/stickers/pack-stickers-rosbri.webp",
     "reviews": [
       {
         "name": "Rene",
@@ -5265,7 +5265,7 @@ window.ROSBriCatalog = [
     "title": "Pagne Wax Premium ROSBRI (6 Yards)",
     "category": "Vêtements",
     "price": "18 000 FCFA",
-    "image": "images/articles-site/pagnes/pagne-wax-premium.png",
+    "image": "images/articles-site/pagnes/pagne-wax-premium.webp",
     "reviews": [
       {
         "name": "Aminata",
@@ -5285,7 +5285,7 @@ window.ROSBriCatalog = [
     "title": "Coque de Téléphone Wax & Or",
     "category": "Accessoires",
     "price": "5 000 FCFA",
-    "image": "images/articles-site/coques-telephone/coque-telephone-wax-or.png",
+    "image": "images/articles-site/coques-telephone/coque-telephone-wax-or.webp",
     "reviews": [
       {
         "name": "Ines",
@@ -5445,68 +5445,68 @@ window.ROSBriCatalog = [
     "title": "Mini Aventure",
     "category": "Enfants & Bébés",
     "price": "17 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-019.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-019.webp",
     "description": "Ensemble enfant avec t-shirt, short et casquette assortis.",
     "colorVariants": [
       {
         "id": "noir",
         "label": "Noir",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-020.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-020.webp"
       },
       {
         "id": "blanc",
         "label": "Blanc",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-021.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-021.webp"
       },
       {
         "id": "beige",
         "label": "Beige",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-022.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-022.webp"
       },
       {
         "id": "gris",
         "label": "Gris",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-023.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-023.webp"
       },
       {
         "id": "bleu-marine",
         "label": "Bleu marine",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-024.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-024.webp"
       },
       {
         "id": "vert",
         "label": "Vert",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-025.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-025.webp"
       },
       {
         "id": "bordeaux",
         "label": "Bordeaux",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-026.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-026.webp"
       },
       {
         "id": "jaune",
         "label": "Jaune",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-027.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-027.webp"
       },
       {
         "id": "rose",
         "label": "Rose",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-028.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-028.webp"
       },
       {
         "id": "marron",
         "label": "Marron",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-029.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-029.webp"
       }
     ],
     "audience": "enfant",
@@ -5517,68 +5517,68 @@ window.ROSBriCatalog = [
     "title": "Junior Racing",
     "category": "Enfants & Bébés",
     "price": "17 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-030.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-030.webp",
     "description": "Ensemble enfant sport avec t-shirt numéroté, short et casquette.",
     "colorVariants": [
       {
         "id": "noir",
         "label": "Noir",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-031.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-031.webp"
       },
       {
         "id": "blanc",
         "label": "Blanc",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-032.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-032.webp"
       },
       {
         "id": "beige",
         "label": "Beige",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-033.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-033.webp"
       },
       {
         "id": "gris",
         "label": "Gris",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-034.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-034.webp"
       },
       {
         "id": "bleu-marine",
         "label": "Bleu marine",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-035.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-035.webp"
       },
       {
         "id": "vert",
         "label": "Vert",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-036.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-036.webp"
       },
       {
         "id": "bordeaux",
         "label": "Bordeaux",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-037.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-037.webp"
       },
       {
         "id": "jaune",
         "label": "Jaune",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-038.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-038.webp"
       },
       {
         "id": "rose",
         "label": "Rose",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-039.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-039.webp"
       },
       {
         "id": "marron",
         "label": "Marron",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-040.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-040.webp"
       }
     ],
     "audience": "enfant",
@@ -5589,68 +5589,68 @@ window.ROSBriCatalog = [
     "title": "Skate Junior",
     "category": "Enfants & Bébés",
     "price": "17 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-041.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-041.webp",
     "description": "Ensemble enfant décontracté avec t-shirt illustré, short et casquette.",
     "colorVariants": [
       {
         "id": "noir",
         "label": "Noir",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-042.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-042.webp"
       },
       {
         "id": "blanc",
         "label": "Blanc",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-043.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-043.webp"
       },
       {
         "id": "beige",
         "label": "Beige",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-044.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-044.webp"
       },
       {
         "id": "gris",
         "label": "Gris",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-045.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-045.webp"
       },
       {
         "id": "bleu-marine",
         "label": "Bleu marine",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-046.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-046.webp"
       },
       {
         "id": "vert",
         "label": "Vert",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-047.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-047.webp"
       },
       {
         "id": "bordeaux",
         "label": "Bordeaux",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-048.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-048.webp"
       },
       {
         "id": "jaune",
         "label": "Jaune",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-049.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-049.webp"
       },
       {
         "id": "rose",
         "label": "Rose",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-050.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-050.webp"
       },
       {
         "id": "marron",
         "label": "Marron",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-051.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-051.webp"
       }
     ],
     "audience": "enfant",
@@ -5661,68 +5661,68 @@ window.ROSBriCatalog = [
     "title": "Street Junior",
     "category": "Enfants & Bébés",
     "price": "17 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-052.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-052.webp",
     "description": "Ensemble enfant urbain avec t-shirt, short et casquette assortis.",
     "colorVariants": [
       {
         "id": "noir",
         "label": "Noir",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-053.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-053.webp"
       },
       {
         "id": "blanc",
         "label": "Blanc",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-054.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-054.webp"
       },
       {
         "id": "beige",
         "label": "Beige",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-055.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-055.webp"
       },
       {
         "id": "gris",
         "label": "Gris",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-056.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-056.webp"
       },
       {
         "id": "bleu-marine",
         "label": "Bleu marine",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-057.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-057.webp"
       },
       {
         "id": "vert",
         "label": "Vert",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-058.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-058.webp"
       },
       {
         "id": "bordeaux",
         "label": "Bordeaux",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-059.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-059.webp"
       },
       {
         "id": "jaune",
         "label": "Jaune",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-060.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-060.webp"
       },
       {
         "id": "rose",
         "label": "Rose",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-061.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-061.webp"
       },
       {
         "id": "marron",
         "label": "Marron",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-062.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-062.webp"
       }
     ],
     "audience": "enfant",
@@ -5733,68 +5733,68 @@ window.ROSBriCatalog = [
     "title": "Vacances Mini",
     "category": "Enfants & Bébés",
     "price": "17 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-063.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-063.webp",
     "description": "Ensemble enfant d'été avec t-shirt, short et casquette assortis.",
     "colorVariants": [
       {
         "id": "noir",
         "label": "Noir",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-064.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-064.webp"
       },
       {
         "id": "blanc",
         "label": "Blanc",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-065.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-065.webp"
       },
       {
         "id": "beige",
         "label": "Beige",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-066.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-066.webp"
       },
       {
         "id": "gris",
         "label": "Gris",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-067.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-067.webp"
       },
       {
         "id": "bleu-marine",
         "label": "Bleu marine",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-068.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-068.webp"
       },
       {
         "id": "vert",
         "label": "Vert",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-069.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-069.webp"
       },
       {
         "id": "bordeaux",
         "label": "Bordeaux",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-070.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-070.webp"
       },
       {
         "id": "jaune",
         "label": "Jaune",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-071.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-071.webp"
       },
       {
         "id": "rose",
         "label": "Rose",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-072.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-072.webp"
       },
       {
         "id": "marron",
         "label": "Marron",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-073.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-073.webp"
       }
     ],
     "audience": "enfant",
@@ -9296,68 +9296,68 @@ window.ROSBriCatalog = [
     "title": "Mini Soleil Graphique",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-074.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-074.webp",
     "description": "Ensemble enfant coloré avec haut et bas assortis.",
     "colorVariants": [
       {
         "id": "modele-01",
         "label": "Modèle 1",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-075.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-075.webp"
       },
       {
         "id": "modele-02",
         "label": "Modèle 2",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-076.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-076.webp"
       },
       {
         "id": "modele-03",
         "label": "Modèle 3",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-077.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-077.webp"
       },
       {
         "id": "modele-04",
         "label": "Modèle 4",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-078.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-078.webp"
       },
       {
         "id": "modele-05",
         "label": "Modèle 5",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-079.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-079.webp"
       },
       {
         "id": "modele-06",
         "label": "Modèle 6",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-080.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-080.webp"
       },
       {
         "id": "modele-07",
         "label": "Modèle 7",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-081.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-081.webp"
       },
       {
         "id": "modele-08",
         "label": "Modèle 8",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-082.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-082.webp"
       },
       {
         "id": "modele-09",
         "label": "Modèle 9",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-083.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-083.webp"
       },
       {
         "id": "modele-10",
         "label": "Modèle 10",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-084.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-084.webp"
       }
     ],
     "priceToValidate": true
@@ -9367,68 +9367,68 @@ window.ROSBriCatalog = [
     "title": "Mini Blanc Nomade",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-085.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-085.webp",
     "description": "Tenue enfant claire avec détails imprimés et bas assorti.",
     "colorVariants": [
       {
         "id": "modele-01",
         "label": "Modèle 1",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-086.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-086.webp"
       },
       {
         "id": "modele-02",
         "label": "Modèle 2",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-087.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-087.webp"
       },
       {
         "id": "modele-03",
         "label": "Modèle 3",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-088.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-088.webp"
       },
       {
         "id": "modele-04",
         "label": "Modèle 4",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-089.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-089.webp"
       },
       {
         "id": "modele-05",
         "label": "Modèle 5",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-01.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-01.webp"
       },
       {
         "id": "modele-06",
         "label": "Modèle 6",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-02.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-02.webp"
       },
       {
         "id": "modele-07",
         "label": "Modèle 7",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-03.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-03.webp"
       },
       {
         "id": "modele-08",
         "label": "Modèle 8",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-04.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-04.webp"
       },
       {
         "id": "modele-09",
         "label": "Modèle 9",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-05.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-05.webp"
       },
       {
         "id": "modele-10",
         "label": "Modèle 10",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-06.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-06.webp"
       }
     ],
     "priceToValidate": true
@@ -9438,68 +9438,68 @@ window.ROSBriCatalog = [
     "title": "Mini Blanc Tendre",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-07.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-07.webp",
     "description": "Ensemble enfant blanc avec détails imprimés, proposé en plusieurs modèles.",
     "colorVariants": [
       {
         "id": "modele-01",
         "label": "Modèle 1",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-08.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-08.webp"
       },
       {
         "id": "modele-02",
         "label": "Modèle 2",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-09.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-09.webp"
       },
       {
         "id": "modele-03",
         "label": "Modèle 3",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-10.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-10.webp"
       },
       {
         "id": "modele-04",
         "label": "Modèle 4",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-11.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-11.webp"
       },
       {
         "id": "modele-05",
         "label": "Modèle 5",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-12.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-12.webp"
       },
       {
         "id": "modele-06",
         "label": "Modèle 6",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-13.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-13.webp"
       },
       {
         "id": "modele-07",
         "label": "Modèle 7",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-14.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-14.webp"
       },
       {
         "id": "modele-08",
         "label": "Modèle 8",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-15.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-15.webp"
       },
       {
         "id": "modele-09",
         "label": "Modèle 9",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-16.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-16.webp"
       },
       {
         "id": "modele-10",
         "label": "Modèle 10",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-17.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-17.webp"
       }
     ],
     "priceToValidate": true
@@ -9509,68 +9509,68 @@ window.ROSBriCatalog = [
     "title": "Petit Match Coloré",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-18.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfants-rosbri-wax-18.webp",
     "description": "Ensemble enfant avec haut clair et bas coloré assorti.",
     "colorVariants": [
       {
         "id": "modele-01",
         "label": "Modèle 1",
         "swatch": "#1e1f1f",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-001.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-001.webp"
       },
       {
         "id": "modele-02",
         "label": "Modèle 2",
         "swatch": "#eeeee5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-002.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-002.webp"
       },
       {
         "id": "modele-03",
         "label": "Modèle 3",
         "swatch": "#decfb5",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-003.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-003.webp"
       },
       {
         "id": "modele-04",
         "label": "Modèle 4",
         "swatch": "#9ca3af",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-004.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-004.webp"
       },
       {
         "id": "modele-05",
         "label": "Modèle 5",
         "swatch": "#1e2b48",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-005.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-005.webp"
       },
       {
         "id": "modele-06",
         "label": "Modèle 6",
         "swatch": "#224432",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-006.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-006.webp"
       },
       {
         "id": "modele-07",
         "label": "Modèle 7",
         "swatch": "#672330",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-007.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-007.webp"
       },
       {
         "id": "modele-08",
         "label": "Modèle 8",
         "swatch": "#ffd777",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-008.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-008.webp"
       },
       {
         "id": "modele-09",
         "label": "Modèle 9",
         "swatch": "#f7b8c9",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-009.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-009.webp"
       },
       {
         "id": "modele-10",
         "label": "Modèle 10",
         "swatch": "#6f4e37",
-        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-010.png"
+        "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-010.webp"
       }
     ],
     "priceToValidate": true
@@ -9580,7 +9580,7 @@ window.ROSBriCatalog = [
     "title": "Mini Terre Claire",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-011.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-011.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9590,7 +9590,7 @@ window.ROSBriCatalog = [
     "title": "Petit Noir �0légant",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-012.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-012.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9600,7 +9600,7 @@ window.ROSBriCatalog = [
     "title": "Mini Soleil Bleu",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-013.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-013.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9610,7 +9610,7 @@ window.ROSBriCatalog = [
     "title": "Rouge Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-014.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-014.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9620,7 +9620,7 @@ window.ROSBriCatalog = [
     "title": "Petit Safari Doré",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-015.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-015.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9630,7 +9630,7 @@ window.ROSBriCatalog = [
     "title": "Bleu Aventure",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-016.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-016.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9640,7 +9640,7 @@ window.ROSBriCatalog = [
     "title": "Petit Urbain Beige",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-017.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-017.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9650,7 +9650,7 @@ window.ROSBriCatalog = [
     "title": "Caramel Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-018.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-018.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9660,7 +9660,7 @@ window.ROSBriCatalog = [
     "title": "Bleu Orange Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-019.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-019.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9670,7 +9670,7 @@ window.ROSBriCatalog = [
     "title": "Ciel Décontracté",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-020.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-020.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9680,7 +9680,7 @@ window.ROSBriCatalog = [
     "title": "Noir Chic Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-021.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-021.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9690,7 +9690,7 @@ window.ROSBriCatalog = [
     "title": "Jaune Malin",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-022.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-022.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9700,7 +9700,7 @@ window.ROSBriCatalog = [
     "title": "Rouge Royal Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-023.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-023.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9710,7 +9710,7 @@ window.ROSBriCatalog = [
     "title": "Petit Léopard",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-024.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-024.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9720,7 +9720,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Prestige",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-025.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-025.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9730,7 +9730,7 @@ window.ROSBriCatalog = [
     "title": "Ensemble enfant Dinosaures",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-026.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-026.webp",
     "description": "Ensemble enfant composé d’un t-shirt et d’un short blancs à motifs dinosaures multicolores, proposé sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9740,7 +9740,7 @@ window.ROSBriCatalog = [
     "title": "Noir Cool Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-027.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-027.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9750,7 +9750,7 @@ window.ROSBriCatalog = [
     "title": "Petit Gilet Chic",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-028.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-028.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9760,7 +9760,7 @@ window.ROSBriCatalog = [
     "title": "Bleu Nuit Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-029.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-029.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9770,7 +9770,7 @@ window.ROSBriCatalog = [
     "title": "Vert Tendresse",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-030.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-030.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9780,7 +9780,7 @@ window.ROSBriCatalog = [
     "title": "Petit Caramel",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-031.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-031.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9790,7 +9790,7 @@ window.ROSBriCatalog = [
     "title": "Jupe Noire Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-032.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-032.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9800,7 +9800,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Classique",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-033.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-033.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9810,7 +9810,7 @@ window.ROSBriCatalog = [
     "title": "Rouge Sport Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-034.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-034.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9820,7 +9820,7 @@ window.ROSBriCatalog = [
     "title": "Jaune Rayé",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-035.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-035.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9830,7 +9830,7 @@ window.ROSBriCatalog = [
     "title": "Petit Dandy",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-036.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-036.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9840,7 +9840,7 @@ window.ROSBriCatalog = [
     "title": "Moutarde Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-037.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-037.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9850,7 +9850,7 @@ window.ROSBriCatalog = [
     "title": "Noir Cérémonie",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-038.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-038.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9860,7 +9860,7 @@ window.ROSBriCatalog = [
     "title": "Robe Brune Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-039.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-039.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9870,7 +9870,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Balade",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-040.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-040.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9880,7 +9880,7 @@ window.ROSBriCatalog = [
     "title": "Rouge Soleil Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-041.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-041.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9890,7 +9890,7 @@ window.ROSBriCatalog = [
     "title": "Jaune Urbain",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-042.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-042.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9900,7 +9900,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Graphique",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-043.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-043.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9910,7 +9910,7 @@ window.ROSBriCatalog = [
     "title": "Noir Lunettes Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-044.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-044.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9920,7 +9920,7 @@ window.ROSBriCatalog = [
     "title": "Caramel Doux",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-045.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-045.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9930,7 +9930,7 @@ window.ROSBriCatalog = [
     "title": "Orange Joie",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-046.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-046.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9940,7 +9940,7 @@ window.ROSBriCatalog = [
     "title": "Bleu Royal Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-047.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-047.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9950,7 +9950,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Safari",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-048.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-048.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9960,7 +9960,7 @@ window.ROSBriCatalog = [
     "title": "Marron Balade",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-049.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-049.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9970,7 +9970,7 @@ window.ROSBriCatalog = [
     "title": "Vert Nomade",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-050.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-050.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9980,7 +9980,7 @@ window.ROSBriCatalog = [
     "title": "Noir �0clat Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-051.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-051.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -9990,7 +9990,7 @@ window.ROSBriCatalog = [
     "title": "Jaune Détente",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-052.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-052.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10000,7 +10000,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Nomade Junior",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-053.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-053.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10010,7 +10010,7 @@ window.ROSBriCatalog = [
     "title": "Bleu Royal Graphique",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-054.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-054.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10020,7 +10020,7 @@ window.ROSBriCatalog = [
     "title": "Beige Rayé",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-055.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-055.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10030,7 +10030,7 @@ window.ROSBriCatalog = [
     "title": "Bleu Balade",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-056.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-056.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10040,7 +10040,7 @@ window.ROSBriCatalog = [
     "title": "Rouge Détente",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-057.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-057.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10050,7 +10050,7 @@ window.ROSBriCatalog = [
     "title": "Blanc Urbain",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-058.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-058.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10060,7 +10060,7 @@ window.ROSBriCatalog = [
     "title": "Noir Doré Mini",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-059.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-059.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true
@@ -10070,7 +10070,7 @@ window.ROSBriCatalog = [
     "title": "Brun Mosaïque",
     "category": "Enfants & Bébés",
     "price": "15 000 FCFA",
-    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-060.png",
+    "image": "images/articles-site/ensembles/enfants/ensemble-enfant-chatgpt-060.webp",
     "description": "Tenue enfant à motifs colorés, proposée sur commande selon les tailles disponibles.",
     "audience": "enfant",
     "priceToValidate": true

@@ -14,3 +14,5 @@ stitch_temp/
 temp*.js
 test_*.js
 test_out.txt
+
+.vercel

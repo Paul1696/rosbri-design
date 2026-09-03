@@ -141,7 +141,7 @@
   const slugToCategory = {};
 
   function slugFromFileName(fileName) {
-    const base = fileName.replace(/\.(png|jpg|jpeg)$/i, "");
+    const base = fileName.replace(/\.(png|jpg|jpeg|webp)$/i, "");
     for (let i = 0; i < colorSuffixes.length; i += 1) {
       const color = colorSuffixes[i];
       if (base.endsWith(`-${color}`)) {
@@ -170,9 +170,9 @@
   function rebuildSlugToCategory() {
     Object.keys(slugToCategory).forEach((key) => delete slugToCategory[key]);
     catalog.forEach((item) => {
-    const match = item.image.match(/^images\/(.+)\/variants\/(.+)\.png$/i);
+    const match = item.image.match(/^images\/(.+)\/variants\/(.+)\.(?:png|webp)$/i);
     if (!match) return;
-    slugToCategory[slugFromFileName(`${match[2]}.png`)] = match[1];
+    slugToCategory[slugFromFileName(`${match[2]}.webp`)] = match[1];
     });
   }
 
@@ -306,7 +306,7 @@
       id: colorSlug,
       label,
       swatch,
-      image: `images/${folder}/variants/${productSlug}-${colorSlug}.png`
+      image: `images/${folder}/variants/${productSlug}-${colorSlug}.webp`
     };
   }
 
@@ -563,7 +563,9 @@
   }
 
   function displayImage(item) {
-    return (productVariantsFor(item).find((variant) => variant.image) || {}).image || item.image;
+    // Use each product's catalog image as the stable card thumbnail. Variant
+    // files are optional and may not exist for every color combination.
+    return item.image || (productVariantsFor(item).find((variant) => variant.image) || {}).image;
   }
 
   function hasColorChoices(item) {
